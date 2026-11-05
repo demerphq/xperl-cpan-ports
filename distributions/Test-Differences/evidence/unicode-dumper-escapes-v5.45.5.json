@@ -1,0 +1,20 @@
+{
+  "source_sha256": "3c113f4e25c38323a3fe5992d30c337264d00ef872aecfd2d9431ca8ea0083e2",
+  "patch_set_id": "unicode-dumper-escapes",
+  "patch_sha256": "cfde566037be8045fa91f3b350d9804c1dc790f9af1be4c0dd02087ec4aecfd2",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 17 test files, 48 tests"
+    },
+    {
+      "command": "/usr/bin/perl t/unicode.t with blib/lib and prerequisites in PERL5LIB",
+      "interpreter": "Perl v5.38.2",
+      "result": "pass: 2 tests"
+    }
+  ]
+}

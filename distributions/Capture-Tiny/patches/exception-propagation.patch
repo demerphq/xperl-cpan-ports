@@ -1,0 +1,13 @@
+--- a/t/16-catch-errors.t
++++ b/t/16-catch-errors.t
+@@ -37,7 +37,9 @@
+ };
+ my $error = $@;
+ 
+-is( $error, "Fatal error in capture\n", "\$\@ preserved after capture" );
++like( $error,
++  qr/\AFatal error in capture\n(?:\t\.\.\.propagated at .+ line \d+\.\n)?\z/,
++  "\$\@ preserved after capture" );
+ is( $out, "foo\n", "STDOUT still captured" );
+ is( $err, "bar\n", "STDOUT still captured" );
+ 

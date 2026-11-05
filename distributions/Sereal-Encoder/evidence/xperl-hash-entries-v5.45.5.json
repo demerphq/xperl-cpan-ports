@@ -1,0 +1,15 @@
+{
+  "source_sha256": "217de2b585aaf183368a4a54c1adbffae78cc30b7430ad55c59a48d3ca33b30b",
+  "patch_set_id": "xperl-hash-entries",
+  "patch_sha256": "bdb986e0727674547b72f8e0c981261ff209ef400b9117ba1b9c0f75da3c9ad3",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make PERL_INC=<XPerl source> test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 76 test files, 48650 tests"
+    }
+  ]
+}
