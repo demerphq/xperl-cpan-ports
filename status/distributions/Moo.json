@@ -116,6 +116,47 @@
          "test_summary" : "Files=71, Tests=841",
          "version" : "2.005005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Moo-2.005005.tar.gz",
+         "id" : "8c9aec3a40d8dff936fe03b1987430474a476711c6d4b3e4bc1a24ff80d60265",
+         "module" : "Moo",
+         "observed_at" : "2026-11-05T15:07:39Z",
+         "patch_set" : "xperl-exception-context",
+         "patch_sha256" : [
+            "3e54ab1ba5179bac33036ffbd359f1298c9cffdb0d3723df350b7a4acbba4715"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
+         "status" : "installed",
+         "test_summary" : "Files=71, Tests=841",
+         "version" : "2.005005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 1

@@ -70,6 +70,41 @@
          "test_summary" : "Files=29, Tests=131",
          "version" : "2.15",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz",
+         "id" : "dce3d381573ee707b72e292b062c1719821b7fc47f3ef303c7e8fcb995cac806",
+         "module" : "Class::Method::Modifiers",
+         "observed_at" : "2026-11-05T15:07:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "65cd85bfe475d066e9186f7a8cc636070985b30b0ebb1cde8681cf062c2e15fc",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=131",
+         "version" : "2.15",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 1

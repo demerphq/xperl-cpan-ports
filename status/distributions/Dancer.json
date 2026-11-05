@@ -1,0 +1,41 @@
+{
+   "distribution" : "Dancer",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BIGPRESH/Dancer-1.3522.tar.gz",
+         "id" : "29f83c6bda818a61bc82a0c4db949011f0bcf2420a0f3d711b8094fed484ca72",
+         "module" : "Dancer",
+         "observed_at" : "2026-11-05T15:07:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d2fbc8c84404a4b45bfd04601e2ff52bc519e3e68714df97b81720e15788f7e0",
+         "status" : "installed",
+         "test_summary" : "Files=224, Tests=1951",
+         "version" : "1.3522",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

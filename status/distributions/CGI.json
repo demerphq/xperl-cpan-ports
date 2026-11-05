@@ -1,0 +1,41 @@
+{
+   "distribution" : "CGI",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEEJO/CGI-5.02.tar.gz",
+         "id" : "72c3ad5d743cac71bf7ad2564039cbb046ecd5090ef57fb9fce02e747cb4b2a6",
+         "module" : "CGI",
+         "observed_at" : "2026-11-05T15:05:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "47637ad0413c527e00e1249d14dba0c234073ad4bef09746fafd73dd85ded665",
+         "status" : "installed",
+         "test_summary" : "Files=89, Tests=2516",
+         "version" : "5.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

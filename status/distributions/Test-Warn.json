@@ -31,6 +31,41 @@
          "test_summary" : "Files=7, Tests=843",
          "version" : "0.37",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BIGJ/Test-Warn-0.37.tar.gz",
+         "id" : "b642794a1d7dcf6943bc6847dd425d0dd6e1a7a868a6993dc5a2713587fddce1",
+         "module" : "Test::Warn",
+         "observed_at" : "2026-11-05T15:05:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "98ca32e7f2f5ea89b8bfb9a0609977f3d153e242e2e51705126cb954f1a06b57",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=843",
+         "version" : "0.37",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 1

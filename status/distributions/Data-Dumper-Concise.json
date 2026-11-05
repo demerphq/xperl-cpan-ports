@@ -1,0 +1,41 @@
+{
+   "distribution" : "Data-Dumper-Concise",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Data-Dumper-Concise-2.023.tar.gz",
+         "id" : "fa32cb8e9b611215e9a2b4f299e27d2e102a081956b459e95866122acf86e4ad",
+         "module" : "Data::Dumper::Concise",
+         "observed_at" : "2026-11-05T15:07:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a6c22f113caf31137590def1b7028a7e718eface3228272d0672c25e035d5853",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=23",
+         "version" : "2.023",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

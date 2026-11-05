@@ -3,7 +3,7 @@
 Latest observation for each distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 0 of 223 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- |
@@ -12,6 +12,7 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [App-Cmd](distributions/App-Cmd.json) | 0.340 | v5.45.5 | installed | none |
 | [B-COW](distributions/B-COW.json) | 0.007 | v5.45.5 | installed | none |
 | [B-Hooks-EndOfScope](distributions/B-Hooks-EndOfScope.json) | 0.28 | v5.45.5 | installed | none |
+| [CGI](distributions/CGI.json) | 5.02 | v5.45.5 | installed | none |
 | [CGI-Simple](distributions/CGI-Simple.json) | 1.282 | v5.45.5 | installed | none |
 | [CGI-Struct](distributions/CGI-Struct.json) | 1.21 | v5.45.5 | installed | none |
 | [CPAN-Meta-Check](distributions/CPAN-Meta-Check.json) | 0.018 | v5.45.5 | installed | none |
@@ -34,7 +35,9 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [Config-MVP-Reader-INI](distributions/Config-MVP-Reader-INI.json) | 2.101465 | v5.45.5 | installed | none |
 | [Cookie-Baker](distributions/Cookie-Baker.json) | 0.12 | v5.45.5 | installed | none |
 | [DBI](distributions/DBI.json) | 1.656 | v5.45.5 | installed | none |
+| [Dancer](distributions/Dancer.json) | 1.3522 | v5.45.5 | installed | none |
 | [Data-Dump](distributions/Data-Dump.json) | 1.25 | v5.45.5 | installed | none |
+| [Data-Dumper-Concise](distributions/Data-Dumper-Concise.json) | 2.023 | v5.45.5 | installed | none |
 | [Data-OptList](distributions/Data-OptList.json) | 0.115 | v5.45.5 | installed | none |
 | [Data-Section](distributions/Data-Section.json) | 0.200008 | v5.45.5 | installed | none |
 | [DateTime](distributions/DateTime.json) | 1.68 | v5.45.5 | installed | none |
@@ -43,6 +46,7 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [Devel-CheckLib](distributions/Devel-CheckLib.json) | 1.16 | v5.45.5 | installed | none |
 | [Devel-FindPerl](distributions/Devel-FindPerl.json) | 0.016 | v5.45.5 | installed | none |
 | [Devel-GlobalDestruction](distributions/Devel-GlobalDestruction.json) | 0.14 | v5.45.5 | installed | none |
+| [Devel-Hide](distributions/Devel-Hide.json) | 0.0016 | v5.45.5 | installed | none |
 | [Devel-OverloadInfo](distributions/Devel-OverloadInfo.json) | 0.008 | v5.45.5 | installed | none |
 | [Devel-StackTrace](distributions/Devel-StackTrace.json) | 2.05 | v5.45.5 | installed | none |
 | [Devel-StackTrace-AsHTML](distributions/Devel-StackTrace-AsHTML.json) | 0.15 | v5.45.5 | installed | none |
@@ -79,13 +83,18 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [HTTP-Message](distributions/HTTP-Message.json) | 7.04 | v5.45.5 | installed | none |
 | [HTTP-MultiPartParser](distributions/HTTP-MultiPartParser.json) | 0.02 | v5.45.5 | installed | none |
 | [HTTP-Negotiate](distributions/HTTP-Negotiate.json) | 6.01 | v5.45.5 | installed | none |
+| [HTTP-Server-Simple](distributions/HTTP-Server-Simple.json) | 0.52 | v5.45.5 | installed | none |
+| [HTTP-Server-Simple-PSGI](distributions/HTTP-Server-Simple-PSGI.json) | 0.16 | v5.45.5 | installed | none |
+| [Hash-Merge-Simple](distributions/Hash-Merge-Simple.json) | 0.052 | v5.45.5 | installed | none |
 | [Hash-MultiValue](distributions/Hash-MultiValue.json) | 0.16 | v5.45.5 | installed | none |
 | [Hook-LexWrap](distributions/Hook-LexWrap.json) | 0.26 | v5.45.5 | installed | none |
 | [IO-Async](distributions/IO-Async.json) | 0.805 | v5.45.5 | installed | xperl-exception-worker |
 | [IO-HTML](distributions/IO-HTML.json) | 1.004 | v5.45.5 | installed | none |
+| [IO-Stringy](distributions/IO-Stringy.json) | 2.113 | v5.45.5 | installed | none |
 | [IO-TieCombine](distributions/IO-TieCombine.json) | 1.005 | v5.45.5 | installed | none |
 | [IPC-Run3](distributions/IPC-Run3.json) | 0.049 | v5.45.5 | installed | none |
 | [IPC-System-Simple](distributions/IPC-System-Simple.json) | 1.30 | v5.45.5 | installed | none |
+| [JSON](distributions/JSON.json) | 4.11 | v5.45.5 | installed | none |
 | [JSON-MaybeXS](distributions/JSON-MaybeXS.json) | 1.004008 | v5.45.5 | installed | none |
 | [LWP-MediaTypes](distributions/LWP-MediaTypes.json) | 6.05 | v5.45.5 | installed | none |
 | [LWP-Protocol-https](distributions/LWP-Protocol-https.json) | 6.17 | v5.45.5 | installed | none |
@@ -95,6 +104,7 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [Log-Message](distributions/Log-Message.json) | 0.08 | v5.45.5 | installed | none |
 | [Log-Message-Simple](distributions/Log-Message-Simple.json) | 0.10 | v5.45.5 | installed | none |
 | [MIME-Base32](distributions/MIME-Base32.json) | 1.303 | v5.45.5 | installed | none |
+| [MIME-Types](distributions/MIME-Types.json) | 2.30 | v5.45.5 | installed | none |
 | [MRO-Compat](distributions/MRO-Compat.json) | 0.15 | v5.45.5 | installed | none |
 | [Metrics-Any](distributions/Metrics-Any.json) | 0.10 | v5.45.5 | installed | none |
 | [Mixin-Linewise](distributions/Mixin-Linewise.json) | 0.111 | v5.45.5 | installed | none |
@@ -161,6 +171,7 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [Sub-Install](distributions/Sub-Install.json) | 0.929 | v5.45.5 | installed | none |
 | [Sub-Quote](distributions/Sub-Quote.json) | 2.006009 | v5.45.5 | installed | none |
 | [Sub-Uplevel](distributions/Sub-Uplevel.json) | 0.2800 | v5.45.5 | installed | none |
+| [Syntax-Keyword-Gather](distributions/Syntax-Keyword-Gather.json) | 1.003002 | v5.45.5 | installed | none |
 | [Task-Weaken](distributions/Task-Weaken.json) | 1.06 | v5.45.5 | installed | none |
 | [Term-Encoding](distributions/Term-Encoding.json) | 0.03 | v5.45.5 | installed | none |
 | [Term-UI](distributions/Term-UI.json) | 0.50 | v5.45.5 | installed | none |
@@ -208,6 +219,7 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [URI](distributions/URI.json) | 5.40 | v5.45.5 | installed | none |
 | [WWW-Form-UrlEncoded](distributions/WWW-Form-UrlEncoded.json) | 0.26 | v5.45.5 | installed | none |
 | [WWW-RobotRules](distributions/WWW-RobotRules.json) | 6.03 | v5.45.5 | installed | none |
+| [Web-Simple](distributions/Web-Simple.json) | 0.036 | v5.45.5 | installed | none |
 | [XS-Parse-Keyword](distributions/XS-Parse-Keyword.json) | 0.51 | v5.45.5 | installed | xperl-parser-errors |
 | [XS-Parse-Sublike](distributions/XS-Parse-Sublike.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
 | [YAML-PP](distributions/YAML-PP.json) | v0.43.0 | v5.45.5 | installed | localize-no-color |
@@ -216,3 +228,5 @@ Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md
 | [libwww-perl](distributions/libwww-perl.json) | 6.83 | v5.45.5 | installed | none |
 | [namespace-autoclean](distributions/namespace-autoclean.json) | 0.31 | v5.45.5 | installed | none |
 | [namespace-clean](distributions/namespace-clean.json) | 0.27 | v5.45.5 | installed | none |
+| [strictures](distributions/strictures.json) | 2.000006 | v5.45.5 | installed | none |
+| [warnings-illegalproto](distributions/warnings-illegalproto.json) | 0.001003 | v5.45.5 | installed | none |

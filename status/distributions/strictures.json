@@ -1,0 +1,41 @@
+{
+   "distribution" : "strictures",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/strictures-2.000006.tar.gz",
+         "id" : "6e0ced3d1b5d59f80e7f0db99f9845638e91ff4927b30350931ef88a262ffea5",
+         "module" : "strictures",
+         "observed_at" : "2026-11-05T15:07:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "09d57974a6d1b2380c802870fed471108f51170da81458e2751859f2714f8d57",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=42",
+         "version" : "2.000006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

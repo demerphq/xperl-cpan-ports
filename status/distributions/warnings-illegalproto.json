@@ -1,0 +1,41 @@
+{
+   "distribution" : "warnings-illegalproto",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FREW/warnings-illegalproto-0.001003.tar.gz",
+         "id" : "d5741fb8763dc54cc5fa5b0620963c7512352d52308c4fe83e069c6f89b36ee0",
+         "module" : "warnings::illegalproto",
+         "observed_at" : "2026-11-05T15:07:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3dcb31b37e5b7b255285874c341736b060d1d276e085e222f33712cbeb3d1bb1",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=6",
+         "version" : "0.001003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}
