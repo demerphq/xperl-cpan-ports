@@ -1,0 +1,123 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use feature qw(dispatch_on signatures);
+use Digest::SHA qw(sha256_hex);
+use File::Spec;
+use FindBin;
+use Getopt::Long qw(GetOptions);
+use IO::Uncompress::Gunzip qw(gunzip $GunzipError);
+use JSON::PP qw(decode_json);
+
+my ($river_file, $candidates_file, $status_dir, $pending);
+my $limit = 25;
+my $xperl_version = "$^V";
+GetOptions(
+    'river=s' => \$river_file,
+    'candidates=s' => \$candidates_file,
+    'status-dir=s' => \$status_dir,
+    'xperl-version=s' => \$xperl_version,
+    'limit=i' => \$limit,
+    'pending' => \$pending,
+) or die usage();
+die usage() unless defined $river_file && !@ARGV && $limit > 0;
+$status_dir //= File::Spec->catdir($FindBin::Bin, '..', 'status', 'distributions');
+
+my $snapshot = read_file($river_file);
+my $river_json;
+if ($river_file =~ /\.gz\z/) {
+    gunzip(\$snapshot => \$river_json)
+        or die "cannot decompress $river_file: $GunzipError\n";
+}
+else {
+    $river_json = $snapshot;
+}
+my $river = decode_json($river_json);
+die "river snapshot must be a JSON object\n" unless ref($river) eq 'HASH';
+
+my %candidates;
+if (defined $candidates_file) {
+    for my $line (split /\n/, read_file($candidates_file)) {
+        $line =~ s/\s*#.*\z//;
+        $line =~ s/\A\s+|\s+\z//g;
+        next unless length $line;
+        die "invalid candidate distribution: $line\n"
+            unless $line =~ /\A[A-Za-z0-9][A-Za-z0-9._+\-]*\z/;
+        $candidates{$line} = 1;
+    }
+    for my $distribution (sort keys %candidates) {
+        warn "candidate absent from river snapshot: $distribution\n"
+            unless exists $river->{$distribution};
+    }
+}
+
+my %observed;
+opendir my $dir, $status_dir or die "cannot read $status_dir: $!\n";
+for my $file (grep { /\.json\z/ } readdir $dir) {
+    my $record = decode_json(read_file(File::Spec->catfile($status_dir, $file)));
+    my $distribution = $record->{distribution};
+    die "invalid status record: $file\n"
+        unless $record->{schema} == 1 && $file eq "$distribution.json"
+            && ref($record->{observations}) eq 'ARRAY';
+    my @matching = sort {
+        $a->{observed_at} cmp $b->{observed_at} || $a->{id} cmp $b->{id}
+    } grep { $_->{xperl_version} eq $xperl_version }
+      @{$record->{observations}};
+    $observed{$distribution} = $matching[-1] if @matching;
+}
+closedir $dir;
+
+my @rows;
+for my $distribution (keys %$river) {
+    next if defined $candidates_file && !$candidates{$distribution};
+    my $counts = $river->{$distribution};
+    die "invalid river counts for $distribution\n"
+        unless ref($counts) eq 'HASH'
+            && defined($counts->{immediate}) && $counts->{immediate} =~ /\A\d+\z/
+            && defined($counts->{total}) && $counts->{total} =~ /\A\d+\z/
+            && $counts->{total} >= $counts->{immediate};
+    my $observation = $observed{$distribution};
+    my $state = $observation ? $observation->{status} : 'unobserved';
+    my $include = 1;
+    dispatch ($state) {
+        on ('installed') { $include = !$pending }
+        on ('failed') { }
+        on ('unobserved') { }
+        on (_) { die "unknown status for $distribution: $state\n" }
+    }
+    next unless $include;
+    push @rows, {
+        distribution => $distribution,
+        immediate => $counts->{immediate},
+        total => $counts->{total},
+        state => $state,
+        version => $observation ? $observation->{version} : '-',
+    };
+}
+@rows = sort {
+    $b->{total} <=> $a->{total}
+        || $b->{immediate} <=> $a->{immediate}
+        || $a->{distribution} cmp $b->{distribution}
+} @rows;
+splice @rows, $limit if @rows > $limit;
+
+print "# river snapshot input SHA256: ", sha256_hex($snapshot), "\n";
+print "# XPerl $xperl_version; status describes the latest local observation, not necessarily the latest CPAN release\n";
+print "distribution\timmediate\ttotal\tstatus\tobserved_version\n";
+for my $row (@rows) {
+    print join("\t", @{$row}{qw(distribution immediate total state version)}), "\n";
+}
+
+sub read_file ($path) {
+    open my $file, '<', $path or die "cannot read $path: $!\n";
+    binmode $file;
+    local $/;
+    my $data = <$file>;
+    close $file or die "cannot close $path: $!\n";
+    return $data;
+}
+
+sub usage () {
+    return "usage: $0 --river river.json[.gz] [--candidates FILE] [--pending] [--limit N] [--xperl-version VERSION] [--status-dir DIR]\n";
+}

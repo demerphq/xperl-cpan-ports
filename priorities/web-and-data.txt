@@ -1,0 +1,13 @@
+# Current web and data ecosystem candidates. Names are CPAN distributions.
+AnyEvent
+Catalyst-Runtime
+Dancer
+Dancer2
+DBIx-Class
+Mojolicious
+PAGI
+Plack
+POE
+Template-Toolkit
+Web-Simple
+XML-LibXML

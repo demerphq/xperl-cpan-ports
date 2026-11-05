@@ -38,3 +38,7 @@ the XPerl interpreter:
 
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
+
+Use [PRIORITIZATION.md](PRIORITIZATION.md) and `bin/river-priorities` to rank
+candidate ports by their River of CPAN reach alongside local XPerl build
+status. This report is optional and separate from installation.
