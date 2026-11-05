@@ -16,7 +16,7 @@
           "patches": [
             {
               "path": "patches/xperl-exception-callbacks.patch",
-              "sha256": "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf"
+              "sha256": "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"
             }
           ],
           "recipes": ["exception-wrapper-classification-v1"]

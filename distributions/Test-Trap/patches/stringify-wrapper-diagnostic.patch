@@ -1,0 +1,13 @@
+--- a/lib/Test/Trap/Builder.pm
++++ b/lib/Test/Trap/Builder.pm
+@@ -185,7 +185,9 @@
+     }
+     my $ok = $Test->ok('', $arg[$test_name_index]);
+     my $got = $trap->leaveby;
+-    $Test->diag(sprintf<<DIAGNOSTIC, $accessor->{name}, $got, dump($trap->$got));
++    my $value = $trap->$got;
++    $value = "$value" if ${^XPERL_VERSION} && ref($value) eq 'XPerl::Exception';
++    $Test->diag(sprintf<<DIAGNOSTIC, $accessor->{name}, $got, dump($value));
+     Expecting to %s(), but instead %s()ed with %s
+ DIAGNOSTIC
+     $trap->TestFailure;

@@ -1,0 +1,20 @@
+{
+  "source_sha256": "54f99016562b5b1d72110100f1f2be437178cdf84376f495ffd0376f1d7ecb9a",
+  "patch_set_id": "stringify-wrapper-diagnostic",
+  "patch_sha256": "f8dea7f63d874510c60e2e13ee3a7951e2212b0fac0b8148578c0c1ee06d1548",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 22 test files, 1105 tests"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 22 test files, 1105 tests"
+    }
+  ]
+}

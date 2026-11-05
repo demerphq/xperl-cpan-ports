@@ -1,7 +1,7 @@
 {
   "source_sha256": "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
   "patch_set_id": "xperl-exception-callbacks",
-  "patch_sha256": "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf",
+  "patch_sha256": "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c",
   "date": "2026-11-05",
   "platform": "x86_64-linux",
   "xperl_version": "v5.45.5",

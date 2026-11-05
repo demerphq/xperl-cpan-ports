@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Test-Trap",
+  "releases": [
+    {
+      "version": "v0.3.5",
+      "cpan_path": "E/EB/EBHANSSEN/Test-Trap-v0.3.5.tar.gz",
+      "source_sha256": "54f99016562b5b1d72110100f1f2be437178cdf84376f495ffd0376f1d7ecb9a",
+      "patch_sets": [
+        {
+          "id": "stringify-wrapper-diagnostic",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/stringify-wrapper-diagnostic.patch",
+              "sha256": "f8dea7f63d874510c60e2e13ee3a7951e2212b0fac0b8148578c0c1ee06d1548"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

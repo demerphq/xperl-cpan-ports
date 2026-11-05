@@ -9,7 +9,7 @@ When a module has separate handling for text errors and user-thrown
 references, treat `XPerl::Exception` as a text error at that boundary while
 preserving other references unchanged. Stringify the wrapper only when
 building the module's public error message. In XS, use
-`sv_derived_from(err, "XPerl::Exception")` under `#ifdef XPERL`; leave the
+`sv_derived_from(err, "XPerl::Exception")` under `#ifdef XPERL_VERSION`; leave the
 ordinary Perl branch intact. Use `SvPV` and its returned length for the
 wrapper rather than assuming an RV has a useful `SvCUR` value.
 
@@ -35,3 +35,9 @@ the XPerl wrapper as text in this branch and leaves user-thrown references
 unchanged. Its location test helper also stringifies `$@` before matching and
 ignores XPerl's additional propagation lines when identifying the original
 error location.
+
+Test diagnostics may dump an exception object while explaining a different
+assertion failure. Keep the captured exception object intact for callers, but
+stringify an XPerl wrapper when formatting the diagnostic. The `Test-Trap`
+v0.3.5 patch uses `${^XPERL_VERSION}` to select that rendering and leaves
+other reference exceptions unchanged.

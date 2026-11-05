@@ -1,7 +1,7 @@
 {
   "source_sha256": "217de2b585aaf183368a4a54c1adbffae78cc30b7430ad55c59a48d3ca33b30b",
   "patch_set_id": "xperl-hash-entries",
-  "patch_sha256": "bdb986e0727674547b72f8e0c981261ff209ef400b9117ba1b9c0f75da3c9ad3",
+  "patch_sha256": "c2b946a4044d540d3fad7bd901757c541886605b498be98300a9f83a2b25e248",
   "date": "2026-11-05",
   "platform": "x86_64-linux",
   "xperl_version": "v5.45.5",

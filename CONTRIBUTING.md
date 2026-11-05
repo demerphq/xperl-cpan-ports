@@ -7,8 +7,8 @@ to XPerl rather than a missing dependency or a platform problem.
 
 Make the smallest source patch that fixes the incompatibility. Prefer a change
 that works on ordinary Perl too. When an XS implementation must differ, use
-`#ifdef XPERL` after including Perl headers. Keep patch paths relative to the
-release root and usable with `patch -p1`.
+`#ifdef XPERL_VERSION` after including Perl headers. Keep patch paths
+relative to the release root and usable with `patch -p1`.
 
 Build and run the distribution's tests with XPerl after applying the patch.
 Test with ordinary Perl when practical. Add or update the distribution index

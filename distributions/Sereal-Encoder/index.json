@@ -16,7 +16,7 @@
           "patches": [
             {
               "path": "patches/xperl-hash-entries.patch",
-              "sha256": "bdb986e0727674547b72f8e0c981261ff209ef400b9117ba1b9c0f75da3c9ad3"
+              "sha256": "c2b946a4044d540d3fad7bd901757c541886605b498be98300a9f83a2b25e248"
             }
           ],
           "recipes": ["hash-entry-traversal-v1"]

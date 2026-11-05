@@ -4,7 +4,7 @@
                  continue;
              }
              if (buckets && current) {
-+#ifdef XPERL
++#ifdef XPERL_VERSION
 +                const UV limit = HvENTRY_LIMIT(hash);
 +                for (i = 0; i < limit; i++) {
 +                    HE *entry;
@@ -30,7 +30,7 @@
  {
      HE *he = NULL;
      const int do_share_keys = HvSHAREKEYS((SV *)src);
-+#ifdef XPERL
++#ifdef XPERL_VERSION
 +    UV i;
 +    const UV limit = HvENTRY_LIMIT(src);
 +    enc->frames->cursor = &he;
@@ -65,7 +65,7 @@
           * HvEITER, perl frees a deleted entry immediately instead of deferring
           * it, so only restore the pointer if it is still linked where it was. */
          HE *he = NULL;
-+#ifdef XPERL
++#ifdef XPERL_VERSION
 +        if (HvARRAY(hv) && HvHasAUX(hv) && st->riter >= 0) {
 +            UV i;
 +            const UV limit = HvENTRY_LIMIT(hv);

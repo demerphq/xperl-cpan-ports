@@ -15,7 +15,7 @@
                  LEAVE;
  
                  if (! ok) {
-+#ifdef XPERL
++#ifdef XPERL_VERSION
 +                    if (SvROK(err) && !sv_derived_from(err, "XPerl::Exception")) {
 +#else
                      if (SvROK(err)) {
