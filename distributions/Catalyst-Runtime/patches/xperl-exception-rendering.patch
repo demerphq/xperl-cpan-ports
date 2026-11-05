@@ -1,0 +1,14 @@
+--- a/lib/Catalyst.pm
++++ b/lib/Catalyst.pm
+@@ -2088,8 +2088,10 @@
+             $error->rethrow if $c->depth > 0;
+         }
+         else {
+-            unless ( ref $error ) {
++            if ( !ref $error || (${^XPERL_VERSION}
++                && blessed($error) && $error->isa('XPerl::Exception')) ) {
+                 no warnings 'uninitialized';
++                $error = "$error";
+                 chomp $error;
+                 my $class = $last->class;
+                 my $name  = $last->name;

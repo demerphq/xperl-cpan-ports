@@ -1,0 +1,16 @@
+{
+  "source_sha256": "bb83758b7bda360d16e002e5ace69c6459e3d47227cdee6ac4b1b65a6685f110",
+  "patch_set_id": "xperl-exception-rendering",
+  "patch_sha256": "4eca6be12a07ded09e7e8eca51f74798b039d627aabfe91979a043865e0db13a",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "data_dumper_version": "2.193_54",
+  "tests": [
+    {
+      "command": "xperl install --registry ../xperl-cpan-ports Catalyst",
+      "interpreter": "XPerl v5.45.5",
+      "result": "installed: 200 test files, 3727 tests"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Catalyst-Runtime",
+  "releases": [
+    {
+      "version": "5.90132",
+      "cpan_path": "J/JJ/JJNAPIORK/Catalyst-Runtime-5.90132.tar.gz",
+      "source_sha256": "bb83758b7bda360d16e002e5ace69c6459e3d47227cdee6ac4b1b65a6685f110",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-rendering",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-rendering.patch",
+              "sha256": "4eca6be12a07ded09e7e8eca51f74798b039d627aabfe91979a043865e0db13a"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}
