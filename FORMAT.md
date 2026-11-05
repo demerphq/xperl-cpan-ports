@@ -43,7 +43,8 @@ This example describes the shape. It is not an installable registry entry:
 ## Matching
 
 1. Resolve the requested module through the CPAN index to a CPAN author,
-   distribution, and release. An explicit author may select another release.
+   distribution, and release. Explicit author selection is a future installer
+   capability.
 2. Require an exact match for author, distribution name, release version, CPAN archive
    path, and source SHA-256 digest. Never infer compatibility from a similar
    filename or version alone.

@@ -42,9 +42,10 @@ xperl-cpan-ports-1/                  # only when repository 1 is activated
 
 When the caller supplies a module name without an author, resolve it through
 the CPAN index first. The index identifies the default release and its
-author. An explicit author and distribution pair selects that author's
-release instead. Do not guess an author from a distribution name alone when
-the CPAN index does not identify a release.
+author. A future explicit author and distribution request can select another
+author's release. The current installer accepts module names and follows the
+CPAN index default. Do not guess an author from a distribution name alone
+when the CPAN index does not identify a release.
 
 Use the canonical CPAN author ID and distribution name from the resolved
 release as the placement key. Normalize the author ID to uppercase and check
