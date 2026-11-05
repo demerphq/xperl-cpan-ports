@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Template-Toolkit",
+  "releases": [
+    {
+      "version": "3.106",
+      "cpan_path": "T/TO/TODDR/Template-Toolkit-3.106.tar.gz",
+      "source_sha256": "c7474050be80201f1fb55f0a569b9c0ab6c1c3f0cebbd7e601bda9b4046eec85",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-wrapper",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-wrapper.patch",
+              "sha256": "96013e2e3224680be8846dc48b87876ac96fd2c1cc7307bc2179d57a6ff5da7d"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

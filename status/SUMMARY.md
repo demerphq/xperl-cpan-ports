@@ -3,13 +3,14 @@
 Latest observation for each distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 0 of 223 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 1 of 226 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- |
 | [Algorithm-Diff](distributions/Algorithm-Diff.json) | 1.201 | v5.45.5 | installed | none |
 | [Apache-LogFormat-Compiler](distributions/Apache-LogFormat-Compiler.json) | 0.36 | v5.45.5 | installed | none |
 | [App-Cmd](distributions/App-Cmd.json) | 0.340 | v5.45.5 | installed | none |
+| [AppConfig](distributions/AppConfig.json) | 1.71 | v5.45.5 | installed | none |
 | [B-COW](distributions/B-COW.json) | 0.007 | v5.45.5 | installed | none |
 | [B-Hooks-EndOfScope](distributions/B-Hooks-EndOfScope.json) | 0.28 | v5.45.5 | installed | none |
 | [CGI](distributions/CGI.json) | 5.02 | v5.45.5 | installed | none |
@@ -116,6 +117,7 @@ Unresolved failures: 0 of 223 release and XPerl combinations. See [UNRESOLVED.md
 | [Module-Pluggable](distributions/Module-Pluggable.json) | 6.4 | v5.45.5 | installed | none |
 | [Module-Runtime](distributions/Module-Runtime.json) | 0.018 | v5.45.5 | installed | none |
 | [Module-Runtime-Conflicts](distributions/Module-Runtime-Conflicts.json) | 0.003 | v5.45.5 | installed | none |
+| [Mojolicious](distributions/Mojolicious.json) | 9.53 | v5.45.5 | failed | none |
 | [Moo](distributions/Moo.json) | 2.005005 | v5.45.5 | installed | xperl-exception-context |
 | [Moose](distributions/Moose.json) | 2.4001 | v5.45.5 | installed | xperl-error-arguments |
 | [MooseX-Emulate-Class-Accessor-Fast](distributions/MooseX-Emulate-Class-Accessor-Fast.json) | 0.009032 | v5.45.5 | installed | none |
@@ -173,6 +175,7 @@ Unresolved failures: 0 of 223 release and XPerl combinations. See [UNRESOLVED.md
 | [Sub-Uplevel](distributions/Sub-Uplevel.json) | 0.2800 | v5.45.5 | installed | none |
 | [Syntax-Keyword-Gather](distributions/Syntax-Keyword-Gather.json) | 1.003002 | v5.45.5 | installed | none |
 | [Task-Weaken](distributions/Task-Weaken.json) | 1.06 | v5.45.5 | installed | none |
+| [Template-Toolkit](distributions/Template-Toolkit.json) | 3.106 | v5.45.5 | installed | xperl-exception-wrapper |
 | [Term-Encoding](distributions/Term-Encoding.json) | 0.03 | v5.45.5 | installed | none |
 | [Term-UI](distributions/Term-UI.json) | 0.50 | v5.45.5 | installed | none |
 | [TermReadKey](distributions/TermReadKey.json) | 2.38 | v5.45.5 | installed | none |

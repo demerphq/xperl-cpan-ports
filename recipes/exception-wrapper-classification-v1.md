@@ -48,3 +48,10 @@ arrays, while sending an XPerl text wrapper through the string-error path.
 Use `ref($@) eq 'XPerl::Exception'` here: an unblessed array reference does
 not have an `isa` method. Its 64 test files and 1702 tests pass on XPerl
 v5.45.5, including the worker error tests.
+
+Template-Toolkit 3.106 also distinguishes a thrown object from a caught
+string. Its stash must treat an XPerl wrapper as text so a missing method can
+fall back to hash or list access. Its filter context must classify the same
+wrapper as text to keep the filter error type. Preserve the exception path
+for user-thrown objects. Its 121 test files and 3285 tests pass on XPerl
+v5.45.5 after both changes.

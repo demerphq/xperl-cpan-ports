@@ -1,0 +1,26 @@
+--- a/lib/Template/Context.pm
++++ b/lib/Template/Context.pm
+@@ -229,7 +229,9 @@
+         ($filter, $error) = $provider->fetch($name, $args, $self);
+         last unless $error;
+         if ($error == Template::Constants::STATUS_ERROR) {
+-            $self->throw($filter) if ref $filter;
++            $self->throw($filter)
++                if ref($filter) && !( ${^XPERL_VERSION}
++                    && ref($filter) eq 'XPerl::Exception' );
+             $self->throw(Template::Constants::ERROR_FILTER, $filter);
+         }
+         # return $self->error($filter)
+--- a/lib/Template/Stash.pm
++++ b/lib/Template/Stash.pm
+@@ -510,7 +510,9 @@
+             my $class = ref($root) || $root;
+ 
+             # Fail only if the function exists
+-            die $@ if ( ref($@) || $root->can($item) );
++            die $@ if ( (ref($@) && !( ${^XPERL_VERSION}
++                        && ref($@) eq 'XPerl::Exception'))
++                    || $root->can($item) );
+ 
+             # failed to call object method, so try some fallbacks
+             if (reftype $root eq 'HASH') {
