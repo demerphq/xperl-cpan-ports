@@ -1,0 +1,67 @@
+--- a/src/keyword.c
++++ b/src/keyword.c
+@@ -19,6 +19,12 @@
+ #include "keyword.h"
+ #include "infix.h"
+ 
++#ifdef XPERL_VERSION
++#  define XPK_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define XPK_ERROR_COUNT PL_parser->error_count
++#endif
++
+ #include "perl-backcompat.c.inc"
+ 
+ #ifndef wrap_keyword_plugin
+@@ -69,7 +75,9 @@
+ 
+   sv_catpvf(message, "\n");
+ 
++#ifndef XPERL_VERSION
+   PL_parser->error_count++;
++#endif
+   croak_sv(message);
+ }
+ 
+@@ -86,7 +94,7 @@
+ }
+ 
+ #define CHECK_PARSEFAIL      \
+-  if(PL_parser->error_count) \
++  if(XPK_ERROR_COUNT) \
+     croak("parse failed--compilation aborted")
+ 
+ /* TODO: Only ASCII */
+@@ -957,7 +965,7 @@
+ 
+ static int my_keyword_plugin(pTHX_ char *kw, STRLEN kwlen, OP **op)
+ {
+-  if(PL_parser && PL_parser->error_count)
++  if(PL_parser && XPK_ERROR_COUNT)
+     return (*next_keyword_plugin)(aTHX_ kw, kwlen, op);
+ 
+   char *orig_kw = kw;
+--- a/src/infix.c
++++ b/src/infix.c
+@@ -12,6 +12,12 @@
+ 
+ #include "infix.h"
+ 
++#ifdef XPERL_VERSION
++#  define XPK_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define XPK_ERROR_COUNT PL_parser->error_count
++#endif
++
+ #include "perl-backcompat.c.inc"
+ #include "optree-additions.c.inc"
+ 
+@@ -413,7 +419,7 @@
+ 
+ static STRLEN my_infix_plugin(pTHX_ char *op, STRLEN oplen, struct Perl_custom_infix **def)
+ {
+-  if(PL_parser && PL_parser->error_count)
++  if(PL_parser && XPK_ERROR_COUNT)
+     return (*next_infix_plugin)(aTHX_ op, oplen, def);
+ 
+   struct Registration *reg = NULL;

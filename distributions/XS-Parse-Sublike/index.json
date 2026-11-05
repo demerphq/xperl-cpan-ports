@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "XS-Parse-Sublike",
+  "releases": [
+    {
+      "version": "0.42",
+      "cpan_path": "P/PE/PEVANS/XS-Parse-Sublike-0.42.tar.gz",
+      "source_sha256": "4eeab874ac33285662caf28cf0d55cc6bc6d31017a7551f76732b1a59fbebdc6",
+      "patch_sets": [
+        {
+          "id": "xperl-parser-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-parser-errors.patch",
+              "sha256": "b1918a2ec87d874c6189577965b430c14a4c6d5fa852589a9c75dc47ea525a60"
+            }
+          ],
+          "recipes": ["parser-error-count-v1"]
+        }
+      ]
+    }
+  ]
+}

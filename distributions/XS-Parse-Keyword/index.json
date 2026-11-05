@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "XS-Parse-Keyword",
+  "releases": [
+    {
+      "version": "0.51",
+      "cpan_path": "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+      "source_sha256": "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+      "patch_sets": [
+        {
+          "id": "xperl-parser-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-parser-errors.patch",
+              "sha256": "3321022b485537ccb0e8c2569b55be01256c5e40c2586c2e1c3605c15c400436"
+            }
+          ],
+          "recipes": ["parser-error-count-v1"]
+        }
+      ]
+    }
+  ]
+}

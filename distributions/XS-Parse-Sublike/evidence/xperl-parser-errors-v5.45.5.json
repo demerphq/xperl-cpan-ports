@@ -1,0 +1,15 @@
+{
+  "source_sha256": "4eeab874ac33285662caf28cf0d55cc6bc6d31017a7551f76732b1a59fbebdc6",
+  "patch_set_id": "xperl-parser-errors",
+  "patch_sha256": "b1918a2ec87d874c6189577965b430c14a4c6d5fa852589a9c75dc47ea525a60",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "perl Build; perl Build test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 29 test files, 123 tests, 3 optional skips"
+    }
+  ]
+}

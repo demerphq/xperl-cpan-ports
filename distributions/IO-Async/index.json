@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "IO-Async",
+  "releases": [
+    {
+      "version": "0.805",
+      "cpan_path": "P/PE/PEVANS/IO-Async-0.805.tar.gz",
+      "source_sha256": "77f997b74953dbdf63a750fcff4338d1bfacd89100e1fb27c3473f0a222a9a0c",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-worker",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-worker.patch",
+              "sha256": "9492f8568678df1ddcb757db8bd6f89861af96f8ac1d18034283a3619a67ba1f"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

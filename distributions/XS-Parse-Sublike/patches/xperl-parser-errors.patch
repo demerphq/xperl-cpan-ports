@@ -1,0 +1,79 @@
+--- a/lib/XS/Parse/Sublike.xs
++++ b/lib/XS/Parse/Sublike.xs
+@@ -14,6 +14,12 @@
+ 
+ #include "XSParseSublike.h"
+ 
++#ifdef XPERL_VERSION
++#  define XPS_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define XPS_ERROR_COUNT PL_parser->error_count
++#endif
++
+ #define HAVE_PERL_VERSION(R, V, S) \
+     (PERL_REVISION > (R) || (PERL_REVISION == (R) && (PERL_VERSION > (V) || (PERL_VERSION == (V) && (PERL_SUBVERSION >= (S))))))
+ 
+@@ -295,7 +301,7 @@
+ #endif
+         sigop = parse_subsignature(0);
+ 
+-      if(PL_parser->error_count) {
++      if(XPS_ERROR_COUNT) {
+         assert(PL_scopestack_ix == was_scopestack_ix);
+         LEAVE_with_name("parse_sublike");
+         return 0;
+@@ -335,7 +341,7 @@
+   }
+ #endif
+ 
+-  if(PL_parser->error_count) {
++  if(XPS_ERROR_COUNT) {
+     /* parse_block() still sometimes returns a valid body even if a parse
+      * error happens.
+      * We need to destroy this partial body before returning a valid(ish)
+--- a/src/parse_subsignature_ex.c
++++ b/src/parse_subsignature_ex.c
+@@ -20,6 +20,12 @@
+ 
+ #include "parse_subsignature_ex.h"
+ 
++#ifdef XPERL_VERSION
++#  define XPS_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define XPS_ERROR_COUNT PL_parser->error_count
++#endif
++
+ #include "lexer-additions.c.inc"
+ 
+ #include "croak_from_caller.c.inc"
+@@ -78,8 +84,12 @@
+ 
+   sv_catpvf(message, "\n");
+ 
++#ifdef XPERL_VERSION
++  croak_sv(message);
++#else
+   PL_parser->error_count++;
+   warn_sv(message);
++#endif
+ }
+ 
+ /* Stolen from op.c */
+@@ -877,7 +887,7 @@
+         (default_if_undef = lex_consume("//=")) ||
+         (default_if_false = lex_consume("||="))) {
+       OP *defexpr = parse_termexpr(PARSE_OPTIONAL);
+-      if(PL_parser->error_count)
++      if(XPS_ERROR_COUNT)
+         croak("Expected a defaulting expression for optional parameter");
+       if(!paramctx.is_named && !paramctx.varop) {
+         /* We permit `= undef` and the blank `=` but nothing else */
+@@ -1015,7 +1025,7 @@
+     lex_read_space(0);
+     parse_sigelem(sigctx, flags);
+ 
+-    if(PL_parser->error_count) {
++    if(XPS_ERROR_COUNT) {
+       LEAVE;
+       return NULL;
+     }

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "77f997b74953dbdf63a750fcff4338d1bfacd89100e1fb27c3473f0a222a9a0c",
+  "patch_set_id": "xperl-exception-worker",
+  "patch_sha256": "9492f8568678df1ddcb757db8bd6f89861af96f8ac1d18034283a3619a67ba1f",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "perl Build; perl Build test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 64 test files, 1702 tests, 3 optional skips"
+    }
+  ]
+}

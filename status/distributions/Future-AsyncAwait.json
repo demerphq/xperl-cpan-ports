@@ -1,0 +1,81 @@
+{
+   "distribution" : "Future-AsyncAwait",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Future-AsyncAwait-0.71.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "90055da03df09fc98a02a0b02fd2a49f42226d12c208b3ab258494f4a60b1803",
+         "module" : "Future::AsyncAwait",
+         "observed_at" : "2026-11-05T14:35:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+         "status" : "failed",
+         "test_summary" : "Files=52, Tests=204, Failed 6/52 test programs. 3/204 subtests failed.",
+         "version" : "0.71",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Future-AsyncAwait-0.71.tar.gz",
+         "id" : "5cec332e06d8142c2511c66f0632114c69d364c4441159febe51b56ea40defd2",
+         "module" : "Future::AsyncAwait",
+         "observed_at" : "2026-11-05T14:38:22Z",
+         "patch_set" : "xperl-exception-savestack",
+         "patch_sha256" : [
+            "0e55660c6582ca2054e5c94d92c696d49e49e9a54c3162120c4c7461db53dee8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+         "status" : "installed",
+         "test_summary" : "Files=52, Tests=226",
+         "version" : "0.71",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

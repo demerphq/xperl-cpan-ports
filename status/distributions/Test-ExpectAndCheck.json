@@ -1,0 +1,41 @@
+{
+   "distribution" : "Test-ExpectAndCheck",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Test-ExpectAndCheck-0.08.tar.gz",
+         "id" : "3e5741ec55b1b93b366e2b234d9a0617444650131e15fbda6727d7ca6061fe79",
+         "module" : "Test::ExpectAndCheck",
+         "observed_at" : "2026-11-05T14:38:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e638a601f8af144340decc40433d97d8679eb326d4595e0c7821235045e601ed",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=28",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

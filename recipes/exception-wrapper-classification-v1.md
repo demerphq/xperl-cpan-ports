@@ -41,3 +41,10 @@ assertion failure. Keep the captured exception object intact for callers, but
 stringify an XPerl wrapper when formatting the diagnostic. The `Test-Trap`
 v0.3.5 patch uses `${^XPERL_VERSION}` to select that rendering and leaves
 other reference exceptions unchanged.
+
+Workers that interpret a caught reference as an array of error details need
+the same distinction. IO-Async 0.805 keeps the array path for user-thrown
+arrays, while sending an XPerl text wrapper through the string-error path.
+Use `ref($@) eq 'XPerl::Exception'` here: an unblessed array reference does
+not have an `isa` method. Its 64 test files and 1702 tests pass on XPerl
+v5.45.5, including the worker error tests.

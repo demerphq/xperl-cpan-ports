@@ -3,7 +3,7 @@
 Latest observation for each distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 0 of 209 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- |
@@ -52,6 +52,7 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [Eval-Closure](distributions/Eval-Closure.json) | 0.14 | v5.45.5 | installed | none |
 | [Exception-Class](distributions/Exception-Class.json) | 1.46 | v5.45.5 | installed | none |
 | [Exporter-Tiny](distributions/Exporter-Tiny.json) | 1.006003 | v5.45.5 | installed | none |
+| [ExtUtils-CChecker](distributions/ExtUtils-CChecker.json) | 0.12 | v5.45.5 | installed | none |
 | [ExtUtils-Config](distributions/ExtUtils-Config.json) | 0.010 | v5.45.5 | installed | none |
 | [ExtUtils-Helpers](distributions/ExtUtils-Helpers.json) | 0.028 | v5.45.5 | installed | none |
 | [ExtUtils-InstallPaths](distributions/ExtUtils-InstallPaths.json) | 0.015 | v5.45.5 | installed | none |
@@ -62,6 +63,9 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [File-ShareDir-Install](distributions/File-ShareDir-Install.json) | 0.14 | v5.45.5 | installed | none |
 | [File-pushd](distributions/File-pushd.json) | 1.016 | v5.45.5 | installed | none |
 | [Filesys-Notify-Simple](distributions/Filesys-Notify-Simple.json) | 0.14 | v5.45.5 | installed | none |
+| [Future](distributions/Future.json) | 0.54 | v5.45.5 | installed | none |
+| [Future-AsyncAwait](distributions/Future-AsyncAwait.json) | 0.71 | v5.45.5 | installed | xperl-exception-savestack |
+| [Future-IO](distributions/Future-IO.json) | 0.23 | v5.45.5 | installed | none |
 | [Getopt-Long-Descriptive](distributions/Getopt-Long-Descriptive.json) | 0.117 | v5.45.5 | installed | none |
 | [HTML-Parser](distributions/HTML-Parser.json) | 3.86 | v5.45.5 | installed | stable-entity-value |
 | [HTML-Tagset](distributions/HTML-Tagset.json) | 3.24 | v5.45.5 | installed | none |
@@ -77,6 +81,7 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [HTTP-Negotiate](distributions/HTTP-Negotiate.json) | 6.01 | v5.45.5 | installed | none |
 | [Hash-MultiValue](distributions/Hash-MultiValue.json) | 0.16 | v5.45.5 | installed | none |
 | [Hook-LexWrap](distributions/Hook-LexWrap.json) | 0.26 | v5.45.5 | installed | none |
+| [IO-Async](distributions/IO-Async.json) | 0.805 | v5.45.5 | installed | xperl-exception-worker |
 | [IO-HTML](distributions/IO-HTML.json) | 1.004 | v5.45.5 | installed | none |
 | [IO-TieCombine](distributions/IO-TieCombine.json) | 1.005 | v5.45.5 | installed | none |
 | [IPC-Run3](distributions/IPC-Run3.json) | 0.049 | v5.45.5 | installed | none |
@@ -91,6 +96,7 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [Log-Message-Simple](distributions/Log-Message-Simple.json) | 0.10 | v5.45.5 | installed | none |
 | [MIME-Base32](distributions/MIME-Base32.json) | 1.303 | v5.45.5 | installed | none |
 | [MRO-Compat](distributions/MRO-Compat.json) | 0.15 | v5.45.5 | installed | none |
+| [Metrics-Any](distributions/Metrics-Any.json) | 0.10 | v5.45.5 | installed | none |
 | [Mixin-Linewise](distributions/Mixin-Linewise.json) | 0.111 | v5.45.5 | installed | none |
 | [Mock-Config](distributions/Mock-Config.json) | 0.05 | v5.45.5 | installed | none |
 | [Module-Build](distributions/Module-Build.json) | 0.4234 | v5.45.5 | installed | none |
@@ -113,6 +119,7 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [MooseX-Types-Perl](distributions/MooseX-Types-Perl.json) | 0.101344 | v5.45.5 | installed | none |
 | [Net-HTTP](distributions/Net-HTTP.json) | 6.24 | v5.45.5 | installed | none |
 | [Number-Compare](distributions/Number-Compare.json) | 0.03 | v5.45.5 | installed | none |
+| [PAGI](distributions/PAGI.json) | 0.003001 | v5.45.5 | installed | none |
 | [POSIX-strftime-Compiler](distributions/POSIX-strftime-Compiler.json) | 0.46 | v5.45.5 | installed | none |
 | [PPI](distributions/PPI.json) | 1.291 | v5.45.5 | installed | none |
 | [Package-DeprecationManager](distributions/Package-DeprecationManager.json) | 0.18 | v5.45.5 | installed | none |
@@ -146,6 +153,7 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [String-Flogger](distributions/String-Flogger.json) | 1.101246 | v5.45.5 | installed | none |
 | [String-Formatter](distributions/String-Formatter.json) | 1.235 | v5.45.5 | installed | none |
 | [String-RewritePrefix](distributions/String-RewritePrefix.json) | 0.009 | v5.45.5 | installed | none |
+| [Struct-Dumb](distributions/Struct-Dumb.json) | 0.16 | v5.45.5 | installed | none |
 | [Sub-Exporter](distributions/Sub-Exporter.json) | 0.992 | v5.45.5 | installed | none |
 | [Sub-Exporter-ForMethods](distributions/Sub-Exporter-ForMethods.json) | 0.100055 | v5.45.5 | installed | none |
 | [Sub-Exporter-GlobExporter](distributions/Sub-Exporter-GlobExporter.json) | 0.006 | v5.45.5 | installed | none |
@@ -160,17 +168,21 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [Test-Deep](distributions/Test-Deep.json) | 1.205 | v5.45.5 | installed | none |
 | [Test-Differences](distributions/Test-Differences.json) | 0.73 | v5.45.5 | installed | unicode-dumper-escapes |
 | [Test-Exception](distributions/Test-Exception.json) | 0.43 | v5.45.5 | installed | xperl-wrapper-rendering |
+| [Test-ExpectAndCheck](distributions/Test-ExpectAndCheck.json) | 0.08 | v5.45.5 | installed | none |
 | [Test-FailWarnings](distributions/Test-FailWarnings.json) | 0.008 | v5.45.5 | installed | none |
 | [Test-Fatal](distributions/Test-Fatal.json) | 0.019 | v5.45.5 | installed | none |
 | [Test-File](distributions/Test-File.json) | 1.995 | v5.45.5 | installed | none |
 | [Test-File-ShareDir](distributions/Test-File-ShareDir.json) | 1.001002 | v5.45.5 | installed | none |
+| [Test-Future-IO-Impl](distributions/Test-Future-IO-Impl.json) | 0.21 | v5.45.5 | installed | none |
 | [Test-LeakTrace](distributions/Test-LeakTrace.json) | 0.17 | v5.45.5 | installed | none |
 | [Test-LongString](distributions/Test-LongString.json) | 0.17 | v5.45.5 | installed | none |
+| [Test-Metrics-Any](distributions/Test-Metrics-Any.json) | 0.02 | v5.45.5 | installed | none |
 | [Test-MockTime](distributions/Test-MockTime.json) | 0.17 | v5.45.5 | installed | none |
 | [Test-More-UTF8](distributions/Test-More-UTF8.json) | 0.05 | v5.45.5 | installed | none |
 | [Test-Needs](distributions/Test-Needs.json) | 0.002010 | v5.45.5 | installed | none |
 | [Test-NoWarnings](distributions/Test-NoWarnings.json) | 1.06 | v5.45.5 | installed | none |
 | [Test-Object](distributions/Test-Object.json) | 0.08 | v5.45.5 | installed | none |
+| [Test-Pod](distributions/Test-Pod.json) | 1.52 | v5.45.5 | installed | none |
 | [Test-Requires](distributions/Test-Requires.json) | 0.11 | v5.45.5 | installed | none |
 | [Test-RequiresInternet](distributions/Test-RequiresInternet.json) | 0.05 | v5.45.5 | installed | none |
 | [Test-SharedFork](distributions/Test-SharedFork.json) | 0.35 | v5.45.5 | installed | none |
@@ -196,6 +208,8 @@ Unresolved failures: 0 of 195 release and XPerl combinations. See [UNRESOLVED.md
 | [URI](distributions/URI.json) | 5.40 | v5.45.5 | installed | none |
 | [WWW-Form-UrlEncoded](distributions/WWW-Form-UrlEncoded.json) | 0.26 | v5.45.5 | installed | none |
 | [WWW-RobotRules](distributions/WWW-RobotRules.json) | 6.03 | v5.45.5 | installed | none |
+| [XS-Parse-Keyword](distributions/XS-Parse-Keyword.json) | 0.51 | v5.45.5 | installed | xperl-parser-errors |
+| [XS-Parse-Sublike](distributions/XS-Parse-Sublike.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
 | [YAML-PP](distributions/YAML-PP.json) | v0.43.0 | v5.45.5 | installed | localize-no-color |
 | [YAML-Tiny](distributions/YAML-Tiny.json) | 1.76 | v5.45.5 | installed | none |
 | [aliased](distributions/aliased.json) | 0.34 | v5.45.5 | installed | none |

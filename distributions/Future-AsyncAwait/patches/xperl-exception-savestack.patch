@@ -1,0 +1,59 @@
+--- a/lib/Future/AsyncAwait.xs
++++ b/lib/Future/AsyncAwait.xs
+@@ -830,7 +830,11 @@
+          * case of  local $@  is allowable
+          * See also  https://rt.cpan.org/Ticket/Display.html?id=122793
+          */
++#ifdef XPERL_VERSION
++        if(gv != PL_errgv && gv != PL_errorobjgv) {
++#else
+         if(gv != PL_errgv) {
++#endif
+           const char *name = GvNAME(gv);
+           const char *stashname = HvNAME(GvSTASH(gv));
+ 
+--- a/t/06await-nested.t
++++ b/t/06await-nested.t
+@@ -47,7 +47,13 @@
+ 
+    $f->done( "result" );
+ 
+-   is( scalar $fret->failure, "Oopsie\n", '$fret->failure through two nested async subs' );
++   if( ${^XPERL_VERSION} ) {
++      like( scalar $fret->failure, qr/\AOopsie\n\t\.\.\.propagated at .* line \d+\.\n\z/,
++         '$fret->failure through two nested async subs' );
++   }
++   else {
++      is( scalar $fret->failure, "Oopsie\n", '$fret->failure through two nested async subs' );
++   }
+ }
+ 
+ # await through two nested async method calls
+@@ -107,7 +113,13 @@
+     my $fret = func_fail_wrap();
+     $f->fail("aiee\n");
+ 
+-    is( $fret->failure, "aiee\n", "nested fail" );
++    if( ${^XPERL_VERSION} ) {
++        like( scalar $fret->failure, qr/\Aaiee\n\t\.\.\.propagated at .* line \d+\.\n\z/,
++            "nested fail" );
++    }
++    else {
++        is( $fret->failure, "aiee\n", "nested fail" );
++    }
+ }
+ 
+ is( Future::AsyncAwait::__cxstack_ix, $orig_cxstack_ix,
+--- a/t/32compile-errors.t
++++ b/t/32compile-errors.t
+@@ -71,7 +71,9 @@
+ {
+    local $@;
+ 
+-   my $err = HAVE_XPK_0_09 ?
++   my $err = ${^XPERL_VERSION} ?
++      qr/Global symbol "\$api" requires explicit package name/ :
++      HAVE_XPK_0_09 ?
+       qr/^parse failed--compilation aborted / :
+       qr/^Global symbol "\$api" requires explicit package name/;
+ 

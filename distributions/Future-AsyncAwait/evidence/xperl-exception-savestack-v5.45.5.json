@@ -1,0 +1,15 @@
+{
+  "source_sha256": "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+  "patch_set_id": "xperl-exception-savestack",
+  "patch_sha256": "0e55660c6582ca2054e5c94d92c696d49e49e9a54c3162120c4c7461db53dee8",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "perl Build; perl Build test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 52 test files, 226 tests, 11 optional skips"
+    }
+  ]
+}

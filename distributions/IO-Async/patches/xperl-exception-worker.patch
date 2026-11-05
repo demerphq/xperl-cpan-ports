@@ -1,0 +1,11 @@
+--- a/lib/IO/Async/Internals/FunctionWorker.pm
++++ b/lib/IO/Async/Internals/FunctionWorker.pm
+@@ -21,7 +21,7 @@
+       if( $ok ) {
+          $ret_channel->send( [ r => @ret ] );
+       }
+-      elsif( ref $@ ) {
++      elsif( ref $@ && !( ${^XPERL_VERSION} && ref($@) eq "XPerl::Exception" ) ) {
+          # Presume that $@ is an ARRAYref of error results
+          $ret_channel->send( [ e => @{ $@ } ] );
+       }
