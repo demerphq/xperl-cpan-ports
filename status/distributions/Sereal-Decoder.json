@@ -1,0 +1,37 @@
+{
+   "distribution" : "Sereal-Decoder",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Sereal-Decoder-6.003.tar.gz",
+         "id" : "f833cd643f85cb4117adc02aac90f0f25eab1c3f69ebabfdf05b621b4ce52953",
+         "module" : "Sereal::Decoder",
+         "observed_at" : "2026-11-05T10:18:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2e6908af638b34b1f381019b0de1fd6dabf67b0fd2efcc030bfb3e2f7d8ce45b",
+         "status" : "installed",
+         "test_summary" : "Files=107, Tests=82022",
+         "version" : "6.003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

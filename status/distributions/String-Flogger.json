@@ -1,0 +1,76 @@
+{
+   "distribution" : "String-Flogger",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/String-Flogger-1.101246.tar.gz",
+         "id" : "597efffbbd6fdfdfb074645c0fc266979da1e755ed36683d9be0052cfabfe9ad",
+         "module" : "String::Flogger",
+         "observed_at" : "2026-11-05T12:06:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "15f8491e07818bb3cfa9f6bd3aabf6430ba9b4e309f18114358be3d81bff3a0f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "1.101246",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/String-Flogger-1.101246.tar.gz",
+         "id" : "7e5b348078746afb670cf15087e5c2a30b749c76634fc7a6b7c5a8cf787cd960",
+         "module" : "String::Flogger",
+         "observed_at" : "2026-11-05T12:26:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "15f8491e07818bb3cfa9f6bd3aabf6430ba9b4e309f18114358be3d81bff3a0f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "1.101246",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

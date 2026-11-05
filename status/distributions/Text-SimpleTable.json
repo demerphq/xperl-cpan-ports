@@ -1,0 +1,41 @@
+{
+   "distribution" : "Text-SimpleTable",
+   "observations" : [
+      {
+         "cpan_path" : "M/MR/MRAMBERG/Text-SimpleTable-2.07.tar.gz",
+         "id" : "ef357ec136a941f4a5d5a085299419cbd97e0cf796fa107c48d7192c9274a39d",
+         "module" : "Text::SimpleTable",
+         "observed_at" : "2026-11-05T13:20:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "256d3f38764e96333158b14ab18257b92f3155c60d658cafb80389f72f4619ed",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=10",
+         "version" : "2.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,76 @@
+{
+   "distribution" : "Role-HasMessage",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Role-HasMessage-0.007.tar.gz",
+         "id" : "8056e74de618f5714731fa449a4301dba38c8029cb9b580af591e52a15dcf899",
+         "module" : "Role::HasMessage",
+         "observed_at" : "2026-11-05T11:56:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5e267a4d7620b368481204c88ea2044b8b2a58ff8b05577f2717b2754c0414ce",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=6",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Role-HasMessage-0.007.tar.gz",
+         "id" : "199c6b9a9dd68a81ec1c5b6b53cc81ae51ed10e00f4e8e4fa35e29a33869713a",
+         "module" : "Role::HasMessage",
+         "observed_at" : "2026-11-05T12:25:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5e267a4d7620b368481204c88ea2044b8b2a58ff8b05577f2717b2754c0414ce",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=6",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

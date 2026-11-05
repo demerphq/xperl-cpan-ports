@@ -1,0 +1,41 @@
+{
+   "distribution" : "DBI",
+   "observations" : [
+      {
+         "cpan_path" : "H/HM/HMBRAND/DBI-1.656.tgz",
+         "id" : "1331686f8599bc84c1f039f4c60e0210eeb22720296f4bebac61f979940f663a",
+         "module" : "DBI",
+         "observed_at" : "2026-11-05T11:08:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ab5f2b9aef00951ed4598723d6131a00b03e68193478dd5e5f211015520a6ef0",
+         "status" : "installed",
+         "test_summary" : "Files=216, Tests=9722",
+         "version" : "1.656",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

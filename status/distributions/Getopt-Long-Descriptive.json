@@ -1,0 +1,111 @@
+{
+   "distribution" : "Getopt-Long-Descriptive",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Getopt-Long-Descriptive-0.117.tar.gz",
+         "id" : "b583318036756756ceb3dbfd227677056492315396bf148291d14900d9825f5c",
+         "module" : "Getopt::Long::Descriptive",
+         "observed_at" : "2026-11-05T11:30:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "18cba2392a0b7550bbc3d7c98c6fc5d81f6699d308e4a17e1a143ba4521005a3",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=80",
+         "version" : "0.117",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Getopt-Long-Descriptive-0.117.tar.gz",
+         "id" : "f85945146cb0e686337b854580ce9f33e43a2eaf7dabe9bbda77fdd3d350dd53",
+         "module" : "Getopt::Long::Descriptive",
+         "observed_at" : "2026-11-05T12:21:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "18cba2392a0b7550bbc3d7c98c6fc5d81f6699d308e4a17e1a143ba4521005a3",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=80",
+         "version" : "0.117",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Getopt-Long-Descriptive-0.117.tar.gz",
+         "id" : "81ddd450542810be985f2ba88d9fd4d269e8b3f6dc85819ffa5a7f80bda2c7c0",
+         "module" : "Getopt::Long::Descriptive",
+         "observed_at" : "2026-11-05T13:05:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "18cba2392a0b7550bbc3d7c98c6fc5d81f6699d308e4a17e1a143ba4521005a3",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=80",
+         "version" : "0.117",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

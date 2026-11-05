@@ -1,0 +1,76 @@
+{
+   "distribution" : "Log-Message-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BINGOS/Log-Message-Simple-0.10.tar.gz",
+         "id" : "7f4b65a14b4d2fb3cc05fca012175f37c074223275ba9128751abb54108893d9",
+         "module" : "Log::Message::Simple",
+         "observed_at" : "2026-11-05T12:16:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "aa12d1a4c0ac260b94d448fa01feba242a8a85cb6cbfdc66432e3b5b468add96",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=97",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/Log-Message-Simple-0.10.tar.gz",
+         "id" : "0acc98d5a0727c00c8bb4ad616137b92c0ac3ec3252d78397c08e117bc10ad76",
+         "module" : "Log::Message::Simple",
+         "observed_at" : "2026-11-05T12:28:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "aa12d1a4c0ac260b94d448fa01feba242a8a85cb6cbfdc66432e3b5b468add96",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=97",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

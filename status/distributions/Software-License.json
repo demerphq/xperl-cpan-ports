@@ -1,0 +1,76 @@
+{
+   "distribution" : "Software-License",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Software-License-0.104007.tar.gz",
+         "id" : "72d55af3c944d54aa4df1ab8e1a1c40f5bdf6dbf9ab7b55a988fe2650685792b",
+         "module" : "Software::License",
+         "observed_at" : "2026-11-05T12:16:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "81462da3cd9e745901f29ff006c4c804cc9db017ccf45154b3cd9558540bc191",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=232",
+         "version" : "0.104007",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Software-License-0.104007.tar.gz",
+         "id" : "2591d8c5fb6a3b0cf0568cfaba74520ce34f2b3afc3d68bc2f5e4eb0ddb21ba6",
+         "module" : "Software::License",
+         "observed_at" : "2026-11-05T12:28:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "81462da3cd9e745901f29ff006c4c804cc9db017ccf45154b3cd9558540bc191",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=232",
+         "version" : "0.104007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,41 @@
+{
+   "distribution" : "HTTP-MultiPartParser",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHANSEN/HTTP-MultiPartParser-0.02.tar.gz",
+         "id" : "3e97aa9b000d19cd8242a66a33dc87d374bfd569566a1e635519ecee8270d7f3",
+         "module" : "HTTP::MultiPartParser",
+         "observed_at" : "2026-11-05T13:07:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5eddda159f54d16f868e032440ac2b024e55aac48931871b62627f1a16d00b12",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=43",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

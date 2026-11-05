@@ -1,0 +1,111 @@
+{
+   "distribution" : "String-RewritePrefix",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/String-RewritePrefix-0.009.tar.gz",
+         "id" : "b71d1a472cf17fe2bbe96655d31ccee3c249dc7202342ee923d51a2d4cf7bfb5",
+         "module" : "String::RewritePrefix",
+         "observed_at" : "2026-11-05T11:31:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "44918bec96a54af8ca37ca897e436709ec284a07b28516ef3cce4666869646d5",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=39",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/String-RewritePrefix-0.009.tar.gz",
+         "id" : "31368a072e8d5752d7f8948a3ac9abf036343aa9d5ef5cd4bee4ca3b3fc179a3",
+         "module" : "String::RewritePrefix",
+         "observed_at" : "2026-11-05T12:22:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "44918bec96a54af8ca37ca897e436709ec284a07b28516ef3cce4666869646d5",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=39",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/String-RewritePrefix-0.009.tar.gz",
+         "id" : "f258a416c7e5368b6ecb1663e5cf39806679c5fb2684421324ae4545901726ce",
+         "module" : "String::RewritePrefix",
+         "observed_at" : "2026-11-05T13:20:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "44918bec96a54af8ca37ca897e436709ec284a07b28516ef3cce4666869646d5",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=39",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

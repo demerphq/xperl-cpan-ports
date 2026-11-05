@@ -1,0 +1,37 @@
+{
+   "distribution" : "Text-Diff",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Text-Diff-1.46.tar.gz",
+         "id" : "5e1a3a28657840bbdccfcb5138b9ef83bcde4b54816f9ef220dc398f0554bd2e",
+         "module" : "Text::Diff",
+         "observed_at" : "2026-11-05T10:18:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3fc983e3140fa2580250bbcf2b52e2acbdbc5abda4374c3be78235905d8ca8eb",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=33",
+         "version" : "1.46",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

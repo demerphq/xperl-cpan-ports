@@ -1,0 +1,76 @@
+{
+   "distribution" : "DateTime",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-1.68.tar.gz",
+         "id" : "acb574ad2786fe7598551c852d9b2a4b0ff8174de280ac702e57e555e6eb7941",
+         "module" : "DateTime",
+         "observed_at" : "2026-11-05T12:04:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "dddaf4a0def18dce6b301079881a17b4a8c91184ae3fa3dc58723a3005eab9d3",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3592",
+         "version" : "1.68",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-1.68.tar.gz",
+         "id" : "ffacf2984a4ba61b1ddc159485c14388faf308450c1d9664d7264201d17ef878",
+         "module" : "DateTime",
+         "observed_at" : "2026-11-05T12:26:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "dddaf4a0def18dce6b301079881a17b4a8c91184ae3fa3dc58723a3005eab9d3",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3592",
+         "version" : "1.68",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

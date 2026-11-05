@@ -1,0 +1,76 @@
+{
+   "distribution" : "Scope-Guard",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz",
+         "id" : "a432c74f1a3904b66cd03400c662c9f68cf383897ee12be90ca96a06a91cef6c",
+         "module" : "Scope::Guard",
+         "observed_at" : "2026-11-05T12:03:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8c9b1bea5c56448e2c3fadc65d05be9e4690a3823a80f39d2f10fdd8f777d278",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=54",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz",
+         "id" : "3a1d4806eabb933f0b544654adbd7f026656973ca3c1c60dae5539337237e527",
+         "module" : "Scope::Guard",
+         "observed_at" : "2026-11-05T12:26:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8c9b1bea5c56448e2c3fadc65d05be9e4690a3823a80f39d2f10fdd8f777d278",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=54",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

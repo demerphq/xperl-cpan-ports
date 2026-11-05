@@ -1,0 +1,41 @@
+{
+   "distribution" : "Test-TCP",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Test-TCP-2.22.tar.gz",
+         "id" : "80519895b66444d4f6b21f5524b06b45c88a477f2779322c68d6c5f0d545eff0",
+         "module" : "Test::TCP",
+         "observed_at" : "2026-11-05T13:07:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3e53c3c06d6d0980a2bfeb915602b714e682ee211ae88c11748cf2cc714e7b57",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=150",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

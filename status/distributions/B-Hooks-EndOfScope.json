@@ -1,0 +1,111 @@
+{
+   "distribution" : "B-Hooks-EndOfScope",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz",
+         "id" : "a9aab9b60d0c824e37bac5bc476df8756f273226e87d51440d3c2195c3788389",
+         "module" : "B::Hooks::EndOfScope",
+         "observed_at" : "2026-11-05T11:56:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "edac77a17fc36620c8324cc194ce1fad2f02e9fcbe72d08ad0b2c47f0c7fd8ef",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=23",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz",
+         "id" : "1ba6ddba7e403ef875654b64dcf162c24ae68c43412aafc10bccf2d9f50e32f5",
+         "module" : "B::Hooks::EndOfScope",
+         "observed_at" : "2026-11-05T12:24:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "edac77a17fc36620c8324cc194ce1fad2f02e9fcbe72d08ad0b2c47f0c7fd8ef",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=23",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz",
+         "id" : "5a1c34e0486b65b7b6d2a2e0222856e9b81cef434abbba3071e049e52bc31001",
+         "module" : "B::Hooks::EndOfScope",
+         "observed_at" : "2026-11-05T13:04:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "edac77a17fc36620c8324cc194ce1fad2f02e9fcbe72d08ad0b2c47f0c7fd8ef",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=23",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

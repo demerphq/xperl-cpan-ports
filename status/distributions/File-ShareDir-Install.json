@@ -1,0 +1,111 @@
+{
+   "distribution" : "File-ShareDir-Install",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz",
+         "id" : "de27d54e916a9bec9001dac00eedf6143289b358c18a52d955959e8063f1d9bc",
+         "module" : "File::ShareDir::Install",
+         "observed_at" : "2026-11-05T12:02:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8f9533b198f2d4a9a5288cbc7d224f7679ad05a7a8573745599789428bc5aea0",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=39",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz",
+         "id" : "1ce10237001da509fb1ef4148afa729d2b6f209254de2a6f7a017158fce94d14",
+         "module" : "File::ShareDir::Install",
+         "observed_at" : "2026-11-05T12:25:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8f9533b198f2d4a9a5288cbc7d224f7679ad05a7a8573745599789428bc5aea0",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=39",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz",
+         "id" : "3c46fbd54cccbf5f48e93980a7ca32efa92036c0e89573299507c3480ad720d0",
+         "module" : "File::ShareDir::Install",
+         "observed_at" : "2026-11-05T13:06:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8f9533b198f2d4a9a5288cbc7d224f7679ad05a7a8573745599789428bc5aea0",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=39",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

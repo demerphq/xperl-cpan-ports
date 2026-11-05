@@ -1,0 +1,111 @@
+{
+   "distribution" : "Dist-CheckConflicts",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz",
+         "id" : "60e5e556c37ac6eda9a8ed18900d63dfa086168e8041a4f1267eb6ed2af76a0f",
+         "module" : "Dist::CheckConflicts",
+         "observed_at" : "2026-11-05T11:15:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea844b9686c94d666d9d444321d764490b2cde2f985c4165b4c2c77665caedc4",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=40",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz",
+         "id" : "052d3af503e4defc4763cd9496bb759d1a0d437e4c1cb497e115671e90c35114",
+         "module" : "Dist::CheckConflicts",
+         "observed_at" : "2026-11-05T12:21:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea844b9686c94d666d9d444321d764490b2cde2f985c4165b4c2c77665caedc4",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=40",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz",
+         "id" : "744f7be0e46128df460ec6310a3ca7c2432472416ce865e324e2aa823406490c",
+         "module" : "Dist::CheckConflicts",
+         "observed_at" : "2026-11-05T13:01:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea844b9686c94d666d9d444321d764490b2cde2f985c4165b4c2c77665caedc4",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=40",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,37 @@
+{
+   "distribution" : "Devel-CheckLib",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATTN/Devel-CheckLib-1.16.tar.gz",
+         "id" : "cb384268d8efa3aa3a966600ab96936bcfc9510d3a74eb68c54fa9a77527aca3",
+         "module" : "Devel::CheckLib",
+         "observed_at" : "2026-11-05T10:17:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "869d38c258e646dcef676609f0dd7ca90f085f56cf6fd7001b019a5d5b831fca",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=42",
+         "version" : "1.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,111 @@
+{
+   "distribution" : "Safe-Isa",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Safe-Isa-1.000010.tar.gz",
+         "id" : "beb85e60a419979593834a49bfb25bd41625ad697b08b775f0e7be5a2f13946e",
+         "module" : "Safe::Isa",
+         "observed_at" : "2026-11-05T12:06:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "87f4148aa0ff1d5e652723322eab7dafa3801c967d6f91ac9147a3c467b8a66a",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=88",
+         "version" : "1.000010",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Safe-Isa-1.000010.tar.gz",
+         "id" : "b4bc68221c00bc8066417369b9ac1e833b3a364748566e6985d42f7e1f7d4ef1",
+         "module" : "Safe::Isa",
+         "observed_at" : "2026-11-05T12:27:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "87f4148aa0ff1d5e652723322eab7dafa3801c967d6f91ac9147a3c467b8a66a",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=88",
+         "version" : "1.000010",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Safe-Isa-1.000010.tar.gz",
+         "id" : "d04bec4cac40a58b3747db40f1eab15346e55fcfc1b9eb8f7e160f37f552f677",
+         "module" : "Safe::Isa",
+         "observed_at" : "2026-11-05T13:20:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "87f4148aa0ff1d5e652723322eab7dafa3801c967d6f91ac9147a3c467b8a66a",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=88",
+         "version" : "1.000010",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

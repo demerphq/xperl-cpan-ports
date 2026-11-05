@@ -1,0 +1,41 @@
+{
+   "distribution" : "Test-Time",
+   "observations" : [
+      {
+         "cpan_path" : "A/AN/ANATOFUZ/Test-Time-0.092.tar.gz",
+         "id" : "0fcf96e436db00b3b903a490c8ba2b6b41823c4596164ee33e2b9de5d8e20d73",
+         "module" : "Test::Time",
+         "observed_at" : "2026-11-05T13:06:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "30d90f54ce840893c7ba2cac2a4d1eecd4c9cdf805910c595e3ae89dfd644738",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=12",
+         "version" : "0.092",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

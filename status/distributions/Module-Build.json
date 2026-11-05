@@ -1,0 +1,111 @@
+{
+   "distribution" : "Module-Build",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-0.4234.tar.gz",
+         "id" : "d8ba1f558e1d1a3236f267e3a1120f26f7031e6c9edd1dd5f820a72c2e667bad",
+         "module" : "Module::Build",
+         "observed_at" : "2026-11-05T11:16:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "66aeac6127418be5e471ead3744648c766bd01482825c5b66652675f2bc86a8f",
+         "status" : "installed",
+         "test_summary" : "Files=53, Tests=1189",
+         "version" : "0.4234",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-0.4234.tar.gz",
+         "id" : "44ac99dbc60fcddc43c6d6448c62b3544e90b08da5f719329c6a411de2361c28",
+         "module" : "Module::Build",
+         "observed_at" : "2026-11-05T12:21:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "66aeac6127418be5e471ead3744648c766bd01482825c5b66652675f2bc86a8f",
+         "status" : "installed",
+         "test_summary" : "Files=53, Tests=1189",
+         "version" : "0.4234",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-0.4234.tar.gz",
+         "id" : "4cf1ae32fc9dfe0e3b4d838676ce1f37d3942812f7d33878060df9658b40d8ba",
+         "module" : "Module::Build",
+         "observed_at" : "2026-11-05T13:05:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "66aeac6127418be5e471ead3744648c766bd01482825c5b66652675f2bc86a8f",
+         "status" : "installed",
+         "test_summary" : "Files=53, Tests=1189",
+         "version" : "0.4234",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

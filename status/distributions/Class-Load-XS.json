@@ -1,0 +1,111 @@
+{
+   "distribution" : "Class-Load-XS",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Load-XS-0.10.tar.gz",
+         "id" : "d8f592899fd0f3d372f1088b500f7724a8eacfc7c6ef434738e65515f434510f",
+         "module" : "Class::Load::XS",
+         "observed_at" : "2026-11-05T11:49:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5bc22cf536ebfd2564c5bdaf42f0d8a4cee3d1930fc8b44b7d4a42038622add1",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=125",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Load-XS-0.10.tar.gz",
+         "id" : "52017fc8e336c364c7e28d8d391b895a32c513a584402b6aaec2a2c8b61684ad",
+         "module" : "Class::Load::XS",
+         "observed_at" : "2026-11-05T12:23:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5bc22cf536ebfd2564c5bdaf42f0d8a4cee3d1930fc8b44b7d4a42038622add1",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=125",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Load-XS-0.10.tar.gz",
+         "id" : "efdf0a3713b7c50ef99fb3aee2fd7e4a9d2f9a3d0a59c1269efdc13146a3c7e3",
+         "module" : "Class::Load::XS",
+         "observed_at" : "2026-11-05T13:02:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5bc22cf536ebfd2564c5bdaf42f0d8a4cee3d1930fc8b44b7d4a42038622add1",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=125",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

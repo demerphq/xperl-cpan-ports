@@ -1,0 +1,111 @@
+{
+   "distribution" : "HTTP-Date",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Date-6.08.tar.gz",
+         "id" : "185c880a30363e7a5beaac7c43fc9d19dec21c967c10634ad53d6d6665fba708",
+         "module" : "HTTP::Date",
+         "observed_at" : "2026-11-05T11:31:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b57d80ca6d821c6949ca48b27467d45aba7a9c77346562306facca781a003e44",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=181",
+         "version" : "6.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Date-6.08.tar.gz",
+         "id" : "9a402cee13a3f25a1f171160a7a54dc9a52235ea2689f6c07851ecb101f39b52",
+         "module" : "HTTP::Date",
+         "observed_at" : "2026-11-05T12:22:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b57d80ca6d821c6949ca48b27467d45aba7a9c77346562306facca781a003e44",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=181",
+         "version" : "6.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Date-6.08.tar.gz",
+         "id" : "66d907da2c7f12f290bace8b80327910df103d4d790be9bc811090ac11c0a54e",
+         "module" : "HTTP::Date",
+         "observed_at" : "2026-11-05T13:01:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b57d80ca6d821c6949ca48b27467d45aba7a9c77346562306facca781a003e44",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=181",
+         "version" : "6.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,111 @@
+{
+   "distribution" : "File-ShareDir",
+   "observations" : [
+      {
+         "cpan_path" : "R/RE/REHSACK/File-ShareDir-1.118.tar.gz",
+         "id" : "03397dc3b545c0f1759cd8779f18dced1eefade6dbb18b137a39f14e3dbaeec9",
+         "module" : "File::ShareDir",
+         "observed_at" : "2026-11-05T12:02:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3bb2a20ba35df958dc0a4f2306fc05d903d8b8c4de3c8beefce17739d281c958",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=93",
+         "version" : "1.118",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/File-ShareDir-1.118.tar.gz",
+         "id" : "91819026df8f0f5a4f277a81eb3f5351626b51dda9f12d3aca9c40f34812a190",
+         "module" : "File::ShareDir",
+         "observed_at" : "2026-11-05T12:25:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3bb2a20ba35df958dc0a4f2306fc05d903d8b8c4de3c8beefce17739d281c958",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=93",
+         "version" : "1.118",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/File-ShareDir-1.118.tar.gz",
+         "id" : "4fd630148adb06c199f494127914c8df391bdd24d1e1f2937e71b6bae5b70325",
+         "module" : "File::ShareDir",
+         "observed_at" : "2026-11-05T13:06:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3bb2a20ba35df958dc0a4f2306fc05d903d8b8c4de3c8beefce17739d281c958",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=93",
+         "version" : "1.118",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

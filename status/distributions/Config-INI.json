@@ -1,0 +1,76 @@
+{
+   "distribution" : "Config-INI",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-INI-0.029.tar.gz",
+         "id" : "d06f2601668479ab7efc142de9b22306a984f629af508d896c7d492435aa0e39",
+         "module" : "Config::INI::Reader",
+         "observed_at" : "2026-11-05T11:49:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0bbe797a730210644a907d90cd4aa2b23ad580cb27bd39393bfc6a7ef9fdfdea",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=38",
+         "version" : "0.029",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-INI-0.029.tar.gz",
+         "id" : "575601611bbcee23e44244d80c931ce4f1212a65d9a9fcec8aed73405d09a654",
+         "module" : "Config::INI::Reader",
+         "observed_at" : "2026-11-05T12:23:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0bbe797a730210644a907d90cd4aa2b23ad580cb27bd39393bfc6a7ef9fdfdea",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=38",
+         "version" : "0.029",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

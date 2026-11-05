@@ -1,0 +1,76 @@
+{
+   "distribution" : "YAML-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/YAML-Tiny-1.76.tar.gz",
+         "id" : "c373f153ff8e0880acd72fa07b9cc0704d1fadf38cf572f0556a1500a9aa753e",
+         "module" : "YAML::Tiny",
+         "observed_at" : "2026-11-05T12:16:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a8d584394cf069bf8f17cba3dd5099003b097fce316c31fb094f1b1c171c08a3",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=58",
+         "version" : "1.76",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/YAML-Tiny-1.76.tar.gz",
+         "id" : "ff01efd47260008440037626a77305916a6332e5d8fa6751317c2fe09b85cdb9",
+         "module" : "YAML::Tiny",
+         "observed_at" : "2026-11-05T12:28:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a8d584394cf069bf8f17cba3dd5099003b097fce316c31fb094f1b1c171c08a3",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=58",
+         "version" : "1.76",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

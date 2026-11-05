@@ -1,0 +1,111 @@
+{
+   "distribution" : "Devel-StackTrace",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz",
+         "id" : "854fae504a86385a194bcb97b377c4f1e2a3fb7a65913fa03605310d695ea881",
+         "module" : "Devel::StackTrace",
+         "observed_at" : "2026-11-05T11:49:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "63cb6196e986a7e578c4d28b3c780e7194835bfc78b68eeb8f00599d4444888c",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=71",
+         "version" : "2.05",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz",
+         "id" : "49d7a846b25c1f7b11d4471fb0c436dc8aac1189e76844479acf19f3fe83bcf4",
+         "module" : "Devel::StackTrace",
+         "observed_at" : "2026-11-05T12:23:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "63cb6196e986a7e578c4d28b3c780e7194835bfc78b68eeb8f00599d4444888c",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=71",
+         "version" : "2.05",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz",
+         "id" : "97cdf298e904af432c97fb16c951b7f93faf13de66b113f36debed8979e30eb9",
+         "module" : "Devel::StackTrace",
+         "observed_at" : "2026-11-05T13:03:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "63cb6196e986a7e578c4d28b3c780e7194835bfc78b68eeb8f00599d4444888c",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=71",
+         "version" : "2.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

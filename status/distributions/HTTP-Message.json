@@ -1,0 +1,111 @@
+{
+   "distribution" : "HTTP-Message",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Message-7.04.tar.gz",
+         "id" : "f2b40578bb21c3fbc10a1f823e1f62075475f4fd4e7fc74c9ecabe2ad88cff4c",
+         "module" : "HTTP::Request::Common",
+         "observed_at" : "2026-11-05T11:31:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "699f3350dbb7bd8fdc9f3b013b0c91b7c059783708443e39bc395fa33352f006",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=871",
+         "version" : "7.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Message-7.04.tar.gz",
+         "id" : "db4a68dc03df9b460892875c158b8ce1685b015fbe6f46d894d0d13444bc2249",
+         "module" : "HTTP::Request::Common",
+         "observed_at" : "2026-11-05T12:22:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "699f3350dbb7bd8fdc9f3b013b0c91b7c059783708443e39bc395fa33352f006",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=871",
+         "version" : "7.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Message-7.04.tar.gz",
+         "id" : "45f1705d9afa006657f13d64f043894ddd5a07c3dc04fdf114fc5d7b3b5b9148",
+         "module" : "HTTP::Headers",
+         "observed_at" : "2026-11-05T13:02:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "699f3350dbb7bd8fdc9f3b013b0c91b7c059783708443e39bc395fa33352f006",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=871",
+         "version" : "7.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

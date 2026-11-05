@@ -1,0 +1,111 @@
+{
+   "distribution" : "Path-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+         "id" : "a840da7242681b93fd39da03c3d187138f485a146ed8190ce7a55ba0b1f8c91d",
+         "module" : "Path::Tiny",
+         "observed_at" : "2026-11-05T12:03:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=1779",
+         "version" : "0.150",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+         "id" : "b62354374825ddf9c004f1002c62de4e51b1a3a2c3444d3f9af7bb7bdc80a08d",
+         "module" : "Path::Tiny",
+         "observed_at" : "2026-11-05T12:26:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=1779",
+         "version" : "0.150",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+         "id" : "b45ed83f71c73fe1a021d78a0fad0fdd1387a5f3c769a0aab5b2bf4318f1a19c",
+         "module" : "Path::Tiny",
+         "observed_at" : "2026-11-05T13:05:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=1779",
+         "version" : "0.150",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

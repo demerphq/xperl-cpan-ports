@@ -1,0 +1,76 @@
+{
+   "distribution" : "MooseX-Types",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-0.51.tar.gz",
+         "id" : "ca93eef8495f282c81546245ae4d59878f15fa96a852f44c8cd6ea33b2333c3b",
+         "module" : "MooseX::Types",
+         "observed_at" : "2026-11-05T12:06:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a5374c7b0273220239b19dda88b824dd73b95398c913c5c9e305edbdb5e0270f",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=250",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-0.51.tar.gz",
+         "id" : "c52a85c570bb23ea88b5061fcb17127b7e98d556bca5994df5c659768a5e0f49",
+         "module" : "MooseX::Types",
+         "observed_at" : "2026-11-05T12:27:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a5374c7b0273220239b19dda88b824dd73b95398c913c5c9e305edbdb5e0270f",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=250",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

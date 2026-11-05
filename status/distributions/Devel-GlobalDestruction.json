@@ -1,0 +1,111 @@
+{
+   "distribution" : "Devel-GlobalDestruction",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz",
+         "id" : "db684c96f4140c1a93e65994b7bc37a59cb255c4d44405a09f681263f955e823",
+         "module" : "Devel::GlobalDestruction",
+         "observed_at" : "2026-11-05T11:49:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "34b8a5f29991311468fe6913cadaba75fd5d2b0b3ee3bb41fe5b53efab9154ab",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz",
+         "id" : "0c89f19330c4099aca8292c35412fc98676f5e3232fdefef2050d8ba516b1934",
+         "module" : "Devel::GlobalDestruction",
+         "observed_at" : "2026-11-05T12:23:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "34b8a5f29991311468fe6913cadaba75fd5d2b0b3ee3bb41fe5b53efab9154ab",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz",
+         "id" : "9d6798ca236847801feb5ff3fa76ab93c00c98dc98e0491c3385b2a522dd9f98",
+         "module" : "Devel::GlobalDestruction",
+         "observed_at" : "2026-11-05T13:03:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "34b8a5f29991311468fe6913cadaba75fd5d2b0b3ee3bb41fe5b53efab9154ab",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

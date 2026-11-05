@@ -1,0 +1,41 @@
+{
+   "distribution" : "Apache-LogFormat-Compiler",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz",
+         "id" : "a813191fac8efe6e0813fa83240c0b50b4f3035529bd1dc019ede36f89c1070e",
+         "module" : "Apache::LogFormat::Compiler",
+         "observed_at" : "2026-11-05T13:06:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "94509503ee74ea820183d070c11630ee5bc0fd8c12cb74fae953ed62e4a1ac17",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=30",
+         "version" : "0.36",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

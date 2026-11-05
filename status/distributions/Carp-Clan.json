@@ -1,0 +1,76 @@
+{
+   "distribution" : "Carp-Clan",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Carp-Clan-6.08.tar.gz",
+         "id" : "a86f36e1731342a5f9470b241978aed83057b249280a635b4708a9cdac73f952",
+         "module" : "Carp::Clan",
+         "observed_at" : "2026-11-05T12:06:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c75f92e34422cc5a65ab05d155842b701452434e9aefb649d6e2289c47ef6708",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=116",
+         "version" : "6.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Carp-Clan-6.08.tar.gz",
+         "id" : "425727d51724482f66eb51393e954e37487e50877b0eac174cd50c08650934da",
+         "module" : "Carp::Clan",
+         "observed_at" : "2026-11-05T12:27:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c75f92e34422cc5a65ab05d155842b701452434e9aefb649d6e2289c47ef6708",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=116",
+         "version" : "6.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

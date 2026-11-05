@@ -1,0 +1,76 @@
+{
+   "distribution" : "TermReadKey",
+   "observations" : [
+      {
+         "cpan_path" : "J/JS/JSTOWE/TermReadKey-2.38.tar.gz",
+         "id" : "6e7cbbed845052917879ade7db901ffc79569bb6496e6355fc15c34617429906",
+         "module" : "Term::ReadKey",
+         "observed_at" : "2026-11-05T11:45:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5a645878dc570ac33661581fbb090ff24ebce17d43ea53fd22e105a856a47290",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "2.38",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JS/JSTOWE/TermReadKey-2.38.tar.gz",
+         "id" : "0783bd1909313703bd229d18e39587b0db4df02ec6040ff0d82025d30253dbda",
+         "module" : "Term::ReadKey",
+         "observed_at" : "2026-11-05T12:23:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5a645878dc570ac33661581fbb090ff24ebce17d43ea53fd22e105a856a47290",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "2.38",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

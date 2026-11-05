@@ -1,0 +1,111 @@
+{
+   "distribution" : "Clone",
+   "observations" : [
+      {
+         "cpan_path" : "A/AT/ATOOMIC/Clone-0.51.tar.gz",
+         "id" : "4315c733014ad7c344bb4fc87c9bb40f4e9b052331d99230477e2813ecaf7e94",
+         "module" : "Clone",
+         "observed_at" : "2026-11-05T11:31:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
+         "status" : "installed",
+         "test_summary" : "Files=34, Tests=521",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/Clone-0.51.tar.gz",
+         "id" : "ffa3b95c4073888d8d2ef52ff8aff219a373e31bd87aad7d6138bd65bc91c90c",
+         "module" : "Clone",
+         "observed_at" : "2026-11-05T12:22:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
+         "status" : "installed",
+         "test_summary" : "Files=34, Tests=521",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/Clone-0.51.tar.gz",
+         "id" : "9c2373ec5af8bb75e1ae69d4b32d9855c73333429d0f0d4eab59a2f58ba8f783",
+         "module" : "Clone",
+         "observed_at" : "2026-11-05T13:01:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
+         "status" : "installed",
+         "test_summary" : "Files=34, Tests=521",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

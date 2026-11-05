@@ -1,0 +1,213 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use feature qw(dispatch_on signatures);
+use Digest::SHA qw(sha256_hex);
+use File::Basename qw(basename dirname);
+use File::Find qw(find);
+use File::Path qw(make_path);
+use File::Spec;
+use FindBin;
+use Getopt::Long qw(GetOptions);
+use JSON::PP;
+use POSIX qw(strftime);
+
+my @caches;
+GetOptions('cache=s@' => \@caches) or die "usage: $0 --cache DIR [...]\n";
+die "usage: $0 --cache DIR [...]\n" unless @caches && !@ARGV;
+
+my $root = File::Spec->catdir($FindBin::Bin, '..');
+my $status_dir = File::Spec->catdir($root, 'status');
+my $distribution_dir = File::Spec->catdir($status_dir, 'distributions');
+make_path($distribution_dir);
+my $json = JSON::PP->new->canonical->pretty;
+my %records;
+
+opendir my $existing, $distribution_dir or die "$distribution_dir: $!\n";
+for my $file (grep { /\.json\z/ } readdir $existing) {
+    my $path = File::Spec->catfile($distribution_dir, $file);
+    my $data = $json->decode(read_file($path));
+    die "invalid status record: $path\n"
+        unless $data->{schema} == 1
+            && $file eq "$data->{distribution}.json"
+            && ref($data->{observations}) eq 'ARRAY';
+    $records{$data->{distribution}} = $data;
+}
+closedir $existing;
+
+my $imported = 0;
+for my $cache (@caches) {
+    die "cache directory does not exist: $cache\n" unless -d $cache;
+    find({
+        no_chdir => 1,
+        wanted => sub {
+            return unless -f $File::Find::name
+                && basename($File::Find::name) eq 'receipt.json';
+            my $path = $File::Find::name;
+            my $raw = read_file($path);
+            my $receipt = eval { $json->decode($raw) };
+            die "invalid receipt $path: $@\n" if $@;
+            my ($distribution, $release_version) = distribution_name($receipt);
+            my $entry = $records{$distribution} //= {
+                schema => 1, distribution => $distribution,
+                observations => [],
+            };
+            my $id = sha256_hex($raw);
+            my ($existing) =
+                grep { $_->{id} eq $id } @{$entry->{observations}};
+            if ($existing) {
+                my $updated =
+                    observation($receipt, $path, $id, $release_version);
+                $updated->{observed_at} = $existing->{observed_at};
+                %$existing = %$updated;
+                return;
+            }
+            push @{$entry->{observations}},
+                observation($receipt, $path, $id, $release_version);
+            ++$imported;
+        },
+    }, $cache);
+}
+
+my @current;
+for my $distribution (sort keys %records) {
+    my $entry = $records{$distribution};
+    @{$entry->{observations}} = sort {
+        $a->{observed_at} cmp $b->{observed_at}
+            || $a->{id} cmp $b->{id}
+    } @{$entry->{observations}};
+    write_file(File::Spec->catfile($distribution_dir, "$distribution.json"),
+               $json->encode($entry));
+    my %latest;
+    for my $observation (@{$entry->{observations}}) {
+        my $key = join "\0", @{$observation}{qw(version source_sha256 xperl_version)};
+        $latest{$key} = $observation;
+    }
+    push @current, map {
+        { distribution => $distribution, observation => $_ }
+    } values %latest;
+}
+
+@current = sort {
+    $a->{distribution} cmp $b->{distribution}
+        || $a->{observation}{version} cmp $b->{observation}{version}
+} @current;
+my @unresolved = grep { $_->{observation}{status} eq 'failed' } @current;
+my $summary = "# XPerl CPAN build status\n\n";
+$summary .= "Latest observation for each distribution release, source hash, and XPerl version.\n";
+$summary .= "Older failures remain in the distribution records.\n\n";
+$summary .= "Unresolved failures: " . scalar(@unresolved) . " of " . scalar(@current)
+    . " release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).\n\n";
+$summary .= "| Distribution | Version | XPerl | Status | Patch set |\n";
+$summary .= "| --- | --- | --- | --- | --- |\n";
+for my $row (@current) {
+    my ($distribution, $observation) = @{$row}{qw(distribution observation)};
+    $summary .= join(' | ',
+        "| [$distribution](distributions/$distribution.json)",
+        $observation->{version}, $observation->{xperl_version},
+        $observation->{status},
+        $observation->{patch_set} // 'none') . " |\n";
+}
+write_file(File::Spec->catfile($status_dir, 'SUMMARY.md'), $summary);
+
+my $unresolved = "# Unresolved XPerl CPAN builds\n\n";
+$unresolved .= "Latest failed observation for each release, source hash, and XPerl version.\n";
+$unresolved .= "Prior failures remain in each distribution record after a later success.\n\n";
+$unresolved .= "| Distribution | Version | XPerl | Failed phase | Result |\n";
+$unresolved .= "| --- | --- | --- | --- | --- |\n";
+for my $row (@unresolved) {
+    my ($distribution, $observation) = @{$row}{qw(distribution observation)};
+    my $failure = $observation->{failure} // {};
+    $unresolved .= join(' | ',
+        "| [$distribution](distributions/$distribution.json)",
+        $observation->{version}, $observation->{xperl_version},
+        $failure->{phase} // 'unknown',
+        $observation->{test_summary} // ("exit " . ($failure->{exit_status} // '?')))
+        . " |\n";
+}
+write_file(File::Spec->catfile($status_dir, 'UNRESOLVED.md'), $unresolved);
+print "Imported $imported observations; " . scalar(@unresolved)
+    . " unresolved of " . scalar(@current) . " release and XPerl combinations\n";
+
+sub read_file ($path) {
+    open my $file, '<', $path or die "cannot read $path: $!\n";
+    local $/;
+    my $data = <$file>;
+    close $file or die "cannot close $path: $!\n";
+    return $data;
+}
+
+sub write_file ($path, $data) {
+    open my $file, '>', $path or die "cannot write $path: $!\n";
+    print {$file} $data;
+    close $file or die "cannot close $path: $!\n";
+}
+
+sub distribution_name ($receipt) {
+    my $archive = basename($receipt->{cpan_path} // die "receipt lacks CPAN path\n");
+    $archive =~ s/\.(?:tar\.gz|tar\.bz2|tar\.xz|tgz|zip)\z//
+        or die "unsupported CPAN archive: $archive\n";
+    my ($distribution, $release_version) =
+        $archive =~ /\A(.+)-([vV]?\d[0-9A-Za-z._-]*)\z/
+            or die "cannot parse distribution release: $archive\n";
+    die "unsafe distribution name: $distribution\n"
+        unless $distribution =~ /\A[A-Za-z0-9][A-Za-z0-9._-]*\z/;
+    return ($distribution, $release_version);
+}
+
+sub observation ($receipt, $path, $id, $release_version) {
+    my $status = $receipt->{status} // die "receipt lacks status: $path\n";
+    dispatch ($status) {
+        on ('installed') { }
+        on ('failed') { }
+        on (_) { die "unknown receipt status $status: $path\n" }
+    }
+    my @phases = map {
+        {
+            name => $_->{name},
+            (defined($_->{attempt}) ? (attempt => $_->{attempt}) : ()),
+            exit_status => $_->{exit_status},
+            (defined($_->{validation_error})
+                ? (validation_error => $_->{validation_error}) : ()),
+        }
+    } @{$receipt->{phases} // []};
+    my ($failed) = reverse grep {
+        $_->{exit_status} || $_->{validation_error}
+    } @phases;
+    my ($test) = reverse grep { $_->{name} eq 'test' } @{$receipt->{phases} // []};
+    my $test_summary;
+    if ($test && defined($test->{log}) && -f $test->{log}) {
+        my $log = read_file($test->{log});
+        my ($files, $tests) = $log =~ /^Files=(\d+), Tests=(\d+)/m;
+        $test_summary = "Files=$files, Tests=$tests"
+            if defined $files;
+        my ($failed_tests) =
+            $log =~ /^(Failed \d+\/\d+ test programs\.[^\n]*)/m;
+        $test_summary .= ", $failed_tests"
+            if $test_summary && $failed_tests;
+    }
+    return {
+        id => $id,
+        observed_at => strftime('%Y-%m-%dT%H:%M:%SZ',
+                                gmtime((stat($path))[9])),
+        module => $receipt->{module},
+        version => $release_version,
+        (defined($receipt->{version}) && $receipt->{version} ne $release_version
+            ? (module_version => $receipt->{version}) : ()),
+        cpan_path => $receipt->{cpan_path},
+        source_sha256 => $receipt->{source_sha256},
+        xperl_version => $receipt->{xperl_version},
+        status => $status,
+        patch_set => $receipt->{registry}{patch_set},
+        patch_sha256 => $receipt->{registry}{patches} // [],
+        phases => \@phases,
+        ($test_summary ? (test_summary => $test_summary) : ()),
+        ($failed ? (failure => {
+            phase => $failed->{name},
+            exit_status => $failed->{exit_status},
+            (defined($failed->{validation_error})
+                ? (validation_error => $failed->{validation_error}) : ()),
+        }) : ()),
+    };
+}

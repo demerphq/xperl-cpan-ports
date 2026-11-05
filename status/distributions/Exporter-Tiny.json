@@ -1,0 +1,76 @@
+{
+   "distribution" : "Exporter-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz",
+         "id" : "39aefb8c788d6559bc09730e8dcf0eff2fc1356733f919bc2cd7fd2c4242d5c7",
+         "module" : "Exporter::Tiny",
+         "observed_at" : "2026-11-05T12:15:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6499f09a6432cf87b133fb9580a8a9a9a6c566821346b1fdee95f7b64c0317b1",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=84",
+         "version" : "1.006003",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz",
+         "id" : "18b120890311eadfb1f1425007e7808de4ba3f8b60042b96f32cbc06e3108637",
+         "module" : "Exporter::Tiny",
+         "observed_at" : "2026-11-05T12:28:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6499f09a6432cf87b133fb9580a8a9a9a6c566821346b1fdee95f7b64c0317b1",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=84",
+         "version" : "1.006003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,81 @@
+{
+   "distribution" : "Plack",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "66eced20833e20f09331fdc5523e31ef2bad6807cb2817303ed4ab26680ff329",
+         "module" : "Plack",
+         "observed_at" : "2026-11-05T13:08:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "01cfe036276703f62cf6c1cec7c7e630420677498dfa7bc333ad88eca9d7a765",
+         "status" : "failed",
+         "test_summary" : "Files=155, Tests=1291, Failed 1/155 test programs. 2/1291 subtests failed.",
+         "version" : "1.0057",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
+         "id" : "6c37803e402172bad56d5ccaec7abb9d36e774321def590bead59162f3f6cc0c",
+         "module" : "Plack",
+         "observed_at" : "2026-11-05T13:20:08Z",
+         "patch_set" : "xperl-canonical-stacktrace",
+         "patch_sha256" : [
+            "db68151f5895821db824213cf0027de6f84f52b6e81eb773afeaa9e16d2b2d16"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "01cfe036276703f62cf6c1cec7c7e630420677498dfa7bc333ad88eca9d7a765",
+         "status" : "installed",
+         "test_summary" : "Files=155, Tests=1291",
+         "version" : "1.0057",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

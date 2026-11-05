@@ -1,0 +1,111 @@
+{
+   "distribution" : "HTTP-CookieJar",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz",
+         "id" : "b640d5952623c2aa8310e61f3b1cb3b3ff25ab0380adc0f07a9f9f0d4503c6f2",
+         "module" : "HTTP::CookieJar::LWP",
+         "observed_at" : "2026-11-05T11:45:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7094ea5c91f536d263b85e83ab4e9a963e11c4408ce08ecae553fa9c0cc47e73",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=95",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz",
+         "id" : "f000ae865b49efeb7df17ba88f8f41598a847dda7bdb9d878c74db459d0aa9d9",
+         "module" : "HTTP::CookieJar::LWP",
+         "observed_at" : "2026-11-05T12:22:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7094ea5c91f536d263b85e83ab4e9a963e11c4408ce08ecae553fa9c0cc47e73",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=95",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz",
+         "id" : "ee3ab3843b1203004872762c317c0ddaf00fbe9531d23d98a801ab26bea0be72",
+         "module" : "HTTP::CookieJar::LWP",
+         "observed_at" : "2026-11-05T13:02:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7094ea5c91f536d263b85e83ab4e9a963e11c4408ce08ecae553fa9c0cc47e73",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=95",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

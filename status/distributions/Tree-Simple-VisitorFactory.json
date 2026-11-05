@@ -1,0 +1,41 @@
+{
+   "distribution" : "Tree-Simple-VisitorFactory",
+   "observations" : [
+      {
+         "cpan_path" : "R/RS/RSAVAGE/Tree-Simple-VisitorFactory-0.16.tgz",
+         "id" : "5d555b3ae0413c399da58e1db49a7b857060892881d26639b2f10ff1ed4e198d",
+         "module" : "Tree::Simple::Visitor::FindByUID",
+         "observed_at" : "2026-11-05T13:20:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9cf538faa12c54ffb4a91439945e488f1856f62b89ac5072a922119e01880da6",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=630",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

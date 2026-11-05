@@ -1,0 +1,111 @@
+{
+   "distribution" : "WWW-RobotRules",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-RobotRules-6.03.tar.gz",
+         "id" : "d5fa39ebb946bee9ae08ebf16732e842b79260d8ef8885deab9c49de9e9dafae",
+         "module" : "WWW::RobotRules",
+         "observed_at" : "2026-11-05T11:45:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8522b532935a11bfa688c2e113bac66729df4851be50c2c26d4b06f45fade472",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=67",
+         "version" : "6.03",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-RobotRules-6.03.tar.gz",
+         "id" : "76613cd61749e7a248d5745e619a5ab1ed91b2fe7879bde24b858025660fb503",
+         "module" : "WWW::RobotRules",
+         "observed_at" : "2026-11-05T12:22:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8522b532935a11bfa688c2e113bac66729df4851be50c2c26d4b06f45fade472",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=67",
+         "version" : "6.03",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-RobotRules-6.03.tar.gz",
+         "id" : "91ab03e50fa4d266a669672a135676bf7a51180aba8a3cf8a9278dd263c4750d",
+         "module" : "WWW::RobotRules",
+         "observed_at" : "2026-11-05T13:02:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8522b532935a11bfa688c2e113bac66729df4851be50c2c26d4b06f45fade472",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=67",
+         "version" : "6.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,76 @@
+{
+   "distribution" : "CGI-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MANWAR/CGI-Simple-1.282.tar.gz",
+         "id" : "b7198dc5e90fbc0c5439c89e94b981f0994ecc55455f67853b0ac5f4e7a05d1f",
+         "module" : "CGI::Simple::Cookie",
+         "observed_at" : "2026-11-05T12:32:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c57f0f3e32cdd80612645155c1b829b4ccbe4ced655de833ab93005989c27f2f",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=892",
+         "version" : "1.282",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MANWAR/CGI-Simple-1.282.tar.gz",
+         "id" : "67959d613917855298b161641ce6846a5dc5e74e794d0f3cc4ddde821e4ba00a",
+         "module" : "CGI::Simple::Cookie",
+         "observed_at" : "2026-11-05T13:00:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c57f0f3e32cdd80612645155c1b829b4ccbe4ced655de833ab93005989c27f2f",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=890",
+         "version" : "1.282",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

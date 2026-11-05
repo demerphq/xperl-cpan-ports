@@ -1,0 +1,76 @@
+{
+   "distribution" : "Specio",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Specio-0.53.tar.gz",
+         "id" : "f2b192e761972817cbfca0a86954fc173e0bd65a86f70654e19525fd15d34605",
+         "module" : "Specio",
+         "observed_at" : "2026-11-05T12:02:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0d0eecfb9e89bd0f5f710fac42e1200a882d513a862f98497eaef5927ac6c183",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=348",
+         "version" : "0.53",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Specio-0.53.tar.gz",
+         "id" : "6569aadf863bed3a3ac892860547f05c1fd3024602acbf9931080ecc0b7b0406",
+         "module" : "Specio",
+         "observed_at" : "2026-11-05T12:25:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0d0eecfb9e89bd0f5f710fac42e1200a882d513a862f98497eaef5927ac6c183",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=348",
+         "version" : "0.53",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

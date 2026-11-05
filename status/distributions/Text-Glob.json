@@ -1,0 +1,76 @@
+{
+   "distribution" : "Text-Glob",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCLAMP/Text-Glob-0.11.tar.gz",
+         "id" : "e58921c00e31b4817c8bd3ab7d5ec054d55798548b2e608548cf60241f988bab",
+         "module" : "Text::Glob",
+         "observed_at" : "2026-11-05T12:06:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "069ccd49d3f0a2dedb115f4bdc9fbac07a83592840953d1fcdfc39eb9d305287",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=74",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCLAMP/Text-Glob-0.11.tar.gz",
+         "id" : "f5079f9d8c7540e777a84ec198e3a92a5252943947b42bae346391f94cf4d8b9",
+         "module" : "Text::Glob",
+         "observed_at" : "2026-11-05T12:26:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "069ccd49d3f0a2dedb115f4bdc9fbac07a83592840953d1fcdfc39eb9d305287",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=74",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

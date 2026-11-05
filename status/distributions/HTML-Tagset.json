@@ -1,0 +1,111 @@
+{
+   "distribution" : "HTML-Tagset",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz",
+         "id" : "d7734f4897cfeb8a20463107869e43c84a58e53700cbf5139a67386de9352f2a",
+         "module" : "HTML::Tagset",
+         "observed_at" : "2026-11-05T11:31:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "eb89e145a608ed1f8f141a57472ee5f69e67592a432dcd2e8b1dbb445f2b230b",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=33",
+         "version" : "3.24",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz",
+         "id" : "745fb43102577e17b2b944f155aee6126ded9d7d462a850ac3f7ce85ac617d4b",
+         "module" : "HTML::Tagset",
+         "observed_at" : "2026-11-05T12:22:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "eb89e145a608ed1f8f141a57472ee5f69e67592a432dcd2e8b1dbb445f2b230b",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=33",
+         "version" : "3.24",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz",
+         "id" : "24929b7b131d196e5e7f2c03aee78c9b514d7c8876a56b30f7b431037d0aefac",
+         "module" : "HTML::Tagset",
+         "observed_at" : "2026-11-05T13:01:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "eb89e145a608ed1f8f141a57472ee5f69e67592a432dcd2e8b1dbb445f2b230b",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=33",
+         "version" : "3.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

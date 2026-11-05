@@ -1,0 +1,142 @@
+{
+   "distribution" : "Test-Deep",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Test-Deep-1.205.tar.gz",
+         "id" : "2ead50e3417475638a6c06f74465aebf441e91ae329794a12ba0fdb633f83f21",
+         "module" : "Test::Deep",
+         "observed_at" : "2026-11-05T10:17:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "42781e9943a7a215e662c4973b9feafdc019fd16469bdb849a8537ee58956273",
+         "status" : "installed",
+         "test_summary" : "Files=42, Tests=1268",
+         "version" : "1.205",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Test-Deep-1.205.tar.gz",
+         "id" : "0f01430ae65027eb40599c1eb8a645f26886a329d2aa948992d2e28e2eb32c2f",
+         "module" : "Test::Deep",
+         "observed_at" : "2026-11-05T11:44:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "42781e9943a7a215e662c4973b9feafdc019fd16469bdb849a8537ee58956273",
+         "status" : "installed",
+         "test_summary" : "Files=42, Tests=1268",
+         "version" : "1.205",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Test-Deep-1.205.tar.gz",
+         "id" : "d48e490e2b1366c8d0cec212548823509dcb4eb9760d7f31bf555c7c742bfba8",
+         "module" : "Test::Deep",
+         "observed_at" : "2026-11-05T12:22:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "42781e9943a7a215e662c4973b9feafdc019fd16469bdb849a8537ee58956273",
+         "status" : "installed",
+         "test_summary" : "Files=42, Tests=1268",
+         "version" : "1.205",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Test-Deep-1.205.tar.gz",
+         "id" : "a5c6a5eb1a1ab54914e8ab06b1ee1c0ef5409e8847a1b144b7a7b5a171d7054e",
+         "module" : "Test::Deep",
+         "observed_at" : "2026-11-05T13:01:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "42781e9943a7a215e662c4973b9feafdc019fd16469bdb849a8537ee58956273",
+         "status" : "installed",
+         "test_summary" : "Files=42, Tests=1268",
+         "version" : "1.205",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

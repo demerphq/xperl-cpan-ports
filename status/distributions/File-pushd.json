@@ -1,0 +1,76 @@
+{
+   "distribution" : "File-pushd",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/File-pushd-1.016.tar.gz",
+         "id" : "1121026e6ddd3a61d2a7cfaf4db7c646b014b37105c56e13d236a6f3ede9dec8",
+         "module" : "File::pushd",
+         "observed_at" : "2026-11-05T12:06:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d73a7f09442983b098260df3df7a832a5f660773a313ca273fa8b56665f97cdc",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=49",
+         "version" : "1.016",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/File-pushd-1.016.tar.gz",
+         "id" : "a8ce8fb9155a8a0ed03ef16fa10c523f7816ba65a6db4c51db1a7e02d5cabc56",
+         "module" : "File::pushd",
+         "observed_at" : "2026-11-05T12:26:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d73a7f09442983b098260df3df7a832a5f660773a313ca273fa8b56665f97cdc",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=49",
+         "version" : "1.016",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

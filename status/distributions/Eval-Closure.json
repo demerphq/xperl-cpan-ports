@@ -1,0 +1,111 @@
+{
+   "distribution" : "Eval-Closure",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOY/Eval-Closure-0.14.tar.gz",
+         "id" : "e3ac6ccbe97bb7c5197996932b5e93079bd9f21172da3fadff97d8c7999a70ab",
+         "module" : "Eval::Closure",
+         "observed_at" : "2026-11-05T11:49:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea0944f2f5ec98d895bef6d503e6e4a376fea6383a6bc64c7670d46ff2218cad",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=35",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DOY/Eval-Closure-0.14.tar.gz",
+         "id" : "b176b3633e1e34de2abd03915bae64f2ecb33d3567cdd2f0d656915235c19fb0",
+         "module" : "Eval::Closure",
+         "observed_at" : "2026-11-05T12:23:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea0944f2f5ec98d895bef6d503e6e4a376fea6383a6bc64c7670d46ff2218cad",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=35",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DOY/Eval-Closure-0.14.tar.gz",
+         "id" : "d7abf5bb70f8e8abc0bccc7f44dc7c4e7fcadf7d90a3c23e2b17ba1c8a52d54f",
+         "module" : "Eval::Closure",
+         "observed_at" : "2026-11-05T13:03:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea0944f2f5ec98d895bef6d503e6e4a376fea6383a6bc64c7670d46ff2218cad",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=35",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

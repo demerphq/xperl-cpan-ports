@@ -1,0 +1,41 @@
+{
+   "distribution" : "Devel-StackTrace-AsHTML",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Devel-StackTrace-AsHTML-0.15.tar.gz",
+         "id" : "bd2405fa8e15a11ee27977968beaa312e3aeabf65cf38bfecffd9924d61803fe",
+         "module" : "Devel::StackTrace::AsHTML",
+         "observed_at" : "2026-11-05T13:06:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6283dbe2197e2f20009cc4b449997742169cdd951bfc44cbc6e62c2a962d3147",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=4",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

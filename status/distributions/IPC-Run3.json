@@ -1,0 +1,76 @@
+{
+   "distribution" : "IPC-Run3",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/IPC-Run3-0.049.tar.gz",
+         "id" : "f9a01ebf29f41c2633a66474b1ffcc3da60eeee96fe8dcb412e26a4d8b88730c",
+         "module" : "IPC::Run3",
+         "observed_at" : "2026-11-05T12:02:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d048ae7b9ae63871bae976ba01e081d887392d904e5d48b04e22d35ed22011a",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=69",
+         "version" : "0.049",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/IPC-Run3-0.049.tar.gz",
+         "id" : "acba203dc2455594c03f2c2aa9a138f93becf8b42d435ed62b9f78f629b3386c",
+         "module" : "IPC::Run3",
+         "observed_at" : "2026-11-05T12:25:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d048ae7b9ae63871bae976ba01e081d887392d904e5d48b04e22d35ed22011a",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=69",
+         "version" : "0.049",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}

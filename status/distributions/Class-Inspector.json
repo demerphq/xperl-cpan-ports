@@ -1,0 +1,111 @@
+{
+   "distribution" : "Class-Inspector",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Class-Inspector-1.36.tar.gz",
+         "id" : "5d1892360777cc34403e303acd625d999d7cc36f278158074bc36f05699b1998",
+         "module" : "Class::Inspector",
+         "observed_at" : "2026-11-05T12:02:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cc295d23a472687c24489d58226ead23b9fdc2588e522f0b5f0747741700694e",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=86",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Class-Inspector-1.36.tar.gz",
+         "id" : "9b15e87cc20f2e358ad8e91610ad593782114bad30c3278a7f70703082703869",
+         "module" : "Class::Inspector",
+         "observed_at" : "2026-11-05T12:25:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cc295d23a472687c24489d58226ead23b9fdc2588e522f0b5f0747741700694e",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=86",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Class-Inspector-1.36.tar.gz",
+         "id" : "517170a85a360bcc704245cca9ba179683eb6cd24db8a05574c57b223a248c10",
+         "module" : "Class::Inspector",
+         "observed_at" : "2026-11-05T13:06:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cc295d23a472687c24489d58226ead23b9fdc2588e522f0b5f0747741700694e",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=86",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 1
+}
