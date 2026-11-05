@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "libwww-perl",
+  "releases": [
+    {
+      "version": "6.83",
+      "cpan_path": "O/OA/OALDERS/libwww-perl-6.83.tar.gz",
+      "source_sha256": "e75f0fa9d3c6f0daf5a5a72fa9f8b1c9c0d23e3a84a8522ccb4f835232b95505",
+      "patch_sets": [
+        {
+          "id": "stringify-internal-response",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/stringify-internal-response.patch",
+              "sha256": "9b26469764c515edfa216e56d3de15aea63b1a1de8c2591c7d39d83765d7e383"
+            }
+          ],
+          "recipes": ["exception-text-boundary-v1"]
+        }
+      ]
+    }
+  ]
+}

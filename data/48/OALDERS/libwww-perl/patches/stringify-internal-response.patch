@@ -1,0 +1,35 @@
+--- a/lib/LWP/UserAgent.pm
++++ b/lib/LWP/UserAgent.pm
+@@ -1258,7 +1258,7 @@
+     $response->header("Client-Date" => HTTP::Date::time2str(time));
+     $response->header("Client-Warning" => "Internal response");
+     $response->header("Content-Type" => "text/plain");
+-    $response->content($content || "$code $message\n");
++    $response->content($content ? "$content" : "$code $message\n");
+     return $response;
+ }
+ 
+--- a/t/base/ua.t
++++ b/t/base/ua.t
+@@ -65,6 +65,21 @@
+     like($res->content(), qr/URL must be absolute/, "simple_request: Invalid Scheme: invalid request");
+ }
+ 
++{
++    package LWP::Test::StringifiableError;
++    use overload '""' => sub { "network failure\n" }, fallback => 1;
++    package main;
++}
++
++{
++    my $request = HTTP::Request->new(GET => 'http://example.invalid');
++    my $error = bless {}, 'LWP::Test::StringifiableError';
++    my $response = LWP::UserAgent::_new_response($request, 500, 'error', $error);
++    is(ref($response->content), '', 'internal response stores text content');
++    is($response->content, "network failure\n",
++       'internal response preserves a stringifiable error message');
++}
++
+ # Try it
+ $ua->proxy(http => "loopback:");
+ $ua->agent("foo/0.1");
