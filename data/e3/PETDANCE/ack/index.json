@@ -3,7 +3,7 @@
   "distribution": "ack",
   "releases": [
     {
-      "version": "3.010000",
+      "version": "v3.10.0",
       "cpan_path": "P/PE/PETDANCE/ack-v3.10.0.tar.gz",
       "source_sha256": "65e83cfb38a71fca725e9a14a8201ee871e629fc6b10231e1303dd3501ba563a",
       "patch_sets": [
