@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Net-DNS",
+  "releases": [
+    {
+      "version": "1.57",
+      "cpan_path": "N/NL/NLNETLABS/Net-DNS-1.57.tar.gz",
+      "source_sha256": "7c98de329cb5d6a99abbb03aaad2866cb041092ed9936a7246908e170005b058",
+      "patch_sets": [
+        {
+          "id": "disable-online-tests-in-cpan-builds",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/disable-online-tests-in-cpan-builds.patch",
+              "sha256": "a6186db801a48589831aba5d6eed98c27a00092d621a0bc05184e68c0e5bf098"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -102 +102,3 @@
+-my $online_tests = 2;			##  2 = non-fatal, 1 = on, 0 = off  ##
++my $online_tests = ($ENV{PERL5_CPAN_IS_RUNNING}
++	|| $ENV{PERL5_CPANPLUS_IS_RUNNING}
++	|| $ENV{PERL5_CPANM_IS_RUNNING}) ? 0 : 2; ##  2 = non-fatal, 1 = on, 0 = off  ##
