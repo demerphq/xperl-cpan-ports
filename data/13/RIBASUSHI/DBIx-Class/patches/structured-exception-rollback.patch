@@ -1,0 +1,54 @@
+--- a/lib/DBIx/Class/Exception.pm
++++ b/lib/DBIx/Class/Exception.pm
+@@ -51,6 +51,17 @@
+ sub throw {
+     my ($class, $msg, $stacktrace) = @_;
+ 
++    if (${^XPERL_VERSION} && ref($msg)
++        && UNIVERSAL::isa($msg, 'XPerl::Exception')) {
++        require XPerl::DiagGroup;
++        my $diagnostics = $msg->diagnostics;
++        if (@$diagnostics == 1 && $diagnostics->[0]->code eq 'ERROR_USER_TEXT') {
++            my ($text) = grep { $_->{name} eq 'text' }
++                @{$diagnostics->[0]->params};
++            $msg = $text->{value} if $text;
++        }
++    }
++
+     # Don't re-encapsulate exception objects of any kind
+     die $msg if ref($msg);
+ 
+--- a/lib/DBIx/Class/Storage/BlockRunner.pm
++++ b/lib/DBIx/Class/Storage/BlockRunner.pm
+@@ -159,7 +159,10 @@
+     if ( is_exception $run_err ) {
+ 
+       # attempt a rollback if we did begin in the first place
+-      if ($txn_begin_ok) {
++      if ($txn_begin_ok && !(
++        blessed($run_err) && $run_err->isa('DBIx::Class::Exception')
++          && $run_err->{msg} =~ /Rollback failed:/
++      )) {
+         # some DBDs go crazy if there is nothing to roll back on, perform a soft-check
+         my $rollback_exception = $storage->_seems_connected
+           ? (! eval { $storage->txn_rollback; 1 }) ? $@ : ''
+--- a/t/storage/txn.t
++++ b/t/storage/txn.t
+@@ -450,7 +450,16 @@
+         die $broken_exception
+       });
+     })
+-  } qr/\QTransaction aborted: $broken_exception. Rollback failed: lost connection to storage at @{[__FILE__]} line $ln\E\n/;  # FIXME wtf - ...\E$/m doesn't work here
++  } (${^XPERL_VERSION}
++    ? qr/\QTransaction aborted: $broken_exception. Rollback failed: lost connection to storage\E/
++    : qr/\QTransaction aborted: $broken_exception. Rollback failed: lost connection to storage at @{[__FILE__]} line $ln\E\n/);  # FIXME wtf - ...\E$/m doesn't work here
++
++  if (${^XPERL_VERSION}) {
++    my $caught = $@;
++    isa_ok $caught, 'DBIx::Class::Exception', 'nested rollback throws a DBIC exception';
++    my @rollbacks = "$caught" =~ /Rollback failed:/g;
++    is @rollbacks, 1, 'nested rollback reports its failure once';
++  }
+ 
+   is @w, 1, 'One matching warning only';
+ }

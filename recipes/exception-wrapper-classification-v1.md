@@ -55,3 +55,10 @@ fall back to hash or list access. Its filter context must classify the same
 wrapper as text to keep the filter error type. Preserve the exception path
 for user-thrown objects. Its 121 test files and 3285 tests pass on XPerl
 v5.45.5 after both changes.
+
+DBIx-Class 0.082844 must wrap a caught plain-text XPerl diagnostic in its own
+exception class. It checks for a single `ERROR_USER_TEXT` diagnostic and
+extracts its named `text` parameter before using the normal string-error
+path. Other XPerl diagnostics and user-thrown references remain objects.
+Its transaction runner also avoids retrying a rollback after a nested
+DBIx::Class exception already reports rollback failure.

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "DBIx-Class",
+  "releases": [
+    {
+      "version": "0.082844",
+      "cpan_path": "R/RI/RIBASUSHI/DBIx-Class-0.082844.tar.gz",
+      "source_sha256": "e0784e3861a197ad5aa17396f18901f0aaa8bab04a4330cb50038337ec30ca7f",
+      "patch_sets": [
+        {
+          "id": "structured-exception-rollback",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/structured-exception-rollback.patch",
+              "sha256": "f7c96064c3539af5f2bc290aceb2a856647766d5395b4cc9d9406fcd6005d2fc"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1", "exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}
