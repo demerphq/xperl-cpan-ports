@@ -39,6 +39,10 @@ the XPerl interpreter:
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
 
+The planned repository and directory layout is described in
+[SHARDING.md](SHARDING.md). The current paths above remain the version 1
+layout until the installer supports the new lookup scheme.
+
 Use [PRIORITIZATION.md](PRIORITIZATION.md) and `bin/river-priorities` to rank
 candidate ports by their River of CPAN reach alongside local XPerl build
 status. This report is optional and separate from installation.
