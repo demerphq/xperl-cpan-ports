@@ -1,0 +1,21 @@
+{
+  "source_sha256": "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+  "patch_set_id": "localize-no-color",
+  "patch_sha256": "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "environment": { "NO_COLOR": "1" },
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 45 test files, 7527 tests"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 45 test files, 7527 tests"
+    }
+  ]
+}

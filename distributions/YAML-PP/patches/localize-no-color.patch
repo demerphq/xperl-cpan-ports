@@ -1,0 +1,10 @@
+--- a/t/35.highlight.t
++++ b/t/35.highlight.t
+@@ -44,6 +44,7 @@
+ my @transformed = YAML::PP::Highlight->transform($tokens);
+ cmp_ok($transformed[6]->{name}, 'eq', 'TRAILING_SPACE', "trailing spaces detected");
+ 
++local $ENV{NO_COLOR};
+ my $color = eval "use Term::ANSIColor 4.02; 1";
+ # older versions of Term::ANSIColor didn't have grey12
+ if ($color) {

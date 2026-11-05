@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "YAML-PP",
+  "releases": [
+    {
+      "version": "v0.43.0",
+      "cpan_path": "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+      "source_sha256": "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+      "patch_sets": [
+        {
+          "id": "localize-no-color",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/localize-no-color.patch",
+              "sha256": "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6"
+            }
+          ],
+          "recipes": ["test-environment-isolation-v1"]
+        }
+      ]
+    }
+  ]
+}
