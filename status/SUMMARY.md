@@ -222,7 +222,7 @@ Unresolved failures: 1 of 226 release and XPerl combinations. See [UNRESOLVED.md
 | RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | installed | none |
 | SHAY | [Class-Singleton](../data/97/SHAY/Class-Singleton/status.json) | 1.6 | v5.45.5 | installed | none |
 | SIMONW | [Module-Pluggable](../data/32/SIMONW/Module-Pluggable/status.json) | 6.4 | v5.45.5 | installed | none |
-| SRI | [Mojolicious](../data/e6/SRI/Mojolicious/status.json) | 9.53 | v5.45.5 | failed | none |
+| SRI | [Mojolicious](../data/e6/SRI/Mojolicious/status.json) | 9.53 | v5.45.5 | failed | localize-color-environment |
 | SWEETKID | [Plack-Middleware-FixMissingBodyInRedirect](../data/7f/SWEETKID/Plack-Middleware-FixMissingBodyInRedirect/status.json) | 0.12 | v5.45.5 | installed | none |
 | SWEETKID | [Plack-Middleware-RemoveRedundantBody](../data/80/SWEETKID/Plack-Middleware-RemoveRedundantBody/status.json) | 0.09 | v5.45.5 | installed | none |
 | TINITA | [YAML-PP](../data/d5/TINITA/YAML-PP/status.json) | v0.43.0 | v5.45.5 | installed | localize-no-color |

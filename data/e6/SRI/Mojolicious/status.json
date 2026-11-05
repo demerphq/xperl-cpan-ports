@@ -35,6 +35,126 @@
          "test_summary" : "Files=109, Tests=3736, Failed 2/109 test programs. 2/3736 subtests failed.",
          "version" : "9.53",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SRI/Mojolicious-9.53.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "cbd4657d9bce61f88ee3512c3574ea009af5f9962862eea85123a02afadcd663",
+         "module" : "Mojolicious",
+         "observed_at" : "2026-11-05T20:08:24Z",
+         "patch_set" : "localize-color-environment",
+         "patch_sha256" : [
+            "dab8197f5776ffb2b5b9904868f9fb8ea338e57716345dd826a70c445d7fd34b"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+         "status" : "failed",
+         "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
+         "version" : "9.53",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SRI/Mojolicious-9.53.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "6892b311c814bf52ecde7fd1fd25b627fdd2e0570ac44e7e85e749ccb3e92b88",
+         "module" : "Mojolicious",
+         "observed_at" : "2026-11-05T20:16:27Z",
+         "patch_set" : "localize-color-environment",
+         "patch_sha256" : [
+            "dab8197f5776ffb2b5b9904868f9fb8ea338e57716345dd826a70c445d7fd34b"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+         "status" : "failed",
+         "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
+         "version" : "9.53",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SRI/Mojolicious-9.53.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "815e7a987c96b17c5f98349fcd5b2588390f0c6901688b287bfca0ae7570e593",
+         "module" : "Mojolicious",
+         "observed_at" : "2026-11-05T20:19:01Z",
+         "patch_set" : "localize-color-environment",
+         "patch_sha256" : [
+            "0def97e666c709519477b570730b585e7859dc7b1be303758c6913264036aeb1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+         "status" : "failed",
+         "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
+         "version" : "9.53",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

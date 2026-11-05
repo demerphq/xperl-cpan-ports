@@ -1,0 +1,27 @@
+{
+  "source_sha256": "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+  "patch_set_id": "localize-color-environment",
+  "patch_sha256": "0def97e666c709519477b570730b585e7859dc7b1be303758c6913264036aeb1",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "environment": { "NO_COLOR": "1" },
+  "tests": [
+    {
+      "command": "t/mojo/log.t with NO_COLOR=1 and ANSI_COLORS_DISABLED=1",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 16 top-level tests"
+    },
+    {
+      "command": "t/mojo/log.t with NO_COLOR=1 and ANSI_COLORS_DISABLED=1",
+      "interpreter": "Perl v5.38.2",
+      "result": "pass: 16 top-level tests"
+    },
+    {
+      "command": "xperl install --registry xperl-cpan-ports Mojolicious",
+      "interpreter": "XPerl v5.45.5",
+      "result": "fail: t/mojo/loader.t; t/mojo/log.t passes; 1 of 109 test files and 1 of 3725 top-level tests fail"
+    }
+  ],
+  "remaining_failure": "Mojo::Exception context selects Carp source lines instead of the throwing module in t/mojo/loader.t"
+}

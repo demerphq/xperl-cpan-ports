@@ -1,0 +1,9 @@
+--- a/t/mojo/log.t
++++ b/t/mojo/log.t
+@@ -78,4 +78,6 @@
+ subtest 'Colorized log messages' => sub {
++  local $ENV{NO_COLOR};
++  local $ENV{ANSI_COLORS_DISABLED};
+   my $log = Mojo::Log->new;
+   ok !$log->color, 'plain messages';
+   like $log->format->(time, 'debug', 'Test 123'), qr/^\[.*\] \[debug\] Test 123\n$/, 'right format';

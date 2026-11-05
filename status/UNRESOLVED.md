@@ -5,4 +5,4 @@ Prior failures remain in each distribution record after a later success.
 
 | Author | Distribution | Version | XPerl | Failed phase | Result |
 | --- | --- | --- | --- | --- | --- |
-| SRI | [Mojolicious](../data/e6/SRI/Mojolicious/status.json) | 9.53 | v5.45.5 | test | Files=109, Tests=3736, Failed 2/109 test programs. 2/3736 subtests failed. |
+| SRI | [Mojolicious](../data/e6/SRI/Mojolicious/status.json) | 9.53 | v5.45.5 | test | Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed. |

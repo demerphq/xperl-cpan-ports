@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Mojolicious",
+  "releases": [
+    {
+      "version": "9.53",
+      "cpan_path": "S/SR/SRI/Mojolicious-9.53.tar.gz",
+      "source_sha256": "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+      "patch_sets": [
+        {
+          "id": "localize-color-environment",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/localize-color-environment.patch",
+              "sha256": "0def97e666c709519477b570730b585e7859dc7b1be303758c6913264036aeb1"
+            }
+          ],
+          "recipes": ["test-environment-isolation-v1"]
+        }
+      ]
+    }
+  ]
+}
