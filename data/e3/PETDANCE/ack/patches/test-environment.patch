@@ -1,0 +1,48 @@
+--- a/t/ack-color.t
++++ b/t/ack-color.t
+@@ -11,6 +11,7 @@
+ plan tests => 15;
+ 
+ prep_environment();
++delete @ENV{qw(NO_COLOR ANSI_COLORS_DISABLED)};
+ 
+ my $match               = "\e[30;43m";
+ my $green_bold          = "\e[1;32m";
+--- a/t/ack-pager.t
++++ b/t/ack-pager.t
+@@ -4,6 +4,7 @@
+ use warnings;
+ 
+ use Test::More;
++use File::Basename qw(dirname);
+ 
+ use lib 't';
+ use Util;
+@@ -16,6 +17,7 @@
+ plan tests => 9;
+ 
+ prep_environment();
++$ENV{PATH} = dirname($^X);
+ 
+ NO_PAGER: {
+     my @args = qw(--nocolor --sort-files -i nevermore t/text);
+--- a/t/ack-passthru.t
++++ b/t/ack-passthru.t
+@@ -9,6 +9,7 @@
+ use Util;
+ 
+ prep_environment();
++delete @ENV{qw(NO_COLOR ANSI_COLORS_DISABLED)};
+ 
+ my @full_speech = <DATA>;
+ chomp @full_speech;
+--- a/t/context.t
++++ b/t/context.t
+@@ -9,6 +9,7 @@
+ use Util;
+ 
+ prep_environment();
++delete @ENV{qw(NO_COLOR ANSI_COLORS_DISABLED)};
+ 
+ # Checks also beginning of file.
+ 

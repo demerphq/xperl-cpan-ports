@@ -32,3 +32,8 @@ client practice. These flags prevent prompts; they do not request ANSI
 color or cancel `NO_COLOR`. `AUTOMATED_TESTING` denotes a smoke tester and
 must not be set by an ordinary CPAN install. When a test assumes colored
 output, fix the test's local environment as above.
+
+A test helper with `#!/usr/bin/env perl` must also resolve the same Perl that
+is running the test suite. If the test sanitizes `PATH`, set it to the
+directory containing `$^X` before invoking that helper. The `ack` 3.10.0
+patch covers both this pager case and tests that expect colored output.
