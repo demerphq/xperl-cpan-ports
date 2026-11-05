@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Moose",
+  "releases": [
+    {
+      "version": "2.4001",
+      "cpan_path": "E/ET/ETHER/Moose-2.4001.tar.gz",
+      "source_sha256": "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+      "patch_sets": [
+        {
+          "id": "xperl-error-arguments",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-error-arguments.patch",
+              "sha256": "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

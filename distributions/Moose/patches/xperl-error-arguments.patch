@@ -1,0 +1,32 @@
+--- a/lib/Class/MOP/Mixin.pm
++++ b/lib/Class/MOP/Mixin.pm
+@@ -14,6 +14,13 @@
+ 
+ sub _throw_exception {
+     my ($class, $exception_type, @args_to_exception) = @_;
++    for (my $i = 0; $i + 1 < @args_to_exception; $i += 2) {
++        if ($args_to_exception[$i] eq 'error'
++            && blessed($args_to_exception[$i + 1])
++            && $args_to_exception[$i + 1]->isa('XPerl::Exception')) {
++            $args_to_exception[$i + 1] = "$args_to_exception[$i + 1]";
++        }
++    }
+     die use_module( "Moose::Exception::$exception_type" )->new( @args_to_exception );
+ }
+ 
+--- a/lib/Moose/Util.pm
++++ b/lib/Moose/Util.pm
+@@ -43,6 +43,13 @@
+ 
+ sub throw_exception {
+     my ($class_name, @args_to_exception) = @_;
++    for (my $i = 0; $i + 1 < @args_to_exception; $i += 2) {
++        if ($args_to_exception[$i] eq 'error'
++            && blessed($args_to_exception[$i + 1])
++            && $args_to_exception[$i + 1]->isa('XPerl::Exception')) {
++            $args_to_exception[$i + 1] = "$args_to_exception[$i + 1]";
++        }
++    }
+     my $class = "Moose::Exception::$class_name";
+     _load_user_class( $class );
+     die $class->new( @args_to_exception );

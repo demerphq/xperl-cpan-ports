@@ -22,3 +22,16 @@ The same distinction matters when formatting an error for test diagnostics.
 name as if it were a user-thrown object changes expected diagnostics. The
 `Test-Exception` 0.43 patch leaves named user exception classes visible while
 rendering the XPerl wrapper as text.
+
+When a library catches an error and stores it in a field typed as `Str`, an
+XPerl wrapper must be rendered before constructing that object. Limit the
+conversion to the text field and the XPerl wrapper class so user-thrown
+objects retain their identity. The `Moose` 2.4001 patch normalizes its
+`error` argument at two exception-construction entry points.
+
+Generated accessor code can make the same mistake when it decides whether to
+add context to a caught error using `ref $@`. The `Moo` 2.005005 patch treats
+the XPerl wrapper as text in this branch and leaves user-thrown references
+unchanged. Its location test helper also stringifies `$@` before matching and
+ignores XPerl's additional propagation lines when identifying the original
+error location.

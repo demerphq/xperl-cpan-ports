@@ -1,0 +1,25 @@
+--- a/lib/Method/Generate/Accessor.pm
++++ b/lib/Method/Generate/Accessor.pm
+@@ -520,7 +520,8 @@
+   .$code."),\n"
+   ."    1\n"
+   ."  } or\n"
+-  .'    $_error = CORE::ref $@ ? $@ : '.$prefix.'.$@);'."\n"
++  .'    $_error = CORE::ref($@) && CORE::ref($@) ne "XPerl::Exception"'
++  .' ? $@ : '.$prefix.'.$@);'."\n"
+   .'  ($@ = $_old_error),'."\n"
+   .'  (defined $_error and CORE::die $_error);'."\n"
+   .($want_return ? '  $_return;'."\n" : '')
+--- a/t/lib/ErrorLocation.pm
++++ b/t/lib/ErrorLocation.pm
+@@ -78,7 +78,9 @@
+   croak "died directly in test code: $@"
+     if $immediate;
+   delete $LocationTest::{"_$gen"};
+-  my ($location) = $@ =~ /.* at (.*? line \d+)\.?$/;
++  my $error = "$@";
++  $error =~ s/^\t\.\.\.propagated at [^\n]*\n//mg;
++  my ($location) = $error =~ /.* at (.*? line \d+)\.?$/;
+   $builder->is_eq($location, "LocationTestFile line $fail_line", $name)
+     or $builder->diag("  error:\n    $@\n  full trace:\n$full_trace"), return !1;
+ }
