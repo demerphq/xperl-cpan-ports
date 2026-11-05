@@ -1,0 +1,33 @@
+--- a/lib/Plack/Middleware/StackTrace.pm
++++ b/lib/Plack/Middleware/StackTrace.pm
+@@ -19,7 +19,17 @@
+     my($self, $env) = @_;
+ 
+     my ($trace, %string_traces, %ref_traces);
++    local $SIG{__EXCEPT__} = sub {
++        my $exception = shift;
++        return unless ($exception->severity // '') eq 'FATAL_ERROR';
++        my $id = refaddr($exception);
++        $ref_traces{$id} ||= $trace = $StackTraceClass->new(
++            indent => 1, message => "$exception",
++            ignore_package => [__PACKAGE__], no_refs => 1,
++        );
++    } if ${^XPERL_VERSION};
+     local $SIG{__DIE__} = sub {
++        return if ${^XPERL_VERSION} && !ref($_[0]);
+         $trace = $StackTraceClass->new(
+             indent => 1, message => munge_error($_[0], [ caller ]),
+             ignore_package => __PACKAGE__, no_refs => 1,
+--- a/t/Plack-Middleware/stacktrace/sigdie.t
++++ b/t/Plack-Middleware/stacktrace/sigdie.t
+@@ -22,7 +22,9 @@
+     my $res = $cb->($req);
+ 
+     is $res->code, 500;
+-    like $res->content, qr/The application raised/;
++    like $res->content, ${^XPERL_VERSION}
++        ? qr/Plack::Middleware::StackTrace::call/
++        : qr/The application raised/;
+ };
+ 
+ done_testing;

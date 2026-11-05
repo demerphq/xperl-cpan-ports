@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Plack",
+  "releases": [
+    {
+      "version": "1.0057",
+      "cpan_path": "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
+      "source_sha256": "01cfe036276703f62cf6c1cec7c7e630420677498dfa7bc333ad88eca9d7a765",
+      "patch_sets": [
+        {
+          "id": "xperl-canonical-stacktrace",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-canonical-stacktrace.patch",
+              "sha256": "db68151f5895821db824213cf0027de6f84f52b6e81eb773afeaa9e16d2b2d16"
+            }
+          ],
+          "recipes": ["structured-stacktrace-hook-v1"]
+        }
+      ]
+    }
+  ]
+}
