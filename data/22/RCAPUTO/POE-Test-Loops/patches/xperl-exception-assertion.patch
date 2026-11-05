@@ -1,12 +1,13 @@
 --- a/lib/POE/Test/Loops/k_signals_rerun.pm
 +++ b/lib/POE/Test/Loops/k_signals_rerun.pm
-@@ -100,3 +100,10 @@
+@@ -100,3 +100,11 @@
      if ( $die_on_bad_exit and $exit ) {
        ok( $@, "($die_on_bad_exit-$exit) died with bad exit code" );
 -      is( $@, "bad exit\n", "($die_on_bad_exit-$exit) error is correct" );
 +      if (${^XPERL_VERSION}) {
++        my $error = $@;
 +        require XPerl::DiagGroup;
-+        ok( $@->has_diagnostic('ERROR_USER_TEXT', text => "bad exit\n"),
++        ok( $error->has_diagnostic('ERROR_USER_TEXT', text => "bad exit\n"),
 +          "($die_on_bad_exit-$exit) error is correct" );
 +      }
 +      else {

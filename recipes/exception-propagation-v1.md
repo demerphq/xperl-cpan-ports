@@ -12,8 +12,9 @@ error, `ERROR_USER_TEXT` has a `text` parameter holding the original message.
 For example:
 
 ```perl
+my $error = $@;
 require XPerl::DiagGroup;
-ok($@->has_diagnostic('ERROR_USER_TEXT', text => "bad exit\n"),
+ok($error->has_diagnostic('ERROR_USER_TEXT', text => "bad exit\n"),
    'original error survives rethrow');
 ```
 

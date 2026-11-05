@@ -1,22 +1,25 @@
 --- a/t/90_regression/leolo-sig-die.t
 +++ b/t/90_regression/leolo-sig-die.t
-@@ -99 +99,7 @@
+@@ -99 +99,9 @@
 -is($@, "array_ctx3\nmore\n", 'exited when expected');
 +if (${^XPERL_VERSION}) {
++  my $error = $@;
 +  require XPerl::DiagGroup;
-+  ok($@->has_diagnostic('ERROR_USER_TEXT', text => "array_ctx3\nmore\n"),
++  ok($error->has_diagnostic('ERROR_USER_TEXT', text => "array_ctx3\nmore\n"),
 +    'exited when expected');
 +}
 +else {
 +  is($@, "array_ctx3\nmore\n", 'exited when expected');
 +}
++}
 --- a/t/90_regression/rt19908-merlyn-stop.t
 +++ b/t/90_regression/rt19908-merlyn-stop.t
-@@ -37,2 +37,9 @@
+@@ -37,2 +37,10 @@
 -ok($@ eq "stop\n", "stopped due to a 'stop' exception (in _stop)");
 +if (${^XPERL_VERSION}) {
++  my $error = $@;
 +  require XPerl::DiagGroup;
-+  ok($@->has_diagnostic('ERROR_USER_TEXT', text => "stop\n"),
++  ok($error->has_diagnostic('ERROR_USER_TEXT', text => "stop\n"),
 +    "stopped due to a 'stop' exception (in _stop)");
 +}
 +else {
