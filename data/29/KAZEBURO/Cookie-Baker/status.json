@@ -1,0 +1,42 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "Cookie-Baker",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Cookie-Baker-0.12.tar.gz",
+         "id" : "6b9a2cc02122dd67de43cf8962b9cde3be9ff67c552c7c469c4f0a4d96a678e1",
+         "module" : "Cookie::Baker",
+         "observed_at" : "2026-11-05T13:06:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9b04df5d47dcd45ac4299626a10ec990fb40c94ee5a6300c3a88bdfb3575ec29",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=75",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

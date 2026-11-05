@@ -1,0 +1,42 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Future-IO",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Future-IO-0.23.tar.gz",
+         "id" : "bee76f58df5114ddfa7fcfd7db0f095aba3cce7b8be13709c95d8ab74b3b7731",
+         "module" : "Future::IO",
+         "observed_at" : "2026-11-05T14:38:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3944ef77e31ddb6b953870c7f43376a4f612fd2a217df121a121823a2b1c63ce",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=98",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

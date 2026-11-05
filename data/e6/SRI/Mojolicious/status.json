@@ -1,0 +1,41 @@
+{
+   "author" : "SRI",
+   "distribution" : "Mojolicious",
+   "observations" : [
+      {
+         "cpan_path" : "S/SR/SRI/Mojolicious-9.53.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e9594ef8985e8fa49f2b42438b9206385d375ee72c6125bd84a8211ebba208dc",
+         "module" : "Mojolicious",
+         "observed_at" : "2026-11-05T15:51:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+         "status" : "failed",
+         "test_summary" : "Files=109, Tests=3736, Failed 2/109 test programs. 2/3736 subtests failed.",
+         "version" : "9.53",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

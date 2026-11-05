@@ -3,7 +3,10 @@
 use strict;
 use warnings;
 use feature qw(dispatch_on signatures);
+use builtin qw(jumphash_string siphash_2_4);
+no warnings 'experimental::builtin';
 use Digest::SHA qw(sha256_hex);
+use Encode qw(encode);
 use File::Basename qw(basename dirname);
 use File::Find qw(find);
 use File::Path qw(make_path);
@@ -14,27 +17,44 @@ use JSON::PP;
 use POSIX qw(strftime);
 
 my @caches;
-GetOptions('cache=s@' => \@caches) or die "usage: $0 --cache DIR [...]\n";
-die "usage: $0 --cache DIR [...]\n" unless @caches && !@ARGV;
+my $rebuild;
+GetOptions('cache=s@' => \@caches, 'rebuild' => \$rebuild)
+    or die "usage: $0 --cache DIR [...] | --rebuild\n";
+die "usage: $0 --cache DIR [...] | --rebuild\n"
+    unless (@caches || $rebuild) && !@ARGV;
 
 my $root = File::Spec->catdir($FindBin::Bin, '..');
 my $status_dir = File::Spec->catdir($root, 'status');
-my $distribution_dir = File::Spec->catdir($status_dir, 'distributions');
-make_path($distribution_dir);
+my $data_dir = File::Spec->catdir($root, 'data');
+my $config = JSON::PP->new->decode(read_file(
+    File::Spec->catfile($root, 'registry.json')));
+die "importer requires the one-repository layout\n"
+    unless $config->{schema} == 2
+        && $config->{active_repositories} == 1
+        && $config->{placement} eq 'siphash24-zero-jump-v1'
+        && $config->{fanout} eq 'siphash24-zero-first-byte-v1';
 my $json = JSON::PP->new->canonical->pretty;
 my %records;
 
-opendir my $existing, $distribution_dir or die "$distribution_dir: $!\n";
-for my $file (grep { /\.json\z/ } readdir $existing) {
-    my $path = File::Spec->catfile($distribution_dir, $file);
-    my $data = $json->decode(read_file($path));
-    die "invalid status record: $path\n"
-        unless $data->{schema} == 1
-            && $file eq "$data->{distribution}.json"
-            && ref($data->{observations}) eq 'ARRAY';
-    $records{$data->{distribution}} = $data;
+if (-d $data_dir) {
+    find({
+        no_chdir => 1,
+        wanted => sub {
+            return unless -f $File::Find::name
+                && basename($File::Find::name) eq 'status.json';
+            my $path = $File::Find::name;
+            my $data = $json->decode(read_file($path));
+            my $key = "$data->{author}/$data->{distribution}";
+            die "invalid status record: $path\n"
+                unless $data->{schema} == 2
+                    && ref($data->{observations}) eq 'ARRAY'
+                    && $path eq status_path($data->{author},
+                                            $data->{distribution})
+                    && !exists $records{$key};
+            $records{$key} = $data;
+        },
+    }, $data_dir);
 }
-closedir $existing;
 
 my $imported = 0;
 for my $cache (@caches) {
@@ -49,8 +69,10 @@ for my $cache (@caches) {
             my $receipt = eval { $json->decode($raw) };
             die "invalid receipt $path: $@\n" if $@;
             my ($distribution, $release_version) = distribution_name($receipt);
-            my $entry = $records{$distribution} //= {
-                schema => 1, distribution => $distribution,
+            my $author = author_from_path($receipt->{cpan_path});
+            my $key = "$author/$distribution";
+            my $entry = $records{$key} //= {
+                schema => 2, author => $author, distribution => $distribution,
                 observations => [],
             };
             my $id = sha256_hex($raw);
@@ -71,40 +93,43 @@ for my $cache (@caches) {
 }
 
 my @current;
-for my $distribution (sort keys %records) {
-    my $entry = $records{$distribution};
+for my $key (sort keys %records) {
+    my $entry = $records{$key};
+    my ($author, $distribution) = @{$entry}{qw(author distribution)};
     @{$entry->{observations}} = sort {
         $a->{observed_at} cmp $b->{observed_at}
             || $a->{id} cmp $b->{id}
     } @{$entry->{observations}};
-    write_file(File::Spec->catfile($distribution_dir, "$distribution.json"),
-               $json->encode($entry));
+    write_file(status_path($author, $distribution), $json->encode($entry));
     my %latest;
     for my $observation (@{$entry->{observations}}) {
         my $key = join "\0", @{$observation}{qw(version source_sha256 xperl_version)};
         $latest{$key} = $observation;
     }
     push @current, map {
-        { distribution => $distribution, observation => $_ }
+        { author => $author, distribution => $distribution,
+          observation => $_ }
     } values %latest;
 }
 
 @current = sort {
-    $a->{distribution} cmp $b->{distribution}
+    $a->{author} cmp $b->{author}
+        || $a->{distribution} cmp $b->{distribution}
         || $a->{observation}{version} cmp $b->{observation}{version}
 } @current;
 my @unresolved = grep { $_->{observation}{status} eq 'failed' } @current;
 my $summary = "# XPerl CPAN build status\n\n";
-$summary .= "Latest observation for each distribution release, source hash, and XPerl version.\n";
+$summary .= "Latest observation for each author, distribution release, source hash, and XPerl version.\n";
 $summary .= "Older failures remain in the distribution records.\n\n";
 $summary .= "Unresolved failures: " . scalar(@unresolved) . " of " . scalar(@current)
     . " release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).\n\n";
-$summary .= "| Distribution | Version | XPerl | Status | Patch set |\n";
-$summary .= "| --- | --- | --- | --- | --- |\n";
+$summary .= "| Author | Distribution | Version | XPerl | Status | Patch set |\n";
+$summary .= "| --- | --- | --- | --- | --- | --- |\n";
 for my $row (@current) {
-    my ($distribution, $observation) = @{$row}{qw(distribution observation)};
+    my ($author, $distribution, $observation) =
+        @{$row}{qw(author distribution observation)};
     $summary .= join(' | ',
-        "| [$distribution](distributions/$distribution.json)",
+        "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
         $observation->{status},
         $observation->{patch_set} // 'none') . " |\n";
@@ -112,15 +137,16 @@ for my $row (@current) {
 write_file(File::Spec->catfile($status_dir, 'SUMMARY.md'), $summary);
 
 my $unresolved = "# Unresolved XPerl CPAN builds\n\n";
-$unresolved .= "Latest failed observation for each release, source hash, and XPerl version.\n";
+$unresolved .= "Latest failed observation for each author, release, source hash, and XPerl version.\n";
 $unresolved .= "Prior failures remain in each distribution record after a later success.\n\n";
-$unresolved .= "| Distribution | Version | XPerl | Failed phase | Result |\n";
-$unresolved .= "| --- | --- | --- | --- | --- |\n";
+$unresolved .= "| Author | Distribution | Version | XPerl | Failed phase | Result |\n";
+$unresolved .= "| --- | --- | --- | --- | --- | --- |\n";
 for my $row (@unresolved) {
-    my ($distribution, $observation) = @{$row}{qw(distribution observation)};
+    my ($author, $distribution, $observation) =
+        @{$row}{qw(author distribution observation)};
     my $failure = $observation->{failure} // {};
     $unresolved .= join(' | ',
-        "| [$distribution](distributions/$distribution.json)",
+        "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
         $failure->{phase} // 'unknown',
         $observation->{test_summary} // ("exit " . ($failure->{exit_status} // '?')))
@@ -139,9 +165,37 @@ sub read_file ($path) {
 }
 
 sub write_file ($path, $data) {
+    make_path(dirname($path));
     open my $file, '>', $path or die "cannot write $path: $!\n";
     print {$file} $data;
     close $file or die "cannot close $path: $!\n";
+}
+
+sub author_from_path ($path) {
+    my ($initial, $pair, $author) =
+        ($path // '') =~ m{\A([A-Z])/([A-Z]{2})/([A-Z0-9_-]+)/[^/]+\z};
+    die "invalid CPAN author path: " . ($path // '') . "\n"
+        unless defined($author) && substr($author, 0, 1) eq $initial
+            && substr($author, 0, 2) eq $pair;
+    return $author;
+}
+
+sub status_path ($author, $distribution) {
+    die "invalid distribution name: $distribution\n"
+        unless defined($distribution)
+            && $distribution =~ /\A[A-Za-z0-9][A-Za-z0-9_.-]*\z/;
+    die "invalid CPAN author: $author\n"
+        unless defined($author) && $author =~ /\A[A-Z0-9_-]+\z/;
+    my $key = encode('UTF-8', "$author/$distribution");
+    my $prefix = unpack 'H2', siphash_2_4($key, "\0" x 16);
+    return File::Spec->catfile($data_dir, $prefix, $author,
+                               $distribution, 'status.json');
+}
+
+sub status_link ($author, $distribution) {
+    my $key = encode('UTF-8', "$author/$distribution");
+    my $prefix = unpack 'H2', siphash_2_4($key, "\0" x 16);
+    return "../data/$prefix/$author/$distribution/status.json";
 }
 
 sub distribution_name ($receipt) {

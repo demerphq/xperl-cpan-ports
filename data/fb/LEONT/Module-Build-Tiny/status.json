@@ -1,0 +1,112 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Module-Build-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-Tiny-0.053.tar.gz",
+         "id" : "957ba42123f4b6baade63c9aefb8703b5347f5e7e5a6888155898ae08edc14f4",
+         "module" : "Module::Build::Tiny",
+         "observed_at" : "2026-11-05T11:45:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3726d622da6f655e88fdf89e4fd597709c44970b47de65082003e8d86b5e193a",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=29",
+         "version" : "0.053",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-Tiny-0.053.tar.gz",
+         "id" : "783c143ed1562c83a06f2a3b41a26ca90c9717bb8af02cc1107097fbef5cc839",
+         "module" : "Module::Build::Tiny",
+         "observed_at" : "2026-11-05T12:22:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3726d622da6f655e88fdf89e4fd597709c44970b47de65082003e8d86b5e193a",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=29",
+         "version" : "0.053",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Module-Build-Tiny-0.053.tar.gz",
+         "id" : "ed33c1b703adbf54a3020d4fbd3265fcb68d46f5de183e45f99d2078abc6c54e",
+         "module" : "Module::Build::Tiny",
+         "observed_at" : "2026-11-05T13:01:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3726d622da6f655e88fdf89e4fd597709c44970b47de65082003e8d86b5e193a",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=29",
+         "version" : "0.053",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "CPAN-Uploader",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/CPAN-Uploader-0.103019.tar.gz",
+         "id" : "c24dad0bd74ba5a5e9caea7c90b5ba96c37855bc01210ca3ae83aab7fe7a2fa3",
+         "module" : "CPAN::Uploader",
+         "observed_at" : "2026-11-05T11:45:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f1adcb543d5a1ce59be08a25578125992c6dcf1d4888fd9ff658823b46922c24",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=4",
+         "version" : "0.103019",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/CPAN-Uploader-0.103019.tar.gz",
+         "id" : "4a9711ff70eb5f425bd9cf246b231fbd3eb7afd21e292b1c97234a80b06444de",
+         "module" : "CPAN::Uploader",
+         "observed_at" : "2026-11-05T12:23:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f1adcb543d5a1ce59be08a25578125992c6dcf1d4888fd9ff658823b46922c24",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=4",
+         "version" : "0.103019",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

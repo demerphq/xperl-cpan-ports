@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Config-MVP-Reader-INI",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-Reader-INI-2.101465.tar.gz",
+         "id" : "3756b3bbf14f6d5abca16378955709b1be08fa7935d48e083aedd99e52d19a7a",
+         "module" : "Config::MVP::Reader::INI",
+         "observed_at" : "2026-11-05T12:02:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "13c7aa27c1df98cd33ada399e59ff38fabfa9d65513e42af02f72c2d3f636247",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=10",
+         "version" : "2.101465",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-Reader-INI-2.101465.tar.gz",
+         "id" : "f92c085ecc4170f689b9bedb70ae7bb7aa8451864bc21b82fc09058ec12ab3eb",
+         "module" : "Config::MVP::Reader::INI",
+         "observed_at" : "2026-11-05T12:25:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "13c7aa27c1df98cd33ada399e59ff38fabfa9d65513e42af02f72c2d3f636247",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=10",
+         "version" : "2.101465",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

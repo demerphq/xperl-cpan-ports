@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Plack-Middleware-ReverseProxy",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-Middleware-ReverseProxy-0.17.tar.gz",
+         "id" : "e1b928577fa6e4ed625138911857fde1ea4afe1be49eb2ca7ef8989da821a2c7",
+         "module" : "Plack::Middleware::ReverseProxy",
+         "observed_at" : "2026-11-05T13:20:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f9bdd9c40cc0b79ec583881925032409a926cc2747cbed09b2ff221c3cb64254",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=60",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

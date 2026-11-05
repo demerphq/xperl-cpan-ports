@@ -1,0 +1,112 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "HTTP-Cookies",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Cookies-6.12.tar.gz",
+         "id" : "0ba86bc589249b68ad91f1952d98d02bf39db162a082743a1c0672d2196582ee",
+         "module" : "HTTP::Cookies",
+         "observed_at" : "2026-11-05T11:45:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4e460c4bae76285bfc726f641349402fc9038fcd9ca0f33346bec036d73876b8",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=129",
+         "version" : "6.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Cookies-6.12.tar.gz",
+         "id" : "568cfac4a82884d91b259219f395be154aef34a04444436876af4eb86bd0e5fb",
+         "module" : "HTTP::Cookies",
+         "observed_at" : "2026-11-05T12:22:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4e460c4bae76285bfc726f641349402fc9038fcd9ca0f33346bec036d73876b8",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=129",
+         "version" : "6.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Cookies-6.12.tar.gz",
+         "id" : "b2f92573c173b198e12fbb2d68ccf5c3b72bc90cc101e96739521c5af506de36",
+         "module" : "HTTP::Cookies",
+         "observed_at" : "2026-11-05T13:02:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4e460c4bae76285bfc726f641349402fc9038fcd9ca0f33346bec036d73876b8",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=129",
+         "version" : "6.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,77 @@
+{
+   "author" : "KENTNL",
+   "distribution" : "Test-File-ShareDir",
+   "observations" : [
+      {
+         "cpan_path" : "K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz",
+         "id" : "0757f21c53923db9bd4c84d16025e2eb87259e19dac028c027d8fdd806f36932",
+         "module" : "Test::File::ShareDir",
+         "observed_at" : "2026-11-05T12:03:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b33647cbb4b2f2fcfbde4f8bb4383d0ac95c2f89c4c5770eb691f1643a337aad",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=29",
+         "version" : "1.001002",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz",
+         "id" : "f54d046902f642b39308294fe907bc51742d3915b6254f4126af92cfb579d422",
+         "module" : "Test::File::ShareDir",
+         "observed_at" : "2026-11-05T12:26:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b33647cbb4b2f2fcfbde4f8bb4383d0ac95c2f89c4c5770eb691f1643a337aad",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=29",
+         "version" : "1.001002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -22,6 +22,11 @@ For the current web and data candidates:
     /path/to/xperl/bin/perl bin/river-priorities --river river.json.gz \
       --candidates priorities/web-and-data.txt --pending
 
+The report shows the author of each latest local observation. When several
+authors have published the same distribution name, that observation may not
+belong to the CPAN index default. Resolve a module through the CPAN index
+before treating a port as available for an ordinary install.
+
 The full ranking includes Perl core and other already available
 distributions. Use `--pending` to hide locally successful observations, or
 pass `--candidates FILE` with one distribution name per line to rank a

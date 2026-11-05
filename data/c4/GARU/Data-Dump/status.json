@@ -1,0 +1,77 @@
+{
+   "author" : "GARU",
+   "distribution" : "Data-Dump",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GARU/Data-Dump-1.25.tar.gz",
+         "id" : "cce2bf06eb5f420b545bccb30e2f69cbd4728158b70c915ea6f81ef0e6b99fcf",
+         "module" : "Data::Dump",
+         "observed_at" : "2026-11-05T12:32:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a4aa6e0ddbf39d5ad49bddfe0f89d9da864e3bc00f627125d1bc580472f53fbd",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=149",
+         "version" : "1.25",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GA/GARU/Data-Dump-1.25.tar.gz",
+         "id" : "f556f24110075c207e8d4eb9f744c626af326b4efb16c491ea2a40e5f7aa1334",
+         "module" : "Data::Dump",
+         "observed_at" : "2026-11-05T13:01:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a4aa6e0ddbf39d5ad49bddfe0f89d9da864e3bc00f627125d1bc580472f53fbd",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=149",
+         "version" : "1.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

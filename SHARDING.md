@@ -1,7 +1,7 @@
 # Registry sharding design
 
 The current `xperl-cpan-ports` repository is repository 0: the permanent
-bootstrap location. Its root will publish a small configuration file that
+bootstrap location. Its root publishes a small configuration file that
 identifies every active data repository. A client fetches repository 0 first,
 reads that configuration, and then selects one data repository for a resolved
 CPAN author and distribution pair. Installation without the registry remains
@@ -9,15 +9,16 @@ possible.
 
 Start with one active repository, repository 0. Allow the active count to grow
 to eight if needed. Repository IDs are consecutive integers from zero to
-`count - 1`. The proposed root `registry.json` records the layout version,
-active count, repository URL for each ID, pinned revisions for repositories
-other than 0, and the hash algorithm and seed identifiers. Repository 0's
+`count - 1`. The root `registry.json` records the layout version, active
+count, local checkout path for each ID, and the hash algorithm and seed
+identifiers. Repository 0's path is `.`. Future repository entries can
+include their remote URL and pinned revision for fetching. Repository 0's
 revision is the revision from which the client read `registry.json`; it
 cannot pin itself inside the same commit. A client rejects unknown algorithms
 or layout versions. Repository 0 remains the bootstrap location even if a
 distribution's data later moves to another repository.
 
-The target repository shape is:
+The repository shape is:
 
 ```text
 xperl-cpan-ports/                    # repository 0
@@ -103,7 +104,6 @@ available for clients holding an earlier configuration. A configuration
 revision and its repository revisions form one registry snapshot for receipts
 and review.
 
-The current flat `distributions/` and `status/distributions/` paths remain
-the version 1 layout. Move them only when the installer and receipt importer
-can read the new configuration and path scheme. This document defines the
-target layout; it does not silently change existing registry behavior.
+The original flat `distributions/` and `status/distributions/` records were
+moved to this layout after the installer and receipt importer gained support
+for it. Index content still uses the matching rules in [FORMAT.md](FORMAT.md).

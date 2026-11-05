@@ -1,9 +1,12 @@
-# Registry format, version 1
+# Patch index format, version 1
 
-Each distribution has one `index.json`. Its `distribution` key is the CPAN
-distribution name, not a module name. `releases` contains entries for original
-CPAN release archives. An entry's `cpan_path` is relative to the CPAN authors
-directory, and `source_sha256` is the digest of the exact downloaded archive.
+Each CPAN author and distribution pair has one `index.json` under the
+repository layout described in [SHARDING.md](SHARDING.md). The index content
+still uses schema 1. Its `distribution` key is the CPAN distribution name,
+not a module name. `releases` contains entries for original CPAN release
+archives from that author. An entry's `cpan_path` is relative to the CPAN
+authors directory, and `source_sha256` is the digest of the exact downloaded
+archive.
 
 This example describes the shape. It is not an installable registry entry:
 
@@ -39,8 +42,9 @@ This example describes the shape. It is not an installable registry entry:
 
 ## Matching
 
-1. Resolve the requested module to a CPAN distribution and release.
-2. Require an exact match for distribution name, release version, CPAN archive
+1. Resolve the requested module through the CPAN index to a CPAN author,
+   distribution, and release. An explicit author may select another release.
+2. Require an exact match for author, distribution name, release version, CPAN archive
    path, and source SHA-256 digest. Never infer compatibility from a similar
    filename or version alone.
 3. Select a patch set whose XPerl version interval contains the running

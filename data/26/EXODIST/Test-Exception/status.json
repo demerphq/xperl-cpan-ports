@@ -1,0 +1,164 @@
+{
+   "author" : "EXODIST",
+   "distribution" : "Test-Exception",
+   "observations" : [
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "f8bb22da3609db430ad97297fdff110e503b5dd57788872b175c3ce97e0f1208",
+         "module" : "Test::Exception",
+         "observed_at" : "2026-11-05T11:45:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+         "status" : "failed",
+         "test_summary" : "Files=11, Tests=53, Failed 4/11 test programs. 6/53 subtests failed.",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+         "id" : "495648b4f19473141150ca38de5d439092ab9f3124068860707f1699c0cbf996",
+         "module" : "Test::Exception",
+         "observed_at" : "2026-11-05T11:49:19Z",
+         "patch_set" : "xperl-wrapper-rendering",
+         "patch_sha256" : [
+            "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=53",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+         "id" : "4d0ff02d065988df56eab18a779a55598924be111eedfe0abf910d5008f38416",
+         "module" : "Test::Exception",
+         "observed_at" : "2026-11-05T12:23:30Z",
+         "patch_set" : "xperl-wrapper-rendering",
+         "patch_sha256" : [
+            "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=53",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+         "id" : "5ce98ceb23a2b32306c977602091542af53e9748bd28e2a615a394446d1ebc14",
+         "module" : "Test::Exception",
+         "observed_at" : "2026-11-05T13:00:47Z",
+         "patch_set" : "xperl-wrapper-rendering",
+         "patch_sha256" : [
+            "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=53",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

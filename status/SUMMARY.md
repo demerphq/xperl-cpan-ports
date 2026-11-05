@@ -1,235 +1,235 @@
 # XPerl CPAN build status
 
-Latest observation for each distribution release, source hash, and XPerl version.
+Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
 Unresolved failures: 1 of 226 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
-| Distribution | Version | XPerl | Status | Patch set |
-| --- | --- | --- | --- | --- |
-| [Algorithm-Diff](distributions/Algorithm-Diff.json) | 1.201 | v5.45.5 | installed | none |
-| [Apache-LogFormat-Compiler](distributions/Apache-LogFormat-Compiler.json) | 0.36 | v5.45.5 | installed | none |
-| [App-Cmd](distributions/App-Cmd.json) | 0.340 | v5.45.5 | installed | none |
-| [AppConfig](distributions/AppConfig.json) | 1.71 | v5.45.5 | installed | none |
-| [B-COW](distributions/B-COW.json) | 0.007 | v5.45.5 | installed | none |
-| [B-Hooks-EndOfScope](distributions/B-Hooks-EndOfScope.json) | 0.28 | v5.45.5 | installed | none |
-| [CGI](distributions/CGI.json) | 5.02 | v5.45.5 | installed | none |
-| [CGI-Simple](distributions/CGI-Simple.json) | 1.282 | v5.45.5 | installed | none |
-| [CGI-Struct](distributions/CGI-Struct.json) | 1.21 | v5.45.5 | installed | none |
-| [CPAN-Meta-Check](distributions/CPAN-Meta-Check.json) | 0.018 | v5.45.5 | installed | none |
-| [CPAN-Uploader](distributions/CPAN-Uploader.json) | 0.103019 | v5.45.5 | installed | none |
-| [Capture-Tiny](distributions/Capture-Tiny.json) | 0.50 | v5.45.5 | installed | exception-propagation |
-| [Carp-Clan](distributions/Carp-Clan.json) | 6.08 | v5.45.5 | installed | none |
-| [Catalyst-Runtime](distributions/Catalyst-Runtime.json) | 5.90132 | v5.45.5 | installed | xperl-exception-rendering |
-| [Class-C3-Adopt-NEXT](distributions/Class-C3-Adopt-NEXT.json) | 0.14 | v5.45.5 | installed | none |
-| [Class-Data-Inheritable](distributions/Class-Data-Inheritable.json) | 0.10 | v5.45.5 | installed | none |
-| [Class-Inspector](distributions/Class-Inspector.json) | 1.36 | v5.45.5 | installed | none |
-| [Class-Load](distributions/Class-Load.json) | 0.25 | v5.45.5 | installed | none |
-| [Class-Load-XS](distributions/Class-Load-XS.json) | 0.10 | v5.45.5 | installed | none |
-| [Class-Method-Modifiers](distributions/Class-Method-Modifiers.json) | 2.15 | v5.45.5 | installed | none |
-| [Class-Singleton](distributions/Class-Singleton.json) | 1.6 | v5.45.5 | installed | none |
-| [Class-Tiny](distributions/Class-Tiny.json) | 1.008 | v5.45.5 | installed | none |
-| [Clone](distributions/Clone.json) | 0.51 | v5.45.5 | installed | none |
-| [Clone-PP](distributions/Clone-PP.json) | 1.09 | v5.45.5 | installed | none |
-| [Config-INI](distributions/Config-INI.json) | 0.029 | v5.45.5 | installed | none |
-| [Config-MVP](distributions/Config-MVP.json) | 2.200015 | v5.45.5 | installed | none |
-| [Config-MVP-Reader-INI](distributions/Config-MVP-Reader-INI.json) | 2.101465 | v5.45.5 | installed | none |
-| [Cookie-Baker](distributions/Cookie-Baker.json) | 0.12 | v5.45.5 | installed | none |
-| [DBI](distributions/DBI.json) | 1.656 | v5.45.5 | installed | none |
-| [Dancer](distributions/Dancer.json) | 1.3522 | v5.45.5 | installed | none |
-| [Data-Dump](distributions/Data-Dump.json) | 1.25 | v5.45.5 | installed | none |
-| [Data-Dumper-Concise](distributions/Data-Dumper-Concise.json) | 2.023 | v5.45.5 | installed | none |
-| [Data-OptList](distributions/Data-OptList.json) | 0.115 | v5.45.5 | installed | none |
-| [Data-Section](distributions/Data-Section.json) | 0.200008 | v5.45.5 | installed | none |
-| [DateTime](distributions/DateTime.json) | 1.68 | v5.45.5 | installed | none |
-| [DateTime-Locale](distributions/DateTime-Locale.json) | 1.47 | v5.45.5 | installed | none |
-| [DateTime-TimeZone](distributions/DateTime-TimeZone.json) | 2.72 | v5.45.5 | installed | none |
-| [Devel-CheckLib](distributions/Devel-CheckLib.json) | 1.16 | v5.45.5 | installed | none |
-| [Devel-FindPerl](distributions/Devel-FindPerl.json) | 0.016 | v5.45.5 | installed | none |
-| [Devel-GlobalDestruction](distributions/Devel-GlobalDestruction.json) | 0.14 | v5.45.5 | installed | none |
-| [Devel-Hide](distributions/Devel-Hide.json) | 0.0016 | v5.45.5 | installed | none |
-| [Devel-OverloadInfo](distributions/Devel-OverloadInfo.json) | 0.008 | v5.45.5 | installed | none |
-| [Devel-StackTrace](distributions/Devel-StackTrace.json) | 2.05 | v5.45.5 | installed | none |
-| [Devel-StackTrace-AsHTML](distributions/Devel-StackTrace-AsHTML.json) | 0.15 | v5.45.5 | installed | none |
-| [Dist-CheckConflicts](distributions/Dist-CheckConflicts.json) | 0.11 | v5.45.5 | installed | none |
-| [Dist-Zilla](distributions/Dist-Zilla.json) | 6.040 | v5.45.5 | installed | none |
-| [Encode-Locale](distributions/Encode-Locale.json) | 1.05 | v5.45.5 | installed | none |
-| [Eval-Closure](distributions/Eval-Closure.json) | 0.14 | v5.45.5 | installed | none |
-| [Exception-Class](distributions/Exception-Class.json) | 1.46 | v5.45.5 | installed | none |
-| [Exporter-Tiny](distributions/Exporter-Tiny.json) | 1.006003 | v5.45.5 | installed | none |
-| [ExtUtils-CChecker](distributions/ExtUtils-CChecker.json) | 0.12 | v5.45.5 | installed | none |
-| [ExtUtils-Config](distributions/ExtUtils-Config.json) | 0.010 | v5.45.5 | installed | none |
-| [ExtUtils-Helpers](distributions/ExtUtils-Helpers.json) | 0.028 | v5.45.5 | installed | none |
-| [ExtUtils-InstallPaths](distributions/ExtUtils-InstallPaths.json) | 0.015 | v5.45.5 | installed | none |
-| [File-Copy-Recursive](distributions/File-Copy-Recursive.json) | 0.45 | v5.45.5 | installed | none |
-| [File-Find-Rule](distributions/File-Find-Rule.json) | 0.35 | v5.45.5 | installed | none |
-| [File-Listing](distributions/File-Listing.json) | 6.16 | v5.45.5 | installed | none |
-| [File-ShareDir](distributions/File-ShareDir.json) | 1.118 | v5.45.5 | installed | none |
-| [File-ShareDir-Install](distributions/File-ShareDir-Install.json) | 0.14 | v5.45.5 | installed | none |
-| [File-pushd](distributions/File-pushd.json) | 1.016 | v5.45.5 | installed | none |
-| [Filesys-Notify-Simple](distributions/Filesys-Notify-Simple.json) | 0.14 | v5.45.5 | installed | none |
-| [Future](distributions/Future.json) | 0.54 | v5.45.5 | installed | none |
-| [Future-AsyncAwait](distributions/Future-AsyncAwait.json) | 0.71 | v5.45.5 | installed | xperl-exception-savestack |
-| [Future-IO](distributions/Future-IO.json) | 0.23 | v5.45.5 | installed | none |
-| [Getopt-Long-Descriptive](distributions/Getopt-Long-Descriptive.json) | 0.117 | v5.45.5 | installed | none |
-| [HTML-Parser](distributions/HTML-Parser.json) | 3.86 | v5.45.5 | installed | stable-entity-value |
-| [HTML-Tagset](distributions/HTML-Tagset.json) | 3.24 | v5.45.5 | installed | none |
-| [HTTP-Body](distributions/HTTP-Body.json) | 1.24 | v5.45.5 | installed | none |
-| [HTTP-CookieJar](distributions/HTTP-CookieJar.json) | 0.014 | v5.45.5 | installed | none |
-| [HTTP-Cookies](distributions/HTTP-Cookies.json) | 6.12 | v5.45.5 | installed | none |
-| [HTTP-Daemon](distributions/HTTP-Daemon.json) | 6.17 | v5.45.5 | installed | none |
-| [HTTP-Date](distributions/HTTP-Date.json) | 6.08 | v5.45.5 | installed | none |
-| [HTTP-Entity-Parser](distributions/HTTP-Entity-Parser.json) | 0.25 | v5.45.5 | installed | none |
-| [HTTP-Headers-Fast](distributions/HTTP-Headers-Fast.json) | 0.22 | v5.45.5 | installed | none |
-| [HTTP-Message](distributions/HTTP-Message.json) | 7.04 | v5.45.5 | installed | none |
-| [HTTP-MultiPartParser](distributions/HTTP-MultiPartParser.json) | 0.02 | v5.45.5 | installed | none |
-| [HTTP-Negotiate](distributions/HTTP-Negotiate.json) | 6.01 | v5.45.5 | installed | none |
-| [HTTP-Server-Simple](distributions/HTTP-Server-Simple.json) | 0.52 | v5.45.5 | installed | none |
-| [HTTP-Server-Simple-PSGI](distributions/HTTP-Server-Simple-PSGI.json) | 0.16 | v5.45.5 | installed | none |
-| [Hash-Merge-Simple](distributions/Hash-Merge-Simple.json) | 0.052 | v5.45.5 | installed | none |
-| [Hash-MultiValue](distributions/Hash-MultiValue.json) | 0.16 | v5.45.5 | installed | none |
-| [Hook-LexWrap](distributions/Hook-LexWrap.json) | 0.26 | v5.45.5 | installed | none |
-| [IO-Async](distributions/IO-Async.json) | 0.805 | v5.45.5 | installed | xperl-exception-worker |
-| [IO-HTML](distributions/IO-HTML.json) | 1.004 | v5.45.5 | installed | none |
-| [IO-Stringy](distributions/IO-Stringy.json) | 2.113 | v5.45.5 | installed | none |
-| [IO-TieCombine](distributions/IO-TieCombine.json) | 1.005 | v5.45.5 | installed | none |
-| [IPC-Run3](distributions/IPC-Run3.json) | 0.049 | v5.45.5 | installed | none |
-| [IPC-System-Simple](distributions/IPC-System-Simple.json) | 1.30 | v5.45.5 | installed | none |
-| [JSON](distributions/JSON.json) | 4.11 | v5.45.5 | installed | none |
-| [JSON-MaybeXS](distributions/JSON-MaybeXS.json) | 1.004008 | v5.45.5 | installed | none |
-| [LWP-MediaTypes](distributions/LWP-MediaTypes.json) | 6.05 | v5.45.5 | installed | none |
-| [LWP-Protocol-https](distributions/LWP-Protocol-https.json) | 6.17 | v5.45.5 | installed | none |
-| [Log-Dispatch](distributions/Log-Dispatch.json) | 2.71 | v5.45.5 | installed | none |
-| [Log-Dispatch-Array](distributions/Log-Dispatch-Array.json) | 1.005 | v5.45.5 | installed | none |
-| [Log-Dispatchouli](distributions/Log-Dispatchouli.json) | 3.101 | v5.45.5 | installed | none |
-| [Log-Message](distributions/Log-Message.json) | 0.08 | v5.45.5 | installed | none |
-| [Log-Message-Simple](distributions/Log-Message-Simple.json) | 0.10 | v5.45.5 | installed | none |
-| [MIME-Base32](distributions/MIME-Base32.json) | 1.303 | v5.45.5 | installed | none |
-| [MIME-Types](distributions/MIME-Types.json) | 2.30 | v5.45.5 | installed | none |
-| [MRO-Compat](distributions/MRO-Compat.json) | 0.15 | v5.45.5 | installed | none |
-| [Metrics-Any](distributions/Metrics-Any.json) | 0.10 | v5.45.5 | installed | none |
-| [Mixin-Linewise](distributions/Mixin-Linewise.json) | 0.111 | v5.45.5 | installed | none |
-| [Mock-Config](distributions/Mock-Config.json) | 0.05 | v5.45.5 | installed | none |
-| [Module-Build](distributions/Module-Build.json) | 0.4234 | v5.45.5 | installed | none |
-| [Module-Build-Tiny](distributions/Module-Build-Tiny.json) | 0.053 | v5.45.5 | installed | none |
-| [Module-Implementation](distributions/Module-Implementation.json) | 0.09 | v5.45.5 | installed | none |
-| [Module-Path](distributions/Module-Path.json) | 0.19 | v5.45.5 | installed | none |
-| [Module-Pluggable](distributions/Module-Pluggable.json) | 6.4 | v5.45.5 | installed | none |
-| [Module-Runtime](distributions/Module-Runtime.json) | 0.018 | v5.45.5 | installed | none |
-| [Module-Runtime-Conflicts](distributions/Module-Runtime-Conflicts.json) | 0.003 | v5.45.5 | installed | none |
-| [Mojolicious](distributions/Mojolicious.json) | 9.53 | v5.45.5 | failed | none |
-| [Moo](distributions/Moo.json) | 2.005005 | v5.45.5 | installed | xperl-exception-context |
-| [Moose](distributions/Moose.json) | 2.4001 | v5.45.5 | installed | xperl-error-arguments |
-| [MooseX-Emulate-Class-Accessor-Fast](distributions/MooseX-Emulate-Class-Accessor-Fast.json) | 0.009032 | v5.45.5 | installed | none |
-| [MooseX-Getopt](distributions/MooseX-Getopt.json) | 0.78 | v5.45.5 | installed | none |
-| [MooseX-LazyRequire](distributions/MooseX-LazyRequire.json) | 0.11 | v5.45.5 | installed | none |
-| [MooseX-MethodAttributes](distributions/MooseX-MethodAttributes.json) | 0.32 | v5.45.5 | installed | none |
-| [MooseX-OneArgNew](distributions/MooseX-OneArgNew.json) | 0.007 | v5.45.5 | installed | none |
-| [MooseX-Role-Parameterized](distributions/MooseX-Role-Parameterized.json) | 1.11 | v5.45.5 | installed | none |
-| [MooseX-SetOnce](distributions/MooseX-SetOnce.json) | 0.203 | v5.45.5 | installed | none |
-| [MooseX-Types](distributions/MooseX-Types.json) | 0.51 | v5.45.5 | installed | none |
-| [MooseX-Types-Perl](distributions/MooseX-Types-Perl.json) | 0.101344 | v5.45.5 | installed | none |
-| [Net-HTTP](distributions/Net-HTTP.json) | 6.24 | v5.45.5 | installed | none |
-| [Number-Compare](distributions/Number-Compare.json) | 0.03 | v5.45.5 | installed | none |
-| [PAGI](distributions/PAGI.json) | 0.003001 | v5.45.5 | installed | none |
-| [POSIX-strftime-Compiler](distributions/POSIX-strftime-Compiler.json) | 0.46 | v5.45.5 | installed | none |
-| [PPI](distributions/PPI.json) | 1.291 | v5.45.5 | installed | none |
-| [Package-DeprecationManager](distributions/Package-DeprecationManager.json) | 0.18 | v5.45.5 | installed | none |
-| [Package-Stash](distributions/Package-Stash.json) | 0.40 | v5.45.5 | installed | none |
-| [Package-Stash-XS](distributions/Package-Stash-XS.json) | 0.32 | v5.45.5 | installed | none |
-| [Params-SomeUtil](distributions/Params-SomeUtil.json) | 1.12 | v5.45.5 | installed | none |
-| [Params-Util](distributions/Params-Util.json) | 1.102 | v5.45.5 | installed | none |
-| [Params-Validate](distributions/Params-Validate.json) | 1.31 | v5.45.5 | installed | xperl-exception-callbacks |
-| [Params-ValidationCompiler](distributions/Params-ValidationCompiler.json) | 0.31 | v5.45.5 | installed | none |
-| [Path-Class](distributions/Path-Class.json) | 0.37 | v5.45.5 | installed | none |
-| [Path-Tiny](distributions/Path-Tiny.json) | 0.150 | v5.45.5 | installed | none |
-| [Perl-PrereqScanner](distributions/Perl-PrereqScanner.json) | 1.100 | v5.45.5 | installed | none |
-| [PerlIO-utf8_strict](distributions/PerlIO-utf8_strict.json) | 0.010 | v5.45.5 | installed | none |
-| [Plack](distributions/Plack.json) | 1.0057 | v5.45.5 | installed | xperl-canonical-stacktrace |
-| [Plack-Middleware-FixMissingBodyInRedirect](distributions/Plack-Middleware-FixMissingBodyInRedirect.json) | 0.12 | v5.45.5 | installed | none |
-| [Plack-Middleware-MethodOverride](distributions/Plack-Middleware-MethodOverride.json) | 0.20 | v5.45.5 | installed | none |
-| [Plack-Middleware-RemoveRedundantBody](distributions/Plack-Middleware-RemoveRedundantBody.json) | 0.09 | v5.45.5 | installed | none |
-| [Plack-Middleware-ReverseProxy](distributions/Plack-Middleware-ReverseProxy.json) | 0.17 | v5.45.5 | installed | none |
-| [Plack-Test-ExternalServer](distributions/Plack-Test-ExternalServer.json) | 0.02 | v5.45.5 | installed | none |
-| [Role-HasMessage](distributions/Role-HasMessage.json) | 0.007 | v5.45.5 | installed | none |
-| [Role-Identifiable](distributions/Role-Identifiable.json) | 0.009 | v5.45.5 | installed | none |
-| [Role-Tiny](distributions/Role-Tiny.json) | 2.002005 | v5.45.5 | installed | none |
-| [Safe-Isa](distributions/Safe-Isa.json) | 1.000010 | v5.45.5 | installed | none |
-| [Scope-Guard](distributions/Scope-Guard.json) | 0.21 | v5.45.5 | installed | none |
-| [Sereal-Decoder](distributions/Sereal-Decoder.json) | 6.003 | v5.45.5 | installed | none |
-| [Sereal-Encoder](distributions/Sereal-Encoder.json) | 6.003 | v5.45.5 | installed | xperl-hash-entries |
-| [Software-License](distributions/Software-License.json) | 0.104007 | v5.45.5 | installed | none |
-| [Specio](distributions/Specio.json) | 0.53 | v5.45.5 | installed | none |
-| [Stream-Buffered](distributions/Stream-Buffered.json) | 0.03 | v5.45.5 | installed | none |
-| [String-Errf](distributions/String-Errf.json) | 0.009 | v5.45.5 | installed | none |
-| [String-Flogger](distributions/String-Flogger.json) | 1.101246 | v5.45.5 | installed | none |
-| [String-Formatter](distributions/String-Formatter.json) | 1.235 | v5.45.5 | installed | none |
-| [String-RewritePrefix](distributions/String-RewritePrefix.json) | 0.009 | v5.45.5 | installed | none |
-| [Struct-Dumb](distributions/Struct-Dumb.json) | 0.16 | v5.45.5 | installed | none |
-| [Sub-Exporter](distributions/Sub-Exporter.json) | 0.992 | v5.45.5 | installed | none |
-| [Sub-Exporter-ForMethods](distributions/Sub-Exporter-ForMethods.json) | 0.100055 | v5.45.5 | installed | none |
-| [Sub-Exporter-GlobExporter](distributions/Sub-Exporter-GlobExporter.json) | 0.006 | v5.45.5 | installed | none |
-| [Sub-Exporter-Progressive](distributions/Sub-Exporter-Progressive.json) | 0.001013 | v5.45.5 | installed | none |
-| [Sub-Install](distributions/Sub-Install.json) | 0.929 | v5.45.5 | installed | none |
-| [Sub-Quote](distributions/Sub-Quote.json) | 2.006009 | v5.45.5 | installed | none |
-| [Sub-Uplevel](distributions/Sub-Uplevel.json) | 0.2800 | v5.45.5 | installed | none |
-| [Syntax-Keyword-Gather](distributions/Syntax-Keyword-Gather.json) | 1.003002 | v5.45.5 | installed | none |
-| [Task-Weaken](distributions/Task-Weaken.json) | 1.06 | v5.45.5 | installed | none |
-| [Template-Toolkit](distributions/Template-Toolkit.json) | 3.106 | v5.45.5 | installed | xperl-exception-wrapper |
-| [Term-Encoding](distributions/Term-Encoding.json) | 0.03 | v5.45.5 | installed | none |
-| [Term-UI](distributions/Term-UI.json) | 0.50 | v5.45.5 | installed | none |
-| [TermReadKey](distributions/TermReadKey.json) | 2.38 | v5.45.5 | installed | none |
-| [Test-Deep](distributions/Test-Deep.json) | 1.205 | v5.45.5 | installed | none |
-| [Test-Differences](distributions/Test-Differences.json) | 0.73 | v5.45.5 | installed | unicode-dumper-escapes |
-| [Test-Exception](distributions/Test-Exception.json) | 0.43 | v5.45.5 | installed | xperl-wrapper-rendering |
-| [Test-ExpectAndCheck](distributions/Test-ExpectAndCheck.json) | 0.08 | v5.45.5 | installed | none |
-| [Test-FailWarnings](distributions/Test-FailWarnings.json) | 0.008 | v5.45.5 | installed | none |
-| [Test-Fatal](distributions/Test-Fatal.json) | 0.019 | v5.45.5 | installed | none |
-| [Test-File](distributions/Test-File.json) | 1.995 | v5.45.5 | installed | none |
-| [Test-File-ShareDir](distributions/Test-File-ShareDir.json) | 1.001002 | v5.45.5 | installed | none |
-| [Test-Future-IO-Impl](distributions/Test-Future-IO-Impl.json) | 0.21 | v5.45.5 | installed | none |
-| [Test-LeakTrace](distributions/Test-LeakTrace.json) | 0.17 | v5.45.5 | installed | none |
-| [Test-LongString](distributions/Test-LongString.json) | 0.17 | v5.45.5 | installed | none |
-| [Test-Metrics-Any](distributions/Test-Metrics-Any.json) | 0.02 | v5.45.5 | installed | none |
-| [Test-MockTime](distributions/Test-MockTime.json) | 0.17 | v5.45.5 | installed | none |
-| [Test-More-UTF8](distributions/Test-More-UTF8.json) | 0.05 | v5.45.5 | installed | none |
-| [Test-Needs](distributions/Test-Needs.json) | 0.002010 | v5.45.5 | installed | none |
-| [Test-NoWarnings](distributions/Test-NoWarnings.json) | 1.06 | v5.45.5 | installed | none |
-| [Test-Object](distributions/Test-Object.json) | 0.08 | v5.45.5 | installed | none |
-| [Test-Pod](distributions/Test-Pod.json) | 1.52 | v5.45.5 | installed | none |
-| [Test-Requires](distributions/Test-Requires.json) | 0.11 | v5.45.5 | installed | none |
-| [Test-RequiresInternet](distributions/Test-RequiresInternet.json) | 0.05 | v5.45.5 | installed | none |
-| [Test-SharedFork](distributions/Test-SharedFork.json) | 0.35 | v5.45.5 | installed | none |
-| [Test-SubCalls](distributions/Test-SubCalls.json) | 1.10 | v5.45.5 | installed | none |
-| [Test-TCP](distributions/Test-TCP.json) | 2.22 | v5.45.5 | installed | none |
-| [Test-Time](distributions/Test-Time.json) | 0.092 | v5.45.5 | installed | none |
-| [Test-Trap](distributions/Test-Trap.json) | v0.3.5 | v5.45.5 | installed | stringify-wrapper-diagnostic |
-| [Test-Warn](distributions/Test-Warn.json) | 0.37 | v5.45.5 | installed | none |
-| [Test-Warnings](distributions/Test-Warnings.json) | 0.038 | v5.45.5 | installed | none |
-| [Test-Without-Module](distributions/Test-Without-Module.json) | 0.23 | v5.45.5 | installed | none |
-| [Test2-Plugin-NoWarnings](distributions/Test2-Plugin-NoWarnings.json) | 0.10 | v5.45.5 | installed | none |
-| [Text-Diff](distributions/Text-Diff.json) | 1.46 | v5.45.5 | installed | none |
-| [Text-Glob](distributions/Text-Glob.json) | 0.11 | v5.45.5 | installed | none |
-| [Text-SimpleTable](distributions/Text-SimpleTable.json) | 2.07 | v5.45.5 | installed | none |
-| [Text-Template](distributions/Text-Template.json) | 1.61 | v5.45.5 | installed | none |
-| [Throwable](distributions/Throwable.json) | 1.001 | v5.45.5 | installed | none |
-| [Tie-IxHash](distributions/Tie-IxHash.json) | 1.23 | v5.45.5 | installed | none |
-| [TimeDate](distributions/TimeDate.json) | 2.35 | v5.45.5 | installed | none |
-| [Tree-Simple](distributions/Tree-Simple.json) | 1.34 | v5.45.5 | installed | none |
-| [Tree-Simple-VisitorFactory](distributions/Tree-Simple-VisitorFactory.json) | 0.16 | v5.45.5 | installed | none |
-| [Try-Tiny](distributions/Try-Tiny.json) | 0.32 | v5.45.5 | installed | none |
-| [Type-Tiny](distributions/Type-Tiny.json) | 2.010001 | v5.45.5 | installed | none |
-| [URI](distributions/URI.json) | 5.40 | v5.45.5 | installed | none |
-| [WWW-Form-UrlEncoded](distributions/WWW-Form-UrlEncoded.json) | 0.26 | v5.45.5 | installed | none |
-| [WWW-RobotRules](distributions/WWW-RobotRules.json) | 6.03 | v5.45.5 | installed | none |
-| [Web-Simple](distributions/Web-Simple.json) | 0.036 | v5.45.5 | installed | none |
-| [XS-Parse-Keyword](distributions/XS-Parse-Keyword.json) | 0.51 | v5.45.5 | installed | xperl-parser-errors |
-| [XS-Parse-Sublike](distributions/XS-Parse-Sublike.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
-| [YAML-PP](distributions/YAML-PP.json) | v0.43.0 | v5.45.5 | installed | localize-no-color |
-| [YAML-Tiny](distributions/YAML-Tiny.json) | 1.76 | v5.45.5 | installed | none |
-| [aliased](distributions/aliased.json) | 0.34 | v5.45.5 | installed | none |
-| [libwww-perl](distributions/libwww-perl.json) | 6.83 | v5.45.5 | installed | none |
-| [namespace-autoclean](distributions/namespace-autoclean.json) | 0.31 | v5.45.5 | installed | none |
-| [namespace-clean](distributions/namespace-clean.json) | 0.27 | v5.45.5 | installed | none |
-| [strictures](distributions/strictures.json) | 2.000006 | v5.45.5 | installed | none |
-| [warnings-illegalproto](distributions/warnings-illegalproto.json) | 0.001003 | v5.45.5 | installed | none |
+| Author | Distribution | Version | XPerl | Status | Patch set |
+| --- | --- | --- | --- | --- | --- |
+| ANATOFUZ | [Test-Time](../data/5d/ANATOFUZ/Test-Time/status.json) | 0.092 | v5.45.5 | installed | none |
+| ARISTOTLE | [Hash-MultiValue](../data/a3/ARISTOTLE/Hash-MultiValue/status.json) | 0.16 | v5.45.5 | installed | none |
+| ATOOMIC | [B-COW](../data/f2/ATOOMIC/B-COW/status.json) | 0.007 | v5.45.5 | installed | none |
+| ATOOMIC | [Clone](../data/d2/ATOOMIC/Clone/status.json) | 0.51 | v5.45.5 | installed | none |
+| ATOOMIC | [TimeDate](../data/45/ATOOMIC/TimeDate/status.json) | 2.35 | v5.45.5 | installed | none |
+| BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | installed | none |
+| BIGPRESH | [Dancer](../data/dc/BIGPRESH/Dancer/status.json) | 1.3522 | v5.45.5 | installed | none |
+| BINGOS | [Log-Message](../data/19/BINGOS/Log-Message/status.json) | 0.08 | v5.45.5 | installed | none |
+| BINGOS | [Log-Message-Simple](../data/93/BINGOS/Log-Message-Simple/status.json) | 0.10 | v5.45.5 | installed | none |
+| BINGOS | [Term-UI](../data/a1/BINGOS/Term-UI/status.json) | 0.50 | v5.45.5 | installed | none |
+| BPS | [HTTP-Server-Simple](../data/e0/BPS/HTTP-Server-Simple/status.json) | 0.52 | v5.45.5 | installed | none |
+| BRIANDFOY | [Test-File](../data/2b/BRIANDFOY/Test-File/status.json) | 1.995 | v5.45.5 | installed | none |
+| CAPOEIRAB | [IO-Stringy](../data/7e/CAPOEIRAB/IO-Stringy/status.json) | 2.113 | v5.45.5 | installed | none |
+| CHANSEN | [HTTP-MultiPartParser](../data/2d/CHANSEN/HTTP-MultiPartParser/status.json) | 0.02 | v5.45.5 | installed | none |
+| CHOCOLATE | [Scope-Guard](../data/5a/CHOCOLATE/Scope-Guard/status.json) | 0.21 | v5.45.5 | installed | none |
+| CHORNY | [Tie-IxHash](../data/5f/CHORNY/Tie-IxHash/status.json) | 1.23 | v5.45.5 | installed | none |
+| CJM | [IO-HTML](../data/7f/CJM/IO-HTML/status.json) | 1.004 | v5.45.5 | installed | none |
+| CORION | [Test-Without-Module](../data/ca/CORION/Test-Without-Module/status.json) | 0.23 | v5.45.5 | installed | none |
+| DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | installed | exception-propagation |
+| DAGOLDEN | [Class-Tiny](../data/80/DAGOLDEN/Class-Tiny/status.json) | 1.008 | v5.45.5 | installed | none |
+| DAGOLDEN | [File-pushd](../data/d3/DAGOLDEN/File-pushd/status.json) | 1.016 | v5.45.5 | installed | none |
+| DAGOLDEN | [HTTP-CookieJar](../data/a9/DAGOLDEN/HTTP-CookieJar/status.json) | 0.014 | v5.45.5 | installed | none |
+| DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | installed | none |
+| DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | installed | none |
+| DAGOLDEN | [Test-FailWarnings](../data/29/DAGOLDEN/Test-FailWarnings/status.json) | 0.008 | v5.45.5 | installed | none |
+| DCANTRELL | [Devel-Hide](../data/41/DCANTRELL/Devel-Hide/status.json) | 0.0016 | v5.45.5 | installed | none |
+| DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | installed | unicode-dumper-escapes |
+| DDICK | [Test-MockTime](../data/83/DDICK/Test-MockTime/status.json) | 0.17 | v5.45.5 | installed | none |
+| DMUEY | [File-Copy-Recursive](../data/1e/DMUEY/File-Copy-Recursive/status.json) | 0.45 | v5.45.5 | installed | none |
+| DOY | [Dist-CheckConflicts](../data/7d/DOY/Dist-CheckConflicts/status.json) | 0.11 | v5.45.5 | installed | none |
+| DOY | [Eval-Closure](../data/75/DOY/Eval-Closure/status.json) | 0.14 | v5.45.5 | installed | none |
+| DOY | [Stream-Buffered](../data/ff/DOY/Stream-Buffered/status.json) | 0.03 | v5.45.5 | installed | none |
+| DROLSKY | [DateTime](../data/06/DROLSKY/DateTime/status.json) | 1.68 | v5.45.5 | installed | none |
+| DROLSKY | [DateTime-Locale](../data/42/DROLSKY/DateTime-Locale/status.json) | 1.47 | v5.45.5 | installed | none |
+| DROLSKY | [DateTime-TimeZone](../data/e2/DROLSKY/DateTime-TimeZone/status.json) | 2.72 | v5.45.5 | installed | none |
+| DROLSKY | [Devel-StackTrace](../data/eb/DROLSKY/Devel-StackTrace/status.json) | 2.05 | v5.45.5 | installed | none |
+| DROLSKY | [Exception-Class](../data/6f/DROLSKY/Exception-Class/status.json) | 1.46 | v5.45.5 | installed | none |
+| DROLSKY | [Log-Dispatch](../data/6a/DROLSKY/Log-Dispatch/status.json) | 2.71 | v5.45.5 | installed | none |
+| DROLSKY | [Module-Implementation](../data/18/DROLSKY/Module-Implementation/status.json) | 0.09 | v5.45.5 | installed | none |
+| DROLSKY | [Package-DeprecationManager](../data/d8/DROLSKY/Package-DeprecationManager/status.json) | 0.18 | v5.45.5 | installed | none |
+| DROLSKY | [Params-Validate](../data/10/DROLSKY/Params-Validate/status.json) | 1.31 | v5.45.5 | installed | xperl-exception-callbacks |
+| DROLSKY | [Params-ValidationCompiler](../data/17/DROLSKY/Params-ValidationCompiler/status.json) | 0.31 | v5.45.5 | installed | none |
+| DROLSKY | [Specio](../data/b6/DROLSKY/Specio/status.json) | 0.53 | v5.45.5 | installed | none |
+| DROLSKY | [Test2-Plugin-NoWarnings](../data/40/DROLSKY/Test2-Plugin-NoWarnings/status.json) | 0.10 | v5.45.5 | installed | none |
+| EBHANSSEN | [Test-Trap](../data/cf/EBHANSSEN/Test-Trap/status.json) | v0.3.5 | v5.45.5 | installed | stringify-wrapper-diagnostic |
+| ETHER | [B-Hooks-EndOfScope](../data/77/ETHER/B-Hooks-EndOfScope/status.json) | 0.28 | v5.45.5 | installed | none |
+| ETHER | [Carp-Clan](../data/08/ETHER/Carp-Clan/status.json) | 6.08 | v5.45.5 | installed | none |
+| ETHER | [Class-C3-Adopt-NEXT](../data/95/ETHER/Class-C3-Adopt-NEXT/status.json) | 0.14 | v5.45.5 | installed | none |
+| ETHER | [Class-Load](../data/f4/ETHER/Class-Load/status.json) | 0.25 | v5.45.5 | installed | none |
+| ETHER | [Class-Load-XS](../data/14/ETHER/Class-Load-XS/status.json) | 0.10 | v5.45.5 | installed | none |
+| ETHER | [Class-Method-Modifiers](../data/d1/ETHER/Class-Method-Modifiers/status.json) | 2.15 | v5.45.5 | installed | none |
+| ETHER | [Data-Dumper-Concise](../data/cc/ETHER/Data-Dumper-Concise/status.json) | 2.023 | v5.45.5 | installed | none |
+| ETHER | [File-ShareDir-Install](../data/8a/ETHER/File-ShareDir-Install/status.json) | 0.14 | v5.45.5 | installed | none |
+| ETHER | [Hook-LexWrap](../data/3d/ETHER/Hook-LexWrap/status.json) | 0.26 | v5.45.5 | installed | none |
+| ETHER | [JSON-MaybeXS](../data/c0/ETHER/JSON-MaybeXS/status.json) | 1.004008 | v5.45.5 | installed | none |
+| ETHER | [Module-Runtime-Conflicts](../data/30/ETHER/Module-Runtime-Conflicts/status.json) | 0.003 | v5.45.5 | installed | none |
+| ETHER | [Moose](../data/93/ETHER/Moose/status.json) | 2.4001 | v5.45.5 | installed | xperl-error-arguments |
+| ETHER | [MooseX-Getopt](../data/5c/ETHER/MooseX-Getopt/status.json) | 0.78 | v5.45.5 | installed | none |
+| ETHER | [MooseX-LazyRequire](../data/7e/ETHER/MooseX-LazyRequire/status.json) | 0.11 | v5.45.5 | installed | none |
+| ETHER | [MooseX-MethodAttributes](../data/23/ETHER/MooseX-MethodAttributes/status.json) | 0.32 | v5.45.5 | installed | none |
+| ETHER | [MooseX-Role-Parameterized](../data/76/ETHER/MooseX-Role-Parameterized/status.json) | 1.11 | v5.45.5 | installed | none |
+| ETHER | [MooseX-Types](../data/ca/ETHER/MooseX-Types/status.json) | 0.51 | v5.45.5 | installed | none |
+| ETHER | [Package-Stash](../data/1c/ETHER/Package-Stash/status.json) | 0.40 | v5.45.5 | installed | none |
+| ETHER | [Package-Stash-XS](../data/e5/ETHER/Package-Stash-XS/status.json) | 0.32 | v5.45.5 | installed | none |
+| ETHER | [Plack-Test-ExternalServer](../data/81/ETHER/Plack-Test-ExternalServer/status.json) | 0.02 | v5.45.5 | installed | none |
+| ETHER | [Safe-Isa](../data/7e/ETHER/Safe-Isa/status.json) | 1.000010 | v5.45.5 | installed | none |
+| ETHER | [Task-Weaken](../data/ac/ETHER/Task-Weaken/status.json) | 1.06 | v5.45.5 | installed | none |
+| ETHER | [Test-Object](../data/7c/ETHER/Test-Object/status.json) | 0.08 | v5.45.5 | installed | none |
+| ETHER | [Test-Pod](../data/29/ETHER/Test-Pod/status.json) | 1.52 | v5.45.5 | installed | none |
+| ETHER | [Test-SubCalls](../data/4e/ETHER/Test-SubCalls/status.json) | 1.10 | v5.45.5 | installed | none |
+| ETHER | [Test-Warnings](../data/f5/ETHER/Test-Warnings/status.json) | 0.038 | v5.45.5 | installed | none |
+| ETHER | [Try-Tiny](../data/07/ETHER/Try-Tiny/status.json) | 0.32 | v5.45.5 | installed | none |
+| ETHER | [Web-Simple](../data/f8/ETHER/Web-Simple/status.json) | 0.036 | v5.45.5 | installed | none |
+| ETHER | [YAML-Tiny](../data/89/ETHER/YAML-Tiny/status.json) | 1.76 | v5.45.5 | installed | none |
+| ETHER | [aliased](../data/94/ETHER/aliased/status.json) | 0.34 | v5.45.5 | installed | none |
+| ETHER | [namespace-autoclean](../data/be/ETHER/namespace-autoclean/status.json) | 0.31 | v5.45.5 | installed | none |
+| EXODIST | [Test-Exception](../data/26/EXODIST/Test-Exception/status.json) | 0.43 | v5.45.5 | installed | xperl-wrapper-rendering |
+| EXODIST | [Test-SharedFork](../data/aa/EXODIST/Test-SharedFork/status.json) | 0.35 | v5.45.5 | installed | none |
+| FREW | [Sub-Exporter-Progressive](../data/d3/FREW/Sub-Exporter-Progressive/status.json) | 0.001013 | v5.45.5 | installed | none |
+| FREW | [Syntax-Keyword-Gather](../data/4f/FREW/Syntax-Keyword-Gather/status.json) | 1.003002 | v5.45.5 | installed | none |
+| FREW | [warnings-illegalproto](../data/45/FREW/warnings-illegalproto/status.json) | 0.001003 | v5.45.5 | installed | none |
+| FULLERMD | [CGI-Struct](../data/52/FULLERMD/CGI-Struct/status.json) | 1.21 | v5.45.5 | installed | none |
+| GAAS | [Encode-Locale](../data/b6/GAAS/Encode-Locale/status.json) | 1.05 | v5.45.5 | installed | none |
+| GAAS | [HTTP-Negotiate](../data/85/GAAS/HTTP-Negotiate/status.json) | 6.01 | v5.45.5 | installed | none |
+| GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | installed | none |
+| GETTY | [HTTP-Body](../data/10/GETTY/HTTP-Body/status.json) | 1.24 | v5.45.5 | installed | none |
+| HAARG | [Devel-GlobalDestruction](../data/2c/HAARG/Devel-GlobalDestruction/status.json) | 0.14 | v5.45.5 | installed | none |
+| HAARG | [Hash-Merge-Simple](../data/46/HAARG/Hash-Merge-Simple/status.json) | 0.052 | v5.45.5 | installed | none |
+| HAARG | [MRO-Compat](../data/03/HAARG/MRO-Compat/status.json) | 0.15 | v5.45.5 | installed | none |
+| HAARG | [Module-Runtime](../data/d7/HAARG/Module-Runtime/status.json) | 0.018 | v5.45.5 | installed | none |
+| HAARG | [Moo](../data/f4/HAARG/Moo/status.json) | 2.005005 | v5.45.5 | installed | xperl-exception-context |
+| HAARG | [MooseX-Emulate-Class-Accessor-Fast](../data/1c/HAARG/MooseX-Emulate-Class-Accessor-Fast/status.json) | 0.009032 | v5.45.5 | installed | none |
+| HAARG | [Role-Tiny](../data/0a/HAARG/Role-Tiny/status.json) | 2.002005 | v5.45.5 | installed | none |
+| HAARG | [Sub-Quote](../data/2f/HAARG/Sub-Quote/status.json) | 2.006009 | v5.45.5 | installed | none |
+| HAARG | [Test-Needs](../data/b7/HAARG/Test-Needs/status.json) | 0.002010 | v5.45.5 | installed | none |
+| HAARG | [Test-NoWarnings](../data/c0/HAARG/Test-NoWarnings/status.json) | 1.06 | v5.45.5 | installed | none |
+| HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | installed | none |
+| HMBRAND | [DBI](../data/84/HMBRAND/DBI/status.json) | 1.656 | v5.45.5 | installed | none |
+| ILMARI | [Devel-OverloadInfo](../data/c6/ILMARI/Devel-OverloadInfo/status.json) | 0.008 | v5.45.5 | installed | none |
+| ISHIGAKI | [JSON](../data/d4/ISHIGAKI/JSON/status.json) | 4.11 | v5.45.5 | installed | none |
+| JJNAPIORK | [Catalyst-Runtime](../data/57/JJNAPIORK/Catalyst-Runtime/status.json) | 5.90132 | v5.45.5 | installed | xperl-exception-rendering |
+| JJNAPIORK | [PAGI](../data/83/JJNAPIORK/PAGI/status.json) | 0.003001 | v5.45.5 | installed | none |
+| JKEENAN | [IPC-System-Simple](../data/9a/JKEENAN/IPC-System-Simple/status.json) | 1.30 | v5.45.5 | installed | none |
+| JSTOWE | [TermReadKey](../data/92/JSTOWE/TermReadKey/status.json) | 2.38 | v5.45.5 | installed | none |
+| KAZEBURO | [Apache-LogFormat-Compiler](../data/71/KAZEBURO/Apache-LogFormat-Compiler/status.json) | 0.36 | v5.45.5 | installed | none |
+| KAZEBURO | [Cookie-Baker](../data/29/KAZEBURO/Cookie-Baker/status.json) | 0.12 | v5.45.5 | installed | none |
+| KAZEBURO | [HTTP-Entity-Parser](../data/42/KAZEBURO/HTTP-Entity-Parser/status.json) | 0.25 | v5.45.5 | installed | none |
+| KAZEBURO | [POSIX-strftime-Compiler](../data/9c/KAZEBURO/POSIX-strftime-Compiler/status.json) | 0.46 | v5.45.5 | installed | none |
+| KAZEBURO | [WWW-Form-UrlEncoded](../data/45/KAZEBURO/WWW-Form-UrlEncoded/status.json) | 0.26 | v5.45.5 | installed | none |
+| KENTNL | [Test-File-ShareDir](../data/ac/KENTNL/Test-File-ShareDir/status.json) | 1.001002 | v5.45.5 | installed | none |
+| KWILLIAMS | [Path-Class](../data/63/KWILLIAMS/Path-Class/status.json) | 0.37 | v5.45.5 | installed | none |
+| LEEJO | [CGI](../data/d9/LEEJO/CGI/status.json) | 5.02 | v5.45.5 | installed | none |
+| LEEJO | [Test-LeakTrace](../data/01/LEEJO/Test-LeakTrace/status.json) | 0.17 | v5.45.5 | installed | none |
+| LEONT | [CPAN-Meta-Check](../data/51/LEONT/CPAN-Meta-Check/status.json) | 0.018 | v5.45.5 | installed | none |
+| LEONT | [Devel-FindPerl](../data/da/LEONT/Devel-FindPerl/status.json) | 0.016 | v5.45.5 | installed | none |
+| LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | installed | none |
+| LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | installed | none |
+| LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | installed | none |
+| LEONT | [Module-Build](../data/f5/LEONT/Module-Build/status.json) | 0.4234 | v5.45.5 | installed | none |
+| LEONT | [Module-Build-Tiny](../data/fb/LEONT/Module-Build-Tiny/status.json) | 0.053 | v5.45.5 | installed | none |
+| LEONT | [PerlIO-utf8_strict](../data/f0/LEONT/PerlIO-utf8_strict/status.json) | 0.010 | v5.45.5 | installed | none |
+| LEONT | [Software-License](../data/78/LEONT/Software-License/status.json) | 0.104007 | v5.45.5 | installed | none |
+| MALLEN | [Test-RequiresInternet](../data/c4/MALLEN/Test-RequiresInternet/status.json) | 0.05 | v5.45.5 | installed | none |
+| MANWAR | [CGI-Simple](../data/85/MANWAR/CGI-Simple/status.json) | 1.282 | v5.45.5 | installed | none |
+| MARKOV | [MIME-Types](../data/7c/MARKOV/MIME-Types/status.json) | 2.30 | v5.45.5 | installed | none |
+| MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | installed | none |
+| MITHALDU | [PPI](../data/9f/MITHALDU/PPI/status.json) | 1.291 | v5.45.5 | installed | none |
+| MIYAGAWA | [Devel-StackTrace-AsHTML](../data/a1/MIYAGAWA/Devel-StackTrace-AsHTML/status.json) | 0.15 | v5.45.5 | installed | none |
+| MIYAGAWA | [Filesys-Notify-Simple](../data/80/MIYAGAWA/Filesys-Notify-Simple/status.json) | 0.14 | v5.45.5 | installed | none |
+| MIYAGAWA | [HTTP-Server-Simple-PSGI](../data/e4/MIYAGAWA/HTTP-Server-Simple-PSGI/status.json) | 0.16 | v5.45.5 | installed | none |
+| MIYAGAWA | [Plack](../data/82/MIYAGAWA/Plack/status.json) | 1.0057 | v5.45.5 | installed | xperl-canonical-stacktrace |
+| MIYAGAWA | [Plack-Middleware-MethodOverride](../data/b9/MIYAGAWA/Plack-Middleware-MethodOverride/status.json) | 0.20 | v5.45.5 | installed | none |
+| MIYAGAWA | [Plack-Middleware-ReverseProxy](../data/4d/MIYAGAWA/Plack-Middleware-ReverseProxy/status.json) | 0.17 | v5.45.5 | installed | none |
+| MIYAGAWA | [Term-Encoding](../data/50/MIYAGAWA/Term-Encoding/status.json) | 0.03 | v5.45.5 | installed | none |
+| MIYAGAWA | [Test-TCP](../data/86/MIYAGAWA/Test-TCP/status.json) | 2.22 | v5.45.5 | installed | none |
+| MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | installed | none |
+| MRAMBERG | [Text-SimpleTable](../data/df/MRAMBERG/Text-SimpleTable/status.json) | 2.07 | v5.45.5 | installed | none |
+| MSCHOUT | [Text-Template](../data/78/MSCHOUT/Text-Template/status.json) | 1.61 | v5.45.5 | installed | none |
+| NEILB | [AppConfig](../data/77/NEILB/AppConfig/status.json) | 1.71 | v5.45.5 | installed | none |
+| NEILB | [Clone-PP](../data/73/NEILB/Clone-PP/status.json) | 1.09 | v5.45.5 | installed | none |
+| NEILB | [Module-Path](../data/76/NEILB/Module-Path/status.json) | 0.19 | v5.45.5 | installed | none |
+| NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | installed | none |
+| OALDERS | [HTML-Parser](../data/c4/OALDERS/HTML-Parser/status.json) | 3.86 | v5.45.5 | installed | stable-entity-value |
+| OALDERS | [HTTP-Cookies](../data/21/OALDERS/HTTP-Cookies/status.json) | 6.12 | v5.45.5 | installed | none |
+| OALDERS | [HTTP-Daemon](../data/50/OALDERS/HTTP-Daemon/status.json) | 6.17 | v5.45.5 | installed | none |
+| OALDERS | [HTTP-Date](../data/b9/OALDERS/HTTP-Date/status.json) | 6.08 | v5.45.5 | installed | none |
+| OALDERS | [HTTP-Message](../data/36/OALDERS/HTTP-Message/status.json) | 7.04 | v5.45.5 | installed | none |
+| OALDERS | [LWP-MediaTypes](../data/78/OALDERS/LWP-MediaTypes/status.json) | 6.05 | v5.45.5 | installed | none |
+| OALDERS | [LWP-Protocol-https](../data/da/OALDERS/LWP-Protocol-https/status.json) | 6.17 | v5.45.5 | installed | none |
+| OALDERS | [Net-HTTP](../data/3c/OALDERS/Net-HTTP/status.json) | 6.24 | v5.45.5 | installed | none |
+| OALDERS | [URI](../data/24/OALDERS/URI/status.json) | 5.40 | v5.45.5 | installed | none |
+| OALDERS | [WWW-RobotRules](../data/4f/OALDERS/WWW-RobotRules/status.json) | 6.03 | v5.45.5 | installed | none |
+| OALDERS | [libwww-perl](../data/48/OALDERS/libwww-perl/status.json) | 6.83 | v5.45.5 | installed | none |
+| PETDANCE | [HTML-Tagset](../data/5d/PETDANCE/HTML-Tagset/status.json) | 3.24 | v5.45.5 | installed | none |
+| PEVANS | [ExtUtils-CChecker](../data/48/PEVANS/ExtUtils-CChecker/status.json) | 0.12 | v5.45.5 | installed | none |
+| PEVANS | [Future](../data/a1/PEVANS/Future/status.json) | 0.54 | v5.45.5 | installed | none |
+| PEVANS | [Future-AsyncAwait](../data/c0/PEVANS/Future-AsyncAwait/status.json) | 0.71 | v5.45.5 | installed | xperl-exception-savestack |
+| PEVANS | [Future-IO](../data/33/PEVANS/Future-IO/status.json) | 0.23 | v5.45.5 | installed | none |
+| PEVANS | [IO-Async](../data/21/PEVANS/IO-Async/status.json) | 0.805 | v5.45.5 | installed | xperl-exception-worker |
+| PEVANS | [Metrics-Any](../data/8c/PEVANS/Metrics-Any/status.json) | 0.10 | v5.45.5 | installed | none |
+| PEVANS | [Struct-Dumb](../data/0a/PEVANS/Struct-Dumb/status.json) | 0.16 | v5.45.5 | installed | none |
+| PEVANS | [Test-ExpectAndCheck](../data/30/PEVANS/Test-ExpectAndCheck/status.json) | 0.08 | v5.45.5 | installed | none |
+| PEVANS | [Test-Future-IO-Impl](../data/61/PEVANS/Test-Future-IO-Impl/status.json) | 0.21 | v5.45.5 | installed | none |
+| PEVANS | [Test-Metrics-Any](../data/a0/PEVANS/Test-Metrics-Any/status.json) | 0.02 | v5.45.5 | installed | none |
+| PEVANS | [XS-Parse-Keyword](../data/4f/PEVANS/XS-Parse-Keyword/status.json) | 0.51 | v5.45.5 | installed | xperl-parser-errors |
+| PEVANS | [XS-Parse-Sublike](../data/ff/PEVANS/XS-Parse-Sublike/status.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
+| PLICEASE | [Class-Inspector](../data/11/PLICEASE/Class-Inspector/status.json) | 1.36 | v5.45.5 | installed | none |
+| PLICEASE | [File-Listing](../data/f8/PLICEASE/File-Listing/status.json) | 6.16 | v5.45.5 | installed | none |
+| PLICEASE | [Params-SomeUtil](../data/78/PLICEASE/Params-SomeUtil/status.json) | 1.12 | v5.45.5 | installed | none |
+| RCLAMP | [File-Find-Rule](../data/22/RCLAMP/File-Find-Rule/status.json) | 0.35 | v5.45.5 | installed | none |
+| RCLAMP | [Number-Compare](../data/ea/RCLAMP/Number-Compare/status.json) | 0.03 | v5.45.5 | installed | none |
+| RCLAMP | [Text-Glob](../data/c3/RCLAMP/Text-Glob/status.json) | 0.11 | v5.45.5 | installed | none |
+| REHSACK | [File-ShareDir](../data/28/REHSACK/File-ShareDir/status.json) | 1.118 | v5.45.5 | installed | none |
+| REHSACK | [MIME-Base32](../data/56/REHSACK/MIME-Base32/status.json) | 1.303 | v5.45.5 | installed | none |
+| REHSACK | [Params-Util](../data/40/REHSACK/Params-Util/status.json) | 1.102 | v5.45.5 | installed | none |
+| RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | installed | none |
+| RIBASUSHI | [namespace-clean](../data/d2/RIBASUSHI/namespace-clean/status.json) | 0.27 | v5.45.5 | installed | none |
+| RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | installed | none |
+| RJBS | [App-Cmd](../data/9e/RJBS/App-Cmd/status.json) | 0.340 | v5.45.5 | installed | none |
+| RJBS | [CPAN-Uploader](../data/12/RJBS/CPAN-Uploader/status.json) | 0.103019 | v5.45.5 | installed | none |
+| RJBS | [Config-INI](../data/4d/RJBS/Config-INI/status.json) | 0.029 | v5.45.5 | installed | none |
+| RJBS | [Config-MVP](../data/61/RJBS/Config-MVP/status.json) | 2.200015 | v5.45.5 | installed | none |
+| RJBS | [Config-MVP-Reader-INI](../data/a3/RJBS/Config-MVP-Reader-INI/status.json) | 2.101465 | v5.45.5 | installed | none |
+| RJBS | [Data-OptList](../data/23/RJBS/Data-OptList/status.json) | 0.115 | v5.45.5 | installed | none |
+| RJBS | [Data-Section](../data/eb/RJBS/Data-Section/status.json) | 0.200008 | v5.45.5 | installed | none |
+| RJBS | [Dist-Zilla](../data/bc/RJBS/Dist-Zilla/status.json) | 6.040 | v5.45.5 | installed | none |
+| RJBS | [Getopt-Long-Descriptive](../data/4e/RJBS/Getopt-Long-Descriptive/status.json) | 0.117 | v5.45.5 | installed | none |
+| RJBS | [IO-TieCombine](../data/85/RJBS/IO-TieCombine/status.json) | 1.005 | v5.45.5 | installed | none |
+| RJBS | [IPC-Run3](../data/75/RJBS/IPC-Run3/status.json) | 0.049 | v5.45.5 | installed | none |
+| RJBS | [Log-Dispatch-Array](../data/25/RJBS/Log-Dispatch-Array/status.json) | 1.005 | v5.45.5 | installed | none |
+| RJBS | [Log-Dispatchouli](../data/d5/RJBS/Log-Dispatchouli/status.json) | 3.101 | v5.45.5 | installed | none |
+| RJBS | [Mixin-Linewise](../data/80/RJBS/Mixin-Linewise/status.json) | 0.111 | v5.45.5 | installed | none |
+| RJBS | [MooseX-OneArgNew](../data/dd/RJBS/MooseX-OneArgNew/status.json) | 0.007 | v5.45.5 | installed | none |
+| RJBS | [MooseX-SetOnce](../data/1a/RJBS/MooseX-SetOnce/status.json) | 0.203 | v5.45.5 | installed | none |
+| RJBS | [MooseX-Types-Perl](../data/c3/RJBS/MooseX-Types-Perl/status.json) | 0.101344 | v5.45.5 | installed | none |
+| RJBS | [Perl-PrereqScanner](../data/7a/RJBS/Perl-PrereqScanner/status.json) | 1.100 | v5.45.5 | installed | none |
+| RJBS | [Role-HasMessage](../data/06/RJBS/Role-HasMessage/status.json) | 0.007 | v5.45.5 | installed | none |
+| RJBS | [Role-Identifiable](../data/9e/RJBS/Role-Identifiable/status.json) | 0.009 | v5.45.5 | installed | none |
+| RJBS | [String-Errf](../data/96/RJBS/String-Errf/status.json) | 0.009 | v5.45.5 | installed | none |
+| RJBS | [String-Flogger](../data/36/RJBS/String-Flogger/status.json) | 1.101246 | v5.45.5 | installed | none |
+| RJBS | [String-Formatter](../data/ce/RJBS/String-Formatter/status.json) | 1.235 | v5.45.5 | installed | none |
+| RJBS | [String-RewritePrefix](../data/74/RJBS/String-RewritePrefix/status.json) | 0.009 | v5.45.5 | installed | none |
+| RJBS | [Sub-Exporter](../data/06/RJBS/Sub-Exporter/status.json) | 0.992 | v5.45.5 | installed | none |
+| RJBS | [Sub-Exporter-ForMethods](../data/d8/RJBS/Sub-Exporter-ForMethods/status.json) | 0.100055 | v5.45.5 | installed | none |
+| RJBS | [Sub-Exporter-GlobExporter](../data/dd/RJBS/Sub-Exporter-GlobExporter/status.json) | 0.006 | v5.45.5 | installed | none |
+| RJBS | [Sub-Install](../data/cd/RJBS/Sub-Install/status.json) | 0.929 | v5.45.5 | installed | none |
+| RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | installed | none |
+| RJBS | [Test-Fatal](../data/49/RJBS/Test-Fatal/status.json) | 0.019 | v5.45.5 | installed | none |
+| RJBS | [Throwable](../data/33/RJBS/Throwable/status.json) | 1.001 | v5.45.5 | installed | none |
+| RSAVAGE | [Tree-Simple](../data/6f/RSAVAGE/Tree-Simple/status.json) | 1.34 | v5.45.5 | installed | none |
+| RSAVAGE | [Tree-Simple-VisitorFactory](../data/a0/RSAVAGE/Tree-Simple-VisitorFactory/status.json) | 0.16 | v5.45.5 | installed | none |
+| RSHERER | [Class-Data-Inheritable](../data/06/RSHERER/Class-Data-Inheritable/status.json) | 0.10 | v5.45.5 | installed | none |
+| RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | installed | none |
+| SHAY | [Class-Singleton](../data/97/SHAY/Class-Singleton/status.json) | 1.6 | v5.45.5 | installed | none |
+| SIMONW | [Module-Pluggable](../data/32/SIMONW/Module-Pluggable/status.json) | 6.4 | v5.45.5 | installed | none |
+| SRI | [Mojolicious](../data/e6/SRI/Mojolicious/status.json) | 9.53 | v5.45.5 | failed | none |
+| SWEETKID | [Plack-Middleware-FixMissingBodyInRedirect](../data/7f/SWEETKID/Plack-Middleware-FixMissingBodyInRedirect/status.json) | 0.12 | v5.45.5 | installed | none |
+| SWEETKID | [Plack-Middleware-RemoveRedundantBody](../data/80/SWEETKID/Plack-Middleware-RemoveRedundantBody/status.json) | 0.09 | v5.45.5 | installed | none |
+| TINITA | [YAML-PP](../data/d5/TINITA/YAML-PP/status.json) | v0.43.0 | v5.45.5 | installed | localize-no-color |
+| TOBYINK | [Exporter-Tiny](../data/c1/TOBYINK/Exporter-Tiny/status.json) | 1.006003 | v5.45.5 | installed | none |
+| TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | installed | none |
+| TODDR | [Template-Toolkit](../data/ff/TODDR/Template-Toolkit/status.json) | 3.106 | v5.45.5 | installed | xperl-exception-wrapper |
+| TOKUHIROM | [HTTP-Headers-Fast](../data/b9/TOKUHIROM/HTTP-Headers-Fast/status.json) | 0.22 | v5.45.5 | installed | none |
+| TOKUHIROM | [Test-Requires](../data/d4/TOKUHIROM/Test-Requires/status.json) | 0.11 | v5.45.5 | installed | none |
+| YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 6.003 | v5.45.5 | installed | none |
+| YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 6.003 | v5.45.5 | installed | xperl-hash-entries |

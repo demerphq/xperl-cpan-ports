@@ -1,0 +1,82 @@
+{
+   "author" : "EBHANSSEN",
+   "distribution" : "Test-Trap",
+   "observations" : [
+      {
+         "cpan_path" : "E/EB/EBHANSSEN/Test-Trap-v0.3.5.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "487e31c40e1a6827d951ed0e97b4f0face356ae86a83fa8cab88f17514151ef7",
+         "module" : "Test::Trap",
+         "observed_at" : "2026-11-05T12:32:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "54f99016562b5b1d72110100f1f2be437178cdf84376f495ffd0376f1d7ecb9a",
+         "status" : "failed",
+         "test_summary" : "Files=22, Tests=1105, Failed 1/22 test programs. 2/1105 subtests failed.",
+         "version" : "v0.3.5",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EB/EBHANSSEN/Test-Trap-v0.3.5.tar.gz",
+         "id" : "a6436ed0471f7c0cdb739e44bd487799883a13df993359aa141d9cfab6a3a76f",
+         "module" : "Test::Trap",
+         "observed_at" : "2026-11-05T13:05:17Z",
+         "patch_set" : "stringify-wrapper-diagnostic",
+         "patch_sha256" : [
+            "f8dea7f63d874510c60e2e13ee3a7951e2212b0fac0b8148578c0c1ee06d1548"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "54f99016562b5b1d72110100f1f2be437178cdf84376f495ffd0376f1d7ecb9a",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=1105",
+         "version" : "v0.3.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

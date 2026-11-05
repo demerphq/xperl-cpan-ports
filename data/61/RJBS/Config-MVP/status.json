@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Config-MVP",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-2.200015.tar.gz",
+         "id" : "01df5dfb0bc7b2f972a030ec5dfaaaf86b6603aef59c794ad26189879ad4bce3",
+         "module" : "Config::MVP",
+         "observed_at" : "2026-11-05T12:02:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e5fe739891f2303e55d9a7f085ca9ee8db828d00cf33ed287ef75c8af0dfe858",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=53",
+         "version" : "2.200015",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-2.200015.tar.gz",
+         "id" : "bf5aaf52f7a8b527b79f09924838fe8b781672c09df5256bcaa47c7a4c3ed267",
+         "module" : "Config::MVP",
+         "observed_at" : "2026-11-05T12:25:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e5fe739891f2303e55d9a7f085ca9ee8db828d00cf33ed287ef75c8af0dfe858",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=53",
+         "version" : "2.200015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

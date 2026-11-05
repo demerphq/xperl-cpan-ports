@@ -1,0 +1,42 @@
+{
+   "author" : "BPS",
+   "distribution" : "HTTP-Server-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "B/BP/BPS/HTTP-Server-Simple-0.52.tar.gz",
+         "id" : "5b187df80ae177f08d811070533b53a4c14e8338bce12c790c6eb7e906c94d1c",
+         "module" : "HTTP::Server::Simple",
+         "observed_at" : "2026-11-05T15:05:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d8939fa4f12bd6b8c043537fd0bf96b055ac3686b9cdd9fa773dca6ae679cb4c",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=107",
+         "version" : "0.52",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

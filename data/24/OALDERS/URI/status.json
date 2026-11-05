@@ -1,0 +1,112 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "URI",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/URI-5.40.tar.gz",
+         "id" : "7f8f8b4d6396ce5a2f81c45b2bb54dbd7094af3a012ce79776a9e81140772eee",
+         "module" : "URI",
+         "observed_at" : "2026-11-05T11:31:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ef5d2ef099a1a24a6e83ffe543de73337805d3d39c00b84fa205d725ad1a1b63",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=1043",
+         "version" : "5.40",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/URI-5.40.tar.gz",
+         "id" : "95a2851870b1154300c8ec7209b5ae3ebb68b7ae63eeceb1c1b742e5bcee77a2",
+         "module" : "URI",
+         "observed_at" : "2026-11-05T12:22:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ef5d2ef099a1a24a6e83ffe543de73337805d3d39c00b84fa205d725ad1a1b63",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=1043",
+         "version" : "5.40",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/URI-5.40.tar.gz",
+         "id" : "4bf90d08fb6b55422f11e9077f41e2be0ea38a3a22bd3c4c69b66145c68207c6",
+         "module" : "URI",
+         "observed_at" : "2026-11-05T13:02:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ef5d2ef099a1a24a6e83ffe543de73337805d3d39c00b84fa205d725ad1a1b63",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=1043",
+         "version" : "5.40",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

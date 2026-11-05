@@ -1,0 +1,38 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "Mock-Config",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/Mock-Config-0.05.tar.gz",
+         "id" : "c5da5b76a72b2b48f9c7c2f930d3901bbee3a0cab7bfd47b71185de4d4d7acff",
+         "module" : "Mock::Config",
+         "observed_at" : "2026-11-05T10:17:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "20017096c6464fbd59ae7549fbc663bfb0c9014d7ac3a457a81a7e408268f62c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=3",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

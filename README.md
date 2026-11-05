@@ -11,17 +11,19 @@ XPerl compatibility issue and verify the proposed change.
 ## Layout
 
 ```text
-distributions/<Distribution>/index.json
-distributions/<Distribution>/patches/<patch>.patch
-distributions/<Distribution>/evidence/<record>.json
+registry.json
+data/<prefix>/<Author>/<Distribution>/index.json
+data/<prefix>/<Author>/<Distribution>/status.json
+data/<prefix>/<Author>/<Distribution>/patches/<patch>.patch
+data/<prefix>/<Author>/<Distribution>/evidence/<record>.json
 recipes/<recipe-id>.md
-status/distributions/<Distribution>.json
 status/SUMMARY.md
 status/UNRESOLVED.md
 ```
 
-Look up a module in CPAN metadata first. Then use the resolved distribution
-name to find its registry index. The format and matching rules are in
+Look up a module in the CPAN index first. Then use the resolved author and
+distribution to find its registry index. The layout is in
+[SHARDING.md](SHARDING.md). The format and matching rules are in
 [FORMAT.md](FORMAT.md); submission guidance is in
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -38,10 +40,6 @@ the XPerl interpreter:
 
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
-
-The planned repository and directory layout is described in
-[SHARDING.md](SHARDING.md). The current paths above remain the version 1
-layout until the installer supports the new lookup scheme.
 
 Use [PRIORITIZATION.md](PRIORITIZATION.md) and `bin/river-priorities` to rank
 candidate ports by their River of CPAN reach alongside local XPerl build

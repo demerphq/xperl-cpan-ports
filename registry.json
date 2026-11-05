@@ -1,0 +1,9 @@
+{
+  "schema": 2,
+  "active_repositories": 1,
+  "placement": "siphash24-zero-jump-v1",
+  "fanout": "siphash24-zero-first-byte-v1",
+  "repositories": [
+    { "id": 0, "path": "." }
+  ]
+}

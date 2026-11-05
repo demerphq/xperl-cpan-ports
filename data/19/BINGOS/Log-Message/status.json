@@ -1,0 +1,77 @@
+{
+   "author" : "BINGOS",
+   "distribution" : "Log-Message",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BINGOS/Log-Message-0.08.tar.gz",
+         "id" : "3eff1bad76c9e87b6ff90fbea2848a2f08e96ad64cbbd4dd721fbd07d63a4994",
+         "module" : "Log::Message",
+         "observed_at" : "2026-11-05T12:16:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bd697dd62aaf26d118e9f0a0813429deb1c544e4501559879b61fcbdfe99fe46",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=40",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/Log-Message-0.08.tar.gz",
+         "id" : "4dffe05f07f0a35b4db8f49882b7035c982d2bb6b189e51a39227584fde9a299",
+         "module" : "Log::Message",
+         "observed_at" : "2026-11-05T12:28:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bd697dd62aaf26d118e9f0a0813429deb1c544e4501559879b61fcbdfe99fe46",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=40",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

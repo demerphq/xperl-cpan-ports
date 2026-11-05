@@ -1,0 +1,42 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "POSIX-strftime-Compiler",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/POSIX-strftime-Compiler-0.46.tar.gz",
+         "id" : "265b5bb261a4674e6b526709af2195c6682e310e13087fd7dd6e9e00434dcf82",
+         "module" : "POSIX::strftime::Compiler",
+         "observed_at" : "2026-11-05T13:05:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bf88873248ef88cc5e68ed074493496be684ec334e11273d4654306dd9dae485",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=381",
+         "version" : "0.46",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

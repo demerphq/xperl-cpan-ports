@@ -4,6 +4,8 @@ use strict;
 use warnings;
 use feature qw(dispatch_on signatures);
 use Digest::SHA qw(sha256_hex);
+use File::Basename qw(basename);
+use File::Find qw(find);
 use File::Spec;
 use FindBin;
 use Getopt::Long qw(GetOptions);
@@ -22,7 +24,7 @@ GetOptions(
     'pending' => \$pending,
 ) or die usage();
 die usage() unless defined $river_file && !@ARGV && $limit > 0;
-$status_dir //= File::Spec->catdir($FindBin::Bin, '..', 'status', 'distributions');
+$status_dir //= File::Spec->catdir($FindBin::Bin, '..', 'data');
 
 my $snapshot = read_file($river_file);
 my $river_json;
@@ -53,20 +55,33 @@ if (defined $candidates_file) {
 }
 
 my %observed;
-opendir my $dir, $status_dir or die "cannot read $status_dir: $!\n";
-for my $file (grep { /\.json\z/ } readdir $dir) {
-    my $record = decode_json(read_file(File::Spec->catfile($status_dir, $file)));
-    my $distribution = $record->{distribution};
-    die "invalid status record: $file\n"
-        unless $record->{schema} == 1 && $file eq "$distribution.json"
-            && ref($record->{observations}) eq 'ARRAY';
-    my @matching = sort {
-        $a->{observed_at} cmp $b->{observed_at} || $a->{id} cmp $b->{id}
-    } grep { $_->{xperl_version} eq $xperl_version }
-      @{$record->{observations}};
-    $observed{$distribution} = $matching[-1] if @matching;
-}
-closedir $dir;
+die "cannot read $status_dir\n" unless -d $status_dir;
+find({
+    no_chdir => 1,
+    wanted => sub {
+        return unless -f $File::Find::name
+            && basename($File::Find::name) eq 'status.json';
+        my $path = $File::Find::name;
+        my $record = decode_json(read_file($path));
+        my $distribution = $record->{distribution};
+        die "invalid status record: $path\n"
+            unless $record->{schema} == 2
+                && defined($record->{author})
+                && ref($record->{observations}) eq 'ARRAY';
+        my @matching = sort {
+            $a->{observed_at} cmp $b->{observed_at} || $a->{id} cmp $b->{id}
+        } grep { $_->{xperl_version} eq $xperl_version }
+          @{$record->{observations}};
+        return unless @matching;
+        my $latest = $matching[-1];
+        if (!exists($observed{$distribution})
+            || $latest->{observed_at} gt $observed{$distribution}{observed_at}) {
+            $observed{$distribution} = {
+                %$latest, author => $record->{author},
+            };
+        }
+    },
+}, $status_dir);
 
 my @rows;
 for my $distribution (keys %$river) {
@@ -93,6 +108,7 @@ for my $distribution (keys %$river) {
         total => $counts->{total},
         state => $state,
         version => $observation ? $observation->{version} : '-',
+        author => $observation ? $observation->{author} : '-',
     };
 }
 @rows = sort {
@@ -103,10 +119,10 @@ for my $distribution (keys %$river) {
 splice @rows, $limit if @rows > $limit;
 
 print "# river snapshot input SHA256: ", sha256_hex($snapshot), "\n";
-print "# XPerl $xperl_version; status describes the latest local observation, not necessarily the latest CPAN release\n";
-print "distribution\timmediate\ttotal\tstatus\tobserved_version\n";
+print "# XPerl $xperl_version; status describes the latest local observation across authors, not necessarily the CPAN index default\n";
+print "distribution\tauthor\timmediate\ttotal\tstatus\tobserved_version\n";
 for my $row (@rows) {
-    print join("\t", @{$row}{qw(distribution immediate total state version)}), "\n";
+    print join("\t", @{$row}{qw(distribution author immediate total state version)}), "\n";
 }
 
 sub read_file ($path) {

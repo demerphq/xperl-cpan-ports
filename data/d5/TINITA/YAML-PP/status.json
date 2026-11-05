@@ -1,0 +1,117 @@
+{
+   "author" : "TINITA",
+   "distribution" : "YAML-PP",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "1b50e2615e5845189cd79822cd4698da52fa8428bce511a72c461b2e9b4543bc",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-05T12:07:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "failed",
+         "test_summary" : "Files=45, Tests=7527, Failed 1/45 test programs. 3/7527 subtests failed.",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "id" : "ea60009f80fcb287119c9a690170c448286d92d0b4c3be9ccb96eab778f2d39f",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-05T12:14:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=7527",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "id" : "41ff83b21e7eb185b39531c1d44f9e92d79138ffb457d27ed6a1a3c176366478",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-05T12:27:34Z",
+         "patch_set" : "localize-no-color",
+         "patch_sha256" : [
+            "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=7527",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

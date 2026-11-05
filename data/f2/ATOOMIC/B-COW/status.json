@@ -1,0 +1,112 @@
+{
+   "author" : "ATOOMIC",
+   "distribution" : "B-COW",
+   "observations" : [
+      {
+         "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+         "id" : "d013b4b84cd0e0d7dfd436fb3cc0edf81ccc4be1e3da5c0015605107cf0a93b8",
+         "module" : "B::COW",
+         "observed_at" : "2026-11-05T11:31:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1290daf227e8b09889a31cf182e29106f1cf9f1a4e9bf7752f9de92ed1158b44",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=22",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+         "id" : "c378e983f442fcf27838d61c8d4813bbcbabaadabd2a86886e41aabc1423fc54",
+         "module" : "B::COW",
+         "observed_at" : "2026-11-05T12:22:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1290daf227e8b09889a31cf182e29106f1cf9f1a4e9bf7752f9de92ed1158b44",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=22",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+         "id" : "c08a6c9fae0d95b9b0327ce00e873437395be7b5de35e4dec26292027e6e0db6",
+         "module" : "B::COW",
+         "observed_at" : "2026-11-05T13:01:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1290daf227e8b09889a31cf182e29106f1cf9f1a4e9bf7752f9de92ed1158b44",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=22",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

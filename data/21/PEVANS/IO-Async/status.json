@@ -1,0 +1,82 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "IO-Async",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/IO-Async-0.805.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "c313ad8290a9069c873814fe96bd6d04bda08014fa4a851b86f50a804cee3a5c",
+         "module" : "IO::Async",
+         "observed_at" : "2026-11-05T14:40:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "77f997b74953dbdf63a750fcff4338d1bfacd89100e1fb27c3473f0a222a9a0c",
+         "status" : "failed",
+         "test_summary" : "Files=64, Tests=1702, Failed 1/64 test programs. 4/1702 subtests failed.",
+         "version" : "0.805",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/IO-Async-0.805.tar.gz",
+         "id" : "5890ff77514ea3f18c7768db6838405c3e18528982733820cc635d6c2ca2f222",
+         "module" : "IO::Async",
+         "observed_at" : "2026-11-05T14:58:33Z",
+         "patch_set" : "xperl-exception-worker",
+         "patch_sha256" : [
+            "9492f8568678df1ddcb757db8bd6f89861af96f8ac1d18034283a3619a67ba1f"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "77f997b74953dbdf63a750fcff4338d1bfacd89100e1fb27c3473f0a222a9a0c",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=1702",
+         "version" : "0.805",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

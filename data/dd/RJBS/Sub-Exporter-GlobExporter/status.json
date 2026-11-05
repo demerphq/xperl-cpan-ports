@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Sub-Exporter-GlobExporter",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Sub-Exporter-GlobExporter-0.006.tar.gz",
+         "id" : "6287a6450dfae4c8768a16a7ce6ecd76e86dfdd0a3cfc49af489254327a01e57",
+         "module" : "Sub::Exporter::GlobExporter",
+         "observed_at" : "2026-11-05T12:06:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "de743f08026701c2a6a222a8b41c4cdc254b1a4afe7ef98987cd3aba4ce52696",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=12",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Sub-Exporter-GlobExporter-0.006.tar.gz",
+         "id" : "7eabb0d28d8bfe5c7231dd24e316b882a3aa07f7678740f57e08c7a1c4f94a04",
+         "module" : "Sub::Exporter::GlobExporter",
+         "observed_at" : "2026-11-05T12:27:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "de743f08026701c2a6a222a8b41c4cdc254b1a4afe7ef98987cd3aba4ce52696",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=12",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

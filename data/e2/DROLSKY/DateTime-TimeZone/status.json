@@ -1,0 +1,77 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "DateTime-TimeZone",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-TimeZone-2.72.tar.gz",
+         "id" : "58e415b5f04890cd14cda4fee4685caa3f0c0c245f1a7c77b59e679a791c4995",
+         "module" : "DateTime::TimeZone",
+         "observed_at" : "2026-11-05T12:04:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "23b4b5d7e49905d2dc9c3f8a78ce668311d1e4411038695158e99c8c0f375492",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=58",
+         "version" : "2.72",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-TimeZone-2.72.tar.gz",
+         "id" : "ab008335a100a5a9a41c9a6cd6be0e341dc7b35163c53e7e0bb295e2ec3a5e56",
+         "module" : "DateTime::TimeZone",
+         "observed_at" : "2026-11-05T12:26:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "23b4b5d7e49905d2dc9c3f8a78ce668311d1e4411038695158e99c8c0f375492",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=58",
+         "version" : "2.72",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,77 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Class-C3-Adopt-NEXT",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Class-C3-Adopt-NEXT-0.14.tar.gz",
+         "id" : "3dc8fe3b308d1013f1e65d8b504b670ab6fe9e9369e9756a1cacc541ba8e708b",
+         "module" : "Class::C3::Adopt::NEXT",
+         "observed_at" : "2026-11-05T12:32:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "85676225aadb76e8666a6abe2e0659d40eb4581ad6385b170eea4e1d6bf34bf7",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=26",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Class-C3-Adopt-NEXT-0.14.tar.gz",
+         "id" : "1d2765a8459b89d8fd6cdf8aa940b6fca88c8c54f1d0a2d991d5d1aebce67f20",
+         "module" : "Class::C3::Adopt::NEXT",
+         "observed_at" : "2026-11-05T13:01:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "85676225aadb76e8666a6abe2e0659d40eb4581ad6385b170eea4e1d6bf34bf7",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=26",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

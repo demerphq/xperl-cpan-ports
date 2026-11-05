@@ -1,0 +1,77 @@
+{
+   "author" : "HAARG",
+   "distribution" : "MooseX-Emulate-Class-Accessor-Fast",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/MooseX-Emulate-Class-Accessor-Fast-0.009032.tar.gz",
+         "id" : "586e537f8a3f419df7da6465e0f7f6ae0d01016b1c4c28ece0d0a6c3f62856d7",
+         "module" : "MooseX::Emulate::Class::Accessor::Fast",
+         "observed_at" : "2026-11-05T12:32:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "82eeb7ef1f0d25418ae406ea26912b241428d4b2ab9510d5e9deb3f72c187994",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=82",
+         "version" : "0.009032",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/MooseX-Emulate-Class-Accessor-Fast-0.009032.tar.gz",
+         "id" : "cbd30e44be6ad5064fa6a134ac3ea130a34cb2ae9fda00541061d03804432be5",
+         "module" : "MooseX::Emulate::Class::Accessor::Fast",
+         "observed_at" : "2026-11-05T13:04:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "82eeb7ef1f0d25418ae406ea26912b241428d4b2ab9510d5e9deb3f72c187994",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=82",
+         "version" : "0.009032",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

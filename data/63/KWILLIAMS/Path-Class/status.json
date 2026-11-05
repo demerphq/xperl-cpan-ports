@@ -1,0 +1,42 @@
+{
+   "author" : "KWILLIAMS",
+   "distribution" : "Path-Class",
+   "observations" : [
+      {
+         "cpan_path" : "K/KW/KWILLIAMS/Path-Class-0.37.tar.gz",
+         "id" : "fc59c161ceec54750de7ab93a3e66828357fcd2c40d75ea01db9a3f73729dbec",
+         "module" : "Path::Class",
+         "observed_at" : "2026-11-05T13:05:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "654781948602386f2cb2e4473a739f17dc6953d92aabc2498a4ca2561bc248ce",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=248",
+         "version" : "0.37",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

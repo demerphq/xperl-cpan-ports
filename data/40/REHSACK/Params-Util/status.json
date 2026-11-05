@@ -1,0 +1,112 @@
+{
+   "author" : "REHSACK",
+   "distribution" : "Params-Util",
+   "observations" : [
+      {
+         "cpan_path" : "R/RE/REHSACK/Params-Util-1.102.tar.gz",
+         "id" : "e8d5db74c7e0869a19a014111b0af0a3a3d3f0827f48de4e35fa5ba65ec6321e",
+         "module" : "Params::Util",
+         "observed_at" : "2026-11-05T11:49:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1864",
+         "version" : "1.102",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/Params-Util-1.102.tar.gz",
+         "id" : "6cd02e5147cd9daad5e09cbe939a0fc3f51e16cc30ed3a5395b293624d961e8a",
+         "module" : "Params::Util",
+         "observed_at" : "2026-11-05T12:23:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1864",
+         "version" : "1.102",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/Params-Util-1.102.tar.gz",
+         "id" : "d9c869e423e7d2ee27f95a0d92a6c352a58da8f1b49b2c035af79e8059c42ee1",
+         "module" : "Params::Util",
+         "observed_at" : "2026-11-05T13:03:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1864",
+         "version" : "1.102",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

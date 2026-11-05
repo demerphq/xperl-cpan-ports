@@ -1,0 +1,76 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "XS-Parse-Keyword",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "491870ff36fe121a7180ef7a97ead05477cda60336661d672b689220e4b5af5b",
+         "module" : "XS::Parse::Keyword",
+         "observed_at" : "2026-11-05T14:25:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "source_sha256" : "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+         "status" : "failed",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+         "id" : "46c609530ea3acbcdcec4f66c7311d9db75f534dad80ec67150fbbd1fdd3c7ab",
+         "module" : "XS::Parse::Keyword",
+         "observed_at" : "2026-11-05T14:31:21Z",
+         "patch_set" : "xperl-parser-errors",
+         "patch_sha256" : [
+            "3321022b485537ccb0e8c2569b55be01256c5e40c2586c2e1c3605c15c400436"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=195",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

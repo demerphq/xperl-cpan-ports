@@ -24,9 +24,13 @@ for my $entry (
     ['Blocked', 'failed'],
 ) {
     my ($distribution, $state) = @$entry;
-    write_file(File::Spec->catfile($status_dir, "$distribution.json"),
+    my $directory = File::Spec->catdir($status_dir, 'ab', 'AUTHOR',
+                                      $distribution);
+    make_path($directory);
+    write_file(File::Spec->catfile($directory, 'status.json'),
         encode_json({
-            schema => 1,
+            schema => 2,
+            author => 'AUTHOR',
             distribution => $distribution,
             observations => [{
                 id => $distribution,
@@ -47,9 +51,9 @@ my $report = do { local $/; <$output> };
 close $output;
 is($? >> 8, 0, 'report exits successfully');
 unlike($report, qr/^Ported\t/m, 'pending report omits an installed release');
-like($report, qr/^Blocked\t2\t15\tfailed\t1\.0$/m,
+like($report, qr/^Blocked\tAUTHOR\t2\t15\tfailed\t1\.0$/m,
     'failed release keeps its version and river counts');
-like($report, qr/^New\t1\t10\tunobserved\t-$/m,
+like($report, qr/^New\t-\t1\t10\tunobserved\t-$/m,
     'unobserved release follows the failed release');
 
 done_testing;

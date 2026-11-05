@@ -1,0 +1,112 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Module-Implementation",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Module-Implementation-0.09.tar.gz",
+         "id" : "34089763a3c2bd962b0af25cf394fa44a000b84e7e18686e202c2406cdfb26fb",
+         "module" : "Module::Implementation",
+         "observed_at" : "2026-11-05T11:15:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c15f1a12f0c2130c9efff3c2e1afe5887b08ccd033bd132186d1e7d5087fd66d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=24",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Module-Implementation-0.09.tar.gz",
+         "id" : "5dab987afdebb90de0a11346f14d7b9534d916cef92942dad47cf593a7e8244a",
+         "module" : "Module::Implementation",
+         "observed_at" : "2026-11-05T12:21:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c15f1a12f0c2130c9efff3c2e1afe5887b08ccd033bd132186d1e7d5087fd66d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=24",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Module-Implementation-0.09.tar.gz",
+         "id" : "7f691ca10f3295a95b13e002d45f99455c3ed82c633260a3c77a2deb02959a7b",
+         "module" : "Module::Implementation",
+         "observed_at" : "2026-11-05T13:01:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c15f1a12f0c2130c9efff3c2e1afe5887b08ccd033bd132186d1e7d5087fd66d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=24",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

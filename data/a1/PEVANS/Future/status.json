@@ -1,0 +1,42 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Future",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Future-0.54.tar.gz",
+         "id" : "d6aea88d8b854f013bd8eea030a72316b0cbf7bab5ce4d5520f677a83fe682a9",
+         "module" : "Future",
+         "observed_at" : "2026-11-05T14:25:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9af138ff632292bfc45c11906e3c39739fae07be729ff2f89f44d092319c5967",
+         "status" : "installed",
+         "test_summary" : "Files=56, Tests=780",
+         "version" : "0.54",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

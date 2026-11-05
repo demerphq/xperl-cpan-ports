@@ -1,0 +1,112 @@
+{
+   "author" : "LEONT",
+   "distribution" : "ExtUtils-InstallPaths",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-InstallPaths-0.015.tar.gz",
+         "id" : "6c3d2e1bde74c64e96b01c3b387320f113c77e0deea9b0cddb98a49d80ade922",
+         "module" : "ExtUtils::InstallPaths",
+         "observed_at" : "2026-11-05T11:45:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7d64eb2dfa87ead010cdf55c8a1bdfde50b7b5852d7cb8cf2304f55bea2eb007",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=111",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-InstallPaths-0.015.tar.gz",
+         "id" : "8596fd2596dd4861d844043eb34e0d4ea0b092560b9f5f1d7756e43db17fc216",
+         "module" : "ExtUtils::InstallPaths",
+         "observed_at" : "2026-11-05T12:22:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7d64eb2dfa87ead010cdf55c8a1bdfde50b7b5852d7cb8cf2304f55bea2eb007",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=111",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-InstallPaths-0.015.tar.gz",
+         "id" : "39e37cf9b88ff5ce0c8b2bcbe09d044761c6fd23a3d0d8e8c2fba481c5f0570c",
+         "module" : "ExtUtils::InstallPaths",
+         "observed_at" : "2026-11-05T13:01:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7d64eb2dfa87ead010cdf55c8a1bdfde50b7b5852d7cb8cf2304f55bea2eb007",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=111",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

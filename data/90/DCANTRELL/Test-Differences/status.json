@@ -1,0 +1,44 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Test-Differences",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Test-Differences-0.73.tar.gz",
+         "id" : "d390af863d9c92e263c39e55aea98414270c00fcf4631427fceb8c332c561431",
+         "module" : "Test::Differences",
+         "observed_at" : "2026-11-05T10:18:05Z",
+         "patch_set" : "unicode-dumper-escapes",
+         "patch_sha256" : [
+            "cfde566037be8045fa91f3b350d9804c1dc790f9af1be4c0dd02087ec4aecfd2"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3c113f4e25c38323a3fe5992d30c337264d00ef872aecfd2d9431ca8ea0083e2",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=48",
+         "version" : "0.73",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

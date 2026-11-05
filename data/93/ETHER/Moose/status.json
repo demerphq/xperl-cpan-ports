@@ -1,0 +1,164 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Moose",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "ba4960b4289088bd2ef155f2dad4ffa96454c06936faea2042de078655245450",
+         "module" : "Moose",
+         "observed_at" : "2026-11-05T11:50:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "failed",
+         "test_summary" : "Files=478, Tests=17141, Failed 5/478 test programs. 11/17141 subtests failed.",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "id" : "aa0b526a2054ed291bc5a694d9bee3c6bc38994409a3f35bd373786af1d2c0a1",
+         "module" : "Moose",
+         "observed_at" : "2026-11-05T11:56:34Z",
+         "patch_set" : "xperl-error-arguments",
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "installed",
+         "test_summary" : "Files=478, Tests=17168",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "id" : "c939566d87e5b17cf1a703169a564a12f9ce94597fa0d8e1d0e62061930b1d04",
+         "module" : "Moose",
+         "observed_at" : "2026-11-05T12:24:52Z",
+         "patch_set" : "xperl-error-arguments",
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "installed",
+         "test_summary" : "Files=478, Tests=17168",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "id" : "9d88e728df05a1111097a3bff2decc856e21b7be38e190b002fec0092cc6d45f",
+         "module" : "Moose",
+         "observed_at" : "2026-11-05T13:04:21Z",
+         "patch_set" : "xperl-error-arguments",
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "installed",
+         "test_summary" : "Files=478, Tests=17168",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

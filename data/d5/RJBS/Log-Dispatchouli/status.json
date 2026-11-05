@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Log-Dispatchouli",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Log-Dispatchouli-3.101.tar.gz",
+         "id" : "99a037297958611900cffdd1f85f15a34594a8b7a3b0b3ceafa508c8714902ea",
+         "module" : "Log::Dispatchouli",
+         "observed_at" : "2026-11-05T12:06:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7f5cfac0aef11845228cb3750849757867594ee7262a9eebe463b3de599f37a0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=71",
+         "version" : "3.101",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Log-Dispatchouli-3.101.tar.gz",
+         "id" : "90c321487dbba52326981275e499ffe0a5ed39957bcfa2621852d363b4a673c8",
+         "module" : "Log::Dispatchouli",
+         "observed_at" : "2026-11-05T12:27:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7f5cfac0aef11845228cb3750849757867594ee7262a9eebe463b3de599f37a0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=71",
+         "version" : "3.101",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

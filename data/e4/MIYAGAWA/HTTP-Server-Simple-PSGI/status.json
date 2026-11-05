@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "HTTP-Server-Simple-PSGI",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/HTTP-Server-Simple-PSGI-0.16.tar.gz",
+         "id" : "a5584e16c268f9bb0404ac3a9309d60709845fd1250ae010c4680b3ab4167ac1",
+         "module" : "HTTP::Server::Simple::PSGI",
+         "observed_at" : "2026-11-05T15:05:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5f7ccb8453043b97278492a757328116e11e0352f2854a28a9c634e6e9131dba",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

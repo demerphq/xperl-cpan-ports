@@ -1,0 +1,77 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Clone-PP",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Clone-PP-1.09.tar.gz",
+         "id" : "20ed6ee3b4450d4aa743a49580f95bec3840b77e1bc1b84be37da2cd360e0f7f",
+         "module" : "Clone::PP",
+         "observed_at" : "2026-11-05T12:02:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4bb44697ef82105bd8d6204e550796a1eea89ce7108a98e0b7bf3ae4700d1c34",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=48",
+         "version" : "1.09",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Clone-PP-1.09.tar.gz",
+         "id" : "b4d633848440a3a30deead4ef3efbe02c864938cf85132c60a5ad77f251a2712",
+         "module" : "Clone::PP",
+         "observed_at" : "2026-11-05T12:25:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4bb44697ef82105bd8d6204e550796a1eea89ce7108a98e0b7bf3ae4700d1c34",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=48",
+         "version" : "1.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

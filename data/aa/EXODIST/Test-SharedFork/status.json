@@ -1,0 +1,42 @@
+{
+   "author" : "EXODIST",
+   "distribution" : "Test-SharedFork",
+   "observations" : [
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-SharedFork-0.35.tar.gz",
+         "id" : "e78b3a2bf53f5681d08e4c3675ede3b9f37d900c3023af8779be3264785dd6c8",
+         "module" : "Test::SharedFork",
+         "observed_at" : "2026-11-05T13:06:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2932e865610e80758f764c586757ef8e11db1284d958e25e4b7a85098414c59f",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=137",
+         "version" : "0.35",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

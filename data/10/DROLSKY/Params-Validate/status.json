@@ -1,0 +1,164 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Params-Validate",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "ffc4bd177beef09992dc566cf1715f16a5276c6a6f1261ae2de3c2f57033ff74",
+         "module" : "Params::Validate",
+         "observed_at" : "2026-11-05T11:16:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "status" : "failed",
+         "test_summary" : "Files=38, Tests=2512, Failed 1/38 test programs. 4/2512 subtests failed.",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "id" : "016619125ff9db44477bb46db106f7138e4897e2d4603855ca9840b57fdfbd49",
+         "module" : "Params::Validate",
+         "observed_at" : "2026-11-05T11:30:47Z",
+         "patch_set" : "xperl-exception-callbacks",
+         "patch_sha256" : [
+            "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "status" : "installed",
+         "test_summary" : "Files=38, Tests=2512",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "id" : "05f3ce0757791368f25e75a3779db30194715241bc1e2365df7592797fadf442",
+         "module" : "Params::Validate",
+         "observed_at" : "2026-11-05T12:21:54Z",
+         "patch_set" : "xperl-exception-callbacks",
+         "patch_sha256" : [
+            "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "status" : "installed",
+         "test_summary" : "Files=38, Tests=2512",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "id" : "328161db7c1fd5eccd09ca027a9054cd925731883057e72aa8fe9b123aea5a82",
+         "module" : "Params::Validate",
+         "observed_at" : "2026-11-05T13:05:03Z",
+         "patch_set" : "xperl-exception-callbacks",
+         "patch_sha256" : [
+            "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "status" : "installed",
+         "test_summary" : "Files=38, Tests=2512",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

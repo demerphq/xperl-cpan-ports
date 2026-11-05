@@ -1,0 +1,77 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Params-ValidationCompiler",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-ValidationCompiler-0.31.tar.gz",
+         "id" : "ea6727316f711bd41f2a879e0c8510044fa8cc81db9fcd04c4647eb9be34eca8",
+         "module" : "Params::ValidationCompiler",
+         "observed_at" : "2026-11-05T12:03:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7b6497173f1b6adb29f5d51d8cf9ec36d2f1219412b4b2410e9d77a901e84a6d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=81",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-ValidationCompiler-0.31.tar.gz",
+         "id" : "806cbe328c401f6c5501691c7d900d6f7bec3dbbaf1d2ddb97d42622b0870ca5",
+         "module" : "Params::ValidationCompiler",
+         "observed_at" : "2026-11-05T12:26:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7b6497173f1b6adb29f5d51d8cf9ec36d2f1219412b4b2410e9d77a901e84a6d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=81",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

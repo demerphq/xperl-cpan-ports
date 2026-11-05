@@ -1,0 +1,112 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Role-Parameterized",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Role-Parameterized-1.11.tar.gz",
+         "id" : "3948e52c410d7341b859de3a06bc16acd8dcc4033aab7c59d660f4cbd2146276",
+         "module" : "MooseX::Role::Parameterized",
+         "observed_at" : "2026-11-05T11:56:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1cfe766c5d7f0ecab57f733dcca430a2a2acd6b995757141b940ade3692bec9e",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=153",
+         "version" : "1.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Role-Parameterized-1.11.tar.gz",
+         "id" : "a459e8d61a9fb11e3d8a0b916bd7d0300d7c97a654784a4259735e0d399c7ed8",
+         "module" : "MooseX::Role::Parameterized",
+         "observed_at" : "2026-11-05T12:25:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1cfe766c5d7f0ecab57f733dcca430a2a2acd6b995757141b940ade3692bec9e",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=153",
+         "version" : "1.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Role-Parameterized-1.11.tar.gz",
+         "id" : "3053a4a875ccf09e423a1ae113474da90ac2f1f3115c1e1cdf8ce1fe957ca207",
+         "module" : "MooseX::Role::Parameterized",
+         "observed_at" : "2026-11-05T13:05:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1cfe766c5d7f0ecab57f733dcca430a2a2acd6b995757141b940ade3692bec9e",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=153",
+         "version" : "1.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

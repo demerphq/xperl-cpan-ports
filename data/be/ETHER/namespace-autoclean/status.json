@@ -1,0 +1,112 @@
+{
+   "author" : "ETHER",
+   "distribution" : "namespace-autoclean",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/namespace-autoclean-0.31.tar.gz",
+         "id" : "ca16e72668c47b24cc7afff6c9b9de4cf04fa3f6f7a1f11fe46b0597365b35bd",
+         "module" : "namespace::autoclean",
+         "observed_at" : "2026-11-05T11:56:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d3b32c82e1d2caa9d58b8c8075965240e6cab66ab9350bd6f6bea4ca07e938d6",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=76",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/namespace-autoclean-0.31.tar.gz",
+         "id" : "724f3d81c5e81e093274c792beb4c61d084f5107fbeed1a13f412139b96d73bf",
+         "module" : "namespace::autoclean",
+         "observed_at" : "2026-11-05T12:24:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d3b32c82e1d2caa9d58b8c8075965240e6cab66ab9350bd6f6bea4ca07e938d6",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=76",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/namespace-autoclean-0.31.tar.gz",
+         "id" : "6364c0821979c8b0f5a93816e3f60dd90d4981fcca66689ab55c8b2484b1c73f",
+         "module" : "namespace::autoclean",
+         "observed_at" : "2026-11-05T13:05:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d3b32c82e1d2caa9d58b8c8075965240e6cab66ab9350bd6f6bea4ca07e938d6",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=76",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

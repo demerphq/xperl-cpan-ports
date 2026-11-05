@@ -1,0 +1,77 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Role-Identifiable",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Role-Identifiable-0.009.tar.gz",
+         "id" : "14cb23cc37c36c0b1b4a463016688419e2e735c5b836576e195586a8284825b3",
+         "module" : "Role::Identifiable::HasIdent",
+         "observed_at" : "2026-11-05T11:56:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5a735e9f7177f9ebae047eb7bae29b7ec29ec020ae37637aea5350d30c087b76",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Role-Identifiable-0.009.tar.gz",
+         "id" : "b1edbc13fc4fd8fa8da0555937254a62c3732da27f1c8fcbe8663666e10a2e33",
+         "module" : "Role::Identifiable::HasIdent",
+         "observed_at" : "2026-11-05T12:25:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5a735e9f7177f9ebae047eb7bae29b7ec29ec020ae37637aea5350d30c087b76",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

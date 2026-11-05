@@ -1,0 +1,143 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Sub-Uplevel",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "d2a2c1f801e3f56b810a392b905b398a9e4b2a141c8f03109132011c51df27b8",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-05T10:18:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "9a0e2b54403a040ade632f0b1916532c5cf2de255f5716aa352c70f73bc05af7",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-05T11:45:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "289f3a91207224913ca8e040948b8d5a8e59815e8db030c07e1c9803431202e8",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-05T12:23:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "385a0a75f2c3550b9482dd30013afc20fc69fe6258a85d1f661db9c490d699e1",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-05T13:00:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

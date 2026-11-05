@@ -1,0 +1,77 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "LWP-Protocol-https",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/LWP-Protocol-https-6.17.tar.gz",
+         "id" : "cd72817186c6b087e95ab4a584e2688593c242c8e540fc7125d0e8c840d53056",
+         "module" : "LWP::Protocol::https",
+         "observed_at" : "2026-11-05T11:45:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "361c7c1eee8cf66812958f975f26ef2e2272a0c6221d2043477cb9c22b8d1c23",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=60",
+         "version" : "6.17",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/LWP-Protocol-https-6.17.tar.gz",
+         "id" : "65b1f2181582ff73d7b86fc042928074b3f0b7837a401089cad181497d8d0432",
+         "module" : "LWP::Protocol::https",
+         "observed_at" : "2026-11-05T12:23:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "361c7c1eee8cf66812958f975f26ef2e2272a0c6221d2043477cb9c22b8d1c23",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=60",
+         "version" : "6.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

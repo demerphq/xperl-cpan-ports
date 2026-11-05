@@ -1,0 +1,112 @@
+{
+   "author" : "FREW",
+   "distribution" : "Sub-Exporter-Progressive",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
+         "id" : "868e6fedd7832bc7d58c6925b34e9dc540ea52fbebc83a230e83343a151f2044",
+         "module" : "Sub::Exporter::Progressive",
+         "observed_at" : "2026-11-05T11:49:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d535b7954d64da1ac1305b1fadf98202769e3599376854b2ced90c382beac056",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=61",
+         "version" : "0.001013",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
+         "id" : "0c5730e26f440e03d9de1ce6d3cc6efc8f1cdbb9e1e2a9258e5d719a86add4e6",
+         "module" : "Sub::Exporter::Progressive",
+         "observed_at" : "2026-11-05T12:23:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d535b7954d64da1ac1305b1fadf98202769e3599376854b2ced90c382beac056",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=61",
+         "version" : "0.001013",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
+         "id" : "da27f3a43b89ccbf24e3f749ff5c11e088d01ffbd6eec4c8b22d178790a24f73",
+         "module" : "Sub::Exporter::Progressive",
+         "observed_at" : "2026-11-05T13:03:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d535b7954d64da1ac1305b1fadf98202769e3599376854b2ced90c382beac056",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=59",
+         "version" : "0.001013",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

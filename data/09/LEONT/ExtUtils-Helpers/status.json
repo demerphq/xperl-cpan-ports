@@ -1,0 +1,112 @@
+{
+   "author" : "LEONT",
+   "distribution" : "ExtUtils-Helpers",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz",
+         "id" : "9f84af65959c818b18aa47d3b5e42d47aaf23a593d4da56336ce36c107d4e33b",
+         "module" : "ExtUtils::Helpers",
+         "observed_at" : "2026-11-05T11:45:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c8574875cce073e7dc5345a7b06d502e52044d68894f9160203fcaab379514fe",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=30",
+         "version" : "0.028",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz",
+         "id" : "35713acf876cb3f3169da715618e9a72a684d49ec351906760c32167f9c6b0c0",
+         "module" : "ExtUtils::Helpers",
+         "observed_at" : "2026-11-05T12:22:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c8574875cce073e7dc5345a7b06d502e52044d68894f9160203fcaab379514fe",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=30",
+         "version" : "0.028",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz",
+         "id" : "935af59808988a1fc766cdb9935cbfe2c9ab2acac8e944335eeb0b1d9bdcce61",
+         "module" : "ExtUtils::Helpers",
+         "observed_at" : "2026-11-05T13:01:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c8574875cce073e7dc5345a7b06d502e52044d68894f9160203fcaab379514fe",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=30",
+         "version" : "0.028",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

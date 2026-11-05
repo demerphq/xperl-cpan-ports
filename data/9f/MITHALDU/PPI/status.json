@@ -1,0 +1,77 @@
+{
+   "author" : "MITHALDU",
+   "distribution" : "PPI",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MITHALDU/PPI-1.291.tar.gz",
+         "id" : "7c1e59647c96c6d1a5e38d4c951203a24a001ac2a2798d04de93d6fdf2010718",
+         "module" : "PPI::Document",
+         "observed_at" : "2026-11-05T12:15:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "74ac10bf66443ea813fb37d2ff5219c4d8e685379272d6699c812a39d91f3c1d",
+         "status" : "installed",
+         "test_summary" : "Files=70, Tests=53092",
+         "version" : "1.291",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MITHALDU/PPI-1.291.tar.gz",
+         "id" : "9b556222490a42efb0dc7ca6e9f02f3dc92bdff139d5753cdd4cc6643eb0a637",
+         "module" : "PPI::Document",
+         "observed_at" : "2026-11-05T12:27:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "74ac10bf66443ea813fb37d2ff5219c4d8e685379272d6699c812a39d91f3c1d",
+         "status" : "installed",
+         "test_summary" : "Files=70, Tests=53092",
+         "version" : "1.291",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

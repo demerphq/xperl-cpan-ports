@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Getopt",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Getopt-0.78.tar.gz",
+         "id" : "c8ea57e748d211b13f2d8b64c6cf32fe00e3bf75c04e493799eb60cb21b5838f",
+         "module" : "MooseX::Getopt",
+         "observed_at" : "2026-11-05T13:05:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7ae89620f38827dbad2313a4e5f734049958f5d6212bd62abdbcb8ae936dcbc7",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=339",
+         "version" : "0.78",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

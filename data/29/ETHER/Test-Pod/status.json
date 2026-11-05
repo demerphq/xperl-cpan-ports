@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Test-Pod",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Test-Pod-1.52.tar.gz",
+         "id" : "3dbcce54b2e2aea93d898ce3d575bca4b275fc814faebfa42b7ea4939dfaac13",
+         "module" : "Test::Pod",
+         "observed_at" : "2026-11-05T14:58:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "60a8dbcc60168bf1daa5cc2350236df9343e9878f4ab9830970a5dde6fe8e5fc",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=19",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

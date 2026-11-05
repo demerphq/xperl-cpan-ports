@@ -1,0 +1,77 @@
+{
+   "author" : "ETHER",
+   "distribution" : "aliased",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/aliased-0.34.tar.gz",
+         "id" : "57e9bda679227960ca4ee9621d60a9483fb5e536bb09691978daecf2473b8f7c",
+         "module" : "aliased",
+         "observed_at" : "2026-11-05T12:06:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c350524507cd827fab864e5d4c2cc350b1babaa12fa95aec0ca00843fcc7deeb",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=40",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/aliased-0.34.tar.gz",
+         "id" : "c5666b5f97b8c19a3816084cd7f9fbeaced3574299fe0fd8a9af6769a7257868",
+         "module" : "aliased",
+         "observed_at" : "2026-11-05T12:27:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c350524507cd827fab864e5d4c2cc350b1babaa12fa95aec0ca00843fcc7deeb",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=40",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,73 @@
+{
+   "author" : "RGARCIA",
+   "distribution" : "Test-LongString",
+   "observations" : [
+      {
+         "cpan_path" : "R/RG/RGARCIA/Test-LongString-0.17.tar.gz",
+         "id" : "bb447fadc1aab468610bf65fb56e0660b89a711c71760ad5812b667f10ec4c10",
+         "module" : "Test::LongString",
+         "observed_at" : "2026-11-05T10:18:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "abc4349eaf04d1bec1e464166a3018591ea846d8f3c5c9c8af4ac4905d3e974f",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=43",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RG/RGARCIA/Test-LongString-0.17.tar.gz",
+         "id" : "3b4c86d01844c4095947b57dbc30f159626a0b33333a3404efe7324922faf1f0",
+         "module" : "Test::LongString",
+         "observed_at" : "2026-11-05T15:06:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "abc4349eaf04d1bec1e464166a3018591ea846d8f3c5c9c8af4ac4905d3e974f",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=44",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

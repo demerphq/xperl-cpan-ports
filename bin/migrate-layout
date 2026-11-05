@@ -1,0 +1,82 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use feature 'signatures';
+use builtin qw(jumphash_string siphash_2_4);
+no warnings 'experimental::builtin';
+use Encode qw(encode);
+use File::Basename qw(dirname);
+use File::Copy qw(move);
+use File::Path qw(make_path);
+use File::Spec;
+use FindBin;
+use JSON::PP;
+
+my $root = File::Spec->catdir($FindBin::Bin, '..');
+my $config_path = File::Spec->catfile($root, 'registry.json');
+open my $config_file, '<:raw', $config_path or die "$config_path: $!\n";
+my $config = JSON::PP->new->decode(do { local $/; <$config_file> });
+die "migration requires one active repository\n"
+    unless $config->{schema} == 2 && $config->{active_repositories} == 1;
+
+my $indexes = 0;
+for my $path (glob File::Spec->catfile($root, 'distributions', '*', 'index.json')) {
+    my $data = read_json($path);
+    my $distribution = $data->{distribution};
+    my %authors = map { author_from_path($_->{cpan_path}) => 1 }
+                  @{$data->{releases}};
+    die "index has multiple authors: $path\n" unless keys(%authors) == 1;
+    my ($author) = keys %authors;
+    my $target = directory_for($author, $distribution);
+    die "target exists: $target\n" if -e $target;
+    make_path(dirname($target));
+    move(dirname($path), $target) or die "cannot move $path: $!\n";
+    ++$indexes;
+}
+
+my $statuses = 0;
+for my $path (glob File::Spec->catfile($root, 'status', 'distributions', '*.json')) {
+    my $data = read_json($path);
+    my $distribution = $data->{distribution};
+    my %authors = map { author_from_path($_->{cpan_path}) => 1 }
+                  @{$data->{observations}};
+    die "status has multiple authors: $path\n" unless keys(%authors) == 1;
+    my ($author) = keys %authors;
+    my $target_dir = directory_for($author, $distribution);
+    my $target = File::Spec->catfile($target_dir, 'status.json');
+    die "target exists: $target\n" if -e $target;
+    make_path($target_dir);
+    $data->{schema} = 2;
+    $data->{author} = $author;
+    open my $output, '>:raw', $target or die "$target: $!\n";
+    print {$output} JSON::PP->new->canonical->pretty->encode($data);
+    close $output or die "$target: $!\n";
+    unlink($path) or die "cannot remove $path: $!\n";
+    ++$statuses;
+}
+
+print "Moved $indexes indexes and $statuses status records\n";
+
+sub read_json ($path) {
+    open my $input, '<:raw', $path or die "$path: $!\n";
+    return JSON::PP->new->decode(do { local $/; <$input> });
+}
+
+sub author_from_path ($path) {
+    my ($initial, $pair, $author) =
+        ($path // '') =~ m{\A([A-Z])/([A-Z]{2})/([A-Z0-9_-]+)/[^/]+\z};
+    die "invalid CPAN author path: " . ($path // '') . "\n"
+        unless defined($author) && substr($author, 0, 1) eq $initial
+            && substr($author, 0, 2) eq $pair;
+    return $author;
+}
+
+sub directory_for ($author, $distribution) {
+    die "invalid distribution name: $distribution\n"
+        unless defined($distribution)
+            && $distribution =~ /\A[A-Za-z0-9][A-Za-z0-9_.-]*\z/;
+    my $key = encode('UTF-8', "$author/$distribution");
+    my $prefix = unpack 'H2', siphash_2_4($key, "\0" x 16);
+    return File::Spec->catdir($root, 'data', $prefix, $author, $distribution);
+}

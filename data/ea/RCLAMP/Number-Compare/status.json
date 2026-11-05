@@ -1,0 +1,77 @@
+{
+   "author" : "RCLAMP",
+   "distribution" : "Number-Compare",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCLAMP/Number-Compare-0.03.tar.gz",
+         "id" : "4bb26b0d581ebb52e5d2b42ad322f9b46286cee27f30e4f9109f54eec69f79b7",
+         "module" : "Number::Compare",
+         "observed_at" : "2026-11-05T12:06:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "83293737e803b43112830443fb5208ec5208a2e6ea512ed54ef8e4dd2b880827",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=24",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCLAMP/Number-Compare-0.03.tar.gz",
+         "id" : "08ad19fb1c4918640fda57c05f265eaed1b57353ee8151b86cc90c07931923d9",
+         "module" : "Number::Compare",
+         "observed_at" : "2026-11-05T12:26:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "83293737e803b43112830443fb5208ec5208a2e6ea512ed54ef8e4dd2b880827",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=24",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

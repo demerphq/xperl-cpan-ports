@@ -1,0 +1,164 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "HTML-Parser",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "c5cee723f06c6bb34f5b85bc8f0ca9d80a677ef0614a1677e4a20e506f3fe790",
+         "module" : "HTML::Entities",
+         "observed_at" : "2026-11-05T11:31:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "failed",
+         "test_summary" : "Files=50, Tests=468, Failed 1/50 test programs. 0/468 subtests failed.",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "id" : "83af8538553ef0863ee52f63712ca9d6ac1f2953a477630f97232809a1a84882",
+         "module" : "HTML::Entities",
+         "observed_at" : "2026-11-05T11:44:55Z",
+         "patch_set" : "stable-entity-value",
+         "patch_sha256" : [
+            "5a45e472839504f3e3ca84a31b6f47076449f0c82814f0dba8ee434bfe85514c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=475",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "id" : "7383618e233d0e77ce0d7b50aa4bcc387e38712206767b25d18c945c6614ca1c",
+         "module" : "HTML::Entities",
+         "observed_at" : "2026-11-05T12:22:34Z",
+         "patch_set" : "stable-entity-value",
+         "patch_sha256" : [
+            "5a45e472839504f3e3ca84a31b6f47076449f0c82814f0dba8ee434bfe85514c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=475",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "id" : "f8849d7a3449c5223599cd96a0de77551f0bff90c6ea6237f1620335c01fbc27",
+         "module" : "HTML::Entities",
+         "observed_at" : "2026-11-05T13:02:07Z",
+         "patch_set" : "stable-entity-value",
+         "patch_sha256" : [
+            "5a45e472839504f3e3ca84a31b6f47076449f0c82814f0dba8ee434bfe85514c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=475",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

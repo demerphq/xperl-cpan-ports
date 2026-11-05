@@ -1,0 +1,77 @@
+{
+   "author" : "SHAY",
+   "distribution" : "Class-Singleton",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHAY/Class-Singleton-1.6.tar.gz",
+         "id" : "97efe98aa201fa7330c8f303b44188bab3c87c388fa7f1d0fbf8e9b33488667a",
+         "module" : "Class::Singleton",
+         "observed_at" : "2026-11-05T12:04:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "27ba13f0d9512929166bbd8c9ef95d90d630fc80f0c9a1b7458891055e9282a4",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=29",
+         "version" : "1.6",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHAY/Class-Singleton-1.6.tar.gz",
+         "id" : "9492c253f4fc0a37d2901a5e32c81358626d05fccb875931d065ec1cfe5ee901",
+         "module" : "Class::Singleton",
+         "observed_at" : "2026-11-05T12:26:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "27ba13f0d9512929166bbd8c9ef95d90d630fc80f0c9a1b7458891055e9282a4",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=29",
+         "version" : "1.6",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
