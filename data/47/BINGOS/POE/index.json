@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "POE",
+  "releases": [
+    {
+      "version": "1.370",
+      "cpan_path": "B/BI/BINGOS/POE-1.370.tar.gz",
+      "source_sha256": "57de2b635b15fa3a31a9e55dd51122149e5414e1158ee82235062634ee18a693",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-assertions",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-assertions.patch",
+              "sha256": "75c70df8293899417c891579bf425b42b2dd6675fb41154217c6af25205c0518"
+            }
+          ],
+          "recipes": ["exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}
