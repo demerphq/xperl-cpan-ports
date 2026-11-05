@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Params-Validate",
+  "releases": [
+    {
+      "version": "1.31",
+      "cpan_path": "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+      "source_sha256": "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-callbacks",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-callbacks.patch",
+              "sha256": "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

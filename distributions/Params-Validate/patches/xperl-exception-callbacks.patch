@@ -1,0 +1,42 @@
+--- a/lib/Params/Validate/PP.pm
++++ b/lib/Params/Validate/PP.pm
+@@ -569,7 +569,7 @@
+             if ( !$ok ) {
+                 my $called = _get_called(1);
+ 
+-                if ( ref $e ) {
++                if ( ref $e && ref($e) ne 'XPerl::Exception' ) {
+                     $options->{on_fail}->($e);
+                 }
+                 else {
+--- a/lib/Params/Validate/XS.xs
++++ b/lib/Params/Validate/XS.xs
+@@ -711,7 +711,11 @@
+                 LEAVE;
+ 
+                 if (! ok) {
++#ifdef XPERL
++                    if (SvROK(err) && !sv_derived_from(err, "XPerl::Exception")) {
++#else
+                     if (SvROK(err)) {
++#endif
+                         validation_failure(err, options);
+                     }
+                     else {
+@@ -724,9 +728,13 @@
+                         sv_catpv(buffer, " did not pass the '");
+                         sv_catsv(buffer, HeSVKEY_force(he));
+                         sv_catpv(buffer, "' callback");
+-                        if (SvCUR(err) > 0) {
+-                            sv_catpv(buffer, ": ");
+-                            sv_catsv(buffer, err);
++                        {
++                            STRLEN err_len;
++                            const char *err_text = SvPV(err, err_len);
++                            if (err_len > 0) {
++                                sv_catpv(buffer, ": ");
++                                sv_catpvn(buffer, err_text, err_len);
++                            }
+                         }
+                         sv_catpv(buffer, "\n");
+                         validation_failure(buffer, options);

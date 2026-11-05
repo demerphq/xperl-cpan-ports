@@ -1,0 +1,30 @@
+--- a/util.c
++++ b/util.c
+@@ -204,8 +204,11 @@
+ 			repl_len = len;
+ 			repl_utf8 = orig_utf8;
+ 		    } else {
+-			repl = SvPV(*svp, repl_len);
+-			repl_utf8 = SvUTF8(*svp);
++			SV *repl_sv = *svp;
++			SvREFCNT_inc_simple_void(repl_sv);
++			SAVEFREESV(repl_sv);
++			repl = SvPV(repl_sv, repl_len);
++			repl_utf8 = SvUTF8(repl_sv);
+ 		    }
+ 		}
+ 		else if (expand_prefix) {
+@@ -219,8 +222,11 @@
+ 				repl_len = len;
+ 				repl_utf8 = orig_utf8;
+ 			    } else {
+-				repl = SvPV(*svp, repl_len);
+-				repl_utf8 = SvUTF8(*svp);
++				SV *repl_sv = *svp;
++				SvREFCNT_inc_simple_void(repl_sv);
++				SAVEFREESV(repl_sv);
++				repl = SvPV(repl_sv, repl_len);
++				repl_utf8 = SvUTF8(repl_sv);
+ 			    }
+ 			    s = ss;
+ 			    break;

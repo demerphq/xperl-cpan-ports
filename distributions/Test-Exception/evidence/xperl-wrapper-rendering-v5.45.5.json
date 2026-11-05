@@ -1,0 +1,20 @@
+{
+  "source_sha256": "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+  "patch_set_id": "xperl-wrapper-rendering",
+  "patch_sha256": "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7",
+  "date": "2026-11-05",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 11 test files, 53 tests"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 11 test files, 53 tests"
+    }
+  ]
+}

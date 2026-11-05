@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Test-Exception",
+  "releases": [
+    {
+      "version": "0.43",
+      "cpan_path": "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+      "source_sha256": "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+      "patch_sets": [
+        {
+          "id": "xperl-wrapper-rendering",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-wrapper-rendering.patch",
+              "sha256": "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}
