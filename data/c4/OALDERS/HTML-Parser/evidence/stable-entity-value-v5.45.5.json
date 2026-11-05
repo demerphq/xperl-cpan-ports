@@ -2,6 +2,7 @@
   "source_sha256": "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
   "patch_set_id": "stable-entity-value",
   "patch_sha256": "5a45e472839504f3e3ca84a31b6f47076449f0c82814f0dba8ee434bfe85514c",
+  "upstream_pull_request": "https://github.com/libwww-perl/HTML-Parser/pull/72",
   "date": "2026-11-05",
   "platform": "x86_64-linux",
   "xperl_version": "v5.45.5",
