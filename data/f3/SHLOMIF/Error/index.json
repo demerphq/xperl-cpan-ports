@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Error",
+  "releases": [
+    {
+      "version": "0.17031",
+      "cpan_path": "S/SH/SHLOMIF/Error-0.17031.tar.gz",
+      "source_sha256": "0a85374cf9cbde5a5075f16e62246e5d36abde63ec08c5c5694f128f4546852f",
+      "patch_sets": [
+        {
+          "id": "objectify-xperl-text-exceptions",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/objectify-xperl-text-exceptions.patch",
+              "sha256": "1d53c3412efa6b04f5df964f25c0cac070fc0d5ee0b61e1c3808c6f4ae41e97d"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

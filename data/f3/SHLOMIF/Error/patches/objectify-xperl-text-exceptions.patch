@@ -1,0 +1,17 @@
+--- a/lib/Error.pm
++++ b/lib/Error.pm
+@@ -320,0 +321,8 @@
++sub _xperl_error_text
++{
++    my $err = shift;
++    return $err unless ${^XPERL_VERSION}
++        && ref($err) eq 'XPerl::Exception';
++    return $err->render('en:legacy');
++}
++
+@@ -330,0 +339 @@
++    $err = _xperl_error_text($err);
+@@ -384,0 +394 @@
++                            $err = _xperl_error_text($err);
+@@ -425,0 +436 @@
++                $err = _xperl_error_text($err);

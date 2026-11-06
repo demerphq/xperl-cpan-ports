@@ -1,0 +1,21 @@
+{
+  "source_sha256": "0a85374cf9cbde5a5075f16e62246e5d36abde63ec08c5c5694f128f4546852f",
+  "patch_set_id": "objectify-xperl-text-exceptions",
+  "patch_sha256": "1d53c3412efa6b04f5df964f25c0cac070fc0d5ee0b61e1c3808c6f4ae41e97d",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "Error::subs treats every reference in $@ as a user-thrown object. XPerl's wrapper for a plain text die therefore bypasses Error::Simple conversion and breaks text-error catch clauses.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 15 test files, 63 tests"
+    },
+    {
+      "command": "PERL5LIB=blib/lib:blib/arch perl -MTest::Harness -e 'runtests(@ARGV)' t/*.t",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 15 test files, 63 tests"
+    }
+  ]
+}
