@@ -21,6 +21,7 @@ authors/<first>/<first-two>/<Author>.json
 upstream-queue/<first>/<first-two>/<Author>/<entry>.json
 status/SUMMARY.md
 status/UNRESOLVED.md
+status/bundled-with-xperl.json
 ```
 
 Look up a module in the CPAN index first. Then use the resolved author and

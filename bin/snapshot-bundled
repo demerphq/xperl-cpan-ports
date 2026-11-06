@@ -1,0 +1,44 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use File::Spec;
+use Getopt::Long qw(GetOptions);
+use JSON::PP;
+
+my $source;
+GetOptions('xperl-source=s' => \$source)
+    or die "usage: $0 --xperl-source DIR\n";
+die "usage: $0 --xperl-source DIR\n" unless $source && !@ARGV;
+
+my $maintainers = File::Spec->catfile($source, 'Porting', 'Maintainers.pl');
+die "cannot find $maintainers\n" unless -f $maintainers;
+do File::Spec->rel2abs($maintainers)
+    or die "cannot load $maintainers: $@ $!\n";
+
+my %bundled = (perl => 1);
+for my $area (qw(cpan dist ext)) {
+    my $directory = File::Spec->catdir($source, $area);
+    opendir my $entries, $directory or die "cannot read $directory: $!\n";
+    while (my $name = readdir $entries) {
+        next if $name =~ /^\./;
+        $bundled{$name} = 1
+            if -d File::Spec->catdir($directory, $name);
+    }
+    closedir $entries;
+}
+
+# The source directory and CPAN distribution can have different names.
+no warnings 'once';
+for my $entry (values %Maintainers::Modules) {
+    my $archive = $entry->{DISTRIBUTION} // next;
+    my ($name) = $archive =~ m{/([^/]+?)-v?\d[^/]*\.(?:tar\.gz|tgz|zip)\z};
+    $bundled{$name} = 1 if defined $name;
+}
+
+my $snapshot = {
+    schema => 1,
+    xperl_version => "$^V",
+    distributions => [sort keys %bundled],
+};
+print JSON::PP->new->canonical->pretty->encode($snapshot);

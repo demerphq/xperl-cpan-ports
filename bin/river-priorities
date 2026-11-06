@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use feature qw(dispatch_on signatures);
 use Digest::SHA qw(sha256_hex);
+use Config;
 use File::Basename qw(basename);
 use File::Find qw(find);
 use File::Spec;
@@ -12,19 +13,31 @@ use Getopt::Long qw(GetOptions);
 use IO::Uncompress::Gunzip qw(gunzip $GunzipError);
 use JSON::PP qw(decode_json);
 
-my ($river_file, $candidates_file, $status_dir, $pending);
+my ($river_file, $candidates_file, $status_dir, $bundled_file, $platform, $pending);
 my $limit = 25;
 my $xperl_version = "$^V";
 GetOptions(
     'river=s' => \$river_file,
     'candidates=s' => \$candidates_file,
     'status-dir=s' => \$status_dir,
+    'bundled-file=s' => \$bundled_file,
+    'platform=s' => \$platform,
     'xperl-version=s' => \$xperl_version,
     'limit=i' => \$limit,
     'pending' => \$pending,
 ) or die usage();
 die usage() unless defined $river_file && !@ARGV && $limit > 0;
 $status_dir //= File::Spec->catdir($FindBin::Bin, '..', 'data');
+$bundled_file //= File::Spec->catfile($FindBin::Bin, '..', 'status',
+                                    'bundled-with-xperl.json');
+$platform //= "$^O/$Config{archname}";
+my $bundled = decode_json(read_file($bundled_file));
+die "invalid bundled snapshot: $bundled_file\n"
+    unless $bundled->{schema} == 1
+        && ref($bundled->{distributions}) eq 'ARRAY';
+my %bundled = $bundled->{xperl_version} eq $xperl_version
+    ? map { $_ => 1 } @{$bundled->{distributions}}
+    : ();
 
 my $snapshot = read_file($river_file);
 my $river_json;
@@ -70,7 +83,9 @@ find({
                 && ref($record->{observations}) eq 'ARRAY';
         my @matching = sort {
             $a->{observed_at} cmp $b->{observed_at} || $a->{id} cmp $b->{id}
-        } grep { $_->{xperl_version} eq $xperl_version }
+        } grep { $_->{xperl_version} eq $xperl_version
+                 && ($platform eq 'any'
+                     || ($_->{platform}{key} // '') eq $platform) }
           @{$record->{observations}};
         return unless @matching;
         my $latest = $matching[-1];
@@ -93,10 +108,13 @@ for my $distribution (keys %$river) {
             && defined($counts->{total}) && $counts->{total} =~ /\A\d+\z/
             && $counts->{total} >= $counts->{immediate};
     my $observation = $observed{$distribution};
-    my $state = $observation ? $observation->{status} : 'unobserved';
+    my $state = $observation ? $observation->{status}
+              : $bundled{$distribution} ? 'bundled-with-xperl'
+              : 'unobserved';
     my $include = 1;
     dispatch ($state) {
         on ('installed') { $include = !$pending }
+        on ('bundled-with-xperl') { $include = !$pending }
         on ('failed') { }
         on ('unobserved') { }
         on (_) { die "unknown status for $distribution: $state\n" }
@@ -119,7 +137,7 @@ for my $distribution (keys %$river) {
 splice @rows, $limit if @rows > $limit;
 
 print "# river snapshot input SHA256: ", sha256_hex($snapshot), "\n";
-print "# XPerl $xperl_version; status describes the latest local observation across authors, not necessarily the CPAN index default\n";
+print "# XPerl $xperl_version; platform $platform; status is the latest matching observation or an XPerl bundle\n";
 print "distribution\tauthor\timmediate\ttotal\tstatus\tobserved_version\n";
 for my $row (@rows) {
     print join("\t", @{$row}{qw(distribution author immediate total state version)}), "\n";
@@ -135,5 +153,5 @@ sub read_file ($path) {
 }
 
 sub usage () {
-    return "usage: $0 --river river.json[.gz] [--candidates FILE] [--pending] [--limit N] [--xperl-version VERSION] [--status-dir DIR]\n";
+    return "usage: $0 --river river.json[.gz] [--candidates FILE] [--pending] [--limit N] [--xperl-version VERSION] [--status-dir DIR] [--bundled-file FILE] [--platform OS/ARCH|any]\n";
 }

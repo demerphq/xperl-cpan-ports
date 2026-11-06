@@ -27,8 +27,19 @@ authors have published the same distribution name, that observation may not
 belong to the CPAN index default. Resolve a module through the CPAN index
 before treating a port as available for an ordinary install.
 
-The full ranking includes Perl core and other already available
-distributions. Use `--pending` to hide locally successful observations, or
+The report defaults to the current interpreter's OS and architecture. Use
+`--platform OS/ARCHNAME` for another platform, or `--platform any` to compare
+the latest observation across platforms. A distribution in
+`status/bundled-with-xperl.json` is shown as `bundled-with-xperl` when it has
+no matching build observation. Regenerate that snapshot from the matching
+XPerl checkout with:
+
+    /path/to/xperl/bin/perl bin/snapshot-bundled \
+      --xperl-source /path/to/xperl > status/bundled-with-xperl.json
+
+The full ranking includes distributions bundled with XPerl and other already
+available distributions. Use `--pending` to hide locally successful or
+bundled distributions, or
 pass `--candidates FILE` with one distribution name per line to rank a
 curated set. `--pending` hides any distribution with a locally successful
 observation, even if that observation is for an older release. The command

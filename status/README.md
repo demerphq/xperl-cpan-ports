@@ -22,6 +22,11 @@ logs. The original installer receipts and logs remain in the local cache for
 detailed diagnosis. Status is observational evidence; patch selection uses
 the separate `index.json` in the same author and distribution directory.
 
+`bundled-with-xperl.json` records distribution names shipped in the XPerl
+source tree for the stated XPerl version. It includes XPerl additions as well
+as ordinary Perl core distributions. This is source inventory, not a CPAN
+build or test observation; platform-specific availability can differ.
+
 The platform comes from the installer receipt: a key of the operating system
 and interpreter architecture name (for example `linux/x86_64-linux` or
 `darwin/darwin-2level`), with the OS version, compiler, make program, thread
