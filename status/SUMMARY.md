@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 84 of 2046 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 82 of 2046 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1124,7 +1124,7 @@ Unresolved failures: 84 of 2046 release, XPerl, and platform combinations. See [
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MATTP | [Test-WWW-Selenium](../data/33/MATTP/Test-WWW-Selenium/status.json) | 1.36 | v5.45.5 | linux/x86_64-linux | installed | none |
-| MAUKE | [Function-Parameters](../data/06/MAUKE/Function-Parameters/status.json) | 2.002006 | v5.45.5 | darwin/darwin-2level | failed | none |
+| MAUKE | [Function-Parameters](../data/06/MAUKE/Function-Parameters/status.json) | 2.002006 | v5.45.5 | darwin/darwin-2level | installed | xperl-parser-errors |
 | MAXMIND | [Data-IEEE754](../data/31/MAXMIND/Data-IEEE754/status.json) | 0.02 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MAXMIND | [Data-IEEE754](../data/31/MAXMIND/Data-IEEE754/status.json) | 0.02 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MAXMIND | [Geo-IP](../data/21/MAXMIND/Geo-IP/status.json) | 1.51 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1994,7 +1994,7 @@ Unresolved failures: 84 of 2046 release, XPerl, and platform combinations. See [
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | darwin/darwin-2level | installed | xperl-exception-error-state |
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | linux/x86_64-linux | installed | xperl-exception-error-state |
 | VPIT | [autovivification](../data/a8/VPIT/autovivification/status.json) | 0.18 | v5.45.5 | darwin/darwin-2level | installed | none |
-| VPIT | [indirect](../data/0a/VPIT/indirect/status.json) | 0.39 | v5.45.5 | darwin/darwin-2level | failed | none |
+| VPIT | [indirect](../data/0a/VPIT/indirect/status.json) | 0.39 | v5.45.5 | darwin/darwin-2level | installed | xperl-parser-errors |
 | WATERKIP | [Test-Mock-One](../data/ca/WATERKIP/Test-Mock-One/status.json) | 0.011 | v5.45.5 | linux/x86_64-linux | installed | none |
 | WATERKIP | [URN-OASIS-SAML2](../data/fe/WATERKIP/URN-OASIS-SAML2/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux | installed | none |
 | WESM | [DBIx-Class-Candy](../data/bd/WESM/DBIx-Class-Candy/status.json) | 0.005004 | v5.45.5 | darwin/darwin-2level | installed | none |

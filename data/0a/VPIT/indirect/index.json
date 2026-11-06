@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "indirect",
+  "releases": [
+    {
+      "version": "0.39",
+      "cpan_path": "V/VP/VPIT/indirect-0.39.tar.gz",
+      "source_sha256": "71733c4c348e98fdd575b44a52042428c39888a18c25656efe59ef3d7d0d27e5",
+      "patch_sets": [
+        {
+          "id": "xperl-parser-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-parser-errors.patch",
+              "sha256": "7a24fcf8ddd6ddb7bb7d713a58bb016844048207986e587c6b8b32928876fb62"
+            }
+          ],
+          "recipes": [
+            "parser-error-count-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}
