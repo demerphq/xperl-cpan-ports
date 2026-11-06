@@ -1,0 +1,16 @@
+{
+  "source_sha256": "4764563277d667a757070483ec69aa2241555d405e6308252e3ffefe11645e7b",
+  "patch_set_id": "xperl-error-message",
+  "patch_sha256": "9d0891556ab6c26840a827ac428ef726889f6e256f0e6d1013e96d6af54a008f",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "XPerl places a reference in $@ for malformed requests. Dancer2 passes it to an error message field constrained to Str, causing a second exception and HTTP 500 instead of the intended HTTP 400.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 217 test files, 1772 tests"
+    }
+  ]
+}

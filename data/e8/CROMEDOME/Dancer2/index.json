@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Dancer2",
+  "releases": [
+    {
+      "version": "2.3.0",
+      "cpan_path": "C/CR/CROMEDOME/Dancer2-2.3.0.tar.gz",
+      "source_sha256": "4764563277d667a757070483ec69aa2241555d405e6308252e3ffefe11645e7b",
+      "patch_sets": [
+        {
+          "id": "xperl-error-message",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-error-message.patch",
+              "sha256": "9d0891556ab6c26840a827ac428ef726889f6e256f0e6d1013e96d6af54a008f"
+            }
+          ],
+          "recipes": ["exception-text-boundary-v1"]
+        }
+      ]
+    }
+  ]
+}
