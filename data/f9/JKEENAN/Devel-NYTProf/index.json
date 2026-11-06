@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Devel-NYTProf",
+  "releases": [
+    {
+      "version": "6.16",
+      "cpan_path": "J/JK/JKEENAN/Devel-NYTProf-6.16.tar.gz",
+      "source_sha256": "c5553739fbcdf0699df47554fc5e32c4e68ca7876511eef7aceffb6db27badda",
+      "patch_sets": [
+        {
+          "id": "xperl-profile-fixtures",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-profile-fixtures.patch",
+              "sha256": "63e47a1cf80fccead851515215d1b120eabd18a0f389bc4e32bfa0a3cff4c8fd"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

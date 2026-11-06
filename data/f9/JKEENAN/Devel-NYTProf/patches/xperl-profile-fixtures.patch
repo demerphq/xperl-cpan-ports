@@ -1,0 +1,17 @@
+--- a/t/lib/NYTProfTest.pm
++++ b/t/lib/NYTProfTest.pm
+@@ -453,0 +454,4 @@
++
++    if (${^XPERL_VERSION}) {
++        @got = grep { !/XPerl::(?:Exception|Diagnostic)::/ } @got;
++    }
+@@ -456,3 +460,2 @@
+-    #  Sort the got and exp data if we updated.
+-    #  This avoids mismatches due to file sort orders.
+-    if ($updated) {
++    # Eval renumbering and XPerl call ordering can reorder equivalent rows.
++    if ($updated || (${^XPERL_VERSION} && $got_file =~ /\.calls_new\z/)) {
+@@ -597,0 +601,3 @@
++    @got = grep {
++        $_ !~ /^[^,]+,[^,]+,[^,]+,Profile data that couldn't be associated with a specific line:/
++    } @got if ${^XPERL_VERSION};
