@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Text-CSV_XS",
+  "releases": [
+    {
+      "version": "1.65",
+      "cpan_path": "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+      "source_sha256": "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+      "patch_sets": [
+        {
+          "id": "types-value-lifetime",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/types-value-lifetime.patch",
+              "sha256": "d139bae7d6ff2d202af529e33163c7ed5fb47b449a34ef2490fd9a98669064a9"
+            }
+          ],
+          "recipes": ["hash-value-lifetime-v1"]
+        }
+      ]
+    }
+  ]
+}

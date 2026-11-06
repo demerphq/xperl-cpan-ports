@@ -133,6 +133,59 @@
          "test_summary" : "Files=36, Tests=52658, Failed 1/36 test programs. 0/52658 subtests failed.",
          "version" : "1.65",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+         "id" : "10a07b0e45be9c23163d7c0e5c0b741888dcda9b8c79760abdefe6e3fddc2e39",
+         "module" : "Text::CSV_XS",
+         "observed_at" : "2026-11-06T15:58:18Z",
+         "patch_set" : "types-value-lifetime",
+         "patch_sha256" : [
+            "d139bae7d6ff2d202af529e33163c7ed5fb47b449a34ef2490fd9a98669064a9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+         "status" : "installed",
+         "test_summary" : "Files=36, Tests=52671",
+         "version" : "1.65",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
