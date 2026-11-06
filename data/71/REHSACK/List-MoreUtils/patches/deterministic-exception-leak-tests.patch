@@ -1,0 +1,198 @@
+--- a/t/inline/binsert.pm
++++ b/t/inline/binsert.pm
+@@ -125,7 +125,7 @@
+ leak_free_ok(
+     'binsert with stack-growing and exception' => sub {
+         my @list = map { $_ * 2 } 1 .. 100;
+-        my $elem = int(rand(100)) + 1;
++        my $elem = 100;
+         eval {
+             binsert { grow_stack(); $_ <=> $elem or die "Goal!"; $_ <=> $elem } $elem, @list;
+         };
+--- a/t/inline/bsearch.pm
++++ b/t/inline/bsearch.pm
+@@ -35,7 +35,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             scalar bsearch { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/inline/bsearchidx.pm
++++ b/t/inline/bsearchidx.pm
+@@ -30,7 +30,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             bsearchidx { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/inline/equal_range.pm
++++ b/t/inline/equal_range.pm
+@@ -26,7 +26,7 @@
+ 
+ leak_free_ok(
+     'equal_range with stack-growing and exception' => sub {
+-        my $elem = int(rand(101));
++        my $elem = 50;
+         eval {
+             equal_range { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/inline/lower_bound.pm
++++ b/t/inline/lower_bound.pm
+@@ -43,7 +43,7 @@
+ 
+ leak_free_ok(
+     'lower_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             lower_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/inline/upper_bound.pm
++++ b/t/inline/upper_bound.pm
+@@ -43,7 +43,7 @@
+ 
+ leak_free_ok(
+     'upper_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             upper_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/pureperl/binsert.t
++++ b/t/pureperl/binsert.t
+@@ -134,7 +134,7 @@
+ leak_free_ok(
+     'binsert with stack-growing and exception' => sub {
+         my @list = map { $_ * 2 } 1 .. 100;
+-        my $elem = int(rand(100)) + 1;
++        my $elem = 100;
+         eval {
+             binsert { grow_stack(); $_ <=> $elem or die "Goal!"; $_ <=> $elem } $elem, @list;
+         };
+--- a/t/pureperl/bsearch.t
++++ b/t/pureperl/bsearch.t
+@@ -44,7 +44,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             scalar bsearch { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/pureperl/bsearchidx.t
++++ b/t/pureperl/bsearchidx.t
+@@ -39,7 +39,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             bsearchidx { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/pureperl/equal_range.t
++++ b/t/pureperl/equal_range.t
+@@ -35,7 +35,7 @@
+ 
+ leak_free_ok(
+     'equal_range with stack-growing and exception' => sub {
+-        my $elem = int(rand(101));
++        my $elem = 50;
+         eval {
+             equal_range { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/pureperl/lower_bound.t
++++ b/t/pureperl/lower_bound.t
+@@ -52,7 +52,7 @@
+ 
+ leak_free_ok(
+     'lower_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             lower_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/pureperl/upper_bound.t
++++ b/t/pureperl/upper_bound.t
+@@ -52,7 +52,7 @@
+ 
+ leak_free_ok(
+     'upper_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             upper_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/xs/binsert.t
++++ b/t/xs/binsert.t
+@@ -134,7 +134,7 @@
+ leak_free_ok(
+     'binsert with stack-growing and exception' => sub {
+         my @list = map { $_ * 2 } 1 .. 100;
+-        my $elem = int(rand(100)) + 1;
++        my $elem = 100;
+         eval {
+             binsert { grow_stack(); $_ <=> $elem or die "Goal!"; $_ <=> $elem } $elem, @list;
+         };
+--- a/t/xs/bsearch.t
++++ b/t/xs/bsearch.t
+@@ -44,7 +44,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             scalar bsearch { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/xs/bsearchidx.t
++++ b/t/xs/bsearchidx.t
+@@ -39,7 +39,7 @@
+ 
+ leak_free_ok(
+     'bsearch with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 500;
+         eval {
+             bsearchidx { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/xs/equal_range.t
++++ b/t/xs/equal_range.t
+@@ -35,7 +35,7 @@
+ 
+ leak_free_ok(
+     'equal_range with stack-growing and exception' => sub {
+-        my $elem = int(rand(101));
++        my $elem = 50;
+         eval {
+             equal_range { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/xs/lower_bound.t
++++ b/t/xs/lower_bound.t
+@@ -52,7 +52,7 @@
+ 
+ leak_free_ok(
+     'lower_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             lower_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };
+--- a/t/xs/upper_bound.t
++++ b/t/xs/upper_bound.t
+@@ -52,7 +52,7 @@
+ 
+ leak_free_ok(
+     'upper_bound with stack-growing and exception' => sub {
+-        my $elem = int(rand(1000));
++        my $elem = 50;
+         eval {
+             upper_bound { grow_stack(); $_ - $elem or die "Goal!"; $_ - $elem } @list;
+         };

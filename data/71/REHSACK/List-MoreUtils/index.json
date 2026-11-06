@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "List-MoreUtils",
+  "releases": [
+    {
+      "version": "0.430",
+      "cpan_path": "R/RE/REHSACK/List-MoreUtils-0.430.tar.gz",
+      "source_sha256": "63b1f7842cd42d9b538d1e34e0330de5ff1559e4c2737342506418276f646527",
+      "patch_sets": [
+        {
+          "id": "deterministic-exception-leak-tests",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/deterministic-exception-leak-tests.patch",
+              "sha256": "bebcc32b64091f3532132bb0da3d6c685e236ce72718840144356844608892a8"
+            }
+          ],
+          "recipes": [
+            "leak-test-stable-control-flow-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -19,3 +19,32 @@ XPerl v5.45.5 and Test::LeakTrace 0.17, repeated original runs reported
 throw during both warm-up and measured runs. The focused test passed 20
 consecutive runs with zero reported leaks. All 61 distribution test files
 and 4,519 tests passed under XPerl v5.45.5 and Perl v5.36.3.
+
+### Why XPerl shows the difference
+
+Two kinds of state are left behind when the block dies, and neither is a
+leak:
+
+- `$@` holds an `XPerl::Exception` object, about 47 scalars, not a string.
+  It outlives the block and is freed only when `$@` changes. On ordinary
+  Perl, `$@` reuses one string scalar.
+- The first exception in a process blesses its diagnostics into
+  `XPerl::Diagnostic::*` classes, so `PL_stashcache` gains one entry per
+  class, about five scalars. Later exceptions add nothing.
+
+If the warm-up run does not throw and the measured run does, both appear as
+leaks. If only the warm-up throws, clearing `$@` shows up as a negative count.
+With input that throws on every run, the warm-up sets up both kinds of state,
+and the measured run leaves the count unchanged. Memory stays flat across
+300,000 exceptions.
+
+List-MoreUtils 0.430 (the pure-Perl distribution) has the same pattern in
+six leak tests: binsert, bsearch, bsearchidx, equal_range, lower_bound and
+upper_bound, each in its `t/inline`, `t/pureperl` and `t/xs` copies.
+lower_bound and upper_bound chose from 0..999 against a list of 1..100, so
+their exception path ran only about one time in ten. Each now uses an item
+that is in its list, and all six are confirmed to throw under both the
+pure-Perl and XS implementations. The affected tests passed 560 runs without
+a failure, and the full suite (122 files, 9,066 tests) passes on XPerl
+v5.45.5 and Perl v5.44.0. List-MoreUtils-XS has the same random inputs in
+its other five tests, beyond the binsert one patched here.
