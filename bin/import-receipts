@@ -103,7 +103,8 @@ for my $key (sort keys %records) {
     write_file(status_path($author, $distribution), $json->encode($entry));
     my %latest;
     for my $observation (@{$entry->{observations}}) {
-        my $key = join "\0", @{$observation}{qw(version source_sha256 xperl_version)};
+        my $key = join "\0", @{$observation}{qw(version source_sha256 xperl_version)},
+            platform_key($observation);
         $latest{$key} = $observation;
     }
     push @current, map {
@@ -116,31 +117,32 @@ for my $key (sort keys %records) {
     $a->{author} cmp $b->{author}
         || $a->{distribution} cmp $b->{distribution}
         || $a->{observation}{version} cmp $b->{observation}{version}
+        || platform_key($a->{observation}) cmp platform_key($b->{observation})
 } @current;
 my @unresolved = grep { $_->{observation}{status} eq 'failed' } @current;
 my $summary = "# XPerl CPAN build status\n\n";
-$summary .= "Latest observation for each author, distribution release, source hash, and XPerl version.\n";
+$summary .= "Latest observation for each author, distribution release, source hash, XPerl version, and platform.\n";
 $summary .= "Older failures remain in the distribution records.\n\n";
 $summary .= "Unresolved failures: " . scalar(@unresolved) . " of " . scalar(@current)
-    . " release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).\n\n";
-$summary .= "| Author | Distribution | Version | XPerl | Status | Patch set |\n";
-$summary .= "| --- | --- | --- | --- | --- | --- |\n";
+    . " release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).\n\n";
+$summary .= "| Author | Distribution | Version | XPerl | Platform | Status | Patch set |\n";
+$summary .= "| --- | --- | --- | --- | --- | --- | --- |\n";
 for my $row (@current) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
     $summary .= join(' | ',
         "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
-        $observation->{status},
+        platform_key($observation), $observation->{status},
         $observation->{patch_set} // 'none') . " |\n";
 }
 write_file(File::Spec->catfile($status_dir, 'SUMMARY.md'), $summary);
 
 my $unresolved = "# Unresolved XPerl CPAN builds\n\n";
-$unresolved .= "Latest failed observation for each author, release, source hash, and XPerl version.\n";
+$unresolved .= "Latest failed observation for each author, release, source hash, XPerl version, and platform.\n";
 $unresolved .= "Prior failures remain in each distribution record after a later success.\n\n";
-$unresolved .= "| Author | Distribution | Version | XPerl | Failed phase | Result |\n";
-$unresolved .= "| --- | --- | --- | --- | --- | --- |\n";
+$unresolved .= "| Author | Distribution | Version | XPerl | Platform | Failed phase | Result |\n";
+$unresolved .= "| --- | --- | --- | --- | --- | --- | --- |\n";
 for my $row (@unresolved) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
@@ -148,13 +150,14 @@ for my $row (@unresolved) {
     $unresolved .= join(' | ',
         "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
+        platform_key($observation),
         $failure->{phase} // 'unknown',
         $observation->{test_summary} // ("exit " . ($failure->{exit_status} // '?')))
         . " |\n";
 }
 write_file(File::Spec->catfile($status_dir, 'UNRESOLVED.md'), $unresolved);
 print "Imported $imported observations; " . scalar(@unresolved)
-    . " unresolved of " . scalar(@current) . " release and XPerl combinations\n";
+    . " unresolved of " . scalar(@current) . " release, XPerl, and platform combinations\n";
 
 sub read_file ($path) {
     open my $file, '<', $path or die "cannot read $path: $!\n";
@@ -252,6 +255,8 @@ sub observation ($receipt, $path, $id, $release_version) {
         cpan_path => $receipt->{cpan_path},
         source_sha256 => $receipt->{source_sha256},
         xperl_version => $receipt->{xperl_version},
+        (ref($receipt->{platform}) eq 'HASH'
+            ? (platform => platform($receipt->{platform})) : ()),
         status => $status,
         patch_set => $receipt->{registry}{patch_set},
         patch_sha256 => $receipt->{registry}{patches} // [],
@@ -264,4 +269,21 @@ sub observation ($receipt, $path, $id, $release_version) {
                 ? (validation_error => $failed->{validation_error}) : ()),
         }) : ()),
     };
+}
+
+# Observations from receipts written before the installer recorded the
+# platform have no platform block; they keep a distinct "unrecorded" key.
+sub platform_key ($observation) {
+    my $platform = $observation->{platform};
+    return ref($platform) eq 'HASH' && length($platform->{key} // '')
+        ? $platform->{key} : 'unrecorded';
+}
+
+# The portable platform description from a receipt: no local paths.
+sub platform ($platform) {
+    die "receipt platform lacks a key\n"
+        unless length($platform->{key} // '');
+    return { map { $_ => $platform->{$_} } grep { defined $platform->{$_} }
+             qw(key os osvers archname cc cc_version make usethreads
+                use64bitall xperl_commit) };
 }
