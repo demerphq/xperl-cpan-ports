@@ -1,0 +1,42 @@
+{
+   "author" : "MANWAR",
+   "distribution" : "XML-XPath",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MANWAR/XML-XPath-1.49.tar.gz",
+         "id" : "2404940403d21d6561957d7b0c7e8c2f02e7a6fc43a85fe1b5f9bc08392978b8",
+         "module" : "XML::XPath",
+         "observed_at" : "2026-11-06T16:05:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9c84a51be4cdb47bf88766ecab051fe092016472969e39f4acdba009885faabe",
+         "status" : "installed",
+         "test_summary" : "Files=62, Tests=328",
+         "version" : "1.49",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

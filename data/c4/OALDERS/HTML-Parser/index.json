@@ -16,7 +16,7 @@
           "patches": [
             {
               "path": "patches/stable-entity-value.patch",
-              "sha256": "1fa031ce3c1da551fbb57cbbce14acbc1b893c318f7e1b2a8086ab2c26140cca"
+              "sha256": "c41ba0b487a418932f2c4c3cd95db28dece11ec740a90e3fe903988df8b1c8cd"
             }
           ],
           "recipes": ["hash-value-lifetime-v1"]

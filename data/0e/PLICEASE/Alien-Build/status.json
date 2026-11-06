@@ -35,6 +35,47 @@
          "test_summary" : "Files=87, Tests=425, Failed 5/87 test programs. 7/425 subtests failed.",
          "version" : "2.88",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+         "id" : "4197107b39c137d7274c1f80a6a2f66bc361d6346f5a49bc47dd04c1de28f674",
+         "module" : "Alien::Base::Wrapper",
+         "observed_at" : "2026-11-06T16:00:16Z",
+         "patch_set" : "render-caught-errors",
+         "patch_sha256" : [
+            "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+         "status" : "installed",
+         "test_summary" : "Files=87, Tests=425",
+         "version" : "2.88",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

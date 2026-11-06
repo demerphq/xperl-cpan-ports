@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-XML",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-XML-0.41.tar.gz",
+         "id" : "fd0527538f1b02603b1c8fd8e6b347032a3089cbe562b0792a1a5ed49fc910e6",
+         "module" : "Task::Kensho::XML",
+         "observed_at" : "2026-11-06T16:09:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "078330a7173060536d065c0feb99d64f5f2b94a95f3d87d08cdbb7d003d83e89",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

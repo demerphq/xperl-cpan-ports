@@ -1,0 +1,67 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "XML-LibXSLT",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz",
+         "failure" : {
+            "exit_status" : 0,
+            "phase" : "configure",
+            "validation_error" : "configure did not produce Makefile"
+         },
+         "id" : "feb12dd2cf5c2321eea001e6b203816f1159724f010eb544f9c029758b5f5c31",
+         "module" : "XML::LibXSLT",
+         "observed_at" : "2026-11-06T16:05:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure",
+               "validation_error" : "configure did not produce Makefile"
+            }
+         ],
+         "source_sha256" : "7caa5aee72f53be59d8b84eecb6864a07c612a12ea6b27d5c706960edcd54587",
+         "status" : "failed",
+         "version" : "2.003000",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz",
+         "id" : "8bc1f457182f7b117ad406c6f7994feb206026beba461b25700736cf1b7ea2cb",
+         "module" : "XML::LibXSLT",
+         "observed_at" : "2026-11-06T16:09:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7caa5aee72f53be59d8b84eecb6864a07c612a12ea6b27d5c706960edcd54587",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=279",
+         "version" : "2.003000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

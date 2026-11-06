@@ -1,0 +1,42 @@
+{
+   "author" : "PERIGRIN",
+   "distribution" : "XML-SAX-Writer",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERIGRIN/XML-SAX-Writer-0.57.tar.gz",
+         "id" : "1e624248544c453ed058ee3ecd77b2e40edc69ab049d5e88c024b5b796ef96cd",
+         "module" : "XML::SAX::Writer",
+         "observed_at" : "2026-11-06T16:09:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3d61d07ef43b0126f5b4de4f415a256fa859fa88dc4fdabaad70b7be7c682cf0",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=50",
+         "version" : "0.57",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

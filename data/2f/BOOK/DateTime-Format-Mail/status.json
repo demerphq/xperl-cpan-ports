@@ -1,0 +1,42 @@
+{
+   "author" : "BOOK",
+   "distribution" : "DateTime-Format-Mail",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOOK/DateTime-Format-Mail-0.403.tar.gz",
+         "id" : "9f51b254937532b0f38d8820218673c056952648ca93eaa26b91528c5b2661e9",
+         "module" : "DateTime::Format::Mail",
+         "observed_at" : "2026-11-06T16:05:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8df8e35c4477388ff5c7ce8b3e8b6ae4ed30209c7a5051d41737bd14d755fcb0",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=29625",
+         "version" : "0.403",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

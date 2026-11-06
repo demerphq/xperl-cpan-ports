@@ -1,14 +1,88 @@
+diff --git a/t/entities2.t b/t/entities2.t
+index bf63e4d..cca2048 100644
+--- a/t/entities2.t
++++ b/t/entities2.t
+@@ -3,7 +3,53 @@ use warnings;
+ use utf8;
+ 
+ use HTML::Entities qw(_decode_entities);
+-use Test::More tests => 9;
++use Test::More tests => 15;
++
++{
++    package EntityValueDeletesKey;
++    use overload '""' => sub {
++        delete $main::entity_table{foo};
++        return "\x{100}";
++    };
++}
++
++{
++    our %entity_table = (
++        foo   => bless({}, 'EntityValueDeletesKey'),
++        other => 'unused',
++    );
++    my $text = '&foo;';
++    _decode_entities($text, \%entity_table);
++    is($text, "\x{100}", 'entity value survives deletion during stringification');
++}
++
++{
++    our %entity_table = (
++        foo   => bless({}, 'EntityValueDeletesKey'),
++        other => 'unused',
++    );
++    my $text = '&foobar;';
++    _decode_entities($text, \%entity_table, 1);
++    is($text, "\x{100}bar;", 'prefix entity value survives deletion during stringification');
++}
++
++{
++    my %entity_table = (foo => undef);
++    my $warnings = 0;
++    local $SIG{__WARN__} = sub {
++        $warnings++;
++        delete $entity_table{foo};
++    };
++    my $text = '&foo;';
++    my $error = do { local $@; eval { _decode_entities($text, \%entity_table) }; $@ };
++    like("$error", qr/^Entity value is undefined/, 'undefined entity value is rejected');
++    is($warnings, 0, 'undefined value does not invoke a warning hook');
++
++    my $prefix = '&foobar;';
++    $error = do { local $@; eval { _decode_entities($prefix, \%entity_table, 1) }; $@ };
++    like("$error", qr/^Entity value is undefined/, 'undefined prefix value is rejected');
++    is($warnings, 0, 'undefined prefix does not invoke a warning hook');
++}
+ 
+ {
+     local $@;
+diff --git a/util.c b/util.c
+index 3068b8e..81de5ad 100644
 --- a/util.c
 +++ b/util.c
-@@ -204,8 +204,14 @@
+@@ -194,6 +194,9 @@ decode_entities(pTHX_ SV* sv, HV* entity2char, bool expand_prefix)
+ 		STRLEN cur = SvCUR(sv);
+ 		STRLEN alloc = SvLEN(sv);
+ 		U32 utf8 = SvUTF8(sv);
++		/* SvPV can call magic or overload. A callback may change entity2char
++		 * and invalidate svp, so retain the value until its text is copied.
++		 * A plain undefined value is not a valid replacement. */
+ 		if (              (svp = hv_fetch(entity2char, ent_name, s - ent_name, 0)) ||
+ 		    (s < end && *s == ';' && (svp = hv_fetch(entity2char, ent_name, s - ent_name + 1, 0)))
+ 		   )
+@@ -204,8 +207,17 @@ decode_entities(pTHX_ SV* sv, HV* entity2char, bool expand_prefix)
  			repl_len = len;
  			repl_utf8 = orig_utf8;
  		    } else {
 -			repl = SvPV(*svp, repl_len);
 -			repl_utf8 = SvUTF8(*svp);
 +			SV *repl_sv = *svp;
-+			if (SvGMAGICAL(repl_sv) || SvAMAGIC(repl_sv) ||
-+			    (!SvPOK(repl_sv) && !SvROK(repl_sv))) {
++			/* Check magic first: it may make the scalar defined or undef. */
++			bool may_call_perl = SvGAMAGIC(repl_sv);
++			if (!may_call_perl && !SvOK(repl_sv))
++			    croak("Entity value is undefined");
++			if (may_call_perl) {
 +			    SvREFCNT_inc_simple_void(repl_sv);
 +			    SAVEFREESV(repl_sv);
 +			}
@@ -17,15 +91,18 @@
  		    }
  		}
  		else if (expand_prefix) {
-@@ -219,8 +225,14 @@
+@@ -219,8 +231,17 @@ decode_entities(pTHX_ SV* sv, HV* entity2char, bool expand_prefix)
  				repl_len = len;
  				repl_utf8 = orig_utf8;
  			    } else {
 -				repl = SvPV(*svp, repl_len);
 -				repl_utf8 = SvUTF8(*svp);
 +				SV *repl_sv = *svp;
-+				if (SvGMAGICAL(repl_sv) || SvAMAGIC(repl_sv) ||
-+				    (!SvPOK(repl_sv) && !SvROK(repl_sv))) {
++				/* Check magic first: it may make the scalar defined or undef. */
++				bool may_call_perl = SvGAMAGIC(repl_sv);
++				if (!may_call_perl && !SvOK(repl_sv))
++				    croak("Entity value is undefined");
++				if (may_call_perl) {
 +				    SvREFCNT_inc_simple_void(repl_sv);
 +				    SAVEFREESV(repl_sv);
 +				}

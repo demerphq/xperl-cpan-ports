@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-WebDev",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-WebDev-0.41.tar.gz",
+         "id" : "2249c4e3dbf417980a7b1b4619b3ba004bcd1ee32778485179642969fbe33fea",
+         "module" : "Task::Kensho::WebDev",
+         "observed_at" : "2026-11-06T16:05:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "92ce1cc85a96f0ce18b57f21080b16b7aa40d819ae22a91f89a2265cb19e1980",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

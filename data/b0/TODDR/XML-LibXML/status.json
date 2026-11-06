@@ -1,0 +1,82 @@
+{
+   "author" : "TODDR",
+   "distribution" : "XML-LibXML",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9b5f9ffdffbaf211958d258e9979c41f7879f513b10aa4e042c17ab340cdfb0b",
+         "module" : "XML::LibXML",
+         "observed_at" : "2026-11-06T16:00:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+         "status" : "failed",
+         "test_summary" : "Files=86, Tests=2652, Failed 1/86 test programs. 2/2652 subtests failed.",
+         "version" : "2.0213",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
+         "id" : "b14c32b003c970afaa90cbf6516a891e2cf818285bdf03fc567b8dbf9a697369",
+         "module" : "XML::LibXML",
+         "observed_at" : "2026-11-06T16:05:00Z",
+         "patch_set" : "append-croak-location",
+         "patch_sha256" : [
+            "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+         "status" : "installed",
+         "test_summary" : "Files=86, Tests=2652",
+         "version" : "2.0213",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 0 of 624 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- | --- |
@@ -55,6 +55,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | BOBTFISH | [Catalyst-Plugin-Session-Store-Delegate](../data/39/BOBTFISH/Catalyst-Plugin-Session-Store-Delegate/status.json) | 0.06 | v5.45.5 | installed | none |
 | BOBTFISH | [Catalyst-Plugin-StackTrace](../data/e2/BOBTFISH/Catalyst-Plugin-StackTrace/status.json) | 0.12 | v5.45.5 | installed | none |
 | BOBTFISH | [Task-Catalyst](../data/53/BOBTFISH/Task-Catalyst/status.json) | 4.02 | v5.45.5 | installed | none |
+| BOOK | [DateTime-Format-Mail](../data/2f/BOOK/DateTime-Format-Mail/status.json) | 0.403 | v5.45.5 | installed | none |
 | BPS | [HTTP-Server-Simple](../data/e0/BPS/HTTP-Server-Simple/status.json) | 0.52 | v5.45.5 | installed | none |
 | BPS | [Test-Expect](../data/1c/BPS/Test-Expect/status.json) | 0.34 | v5.45.5 | installed | none |
 | BPS | [Time-ParseDate](../data/0f/BPS/Time-ParseDate/status.json) | 2026.033 | v5.45.5 | installed | none |
@@ -188,7 +189,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [Plack-Test-ExternalServer](../data/81/ETHER/Plack-Test-ExternalServer/status.json) | 0.02 | v5.45.5 | installed | none |
 | ETHER | [Safe-Isa](../data/7e/ETHER/Safe-Isa/status.json) | 1.000010 | v5.45.5 | installed | none |
 | ETHER | [Sub-Name](../data/91/ETHER/Sub-Name/status.json) | 0.28 | v5.45.5 | installed | none |
-| ETHER | [Task-Kensho](../data/05/ETHER/Task-Kensho/status.json) | 0.41 | v5.45.5 | failed | none |
+| ETHER | [Task-Kensho](../data/05/ETHER/Task-Kensho/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Kensho-Async](../data/f1/ETHER/Task-Kensho-Async/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Kensho-CLI](../data/ff/ETHER/Task-Kensho-CLI/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Kensho-Config](../data/5b/ETHER/Task-Kensho-Config/status.json) | 0.41 | v5.45.5 | installed | none |
@@ -205,6 +206,8 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [Task-Kensho-Testing](../data/36/ETHER/Task-Kensho-Testing/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Kensho-Toolchain](../data/44/ETHER/Task-Kensho-Toolchain/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Kensho-WebCrawling](../data/85/ETHER/Task-Kensho-WebCrawling/status.json) | 0.41 | v5.45.5 | installed | none |
+| ETHER | [Task-Kensho-WebDev](../data/ef/ETHER/Task-Kensho-WebDev/status.json) | 0.41 | v5.45.5 | installed | none |
+| ETHER | [Task-Kensho-XML](../data/0d/ETHER/Task-Kensho-XML/status.json) | 0.41 | v5.45.5 | installed | none |
 | ETHER | [Task-Weaken](../data/ac/ETHER/Task-Weaken/status.json) | 1.06 | v5.45.5 | installed | none |
 | ETHER | [Template-Tiny](../data/3a/ETHER/Template-Tiny/status.json) | 1.16 | v5.45.5 | installed | none |
 | ETHER | [Test-EOL](../data/19/ETHER/Test-EOL/status.json) | 2.02 | v5.45.5 | installed | none |
@@ -335,6 +338,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | KAZUHO | [HTTP-Parser-XS](../data/b7/KAZUHO/HTTP-Parser-XS/status.json) | 0.18 | v5.45.5 | installed | none |
 | KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | installed | none |
 | KENTNL | [Test-File-ShareDir](../data/ac/KENTNL/Test-File-ShareDir/status.json) | 1.001002 | v5.45.5 | installed | none |
+| KHAMPTON | [XML-Generator-PerlData](../data/7d/KHAMPTON/XML-Generator-PerlData/status.json) | 0.95 | v5.45.5 | installed | none |
 | KJETILK | [URI-NamespaceMap](../data/fd/KJETILK/URI-NamespaceMap/status.json) | 1.12 | v5.45.5 | installed | none |
 | KMELTZ | [Apache-Htpasswd](../data/6e/KMELTZ/Apache-Htpasswd/status.json) | 1.9 | v5.45.5 | installed | none |
 | KWILLIAMS | [Path-Class](../data/63/KWILLIAMS/Path-Class/status.json) | 0.37 | v5.45.5 | installed | none |
@@ -357,6 +361,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | MALLEN | [Test-RequiresInternet](../data/c4/MALLEN/Test-RequiresInternet/status.json) | 0.05 | v5.45.5 | installed | none |
 | MANWAR | [CGI-Simple](../data/85/MANWAR/CGI-Simple/status.json) | 1.282 | v5.45.5 | installed | none |
 | MANWAR | [Term-ProgressBar](../data/b4/MANWAR/Term-ProgressBar/status.json) | 2.23 | v5.45.5 | installed | none |
+| MANWAR | [XML-XPath](../data/32/MANWAR/XML-XPath/status.json) | 1.49 | v5.45.5 | installed | none |
 | MAREKR | [Pod-Parser](../data/fb/MAREKR/Pod-Parser/status.json) | 1.67 | v5.45.5 | installed | none |
 | MARKOV | [MIME-Types](../data/7c/MARKOV/MIME-Types/status.json) | 2.30 | v5.45.5 | installed | none |
 | MARKOV | [MailTools](../data/ef/MARKOV/MailTools/status.json) | 2.22 | v5.45.5 | installed | none |
@@ -383,6 +388,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | MIYAGAWA | [Starman](../data/8c/MIYAGAWA/Starman/status.json) | 0.4019 | v5.45.5 | installed | none |
 | MIYAGAWA | [Term-Encoding](../data/50/MIYAGAWA/Term-Encoding/status.json) | 0.03 | v5.45.5 | installed | none |
 | MIYAGAWA | [Test-TCP](../data/86/MIYAGAWA/Test-TCP/status.json) | 2.22 | v5.45.5 | installed | none |
+| MIYAGAWA | [XML-Atom](../data/58/MIYAGAWA/XML-Atom/status.json) | 0.43 | v5.45.5 | installed | none |
 | MNUNBERG | [Proc-Terminator](../data/ee/MNUNBERG/Proc-Terminator/status.json) | 0.05 | v5.45.5 | installed | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | installed | none |
 | MRAMBERG | [Text-SimpleTable](../data/df/MRAMBERG/Text-SimpleTable/status.json) | 2.07 | v5.45.5 | installed | none |
@@ -428,6 +434,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | PALI | [Email-Address-XS](../data/51/PALI/Email-Address-XS/status.json) | 1.05 | v5.45.5 | installed | none |
 | PERIGRIN | [HTTP-Thin](../data/b3/PERIGRIN/HTTP-Thin/status.json) | 0.006 | v5.45.5 | installed | none |
 | PERIGRIN | [XML-NamespaceSupport](../data/6a/PERIGRIN/XML-NamespaceSupport/status.json) | 1.12 | v5.45.5 | installed | none |
+| PERIGRIN | [XML-SAX-Writer](../data/7b/PERIGRIN/XML-SAX-Writer/status.json) | 0.57 | v5.45.5 | installed | none |
 | PETDANCE | [Carp-Assert-More](../data/ab/PETDANCE/Carp-Assert-More/status.json) | 2.9.0 | v5.45.5 | installed | none |
 | PETDANCE | [File-Next](../data/92/PETDANCE/File-Next/status.json) | 1.18 | v5.45.5 | installed | none |
 | PETDANCE | [HTML-Tagset](../data/5d/PETDANCE/HTML-Tagset/status.json) | 3.24 | v5.45.5 | installed | none |
@@ -452,7 +459,9 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | PEVANS | [XS-Parse-Sublike](../data/ff/PEVANS/XS-Parse-Sublike/status.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
 | PHRED | [Archive-Zip](../data/9b/PHRED/Archive-Zip/status.json) | 1.68 | v5.45.5 | installed | none |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | installed | xperl-coverage-gold |
-| PLICEASE | [Alien-Build](../data/0e/PLICEASE/Alien-Build/status.json) | 2.88 | v5.45.5 | failed | none |
+| PLICEASE | [Alien-Build](../data/0e/PLICEASE/Alien-Build/status.json) | 2.88 | v5.45.5 | installed | render-caught-errors |
+| PLICEASE | [Alien-Build-Plugin-Download-GitLab](../data/5d/PLICEASE/Alien-Build-Plugin-Download-GitLab/status.json) | 0.01 | v5.45.5 | installed | none |
+| PLICEASE | [Alien-Libxml2](../data/83/PLICEASE/Alien-Libxml2/status.json) | 0.20 | v5.45.5 | installed | none |
 | PLICEASE | [Class-Inspector](../data/11/PLICEASE/Class-Inspector/status.json) | 1.36 | v5.45.5 | installed | none |
 | PLICEASE | [FFI-CheckLib](../data/19/PLICEASE/FFI-CheckLib/status.json) | 0.31 | v5.45.5 | installed | render-caught-error |
 | PLICEASE | [File-Listing](../data/f8/PLICEASE/File-Listing/status.json) | 6.16 | v5.45.5 | installed | none |
@@ -461,6 +470,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | PLICEASE | [Params-SomeUtil](../data/78/PLICEASE/Params-SomeUtil/status.json) | 1.12 | v5.45.5 | installed | none |
 | PRBRENAN | [Math-Cartesian-Product](../data/e1/PRBRENAN/Math-Cartesian-Product/status.json) | 1.009 | v5.45.5 | installed | none |
 | PREACTION | [Log-Any](../data/68/PREACTION/Log-Any/status.json) | 1.720 | v5.45.5 | installed | none |
+| RBERJON | [XML-Filter-BufferText](../data/97/RBERJON/XML-Filter-BufferText/status.json) | 1.01 | v5.45.5 | installed | none |
 | RCAPUTO | [IO-Pipely](../data/00/RCAPUTO/IO-Pipely/status.json) | 0.006 | v5.45.5 | installed | none |
 | RCAPUTO | [Lexical-Persistence](../data/f8/RCAPUTO/Lexical-Persistence/status.json) | 1.023 | v5.45.5 | installed | none |
 | RCAPUTO | [POE-Test-Loops](../data/22/RCAPUTO/POE-Test-Loops/status.json) | 1.360 | v5.45.5 | installed | xperl-exception-assertion |
@@ -567,6 +577,8 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | SHLOMIF | [File-Remove](../data/31/SHLOMIF/File-Remove/status.json) | 1.61 | v5.45.5 | installed | none |
 | SHLOMIF | [Text-Aligner](../data/a0/SHLOMIF/Text-Aligner/status.json) | 0.16 | v5.45.5 | installed | none |
 | SHLOMIF | [Text-Table](../data/f8/SHLOMIF/Text-Table/status.json) | 1.135 | v5.45.5 | installed | none |
+| SHLOMIF | [XML-LibXSLT](../data/56/SHLOMIF/XML-LibXSLT/status.json) | 2.003000 | v5.45.5 | installed | none |
+| SHLOMIF | [XML-RSS](../data/3f/SHLOMIF/XML-RSS/status.json) | 1.65 | v5.45.5 | installed | none |
 | SIMONW | [Module-Pluggable](../data/32/SIMONW/Module-Pluggable/status.json) | 6.4 | v5.45.5 | installed | none |
 | SKAJI | [App-cpm](../data/86/SKAJI/App-cpm/status.json) | v1.1.6 | v5.45.5 | installed | none |
 | SKAJI | [CPAN-02Packages-Search](../data/9e/SKAJI/CPAN-02Packages-Search/status.json) | v1.0.0 | v5.45.5 | installed | none |
@@ -601,6 +613,7 @@ Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md
 | TODDR | [IO-Tty](../data/b1/TODDR/IO-Tty/status.json) | 1.31 | v5.45.5 | installed | none |
 | TODDR | [IPC-Run](../data/04/TODDR/IPC-Run/status.json) | 20260402.0 | v5.45.5 | installed | none |
 | TODDR | [Template-Toolkit](../data/ff/TODDR/Template-Toolkit/status.json) | 3.106 | v5.45.5 | installed | xperl-exception-wrapper |
+| TODDR | [XML-LibXML](../data/b0/TODDR/XML-LibXML/status.json) | 2.0213 | v5.45.5 | installed | append-croak-location |
 | TODDR | [XML-Parser](../data/96/TODDR/XML-Parser/status.json) | 2.59 | v5.45.5 | installed | xperl-error-context |
 | TOKUHIROM | [FCGI-Client](../data/8b/TOKUHIROM/FCGI-Client/status.json) | 0.09 | v5.45.5 | installed | none |
 | TOKUHIROM | [HTTP-Headers-Fast](../data/b9/TOKUHIROM/HTTP-Headers-Fast/status.json) | 0.22 | v5.45.5 | installed | none |
