@@ -48,6 +48,53 @@
          "test_summary" : "Files=9, Tests=55",
          "version" : "1.24",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-DSA-1.24.tar.gz",
+         "id" : "2ccc99be4f45a9fa4029ffdf665ba723002101ae014d21a6abada3c3d8f1a732",
+         "module" : "Crypt::DSA",
+         "observed_at" : "2026-11-06T18:47:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0a1638b6f2b4efe92d6ee2f4901cca02d7a70567f6bb0f486a9bb5f69be76766",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=86",
+         "version" : "1.24",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

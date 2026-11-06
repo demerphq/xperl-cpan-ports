@@ -48,6 +48,53 @@
          "test_summary" : "Files=2, Tests=13",
          "version" : "1.01",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JG/JGMYERS/Encode-Detect-1.01.tar.gz",
+         "id" : "21db0fbd8be9ab1fdc1fd1369a9ce17f8d16f4e1d12109bfc343aa86f8d750fe",
+         "module" : "Encode::Detect",
+         "observed_at" : "2026-11-06T18:43:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "834d893aa7db6ce3f158afbd0e432d6ed15a276e0940db0a74be13fd9c4bbbf1",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=13",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

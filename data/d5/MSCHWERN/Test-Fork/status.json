@@ -47,6 +47,59 @@
          "test_summary" : "Files=3, Tests=17, Failed 1/3 test programs. 1/17 subtests failed.",
          "version" : "0.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MS/MSCHWERN/Test-Fork-0.02.tar.gz",
+         "id" : "d8ae73e9d6eb01db45c3756b5f08404bfdc8c6d9af5927c984f7d613b8d636cf",
+         "module" : "Test::Fork",
+         "observed_at" : "2026-11-06T18:43:56Z",
+         "patch_set" : "xperl-anon-sub-line",
+         "patch_sha256" : [
+            "f03e1f9124c9cefa7d256d3e8272fac96a9d8f22c2ab04f9e945fbe0944c6367"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fcfefbfb24f885abe827c2ad07ac3d4e1fecf213a14717fcaf3c37175045d03e",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=17",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

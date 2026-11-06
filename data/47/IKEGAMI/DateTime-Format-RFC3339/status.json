@@ -49,6 +49,54 @@
          "test_summary" : "Files=9, Tests=33",
          "version" : "v1.10.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IK/IKEGAMI/DateTime-Format-RFC3339-v1.10.0.tar.gz",
+         "id" : "3ac4f67bb7d8a05bb86b5e726ed17bb2c5fed4bfdb3919202578b3426bebf303",
+         "module" : "DateTime::Format::RFC3339",
+         "module_version" : "1.010000",
+         "observed_at" : "2026-11-06T18:48:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3a5e64e7beaafd2c64a12109e3cc0fed3db3f893b0323b43b52964fc2c0c8496",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=33",
+         "version" : "v1.10.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

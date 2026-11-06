@@ -1,0 +1,54 @@
+{
+   "author" : "MARKOV",
+   "distribution" : "XML-Compile",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARKOV/XML-Compile-1.64.tar.gz",
+         "id" : "00f468507ca779858d766182388b0f92bc704e3a5ce0c16ab465f38b60833e12",
+         "module" : "XML::Compile::Util",
+         "observed_at" : "2026-11-06T18:46:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8b62cad0b28845328039c4a12056cdc672376674e48cd7d8486c87c825ce4c79",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3326",
+         "version" : "1.64",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

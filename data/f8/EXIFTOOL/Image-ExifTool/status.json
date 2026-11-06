@@ -47,6 +47,59 @@
          "test_summary" : "Files=113, Tests=579, Failed 2/113 test programs. 0/579 subtests failed.",
          "version" : "13.55",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXIFTOOL/Image-ExifTool-13.55.tar.gz",
+         "id" : "836673d9ee64ebe274282ad55bc005cd703ede8130fab1a377b35ff2b9ac17e3",
+         "module" : "Image::ExifTool",
+         "observed_at" : "2026-11-06T18:42:42Z",
+         "patch_set" : "strict-regex-deref",
+         "patch_sha256" : [
+            "bfc155ab00c9093a2f2614315c70e069aec2250c9dcfb721016b4756d58802c8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5f4c81d34ad406538c2871ad72dbfceb5d9b412b2f16cbbeb4d712d270846667",
+         "status" : "installed",
+         "test_summary" : "Files=113, Tests=600",
+         "version" : "13.55",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

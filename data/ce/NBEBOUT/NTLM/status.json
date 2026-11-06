@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=37",
          "version" : "1.09",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NB/NBEBOUT/NTLM-1.09.tar.gz",
+         "id" : "345eb93a50e50c319e5ed67a87ca691f04c12472c5c093048529042db16a7f07",
+         "module" : "Authen::NTLM",
+         "observed_at" : "2026-11-06T18:43:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c823e30cda76bc15636e584302c960e2b5eeef9517c2448f7454498893151f85",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=37",
+         "version" : "1.09",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

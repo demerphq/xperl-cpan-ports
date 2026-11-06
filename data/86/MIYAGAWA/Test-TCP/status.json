@@ -136,6 +136,54 @@
          "test_summary" : "Files=15, Tests=149",
          "version" : "2.22",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Test-TCP-2.22.tar.gz",
+         "id" : "f921bc42fe3b52b2965534040ae03761481876e04e68d35440e91fbf792f721e",
+         "module" : "Net::EmptyPort",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T18:47:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3e53c3c06d6d0980a2bfeb915602b714e682ee211ae88c11748cf2cc714e7b57",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=149",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

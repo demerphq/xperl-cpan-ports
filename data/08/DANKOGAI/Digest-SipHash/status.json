@@ -48,6 +48,53 @@
          "test_summary" : "Files=6, Tests=15",
          "version" : "0.21",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DANKOGAI/Digest-SipHash-0.21.tar.gz",
+         "id" : "4acdb1fd3b14d1e8d6da12edf30ac94d188edc72c1b0d2afa1741d765a995a70",
+         "module" : "Digest::SipHash",
+         "observed_at" : "2026-11-06T18:42:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3d6740d26d83b1d99347a8a32a82230a371ea858f463af811c3ed684ac6eb5eb",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=15",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

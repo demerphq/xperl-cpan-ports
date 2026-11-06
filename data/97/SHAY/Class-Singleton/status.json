@@ -215,6 +215,53 @@
          "test_summary" : "Files=5, Tests=29",
          "version" : "1.6",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHAY/Class-Singleton-1.6.tar.gz",
+         "id" : "c4fbf04fe3e8a2463c0af5dbc11f7603cefe67512e1ebfb545942fb40532bb69",
+         "module" : "Class::Singleton",
+         "observed_at" : "2026-11-06T18:45:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "27ba13f0d9512929166bbd8c9ef95d90d630fc80f0c9a1b7458891055e9282a4",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=29",
+         "version" : "1.6",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

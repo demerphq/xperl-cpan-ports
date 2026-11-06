@@ -48,6 +48,53 @@
          "test_summary" : "Files=18, Tests=60",
          "version" : "0.48",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MS/MSCHILLI/Sysadm-Install-0.48.tar.gz",
+         "id" : "ea10f3e031340e0b66a0a9c7c3d82bcad72ba2319e0254e7410726d5a84e51a4",
+         "module" : "Sysadm::Install",
+         "observed_at" : "2026-11-06T18:47:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ffdf1c4291dae94650a728e251beba8e6fcd2e5c697bcde0d791b5fb9c6b8c99",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=60",
+         "version" : "0.48",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

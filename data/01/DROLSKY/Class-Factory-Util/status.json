@@ -48,6 +48,53 @@
          "test_summary" : "Files=3, Tests=6",
          "version" : "1.7",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Class-Factory-Util-1.7.tar.gz",
+         "id" : "58f6243f96cea0dc238f32d7b008a3c00b84fd999ab98eb929e93c0a3263d525",
+         "module" : "Class::Factory::Util",
+         "observed_at" : "2026-11-06T18:42:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6c516b445b44f87363fb3a148431d31e9ecb5e6f21fb6481c89b2406b6692e26",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=5",
+         "version" : "1.7",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

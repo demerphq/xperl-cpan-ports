@@ -93,6 +93,59 @@
          "test_summary" : "Files=32, Tests=381, Failed 1/32 test programs. 1/381 subtests failed.",
          "version" : "0.004014",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz",
+         "id" : "05e9ebd7844d7c6ef24aa89cecaab7ecd9e737efde6bb5eaf5fec4971c30915e",
+         "module" : "Contextual::Return",
+         "observed_at" : "2026-11-06T18:44:58Z",
+         "patch_set" : "xperl-propagated-line",
+         "patch_sha256" : [
+            "f78fade897ba176c89f4a3776e4bec1f9527bb679220bbf93548ee71e5aa18c8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "09fe1415e16e49a69e13c0ef6e6a4a3fd8b856f389d3f3e624d7ab3b71719f78",
+         "status" : "installed",
+         "test_summary" : "Files=32, Tests=381",
+         "version" : "0.004014",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -215,6 +215,53 @@
          "test_summary" : "Files=30, Tests=89",
          "version" : "0.038",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-Warnings-0.038.tar.gz",
+         "id" : "68ce8c6467f2e509cc7a5afa49529a3e4ad8be886f5a97d227e4e027960d68f1",
+         "module" : "Test::Warnings",
+         "observed_at" : "2026-11-06T18:42:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3da27e003a3c3cafed3c09b42be05cf9bdbff0bee5c8590a731b02853880a273",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=89",
+         "version" : "0.038",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

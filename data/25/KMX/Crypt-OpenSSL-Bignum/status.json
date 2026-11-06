@@ -93,6 +93,52 @@
          "status" : "installed",
          "version" : "0.09",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KM/KMX/Crypt-OpenSSL-Bignum-0.09.tar.gz",
+         "id" : "e1bcb949e353ef4be84ff9c9887f7d09da6fdc548b4bcb3b73a5434390327593",
+         "module" : "Crypt::OpenSSL::Bignum",
+         "observed_at" : "2026-11-06T18:43:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "234e72fb8396d45527e6fd45e43759c5c3f3a208cf8f29e6a22161a996fd42dc",
+         "status" : "installed",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=1, Tests=5",
          "version" : "0.8",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BU/BURAK/Net-Hadoop-WebHDFS-0.8.tar.gz",
+         "id" : "0b52d5c61c1aa03cb17e89adce0b90aa3524070a7e61dbe0329997795b134844",
+         "module" : "Net::Hadoop::WebHDFS",
+         "observed_at" : "2026-11-06T18:49:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "440d8d870323a39f2d2a880726260106d8de9da103b217255618aebac5ef7710",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=5",
+         "version" : "0.8",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -175,6 +175,53 @@
          "test_summary" : "Files=10, Tests=55",
          "version" : "0.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AR/ARISTOTLE/Hash-MultiValue-0.16.tar.gz",
+         "id" : "9d40477fc650c71218781f199c89f44f5cfe1a6dee6cbce58c22a446cdea79e2",
+         "module" : "Hash::MultiValue",
+         "observed_at" : "2026-11-06T18:42:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "66181df7aa68e2786faf6895c88b18b95c800a8e4e6fb4c07fd176410a3c73f4",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=55",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

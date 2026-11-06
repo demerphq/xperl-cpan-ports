@@ -88,6 +88,53 @@
          "test_summary" : "Files=4, Tests=18",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AN/ANDYA/IPC-ShareLite-0.17.tar.gz",
+         "id" : "bb8f9aa2b36b1924eaf93c4a881318c64c30d164864c4d398bdc9db3814e8d3e",
+         "module" : "IPC::ShareLite",
+         "observed_at" : "2026-11-06T18:42:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "14d406b91da96d6521d0d1a82d22a306274765226b86b0a56e7ffddcf96ae7bf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=18",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

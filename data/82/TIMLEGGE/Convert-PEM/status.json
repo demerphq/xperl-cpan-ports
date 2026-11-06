@@ -48,6 +48,53 @@
          "test_summary" : "Files=16, Tests=550",
          "version" : "0.13",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Convert-PEM-0.13.tar.gz",
+         "id" : "9b192bae3d588378c32dd083344d7b6ccfd4428a05fe8dc0bd89d36e3bd1b5dd",
+         "module" : "Convert::PEM",
+         "observed_at" : "2026-11-06T18:46:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "799fa32c270081f4e6292b0ddf5180952710a8a4be132e907bda3176a7bd1c23",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=550",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

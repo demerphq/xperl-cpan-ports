@@ -88,6 +88,53 @@
          "test_summary" : "Files=26, Tests=375",
          "version" : "2.42",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Y/YV/YVES/Data-Dump-Streamer-2.42.tar.gz",
+         "id" : "25dd707d6276cb5cf5c9144497a6b630750d9096a56988e5d6485056b85cf5bc",
+         "module" : "Data::Dump::Streamer",
+         "observed_at" : "2026-11-06T18:48:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "47f6e51fb45ce7be561e01481add0c2e1c0cd85df4b9e212f3923cd3064d1cad",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=375",
+         "version" : "2.42",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

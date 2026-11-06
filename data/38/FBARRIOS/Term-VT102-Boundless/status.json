@@ -48,6 +48,53 @@
          "test_summary" : "Files=1, Tests=14",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FB/FBARRIOS/Term-VT102-Boundless-0.05.tar.gz",
+         "id" : "c528af0999d02ff834061a887f884095e3eb8d3cf958deebf817ede252d1186d",
+         "module" : "Term::VT102::Boundless",
+         "observed_at" : "2026-11-06T18:42:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e1ded85ae3d76b59c03b8697f4a6cb01ae31bd62a9354f5bb7d18f9e927b485f",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=14",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,55 @@
+{
+   "author" : "SUNDQUIST",
+   "distribution" : "Google-Ads-AdWords-Client",
+   "observations" : [
+      {
+         "cpan_path" : "S/SU/SUNDQUIST/Google-Ads-AdWords-Client-5.8.2.tar.gz",
+         "id" : "acb51ef119bc48463daa5bd394b1a58924b4c62c887d9ca94a87bbc9de0452e4",
+         "module" : "Google::Ads::AdWords::Client",
+         "module_version" : "v5.8.2",
+         "observed_at" : "2026-11-06T18:47:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dc2a841e82c1172f858e7a6324cf1e1e96f88fbae67ce56691fb93c3d1bff445",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=1859",
+         "version" : "5.8.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

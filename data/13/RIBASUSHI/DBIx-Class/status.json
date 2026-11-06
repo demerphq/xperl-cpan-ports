@@ -192,6 +192,59 @@
          "test_summary" : "Files=314, Tests=13890",
          "version" : "0.082844",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RI/RIBASUSHI/DBIx-Class-0.082844.tar.gz",
+         "id" : "fa7bceaa9b198213c3d4aab486640903a049a32c4bb4ea5ddbd9797bbdd3a7f5",
+         "module" : "DBIx::Class",
+         "observed_at" : "2026-11-06T18:48:41Z",
+         "patch_set" : "structured-exception-rollback",
+         "patch_sha256" : [
+            "f7c96064c3539af5f2bc290aceb2a856647766d5395b4cc9d9406fcd6005d2fc"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e0784e3861a197ad5aa17396f18901f0aaa8bab04a4330cb50038337ec30ca7f",
+         "status" : "installed",
+         "test_summary" : "Files=314, Tests=13828",
+         "version" : "0.082844",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=9, Tests=51",
          "version" : "1.2911",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JH/JHI/BSD-Resource-1.2911.tar.gz",
+         "id" : "0c4b47cb6f20d1cb9f22ce8add29590f453c14c0d845481d5df159d3ba27dbee",
+         "module" : "BSD::Resource",
+         "observed_at" : "2026-11-06T18:43:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d1cfba063cc18f72427a22451f7908836b7331ac8785dbe07553c5b043a0c3d",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=51",
+         "version" : "1.2911",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

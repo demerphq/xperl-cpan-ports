@@ -89,6 +89,53 @@
          "test_summary" : "Files=7, Tests=250",
          "version" : "1.08",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Cache-Cache-1.08.tar.gz",
+         "id" : "8705a4281770134d76e74fc635b5bd354ef7c259f65530de571e0a356ff4c4ed",
+         "module" : "Cache::Cache",
+         "observed_at" : "2026-11-06T18:47:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d2c7fd5dba5dd010b7d8923516890bb6ccf6b5f188ccb69f35cb0fd6c031d1e8",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=250",
+         "version" : "1.08",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

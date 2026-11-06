@@ -88,6 +88,53 @@
          "test_summary" : "Files=5, Tests=17",
          "version" : "0.09",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AR/ARODLAND/CLI-Osprey-0.09.tar.gz",
+         "id" : "197c8d829353e9d8ab31474b6dbefef70b2bf5a6e00926e82485e3a195f8e4b8",
+         "module" : "CLI::Osprey",
+         "observed_at" : "2026-11-06T18:46:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8549a09fdc97981298bd8f3aa2755294acaa7939ca279d3840bebc259a46844e",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=17",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

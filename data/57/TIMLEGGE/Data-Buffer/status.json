@@ -48,6 +48,53 @@
          "test_summary" : "Files=1, Tests=55",
          "version" : "0.06",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Data-Buffer-0.06.tar.gz",
+         "id" : "95cfc889dea979545e1d2484dc45d5ff346aa9e15080483d130b06023f516595",
+         "module" : "Data::Buffer",
+         "observed_at" : "2026-11-06T18:45:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "815956260f846095f12e1682da6f6d6857a2512dcf394dbc569293102b8fe4ad",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=55",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,60 @@
          "test_summary" : "Files=19, Tests=104, Failed 1/19 test programs. 1/104 subtests failed.",
          "version" : "1.0.7",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MN/MNUNBERG/JSON-SL-1.0.7.tar.gz",
+         "id" : "96bba9bfe64a4c73dfc891aacceae20b79bbe682e0c170015fcd121b2e02047d",
+         "module" : "JSON::SL",
+         "module_version" : "1.000007",
+         "observed_at" : "2026-11-06T18:43:54Z",
+         "patch_set" : "hash-entry-lifetime",
+         "patch_sha256" : [
+            "a1cea0c666261425728e234a54ff4138c7f61d3cdf47c068f9fa4b119dde9dcb"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "66e4781f1f64ce0d6804e020fbb48e37a8f7a2c4cf0cb3f336c36dd6f653188a",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=104",
+         "version" : "1.0.7",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

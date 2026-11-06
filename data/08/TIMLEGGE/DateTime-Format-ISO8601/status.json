@@ -95,6 +95,53 @@
          "test_summary" : "Files=9, Tests=21608",
          "version" : "0.19",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/DateTime-Format-ISO8601-0.19.tar.gz",
+         "id" : "1ec19addf8ef80efe924cc46651550d9d45ee4d55ac3cd5d4cc27c2e033f6f61",
+         "module" : "DateTime::Format::ISO8601",
+         "observed_at" : "2026-11-06T18:48:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "104fe5f79523cde5494ba7654b6b4357a2d8bb71f18ca6eb836e1475a70bcc1b",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=21608",
+         "version" : "0.19",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

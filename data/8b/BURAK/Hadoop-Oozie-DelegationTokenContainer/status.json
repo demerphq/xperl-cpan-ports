@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=2",
          "version" : "0.002",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BU/BURAK/Hadoop-Oozie-DelegationTokenContainer-0.002.tar.gz",
+         "id" : "7be606d0ac28bbe19082a8e846a8cc8bf0689fe537e55da14de6538eba7a4d3f",
+         "module" : "Hadoop::Oozie::DelegationTokenContainer",
+         "observed_at" : "2026-11-06T18:47:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed0c3579f35557dbc3c51810c2663120731894807594550e5ffcbcd81e8b3cb3",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=2",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

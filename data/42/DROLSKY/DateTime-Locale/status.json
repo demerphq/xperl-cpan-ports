@@ -215,6 +215,53 @@
          "test_summary" : "Files=18, Tests=1021",
          "version" : "1.47",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-Locale-1.47.tar.gz",
+         "id" : "52bbaf6709fe1e31c1d4be24628d364138efefd365081681e537002b51215134",
+         "module" : "DateTime::Locale",
+         "observed_at" : "2026-11-06T18:47:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c0b25e1cdb2825d4469b96c7bbd1d7f20c5fc5fc5ae7f5e2bf6e69e08bfb9ecd",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1021",
+         "version" : "1.47",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

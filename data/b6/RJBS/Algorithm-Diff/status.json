@@ -171,6 +171,53 @@
          "test_summary" : "Files=2, Tests=1004",
          "version" : "1.201",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Algorithm-Diff-1.201.tar.gz",
+         "id" : "e0bf72e8ef74a6daed82781d37dd1e5d3bb95d3689f8f2a2c747f0724fcf44fc",
+         "module" : "Algorithm::Diff",
+         "observed_at" : "2026-11-06T18:44:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0022da5982645d9ef0207f3eb9ef63e70e9713ed2340ed7b3850779b0d842a7d",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1004",
+         "version" : "1.201",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

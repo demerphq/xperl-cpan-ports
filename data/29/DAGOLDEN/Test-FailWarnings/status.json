@@ -215,6 +215,53 @@
          "test_summary" : "Files=3, Tests=8",
          "version" : "0.008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-FailWarnings-0.008.tar.gz",
+         "id" : "f6576c4e5a065175ca39a6320641e47b915c1be856d5895db7627b0407b080f9",
+         "module" : "Test::FailWarnings",
+         "observed_at" : "2026-11-06T18:43:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "da34ef9029f6849d6026201d49127d054ee6ac4b979c82210315f5721964a96f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=8",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

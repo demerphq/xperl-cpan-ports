@@ -95,6 +95,53 @@
          "test_summary" : "Files=109, Tests=4967",
          "version" : "3.55",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIROD/XML-Twig-3.55.tar.gz",
+         "id" : "4d2df31564d7e53fcd14c0122105da41efa251857fb7c3777d8ff4beecfc674c",
+         "module" : "XML::Twig",
+         "observed_at" : "2026-11-06T18:46:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "69326e5edc05c759ccc78fbe05ca63759a035fe7a5337b8ddba6c3dd42f64f6c",
+         "status" : "installed",
+         "test_summary" : "Files=109, Tests=4816",
+         "version" : "3.55",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

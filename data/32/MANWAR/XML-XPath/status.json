@@ -88,6 +88,53 @@
          "test_summary" : "Files=62, Tests=377",
          "version" : "1.49",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MANWAR/XML-XPath-1.49.tar.gz",
+         "id" : "fd2a43e19b5806d37f9d9abac7679b294fae8745ec9bacde5d5aa0eb1786a670",
+         "module" : "XML::XPath",
+         "observed_at" : "2026-11-06T18:46:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9c84a51be4cdb47bf88766ecab051fe092016472969e39f4acdba009885faabe",
+         "status" : "installed",
+         "test_summary" : "Files=62, Tests=377",
+         "version" : "1.49",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

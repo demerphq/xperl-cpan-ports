@@ -88,6 +88,53 @@
          "test_summary" : "Files=6, Tests=24",
          "version" : "2.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-EOL-2.02.tar.gz",
+         "id" : "e8158a5dd43b3333a960864a2c9bad5460ba80f13113c879b734b3d8f78acc02",
+         "module" : "Test::EOL",
+         "observed_at" : "2026-11-06T18:42:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "283199d7fb27807fe2226af7b12571c6dc2508d8e5c0feb505d089d31720afc4",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=24",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

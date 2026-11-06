@@ -95,6 +95,53 @@
          "test_summary" : "Files=14, Tests=35",
          "version" : "1.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MS/MSHELOR/Digest-SHA3-1.05.tar.gz",
+         "id" : "be3e6e90a3bba20702ac67d73e9dea9495235793524816a780527652b4705ac3",
+         "module" : "Digest::SHA3",
+         "observed_at" : "2026-11-06T18:43:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "adf1b9079b2b781755e5704877a1430a5f12997ea82205fd2966c9cc465a8522",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=34",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

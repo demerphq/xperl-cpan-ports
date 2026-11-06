@@ -1,0 +1,54 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "GD",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/GD-2.91.tar.gz",
+         "id" : "2f027fbc7bbbac62087fcc65e53ac9d2e36b6638556eb45a6b9f211c6bbc26c1",
+         "module" : "GD",
+         "observed_at" : "2026-11-06T18:48:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "45c9bc5a7319987cb3ec19ed31ed602df27aadecefda144a5667c9721e94df01",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=263",
+         "version" : "2.91",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

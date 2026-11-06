@@ -1,0 +1,54 @@
+{
+   "author" : "MARKOV",
+   "distribution" : "XML-Compile-WSDL11",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARKOV/XML-Compile-WSDL11-3.08.tar.gz",
+         "id" : "82f2a01b02ccbafd92ac41ee4a4b7ad35e86da593f8b2b6b6d3debc098052721",
+         "module" : "XML::Compile::WSDL11",
+         "observed_at" : "2026-11-06T18:47:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dd687ccf5083fe98fce1dd18540e1d0175042437a986e33eec105eca248f8d42",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=104",
+         "version" : "3.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

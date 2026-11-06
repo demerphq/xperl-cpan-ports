@@ -47,6 +47,52 @@
          "test_summary" : "Files=5, Tests=11, Failed 1/5 test programs. 3/11 subtests failed.",
          "version" : "0.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IV/IVAN/Net-HTTPS-Any-0.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "2c5c1b877744c678b398b9f38ee130123d13eede91a0bad19028a51027950845",
+         "module" : "Net::HTTPS::Any",
+         "observed_at" : "2026-11-06T18:44:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1bbf990ff4cf8be99d9d09667e70e93b79c2b4f6804009d97885f1be195ea6e3",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=11, Failed 1/5 test programs. 3/11 subtests failed.",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

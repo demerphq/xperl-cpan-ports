@@ -135,6 +135,53 @@
          "test_summary" : "Files=1, Tests=23",
          "version" : "1.002005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Import-Into-1.002005.tar.gz",
+         "id" : "231268256306991abe534423bb9c05e57c2c256500d8ef58555d01076bd35e79",
+         "module" : "Import::Into",
+         "observed_at" : "2026-11-06T18:42:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bd9e77a3fb662b40b43b18d3280cd352edf9fad8d94283e518181cc1ce9f0567",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=23",
+         "version" : "1.002005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

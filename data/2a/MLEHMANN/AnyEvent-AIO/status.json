@@ -1,0 +1,54 @@
+{
+   "author" : "MLEHMANN",
+   "distribution" : "AnyEvent-AIO",
+   "observations" : [
+      {
+         "cpan_path" : "M/ML/MLEHMANN/AnyEvent-AIO-1.1.tar.gz",
+         "id" : "770f04106f3077446e3ec43057a81d6052ba33172d10f89a1c7d51b091db0ff4",
+         "module" : "AnyEvent::AIO",
+         "observed_at" : "2026-11-06T18:43:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6b105b8c641561631f533ec3423e8067a3d7d58043bf85f0f5e09d706905706b",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "1.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -48,6 +48,53 @@
          "test_summary" : "Files=4, Tests=38",
          "version" : "2.005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MR/MRSCOTTY/Crypt-PKCS10-2.005.tar.gz",
+         "id" : "b6385d59822e7bb22e46feb71401dbe3c1121d9baa7513eb17f2271f5dc1b931",
+         "module" : "Crypt::PKCS10",
+         "observed_at" : "2026-11-06T18:45:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2dd12fd091c23e3a7c34a66ac35ac3abf907402394b5557498ede48fc41453a7",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=38",
+         "version" : "2.005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

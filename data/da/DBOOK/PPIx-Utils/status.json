@@ -135,6 +135,53 @@
          "test_summary" : "Files=5, Tests=159",
          "version" : "0.004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DB/DBOOK/PPIx-Utils-0.004.tar.gz",
+         "id" : "5ddffd386d65dc2309bf505f4817282ff9b45e995eb1d55e97cd6d0ca1ef602c",
+         "module" : "PPIx::Utils::Traversal",
+         "observed_at" : "2026-11-06T18:46:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "336918d56ac9482d248d2ca6e79ed7f2cc67403fbdecdd73a9c414a034adb3cf",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=159",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

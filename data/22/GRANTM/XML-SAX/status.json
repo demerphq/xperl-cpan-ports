@@ -88,6 +88,53 @@
          "test_summary" : "Files=16, Tests=113",
          "version" : "1.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GR/GRANTM/XML-SAX-1.02.tar.gz",
+         "id" : "38e8a50af4593c7b6b5923155b21031765503b06904dcda4d372273a5e0d17fe",
+         "module" : "XML::SAX",
+         "observed_at" : "2026-11-06T18:44:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4506c387043aa6a77b455f00f57409f3720aa7e553495ab2535263b4ed1ea12a",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=113",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

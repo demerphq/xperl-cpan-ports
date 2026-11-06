@@ -41,6 +41,59 @@
          "status" : "failed",
          "version" : "0.87",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NW/NWCLARK/Devel-Size-0.87.tar.gz",
+         "id" : "2aff5794f10f2f74387c15e003d75efa21d74569c5d4ef6a12240b12c6c164f9",
+         "module" : "Devel::Size",
+         "observed_at" : "2026-11-06T18:44:03Z",
+         "patch_set" : "xperl-hash-storage",
+         "patch_sha256" : [
+            "0c8e8f760b670b609b5823d8dff03c8eb0972581f1004a69edb3ea11bc9ed5c7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=205",
+         "version" : "0.87",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

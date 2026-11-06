@@ -94,6 +94,52 @@
          "test_summary" : "Files=8, Tests=10",
          "version" : "1.30",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DORMANDO/Cache-Memcached-1.30.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "d150ccbcfa198b8af11afba582f5aedae666a7a429db7f4cca8a6b587ba5a8dc",
+         "module" : "Cache::Memcached",
+         "observed_at" : "2026-11-06T18:43:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "31b3c51ec0eaaf03002e2cc8e3d7d5cbe61919cfdada61c008eb9853acac42a9",
+         "status" : "failed",
+         "test_summary" : "Files=8, Tests=66, Failed 4/8 test programs. 39/66 subtests failed.",
+         "version" : "1.30",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

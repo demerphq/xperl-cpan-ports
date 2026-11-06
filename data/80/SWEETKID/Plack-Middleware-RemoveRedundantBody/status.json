@@ -135,6 +135,53 @@
          "test_summary" : "Files=1, Tests=57",
          "version" : "0.09",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SW/SWEETKID/Plack-Middleware-RemoveRedundantBody-0.09.tar.gz",
+         "id" : "41e6ca9b22129fbf0e5e8f35ecf399605fdf8b7259ff09574df4ba1a900a8417",
+         "module" : "Plack::Middleware::RemoveRedundantBody",
+         "observed_at" : "2026-11-06T18:48:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "80d45f93d6b7290b0bd8b3cedd84a37fc501456cc3dec02ec7aad81c0018087e",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=57",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

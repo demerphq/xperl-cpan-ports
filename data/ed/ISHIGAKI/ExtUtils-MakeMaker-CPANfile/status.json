@@ -88,6 +88,53 @@
          "test_summary" : "Files=4, Tests=16",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/ExtUtils-MakeMaker-CPANfile-0.11.tar.gz",
+         "id" : "990c11975a03e983e91d33b5a761d51714b7965039b435be17c610cc18e6982c",
+         "module" : "ExtUtils::MakeMaker::CPANfile",
+         "observed_at" : "2026-11-06T18:43:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "87467857ca7a624cb64e5dee706eafc6a0bfeed773646c9d6d2f042ed72fb13e",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=16",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

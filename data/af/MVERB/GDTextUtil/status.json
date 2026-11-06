@@ -1,0 +1,54 @@
+{
+   "author" : "MVERB",
+   "distribution" : "GDTextUtil",
+   "observations" : [
+      {
+         "cpan_path" : "M/MV/MVERB/GDTextUtil-0.86.tar.gz",
+         "id" : "6f1b96d21f2a694063a7667a1cbae1f1358ade45f23411dd5f69baebafa85316",
+         "module" : "GD::Text",
+         "observed_at" : "2026-11-06T18:48:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "886ecbf85cfe94f4135ee5689c4847a9ae783ecb99e6759e12c734f2dd6116bc",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=55",
+         "version" : "0.86",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -97,6 +97,54 @@
          "test_summary" : "Files=9, Tests=97",
          "version" : "2.1.5",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JO/JONASBN/Crypt-OpenSSL-X509-2.1.5.tar.gz",
+         "id" : "38134163e295927813c4f11c6fe6de0e1a77aa278b95c2401cce7886b24c14f7",
+         "module" : "Crypt::OpenSSL::X509",
+         "module_version" : "2.001005",
+         "observed_at" : "2026-11-06T18:45:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ca40b8dbc741a9df792bb0495f2c1dce8043c63c8ee654673d5565dae40f4560",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=97",
+         "version" : "2.1.5",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

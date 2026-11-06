@@ -88,6 +88,53 @@
          "test_summary" : "Files=11, Tests=23",
          "version" : "1.10",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Test-Pod-Coverage-1.10.tar.gz",
+         "id" : "c313d24341bafb33d3faf15eea442a32d3f0ea15cbb51966e05b420d68c92410",
+         "module" : "Test::Pod::Coverage",
+         "observed_at" : "2026-11-06T18:44:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "48c9cca9f7d99eee741176445b431adf09c029e1aa57c4703c9f46f7601d40d4",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=23",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
