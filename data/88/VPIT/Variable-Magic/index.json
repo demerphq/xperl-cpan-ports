@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Variable-Magic",
+  "releases": [
+    {
+      "version": "0.65",
+      "cpan_path": "V/VP/VPIT/Variable-Magic-0.65.tar.gz",
+      "source_sha256": "457bfb1b2369e44c0e2ef3e7b61580831107cbeebf0f5d8c4b9b02368550b91e",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-error-state",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-error-state.patch",
+              "sha256": "37758c23d0ad13b0ecebaad11f7476237096aeaf74907c3d0e46e4f3156a2ac7"
+            }
+          ],
+          "recipes": ["parser-error-count-v1"]
+        }
+      ]
+    }
+  ]
+}

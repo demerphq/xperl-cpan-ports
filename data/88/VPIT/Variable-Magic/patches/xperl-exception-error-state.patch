@@ -1,0 +1,33 @@
+--- a/Magic.xs
++++ b/Magic.xs
+@@ -251,0 +252,6 @@
++#ifdef XPERL_VERSION
++# define VMG_ERRSV_HAS_ERROR (SvROK(ERRSV) || SvTRUE(ERRSV))
++#else
++# define VMG_ERRSV_HAS_ERROR SvTRUE(ERRSV)
++#endif
++
+@@ -257 +263 @@
+- if (SvTRUE(ERRSV)) {
++ if (VMG_ERRSV_HAS_ERROR) {
+@@ -264 +270 @@
+- if (SvTRUE(ERRSV)) {
++ if (VMG_ERRSV_HAS_ERROR) {
+@@ -267,0 +274,3 @@
++#ifdef XPERL_VERSION
++   croak_sv(ERRSV);
++#else
+@@ -281,0 +291 @@
++#endif
+--- a/t/17-ctl.t
++++ b/t/17-ctl.t
+@@ -349,0 +350 @@
++ my $suffix = ${^XPERL_VERSION} ? "\n" : "\nExecution(?s:.*)";
+@@ -355 +356 @@
+- like $err, expect('cucumber', '-e', "\nExecution(?s:.*)"),
++ like $err, expect('cucumber', '-e', $suffix),
+@@ -364,0 +366 @@
++ my $suffix = ${^XPERL_VERSION} ? "\n" : "\nExecution(?s:.*)";
+@@ -372 +374 @@
+- like $err, expect('raddish', '-e', "\nExecution(?s:.*)"),
++ like $err, expect('raddish', '-e', $suffix),
