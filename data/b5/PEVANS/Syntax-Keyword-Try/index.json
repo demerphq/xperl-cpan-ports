@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Syntax-Keyword-Try",
+  "releases": [
+    {
+      "version": "0.31",
+      "cpan_path": "P/PE/PEVANS/Syntax-Keyword-Try-0.31.tar.gz",
+      "source_sha256": "7bc6242d746378982a599b34de35f07d3decc9e09d5646f8fa3b87f459414a4a",
+      "patch_sets": [
+        {
+          "id": "structured-exception-fallthrough",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/structured-exception-fallthrough.patch",
+              "sha256": "6b24d9f6b294f4ad8de93db8919dc6a62bbc79920adf637eae28e533842d9066"
+            }
+          ],
+          "recipes": ["exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}

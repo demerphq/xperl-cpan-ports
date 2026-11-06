@@ -1,0 +1,14 @@
+--- a/t/04catch-types.t
++++ b/t/04catch-types.t
+@@ -54,2 +54,9 @@
+-is( eval { fallthrough( "Oopsie\n" ); 1 } ? undef : $@, "Oopsie\n",
+-   'typed catch fallthrough' );
++my $error = eval { fallthrough( "Oopsie\n" ); 1 } ? undef : $@;
++if( ${^XPERL_VERSION} ) {
++   require XPerl::DiagGroup;
++   ok( $error->has_diagnostic( 'ERROR_USER_TEXT', text => "Oopsie\n" ),
++      'typed catch fallthrough' );
++}
++else {
++   is( $error, "Oopsie\n", 'typed catch fallthrough' );
++}
