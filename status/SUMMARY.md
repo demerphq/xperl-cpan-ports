@@ -1187,7 +1187,7 @@ Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [
 | MITHALDU | [Test-InDistDir](../data/28/MITHALDU/Test-InDistDir/status.json) | 1.112071 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MITHUN | [URI-Encode](../data/37/MITHUN/URI-Encode/status.json) | v1.1.1 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MIXAS | [Struct-Diff](../data/0a/MIXAS/Struct-Diff/status.json) | 0.98 | v5.45.5 | linux/x86_64-linux | installed | none |
-| MIYAGAWA | [App-cpanminus](../data/2c/MIYAGAWA/App-cpanminus/status.json) | 1.7049 | v5.45.5 | linux/x86_64-linux | installed | none |
+| MIYAGAWA | [App-cpanminus](../data/2c/MIYAGAWA/App-cpanminus/status.json) | 1.7049 | v5.45.5 | linux/x86_64-linux | installed | cve-2024-45321-https-defaults |
 | MIYAGAWA | [Archive-Any-Create](../data/a0/MIYAGAWA/Archive-Any-Create/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MIYAGAWA | [Carton](../data/c8/MIYAGAWA/Carton/status.json) | v1.0.35 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MIYAGAWA | [Class-Trigger](../data/80/MIYAGAWA/Class-Trigger/status.json) | 0.15 | v5.45.5 | darwin/darwin-2level | installed | none |

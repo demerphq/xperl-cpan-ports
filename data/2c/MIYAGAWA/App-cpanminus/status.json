@@ -41,6 +41,63 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "1.7049",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [
+            "CVE-2024-45321"
+         ],
+         "cpan_path" : "M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz",
+         "id" : "e1388db5d6843b145893d515d94ec396db73430041abb5e919d43e6f520461f0",
+         "module" : "App::cpanminus",
+         "observed_at" : "2026-11-06T22:46:39Z",
+         "patch_purpose" : "security",
+         "patch_set" : "cve-2024-45321-https-defaults",
+         "patch_sha256" : [
+            "b7785cb0935d9c6c9f38eec5f31ecf67f513d0aa67754adbb4ba80c08a7233ea"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "1.7049",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "App-cpanminus",
+  "releases": [
+    {
+      "version": "1.7049",
+      "cpan_path": "M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz",
+      "source_sha256": "b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214",
+      "patch_sets": [
+        {
+          "id": "cve-2024-45321-https-defaults",
+          "purpose": "security",
+          "advisories": ["CVE-2024-45321"],
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v99.0.0"
+          },
+          "patches": [
+            {
+              "path": "patches/https-defaults.patch",
+              "sha256": "b7785cb0935d9c6c9f38eec5f31ecf67f513d0aa67754adbb4ba80c08a7233ea"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

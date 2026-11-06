@@ -41,6 +41,12 @@ my $unresolved = read_file(File::Spec->catfile($root, 'status',
 like($unresolved, qr/Example-Feature.*build/, 'failure is indexed');
 
 $receipt->{status} = 'installed';
+$receipt->{registry} = {
+    patch_set => 'cve-2024-45321-https-defaults',
+    purpose => 'security',
+    advisories => ['CVE-2024-45321'],
+    patches => ['a' x 64],
+};
 $receipt->{phases} = [
     { name => 'build', exit_status => 0 },
     { name => 'test', exit_status => 0 },
@@ -61,6 +67,11 @@ my $status_path = File::Spec->catfile($root, 'data', $prefix, 'AUTHOR',
 my $status = JSON::PP->new->decode(read_file($status_path));
 is($status->{author}, 'AUTHOR', 'status is scoped to the CPAN author');
 is(scalar @{$status->{observations}}, 2, 'both outcomes remain recorded');
+my ($secured) = grep { $_->{status} eq 'installed' }
+    @{$status->{observations}};
+is($secured->{patch_purpose}, 'security', 'security purpose is recorded');
+is_deeply($secured->{advisories}, ['CVE-2024-45321'],
+          'security advisory is recorded');
 is($status->{observations}[0]{version}, '2.0',
    'distribution release version comes from archive');
 is($status->{observations}[0]{module_version}, '1.0',

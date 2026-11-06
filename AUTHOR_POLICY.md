@@ -11,6 +11,15 @@ record means the policy is unknown. A record also gives the confirmation
 date and basis. The installer does not consult this policy when selecting
 or applying patches.
 
+Security patch sets use `purpose: security` and name their advisories. They
+can be recorded and applied regardless of this author policy. The policy
+guides upstream XPerl compatibility proposals, not local security fixes.
+
+Security patch sets in the registry use `purpose: security` and name their
+advisories. They can be recorded and applied regardless of this author policy.
+The policy only guides whether we queue an upstream XPerl compatibility
+proposal; it does not decide whether a tested security fix is usable locally.
+
 After a patch has passed the release's tests, an accepting author can have
 an upstream queue entry at
 `upstream-queue/A/AB/AUTHOR/Distribution-Version-PatchSet.json`. The entry

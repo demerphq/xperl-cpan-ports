@@ -22,6 +22,7 @@ This example describes the shape. It is not an installable registry entry:
       "patch_sets": [
         {
           "id": "hash-api-v1",
+          "purpose": "compatibility",
           "xperl": {
             "min_inclusive": "v5.45.0",
             "max_exclusive": "v5.47.0"
@@ -56,6 +57,12 @@ This example describes the shape. It is not an installable registry entry:
    same release are invalid until a future format defines explicit selectors.
 5. Verify each patch digest and apply patches in array order to a fresh
    working copy. A failed patch stops the install before any build step.
+
+`purpose` is `compatibility` (the default for existing records) or `security`.
+A security patch set names one or more `advisories`, such as
+`CVE-2024-45321`. Both kinds use the same exact archive, digest, and XPerl
+version matching. The installer applies a matching reviewed security patch
+without consulting the CPAN author's XPerl patch preference.
 
 Distribution names, patch-set IDs, recipe IDs, and relative paths must be
 validated before use. Reject absolute paths, `..` components, symlinks that

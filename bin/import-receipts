@@ -274,6 +274,10 @@ sub observation ($receipt, $path, $id, $release_version) {
             ? (platform => platform($receipt->{platform})) : ()),
         status => $status,
         patch_set => $receipt->{registry}{patch_set},
+        (defined($receipt->{registry}{purpose})
+            ? (patch_purpose => $receipt->{registry}{purpose}) : ()),
+        ($receipt->{registry}{advisories}
+            ? (advisories => $receipt->{registry}{advisories}) : ()),
         patch_sha256 => $receipt->{registry}{patches} // [],
         phases => \@phases,
         ($test_summary ? (test_summary => $test_summary) : ()),
