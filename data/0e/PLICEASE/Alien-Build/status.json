@@ -1,0 +1,41 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Alien-Build",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "647d3b09e754234c496861c8a45d368aec96f401b5da86e24574f345b79e7f03",
+         "module" : "Alien::Base::Wrapper",
+         "observed_at" : "2026-11-06T15:32:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+         "status" : "failed",
+         "test_summary" : "Files=87, Tests=425, Failed 5/87 test programs. 7/425 subtests failed.",
+         "version" : "2.88",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

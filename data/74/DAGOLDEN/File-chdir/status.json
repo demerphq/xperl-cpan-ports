@@ -1,0 +1,42 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "File-chdir",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/File-chdir-0.1011.tar.gz",
+         "id" : "9d83339a20807bf85f9456065b48a297ccdfe642ce45c842cfed8c974f4b7c9e",
+         "module" : "File::chdir",
+         "observed_at" : "2026-11-06T15:32:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "31ebf912df48d5d681def74b9880d78b1f3aca4351a0ed1fe3570b8e03af6c79",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=94",
+         "version" : "0.1011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

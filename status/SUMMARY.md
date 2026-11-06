@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 2 of 609 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 2 of 611 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- | --- |
@@ -84,6 +84,7 @@ Unresolved failures: 2 of 609 release and XPerl combinations. See [UNRESOLVED.md
 | DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | installed | exception-propagation |
 | DAGOLDEN | [Class-Tiny](../data/80/DAGOLDEN/Class-Tiny/status.json) | 1.008 | v5.45.5 | installed | none |
 | DAGOLDEN | [Data-Fake](../data/c1/DAGOLDEN/Data-Fake/status.json) | 0.006 | v5.45.5 | installed | none |
+| DAGOLDEN | [File-chdir](../data/74/DAGOLDEN/File-chdir/status.json) | 0.1011 | v5.45.5 | installed | none |
 | DAGOLDEN | [File-pushd](../data/d3/DAGOLDEN/File-pushd/status.json) | 1.016 | v5.45.5 | installed | none |
 | DAGOLDEN | [HTTP-CookieJar](../data/a9/DAGOLDEN/HTTP-CookieJar/status.json) | 0.014 | v5.45.5 | installed | none |
 | DAGOLDEN | [MooseX-Types-Stringlike](../data/cb/DAGOLDEN/MooseX-Types-Stringlike/status.json) | 0.003 | v5.45.5 | installed | none |
@@ -451,8 +452,9 @@ Unresolved failures: 2 of 609 release and XPerl combinations. See [UNRESOLVED.md
 | PEVANS | [XS-Parse-Sublike](../data/ff/PEVANS/XS-Parse-Sublike/status.json) | 0.42 | v5.45.5 | installed | xperl-parser-errors |
 | PHRED | [Archive-Zip](../data/9b/PHRED/Archive-Zip/status.json) | 1.68 | v5.45.5 | installed | none |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | installed | xperl-coverage-gold |
+| PLICEASE | [Alien-Build](../data/0e/PLICEASE/Alien-Build/status.json) | 2.88 | v5.45.5 | failed | none |
 | PLICEASE | [Class-Inspector](../data/11/PLICEASE/Class-Inspector/status.json) | 1.36 | v5.45.5 | installed | none |
-| PLICEASE | [FFI-CheckLib](../data/19/PLICEASE/FFI-CheckLib/status.json) | 0.31 | v5.45.5 | failed | none |
+| PLICEASE | [FFI-CheckLib](../data/19/PLICEASE/FFI-CheckLib/status.json) | 0.31 | v5.45.5 | installed | render-caught-error |
 | PLICEASE | [File-Listing](../data/f8/PLICEASE/File-Listing/status.json) | 6.16 | v5.45.5 | installed | none |
 | PLICEASE | [File-Which](../data/4d/PLICEASE/File-Which/status.json) | 1.27 | v5.45.5 | installed | none |
 | PLICEASE | [MooseX-NonMoose](../data/05/PLICEASE/MooseX-NonMoose/status.json) | 0.27 | v5.45.5 | installed | none |
