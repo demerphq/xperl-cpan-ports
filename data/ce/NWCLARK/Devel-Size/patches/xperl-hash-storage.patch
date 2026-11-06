@@ -1,0 +1,69 @@
+--- a/Size.xs
++++ b/Size.xs
+@@ -730,7 +730,10 @@
+ #endif
+ 	;
+     if (shared) {
+-#if PERL_VERSION < 10
++#ifdef XPERL_VERSION
++	/* XPerl prefixes a shared key with its reference count only. */
++	st->total_size += STRUCT_OFFSET(struct shared_hek, shared_hek_hek);
++#elif PERL_VERSION < 10
+ 	st->total_size += sizeof(struct he);
+ #else
+ 	st->total_size += STRUCT_OFFSET(struct shared_he, shared_he_hek);
+@@ -961,6 +964,46 @@
+ #endif
+     TAG;break;
+   case SVt_PVHV: TAG;
++#ifdef XPERL_VERSION
++    /* The index area of an open-addressed hash. Its size macros are
++       internal to core, so these mirror hv.h for each storage option. */
++#  if defined(PERL_HASH_INDEX_CHAINS)
++#    define DS_OA_WIDTH(n) ((n) <= 255 ? 1 : (n) <= 65535 ? 2 : 4)
++#    if defined(PERL_HASH_CHAIN_FINGERPRINT)
++#      define DS_OA_INDEX_BYTES(buckets,entries) \
++         ((Size_t)(buckets) * DS_OA_WIDTH(entries) \
++          + (Size_t)(entries) * 2 * DS_OA_WIDTH(entries))
++#    else
++#      define DS_OA_INDEX_BYTES(buckets,entries) \
++         (((Size_t)(buckets) + (entries)) * DS_OA_WIDTH(entries))
++#    endif
++#  else
++#    define DS_OA_WIDTH(n) ((n) <= 128 ? 1 : (n) <= 32768 ? 2 : 4)
++#    define DS_OA_INDEX_BYTES(buckets,entries) \
++       ((Size_t)(buckets) * DS_OA_WIDTH(buckets))
++#  endif
++    /* XPerl stores entries in one array: a linear hash holds the entries
++       alone, an open-addressed hash adds a header and an index area. The
++       entries are counted with the array, so only keys and values remain. */
++    if (HvARRAY(thing)) {
++      STRLEN i, limit = HvENTRY_LIMIT(thing);
++      if (HvIS_LINEAR(thing))
++        st->total_size += sizeof(HE) * HvLINEAR_CAP(thing);
++      else if (HvIS_OA(thing))
++        st->total_size += STRUCT_OFFSET(struct hv_oa, indices)
++          + DS_OA_INDEX_BYTES(HvMAX(thing) + 1, HvOA(thing)->capacity)
++          + sizeof(HE) * HvOA(thing)->capacity;
++      for (i = 0; i < limit; i++) {
++        HE *cur_entry;
++        for (cur_entry = HvENTRY_FIRST(thing, i); cur_entry;
++             cur_entry = HvENTRY_NEXT(thing, cur_entry)) {
++          hek_size(aTHX_ st, cur_entry->hent_hek, HvSHAREKEYS(thing));
++          if (recurse >= TOTAL_SIZE_RECURSION)
++            sv_size(aTHX_ st, HeVAL(cur_entry), recurse);
++        }
++      }
++    }
++#else
+     /* Now the array of buckets */
+     st->total_size += (sizeof(HE *) * (HvMAX(thing) + 1));
+     /* Now walk the bucket chain */
+@@ -978,6 +1021,7 @@
+         }
+       }
+     }
++#endif
+ #ifdef HvAUX
+     if (SvOOK(thing)) {
+ 	/* This direct access is arguably "naughty": */
