@@ -17,6 +17,8 @@ data/<prefix>/<Author>/<Distribution>/status.json
 data/<prefix>/<Author>/<Distribution>/patches/<patch>.patch
 data/<prefix>/<Author>/<Distribution>/evidence/<record>.json
 recipes/<recipe-id>.md
+authors/<first>/<first-two>/<Author>.json
+upstream-queue/<first>/<first-two>/<Author>/<entry>.json
 status/SUMMARY.md
 status/UNRESOLVED.md
 ```
@@ -41,6 +43,10 @@ the XPerl interpreter:
 
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
+
+Author consent for upstream XPerl patches and the review queue are described
+in [AUTHOR_POLICY.md](AUTHOR_POLICY.md). Author records stay in repository 0
+when distribution data is sharded.
 
 Use [PRIORITIZATION.md](PRIORITIZATION.md) and `bin/river-priorities` to rank
 candidate ports by their River of CPAN reach alongside local XPerl build

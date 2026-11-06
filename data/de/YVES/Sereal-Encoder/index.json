@@ -3,6 +3,27 @@
   "distribution": "Sereal-Encoder",
   "releases": [
     {
+      "version": "7.001",
+      "cpan_path": "Y/YV/YVES/Sereal-Encoder-7.001.tar.gz",
+      "source_sha256": "e3917f070e570a5743ea75a7677ba33596de7f1ab9ee25b6aa4e348d4f5d1d52",
+      "patch_sets": [
+        {
+          "id": "xperl-hash-entries",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-hash-entries-7.001.patch",
+              "sha256": "1875dd40a1d5de58c1dc0413f8d221f6999912d82cac8157da664fa6be8f2fde"
+            }
+          ],
+          "recipes": ["hash-entry-traversal-v1"]
+        }
+      ]
+    },
+    {
       "version": "6.003",
       "cpan_path": "Y/YV/YVES/Sereal-Encoder-6.003.tar.gz",
       "source_sha256": "217de2b585aaf183368a4a54c1adbffae78cc30b7430ad55c59a48d3ca33b30b",

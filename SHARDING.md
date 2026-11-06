@@ -24,6 +24,8 @@ The repository shape is:
 xperl-cpan-ports/                    # repository 0
   registry.json                      # bootstrap configuration
   recipes/<recipe-id>.md             # shared migration guidance
+  authors/A/AB/AUTHOR.json           # author policy, always in repository 0
+  upstream-queue/A/AB/AUTHOR/*.json  # upstream integration queue
   data/<prefix>/<Author>/<Distribution>/
     index.json
     status.json

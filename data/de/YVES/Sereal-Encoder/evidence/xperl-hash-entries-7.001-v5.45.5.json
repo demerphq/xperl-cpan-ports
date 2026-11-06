@@ -1,0 +1,20 @@
+{
+  "cpan_path": "Y/YV/YVES/Sereal-Encoder-7.001.tar.gz",
+  "source_sha256": "e3917f070e570a5743ea75a7677ba33596de7f1ab9ee25b6aa4e348d4f5d1d52",
+  "patch_set_id": "xperl-hash-entries",
+  "patch_sha256": "1875dd40a1d5de58c1dc0413f8d221f6999912d82cac8157da664fa6be8f2fde",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "installed XPerl v5.45.5, no threads",
+      "result": "pass: 79 test files, 50573 tests"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.38.2, threads enabled",
+      "result": "pass: 79 test files, 50586 tests"
+    }
+  ]
+}

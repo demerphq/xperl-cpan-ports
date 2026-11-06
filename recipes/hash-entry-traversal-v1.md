@@ -19,5 +19,5 @@ verify or refetch the entry before use. Test iteration state, callbacks,
 mutation detection, and sorted and unsorted hash encoding.
 
 Keep the existing ordinary Perl traversal under an XPERL_VERSION preprocessor
-guard when it depends on linked bucket chains. The Sereal-Encoder 6.003
-patch is a tested example for XPerl v5.45.5.
+guard when it depends on linked bucket chains. The Sereal-Encoder 6.003 and
+7.001 patches are tested examples for XPerl v5.45.5.
