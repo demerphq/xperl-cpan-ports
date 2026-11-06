@@ -1,0 +1,20 @@
+{
+  "source_sha256": "63b1f7842cd42d9b538d1e34e0330de5ff1559e4c2737342506418276f646527",
+  "patch_set_id": "deterministic-exception-leak-tests",
+  "patch_sha256": "bebcc32b64091f3532132bb0da3d6c685e236ce72718840144356844608892a8",
+  "date": "2026-11-06",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "pass: 122 test files, 9066 tests; affected leak tests 0 failures in 560 runs"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 122 test files, 9066 tests"
+    }
+  ]
+}
