@@ -48,7 +48,6 @@ Prior failures remain in each distribution record after a later success.
 | MAF | [Net-ZooKeeper](../data/47/MAF/Net-ZooKeeper/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | darwin/darwin-2level | test | Files=17, Tests=279, Failed 2/17 test programs. 4/279 subtests failed. |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
-| MAUKE | [Function-Parameters](../data/06/MAUKE/Function-Parameters/status.json) | 2.002006 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | MAXMIND | [MaxMind-DB-Reader-XS](../data/97/MAXMIND/MaxMind-DB-Reader-XS/status.json) | 1.000009 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | MBARBON | [Devel-StatProfiler](../data/51/MBARBON/Devel-StatProfiler/status.json) | 0.57 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | MJEVANS | [DBD-ODBC](../data/40/MJEVANS/DBD-ODBC/status.json) | 1.61 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
@@ -82,7 +81,6 @@ Prior failures remain in each distribution record after a later success.
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | TIMLEGGE | [Authen-SASL-XS](../data/ec/TIMLEGGE/Authen-SASL-XS/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | VPIT | [Scope-Upper](../data/24/VPIT/Scope-Upper/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | test | Files=54, Tests=89422, Failed 1/54 test programs. 1/89422 subtests failed. |
-| VPIT | [indirect](../data/0a/VPIT/indirect/status.json) | 0.39 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | darwin/darwin-2level | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |
 | YAKEX | [Test-Kwalitee-Extra](../data/6e/YAKEX/Test-Kwalitee-Extra/status.json) | v0.4.0 | v5.45.5 | darwin/darwin-2level | test | Files=12, Tests=64, Failed 2/12 test programs. 2/64 subtests failed. |

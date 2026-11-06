@@ -1,0 +1,116 @@
+--- a/indirect.xs
++++ b/indirect.xs
+@@ -168,7 +168,47 @@
+ #endif
+ 
+ /* ... Safe version of call_sv() ........................................... */
++
++#ifdef XPERL_VERSION
++
++/* XPerl keeps compile errors in a pending structured exception rather than
++ * in ERRSV and PL_errors, so call_sv's eval cannot clobber them. ERRSV is
++ * only saved so that a successful hook leaves it as it was. A failing hook's
++ * exception is appended to the pending errors by croak_sv, which delivers
++ * the whole aggregate with each diagnostic's identity and order intact. */
++static I32 indirect_call_sv(pTHX_ SV *sv, I32 flags) {
++#define indirect_call_sv(S, F) indirect_call_sv(aTHX_ (S), (F))
++ I32          ret, cxix;
++ PERL_CONTEXT saved_cx;
++ SV          *saved_errsv = NULL;
++
++ if (SvTRUE(ERRSV)) {
++  saved_errsv = sv_2mortal(newSVsv(ERRSV));
++  CLEAR_ERRSV();
++ }
++
++ cxix     = (cxstack_ix < cxstack_max) ? (cxstack_ix + 1) : Perl_cxinc(aTHX);
++ /* The last popped context will be reused by call_sv(), but our callers may
++  * still need its previous value. Back it up so that it isn't clobbered. */
++ saved_cx = cxstack[cxix];
++
++ ret = call_sv(sv, flags | G_EVAL);
++
++ cxstack[cxix] = saved_cx;
++
++ if (SvTRUE(ERRSV)) {
++  SV *err = sv_2mortal(newSVsv(ERRSV));
++  CLEAR_ERRSV();
++  croak_sv(err);
++ } else if (saved_errsv) {
++  sv_setsv(ERRSV, saved_errsv);
++ }
+ 
++ return ret;
++}
++
++#else /* !XPERL_VERSION */
++
+ static I32 indirect_call_sv(pTHX_ SV *sv, I32 flags) {
+ #define indirect_call_sv(S, F) indirect_call_sv(aTHX_ (S), (F))
+  I32          ret, cxix;
+@@ -228,6 +268,8 @@
+ 
+  return ret;
+ }
++
++#endif /* XPERL_VERSION */
+ 
+ /* --- Check functions ----------------------------------------------------- */
+ 
+--- a/t/34-hook-errors.t
++++ b/t/34-hook-errors.t
+@@ -0,0 +1,54 @@
++#!perl
++
++use strict;
++use warnings;
++
++use Scalar::Util qw(refaddr);
++use Test::More;
++
++BEGIN { delete $ENV{PERL_INDIRECT_PM_DISABLE} }
++
++# A hook that dies during compilation reports its error after the
++# compilation errors found before it, without hiding them.
++
++our @hook_diagnostics;
++
++my $code = <<'CODE';
++#line 1 "virtual"
++use strict;
++no indirect hook => sub {
++ eval { die "hook says no\n" };
++ @main::hook_diagnostics = ref $@ && $@->can('contents')
++                         ? @{$@->contents} : ();
++ die $@;
++};
++sub foo { $bar }
++sub never { baz $_ }
++1;
++CODE
++
++is eval $code, undef, 'code with a compilation error and a dying hook fails';
++my $error = $@;
++my $core_err = qr/Global symbol "\$bar" requires explicit package name\b[^\n]* at virtual line 8\.\n/;
++
++if (defined ${^XPERL_VERSION}) {
++ isa_ok $error, 'XPerl::Exception';
++ my @diagnostics = @{$error->contents};
++ is_deeply [ map { $_->code } @diagnostics ],
++           [ 'ERROR_STRICT_VARS_GLOBAL_SYMBOL_REQUIRES_EXPLICIT_PACKAGE_NAME',
++             'ERROR_USER_TEXT' ],
++           'compilation error first, then the hook error';
++ is_deeply [ @{$diagnostics[0]->location}{qw(file line)} ], [ 'virtual', 8 ],
++           'compilation error keeps its source location';
++ ok scalar(grep { my $seen = $_;
++                  grep { refaddr($_) == refaddr($seen) } @hook_diagnostics }
++            $diagnostics[1]),
++    'the hook error is the diagnostic the hook raised';
++ like "$error", qr/\A$core_err\Qhook says no\E\n/,
++      'rendered errors are in diagnostic order';
++} else {
++ like $error, qr/\A$core_err\Qhook says no\E\n/,
++      'compilation error first, then the hook error';
++}
++
++done_testing;

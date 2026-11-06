@@ -58,3 +58,26 @@ core internals. Before using them from a CPAN module, check for a supported
 XS API in the target XPerl version. If none covers the required operation,
 record the missing API and request a core change; do not treat direct writes
 to the exception's internal hash as a stable port.
+
+### Worked examples
+
+`croak_sv` is enough for both modules. Under XPerl it appends its argument to
+the pending exception and throws the aggregate. An `XPerl::Exception` passed
+to it contributes its diagnostics unchanged, and text becomes one more user
+diagnostic.
+
+`Function::Parameters` 2.002006 calls `croak_sv` with only its context
+message under `XPERL_VERSION`. A syntax error in an inlined check aborts
+parsing before this point on XPerl as on ordinary Perl. Errors that do not
+abort parsing, such as undeclared variables under `strict`, now come first,
+each with its code and source location, followed by the context. Ordinary
+Perl puts the context first.
+
+`indirect` 0.39 only saves `ERRSV` under `XPERL_VERSION`, because pending
+compiler diagnostics no longer live in `ERRSV`. It restores the saved value
+when the hook succeeds, and passes the hook's exception to `croak_sv` when the
+hook dies. No core-private API is needed.
+
+If the hook dies with a reference that is not an `XPerl::Exception`, `$@` is
+that reference alone, and the earlier compiler errors are not in it. Ordinary
+Perl stringifies the reference after them instead.

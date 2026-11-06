@@ -1,0 +1,109 @@
+--- a/Parameters.xs
++++ b/Parameters.xs
+@@ -55,6 +55,12 @@
+ #include "perl.h"
+ #include "XSUB.h"
+ 
++#ifdef XPERL_VERSION
++#  define FP_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define FP_ERROR_COUNT PL_parser->error_count
++#endif
++
+ #include <string.h>
+ 
+ #ifdef DEVEL
+@@ -1047,7 +1053,7 @@
+ 
+             lex_start(src, NULL, 0);
+             chk = parse_fullexpr(0);
+-            if (PL_parser->error_count) {
++            if (FP_ERROR_COUNT) {
+                 op_free(chk);
+                 chk = NULL;
+             }
+@@ -1064,6 +1070,13 @@
+                 (unsigned long)nr,
+                 SVfARG(name)
+             ));
++#ifdef XPERL_VERSION
++            /* The parse diagnostics are pending in XPerl's structured
++             * exception; croak_sv appends this context after them and
++             * delivers the whole aggregate, so they keep their identity and
++             * order instead of being flattened into this message. */
++            croak_sv(e);
++#else
+             SV *const errsv =
+                 PL_errors && SvCUR(PL_errors)
+                     ? PL_errors
+@@ -1080,6 +1093,7 @@
+                 sv_catsv(e, errsv);
+             }
+             croak_sv(e);
++#endif
+         }
+ 
+         if (has_coercion) {
+@@ -2472,7 +2486,7 @@
+     HV *hints, *config;
+ 
+     /* don't bother doing anything fancy after a syntax error */
+-    if (PL_parser && PL_parser->error_count) {
++    if (PL_parser && FP_ERROR_COUNT) {
+         return FALSE;
+     }
+ 
+--- a/t/types_inline_errors.t
++++ b/t/types_inline_errors.t
+@@ -0,0 +1,51 @@
++#!perl
++use warnings qw(all FATAL uninitialized);
++use strict;
++use Test::More;
++use Function::Parameters;
++
++# An inlined type check that fails to compile, without a syntax error that
++# would abort parsing, reports the compiler's errors and which parameter's
++# type constraint could not be inlined.
++
++BEGIN {
++    package MyTC;
++
++    sub new { bless {}, $_[0] }
++    sub can_be_inlined { 1 }
++    sub inline_check { "do { defined($_[1]) && \$nope1 && \$nope2 }" }
++    sub check { 1 }
++    sub get_message { "value is not defined" }
++}
++
++use constant TUndeclared => MyTC->new;
++
++is eval(qq|#line 2 "~virtual~"\nfun (TUndeclared \$bad) {}|), undef,
++    "type constraint with undeclared variables doesn't compile";
++my $error = $@;
++my $context = qr/\AIn fun \(anon\): inlining type constraint MyTC=HASH\(0x[[:xdigit:]]+\) for parameter 1 \(\$bad\) failed at ~virtual~ line 2\b/;
++my $nope1 = qr/Global symbol "\$nope1" requires explicit package name\b.* at \(inline_check:~virtual~:2\) line 1\.$/m;
++my $nope2 = qr/^Global symbol "\$nope2" requires explicit package name\b.* at \(inline_check:~virtual~:2\) line 1\.$/m;
++
++if (defined ${^XPERL_VERSION}) {
++    # The compiler's diagnostics stay structured and come first, in the order
++    # they were found; the inlining context follows as its own diagnostic.
++    isa_ok $error, 'XPerl::Exception';
++    my @diagnostics = @{$error->contents};
++    is scalar(@diagnostics), 3, "two compile errors and the inlining context";
++    is_deeply [map { $_->code } @diagnostics[0, 1]],
++        [('ERROR_STRICT_VARS_GLOBAL_SYMBOL_REQUIRES_EXPLICIT_PACKAGE_NAME') x 2],
++        "compile errors keep their diagnostic codes";
++    is_deeply [map { [@{$_->location}{qw(file line)}] } @diagnostics],
++        [['(inline_check:~virtual~:2)', 1], ['(inline_check:~virtual~:2)', 1],
++         ['~virtual~', 2]],
++        "each diagnostic keeps its source location";
++    like "$error", qr/\A$nope1.*$nope2.*^In fun \(anon\): inlining type constraint /ms,
++        "rendered errors are in diagnostic order";
++} else {
++    like $error, $context, "inlining context comes first";
++    like $error, $nope1, "first compile error is included";
++    like $error, $nope2, "second compile error is included";
++}
++
++done_testing;

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "Function-Parameters",
+  "releases": [
+    {
+      "version": "2.002006",
+      "cpan_path": "M/MA/MAUKE/Function-Parameters-2.002006.tar.gz",
+      "source_sha256": "ec36c5d891f31a90a6b6d6198d983a5974603ad5eb4f9376af807ac37493f9a2",
+      "patch_sets": [
+        {
+          "id": "xperl-parser-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-parser-errors.patch",
+              "sha256": "7b267a644fa210b9df887d40ce1ff1c3e3b56512513fea50b6755cabc0f93610"
+            }
+          ],
+          "recipes": [
+            "parser-error-count-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}
