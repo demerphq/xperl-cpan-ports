@@ -1,0 +1,54 @@
+{
+   "author" : "SMUELLER",
+   "distribution" : "Number-WithError",
+   "observations" : [
+      {
+         "cpan_path" : "S/SM/SMUELLER/Number-WithError-1.01.tar.gz",
+         "id" : "d8810c7b8105785fd147b2035a3de5453b4cc40efb477c89508fa96f5638d7db",
+         "module" : "Number::WithError",
+         "observed_at" : "2026-11-06T22:49:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dff6a0727e7844ea67837bdfadd552b86f6b216d18ee8ee46842b22ccef0f554",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=894",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

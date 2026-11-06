@@ -1,0 +1,54 @@
+{
+   "author" : "TMOERTEL",
+   "distribution" : "Test-LectroTest",
+   "observations" : [
+      {
+         "cpan_path" : "T/TM/TMOERTEL/Test-LectroTest-0.5001.tar.gz",
+         "id" : "88096a4c8b13ea84cef2b016aff6ac3ddd210f2dd268ca01b4b628b7086f5eb2",
+         "module" : "Test::LectroTest",
+         "observed_at" : "2026-11-06T22:49:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ac2b4f0d95899af1a1a1ec784cb740b2b90256abee11c83e7b291103ec9ed735",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=343",
+         "version" : "0.5001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

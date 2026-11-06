@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 74 of 2078 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -123,6 +123,7 @@ Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [
 | BBC | [Test-Assertions](../data/01/BBC/Test-Assertions/status.json) | 1.054 | v5.45.5 | darwin/darwin-2level | installed | none |
 | BBC | [Test-Assertions](../data/01/BBC/Test-Assertions/status.json) | 1.054 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BBENNETT | [DateTime-Format-DateManip](../data/4e/BBENNETT/DateTime-Format-DateManip/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
+| BDFOY | [Dumbbench](../data/af/BDFOY/Dumbbench/status.json) | 0.505 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BDFOY | [Net-SSH-Perl](../data/e4/BDFOY/Net-SSH-Perl/status.json) | 2.144 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BENNING | [LWP-Protocol-connect](../data/99/BENNING/LWP-Protocol-connect/status.json) | 6.09 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BHALLISSY | [Font-TTF](../data/9d/BHALLISSY/Font-TTF/status.json) | 1.06 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -625,6 +626,7 @@ Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [
 | ETHER | [aliased](../data/94/ETHER/aliased/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETHER | [namespace-autoclean](../data/be/ETHER/namespace-autoclean/status.json) | 0.31 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETHER | [namespace-autoclean](../data/be/ETHER/namespace-autoclean/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | installed | none |
+| ETHER | [prefork](../data/0b/ETHER/prefork/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [ExtUtils-CppGuess](../data/94/ETJ/ExtUtils-CppGuess/status.json) | 0.271 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETJ | [ExtUtils-CppGuess](../data/94/ETJ/ExtUtils-CppGuess/status.json) | 0.271 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1837,6 +1839,7 @@ Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [
 | SMUELLER | [Math-SimpleHisto-XS-CLI](../data/a9/SMUELLER/Math-SimpleHisto-XS-CLI/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SMUELLER | [Module-Build-WithXSpp](../data/86/SMUELLER/Module-Build-WithXSpp/status.json) | 0.14 | v5.45.5 | darwin/darwin-2level | installed | none |
 | SMUELLER | [Module-Build-WithXSpp](../data/86/SMUELLER/Module-Build-WithXSpp/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none |
+| SMUELLER | [Number-WithError](../data/e8/SMUELLER/Number-WithError/status.json) | 1.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SMUELLER | [Statistics-CaseResampling](../data/4f/SMUELLER/Statistics-CaseResampling/status.json) | 0.18 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SMUELLER | [Statistics-EfficiencyCI](../data/bd/SMUELLER/Statistics-EfficiencyCI/status.json) | 0.07 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SNKWATT | [Data-Binary](../data/0e/SNKWATT/Data-Binary/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1947,6 +1950,7 @@ Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [
 | TKLUCK | [Text-CSV-Flatten](../data/c7/TKLUCK/Text-CSV-Flatten/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TLINDEN | [Config-General](../data/a1/TLINDEN/Config-General/status.json) | 2.67 | v5.45.5 | darwin/darwin-2level | installed | none |
 | TLINDEN | [Config-General](../data/a1/TLINDEN/Config-General/status.json) | 2.67 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TMOERTEL | [Test-LectroTest](../data/25/TMOERTEL/Test-LectroTest/status.json) | 0.5001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TMTM | [DBIx-ContextualFetch](../data/2c/TMTM/DBIx-ContextualFetch/status.json) | 1.03 | v5.45.5 | darwin/darwin-2level | installed | none |
 | TMTM | [Spreadsheet-WriteExcel-Simple](../data/dc/TMTM/Spreadsheet-WriteExcel-Simple/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level | installed | none |
 | TMTM | [Spreadsheet-WriteExcel-Simple](../data/dc/TMTM/Spreadsheet-WriteExcel-Simple/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | installed | none |
