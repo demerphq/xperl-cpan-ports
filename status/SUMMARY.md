@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2046 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 84 of 2046 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2043,7 +2043,7 @@ Unresolved failures: 85 of 2046 release, XPerl, and platform combinations. See [
 | YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 6.003 | v5.45.5 | darwin/darwin-2level | installed | xperl-hash-entries |
 | YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 6.003 | v5.45.5 | linux/x86_64-linux | installed | xperl-hash-entries |
 | YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 7.001 | v5.45.5 | darwin/darwin-2level | failed | none |
-| YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux | failed | none |
+| YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux | installed | xperl-hash-entries |
 | ZAKAME | [Hashids](../data/73/ZAKAME/Hashids/status.json) | 1.001013 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ZEFRAM | [Class-Mix](../data/2d/ZEFRAM/Class-Mix/status.json) | 0.006 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ZEFRAM | [Crypt-Eksblowfish](../data/01/ZEFRAM/Crypt-Eksblowfish/status.json) | 0.009 | v5.45.5 | darwin/darwin-2level | installed | none |

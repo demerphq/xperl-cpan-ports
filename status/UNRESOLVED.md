@@ -89,4 +89,3 @@ Prior failures remain in each distribution record after a later success.
 | YANICK | [Dancer2-Plugin-REST](../data/48/YANICK/Dancer2-Plugin-REST/status.json) | 1.03 | v5.45.5 | darwin/darwin-2level | test | Files=9, Tests=44, Failed 1/9 test programs. 1/44 subtests failed. |
 | YANICK | [GnuPG](../data/a8/YANICK/GnuPG/status.json) | 0.19 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
 | YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 7.001 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
-| YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux | test | Files=79, Tests=41785, Failed 72/79 test programs. 22/41785 subtests failed. |
