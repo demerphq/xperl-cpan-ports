@@ -17,11 +17,19 @@ use JSON::PP;
 use POSIX qw(strftime);
 
 my @caches;
-my $rebuild;
-GetOptions('cache=s@' => \@caches, 'rebuild' => \$rebuild)
-    or die "usage: $0 --cache DIR [...] | --rebuild\n";
-die "usage: $0 --cache DIR [...] | --rebuild\n"
-    unless (@caches || $rebuild) && !@ARGV;
+my ($rebuild, $assume_platform);
+my $usage = "usage: $0 --cache DIR [...] | --rebuild"
+    . " [--assume-platform OS/ARCHNAME]\n";
+GetOptions('cache=s@' => \@caches, 'rebuild' => \$rebuild,
+           'assume-platform=s' => \$assume_platform)
+    or die $usage;
+die $usage unless (@caches || $rebuild) && !@ARGV;
+my ($assumed_os, $assumed_archname);
+if (defined $assume_platform) {
+    ($assumed_os, $assumed_archname) =
+        $assume_platform =~ m{\A([a-z0-9]+)/([A-Za-z0-9][A-Za-z0-9_.-]*)\z}
+        or die "--assume-platform expects OS/ARCHNAME, for example linux/x86_64-linux\n";
+}
 
 my $root = File::Spec->catdir($FindBin::Bin, '..');
 my $status_dir = File::Spec->catdir($root, 'status');
@@ -51,6 +59,13 @@ if (-d $data_dir) {
                     && $path eq status_path($data->{author},
                                             $data->{distribution})
                     && !exists $records{$key};
+            if (defined $assume_platform) {
+                # Observations imported before receipts recorded a platform.
+                $_->{platform} //= {
+                    key => $assume_platform, os => $assumed_os,
+                    archname => $assumed_archname,
+                } for @{$data->{observations}};
+            }
             $records{$key} = $data;
         },
     }, $data_dir);
