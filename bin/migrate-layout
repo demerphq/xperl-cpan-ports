@@ -65,7 +65,7 @@ sub read_json ($path) {
 
 sub author_from_path ($path) {
     my ($initial, $pair, $author) =
-        ($path // '') =~ m{\A([A-Z])/([A-Z]{2})/([A-Z0-9_-]+)/[^/]+\z};
+        ($path // '') =~ m{\A([A-Z])/([A-Z]{2})/([A-Z0-9_-]+)/(?:[^/]+/)*[^/]+\z};
     die "invalid CPAN author path: " . ($path // '') . "\n"
         unless defined($author) && substr($author, 0, 1) eq $initial
             && substr($author, 0, 2) eq $pair;

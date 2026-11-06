@@ -25,7 +25,7 @@ ok(copy(File::Spec->catfile($FindBin::Bin, '..', 'registry.json'),
 my $receipt = {
     module => 'Example::Feature',
     version => '1.0',
-    cpan_path => 'A/AU/AUTHOR/Example-Feature-2.0.tar.gz',
+    cpan_path => 'A/AU/AUTHOR/older/Example-Feature-2.0.tar.gz',
     source_sha256 => 'a' x 64,
     xperl_version => 'v5.45.5',
     status => 'failed',

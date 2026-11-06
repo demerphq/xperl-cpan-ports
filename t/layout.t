@@ -80,7 +80,7 @@ sub read_file {
 
 sub author_from_path {
     my ($path) = @_;
-    my ($author) = $path =~ m{\A[A-Z]/[A-Z]{2}/([A-Z0-9_-]+)/[^/]+\z};
+    my ($author) = $path =~ m{\A[A-Z]/[A-Z]{2}/([A-Z0-9_-]+)/(?:[^/]+/)*[^/]+\z};
     die "invalid CPAN path: $path" unless defined $author;
     return $author;
 }
