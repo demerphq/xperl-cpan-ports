@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Pod-Parser",
+  "releases": [
+    {
+      "version": "1.67",
+      "cpan_path": "M/MA/MAREKR/Pod-Parser-1.67.tar.gz",
+      "source_sha256": "5deccbf55d750ce65588cd211c1a03fa1ef3aaa15d1ac2b8d85383a42c1427ea",
+      "patch_sets": [
+        {
+          "id": "find-loaded-module-path",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/find-loaded-module-path.patch",
+              "sha256": "bb1ab54c07eddab009b3c0b27d415c3026cfd0c53af5ec62399ddc8aef41db69"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

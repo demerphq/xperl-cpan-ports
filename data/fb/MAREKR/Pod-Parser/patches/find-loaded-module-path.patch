@@ -1,0 +1,8 @@
+--- a/t/pod/find.t
++++ b/t/pod/find.t
+@@ -58 +58 @@
+-require Config;
++require File::Find;
+@@ -61 +61 @@
+-      : File::Spec->catfile($Config::Config{privlibexp},"File","Find.pm");
++      : $INC{'File/Find.pm'};
