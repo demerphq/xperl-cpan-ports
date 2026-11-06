@@ -16,7 +16,7 @@
           "patches": [
             {
               "path": "patches/xperl-exception-assertions.patch",
-              "sha256": "5ca59da9020eb324363be89fc6d1f679c7a02a23292edb2c5657168cce45b6d0"
+              "sha256": "24b4ccba20171dff29b57cdd4f6d3bd56554bfd763d5beb1e2aab72b203e5da7"
             }
           ],
           "recipes": ["exception-propagation-v1"]

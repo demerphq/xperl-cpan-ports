@@ -1,6 +1,7 @@
 --- a/lib/POE/Test/Loops/k_signals_rerun.pm
 +++ b/lib/POE/Test/Loops/k_signals_rerun.pm
-@@ -100,3 +100,11 @@
+@@ -99,7 +99,15 @@
+ 
      if ( $die_on_bad_exit and $exit ) {
        ok( $@, "($die_on_bad_exit-$exit) died with bad exit code" );
 -      is( $@, "bad exit\n", "($die_on_bad_exit-$exit) error is correct" );
@@ -13,3 +14,6 @@
 +      else {
 +        is( $@, "bad exit\n", "($die_on_bad_exit-$exit) error is correct" );
 +      }
+     }
+     else {
+       ok(
