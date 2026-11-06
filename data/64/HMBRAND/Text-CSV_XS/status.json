@@ -36,6 +36,98 @@
          "test_summary" : "Files=36, Tests=52671",
          "version" : "1.65",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "ddfaffbb68e250184776d5f0b6073648af30a2a25b56e3cf44481bf7e750411f",
+         "module" : "Text::CSV_XS",
+         "observed_at" : "2026-11-06T15:33:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+         "status" : "failed",
+         "test_summary" : "Files=36, Tests=52658, Failed 1/36 test programs. 0/52658 subtests failed.",
+         "version" : "1.65",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "0fa310efc928eb476574f094867bebb9223ad15943700646652e08009952df65",
+         "module" : "Text::CSV_XS",
+         "observed_at" : "2026-11-06T15:45:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+         "status" : "failed",
+         "test_summary" : "Files=36, Tests=52658, Failed 1/36 test programs. 0/52658 subtests failed.",
+         "version" : "1.65",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

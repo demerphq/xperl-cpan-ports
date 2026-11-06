@@ -137,6 +137,53 @@
          "test_summary" : "Files=10, Tests=158",
          "version" : "0.2800",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "f06f42cde8ec1b7c81614d538bdad2669f3da7559eb280d77a0069cba37f6b6e",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-06T15:11:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

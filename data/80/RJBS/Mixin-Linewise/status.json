@@ -106,6 +106,53 @@
          "test_summary" : "Files=4, Tests=17",
          "version" : "0.111",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Mixin-Linewise-0.111.tar.gz",
+         "id" : "ab1fbcd11f89315a9e61cd6d0d2847dd77c91286de8cbfdef6b9908b29ec1727",
+         "module" : "Mixin::Linewise::Readers",
+         "observed_at" : "2026-11-06T15:19:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d28e88516ce9b5295c31631dcccdc0fc8f2ab7d8a5cc876bb1b20131087b01db",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=17",
+         "version" : "0.111",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

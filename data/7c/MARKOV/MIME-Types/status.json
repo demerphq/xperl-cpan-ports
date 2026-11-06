@@ -36,6 +36,53 @@
          "test_summary" : "Files=7, Tests=170",
          "version" : "2.30",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MARKOV/MIME-Types-2.30.tar.gz",
+         "id" : "d51efc23fff512baac8db2784bd3ede99b758cf7063b52d160d22eb9f0d48172",
+         "module" : "MIME::Types",
+         "observed_at" : "2026-11-06T15:12:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f31b1666bdf420b4b65c373ce0129ee349dd24bab4cd16c7f01b698fe450be6f",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=170",
+         "version" : "2.30",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

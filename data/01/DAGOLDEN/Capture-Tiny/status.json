@@ -161,6 +161,59 @@
          "test_summary" : "Files=24, Tests=12005",
          "version" : "0.50",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz",
+         "id" : "3591760cf15cd916ecce2cbca92f8c579a108085d959fb76a6598add277bb512",
+         "module" : "Capture::Tiny",
+         "observed_at" : "2026-11-06T15:17:31Z",
+         "patch_set" : "exception-propagation",
+         "patch_sha256" : [
+            "d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ca6e8d7ce7471c2be54e1009f64c367d7ee233a2894cacf52ebe6f53b04e81e5",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=12005",
+         "version" : "0.50",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "MARIOROY",
+   "distribution" : "MCE",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARIOROY/MCE-1.904.tar.gz",
+         "id" : "c2504bbefdce2c8c19b992a9919e662c0ad7410b73fe0240237f31b64759b8db",
+         "module" : "MCE",
+         "observed_at" : "2026-11-06T15:26:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6fc26ab39f2721294fed08e07c6350aa7e9d6252e915c5a3bc3e43aa6f53707c",
+         "status" : "installed",
+         "test_summary" : "Files=40, Tests=632",
+         "version" : "1.904",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

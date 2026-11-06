@@ -36,6 +36,53 @@
          "test_summary" : "Files=8, Tests=276",
          "version" : "0.25",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KA/KAZEBURO/HTTP-Entity-Parser-0.25.tar.gz",
+         "id" : "de94d33df12935588ad76d5a6872dceee9cacf85a1a5ba36ec52a94d80f49289",
+         "module" : "HTTP::Entity::Parser",
+         "observed_at" : "2026-11-06T15:15:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3a8cd0d8cba3d17cd8c04ee82d7341dfaa247dbdd94a49eb94b53f69e483ec3a",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=276",
+         "version" : "0.25",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

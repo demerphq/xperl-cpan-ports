@@ -36,6 +36,53 @@
          "test_summary" : "Files=52, Tests=195",
          "version" : "0.010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HE/HERMES/Clone-Choose-0.010.tar.gz",
+         "id" : "d1d5e49cb5cfd95c97aeb3b8ab7e4b929e85045243678ae5949471285bc9bf7e",
+         "module" : "Clone::Choose",
+         "observed_at" : "2026-11-06T15:29:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5623481f58cee8edb96cd202aad0df5622d427e5f748b253851dfd62e5123632",
+         "status" : "installed",
+         "test_summary" : "Files=52, Tests=260",
+         "version" : "0.010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

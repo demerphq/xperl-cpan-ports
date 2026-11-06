@@ -67,6 +67,53 @@
          "test_summary" : "Files=9, Tests=33",
          "version" : "1.46",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Text-Diff-1.46.tar.gz",
+         "id" : "1a97099d7a74591f914ffd64d12a2b3bb03edc03628d9839f80f998e0a5db691",
+         "module" : "Text::Diff",
+         "observed_at" : "2026-11-06T15:18:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3fc983e3140fa2580250bbcf2b52e2acbdbc5abda4374c3be78235905d8ca8eb",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=33",
+         "version" : "1.46",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

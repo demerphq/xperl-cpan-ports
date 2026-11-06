@@ -36,6 +36,53 @@
          "test_summary" : "Files=22, Tests=144",
          "version" : "0.32",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-MethodAttributes-0.32.tar.gz",
+         "id" : "adf31516508ef0abdd6d2ad48faad23385996c685bab26cdf084e1a0147c5b07",
+         "module" : "MooseX::MethodAttributes::Role::AttrContainer::Inheritable",
+         "observed_at" : "2026-11-06T15:24:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cb33886574b7d2dd39c42c0dcdc707acdb0aec7dbbde9a21c0422660368c197b",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=144",
+         "version" : "0.32",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

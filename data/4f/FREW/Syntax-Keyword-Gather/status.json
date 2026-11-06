@@ -36,6 +36,53 @@
          "test_summary" : "Files=3, Tests=15",
          "version" : "1.003002",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FR/FREW/Syntax-Keyword-Gather-1.003002.tar.gz",
+         "id" : "a99bf6cfadb8b120623779c19bdd12f04d71778e4fdb32c4bffc4fc9b7924fc1",
+         "module" : "Syntax::Keyword::Gather",
+         "observed_at" : "2026-11-06T15:34:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8bd62205e1645c0915d28340801f245e4551b4f580f5e2735a39fc426c066207",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=15",
+         "version" : "1.003002",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

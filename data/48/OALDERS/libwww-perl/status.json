@@ -147,6 +147,59 @@
          "test_summary" : "Files=23, Tests=332",
          "version" : "6.83",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/libwww-perl-6.83.tar.gz",
+         "id" : "6b3d5586da39a89171de481a9866a408cac5ef80c8090d1444e00aeb830ccfb9",
+         "module" : "LWP::UserAgent",
+         "observed_at" : "2026-11-06T15:21:44Z",
+         "patch_set" : "stringify-internal-response",
+         "patch_sha256" : [
+            "9b26469764c515edfa216e56d3de15aea63b1a1de8c2591c7d39d83765d7e383"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e75f0fa9d3c6f0daf5a5a72fa9f8b1c9c0d23e3a84a8522ccb4f835232b95505",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=332",
+         "version" : "6.83",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

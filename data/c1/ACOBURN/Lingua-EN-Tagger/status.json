@@ -36,6 +36,53 @@
          "test_summary" : "Files=10, Tests=114",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AC/ACOBURN/Lingua-EN-Tagger-0.31.tar.gz",
+         "id" : "31e0894a18235f79ea88f75d9eb96ad8402aff8d6d9a0ddc6561dcd0f6ce6408",
+         "module" : "Lingua::EN::Tagger",
+         "observed_at" : "2026-11-06T15:11:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "949e8c87e4808f7ba096b979220ff081bbe03b6d57890d2eecd4b83ae872e993",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=114",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

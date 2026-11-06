@@ -106,6 +106,53 @@
          "test_summary" : "Files=5, Tests=227",
          "version" : "0.002010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Test-Needs-0.002010.tar.gz",
+         "id" : "c33da0c2e9dfe43bc693ae7c231eca84a8cd3656bf28a118852b2b12d2ac2b13",
+         "module" : "Test::Needs",
+         "observed_at" : "2026-11-06T15:11:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "923ffdc78fcba96609753e4bae26b0ba0186893de4a63cd5236e012c7c90e208",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=227",
+         "version" : "0.002010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -76,6 +76,59 @@
          "test_summary" : "Files=200, Tests=3727",
          "version" : "5.90132",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JJ/JJNAPIORK/Catalyst-Runtime-5.90132.tar.gz",
+         "id" : "f769b0e98651f5ef2c956f6e063303c07c9ee00c0dca889ed35d8ecbb00855a2",
+         "module" : "Catalyst",
+         "observed_at" : "2026-11-06T15:36:50Z",
+         "patch_set" : "xperl-exception-rendering",
+         "patch_sha256" : [
+            "4eca6be12a07ded09e7e8eca51f74798b039d627aabfe91979a043865e0db13a"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bb83758b7bda360d16e002e5ace69c6459e3d47227cdee6ac4b1b65a6685f110",
+         "status" : "installed",
+         "test_summary" : "Files=200, Tests=3820",
+         "version" : "5.90132",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

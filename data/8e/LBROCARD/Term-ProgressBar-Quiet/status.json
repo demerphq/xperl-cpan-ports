@@ -36,6 +36,53 @@
          "test_summary" : "Files=2, Tests=2",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LB/LBROCARD/Term-ProgressBar-Quiet-0.31.tar.gz",
+         "id" : "b0e61e7d0d80bf779038a91221bfca50f2a77480eb4ba19c23f288d15368745a",
+         "module" : "Term::ProgressBar::Quiet",
+         "observed_at" : "2026-11-06T15:34:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "25675292f588bc29d32e710cf3667da9a2a1751e139801770a9fdb18cd2184a6",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

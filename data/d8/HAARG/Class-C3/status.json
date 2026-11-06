@@ -36,6 +36,53 @@
          "test_summary" : "Files=22, Tests=104",
          "version" : "0.35",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Class-C3-0.35.tar.gz",
+         "id" : "a57c3f5c0611da8d782106e62816666a21190336c45ba7243c2f0ec9fd6aeaf8",
+         "module" : "Class::C3",
+         "observed_at" : "2026-11-06T15:29:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "84053cf1a68fcc8c12056c2f120adf04f7f68e3be34f4408e95d026fee67e33e",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=104",
+         "version" : "0.35",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

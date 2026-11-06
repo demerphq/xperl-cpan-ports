@@ -36,6 +36,53 @@
          "test_summary" : "Files=52, Tests=4190",
          "version" : "0.55",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JK/JKEENAN/List-Compare-0.55.tar.gz",
+         "id" : "e2e4d6f0d051612cc55706ef2b405aea08eacbe4af9dc445463f822b06761436",
+         "module" : "List::Compare",
+         "observed_at" : "2026-11-06T15:19:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cc719479836579d52b02bc328ed80a98f679df043a99b5710ab2c191669eb837",
+         "status" : "installed",
+         "test_summary" : "Files=52, Tests=4190",
+         "version" : "0.55",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -36,6 +36,53 @@
          "test_summary" : "Files=19, Tests=98",
          "version" : "0.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Future-IO-0.23.tar.gz",
+         "id" : "8cbb904025c64806cbce7c2e7dcfc1f9e6869b009e2227ba30a0c031a67b9555",
+         "module" : "Future::IO",
+         "observed_at" : "2026-11-06T15:39:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3944ef77e31ddb6b953870c7f43376a4f612fd2a217df121a121823a2b1c63ce",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=109",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

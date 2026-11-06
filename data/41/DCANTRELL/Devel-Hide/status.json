@@ -36,6 +36,53 @@
          "test_summary" : "Files=12, Tests=77",
          "version" : "0.0016",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Devel-Hide-0.0016.tar.gz",
+         "id" : "852656012d385fae877499eadcebd67b1bd9625d56c6995917f5468d622fb451",
+         "module" : "Devel::Hide",
+         "observed_at" : "2026-11-06T15:11:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7830b4a57f7ec7410620d6c0150185449d7b4c9964c39a7dc397056032c32a08",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=58",
+         "version" : "0.0016",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

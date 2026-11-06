@@ -70,6 +70,59 @@
          "test_summary" : "Files=25, Tests=195",
          "version" : "0.51",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+         "id" : "4b76dea48a4fc59ffd286cb8452a76e37cf994eaf92f108280e4a5fe109332bb",
+         "module" : "XS::Parse::Keyword",
+         "observed_at" : "2026-11-06T15:33:49Z",
+         "patch_set" : "xperl-parser-errors",
+         "patch_sha256" : [
+            "3321022b485537ccb0e8c2569b55be01256c5e40c2586c2e1c3605c15c400436"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=201",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

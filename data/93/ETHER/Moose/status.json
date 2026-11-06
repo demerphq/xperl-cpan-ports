@@ -158,6 +158,59 @@
          "test_summary" : "Files=478, Tests=17168",
          "version" : "2.4001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "id" : "2d04dd338a3113804b8a91f832784553eec48077360e04970e63ff7c0832e453",
+         "module" : "Moose",
+         "observed_at" : "2026-11-06T15:24:11Z",
+         "patch_set" : "xperl-error-arguments",
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "installed",
+         "test_summary" : "Files=478, Tests=17334",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

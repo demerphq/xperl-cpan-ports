@@ -71,6 +71,53 @@
          "test_summary" : "Files=16, Tests=125",
          "version" : "1.21",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FU/FULLERMD/CGI-Struct-1.21.tar.gz",
+         "id" : "3f6402e9b68f980f98c35273cd393112f0cf8df8dbc60641b286bdec19a87813",
+         "module" : "CGI::Struct",
+         "observed_at" : "2026-11-06T15:35:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d13d8da7fdcd6d906054e4760fc28a718aec91bd3cf067a58927fb7cb1c09d6c",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=126",
+         "version" : "1.21",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

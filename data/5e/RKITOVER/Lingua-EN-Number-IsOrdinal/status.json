@@ -36,6 +36,53 @@
          "test_summary" : "Files=4, Tests=20",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RK/RKITOVER/Lingua-EN-Number-IsOrdinal-0.05.tar.gz",
+         "id" : "f70a17b4c873dc16c691679b1ed281934609a35eb4a4ab935d48abd4a7e70735",
+         "module" : "Lingua::EN::Number::IsOrdinal",
+         "observed_at" : "2026-11-06T15:30:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=20",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -106,6 +106,53 @@
          "test_summary" : "Files=2, Tests=9",
          "version" : "0.009",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Role-Identifiable-0.009.tar.gz",
+         "id" : "462cf543db168ecb33b85768badf80c53e3c8cbfb978cee31e3a4ffcded5cd1e",
+         "module" : "Role::Identifiable::HasIdent",
+         "observed_at" : "2026-11-06T15:40:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5a735e9f7177f9ebae047eb7bae29b7ec29ec020ae37637aea5350d30c087b76",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

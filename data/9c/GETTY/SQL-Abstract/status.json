@@ -36,6 +36,53 @@
          "test_summary" : "Files=33, Tests=4156",
          "version" : "2.000002",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GE/GETTY/SQL-Abstract-2.000002.tar.gz",
+         "id" : "8542f3b02de2b005a5bc6df2a680cf0457a24824bad1829dad6ddcc530e3a8f9",
+         "module" : "SQL::Abstract",
+         "observed_at" : "2026-11-06T15:29:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "637c7d858243dc4da8d3d7fad3f6b039abf890e628083795b2bd8b9fb7865113",
+         "status" : "installed",
+         "test_summary" : "Files=33, Tests=4156",
+         "version" : "2.000002",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

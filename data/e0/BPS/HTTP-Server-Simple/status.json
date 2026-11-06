@@ -36,6 +36,53 @@
          "test_summary" : "Files=5, Tests=107",
          "version" : "0.52",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BP/BPS/HTTP-Server-Simple-0.52.tar.gz",
+         "id" : "a4a6c138ecfd466f2f589b07b39c36633c912919cc18ff49b4b760ad4f257482",
+         "module" : "HTTP::Server::Simple",
+         "observed_at" : "2026-11-06T15:12:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d8939fa4f12bd6b8c043537fd0bf96b055ac3686b9cdd9fa773dca6ae679cb4c",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=104",
+         "version" : "0.52",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

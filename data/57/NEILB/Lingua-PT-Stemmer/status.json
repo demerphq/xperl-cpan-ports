@@ -36,6 +36,53 @@
          "test_summary" : "Files=1, Tests=12",
          "version" : "0.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Lingua-PT-Stemmer-0.02.tar.gz",
+         "id" : "9597fdc351ad1332723d27f0b153cac60c60938f49ff77d760b0e4f3c6f0e105",
+         "module" : "Lingua::GL::Stemmer",
+         "observed_at" : "2026-11-06T15:11:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "596df01f8ab79ffffd450e94836a544371d8a4c93a15f7e88ea2f1b79c46849d",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=12",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

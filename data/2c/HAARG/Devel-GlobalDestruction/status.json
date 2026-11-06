@@ -106,6 +106,53 @@
          "test_summary" : "Files=7, Tests=31",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz",
+         "id" : "6558475e3909758d6b8f003a33a2ddc76f986fbfdb3c190976c0e406ea08d841",
+         "module" : "Devel::GlobalDestruction",
+         "observed_at" : "2026-11-06T15:20:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "34b8a5f29991311468fe6913cadaba75fd5d2b0b3ee3bb41fe5b53efab9154ab",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

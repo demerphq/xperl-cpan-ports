@@ -36,6 +36,53 @@
          "test_summary" : "Files=4, Tests=76",
          "version" : "1.20171012",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/UNIVERSAL-isa-1.20171012.tar.gz",
+         "id" : "aeffbfbb364c15a03c20f06d15b6bac0d05bbb38aa5913a2c9b5e75f6f5e97ce",
+         "module" : "UNIVERSAL::isa",
+         "observed_at" : "2026-11-06T15:17:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d16956036cb01c819dec7d294f6ef891be0bb64876989601354b293164da7f2b",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=76",
+         "version" : "1.20171012",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

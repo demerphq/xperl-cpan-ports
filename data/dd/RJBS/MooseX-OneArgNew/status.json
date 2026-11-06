@@ -106,6 +106,53 @@
          "test_summary" : "Files=3, Tests=20",
          "version" : "0.007",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/MooseX-OneArgNew-0.007.tar.gz",
+         "id" : "c8f0f5aa2a491d4d106814ce3bbd29c1393c5857dc408d641ad8bb04e63b9528",
+         "module" : "MooseX::OneArgNew",
+         "observed_at" : "2026-11-06T15:40:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "84282435f1169cf09d7513fa9387e2091791635cf35a078b500b829aeea06138",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=20",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

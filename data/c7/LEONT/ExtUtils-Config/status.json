@@ -106,6 +106,53 @@
          "test_summary" : "Files=2, Tests=16",
          "version" : "0.010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/ExtUtils-Config-0.010.tar.gz",
+         "id" : "3eaf84579e83921b4dbb8b00acb3dc836e8cfb5effab787cdd00a82c5f69930c",
+         "module" : "ExtUtils::Config",
+         "observed_at" : "2026-11-06T15:13:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "82e7e4e90cbe380e152f5de6e3e403746982d502dd30197a123652e46610c66d",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=16",
+         "version" : "0.010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

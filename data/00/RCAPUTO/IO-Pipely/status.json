@@ -36,6 +36,53 @@
          "test_summary" : "Files=9, Tests=23",
          "version" : "0.006",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCAPUTO/IO-Pipely-0.006.tar.gz",
+         "id" : "2b4d3149f8864ae43163e321c424c6e35c5a4ee1b8af338cf4b1c50265a3af05",
+         "module" : "IO::Pipely",
+         "observed_at" : "2026-11-06T15:16:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0e3fcd841a327efb549fa01b2083dc3695e72ea0c63303e56ed5161bf810413b",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=23",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
