@@ -36,6 +36,53 @@
          "test_summary" : "Files=113, Tests=3864",
          "version" : "1.78",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/DBD-SQLite-1.78.tar.gz",
+         "id" : "848f11974fea04b1c7c785df13ef33d962c37eabbebea0c0647c8a7350f03d91",
+         "module" : "DBD::SQLite",
+         "observed_at" : "2026-11-06T15:29:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "efbad7794bafaa4e7476c07445a33bbfe1040e380baa3395a02635eebe3859d5",
+         "status" : "installed",
+         "test_summary" : "Files=113, Tests=3864",
+         "version" : "1.78",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

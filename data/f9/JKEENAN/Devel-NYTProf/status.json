@@ -76,6 +76,59 @@
          "test_summary" : "Files=55, Tests=4804",
          "version" : "6.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JK/JKEENAN/Devel-NYTProf-6.16.tar.gz",
+         "id" : "e411d0188b171e0967015164addcad41532de654a0000d29767d7efe598b355f",
+         "module" : "Devel::NYTProf",
+         "observed_at" : "2026-11-06T15:38:33Z",
+         "patch_set" : "xperl-profile-fixtures",
+         "patch_sha256" : [
+            "63e47a1cf80fccead851515215d1b120eabd18a0f389bc4e32bfa0a3cff4c8fd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c5553739fbcdf0699df47554fc5e32c4e68ca7876511eef7aceffb6db27badda",
+         "status" : "installed",
+         "test_summary" : "Files=55, Tests=4648",
+         "version" : "6.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

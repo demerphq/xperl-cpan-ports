@@ -106,6 +106,53 @@
          "test_summary" : "Files=5, Tests=53",
          "version" : "2.200015",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-2.200015.tar.gz",
+         "id" : "0dac15fd1cc211dc70a394bc8cdb9d0a7d538b8ea48ce4df4674c9c9f3a8a973",
+         "module" : "Config::MVP",
+         "observed_at" : "2026-11-06T15:40:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e5fe739891f2303e55d9a7f085ca9ee8db828d00cf33ed287ef75c8af0dfe858",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=53",
+         "version" : "2.200015",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

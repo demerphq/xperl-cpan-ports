@@ -106,6 +106,53 @@
          "test_summary" : "Files=23, Tests=871",
          "version" : "7.04",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Message-7.04.tar.gz",
+         "id" : "65ceda9c5a99517f97c4a2fa638e72031945379409d6192f8add1757a0691aa7",
+         "module" : "HTTP::Headers",
+         "observed_at" : "2026-11-06T15:11:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "699f3350dbb7bd8fdc9f3b013b0c91b7c059783708443e39bc395fa33352f006",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=871",
+         "version" : "7.04",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

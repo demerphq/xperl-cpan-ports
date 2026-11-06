@@ -36,6 +36,53 @@
          "test_summary" : "Files=9, Tests=64",
          "version" : "1.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TODDR/IO-Tty-1.31.tar.gz",
+         "id" : "b708dcb042f417187bb4f9dbd47383e3198d6ba47c3b537fabf0f724a71a0e0c",
+         "module" : "IO::Tty",
+         "observed_at" : "2026-11-06T15:16:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d597af221628571cbecf35b44520148c44798dfc8a9867774e60453f79d25ff7",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=64",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

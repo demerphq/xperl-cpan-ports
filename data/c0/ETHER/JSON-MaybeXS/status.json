@@ -106,6 +106,53 @@
          "test_summary" : "Files=8, Tests=135",
          "version" : "1.004008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/JSON-MaybeXS-1.004008.tar.gz",
+         "id" : "2514111e9f73d914c3a35a1766b6cc476ea0fe59b3b1a3b07f314a4976ef4ace",
+         "module" : "JSON::MaybeXS",
+         "observed_at" : "2026-11-06T15:14:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cd3937afa78831f80a2ad5abab6c51b9e82fca4c31e5856ea208d598db5dc867",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=135",
+         "version" : "1.004008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

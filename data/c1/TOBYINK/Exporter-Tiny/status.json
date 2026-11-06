@@ -106,6 +106,53 @@
          "test_summary" : "Files=17, Tests=84",
          "version" : "1.006003",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz",
+         "id" : "f40e8e5ea6f7d1d427d46f9d76e64a2856f01566d6e213bb399777336adb6747",
+         "module" : "Exporter::Tiny",
+         "observed_at" : "2026-11-06T15:35:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6499f09a6432cf87b133fb9580a8a9a9a6c566821346b1fdee95f7b64c0317b1",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=84",
+         "version" : "1.006003",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -113,6 +113,60 @@
          "test_summary" : "Files=70, Tests=896",
          "version" : "v3.10.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PETDANCE/ack-v3.10.0.tar.gz",
+         "id" : "4350d70934b54945dd693103ac2cdf97b150de6967fc8a7dd7b0eba985efe9b9",
+         "module" : "App::Ack",
+         "module_version" : "3.010000",
+         "observed_at" : "2026-11-06T15:28:03Z",
+         "patch_set" : "test-environment",
+         "patch_sha256" : [
+            "2b2b888b7a47e65a71a37cb25f5ccc46c24d67546518c4e5dc8f7dd5d7abd675"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "65e83cfb38a71fca725e9a14a8201ee871e629fc6b10231e1303dd3501ba563a",
+         "status" : "installed",
+         "test_summary" : "Files=70, Tests=896",
+         "version" : "v3.10.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

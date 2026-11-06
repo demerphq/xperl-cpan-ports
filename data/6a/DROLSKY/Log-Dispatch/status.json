@@ -106,6 +106,53 @@
          "test_summary" : "Files=13, Tests=82",
          "version" : "2.71",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Log-Dispatch-2.71.tar.gz",
+         "id" : "206c34d26a4c2f48853d618b92eea1767248369c658acdecac9d46ac76f014d9",
+         "module" : "Log::Dispatch",
+         "observed_at" : "2026-11-06T15:20:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d60d9648c35ce2754731eb4deb7f05809ece1bd633b74d74795aed9ec732570",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=82",
+         "version" : "2.71",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

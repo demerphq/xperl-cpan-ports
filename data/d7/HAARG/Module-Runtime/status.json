@@ -106,6 +106,53 @@
          "test_summary" : "Files=11, Tests=365",
          "version" : "0.018",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Module-Runtime-0.018.tar.gz",
+         "id" : "082d55554e17f8a0ede1c2caf8a8cd145b49675ae47514754277b7c9ce4c79ed",
+         "module" : "Module::Runtime",
+         "observed_at" : "2026-11-06T15:12:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0bf77ef68e53721914ff554eada20973596310b4e2cf1401fc958601807de577",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=365",
+         "version" : "0.018",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

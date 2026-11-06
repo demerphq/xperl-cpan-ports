@@ -116,6 +116,58 @@
          "test_summary" : "Files=161, Tests=4204",
          "version" : "1.370",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/POE-1.370.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "bd86baa6976b7b1de5533b1aa652b9b48a2bf9ab5e0f15478966fdadf6794134",
+         "module" : "POE",
+         "observed_at" : "2026-11-06T15:45:06Z",
+         "patch_set" : "xperl-exception-assertions",
+         "patch_sha256" : [
+            "24b4ccba20171dff29b57cdd4f6d3bd56554bfd763d5beb1e2aab72b203e5da7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "57de2b635b15fa3a31a9e55dd51122149e5414e1158ee82235062634ee18a693",
+         "status" : "failed",
+         "test_summary" : "Files=161, Tests=4209, Failed 1/161 test programs. 15/4209 subtests failed.",
+         "version" : "1.370",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

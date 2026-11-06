@@ -36,6 +36,53 @@
          "test_summary" : "Files=12, Tests=232",
          "version" : "1.20200122",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHROMATIC/Test-MockObject-1.20200122.tar.gz",
+         "id" : "e4f8f91367ad7e4de00021567b21dc24255251541e96475622e76ab852a17272",
+         "module" : "Test::MockObject",
+         "observed_at" : "2026-11-06T15:17:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2b7f80da87f5a6fe0360d9ee521051053017442c3a26e85db68dfac9f8307623",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=232",
+         "version" : "1.20200122",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

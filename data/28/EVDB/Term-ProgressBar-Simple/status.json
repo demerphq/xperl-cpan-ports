@@ -36,6 +36,53 @@
          "test_summary" : "Files=3, Tests=6",
          "version" : "0.03",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EV/EVDB/Term-ProgressBar-Simple-0.03.tar.gz",
+         "id" : "0e6fe93b647bf859c0140e7916d1cfac8d5fa7be8f843e38d4b9b0ecfedac9d5",
+         "module" : "Term::ProgressBar::Simple",
+         "observed_at" : "2026-11-06T15:34:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a20db3c67d5bdfd0c1fab392c6d1c26880a7ee843af602af4f9b53a7043579a6",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -36,6 +36,53 @@
          "test_summary" : "Files=8, Tests=195",
          "version" : "0.22",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/HTTP-Headers-Fast-0.22.tar.gz",
+         "id" : "58c9111ba9bbe8d07fe097bd32fb83a8534f8bfea44e20af32eef3dfc3df2fb5",
+         "module" : "HTTP::Headers::Fast",
+         "observed_at" : "2026-11-06T15:15:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cc431db68496dd884db4bc0c0b7112c1f4a4f1dc68c4f5a3caa757a1e7481b48",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=195",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

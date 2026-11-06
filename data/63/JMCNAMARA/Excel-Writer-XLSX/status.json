@@ -36,6 +36,53 @@
          "test_summary" : "Files=1247, Tests=5115",
          "version" : "1.15",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/Excel-Writer-XLSX-1.15.tar.gz",
+         "id" : "a82549aba16d9a82bdd70486f38a46f86817ac1f056daa9561756c2ca125f6c8",
+         "module" : "Excel::Writer::XLSX",
+         "observed_at" : "2026-11-06T15:33:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7931b4d8e2fa8b4f806db4bf523be396483f55f53e4f4738fdff5e9a0d875331",
+         "status" : "installed",
+         "test_summary" : "Files=1247, Tests=5115",
+         "version" : "1.15",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

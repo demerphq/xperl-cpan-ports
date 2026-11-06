@@ -158,6 +158,59 @@
          "test_summary" : "Files=11, Tests=53",
          "version" : "0.43",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+         "id" : "a8771d2b7ee21f522f5785cc41d914cdf697b4bae561028236379acf3f41a0d0",
+         "module" : "Test::Exception",
+         "observed_at" : "2026-11-06T15:17:46Z",
+         "patch_set" : "xperl-wrapper-rendering",
+         "patch_sha256" : [
+            "0a8f609ecfa902f91df73ad3dcc84eaaa6850a49638780580d027595e97ca9d7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=53",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

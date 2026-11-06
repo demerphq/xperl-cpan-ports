@@ -71,6 +71,53 @@
          "test_summary" : "Files=10, Tests=82",
          "version" : "0.009032",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/MooseX-Emulate-Class-Accessor-Fast-0.009032.tar.gz",
+         "id" : "529f7f700ebcaf5baf386ef6101a0bab0e324e7bea32ecd11c4c358eb001dadf",
+         "module" : "MooseX::Emulate::Class::Accessor::Fast",
+         "observed_at" : "2026-11-06T15:35:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "82eeb7ef1f0d25418ae406ea26912b241428d4b2ab9510d5e9deb3f72c187994",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=82",
+         "version" : "0.009032",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
