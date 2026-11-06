@@ -1,0 +1,54 @@
+{
+   "author" : "SPURKIS",
+   "distribution" : "accessors",
+   "observations" : [
+      {
+         "cpan_path" : "S/SP/SPURKIS/accessors-1.01.tar.gz",
+         "id" : "8ecf1be6c55c7eb05c77995b51bda09c7f6b2ce8c67cc4320b4a26741dc29389",
+         "module" : "accessors",
+         "observed_at" : "2026-11-06T17:16:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3a8db00f38148f3afadbe5330dc5490d9933f9cae137e842ec225a4d3adb2d9f",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=59",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

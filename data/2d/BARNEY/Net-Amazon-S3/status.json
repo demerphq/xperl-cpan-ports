@@ -1,0 +1,54 @@
+{
+   "author" : "BARNEY",
+   "distribution" : "Net-Amazon-S3",
+   "observations" : [
+      {
+         "cpan_path" : "B/BA/BARNEY/Net-Amazon-S3-0.992.tar.gz",
+         "id" : "5da29f52a2b64b4d8ebb74f54bdbe6f6fb6eeb0020e4c2da39ec9be21c46b1c0",
+         "module" : "Net::Amazon::S3",
+         "observed_at" : "2026-11-06T17:20:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4b7b3b76295950b60ed4418436c7363e1fd9ff2de09c8c61c265296468c6b96c",
+         "status" : "installed",
+         "test_summary" : "Files=104, Tests=545",
+         "version" : "0.992",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "SADAHIRO",
+   "distribution" : "Unicode-Regex-Set",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SADAHIRO/Unicode-Regex-Set-0.04.tar.gz",
+         "id" : "25f6c7a9e084bf3312b2ee93161e2f170b56488bc795ef90b20e98cdabe6e28b",
+         "module" : "Unicode::Regex::Set",
+         "observed_at" : "2026-11-06T17:15:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "689bbd9d09954bf1f5ad9286eaa3badc5fafe877faa50717b9e68294b0154d0c",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=106",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

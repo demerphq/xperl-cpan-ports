@@ -1,0 +1,54 @@
+{
+   "author" : "RITOU",
+   "distribution" : "OAuth-Lite2",
+   "observations" : [
+      {
+         "cpan_path" : "R/RI/RITOU/OAuth-Lite2-0.11.tar.gz",
+         "id" : "8a52c0b5f40ff7fe7c40a815e19eec0076e25e853488ddd3e498b20c417f84ca",
+         "module" : "OAuth::Lite2",
+         "observed_at" : "2026-11-06T17:18:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "01417ec28acefd25a839bdb4b846056036ae122c181dab907e48e0bdb938686a",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=671",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

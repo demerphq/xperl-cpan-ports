@@ -96,6 +96,52 @@
          "test_summary" : "Files=76, Tests=48650",
          "version" : "6.003",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Y/YV/YVES/Sereal-Encoder-7.001.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "82299bb8ada21351e2a646f5b9d9c37ef9c2a7f718e06220fad3aba7494830f6",
+         "module" : "Sereal::Encoder",
+         "observed_at" : "2026-11-06T17:21:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e3917f070e570a5743ea75a7677ba33596de7f1ab9ee25b6aa4e348d4f5d1d52",
+         "status" : "failed",
+         "test_summary" : "Files=79, Tests=41785, Failed 72/79 test programs. 22/41785 subtests failed.",
+         "version" : "7.001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

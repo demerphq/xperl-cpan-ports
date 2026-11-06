@@ -1,0 +1,54 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Statistics-Descriptive",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Statistics-Descriptive-3.0801.tar.gz",
+         "id" : "d6241cd1a0caebfd865a3febf0bf0d6a023024c28cd79c5986d1029f1d2fbbb2",
+         "module" : "Statistics::Descriptive",
+         "observed_at" : "2026-11-06T17:15:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "047b70a63fdcaa916168e0ff2d58e155e0ebbc68ed4ccbd73a7213dca3028f65",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=131",
+         "version" : "3.0801",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

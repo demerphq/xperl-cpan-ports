@@ -1,0 +1,55 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "File-Find-Object",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/File-Find-Object-0.3.9.tar.gz",
+         "id" : "1d5e45c959d67536fb2a0a41254f275ba55429168703639facff2160c48674db",
+         "module" : "File::Find::Object",
+         "module_version" : "v0.3.9",
+         "observed_at" : "2026-11-06T17:15:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7e99afe4a9d992fcef1dfea42e1f95475706aed94f185068a89f729b512735f8",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=83",
+         "version" : "0.3.9",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

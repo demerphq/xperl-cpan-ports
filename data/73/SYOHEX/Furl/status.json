@@ -1,0 +1,54 @@
+{
+   "author" : "SYOHEX",
+   "distribution" : "Furl",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYOHEX/Furl-3.15.tar.gz",
+         "id" : "9d5a1be438df4543ebfec10844600e18d9a0a4241341dc7543635ef677b1833e",
+         "module" : "Furl",
+         "observed_at" : "2026-11-06T17:17:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dc77c95559336b36bb8238dfc10d40dd811fc63c306f333b83f0179b0388ae31",
+         "status" : "installed",
+         "test_summary" : "Files=53, Tests=841",
+         "version" : "3.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

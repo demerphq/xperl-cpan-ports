@@ -1,0 +1,54 @@
+{
+   "author" : "ZEFRAM",
+   "distribution" : "Lexical-SealRequireHints",
+   "observations" : [
+      {
+         "cpan_path" : "Z/ZE/ZEFRAM/Lexical-SealRequireHints-0.012.tar.gz",
+         "id" : "a2d4e996365f6f679ce5680d333b3adabdd9ea1d1511d6536c6e9d347b054e06",
+         "module" : "Lexical::SealRequireHints",
+         "observed_at" : "2026-11-06T17:20:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c32bdc38e06f8d6c90765bbbe3168c358247da7dae85b80ba84a2da1763757dd",
+         "status" : "installed",
+         "test_summary" : "Files=34, Tests=400",
+         "version" : "0.012",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

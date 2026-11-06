@@ -1,0 +1,54 @@
+{
+   "author" : "SMUELLER",
+   "distribution" : "Math-SimpleHisto-XS",
+   "observations" : [
+      {
+         "cpan_path" : "S/SM/SMUELLER/Math-SimpleHisto-XS-1.30.tar.gz",
+         "id" : "a403b09d0d01be1425d44e488a5e3cc7e85ba2daaae866f1c68cac872fad02c3",
+         "module" : "Math::SimpleHisto::XS",
+         "observed_at" : "2026-11-06T17:16:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d8c4c779d68985ca135a9f0f9327faa21497e338d336aa08b398bd653a1b50f1",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=1467",
+         "version" : "1.30",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

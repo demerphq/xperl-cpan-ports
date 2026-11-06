@@ -1,0 +1,54 @@
+{
+   "author" : "JUERD",
+   "distribution" : "Net-Subnet",
+   "observations" : [
+      {
+         "cpan_path" : "J/JU/JUERD/Net-Subnet-1.03.tar.gz",
+         "id" : "35b1df709787fe89edee90ccbdca98bed61b7e24173586f633d515e20b6cf8cd",
+         "module" : "Net::Subnet",
+         "observed_at" : "2026-11-06T17:19:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "125e6db64c98026439f9b585115f94f42315a31d8f16ca63d0c939ab66019afa",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=40",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

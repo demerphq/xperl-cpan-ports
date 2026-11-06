@@ -1,0 +1,54 @@
+{
+   "author" : "WYANT",
+   "distribution" : "Perl-Critic-Policy-Variables-ProhibitUnusedVarsStricter",
+   "observations" : [
+      {
+         "cpan_path" : "W/WY/WYANT/Perl-Critic-Policy-Variables-ProhibitUnusedVarsStricter-0.116.tar.gz",
+         "id" : "47d4d857751b3459c3c391a24950241cfca921fdc7eea20bf319887d58c3448d",
+         "module" : "Perl::Critic::Policy::Variables::ProhibitUnusedVarsStricter",
+         "observed_at" : "2026-11-06T17:19:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "863377192286d44420e1119e388949754ed3be0d7a930e2831d9709758fd731c",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=78",
+         "version" : "0.116",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

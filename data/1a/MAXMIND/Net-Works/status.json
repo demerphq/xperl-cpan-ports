@@ -1,0 +1,54 @@
+{
+   "author" : "MAXMIND",
+   "distribution" : "Net-Works",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAXMIND/Net-Works-0.22.tar.gz",
+         "id" : "7eb6755b9df8778a7a13e1f692fbd5ed38c073e0c0006dcffb3d1fcc46610f9f",
+         "module" : "Net::Works::Network",
+         "observed_at" : "2026-11-06T17:15:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0ac9b23dfbca184e28729b245394bc6693aadb6fc451caa995b4b719ec0ee9ff",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=1474",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

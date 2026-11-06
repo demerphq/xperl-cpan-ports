@@ -1,0 +1,54 @@
+{
+   "author" : "MARSCHAP",
+   "distribution" : "perl-ldap",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARSCHAP/perl-ldap-0.68.tar.gz",
+         "id" : "24695983e1cad5a4b59c9332276a41176c4171c27495e68009711c92096e5d4b",
+         "module" : "Net::LDAP",
+         "observed_at" : "2026-11-06T17:17:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e2f389fe3e7a9e4b61488692919ad723b98f3b479b5288f610daa8c27995b351",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=790",
+         "version" : "0.68",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

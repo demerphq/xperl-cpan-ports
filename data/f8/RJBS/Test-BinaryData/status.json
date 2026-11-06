@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Test-BinaryData",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Test-BinaryData-0.016.tar.gz",
+         "id" : "142339609b725e67cb4b3de4b2f9941b840299e0db9c5440d76a0c5fba4ae378",
+         "module" : "Test::BinaryData",
+         "observed_at" : "2026-11-06T17:14:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "115a0006a563d431cca1a3ccd103e44031f5c51031c6e1b2d94a434ab14d5b86",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=70",
+         "version" : "0.016",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

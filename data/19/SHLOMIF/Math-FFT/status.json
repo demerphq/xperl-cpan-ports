@@ -1,0 +1,54 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Math-FFT",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Math-FFT-1.36.tar.gz",
+         "id" : "7609ee9ef6033f2c4149cdce044c746520f8af5722f17e58369cd3577d9094e6",
+         "module" : "Math::FFT",
+         "observed_at" : "2026-11-06T17:15:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0bf3019811a62f0bf479dceb5449e8e2b854d59abed9e3dca7a3ca8b91e27122",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=47",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

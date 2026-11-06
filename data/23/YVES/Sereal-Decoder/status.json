@@ -84,6 +84,53 @@
          "test_summary" : "Files=107, Tests=82022",
          "version" : "6.003",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Y/YV/YVES/Sereal-Decoder-7.001.tar.gz",
+         "id" : "d3ee91052d26eb5af6a97dd82a798d166d4ede1a98f154187d46b4b7fbcb2c1a",
+         "module" : "Sereal::Decoder",
+         "observed_at" : "2026-11-06T17:21:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "471993fcb2113a1e4928e746d844bcc6a168d87471738f21e12ff85a412c6557",
+         "status" : "installed",
+         "test_summary" : "Files=110, Tests=84344",
+         "version" : "7.001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

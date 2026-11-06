@@ -1,0 +1,53 @@
+{
+   "author" : "PVANDRY",
+   "distribution" : "Locale-gettext",
+   "observations" : [
+      {
+         "cpan_path" : "P/PV/PVANDRY/Locale-gettext-1.07.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "122ba9963e226f16c33efde9c79b3c07e9ed5dff4132c8f5f3197979c1e713df",
+         "module" : "Locale::gettext",
+         "observed_at" : "2026-11-06T17:14:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "909d47954697e7c04218f972915b787bd1244d75e3bd01620bc167d5bbc49c15",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed.",
+         "version" : "1.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

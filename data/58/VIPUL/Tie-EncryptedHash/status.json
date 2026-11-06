@@ -1,0 +1,55 @@
+{
+   "author" : "VIPUL",
+   "distribution" : "Tie-EncryptedHash",
+   "observations" : [
+      {
+         "cpan_path" : "V/VI/VIPUL/Tie-EncryptedHash-1.24.tar.gz",
+         "id" : "626bda93bcf73fedc7d80cd212a448bf1b81602bed4ceac730b6d559b2efac87",
+         "module" : "Tie::EncryptedHash",
+         "module_version" : "1.8",
+         "observed_at" : "2026-11-06T17:18:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "aa9a083a231e4046170a5894644e3c59679c7dbd0aa2d1217dc85150df2c1e21",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=98",
+         "version" : "1.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

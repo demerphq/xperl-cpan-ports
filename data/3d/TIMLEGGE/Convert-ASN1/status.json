@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "Convert-ASN1",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Convert-ASN1-0.34.tar.gz",
+         "id" : "641bd4e921793c6b9776d911b565febfbf52e22a77a8331e4a079ae1675769c1",
+         "module" : "Convert::ASN1",
+         "observed_at" : "2026-11-06T17:17:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a628d7c9d390568fb76359975fa03f626ce57f10dc17980e8e3587d7713e4ee7",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=595",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

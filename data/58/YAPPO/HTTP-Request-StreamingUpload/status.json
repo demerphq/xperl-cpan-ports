@@ -1,0 +1,54 @@
+{
+   "author" : "YAPPO",
+   "distribution" : "HTTP-Request-StreamingUpload",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YAPPO/HTTP-Request-StreamingUpload-0.01.tar.gz",
+         "id" : "e50f910e7d5036b579dbae09d8e44aa1638731b655cca484b3219a694d7978e9",
+         "module" : "HTTP::Request::StreamingUpload",
+         "observed_at" : "2026-11-06T17:19:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "119f193ab59f7c6048abecd637a544e71cf7df282a678986bc8ed38c88c53960",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=54",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

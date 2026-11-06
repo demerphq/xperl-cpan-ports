@@ -1,0 +1,54 @@
+{
+   "author" : "RGARCIA",
+   "distribution" : "Perl-Destruct-Level",
+   "observations" : [
+      {
+         "cpan_path" : "R/RG/RGARCIA/Perl-Destruct-Level-0.02.tar.gz",
+         "id" : "90d9a8c54c4070ffa156444b398e93298fb1faaff020227ea4dd4b6d2f5edc99",
+         "module" : "Perl::Destruct::Level",
+         "observed_at" : "2026-11-06T17:14:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "40b4ac0b292b60ce3b87de7aa39bc2fb25a19d10e5c9f69866961c84b3f6d13b",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=3",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

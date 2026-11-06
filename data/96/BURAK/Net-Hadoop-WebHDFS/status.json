@@ -1,0 +1,54 @@
+{
+   "author" : "BURAK",
+   "distribution" : "Net-Hadoop-WebHDFS",
+   "observations" : [
+      {
+         "cpan_path" : "B/BU/BURAK/Net-Hadoop-WebHDFS-0.8.tar.gz",
+         "id" : "f8f0f3f9af4c65fdfcce64747b0d6c2f1afc0b38e9312acff3015bf8fcef1c7c",
+         "module" : "Net::Hadoop::WebHDFS",
+         "observed_at" : "2026-11-06T17:17:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "440d8d870323a39f2d2a880726260106d8de9da103b217255618aebac5ef7710",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=5",
+         "version" : "0.8",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,53 @@
+{
+   "author" : "VPIT",
+   "distribution" : "Scope-Upper",
+   "observations" : [
+      {
+         "cpan_path" : "V/VP/VPIT/Scope-Upper-0.34.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "5f46bbdadd62a247aa6dbb1b8d582f95e674e9de8a80afa951c0837b2761d954",
+         "module" : "Scope::Upper",
+         "observed_at" : "2026-11-06T17:19:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "581d8bc510debd0c456a5fc7952cb7138ae667bf38f3a77e96d773dc3196a41e",
+         "status" : "failed",
+         "test_summary" : "Files=54, Tests=89422, Failed 1/54 test programs. 1/89422 subtests failed.",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

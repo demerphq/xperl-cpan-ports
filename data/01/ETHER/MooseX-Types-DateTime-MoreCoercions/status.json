@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Types-DateTime-MoreCoercions",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-DateTime-MoreCoercions-0.15.tar.gz",
+         "id" : "ca0491e78d7c8a945007bd62edbe3d0cdb6652c36f33734b8cc95e43347798b2",
+         "module" : "MooseX::Types::DateTime::MoreCoercions",
+         "observed_at" : "2026-11-06T17:17:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "21bb3a597719888edb6ceaa132418d5cf92ecb92a50cce37b94259a55e0e3796",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=31",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

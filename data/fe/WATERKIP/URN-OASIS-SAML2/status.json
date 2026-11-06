@@ -1,0 +1,54 @@
+{
+   "author" : "WATERKIP",
+   "distribution" : "URN-OASIS-SAML2",
+   "observations" : [
+      {
+         "cpan_path" : "W/WA/WATERKIP/URN-OASIS-SAML2-0.007.tar.gz",
+         "id" : "4b3d9ccf29611788f4a14c3cdfd95848bb2a596a2f8e4b0c55c8c641fe3f64f3",
+         "module" : "URN::OASIS::SAML2",
+         "observed_at" : "2026-11-06T17:19:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4cb6665b63c758df3fb2c820252535b6ff7af60d725e82e61de6dc06cab60bfb",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=55",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

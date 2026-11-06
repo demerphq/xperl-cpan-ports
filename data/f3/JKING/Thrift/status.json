@@ -1,0 +1,103 @@
+{
+   "author" : "JKING",
+   "distribution" : "Thrift",
+   "observations" : [
+      {
+         "cpan_path" : "J/JK/JKING/thrift/Thrift-0.22.0.tar.gz",
+         "id" : "e2a73533acf4b41340cea78dc1252b3251be1a4a12141b0230cb0be2fdaed230",
+         "module" : "Thrift",
+         "module_version" : "v0.22.0",
+         "observed_at" : "2026-11-06T17:16:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "033b91797067c250b64a88d9b1e4a6b168fbeb3ecfbdf84eae14f64abb21eea8",
+         "status" : "installed",
+         "test_summary" : "Files=0, Tests=0",
+         "version" : "0.22.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JK/JKING/thrift/Thrift-0.9.3.tar.gz",
+         "id" : "f2aef18333baca3c9c2419cd1f8ef8a25f8e62a80d8d201484820f595c80a365",
+         "module" : "Thrift::SSLSocket",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T17:16:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "40fb117e588afd44bfd18c8c9df5fad165690aa6583316218e8dde2b3e8398bb",
+         "status" : "installed",
+         "test_summary" : "Files=0, Tests=0",
+         "version" : "0.9.3",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

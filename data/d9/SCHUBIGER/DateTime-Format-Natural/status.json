@@ -1,0 +1,54 @@
+{
+   "author" : "SCHUBIGER",
+   "distribution" : "DateTime-Format-Natural",
+   "observations" : [
+      {
+         "cpan_path" : "S/SC/SCHUBIGER/DateTime-Format-Natural-1.27.tar.gz",
+         "id" : "f88d3a0d5a3461e92e8b39f4c3f256f2640a0333a336617bf971ff963b2acd25",
+         "module" : "DateTime::Format::Natural",
+         "observed_at" : "2026-11-06T17:17:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "077ea2321a83b2481edb0efeeecfb7e8aefe6140988a171dd09caba06e757d5c",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=6009",
+         "version" : "1.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

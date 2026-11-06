@@ -1,0 +1,55 @@
+{
+   "author" : "RJRAY",
+   "distribution" : "RPC-XML",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJRAY/RPC-XML-0.82.tar.gz",
+         "id" : "cfeb12d6a8717e1d59d3f38078601aef08cbf4226f171ee780f14c46ad250fc3",
+         "module" : "RPC::XML",
+         "module_version" : "1.61",
+         "observed_at" : "2026-11-06T17:15:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5279eb0d136c533ff897f6934c3aad6f20504b997fb2606e52c5dbbd92758e73",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=986",
+         "version" : "0.82",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

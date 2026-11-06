@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "XML-Generator",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/XML-Generator-1.13.tar.gz",
+         "id" : "d742b4a27284b0a3d0fc2125744e2d2ee70b2a5e92ea1cd99769009776df4714",
+         "module" : "XML::Generator",
+         "observed_at" : "2026-11-06T17:18:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "30ef32fac30f268a3d9062c44fd5ab7518499bf993b50ef8ee372d8787bcb9a8",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=122",
+         "version" : "1.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

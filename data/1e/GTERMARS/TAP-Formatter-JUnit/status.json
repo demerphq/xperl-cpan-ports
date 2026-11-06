@@ -1,0 +1,54 @@
+{
+   "author" : "GTERMARS",
+   "distribution" : "TAP-Formatter-JUnit",
+   "observations" : [
+      {
+         "cpan_path" : "G/GT/GTERMARS/TAP-Formatter-JUnit-0.17.tar.gz",
+         "id" : "d4911c023f73dd691082e4a5f0d6c5ec98c09253d13027d7ede2895e3be9426b",
+         "module" : "TAP::Formatter::JUnit",
+         "observed_at" : "2026-11-06T17:18:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "856c0fe49bfeafba8446f9a8a72e5439cb6544817d5ec0dafa2a65fb3cd7409e",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=62",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

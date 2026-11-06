@@ -1,0 +1,54 @@
+{
+   "author" : "GRUBER",
+   "distribution" : "Net-Patricia",
+   "observations" : [
+      {
+         "cpan_path" : "G/GR/GRUBER/Net-Patricia-1.24.tar.gz",
+         "id" : "9fc6431a38ae70f81319a95b2ab8d874e00561bf67f51c137c7bbaf3bc96f344",
+         "module" : "Net::Patricia",
+         "observed_at" : "2026-11-06T17:19:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d94f520804e2541b1cd20e73366720a973caf5dd2d2623838fc8d6398afd7edb",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=47",
+         "version" : "1.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

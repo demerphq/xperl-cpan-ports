@@ -1,0 +1,54 @@
+{
+   "author" : "UGEXE",
+   "distribution" : "Text-Levenshtein-Damerau-XS",
+   "observations" : [
+      {
+         "cpan_path" : "U/UG/UGEXE/Text-Levenshtein-Damerau-XS-3.2.tar.gz",
+         "id" : "aa18c0376496e9e3240fc108fe9e212f084a5bbed8988d226345733ab2508658",
+         "module" : "Text::Levenshtein::Damerau::XS",
+         "observed_at" : "2026-11-06T17:18:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "154e376a909cb358cafe8571d02832f25838bd7dd11df3f87b619fd81eeb59fe",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=26",
+         "version" : "3.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

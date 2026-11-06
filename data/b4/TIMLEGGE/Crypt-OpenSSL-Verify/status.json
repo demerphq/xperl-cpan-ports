@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "Crypt-OpenSSL-Verify",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenSSL-Verify-0.38.tar.gz",
+         "id" : "de36a82cd815639440a65aad6bed52e5a9d8b49e70a9507ad3f7b08db256b3e8",
+         "module" : "Crypt::OpenSSL::Verify",
+         "observed_at" : "2026-11-06T17:17:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "25c60e4895451f40140630a62b587ded3bee5ca1ba547477a08e5b5ec905023f",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=39",
+         "version" : "0.38",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

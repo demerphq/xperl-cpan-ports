@@ -1,0 +1,54 @@
+{
+   "author" : "STBEY",
+   "distribution" : "Bit-Vector",
+   "observations" : [
+      {
+         "cpan_path" : "S/ST/STBEY/Bit-Vector-7.4.tar.gz",
+         "id" : "9f32eae0328ace15fa56c5b37037e81c6aa5fc28eebbb6af5171fe62b7d21306",
+         "module" : "Bit::Vector",
+         "observed_at" : "2026-11-06T17:16:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3c6daa671fecfbc35f92a9385b563d65f50dfc6bdc8b4805f9ef46c0d035a926",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=91963",
+         "version" : "7.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

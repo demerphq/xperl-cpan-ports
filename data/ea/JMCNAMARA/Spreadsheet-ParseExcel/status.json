@@ -1,0 +1,54 @@
+{
+   "author" : "JMCNAMARA",
+   "distribution" : "Spreadsheet-ParseExcel",
+   "observations" : [
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/Spreadsheet-ParseExcel-0.66.tar.gz",
+         "id" : "8a5ab52a0adc8608b1e9c17cbff8153563a05bf7262ef1759f37482d87af9a32",
+         "module" : "Spreadsheet::ParseExcel",
+         "observed_at" : "2026-11-06T17:16:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bfd76acfba988601dc051bda73b4bb25f6839a006dd960b6a7401c249245f65b",
+         "status" : "installed",
+         "test_summary" : "Files=32, Tests=1612",
+         "version" : "0.66",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

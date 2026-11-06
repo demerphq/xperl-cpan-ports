@@ -1,0 +1,54 @@
+{
+   "author" : "YOREEK",
+   "distribution" : "XML-Hash-XS",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YO/YOREEK/XML-Hash-XS-0.66.tar.gz",
+         "id" : "ee6afc0c59f81ab3b9d33ebf1ecf27721ca14fbb9295da2abfe5cf41647a98d8",
+         "module" : "XML::Hash::XS",
+         "observed_at" : "2026-11-06T17:20:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9b65c252ebd459a028045379456e64fe8f4a609f3a9f48d15a3e02178538cc79",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=286",
+         "version" : "0.66",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

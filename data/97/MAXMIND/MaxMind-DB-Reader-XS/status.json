@@ -1,0 +1,42 @@
+{
+   "author" : "MAXMIND",
+   "distribution" : "MaxMind-DB-Reader-XS",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAXMIND/MaxMind-DB-Reader-XS-1.000009.tar.gz",
+         "failure" : {
+            "exit_status" : 1,
+            "phase" : "configure"
+         },
+         "id" : "1c571be65910640c21c6c3280ada2cd9f3bdbbf191da501b2e05c1715c234a0c",
+         "module" : "MaxMind::DB::Reader::XS",
+         "observed_at" : "2026-11-06T17:15:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 1,
+               "name" : "configure"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "aa6fb87fed19d549f29b135de7997ee92b1227d626cb0e890600a91cadc3053a",
+         "status" : "failed",
+         "version" : "1.000009",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

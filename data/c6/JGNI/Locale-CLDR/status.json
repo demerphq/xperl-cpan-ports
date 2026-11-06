@@ -1,0 +1,54 @@
+{
+   "author" : "JGNI",
+   "distribution" : "Locale-CLDR",
+   "observations" : [
+      {
+         "cpan_path" : "J/JG/JGNI/Locale-CLDR-v0.46.0.tar.gz",
+         "id" : "cc48b93ddf98e688bf790d4dd2d380c49578e2abe7d86e169231044ff597f2d3",
+         "module" : "Locale::CLDR",
+         "observed_at" : "2026-11-06T17:19:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "50c420392597e0bf4b011c5d3ec43f16df414f4bd3f9295e680111874c4f3192",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=1364",
+         "version" : "v0.46.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

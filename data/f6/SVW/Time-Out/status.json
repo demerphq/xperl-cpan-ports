@@ -1,0 +1,54 @@
+{
+   "author" : "SVW",
+   "distribution" : "Time-Out",
+   "observations" : [
+      {
+         "cpan_path" : "S/SV/SVW/Time-Out-1.0.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "38e3fd3a19ba96eb960a593de49795885449ffcf6a7d0578e5940a18aad07684",
+         "module" : "Time::Out",
+         "module_version" : "v1.0.0",
+         "observed_at" : "2026-11-06T17:17:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "514993f5516c16499bb918f377a07a7988bc4c8771f916dafd3014a2f24a1a06",
+         "status" : "failed",
+         "test_summary" : "Files=10, Tests=20, Failed 1/10 test programs. 1/20 subtests failed.",
+         "version" : "1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

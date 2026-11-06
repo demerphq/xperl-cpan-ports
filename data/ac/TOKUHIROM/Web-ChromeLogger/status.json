@@ -1,0 +1,54 @@
+{
+   "author" : "TOKUHIROM",
+   "distribution" : "Web-ChromeLogger",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/Web-ChromeLogger-0.06.tar.gz",
+         "id" : "c9297bc8dbc19519a13ada16d6bdeb1ad92b5942faa34d0ac2104694265155b5",
+         "module" : "Web::ChromeLogger",
+         "observed_at" : "2026-11-06T17:18:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c4c528f5fb2b6e5ba56cbb07c2c30a2e068937b036f7f4a2d41b107bde1416a3",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=5",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

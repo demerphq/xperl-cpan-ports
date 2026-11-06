@@ -1,0 +1,54 @@
+{
+   "author" : "MSCHOUT",
+   "distribution" : "Log-Dispatch-FileRotate",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSCHOUT/Log-Dispatch-FileRotate-1.38.tar.gz",
+         "id" : "a8782c5fa8dfd67403c45b6d32ab7c0a3cda353648af7bc38825c7ee2e5208de",
+         "module" : "Log::Dispatch::FileRotate",
+         "observed_at" : "2026-11-06T17:16:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b55d6cede3f0a06426488fbfa554f4561320b014c1023893ced29508e5bce4ec",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=257",
+         "version" : "1.38",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

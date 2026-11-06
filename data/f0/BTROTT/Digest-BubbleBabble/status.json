@@ -1,0 +1,54 @@
+{
+   "author" : "BTROTT",
+   "distribution" : "Digest-BubbleBabble",
+   "observations" : [
+      {
+         "cpan_path" : "B/BT/BTROTT/Digest-BubbleBabble-0.02.tar.gz",
+         "id" : "597be67d1287ae5c400e59108adc05f3d1ccb33568b6879b472e9cee13f27eab",
+         "module" : "Digest::BubbleBabble",
+         "observed_at" : "2026-11-06T17:20:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "80cfb2d2e43d6f79400658600567d2a270b145b4eef5aea58a66957788225c00",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=5",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

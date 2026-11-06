@@ -1,0 +1,54 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "match-simple",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/match-simple-0.012.tar.gz",
+         "id" : "ad26f5436ffc4d2e27c4cd6cd20561cb08d66852cfea1319933b1f9d51923d9f",
+         "module" : "match::simple",
+         "observed_at" : "2026-11-06T17:18:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b7349a9fa926d503472998d1e0b8c3a7fcae0edc7ce30ada4ee756cdb252a37c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=396",
+         "version" : "0.012",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "MIME-Lite",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/MIME-Lite-3.038.tar.gz",
+         "id" : "f616c121c3e2fe657bfe7b949da24981854fa21091826f934370a65ea95d09fe",
+         "module" : "MIME::Lite",
+         "observed_at" : "2026-11-06T17:14:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "06eb47db74d594d2256cf4794f2c259e9f3f54b9f61b900544e6e1d879e244f5",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=50",
+         "version" : "3.038",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

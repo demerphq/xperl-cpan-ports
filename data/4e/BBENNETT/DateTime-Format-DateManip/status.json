@@ -1,0 +1,54 @@
+{
+   "author" : "BBENNETT",
+   "distribution" : "DateTime-Format-DateManip",
+   "observations" : [
+      {
+         "cpan_path" : "B/BB/BBENNETT/dt-fmt-datemanip/DateTime-Format-DateManip-0.04.tar.gz",
+         "id" : "6d89827fe0bce1f3eac0cb49afcdc7366dcc61d88d51e619ce764dac1bc917c8",
+         "module" : "DateTime::Format::DateManip",
+         "observed_at" : "2026-11-06T17:16:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2077c9a420e3c0659b61298bff4ede1269120cf690bfeb35f49f6e6c6be8ee43",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=7",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

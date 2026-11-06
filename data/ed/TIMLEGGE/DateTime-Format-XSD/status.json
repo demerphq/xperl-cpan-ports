@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "DateTime-Format-XSD",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/DateTime-Format-XSD-0.5.tar.gz",
+         "id" : "825746325e63151e1c423b4ea72c8d6a937d8293ee899b16657b8bdad0f43dec",
+         "module" : "DateTime::Format::XSD",
+         "observed_at" : "2026-11-06T17:18:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a9a19f02676585dac76b4b8eb4e25c58dff700bd6ce3784d4828eae95df8171f",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=2",
+         "version" : "0.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

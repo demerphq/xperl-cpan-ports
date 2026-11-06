@@ -1,0 +1,55 @@
+{
+   "author" : "JONASBN",
+   "distribution" : "Crypt-OpenSSL-X509",
+   "observations" : [
+      {
+         "cpan_path" : "J/JO/JONASBN/Crypt-OpenSSL-X509-2.1.5.tar.gz",
+         "id" : "2af3ed993a047a2b553f56cab7b5d90f9264f32a3ffd9b10e174ea4ba4d0e196",
+         "module" : "Crypt::OpenSSL::X509",
+         "module_version" : "2.001005",
+         "observed_at" : "2026-11-06T17:17:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ca40b8dbc741a9df792bb0495f2c1dce8043c63c8ee654673d5565dae40f4560",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=97",
+         "version" : "2.1.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

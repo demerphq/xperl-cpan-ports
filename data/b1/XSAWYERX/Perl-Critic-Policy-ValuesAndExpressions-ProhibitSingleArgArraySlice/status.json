@@ -1,0 +1,54 @@
+{
+   "author" : "XSAWYERX",
+   "distribution" : "Perl-Critic-Policy-ValuesAndExpressions-ProhibitSingleArgArraySlice",
+   "observations" : [
+      {
+         "cpan_path" : "X/XS/XSAWYERX/Perl-Critic-Policy-ValuesAndExpressions-ProhibitSingleArgArraySlice-0.004.tar.gz",
+         "id" : "3f20e53bb42d1d7ce7abdb80a4128d624522a47cea8d7cc3d24abca5e80026c0",
+         "module" : "Perl::Critic::Policy::ValuesAndExpressions::ProhibitSingleArgArraySlice",
+         "observed_at" : "2026-11-06T17:19:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8106b9704560356d7d07cd187c64426682faa51279f6e4714e5b8b3653b190e6",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=5",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

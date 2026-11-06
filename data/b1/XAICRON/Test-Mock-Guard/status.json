@@ -1,0 +1,54 @@
+{
+   "author" : "XAICRON",
+   "distribution" : "Test-Mock-Guard",
+   "observations" : [
+      {
+         "cpan_path" : "X/XA/XAICRON/Test-Mock-Guard-0.10.tar.gz",
+         "id" : "c951cac23296885ad653620789176f9ab762305032865508ee086c4f8131dddd",
+         "module" : "Test::Mock::Guard",
+         "observed_at" : "2026-11-06T17:19:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7f228a63f8d6ceb92aa784080a13e85073121b2835eca06d794f9709950dbd3d",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=216",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

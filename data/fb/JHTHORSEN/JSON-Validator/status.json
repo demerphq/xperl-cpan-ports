@@ -1,0 +1,54 @@
+{
+   "author" : "JHTHORSEN",
+   "distribution" : "JSON-Validator",
+   "observations" : [
+      {
+         "cpan_path" : "J/JH/JHTHORSEN/JSON-Validator-5.19.tar.gz",
+         "id" : "398450587e31aa5ea3964770b26701da949306a1c65e58c7a3e45834d590ad53",
+         "module" : "JSON::Validator",
+         "observed_at" : "2026-11-06T17:15:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9f1d86f6fef638aaf610e3be28d2027aec4a48e2dc0eeba52ef8cd564515e004",
+         "status" : "installed",
+         "test_summary" : "Files=84, Tests=808",
+         "version" : "5.19",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

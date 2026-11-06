@@ -1,0 +1,54 @@
+{
+   "author" : "NUDDLEGG",
+   "distribution" : "Spreadsheet-ParseXLSX",
+   "observations" : [
+      {
+         "cpan_path" : "N/NU/NUDDLEGG/Spreadsheet-ParseXLSX-0.37.tar.gz",
+         "id" : "17e187a3c55af7fb862163511d639709f17de38ebf18263d7f969801c02e46f4",
+         "module" : "Spreadsheet::ParseXLSX",
+         "observed_at" : "2026-11-06T17:17:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "261d63f072676123f9d7633bfa3f0330238b7ee5d3ef80b67ea11acbab34f77d",
+         "status" : "installed",
+         "test_summary" : "Files=44, Tests=1288",
+         "version" : "0.37",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Module-CPANTS-Analyse",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Module-CPANTS-Analyse-1.03.tar.gz",
+         "id" : "b0e581a3f9438d5c00ea606f84a80d56de5e63b2fa27f075a6894f84303f0617",
+         "module" : "Module::CPANTS::Analyse",
+         "observed_at" : "2026-11-06T17:16:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d0ea851c02eb27003d8242547837552539ff61d4f087028cdead0076fbbd463a",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=54",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "ILYAZ",
+   "distribution" : "Math-Pari",
+   "observations" : [
+      {
+         "cpan_path" : "I/IL/ILYAZ/modules/Math-Pari-2.030528.tar.gz",
+         "id" : "c3278b30500c4aa74784ff940146f25695c099547615d92b15eef81b9f525488",
+         "module" : "Math::Pari",
+         "observed_at" : "2026-11-06T17:14:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "67f74d216c69635ab1c6ea3e27ce19750a94a2b560ae7288bb2d6cf714fce6c8",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=1343",
+         "version" : "2.030528",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

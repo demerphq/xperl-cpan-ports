@@ -1,0 +1,54 @@
+{
+   "author" : "THINC",
+   "distribution" : "DateTime-Format-Flexible",
+   "observations" : [
+      {
+         "cpan_path" : "T/TH/THINC/DateTime-Format-Flexible-0.37.tar.gz",
+         "id" : "ff70137dbc06a54054732b0d78671f7dd30d903b42231cef438423ac32f63c5f",
+         "module" : "DateTime::Format::Flexible",
+         "observed_at" : "2026-11-06T17:17:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d30ba7f2ce512f5820d6dd51c6e2d02bbc1bf7d3ee07a0b7282b1cef9a2e72cd",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=9285",
+         "version" : "0.37",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

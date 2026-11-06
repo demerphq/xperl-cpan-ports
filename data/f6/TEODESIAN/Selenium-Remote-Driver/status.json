@@ -1,0 +1,54 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "Selenium-Remote-Driver",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Selenium-Remote-Driver-1.50.tar.gz",
+         "id" : "8446e2828bea49af66e087e0d6f99b7b1ee4c9d0195c33d1984e19ece59ad292",
+         "module" : "Selenium::Remote::Driver",
+         "observed_at" : "2026-11-06T17:17:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3f63e7021579ab44c62b654a0398252936487ac934beb5441c4d53ad5b22be1d",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=385",
+         "version" : "1.50",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

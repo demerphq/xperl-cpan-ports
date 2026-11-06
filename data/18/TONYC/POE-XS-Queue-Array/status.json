@@ -1,0 +1,54 @@
+{
+   "author" : "TONYC",
+   "distribution" : "POE-XS-Queue-Array",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TONYC/POE-XS-Queue-Array-0.006.tar.gz",
+         "id" : "8b55f65b36f4adc01a3c7a7c929249c4e56e52c11c9cc00a52a870061e30a8cf",
+         "module" : "POE::XS::Queue::Array",
+         "observed_at" : "2026-11-06T17:18:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "704005635afc79be5fce4d164652ebfb27b79c1034bfbe09d416efb80881954b",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=2089",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

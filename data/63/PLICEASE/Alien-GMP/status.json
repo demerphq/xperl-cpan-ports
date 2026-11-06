@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Alien-GMP",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-GMP-1.16.tar.gz",
+         "id" : "5f50319c0b78d7eb845667075b4e6323dc520dcf39d20fbc85b57cc13dad16a0",
+         "module" : "Alien::GMP",
+         "observed_at" : "2026-11-06T17:20:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "090cd48ee535bf62f178895617a851783ae11aa4c6006a1fd4d84a432f113da5",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=7",
+         "version" : "1.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

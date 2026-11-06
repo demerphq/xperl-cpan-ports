@@ -1,0 +1,54 @@
+{
+   "author" : "JJNAPIORK",
+   "distribution" : "DateTimeX-Easy",
+   "observations" : [
+      {
+         "cpan_path" : "J/JJ/JJNAPIORK/DateTimeX-Easy-0.092.tar.gz",
+         "id" : "bec82c82d6762f294992498083821d20f0ca75260fa135daffb1f29d37eda3bb",
+         "module" : "DateTimeX::Easy",
+         "observed_at" : "2026-11-06T17:17:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3bbe6fddc09e27f94951f49641d5cfa6c1d1c60f688f0aa7fedbe33f4a01e65d",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=107",
+         "version" : "0.092",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

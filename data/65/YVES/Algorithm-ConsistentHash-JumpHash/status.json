@@ -1,0 +1,54 @@
+{
+   "author" : "YVES",
+   "distribution" : "Algorithm-ConsistentHash-JumpHash",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Algorithm-ConsistentHash-JumpHash-0.05.tar.gz",
+         "id" : "bb69e12024679f5fa47b386493670500f305dc48673146fdde735b25e8a832a0",
+         "module" : "Algorithm::ConsistentHash::JumpHash",
+         "observed_at" : "2026-11-06T17:19:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e2e1f127c771c23b8e1d782ab5d954ff3171444b07f0ae2d6c9bc895b40cbd22",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=8",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

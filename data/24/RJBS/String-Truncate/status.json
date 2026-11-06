@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "String-Truncate",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/String-Truncate-1.100603.tar.gz",
+         "id" : "2ab1ddb26d5defbf7fc96b5f64993934a0d6e6b47a716d360df69a503b971b44",
+         "module" : "String::Truncate",
+         "observed_at" : "2026-11-06T17:14:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ab45602cce2dd9515edfbb2e6e5cde19cdd5498d61a23afd8c46c1f11f8eec62",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=65",
+         "version" : "1.100603",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,53 @@
+{
+   "author" : "SYP",
+   "distribution" : "Test-HTTP-AnyEvent-Server",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYP/Test-HTTP-AnyEvent-Server-0.013.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "1aea648e24694bb257268f144405ec9f3850a7feb459a6fef86c9e02f410b43a",
+         "module" : "Test::HTTP::AnyEvent::Server",
+         "observed_at" : "2026-11-06T17:17:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "846315af9bfef024ce7299f7de02b4c0c5d7aac96b80441b7c752e750ad3c0b7",
+         "status" : "failed",
+         "test_summary" : "Files=24, Tests=23, Failed 2/24 test programs. 0/23 subtests failed.",
+         "version" : "0.013",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

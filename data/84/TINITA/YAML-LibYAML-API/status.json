@@ -1,0 +1,54 @@
+{
+   "author" : "TINITA",
+   "distribution" : "YAML-LibYAML-API",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-LibYAML-API-v0.14.0.tar.gz",
+         "id" : "8291365065169d8a2575ada683b8fb502498be74ccb6efb9abbd47e68227934c",
+         "module" : "YAML::LibYAML::API",
+         "observed_at" : "2026-11-06T17:18:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "31a0fedd77d824dab38983be9a3b426863f8aab13013beb95c4ecf80959733e1",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=16",
+         "version" : "v0.14.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

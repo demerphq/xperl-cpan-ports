@@ -1,0 +1,54 @@
+{
+   "author" : "PREACTION",
+   "distribution" : "Log-Any-Adapter-Log4perl",
+   "observations" : [
+      {
+         "cpan_path" : "P/PR/PREACTION/Log-Any-Adapter-Log4perl-0.09.tar.gz",
+         "id" : "719d91f30b93a973600c5ea907fc85557e9836335766dde665375f5ce7f093ac",
+         "module" : "Log::Any::Adapter::Log4perl",
+         "observed_at" : "2026-11-06T17:14:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1197d3e412214be208800cf7bf5057b1fea15424539a2a7927cfe46f716ec1a5",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=71",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

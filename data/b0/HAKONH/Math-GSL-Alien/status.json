@@ -1,0 +1,54 @@
+{
+   "author" : "HAKONH",
+   "distribution" : "Math-GSL-Alien",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAKONH/Math-GSL-Alien-1.05.tar.gz",
+         "id" : "2dc599082f4f6047bf05a647aba19e06ba67daeada989e58ce20908337ef3447",
+         "module" : "Math::GSL::Alien",
+         "observed_at" : "2026-11-06T17:19:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "53bf0016aa608cbc577352daa0bfc2a2e738941be1cfcfd70a5740a55e3b0aba",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=4",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

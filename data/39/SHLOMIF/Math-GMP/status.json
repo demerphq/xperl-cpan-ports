@@ -1,0 +1,54 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Math-GMP",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Math-GMP-2.25.tar.gz",
+         "id" : "548b38b21225ff275875994892ce1a5f0781fdae62fee3e0788e072e375faa97",
+         "module" : "Math::GMP",
+         "observed_at" : "2026-11-06T17:20:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "382b71e54762f639e9a42a9b06934151987ba57d11bb70d35e3bec88d50450ce",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=1076",
+         "version" : "2.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "DBOOK",
+   "distribution" : "Perl-Critic-Community",
+   "observations" : [
+      {
+         "cpan_path" : "D/DB/DBOOK/Perl-Critic-Community-v1.0.4.tar.gz",
+         "id" : "be50a4b27b2697e128699e904b7cf81643215dd11ef7096793b28059a4356f21",
+         "module" : "Perl::Critic::Community",
+         "observed_at" : "2026-11-06T17:19:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3b31624ea0cf4392b8f4397a529515248814a2166697f1a453d58ab6f112d209",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=176",
+         "version" : "v1.0.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

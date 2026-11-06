@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Pod-Elemental",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Pod-Elemental-0.103006.tar.gz",
+         "id" : "d0bdb7b864935b0bdfb8d205d98122fc3443bc3655a21490154f3e395c422f4a",
+         "module" : "Pod::Elemental",
+         "observed_at" : "2026-11-06T17:15:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "750c3a79d8e1824758a6ef7d2dd077dcddca503542b8c34eccd5acbb779dc423",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=104",
+         "version" : "0.103006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

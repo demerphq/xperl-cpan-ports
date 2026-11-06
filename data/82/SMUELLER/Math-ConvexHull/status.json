@@ -1,0 +1,54 @@
+{
+   "author" : "SMUELLER",
+   "distribution" : "Math-ConvexHull",
+   "observations" : [
+      {
+         "cpan_path" : "S/SM/SMUELLER/Math-ConvexHull-1.04.tar.gz",
+         "id" : "6b579a9424b9c66902b9a20717f39055814a35039c80c9f4a8ad684a17230c30",
+         "module" : "Math::ConvexHull",
+         "observed_at" : "2026-11-06T17:15:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b9041f08d58792308f204455a67a265799e88b279e5c2f54e3f8dee9594c0852",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=35",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

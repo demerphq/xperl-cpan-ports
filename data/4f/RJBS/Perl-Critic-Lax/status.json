@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Perl-Critic-Lax",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Perl-Critic-Lax-0.014.tar.gz",
+         "id" : "b69c764186c863ca3264abdbc50c43a1452147b67a6312dae63d66954661de85",
+         "module" : "Perl::Critic::Lax",
+         "observed_at" : "2026-11-06T17:15:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b199ae6add235d7c2886cba2e97f536636db41b62297caa03136ec7807668250",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=56",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

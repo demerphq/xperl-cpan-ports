@@ -1,0 +1,53 @@
+{
+   "author" : "SIFUKURT",
+   "distribution" : "Crypt-RC4",
+   "observations" : [
+      {
+         "cpan_path" : "S/SI/SIFUKURT/Crypt-RC4-2.02.tar.gz",
+         "id" : "e390d93a61536ae2b1320ec88ce4dd65f611ec5a597b5cecd2c4f4bb0e4d0d2c",
+         "module" : "Crypt::RC4",
+         "observed_at" : "2026-11-06T17:15:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5ec4425c6bc22207889630be7350d99686e62a44c6136960110203cd594ae0ea",
+         "status" : "installed",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
