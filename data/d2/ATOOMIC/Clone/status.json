@@ -31,6 +31,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
          "status" : "installed",
          "test_summary" : "Files=34, Tests=521",
@@ -66,6 +71,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
          "status" : "installed",
          "test_summary" : "Files=34, Tests=521",
@@ -101,6 +111,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
          "status" : "installed",
          "test_summary" : "Files=34, Tests=521",

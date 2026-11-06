@@ -30,6 +30,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "a358fd7c49f5e27717a644a9102bd21dc7fc25a415983279c59b1580e2b62a58",
          "status" : "failed",
          "test_summary" : "Files=62, Tests=719, Failed 1/62 test programs. 1/719 subtests failed.",
@@ -71,6 +76,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "a358fd7c49f5e27717a644a9102bd21dc7fc25a415983279c59b1580e2b62a58",
          "status" : "installed",
          "test_summary" : "Files=62, Tests=719",
