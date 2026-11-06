@@ -1,0 +1,42 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "App-cpm",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/App-cpm-v1.1.6.tar.gz",
+         "id" : "8b6d0f2e4f5e503a69a6634a5503c4214f52648563c8a49c604a9a1c30be4cc5",
+         "module" : "App::cpm",
+         "observed_at" : "2026-11-06T14:16:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c78f0ce4bb7770fff95334956bfd63a9cab537d4cca4bdb1d1844990ad601fa8",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "v1.1.6",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

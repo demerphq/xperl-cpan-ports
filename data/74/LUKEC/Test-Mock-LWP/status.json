@@ -1,0 +1,42 @@
+{
+   "author" : "LUKEC",
+   "distribution" : "Test-Mock-LWP",
+   "observations" : [
+      {
+         "cpan_path" : "L/LU/LUKEC/Test-Mock-LWP-0.08.tar.gz",
+         "id" : "129665168612355c2fed71e63e671da4f1229817fabb8175776462514738e29e",
+         "module" : "Test::Mock::LWP",
+         "observed_at" : "2026-11-06T14:36:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b72921b747458fd1648677158dac90d1f2360dc7bddc277639c2fa390f9780fc",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=11",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

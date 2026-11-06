@@ -1,0 +1,43 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "Carp-Assert-More",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/Carp-Assert-More-2.9.0.tar.gz",
+         "id" : "f75c0da90b31f11fa3e8e6f0fcc5bbfbed60eabaad6ac13a9eee6353a18fb0d2",
+         "module" : "Carp::Assert::More",
+         "module_version" : "2.009000",
+         "observed_at" : "2026-11-06T14:36:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cdf7d445a2caeb55ff0a3f92f3b0f6d589a0bab935bb6028792e7e1261b48b14",
+         "status" : "installed",
+         "test_summary" : "Files=55, Tests=614",
+         "version" : "2.9.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

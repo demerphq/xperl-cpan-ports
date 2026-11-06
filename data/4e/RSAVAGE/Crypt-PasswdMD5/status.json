@@ -1,0 +1,42 @@
+{
+   "author" : "RSAVAGE",
+   "distribution" : "Crypt-PasswdMD5",
+   "observations" : [
+      {
+         "cpan_path" : "R/RS/RSAVAGE/Crypt-PasswdMD5-1.46.tgz",
+         "id" : "61c69b89238c77f6041d7e02e9cde50a52c26413b43bb6e029abfc9f30745baa",
+         "module" : "Crypt::PasswdMD5",
+         "observed_at" : "2026-11-06T14:20:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "20a7689a9a03e875878ace38f6565e62307e260deb41187bc529c7b34939d7e7",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=20",
+         "version" : "1.46",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

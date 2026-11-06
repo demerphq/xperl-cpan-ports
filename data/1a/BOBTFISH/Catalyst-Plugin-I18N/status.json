@@ -1,0 +1,42 @@
+{
+   "author" : "BOBTFISH",
+   "distribution" : "Catalyst-Plugin-I18N",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOBTFISH/Catalyst-Plugin-I18N-0.10.tar.gz",
+         "id" : "70f058f3ada869e0f3c8adc8aaa92758748be2ae3730be143fec90ad38dabe0e",
+         "module" : "Catalyst::Plugin::I18N",
+         "observed_at" : "2026-11-06T14:58:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f6039bdb2894b200ee379e4a69ea9bd9ce37611c64738d2e7b94bb05ad75399c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=37",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

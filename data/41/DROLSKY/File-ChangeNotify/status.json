@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "File-ChangeNotify",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/File-ChangeNotify-0.31.tar.gz",
+         "id" : "0bc4dd84d3bde499bbf56c2176c3463a2c37da54e1c7597d6ffcaaf760176903",
+         "module" : "File::ChangeNotify",
+         "observed_at" : "2026-11-06T14:57:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "192bdb1ce76266c6a694a8e962d039e3adeeb829b6ac1e23f5057f2b506392bd",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=10",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

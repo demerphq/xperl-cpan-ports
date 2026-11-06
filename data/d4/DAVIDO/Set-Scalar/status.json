@@ -1,0 +1,42 @@
+{
+   "author" : "DAVIDO",
+   "distribution" : "Set-Scalar",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAVIDO/Set-Scalar-1.29.tar.gz",
+         "id" : "90607fb699117684625d6b483277c5d9ad40c6fda60eb99d41cd128c13d9b3e1",
+         "module" : "Set::Scalar",
+         "observed_at" : "2026-11-06T14:37:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a3dc1526f3dde72d3c64ea00007b86ce608cdcd93567cf6e6e42dc10fdc4511d",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=2652",
+         "version" : "1.29",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

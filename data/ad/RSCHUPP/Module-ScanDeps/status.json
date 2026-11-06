@@ -1,0 +1,42 @@
+{
+   "author" : "RSCHUPP",
+   "distribution" : "Module-ScanDeps",
+   "observations" : [
+      {
+         "cpan_path" : "R/RS/RSCHUPP/Module-ScanDeps-1.37.tar.gz",
+         "id" : "53303e8cd27efc5982fb100fc2204e0e1953e6c2eddd1d28cceea414d2cd83f8",
+         "module" : "Module::ScanDeps",
+         "observed_at" : "2026-11-06T14:57:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1f5e119cade1466c39c71e5bc35a8d4f4e672635db03d79a5a0dcf08c4e2b5a3",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=204",
+         "version" : "1.37",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

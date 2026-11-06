@@ -1,0 +1,42 @@
+{
+   "author" : "ANDK",
+   "distribution" : "Devel-Symdump",
+   "observations" : [
+      {
+         "cpan_path" : "A/AN/ANDK/Devel-Symdump-2.18.tar.gz",
+         "id" : "93195296b5ee8804d874db3cb65be43887e34bb4fc9a20c39dcdddd267a85a3a",
+         "module" : "Devel::Symdump",
+         "observed_at" : "2026-11-06T14:10:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "826f81a107f5592a2516766ed43beb47e10cc83edc9ea48090b02a36040776c0",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=29",
+         "version" : "2.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

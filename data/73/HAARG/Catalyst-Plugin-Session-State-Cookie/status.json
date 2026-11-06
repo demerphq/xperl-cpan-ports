@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Catalyst-Plugin-Session-State-Cookie",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Catalyst-Plugin-Session-State-Cookie-0.18.tar.gz",
+         "id" : "8c8ac1c70e83cd101aecad1ccbcd2690f15e1d4004f37f4456bf000ac68ffad7",
+         "module" : "Catalyst::Plugin::Session::State::Cookie",
+         "observed_at" : "2026-11-06T14:58:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e9b1c7b2b96c194f87a5f77e1449717077c70ffc67a4bfc29f026c9ee2e07bea",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=36",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

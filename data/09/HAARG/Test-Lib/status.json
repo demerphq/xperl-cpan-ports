@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Test-Lib",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Test-Lib-0.003.tar.gz",
+         "id" : "75921b1c21e061b1a7aca5d485c1607b769e2435ba54fadb9b7a07900605fcbc",
+         "module" : "Test::Lib",
+         "observed_at" : "2026-11-06T14:43:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d84b48d92567cba3d0afb1e8175aab836bfa8a838e19ac9080cabc2e3f9dc9f5",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=9",
+         "version" : "0.003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

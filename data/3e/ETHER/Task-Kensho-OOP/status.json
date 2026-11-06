@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-OOP",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-OOP-0.41.tar.gz",
+         "id" : "0f3304de66ec84080c361e3d5d2049fe7b281a023d20ae827355516ab49045ce",
+         "module" : "Task::Kensho::OOP",
+         "observed_at" : "2026-11-06T13:52:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7168b46de737647fce719989259bbbdded33300f1504d50d0133da0307ed8ec1",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

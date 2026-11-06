@@ -1,0 +1,42 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Parse-PMFile",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Parse-PMFile-0.48.tar.gz",
+         "id" : "373d44ced15a8585a577f4b94fd6e1473a573fe0fd1ba2db1c626b06b00d0b7a",
+         "module" : "Parse::PMFile",
+         "observed_at" : "2026-11-06T14:16:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b459d0b73e18d3c69f15f58acf018cdb599d54482344de570b877874b33cbc53",
+         "status" : "installed",
+         "test_summary" : "Files=28, Tests=135",
+         "version" : "0.48",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

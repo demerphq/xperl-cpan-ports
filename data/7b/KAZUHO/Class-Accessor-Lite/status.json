@@ -1,0 +1,42 @@
+{
+   "author" : "KAZUHO",
+   "distribution" : "Class-Accessor-Lite",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZUHO/Class-Accessor-Lite-0.08.tar.gz",
+         "id" : "2a3f532db62d7e1380d51ab74b85fbb7989d3913bd59fc5cd907df717cfc8fd1",
+         "module" : "Class::Accessor::Lite",
+         "observed_at" : "2026-11-06T14:26:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "75b3b8ec8efe687677b63f0a10eef966e01f60735c56656ce75cbb44caba335a",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=26",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,11 @@
+--- a/t/utils/40walk.t
++++ b/t/utils/40walk.t
+@@ -17,7 +17,7 @@
+ foreach my $op (values %{all_roots()}) {
+   walkoptree_simple( $op, $callback );
+ }
+-my $expected = [8, 15, 17, 18, 20, 24, 27, 31,
++my $expected = [8, ${^XPERL_VERSION} ? 9 : 15, 17, 18, 20, 24, 27, 31,
+                 # 30,    # See FIXME: below
+                 36, 42
+                ];

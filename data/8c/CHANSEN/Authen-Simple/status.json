@@ -1,0 +1,42 @@
+{
+   "author" : "CHANSEN",
+   "distribution" : "Authen-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHANSEN/Authen-Simple-0.5.tar.gz",
+         "id" : "aa66dc0320e119d64473ad934f8dc6350adbf035bf832c9ec715c9d78a4f8a71",
+         "module" : "Authen::Simple",
+         "observed_at" : "2026-11-06T14:21:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "02cddab47f8bf1a1cbd4c9bf8d258f6d05111499c33f8315e7244812f72613aa",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=54",
+         "version" : "0.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

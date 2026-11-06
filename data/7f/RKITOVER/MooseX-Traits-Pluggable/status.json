@@ -1,0 +1,42 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "MooseX-Traits-Pluggable",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/MooseX-Traits-Pluggable-0.12.tar.gz",
+         "id" : "9207acccdefcb18ce58b3a052c2de6cc39512db87c379c34237072f3c24a1a9c",
+         "module" : "MooseX::Traits::Pluggable",
+         "observed_at" : "2026-11-06T14:57:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ab96b7950ecbf29b836fdfeebbe0aac22ca573e7183be7cb7d6d12df22ab58ca",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=92",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

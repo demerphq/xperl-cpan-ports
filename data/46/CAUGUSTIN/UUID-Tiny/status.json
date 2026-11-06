@@ -1,0 +1,42 @@
+{
+   "author" : "CAUGUSTIN",
+   "distribution" : "UUID-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "C/CA/CAUGUSTIN/UUID-Tiny-1.04.tar.gz",
+         "id" : "0903c0b60bdf0a8d8178c61585ab43ec99d297397f79e8be5d45d51d1a582f35",
+         "module" : "UUID::Tiny",
+         "observed_at" : "2026-11-06T14:27:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6dcd92604d64e96cc6c188194ae16a9d3a46556224f77b6f3d1d1312b68f9a3d",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=10086",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

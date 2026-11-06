@@ -1,0 +1,42 @@
+{
+   "author" : "DAMS",
+   "distribution" : "IO-Socket-Timeout",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAMS/IO-Socket-Timeout-0.32.tar.gz",
+         "id" : "05967123a89bcdcc7a1f95856357ea3bf24eb186ebbbf56e98cfc4771e55376a",
+         "module" : "IO::Socket::Timeout",
+         "observed_at" : "2026-11-06T14:03:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "edf915d6cc66bee43503aa6dc2b373366f38eaff701582183dad10cb8adf2972",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=20",
+         "version" : "0.32",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

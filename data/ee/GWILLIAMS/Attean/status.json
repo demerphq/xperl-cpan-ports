@@ -1,0 +1,42 @@
+{
+   "author" : "GWILLIAMS",
+   "distribution" : "Attean",
+   "observations" : [
+      {
+         "cpan_path" : "G/GW/GWILLIAMS/Attean-0.040.tar.gz",
+         "id" : "5b32722f747d7b2019247fbd9eac46e846522d6b3479685801b3e42477a2941a",
+         "module" : "Attean",
+         "observed_at" : "2026-11-06T14:43:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bfca4b1e49e62e1528d741f633167afee7a9089ec4ad655d629ac42ab2a97173",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=940",
+         "version" : "0.040",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

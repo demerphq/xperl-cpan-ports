@@ -1,0 +1,42 @@
+{
+   "author" : "ABIGAIL",
+   "distribution" : "Regexp-Common",
+   "observations" : [
+      {
+         "cpan_path" : "A/AB/ABIGAIL/Regexp-Common-2024080801.tar.gz",
+         "id" : "1f1b5a181a0e84df92cb17a88aa4f0c60092b937fac0958b9f4de33a84a95927",
+         "module" : "Regexp::Common",
+         "observed_at" : "2026-11-06T14:37:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0677afaec8e1300cefe246b4d809e75cdf55e2cc0f77c486d13073b69ab4fbdd",
+         "status" : "installed",
+         "test_summary" : "Files=73, Tests=149249",
+         "version" : "2024080801",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

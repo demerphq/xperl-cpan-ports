@@ -1,0 +1,42 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Data-Clone",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Data-Clone-0.006.tar.gz",
+         "id" : "3a63b0c587cdf20f33ddfba0bde450a989e43b557ec191594057badff859e37d",
+         "module" : "Data::Clone",
+         "observed_at" : "2026-11-06T14:55:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b8745954f0eff61efb25589cc13b4f2b1b26ce5ac3617d7e8aa3981626579629",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=188",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

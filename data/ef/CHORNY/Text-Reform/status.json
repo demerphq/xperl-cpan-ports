@@ -1,0 +1,42 @@
+{
+   "author" : "CHORNY",
+   "distribution" : "Text-Reform",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHORNY/Text-Reform-1.20.tar.gz",
+         "id" : "2c0d408caa9e7e37e5c5ef39f4b878aa129e45e2c95cce8504a06dc4fc36b96c",
+         "module" : "Text::Reform",
+         "observed_at" : "2026-11-06T14:26:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a8792dd8c1aac97001032337b36a356be96e2d74c4f039ef9a363b641db4ae61",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=68",
+         "version" : "1.20",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

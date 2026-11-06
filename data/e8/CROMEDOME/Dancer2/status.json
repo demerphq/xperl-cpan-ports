@@ -1,0 +1,84 @@
+{
+   "author" : "CROMEDOME",
+   "distribution" : "Dancer2",
+   "observations" : [
+      {
+         "cpan_path" : "C/CR/CROMEDOME/Dancer2-2.3.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "2e038a145f55901f9a446893a09274de5cfeaf3a4bcd88046414be5cd82dbde0",
+         "module" : "Dancer2",
+         "module_version" : "v2.3.0",
+         "observed_at" : "2026-11-06T14:46:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "4764563277d667a757070483ec69aa2241555d405e6308252e3ffefe11645e7b",
+         "status" : "failed",
+         "test_summary" : "Files=217, Tests=1768, Failed 4/217 test programs. 4/1768 subtests failed.",
+         "version" : "2.3.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CR/CROMEDOME/Dancer2-2.3.0.tar.gz",
+         "id" : "e88a21d1512c58e8dd6e70443a553a3b29f57fb70438f9539a08429037379c09",
+         "module" : "Dancer2",
+         "module_version" : "v2.3.0",
+         "observed_at" : "2026-11-06T14:55:11Z",
+         "patch_set" : "xperl-error-message",
+         "patch_sha256" : [
+            "9d0891556ab6c26840a827ac428ef726889f6e256f0e6d1013e96d6af54a008f"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4764563277d667a757070483ec69aa2241555d405e6308252e3ffefe11645e7b",
+         "status" : "installed",
+         "test_summary" : "Files=217, Tests=1772",
+         "version" : "2.3.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,82 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Error",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Error-0.17031.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "25e69d2c8e246990a1992a9c868b37b79e2413b5d49be08a943351b339702f9f",
+         "module" : "Error",
+         "observed_at" : "2026-11-06T13:53:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "0a85374cf9cbde5a5075f16e62246e5d36abde63ec08c5c5694f128f4546852f",
+         "status" : "failed",
+         "test_summary" : "Files=15, Tests=63, Failed 4/15 test programs. 10/63 subtests failed.",
+         "version" : "0.17031",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Error-0.17031.tar.gz",
+         "id" : "0299c5613cf7a7a53fefd49d44b8120a2512e58496b0d815142632f376ae82c4",
+         "module" : "Error",
+         "observed_at" : "2026-11-06T13:56:50Z",
+         "patch_set" : "objectify-xperl-text-exceptions",
+         "patch_sha256" : [
+            "13523f36e8fa45c68b4edf7b2e161313a60d8ceb50e764aafda931d85af3d0cb"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0a85374cf9cbde5a5075f16e62246e5d36abde63ec08c5c5694f128f4546852f",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=63",
+         "version" : "0.17031",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

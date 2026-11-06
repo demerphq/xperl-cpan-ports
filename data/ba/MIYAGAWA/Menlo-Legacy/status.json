@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Menlo-Legacy",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Menlo-Legacy-1.9022.tar.gz",
+         "id" : "78b14f7e36bb952b188e6a737bdae10bb768810563598aa17112e01e9283bcab",
+         "module" : "Menlo::CLI::Compat",
+         "observed_at" : "2026-11-06T14:20:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a6acac3fee318a804b439de54acbc7c27f0b44cfdad8551bbc9cd45986abc201",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "1.9022",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "HTTP-BrowserDetect",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-BrowserDetect-3.45.tar.gz",
+         "id" : "c120cc39ff606505be5f35ce771931c743f0ef033052b29d54068375abd0779c",
+         "module" : "HTTP::BrowserDetect",
+         "observed_at" : "2026-11-06T14:56:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d4dbfddd9df6e9c35d151c9b00544211b38cb8c3aee4350a540bddaa75203669",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=2601",
+         "version" : "3.45",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

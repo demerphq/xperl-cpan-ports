@@ -1,0 +1,42 @@
+{
+   "author" : "MATTP",
+   "distribution" : "Test-WWW-Selenium",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATTP/Test-WWW-Selenium-1.36.tar.gz",
+         "id" : "7c5f014c61ad7fe0bf2b88e445dc6bc6abfae9fe5ec8abd5cf4eb46f320ec161",
+         "module" : "WWW::Selenium",
+         "observed_at" : "2026-11-06T14:36:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ea93d97f6c0be0232f8b07ac0584dc3cd13e7a191dd03cca639ade02f44b3b69",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=332",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

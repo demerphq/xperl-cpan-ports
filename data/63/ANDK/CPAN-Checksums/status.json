@@ -1,0 +1,42 @@
+{
+   "author" : "ANDK",
+   "distribution" : "CPAN-Checksums",
+   "observations" : [
+      {
+         "cpan_path" : "A/AN/ANDK/CPAN-Checksums-2.14.tar.gz",
+         "id" : "c902dd95fc065ab476f8d8312c41e5146e0f33b84a34372f4233bfeb8e3e1e14",
+         "module" : "CPAN::Checksums",
+         "observed_at" : "2026-11-06T14:24:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4080716c5da7e03b504e3cc0ea1fd5ef9ed6915f6fb737564e9e13d355a89e39",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=33",
+         "version" : "2.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

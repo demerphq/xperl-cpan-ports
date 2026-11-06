@@ -1,0 +1,42 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "Module-Signature",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Module-Signature-0.96.tar.gz",
+         "id" : "b79048f440f15c1123d324c8c19739fd2b7e00ed52258071fd92dacee65b4b26",
+         "module" : "Module::Signature",
+         "observed_at" : "2026-11-06T14:24:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "461fe5f6a189e6dc85f8776f7534fdb9821ecb3e04d839268d31353f9b429d7e",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=8",
+         "version" : "0.96",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

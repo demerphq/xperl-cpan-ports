@@ -1,0 +1,42 @@
+{
+   "author" : "CAZADOR",
+   "distribution" : "MooX-Log-Any",
+   "observations" : [
+      {
+         "cpan_path" : "C/CA/CAZADOR/MooX-Log-Any-0.004004.tar.gz",
+         "id" : "33f5440b4a69859c27db8c57839d3efb25e32c81dd8e8b5c462dfa0e97166b1b",
+         "module" : "MooX::Log::Any",
+         "observed_at" : "2026-11-06T14:37:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2a1afa0f3a411e28a9258ccabe2c5b5d647abc29f2fbf5be9ffaf2286e830534",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=4",
+         "version" : "0.004004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

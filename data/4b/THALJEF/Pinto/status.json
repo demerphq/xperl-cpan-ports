@@ -1,0 +1,42 @@
+{
+   "author" : "THALJEF",
+   "distribution" : "Pinto",
+   "observations" : [
+      {
+         "cpan_path" : "T/TH/THALJEF/Pinto-0.14.tar.gz",
+         "id" : "8243f5c384a22d591ab67882b8f949870f1120da8b4fedd9470d01e6a063d836",
+         "module" : "Pinto",
+         "observed_at" : "2026-11-06T14:36:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f8c4546491a091e55f58a32163bc38b66e550a99a67bf8bc9bf7f8ad3b3b6220",
+         "status" : "installed",
+         "test_summary" : "Files=56, Tests=671",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

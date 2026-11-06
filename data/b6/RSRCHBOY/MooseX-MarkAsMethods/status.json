@@ -1,0 +1,42 @@
+{
+   "author" : "RSRCHBOY",
+   "distribution" : "MooseX-MarkAsMethods",
+   "observations" : [
+      {
+         "cpan_path" : "R/RS/RSRCHBOY/MooseX-MarkAsMethods-0.15.tar.gz",
+         "id" : "48b450a9570fa027f0cec4bf0808654021d20300529ea7f3a71f9d9aa7505963",
+         "module" : "MooseX::MarkAsMethods",
+         "observed_at" : "2026-11-06T14:26:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c9ecc13376d0ff7dba481977337c33ea74e5d266a428b6af31552a2919ef7ef8",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=186",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

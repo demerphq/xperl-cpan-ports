@@ -1,0 +1,42 @@
+{
+   "author" : "ARODLAND",
+   "distribution" : "CLI-Osprey",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARODLAND/CLI-Osprey-0.09.tar.gz",
+         "id" : "2ffb967acfae6ff0cdcbcef584393abfc98a249824b833412ebd72f5acd32226",
+         "module" : "CLI::Osprey",
+         "observed_at" : "2026-11-06T14:43:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8549a09fdc97981298bd8f3aa2755294acaa7939ca279d3840bebc259a46844e",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=17",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

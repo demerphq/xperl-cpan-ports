@@ -1,0 +1,41 @@
+{
+   "author" : "KMELTZ",
+   "distribution" : "Apache-Htpasswd",
+   "observations" : [
+      {
+         "cpan_path" : "K/KM/KMELTZ/Apache-Htpasswd-1.9.tar.gz",
+         "id" : "d8f190bb638a884ed26bbdbb2fb5b543fa3f3e085d0d668c8c79f014e3517a45",
+         "module" : "Apache::Htpasswd",
+         "observed_at" : "2026-11-06T14:20:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9358719be14799fc61e04989df7fdb9c0541402b0b8a7bdd181ff464f1cd2dfd",
+         "status" : "installed",
+         "version" : "1.9",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

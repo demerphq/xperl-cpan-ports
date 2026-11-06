@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Module-Install",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Module-Install-1.21.tar.gz",
+         "id" : "43de44a0fdea4257caf8efdfc085bc5d7aa418317b3fc31f7e15ea76b780da13",
+         "module" : "Module::Install",
+         "observed_at" : "2026-11-06T14:57:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fbf91007f30565f3920e106055fd0d4287981d5e7dad8b35323ce4b733f15a7b",
+         "status" : "installed",
+         "test_summary" : "Files=36, Tests=547",
+         "version" : "1.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

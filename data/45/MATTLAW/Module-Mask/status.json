@@ -1,0 +1,82 @@
+{
+   "author" : "MATTLAW",
+   "distribution" : "Module-Mask",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATTLAW/Module-Mask-0.06.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "feaa953999ae7919497dbfde6cf8b899fd1c3aa33f8121f579d15fe4504c02b3",
+         "module" : "Module::Mask",
+         "observed_at" : "2026-11-06T13:59:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "2d73f81ff21c9fa28102791e546ff257164b3025f7832544c8223fb87c1e7e77",
+         "status" : "failed",
+         "test_summary" : "Files=4, Tests=30, Failed 1/4 test programs. 1/30 subtests failed.",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MATTLAW/Module-Mask-0.06.tar.gz",
+         "id" : "90cb4bba7c50150143b3325cbbe62f3bbe57ce6e29a4097859e9640ca63ce8c2",
+         "module" : "Module::Mask",
+         "observed_at" : "2026-11-06T14:03:39Z",
+         "patch_set" : "check-original-mask-diagnostic",
+         "patch_sha256" : [
+            "83e3d683a322dfa85ea09af9f3582edb6545f6b562c9174a508acd9fc0ab9a50"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2d73f81ff21c9fa28102791e546ff257164b3025f7832544c8223fb87c1e7e77",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=30",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "DAMS",
+   "distribution" : "Redis",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAMS/Redis-2.000.tar.gz",
+         "id" : "4d7d0edcdad6fea87cf23c2ccefe8f5207f1d75b60e995d775d50d6cf29120d9",
+         "module" : "Redis",
+         "observed_at" : "2026-11-06T14:03:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "14cb899797212615b4e93f916dcbdafb48d01c5eaab2038fe6cb179bf95c6feb",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=7",
+         "version" : "2.000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

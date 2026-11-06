@@ -1,0 +1,42 @@
+{
+   "author" : "RGARCIA",
+   "distribution" : "Sub-Identify",
+   "observations" : [
+      {
+         "cpan_path" : "R/RG/RGARCIA/Sub-Identify-0.14.tar.gz",
+         "id" : "6eafa3bdae6e7c4ff2508a39ea2d580dc1cfc31ab32f443a7580e16d08c6801a",
+         "module" : "Sub::Identify",
+         "observed_at" : "2026-11-06T14:58:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "068d272086514dd1e842b6a40b1bedbafee63900e5b08890ef6700039defad6f",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=147",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

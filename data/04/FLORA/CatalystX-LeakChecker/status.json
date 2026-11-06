@@ -1,0 +1,42 @@
+{
+   "author" : "FLORA",
+   "distribution" : "CatalystX-LeakChecker",
+   "observations" : [
+      {
+         "cpan_path" : "F/FL/FLORA/CatalystX-LeakChecker-0.06.tar.gz",
+         "id" : "2bb72477092e18c3492f1c223ef3673cce295d7481b7bbd46a7a6a46e51e3d0c",
+         "module" : "CatalystX::LeakChecker",
+         "observed_at" : "2026-11-06T14:58:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0e3aa438025adf775a631edaf7e2beb0a617f3894b40afbd875c2a57ed5bdbc0",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ASH",
+   "distribution" : "WWW-Mechanize-TreeBuilder",
+   "observations" : [
+      {
+         "cpan_path" : "A/AS/ASH/WWW-Mechanize-TreeBuilder-1.20000.tar.gz",
+         "id" : "9dbd3c7de6e77b376d21db97178757445829eebb4294426900cb1726b5e1974b",
+         "module" : "WWW::Mechanize::TreeBuilder",
+         "observed_at" : "2026-11-06T14:36:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2c88da07515afa87840ee3f9cbeab85d160f624bc23fd9c7d5eeff9acb57cf89",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=24",
+         "version" : "1.20000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

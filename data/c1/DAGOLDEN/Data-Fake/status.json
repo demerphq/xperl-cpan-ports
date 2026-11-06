@@ -1,0 +1,42 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Data-Fake",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Data-Fake-0.006.tar.gz",
+         "id" : "f45733ebd6330cc5e70f7ed6203c57a7c10bbb2c8591b19449d7b3f4eb1bcf58",
+         "module" : "Data::Fake",
+         "observed_at" : "2026-11-06T14:26:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "930960e04a417fb19e14ce1e739e3e4aefbddd101eae68bfa25ba7674fe7c2a1",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=33",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

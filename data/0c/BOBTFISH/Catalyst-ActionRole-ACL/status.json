@@ -1,0 +1,42 @@
+{
+   "author" : "BOBTFISH",
+   "distribution" : "Catalyst-ActionRole-ACL",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOBTFISH/Catalyst-ActionRole-ACL-0.07.tar.gz",
+         "id" : "59209f5be4530f86d012fe01521adb1e994fd2636cfed2d795f77405aac70a8a",
+         "module" : "Catalyst::ActionRole::ACL",
+         "observed_at" : "2026-11-06T14:56:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1af0fa5d6d38e8edf6b6c5349b69f03cc541b68d700aaf782196f4e3f2bbf816",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=35",
+         "version" : "0.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

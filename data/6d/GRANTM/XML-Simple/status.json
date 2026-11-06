@@ -1,0 +1,42 @@
+{
+   "author" : "GRANTM",
+   "distribution" : "XML-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "G/GR/GRANTM/XML-Simple-2.25.tar.gz",
+         "id" : "90334cf26164ba649363d48900d235dd34cb898d4d8767eb1786536de36c5be6",
+         "module" : "XML::Simple",
+         "observed_at" : "2026-11-06T14:42:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "531fddaebea2416743eb5c4fdfab028f502123d9a220405a4100e68fc480dbf8",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=503",
+         "version" : "2.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

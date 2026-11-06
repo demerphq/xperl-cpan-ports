@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Archive-Any-Create",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Archive-Any-Create-0.03.tar.gz",
+         "id" : "d391063be06784fa2f9999eb558139fad0640a7c078c5811f0dae3b3b0b5e9e5",
+         "module" : "Archive::Any::Create",
+         "observed_at" : "2026-11-06T14:26:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bdd18e6427559e489041c6e3d71cf91ff5b53d294264c232b1c58773c0f3c678",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=9",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

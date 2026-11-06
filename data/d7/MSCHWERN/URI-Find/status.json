@@ -1,0 +1,42 @@
+{
+   "author" : "MSCHWERN",
+   "distribution" : "URI-Find",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSCHWERN/URI-Find-20160806.tar.gz",
+         "id" : "ba2bd2a74ddd93285d395ce960e170955b9efed68dc246ae57962caa6d79a827",
+         "module" : "URI::Find",
+         "observed_at" : "2026-11-06T14:56:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e213a425a51b5f55324211f37909d78749d0bacdea259ba51a9855d0d19663d6",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=619",
+         "version" : "20160806",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

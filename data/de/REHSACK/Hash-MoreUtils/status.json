@@ -1,0 +1,42 @@
+{
+   "author" : "REHSACK",
+   "distribution" : "Hash-MoreUtils",
+   "observations" : [
+      {
+         "cpan_path" : "R/RE/REHSACK/Hash-MoreUtils-0.06.tar.gz",
+         "id" : "90fcb95854486d2a32ca4607551eb91440246d6ca84317e4d8beb1f2f7a62954",
+         "module" : "Hash::MoreUtils",
+         "observed_at" : "2026-11-06T13:59:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "db9a8fb867d50753c380889a5e54075651b5e08c9b3b721cb7220c0883547de8",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=66",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Data-Compare",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Data-Compare-1.29.tar.gz",
+         "id" : "ae8ca2024890846bc89d4565fb21f9981b3f22db7c9d30409fc0c81a273db536",
+         "module" : "Data::Compare",
+         "observed_at" : "2026-11-06T14:21:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "53c9db3b93263c88aaa3c4072d819eaded024d7a36b38c0c37737d288d5afa8c",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=77",
+         "version" : "1.29",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

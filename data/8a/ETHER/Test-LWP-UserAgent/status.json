@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Test-LWP-UserAgent",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Test-LWP-UserAgent-0.036.tar.gz",
+         "id" : "6c55715ad3c1fffcca4990634200e27b5765e193a313fbfeb948be650d946da0",
+         "module" : "Test::LWP::UserAgent",
+         "observed_at" : "2026-11-06T14:27:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "05327530d346b80a61a6e943fbd749986bdca89211a4eb301c08c2d179314e11",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=224",
+         "version" : "0.036",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

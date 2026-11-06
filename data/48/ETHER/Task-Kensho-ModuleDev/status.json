@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-ModuleDev",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-ModuleDev-0.41.tar.gz",
+         "id" : "804617d4a9874b83e991d0bd60f02c148982b3e490a567a87437c8c3635b0315",
+         "module" : "Task::Kensho::ModuleDev",
+         "observed_at" : "2026-11-06T13:52:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "319d55edbd578457410b7f8070620e94606ce09da20bbe9fb62c5b1000520e43",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

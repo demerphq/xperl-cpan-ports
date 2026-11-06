@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Text-Autoformat",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Text-Autoformat-1.75.tar.gz",
+         "id" : "a39cd9a944eb36e040d675eab765990a8a73cd8c8477bbd8499ee9393d4d3f35",
+         "module" : "Text::Autoformat",
+         "observed_at" : "2026-11-06T14:26:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9dd4f4ce3daec4b4dbf5b59dac4568a8946aed12c28b4e5988c8e8c602c6b771",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=7",
+         "version" : "1.75",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

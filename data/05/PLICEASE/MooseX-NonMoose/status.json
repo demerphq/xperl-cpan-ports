@@ -1,0 +1,42 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "MooseX-NonMoose",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/MooseX-NonMoose-0.27.tar.gz",
+         "id" : "b1fb14094b15067e6ef7ed99a01c0a47f834847adff100d7cdd4bd1c6bdca171",
+         "module" : "MooseX::NonMoose",
+         "observed_at" : "2026-11-06T13:52:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6fc7893b47a7db812a3c1fe8bb90d9c235143c6937251e570e27bdbd0d844ece",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=177",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

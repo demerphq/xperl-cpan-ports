@@ -1,0 +1,42 @@
+{
+   "author" : "ARC",
+   "distribution" : "Ref-Util",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARC/Ref-Util-0.204.tar.gz",
+         "id" : "d3dcd4cbb6c799a05987f474a6da3e4a30b5d9913a641517b28be98b34772536",
+         "module" : "Ref::Util",
+         "observed_at" : "2026-11-06T14:44:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "415fa73dbacf44f3d5d79c14888cc994562720ab468e6f71f91cd1f769f105e1",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=485",
+         "version" : "0.204",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

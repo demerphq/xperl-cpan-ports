@@ -1,0 +1,42 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "Cwd-Guard",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Cwd-Guard-0.05.tar.gz",
+         "id" : "160931bda67aeee6ea0414c2652fd505aaff9a5c05f69783746b70ac19a09dbb",
+         "module" : "Cwd::Guard",
+         "observed_at" : "2026-11-06T14:24:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7afc7ca2b9502e440241938ad97a3e7ebd550180ebd6142e1db394186b268e77",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Text-Aligner",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Text-Aligner-0.16.tar.gz",
+         "id" : "98af18aeb09226cd67f852717529e272dafc1e29d69c35590a1415ac802f2a73",
+         "module" : "Text::Aligner",
+         "observed_at" : "2026-11-06T14:37:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5c857dbce586f57fa3d7c4ebd320023ab3b2963b2049428ae01bd3bc4f215725",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=513",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

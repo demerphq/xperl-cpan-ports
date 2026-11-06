@@ -1,0 +1,42 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "Types-URI",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/Types-URI-0.007.tar.gz",
+         "id" : "d31a4d55905ed564323bd7e6b03deb89cf46fdc31b84c843f611b0c5cba6e6e9",
+         "module" : "Types::URI",
+         "observed_at" : "2026-11-06T14:37:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4c159ff53c5c383eb8eedf93d6310b26bcc83ae0547560968e65c57926df0304",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=62",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

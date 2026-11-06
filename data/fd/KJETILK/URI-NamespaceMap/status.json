@@ -1,0 +1,42 @@
+{
+   "author" : "KJETILK",
+   "distribution" : "URI-NamespaceMap",
+   "observations" : [
+      {
+         "cpan_path" : "K/KJ/KJETILK/URI-NamespaceMap-1.12.tar.gz",
+         "id" : "99233026eb885465e23e923d5c9b237b34da3eb61380667f7caa8fa5cdbd4cec",
+         "module" : "URI::NamespaceMap",
+         "observed_at" : "2026-11-06T14:37:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b05c3fb3cbcec9db925c039a0814ac4bcc2962e6b367d32fc339d79e9510e6b8",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=70",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Types-LoadableClass",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-LoadableClass-0.016.tar.gz",
+         "id" : "91dbc7994db7b3822d328be353035d613b36a326c108623388189514baa8acf1",
+         "module" : "MooseX::Types::LoadableClass",
+         "observed_at" : "2026-11-06T14:55:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f105b69bcb44cd9856edfd62753ff58c35519ffa96e17cfc9ef30bdb98994ccc",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=54",
+         "version" : "0.016",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "GAAS",
+   "distribution" : "Digest-SHA1",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GAAS/Digest-SHA1-2.13.tar.gz",
+         "id" : "eede6b348f33d0fe0349c17d3cfebbf45a28a284070481b5e6adf6f299e03170",
+         "module" : "Digest::SHA1",
+         "observed_at" : "2026-11-06T13:53:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "68c1dac2187421f0eb7abf71452a06f190181b8fc4b28ededf5b90296fb943cc",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=17",
+         "version" : "2.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

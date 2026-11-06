@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "CPAN-Mini",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/CPAN-Mini-1.111017.tar.gz",
+         "id" : "2d6d3d7273229e574fdfa2e11d824446215f107ae52eef0429575e91915e2b7b",
+         "module" : "CPAN::Mini",
+         "observed_at" : "2026-11-06T14:20:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f204293be26ac841acc87044a188db0f591e80881316c7a288aec0eece306155",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=48",
+         "version" : "1.111017",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

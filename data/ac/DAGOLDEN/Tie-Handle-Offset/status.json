@@ -1,0 +1,42 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Tie-Handle-Offset",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Tie-Handle-Offset-0.004.tar.gz",
+         "id" : "21ab50c672d7a078be234d747abca24ac9fcf875f407d4b633d498020ee630e5",
+         "module" : "Tie::Handle::SkipHeader",
+         "observed_at" : "2026-11-06T14:15:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ee9f39055dc695aa244a252f56ffd37f8be07209b337ad387824721206d2a89e",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=24",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "URI-FromHash",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/URI-FromHash-0.05.tar.gz",
+         "id" : "c5bdb9bfeac4d8b586791b993f0c4b007e491adc2c6a5cd4e51cacf44c30c2f9",
+         "module" : "URI::FromHash",
+         "observed_at" : "2026-11-06T14:37:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a7cac5bccee9f2e2d8ad0f605400163712cd0ac64df2fb834f760fb49f2f6fd0",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=23",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

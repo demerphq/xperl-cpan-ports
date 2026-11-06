@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-WebCrawling",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-WebCrawling-0.41.tar.gz",
+         "id" : "441df4d8a5e4de4af02f4083e73a11b3932e34e3bc571a8ae0aeb615e9eca5be",
+         "module" : "Task::Kensho::WebCrawling",
+         "observed_at" : "2026-11-06T14:36:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e6dcee9f897b69c6eb64a46634ef6336a36c6818023cc51f39acb501534645ef",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

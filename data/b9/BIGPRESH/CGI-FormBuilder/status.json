@@ -1,0 +1,42 @@
+{
+   "author" : "BIGPRESH",
+   "distribution" : "CGI-FormBuilder",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BIGPRESH/CGI-FormBuilder-3.20.tar.gz",
+         "id" : "8865af83ce3967db575ded8c317996798ed4eb3102165b3faee51965c44604b1",
+         "module" : "CGI::FormBuilder",
+         "observed_at" : "2026-11-06T14:43:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0d8f760e455990f51d5b2f4b57e1b1461cf29c46a9e030898b59a5a5cd54d3d7",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=620",
+         "version" : "3.20",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

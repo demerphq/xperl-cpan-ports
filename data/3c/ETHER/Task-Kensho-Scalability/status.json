@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-Scalability",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-Scalability-0.41.tar.gz",
+         "id" : "f8221261eb5ccb4eeba470ec2ed9c0762003a75fcfa47c35c5a06970e96fdee6",
+         "module" : "Task::Kensho::Scalability",
+         "observed_at" : "2026-11-06T14:03:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a318774d06c04cc6a0980d59910dcced4cc1f74008bc909e7073965e19323911",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

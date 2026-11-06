@@ -1,0 +1,82 @@
+{
+   "author" : "PJCJ",
+   "distribution" : "Devel-Cover",
+   "observations" : [
+      {
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "20065528b5fd03567350b872b4846080c8dda94b8d2dd7ad8c5f31de63251354",
+         "module" : "Devel::Cover",
+         "observed_at" : "2026-11-06T14:04:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "status" : "failed",
+         "test_summary" : "Files=86, Tests=102, Failed 8/86 test programs. 8/102 subtests failed.",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "id" : "9187e2f8ce6494c15b097187ab0b4b7bb18fc3a415c6d05d695066e5c902ef23",
+         "module" : "Devel::Cover",
+         "observed_at" : "2026-11-06T14:10:55Z",
+         "patch_set" : "xperl-coverage-gold",
+         "patch_sha256" : [
+            "750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "status" : "installed",
+         "test_summary" : "Files=86, Tests=102",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "GWILLIAMS",
+   "distribution" : "DateTime-Format-W3CDTF",
+   "observations" : [
+      {
+         "cpan_path" : "G/GW/GWILLIAMS/DateTime-Format-W3CDTF-0.09.tar.gz",
+         "id" : "79e705b9f5aa436478513a0518a7feb3f91c5b5766b3fd38d309f159dd7e12cd",
+         "module" : "DateTime::Format::W3CDTF",
+         "observed_at" : "2026-11-06T14:36:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a63a913413784fdc15d39c7621ce86307ab5e7b3c1cf46a26fe5efc5c87972f7",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=47",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

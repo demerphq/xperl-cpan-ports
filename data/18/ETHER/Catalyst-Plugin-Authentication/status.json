@@ -1,0 +1,43 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Catalyst-Plugin-Authentication",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Catalyst-Plugin-Authentication-0.10029.tar.gz",
+         "id" : "7ed3ce796d98a0cd493e0dc7780768adbd6ee64c623b7d04667b6d36302cdc65",
+         "module" : "Catalyst::Authentication::Credential::Password",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T14:57:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1c8c715e62f34a781ac82060be4766bfc31c95bb2709e7a0efe46980f2f997b2",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=87",
+         "version" : "0.10029",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

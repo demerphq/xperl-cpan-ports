@@ -1,0 +1,42 @@
+{
+   "author" : "ARCANEZ",
+   "distribution" : "DBIx-Class-Cursor-Cached",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARCANEZ/DBIx-Class-Cursor-Cached-1.001004.tar.gz",
+         "id" : "d3992733f9501f9e904b71427d82210242fd701959cfffe4b42e3033d2f37578",
+         "module" : "DBIx::Class::Cursor::Cached",
+         "observed_at" : "2026-11-06T14:58:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "37085232a1230a5aa8754399fb59b0f8fcd5f597a1e2e348c5227461a1926225",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=16",
+         "version" : "1.001004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,82 @@
+{
+   "author" : "GUGOD",
+   "distribution" : "App-perlbrew",
+   "observations" : [
+      {
+         "cpan_path" : "G/GU/GUGOD/App-perlbrew-1.02.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "bae46decc29671d093b28d9b707939312f2bf0141b42ad47d1601b4679a24307",
+         "module" : "App::perlbrew",
+         "observed_at" : "2026-11-06T14:16:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "24064b227481737b65d95e2dab5b677b90c720f8e9a19d28b2152728617c24ed",
+         "status" : "failed",
+         "test_summary" : "Files=73, Tests=858",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GU/GUGOD/App-perlbrew-1.02.tar.gz",
+         "id" : "fde460bc247dc1e3b94fdf209354f529eb4e0588e83fa5ff5bef94c540f2b5a2",
+         "module" : "App::perlbrew",
+         "observed_at" : "2026-11-06T14:20:45Z",
+         "patch_set" : "portable-patchperl-and-hashall",
+         "patch_sha256" : [
+            "f47bfd84a8042877fe1e1dff3222730045f5afebd7130d614a65cd51c638abe4"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "24064b227481737b65d95e2dab5b677b90c720f8e9a19d28b2152728617c24ed",
+         "status" : "installed",
+         "test_summary" : "Files=73, Tests=858",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "BOBTFISH",
+   "distribution" : "Catalyst-Plugin-Session-Store-Delegate",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOBTFISH/Catalyst-Plugin-Session-Store-Delegate-0.06.tar.gz",
+         "id" : "e89d511c35fbfe196b926e9a933e42dd5ae24f04a398a87ba664950e42dd971e",
+         "module" : "Catalyst::Plugin::Session::Store::Delegate",
+         "observed_at" : "2026-11-06T14:58:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cdcbc2c1c93627fe9cbc2619a7a7b8e39db0c3cb41822c8ffba9b98cc09b9483",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=24",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

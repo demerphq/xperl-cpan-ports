@@ -1,0 +1,42 @@
+{
+   "author" : "BINGOS",
+   "distribution" : "CPAN-Perl-Releases",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BINGOS/CPAN-Perl-Releases-5.20261022.tar.gz",
+         "id" : "5c51ceafbc3f6da4b8ba46e19ea32d5ce969fe13839c90ce7a495b8d9c22c2c0",
+         "module" : "CPAN::Perl::Releases",
+         "observed_at" : "2026-11-06T14:16:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ff5640634ead57ed19ad7359f32c447e752e9f1bd05b35a901f129dd3de9e3ea",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=105",
+         "version" : "5.20261022",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

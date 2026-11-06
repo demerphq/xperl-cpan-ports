@@ -1,0 +1,42 @@
+{
+   "author" : "MSTROUT",
+   "distribution" : "App-FatPacker",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSTROUT/App-FatPacker-0.010008.tar.gz",
+         "id" : "e459e220298dc16cb8c5f46644badc16a72ecf49e25447d1fe038eba5bb0186d",
+         "module" : "App::FatPacker",
+         "observed_at" : "2026-11-06T14:11:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "129db36dc845661a582286810cfe2d5216eb2ce082bad40ae1fcdce0f45deccf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=12",
+         "version" : "0.010008",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

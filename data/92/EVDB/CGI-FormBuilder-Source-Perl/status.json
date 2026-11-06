@@ -1,0 +1,42 @@
+{
+   "author" : "EVDB",
+   "distribution" : "CGI-FormBuilder-Source-Perl",
+   "observations" : [
+      {
+         "cpan_path" : "E/EV/EVDB/CGI-FormBuilder-Source-Perl-0.01.tar.gz",
+         "id" : "c3ced307043bcd006812d199b8bcdc709cf62e54c20a8efc2702eb8737e85f15",
+         "module" : "CGI::FormBuilder::Source::Perl",
+         "observed_at" : "2026-11-06T14:43:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3d1580f4f7ae9481e0754ad0c2f629026d1b4927f5e7631207bc95cad3d8ae67",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

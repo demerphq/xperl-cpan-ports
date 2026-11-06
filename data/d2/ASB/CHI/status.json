@@ -1,0 +1,42 @@
+{
+   "author" : "ASB",
+   "distribution" : "CHI",
+   "observations" : [
+      {
+         "cpan_path" : "A/AS/ASB/CHI-0.61.tar.gz",
+         "id" : "a75e3846bdc1d54a9ee690393fd4768f3a233a147f7ed416ad0bd7b38bf57fd5",
+         "module" : "CHI",
+         "observed_at" : "2026-11-06T14:03:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "583545c9e5312bb4193ab16de9f55ff8f4b4a7ded128cee8dd2cb021d4678b5b",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=1787",
+         "version" : "0.61",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Template-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Template-Tiny-1.16.tar.gz",
+         "id" : "5197eee5426ed3497b690b14be186e525b6604da91d8ceb0897ea35dc2716ba2",
+         "module" : "Template::Tiny",
+         "observed_at" : "2026-11-06T14:44:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cea4735220af81c72943dea70465a83f61beb499a2a2ba67ea55762e1cd8060e",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=127",
+         "version" : "1.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

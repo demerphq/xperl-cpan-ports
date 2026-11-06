@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Module-Faker",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Module-Faker-0.027.tar.gz",
+         "id" : "5ef8552d0d172ccc91823f26831b32a2272db6841f34e26d7e7d352f5fec12bb",
+         "module" : "Module::Faker::Dist",
+         "observed_at" : "2026-11-06T14:26:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bba533d06c197608087f03d0b1e7e327d74165e7b49a46a372a7af2c1f1883dc",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=34",
+         "version" : "0.027",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

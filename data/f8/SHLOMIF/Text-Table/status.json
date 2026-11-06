@@ -1,0 +1,42 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "Text-Table",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Text-Table-1.135.tar.gz",
+         "id" : "12a7ffb3b0f73819acd215e92ceec80af4e5e9f4b0ce2361040a82d48bdc4923",
+         "module" : "Text::Table",
+         "observed_at" : "2026-11-06T14:37:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fca3c16e83127f7c44dde3d3f7e3c73ea50d109a1054445de8082fea794ca5d2",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=175",
+         "version" : "1.135",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

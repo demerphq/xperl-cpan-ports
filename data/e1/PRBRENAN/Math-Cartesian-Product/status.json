@@ -1,0 +1,42 @@
+{
+   "author" : "PRBRENAN",
+   "distribution" : "Math-Cartesian-Product",
+   "observations" : [
+      {
+         "cpan_path" : "P/PR/PRBRENAN/Math-Cartesian-Product-1.009.tar.gz",
+         "id" : "80406e4a0e61523f0906de6258c4173ba7ec477a16819375387c9fc5c5c4bae8",
+         "module" : "Math::Cartesian::Product",
+         "observed_at" : "2026-11-06T14:37:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d0bf24e56aaebe47c9db6d09c257bc3bf5af2d0d69f060fe33c180a9c7199f32",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=88",
+         "version" : "1.009",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

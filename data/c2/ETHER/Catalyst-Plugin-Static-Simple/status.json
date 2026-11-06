@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Catalyst-Plugin-Static-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Catalyst-Plugin-Static-Simple-0.38.tar.gz",
+         "id" : "aad7b097bf7b397f5aa2fed3529bb70c034c1546062763fdf355634f57b098ca",
+         "module" : "Catalyst::Plugin::Static::Simple",
+         "observed_at" : "2026-11-06T14:57:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "04eb67ebdc787327f77ef2c73976abecf93f9aefca0a718522fe98b8ca5238b0",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=72",
+         "version" : "0.38",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

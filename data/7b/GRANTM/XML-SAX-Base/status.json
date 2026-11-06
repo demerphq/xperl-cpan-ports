@@ -1,0 +1,42 @@
+{
+   "author" : "GRANTM",
+   "distribution" : "XML-SAX-Base",
+   "observations" : [
+      {
+         "cpan_path" : "G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz",
+         "id" : "35de2b70b7ffd6860a8e69f34a222a1faef91c7238f249ae9b2e7f4b17d649b2",
+         "module" : "XML::SAX::Base",
+         "observed_at" : "2026-11-06T14:37:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "66cb355ba4ef47c10ca738bd35999723644386ac853abbeb5132841f5e8a2ad0",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=137",
+         "version" : "1.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

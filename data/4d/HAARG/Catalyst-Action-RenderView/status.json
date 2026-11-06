@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Catalyst-Action-RenderView",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Catalyst-Action-RenderView-0.17.tar.gz",
+         "id" : "b69d0e59db55a1f5cef586c9caab5c3e6f9e0af5e3df8725cf256d5afad27403",
+         "module" : "Catalyst::Action::RenderView",
+         "observed_at" : "2026-11-06T14:57:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "71f6d5fd9f358611d1457c0c6b3fbe18224a4133e395e58d2a5ae4232f2761a5",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=24",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

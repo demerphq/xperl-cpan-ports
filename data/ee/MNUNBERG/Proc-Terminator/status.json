@@ -1,0 +1,42 @@
+{
+   "author" : "MNUNBERG",
+   "distribution" : "Proc-Terminator",
+   "observations" : [
+      {
+         "cpan_path" : "M/MN/MNUNBERG/Proc-Terminator-0.05.tar.gz",
+         "id" : "2d10cf3bb227a5a813950fbc8f76d9f1a478dffacf58f5c9c7aea8edf0329ae1",
+         "module" : "Proc::Terminator",
+         "observed_at" : "2026-11-06T14:26:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fd3c5773f1504cec2dc1e8f12638c87c9bcdb5d91231c83f8a9805cb231650fb",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=8",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

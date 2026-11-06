@@ -1,0 +1,42 @@
+{
+   "author" : "RWSTAUNER",
+   "distribution" : "File-Spec-Native",
+   "observations" : [
+      {
+         "cpan_path" : "R/RW/RWSTAUNER/File-Spec-Native-1.004.tar.gz",
+         "id" : "f226456eecdbc446ce09a048fc4ac85b5d67d747fc5c71863bee334a11418590",
+         "module" : "File::Spec::Native",
+         "observed_at" : "2026-11-06T14:24:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "41371dde1ee3b10142286d5e3fd67c2be3d6cdfadc297fc0666d227e8974ec3e",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=9",
+         "version" : "1.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

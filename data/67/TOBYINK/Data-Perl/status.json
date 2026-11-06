@@ -1,0 +1,42 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "Data-Perl",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/Data-Perl-0.002011.tar.gz",
+         "id" : "983b74aea64acd4fa3a4f976bf8e193814db89e62819a6c206332f139ecba814",
+         "module" : "Data::Perl",
+         "observed_at" : "2026-11-06T13:49:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8d34dbe314cfa2d99bd9aae546bbde94c38bb05b74b07c89bde1673a6f6c55f4",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=194",
+         "version" : "0.002011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "DCONWAY",
+   "distribution" : "IO-Prompt",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCONWAY/IO-Prompt-0.997004.tar.gz",
+         "id" : "1026cdf2ee9937f2aaa7f414d848599997986dccaeae9ce6cfa06b91f6bba91d",
+         "module" : "IO::Prompt",
+         "observed_at" : "2026-11-06T14:26:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f17bb305ee6ac8b5b203e6d826eb940c4f3f6d6f4bfe719c3b3a225f46f58615",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=3",
+         "version" : "0.997004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

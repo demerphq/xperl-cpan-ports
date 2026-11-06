@@ -1,0 +1,42 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "Types-UUID",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/Types-UUID-0.004.tar.gz",
+         "id" : "a2ae77f8abb55b3a7e03acace0c3da05913712ca0323bbc669003dc829ce4a68",
+         "module" : "Types::UUID",
+         "observed_at" : "2026-11-06T14:37:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7937e4b74c3137dc9df0e9d691a5eae704164eb6e6088c7ba8e2efcbc0c72237",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=16",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

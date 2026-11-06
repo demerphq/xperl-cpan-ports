@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Catalyst-Plugin-Session",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Catalyst-Plugin-Session-0.44.tar.gz",
+         "id" : "386577e47d87481512a0480bd0a57a20951ec284d9c5e64d8a0424c78e4830ee",
+         "module" : "Catalyst::Plugin::Session",
+         "observed_at" : "2026-11-06T14:58:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "092c8d80e0350f925dc765f272c0ee28f992300b14f5b8698412204e6c857c42",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=21",
+         "version" : "0.44",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

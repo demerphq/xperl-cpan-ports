@@ -1,0 +1,42 @@
+{
+   "author" : "ABRAXXA",
+   "distribution" : "Catalyst-Authentication-Credential-HTTP",
+   "observations" : [
+      {
+         "cpan_path" : "A/AB/ABRAXXA/Catalyst-Authentication-Credential-HTTP-1.019.tar.gz",
+         "id" : "afd251e2d6e00898674b1ac46508a212583e308e325eb6fa88601afc29b0bbbf",
+         "module" : "Catalyst::Authentication::Credential::HTTP",
+         "observed_at" : "2026-11-06T14:57:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ec81e96c2a3f6586ea41d088ea8e801b1f34001ab19cc9a65def8a38c39a5bda",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=39",
+         "version" : "1.019",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

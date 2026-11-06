@@ -1,0 +1,42 @@
+{
+   "author" : "ANDYA",
+   "distribution" : "IPC-ShareLite",
+   "observations" : [
+      {
+         "cpan_path" : "A/AN/ANDYA/IPC-ShareLite-0.17.tar.gz",
+         "id" : "e4d1abbef9ddd425cff758426c805cfcdfb808d8d32550edfa048edcc7d14ef5",
+         "module" : "IPC::ShareLite",
+         "observed_at" : "2026-11-06T13:56:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "14d406b91da96d6521d0d1a82d22a306274765226b86b0a56e7ffddcf96ae7bf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=19",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

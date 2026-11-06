@@ -1,0 +1,42 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Test-Roo",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-Roo-1.004.tar.gz",
+         "id" : "4e80062b226ea9a9d1ce91be2f1c2b7cf363646eb40e9cf89eddd1605f6f7a91",
+         "module" : "Test::Roo",
+         "observed_at" : "2026-11-06T14:37:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "21129a3cecb507b00948e16cf15fcde5dc4db235aba84afd7f47d22013a9ded6",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=21",
+         "version" : "1.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "CPAN-02Packages-Search",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/CPAN-02Packages-Search-v1.0.0.tar.gz",
+         "id" : "f674fbb68e293cc862998ccf6e40e5977c741101b4a2495914babfdc2b6a1514",
+         "module" : "CPAN::02Packages::Search",
+         "observed_at" : "2026-11-06T14:15:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c953c6c919b53380f963fd774c15b798856b54b052a3bf31091f035611d0ce1b",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

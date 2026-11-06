@@ -1,0 +1,42 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Pod-Readme",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Pod-Readme-v1.2.3.tar.gz",
+         "id" : "66d40e59af8cd1869e09c081f3794f7e7605798de57618e0d4a06c5da3a0c5c1",
+         "module" : "Pod::Readme",
+         "observed_at" : "2026-11-06T13:52:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d379f98976ebe5225d768ccb3a760e9b5673eb3f3d8ae8f57430ed9513f22857",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=114",
+         "version" : "v1.2.3",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

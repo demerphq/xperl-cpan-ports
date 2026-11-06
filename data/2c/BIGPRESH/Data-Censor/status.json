@@ -1,0 +1,42 @@
+{
+   "author" : "BIGPRESH",
+   "distribution" : "Data-Censor",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BIGPRESH/Data-Censor-0.04.tar.gz",
+         "id" : "c96867059d8270799441e0b65127f0bb420e262c15af56c7b38f73772fd3c1d1",
+         "module" : "Data::Censor",
+         "observed_at" : "2026-11-06T14:44:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b713694b004362ba799baca9ee96a5d1c45a5e297711e3312f741ef511e2cc83",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=15",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

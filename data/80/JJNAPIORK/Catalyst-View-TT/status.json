@@ -1,0 +1,42 @@
+{
+   "author" : "JJNAPIORK",
+   "distribution" : "Catalyst-View-TT",
+   "observations" : [
+      {
+         "cpan_path" : "J/JJ/JJNAPIORK/Catalyst-View-TT-0.46.tar.gz",
+         "id" : "8c5a8c175e1ba86e0e161f28a12eae39c8e5589a38f4fd7fda0f1fc3e3015f3e",
+         "module" : "Catalyst::View::TT",
+         "observed_at" : "2026-11-06T14:58:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "eda4457dbbf81a4241b735a5d469d9727d8a3091d24af1ae3c9a20f024de51cc",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=61",
+         "version" : "0.46",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

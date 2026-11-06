@@ -1,0 +1,42 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "Darwin-InitObjC",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/Darwin-InitObjC-v1.0.0.tar.gz",
+         "id" : "97113690ae76cc0b30ce9a086bbcc7deac40921284c8e6d08d6321b583f18ec3",
+         "module" : "Darwin::InitObjC",
+         "observed_at" : "2026-11-06T14:16:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c24d311a16e43418403a4533a19775663f75143bbefea46056c2b26c0023f088",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

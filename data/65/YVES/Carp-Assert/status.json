@@ -1,0 +1,42 @@
+{
+   "author" : "YVES",
+   "distribution" : "Carp-Assert",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Carp-Assert-0.22.tar.gz",
+         "id" : "33efab3cb61b0f57abccc93ff33663bdcf02633e755930c35bba2b16a9240431",
+         "module" : "Carp::Assert",
+         "observed_at" : "2026-11-06T13:58:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "807ea97c6bed76ac2e4969efba7dae48fefeb9f28797f112671b3ac8a49355f7",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=44",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

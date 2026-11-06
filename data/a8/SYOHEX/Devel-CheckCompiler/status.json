@@ -1,0 +1,42 @@
+{
+   "author" : "SYOHEX",
+   "distribution" : "Devel-CheckCompiler",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz",
+         "id" : "f02a45dcf36613c7dc712e3a410985c5dc602a28e0dbfafe724d25a8d1450b18",
+         "module" : "Devel::CheckCompiler",
+         "observed_at" : "2026-11-06T14:55:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "768b7697b4b8d4d372c7507b65e9dd26aa4223f7100183bbb4d3af46d43869b5",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=10",
+         "version" : "0.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

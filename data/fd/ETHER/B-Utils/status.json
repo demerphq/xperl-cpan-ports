@@ -1,0 +1,41 @@
+{
+   "author" : "ETHER",
+   "distribution" : "B-Utils",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/B-Utils-0.28.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "bf601b102df15416bc88256bb0a955701ed2c4ccfe21e0a5a28aad92ddc19948",
+         "module" : "B::Utils",
+         "observed_at" : "2026-11-06T14:58:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
+         "status" : "failed",
+         "test_summary" : "Files=22, Tests=211, Failed 1/22 test programs. 1/211 subtests failed.",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

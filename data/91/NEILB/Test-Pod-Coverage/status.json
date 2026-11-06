@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Test-Pod-Coverage",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Test-Pod-Coverage-1.10.tar.gz",
+         "id" : "a58d01bffd50d2ed9102cc8fc789f4bc888836f18fa64c250358a90851ed1361",
+         "module" : "Test::Pod::Coverage",
+         "observed_at" : "2026-11-06T14:11:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "48c9cca9f7d99eee741176445b431adf09c029e1aa57c4703c9f46f7601d40d4",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=23",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

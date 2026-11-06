@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Win32-ShellQuote",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Win32-ShellQuote-0.003001.tar.gz",
+         "id" : "5814a23f9428eaa95650bebdb2a7e48bc799f1e89440623e1e56a8d984715426",
+         "module" : "Win32::ShellQuote",
+         "observed_at" : "2026-11-06T14:16:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "aa74b0e3dc2d41cd63f62f853e521ffd76b8d823479a2619e22edb4049b4c0dc",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=197",
+         "version" : "0.003001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

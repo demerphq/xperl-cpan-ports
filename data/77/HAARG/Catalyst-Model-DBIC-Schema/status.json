@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Catalyst-Model-DBIC-Schema",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Catalyst-Model-DBIC-Schema-0.66.tar.gz",
+         "id" : "81143633e96a13fe1fc794ed13dadd87ce438770c26c87af5fdddd726deee8f7",
+         "module" : "Catalyst::Model::DBIC::Schema",
+         "observed_at" : "2026-11-06T14:58:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1924f4c00e8f0ff1c5d1afa16efe4f856f1c5e74fe556ec2c5f8f5bf63ad0348",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=70",
+         "version" : "0.66",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

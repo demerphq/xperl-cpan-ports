@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "B-Utils",
+  "releases": [
+    {
+      "version": "0.28",
+      "cpan_path": "E/ET/ETHER/B-Utils-0.28.tar.gz",
+      "source_sha256": "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
+      "patch_sets": [
+        {
+          "id": "xperl-cop-line",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-cop-line.patch",
+              "sha256": "0d545a49e8e00d16e53b89aee89d718f9f94392b703507341182c69c78600d76"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

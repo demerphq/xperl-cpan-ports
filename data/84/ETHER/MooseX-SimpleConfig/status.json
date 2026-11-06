@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-SimpleConfig",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-SimpleConfig-0.11.tar.gz",
+         "id" : "f675dc99eddb7f46f296922d3b76bc58a527f06621896734d2febbcf18f20711",
+         "module" : "MooseX::SimpleConfig",
+         "observed_at" : "2026-11-06T13:52:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "42c83f4b92ef2785fa8dbcfae69d5d28d5be10141d171472ccf37288682c79ad",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

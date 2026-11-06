@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Pod-Eventual",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Pod-Eventual-0.094003.tar.gz",
+         "id" : "22b95bed78efc021af5ab359769946083a00852d9183a9910c9824c215acd952",
+         "module" : "Pod::Eventual::Simple",
+         "observed_at" : "2026-11-06T14:58:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7f060cc34d11656ce069db061e3d60edc0cabc8f89a4a2dc7eaae95dac856d2d",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=5",
+         "version" : "0.094003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

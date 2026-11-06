@@ -1,0 +1,42 @@
+{
+   "author" : "BOBTFISH",
+   "distribution" : "Catalyst-Model-Adaptor",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOBTFISH/Catalyst-Model-Adaptor-0.10.tar.gz",
+         "id" : "66679e1c2b43704e06399a7bd2a276a7cd40781c53598cc2c01342c228211bfb",
+         "module" : "Catalyst::Model::Adaptor",
+         "observed_at" : "2026-11-06T14:58:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9312eb4c022ae2990d394c4f4902683b853d5456a40004dbd1829640f913cbba",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=4",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

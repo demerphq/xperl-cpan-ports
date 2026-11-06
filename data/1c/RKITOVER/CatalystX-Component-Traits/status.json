@@ -1,0 +1,42 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "CatalystX-Component-Traits",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/CatalystX-Component-Traits-0.19.tar.gz",
+         "id" : "5defea0cffdf0203dca64ec4ab8670080924e8fa91e0a97eca1cd2891920ec5c",
+         "module" : "CatalystX::Component::Traits",
+         "observed_at" : "2026-11-06T14:58:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "084944e9c9d0dfb10d4ab3453e1c125fdee39129b46d17c0234c3c5351640447",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=27",
+         "version" : "0.19",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "EHUELS",
+   "distribution" : "Authen-SASL",
+   "observations" : [
+      {
+         "cpan_path" : "E/EH/EHUELS/Authen-SASL-2.2100.tar.gz",
+         "id" : "b64591b26cbd0c7ec82cc3a63a7e0a561aef198f1dc8778912f6dfbe70fe819d",
+         "module" : "Authen::SASL",
+         "observed_at" : "2026-11-06T14:58:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4f0f100aeed34b52977a94b7df973e7f0b8f92d167b09f2b249bab81e8590e57",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=328",
+         "version" : "2.2100",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

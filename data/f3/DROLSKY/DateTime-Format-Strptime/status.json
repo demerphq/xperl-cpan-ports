@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "DateTime-Format-Strptime",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-Format-Strptime-1.80.tar.gz",
+         "id" : "08fa6efbde93f839f335da640362baec4d910872357fbe06adfcf89122b10924",
+         "module" : "DateTime::Format::Strptime",
+         "observed_at" : "2026-11-06T14:55:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "efe5e2be70425efc123a4e57f4b96b2d23beb03200c8326495b5b433b6b77158",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=143",
+         "version" : "1.80",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

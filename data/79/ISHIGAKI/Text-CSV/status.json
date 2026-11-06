@@ -1,0 +1,42 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Text-CSV",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Text-CSV-2.06.tar.gz",
+         "id" : "9d5395a1de4a64cceb57e9cfeb1943debfb0a674c8818cfba2945d4c35b87c6b",
+         "module" : "Text::CSV",
+         "observed_at" : "2026-11-06T14:37:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "dfcaec925a788b0ba41e51bc6d16e21b0e98b4c7af9b79395090add75f5e506f",
+         "status" : "installed",
+         "test_summary" : "Files=40, Tests=52725",
+         "version" : "2.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

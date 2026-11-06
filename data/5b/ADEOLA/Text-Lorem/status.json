@@ -1,0 +1,42 @@
+{
+   "author" : "ADEOLA",
+   "distribution" : "Text-Lorem",
+   "observations" : [
+      {
+         "cpan_path" : "A/AD/ADEOLA/Text-Lorem-0.34.tar.gz",
+         "id" : "9645fab17559ffaa19f74e185b59ac4ee26292d7cb70248aff5317050d0eaf86",
+         "module" : "Text::Lorem",
+         "observed_at" : "2026-11-06T14:26:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0ce6a3c19917b2323424a1aa742d988b063c39440427a3101a4cec6dbd847157",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=23",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

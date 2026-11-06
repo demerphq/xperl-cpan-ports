@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Object-Signature",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Object-Signature-1.08.tar.gz",
+         "id" : "fe6d12ec417974966a1d154a67347fe9656bd1c8e0253424b4136e6eaaf37c11",
+         "module" : "Object::Signature",
+         "observed_at" : "2026-11-06T14:58:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "842153c94da93e2b9cb3b54dee572b5064bbf499a36a73c38a23799a0203698a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=20",
+         "version" : "1.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

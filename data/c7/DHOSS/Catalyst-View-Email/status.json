@@ -1,0 +1,42 @@
+{
+   "author" : "DHOSS",
+   "distribution" : "Catalyst-View-Email",
+   "observations" : [
+      {
+         "cpan_path" : "D/DH/DHOSS/Catalyst-View-Email-0.36.tar.gz",
+         "id" : "6823f881fdb6eff39416a87b1424fa1c788f1180da49d67a96e62cb37a2eda53",
+         "module" : "Catalyst::View::Email",
+         "observed_at" : "2026-11-06T14:58:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "837211a96098cec16698ff09b135b8e30d2664db2e1b1dd205f5a07d13a8bd3c",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=6",
+         "version" : "0.36",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Catalyst-Controller-ActionRole",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Catalyst-Controller-ActionRole-0.17.tar.gz",
+         "id" : "21e10e7328edd2a1a77dd35f89223be677e809fcbfc2676c6ab1ae4c891a0df4",
+         "module" : "Catalyst::Controller::ActionRole",
+         "observed_at" : "2026-11-06T14:56:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "21f100392d5ff80d477a391786be28e26ab4ffa0ab3a2f6b74eee3e9803182b0",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=44",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

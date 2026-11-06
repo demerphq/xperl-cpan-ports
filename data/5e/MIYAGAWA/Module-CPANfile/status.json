@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Module-CPANfile",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Module-CPANfile-1.1004.tar.gz",
+         "id" : "92beeac5ce5e0cdd132554272e8883bc9215d477aa7922ddb005f19bc7663a18",
+         "module" : "Module::CPANfile",
+         "observed_at" : "2026-11-06T14:16:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "88efbe2e9a642dceaa186430fedfcf999aaf0e06f6cced28a714b8e56b514921",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=41",
+         "version" : "1.1004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "CHANSEN",
+   "distribution" : "Authen-Simple-Passwd",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHANSEN/Authen-Simple-Passwd-0.6.tar.gz",
+         "id" : "f85bad87bde3f3184a3c5a5fcca3d9b8d707a02b2989b79e0c521f716176e280",
+         "module" : "Authen::Simple::Passwd",
+         "observed_at" : "2026-11-06T14:21:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cf55bc36259edf0fd6af9ad2bac81b31dc5b56a162c660590ecb969c7c1674b2",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=9",
+         "version" : "0.6",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

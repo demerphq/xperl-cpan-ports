@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "MooseX-Configuration",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/MooseX-Configuration-0.02.tar.gz",
+         "id" : "5c4230f541ce6b34109f6ca22866f688e3b6cf626eace7362643ec286d76701c",
+         "module" : "MooseX::Configuration",
+         "observed_at" : "2026-11-06T14:26:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "16a78ddcf36a79623b91be75507b760867ddf2ab6a108b44d39a01614422211f",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=5",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

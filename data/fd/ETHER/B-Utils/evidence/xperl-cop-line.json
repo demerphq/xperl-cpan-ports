@@ -1,0 +1,16 @@
+{
+  "source_sha256": "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
+  "patch_set_id": "xperl-cop-line",
+  "patch_sha256": "0d545a49e8e00d16e53b89aee89d718f9f94392b703507341182c69c78600d76",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The optree walk finds the callback's COP at its opening line under XPerl, while this test expects the closing line used by ordinary Perl. The walk itself finds the remaining expected lines.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 22 test files, 211 tests"
+    }
+  ]
+}

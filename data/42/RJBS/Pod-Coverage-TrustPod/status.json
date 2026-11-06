@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Pod-Coverage-TrustPod",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Pod-Coverage-TrustPod-0.100006.tar.gz",
+         "id" : "d621ddabac84c399217e45c44e4eb9b143f00587cfc91f3c7caf4a5a57012df2",
+         "module" : "Pod::Coverage::TrustPod",
+         "observed_at" : "2026-11-06T14:58:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "358adc2504f039eb69098aa99bdde6ae9dc935364a8e144f6405e8293b3a7ca3",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=12",
+         "version" : "0.100006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

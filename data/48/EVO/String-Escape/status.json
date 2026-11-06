@@ -1,0 +1,42 @@
+{
+   "author" : "EVO",
+   "distribution" : "String-Escape",
+   "observations" : [
+      {
+         "cpan_path" : "E/EV/EVO/String-Escape-2010.002.tar.gz",
+         "id" : "373a7f0fb35d12cb9b0014b00dadebfed011332e88a245860bb15dcbd5123ada",
+         "module" : "String::Escape",
+         "observed_at" : "2026-11-06T14:57:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fd645f8b336224d20a85ae7fb1a384576eac329f7adc3923c3241e828e3b9a8a",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=47",
+         "version" : "2010.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

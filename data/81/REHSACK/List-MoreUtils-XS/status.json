@@ -35,6 +35,92 @@
          "test_summary" : "Files=61, Tests=4519, Failed 1/61 test programs. 1/4519 subtests failed.",
          "version" : "0.430",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "install"
+         },
+         "id" : "478ff84a29e0eb12ab6488a1d3c085b978999e14054dba7e7fa8c222ef86e9b3",
+         "module" : "List::MoreUtils::XS",
+         "observed_at" : "2026-11-06T13:48:02Z",
+         "patch_set" : "deterministic-binsert-exception-test",
+         "patch_sha256" : [
+            "74ea752f86e2bf3e83d0313636b88b74aa48e6514b7c388d5da5685d45691cb1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+         "status" : "failed",
+         "test_summary" : "Files=61, Tests=4519",
+         "version" : "0.430",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz",
+         "id" : "fc890b688963cc2c94c627028cdca04f84cbe7d63d78317751055a7a6809d396",
+         "module" : "List::MoreUtils::XS",
+         "observed_at" : "2026-11-06T13:48:27Z",
+         "patch_set" : "deterministic-binsert-exception-test",
+         "patch_sha256" : [
+            "74ea752f86e2bf3e83d0313636b88b74aa48e6514b7c388d5da5685d45691cb1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+         "status" : "installed",
+         "test_summary" : "Files=61, Tests=4519",
+         "version" : "0.430",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

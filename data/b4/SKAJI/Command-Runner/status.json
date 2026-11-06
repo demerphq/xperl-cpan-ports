@@ -1,0 +1,42 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "Command-Runner",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/Command-Runner-v1.0.0.tar.gz",
+         "id" : "31c76b6b2cfde93af07cd6e3164da5d661cbb05cc369f282b5afad83aeb41856",
+         "module" : "Command::Runner",
+         "observed_at" : "2026-11-06T14:16:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "80061e9d5e9d1d7cd61cc47bd0944e69ed8e5bb68e16e159d5caf902e11ebc38",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=17",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "KAORU",
+   "distribution" : "Test-Kit",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAORU/Test-Kit-2.16.tar.gz",
+         "id" : "bbe1a021fa7c67e24d4d6393107c479b2d49832436d58805d0704aed4d5db139",
+         "module" : "Test::Kit",
+         "observed_at" : "2026-11-06T13:52:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "99bfd5e962ac309b0e6d74ffc2e332bafd3a7b5deed6ce209c6f7309ec6f6bb4",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=65",
+         "version" : "2.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ARISTOTLE",
+   "distribution" : "Proc-Fork",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARISTOTLE/Proc-Fork-0.808.tar.gz",
+         "id" : "ed97cc6d8ac2ad701930b6fefb76db8095b0c13c5900bc71eede6d5f6548b22b",
+         "module" : "Proc::Fork",
+         "observed_at" : "2026-11-06T14:26:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3f68c1a2978f05df229a608e95e91f4aaf834e840d588215644d8f9669ff99ce",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=14",
+         "version" : "0.808",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

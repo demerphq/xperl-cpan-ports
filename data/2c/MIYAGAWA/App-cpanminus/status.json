@@ -1,0 +1,42 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "App-cpanminus",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz",
+         "id" : "64392871f4d5615b080f2136dfc95711cd0fe6110a464ee277c3f3b4a041edae",
+         "module" : "App::cpanminus",
+         "observed_at" : "2026-11-06T14:11:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "1.7049",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

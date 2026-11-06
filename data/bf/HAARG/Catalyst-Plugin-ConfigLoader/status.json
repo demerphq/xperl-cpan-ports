@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Catalyst-Plugin-ConfigLoader",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Catalyst-Plugin-ConfigLoader-0.35.tar.gz",
+         "id" : "fceb30c5c666f3e5f8a02dd7503dc514d9f42fdd6c96905dac265d6ca5cf6475",
+         "module" : "Catalyst::Plugin::ConfigLoader",
+         "observed_at" : "2026-11-06T14:57:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9e2a698a6f2d046e0dc5e57512929cd423c807d4a36ba3f29e9e5adcd71a1971",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=52",
+         "version" : "0.35",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "local-lib",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/local-lib-2.000029.tar.gz",
+         "id" : "568e1f8b2e180c2ee053c5899e2c9828d780cc669db593a4b13cc7603b26949a",
+         "module" : "local::lib",
+         "observed_at" : "2026-11-06T14:16:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8df87a10c14c8e909c5b47c5701e4b8187d519e5251e87c80709b02bb33efdd7",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=149",
+         "version" : "2.000029",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

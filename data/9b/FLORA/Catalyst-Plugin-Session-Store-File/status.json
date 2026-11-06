@@ -1,0 +1,42 @@
+{
+   "author" : "FLORA",
+   "distribution" : "Catalyst-Plugin-Session-Store-File",
+   "observations" : [
+      {
+         "cpan_path" : "F/FL/FLORA/Catalyst-Plugin-Session-Store-File-0.18.tar.gz",
+         "id" : "bce47ff8b4b2fd8978f185f84c4f4db47235dfde7eb095fcc8835847d4fc3fbb",
+         "module" : "Catalyst::Plugin::Session::Store::File",
+         "observed_at" : "2026-11-06T14:58:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "54738e3ce76f8be8b66947092d28973c73d79d1ee19b5d92b057552f8ff09b4f",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=20",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

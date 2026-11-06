@@ -1,0 +1,42 @@
+{
+   "author" : "MATEU",
+   "distribution" : "MooX-Types-MooseLike-Numeric",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATEU/MooX-Types-MooseLike-Numeric-1.03.tar.gz",
+         "id" : "eea6f9f26d5637a861cc52415d605e89101444e394cc2a4d5d28a5e53067fb0c",
+         "module" : "MooX::Types::MooseLike::Numeric",
+         "observed_at" : "2026-11-06T14:03:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "16adeb617b963d010179922c2e4e8762df77c75232e17320b459868c4970c44b",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=43",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "PERIGRIN",
+   "distribution" : "XML-NamespaceSupport",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz",
+         "id" : "cbb7247213cf4a4175744013ced042546dc7b6349c2b9eab6a59a7c8f18b0f6b",
+         "module" : "XML::NamespaceSupport",
+         "observed_at" : "2026-11-06T14:37:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "47e995859f8dd0413aa3f22d350c4a62da652e854267aa0586ae544ae2bae5ef",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=49",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

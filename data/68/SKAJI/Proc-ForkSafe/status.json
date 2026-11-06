@@ -1,0 +1,42 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "Proc-ForkSafe",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/Proc-ForkSafe-v1.0.0.tar.gz",
+         "id" : "5f00282b1016fd498e9a456366daa4eea638d98777bb039294df178786df5794",
+         "module" : "Proc::ForkSafe",
+         "observed_at" : "2026-11-06T14:16:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "85fcd3b335d6b8cda602d32b4f705617fe9f193e23c63858a9c019d3a4c09856",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

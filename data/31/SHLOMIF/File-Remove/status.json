@@ -1,0 +1,42 @@
+{
+   "author" : "SHLOMIF",
+   "distribution" : "File-Remove",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHLOMIF/File-Remove-1.61.tar.gz",
+         "id" : "9449eb17f10a0e6ebae90e80cd84eafca561def08d31a9282130c4fd7b0f2223",
+         "module" : "File::Remove",
+         "observed_at" : "2026-11-06T14:57:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fd857f585908fc503461b9e48b3c8594e6535766bc14beb17c90ba58d5dc4975",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=222",
+         "version" : "1.61",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

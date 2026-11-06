@@ -1,0 +1,42 @@
+{
+   "author" : "RWSTAUNER",
+   "distribution" : "Dist-Metadata",
+   "observations" : [
+      {
+         "cpan_path" : "R/RW/RWSTAUNER/Dist-Metadata-0.927.tar.gz",
+         "id" : "830d9020e71bcf662b495e4f3e2991cf0e63079786b61ab82c6ff835ec639c2f",
+         "module" : "Dist::Metadata",
+         "observed_at" : "2026-11-06T14:24:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ad24bc60cc6743148b6935e9ec55737d9380374c26571946ab9c3123964cd0be",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=366",
+         "version" : "0.927",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

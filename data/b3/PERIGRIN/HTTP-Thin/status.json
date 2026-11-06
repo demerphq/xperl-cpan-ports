@@ -1,0 +1,42 @@
+{
+   "author" : "PERIGRIN",
+   "distribution" : "HTTP-Thin",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERIGRIN/HTTP-Thin-0.006.tar.gz",
+         "id" : "dec7e889f2156f35617b35f857bd4f38b037ff28d859ab697cbf84a5b67e8d44",
+         "module" : "HTTP::Thin",
+         "observed_at" : "2026-11-06T14:36:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c4a78588c194603222b0a6b426e61692189def0ce4a0581791873b8720f79e9e",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
