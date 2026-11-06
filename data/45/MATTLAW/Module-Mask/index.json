@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Module-Mask",
+  "releases": [
+    {
+      "version": "0.06",
+      "cpan_path": "M/MA/MATTLAW/Module-Mask-0.06.tar.gz",
+      "source_sha256": "2d73f81ff21c9fa28102791e546ff257164b3025f7832544c8223fb87c1e7e77",
+      "patch_sets": [
+        {
+          "id": "check-original-mask-diagnostic",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/check-original-mask-diagnostic.patch",
+              "sha256": "83e3d683a322dfa85ea09af9f3582edb6545f6b562c9174a508acd9fc0ab9a50"
+            }
+          ],
+          "recipes": ["exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}

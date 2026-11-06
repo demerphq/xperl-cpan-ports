@@ -1,0 +1,14 @@
+--- a/t/01..mask.t
++++ b/t/01..mask.t
+@@ -80 +80,10 @@
+-    is($@, "Dummy.pm masked\n", "overriding message() works as advertised");
++    if (${^XPERL_VERSION}) {
++        my $error = $@;
++        require XPerl::DiagGroup;
++        ok($error->has_diagnostic('ERROR_USER_TEXT',
++            text => "Dummy.pm masked\n"),
++            "overriding message() works as advertised");
++    }
++    else {
++        is($@, "Dummy.pm masked\n", "overriding message() works as advertised");
++    }

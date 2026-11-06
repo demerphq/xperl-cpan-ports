@@ -1,0 +1,21 @@
+{
+  "source_sha256": "2d73f81ff21c9fa28102791e546ff257164b3025f7832544c8223fb87c1e7e77",
+  "patch_set_id": "check-original-mask-diagnostic",
+  "patch_sha256": "83e3d683a322dfa85ea09af9f3582edb6545f6b562c9174a508acd9fc0ab9a50",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The final test compares all rendered exception text. XPerl retains the original message but adds @INC hook propagation context, so the exact string comparison fails.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 4 test files, 30 tests"
+    },
+    {
+      "command": "PERL5LIB=blib/lib:blib/arch:<dependency-library> perl -MTest::Harness -e 'runtests(@ARGV)' t/*.t",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 4 test files, 30 tests"
+    }
+  ]
+}
