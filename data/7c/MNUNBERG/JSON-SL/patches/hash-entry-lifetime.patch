@@ -1,0 +1,32 @@
+--- a/SL.xs	2017-11-10 14:49:21
++++ b/SL.xs	2026-11-06 18:38:54
+@@ -1299,15 +1299,27 @@
+         SV *ksv = newSV(0);
+         HE *tmphe;
+ 
++        /* Insert every key before retaining any HE pointer: on perls with
++         * compact hash storage (e.g. XPerl) an insert may relocate the
++         * entries already stored, invalidating earlier HE pointers. No keys
++         * are added after this, so the HEs fetched below remain valid. */
+ #define X(kname) \
+         sv_setpvs(ksv, #kname); \
+-        tmphe = hv_store_ent(tuba->paramhv, ksv, &PL_sv_undef, 0); \
+-        HeVAL(tmphe) = &PL_sv_placeholder; \
++        (void)hv_store_ent(tuba->paramhv, ksv, &PL_sv_undef, 0);
++
++        PLTUBA_XPARAMS;
++#undef X
++
++#define X(kname) \
++        sv_setpvs(ksv, #kname); \
++        tmphe = hv_fetch_ent(tuba->paramhv, ksv, 0, 0); \
+         assert(tmphe); \
++        HeVAL(tmphe) = &PL_sv_placeholder; \
+         tuba->p_ents.pe_##kname.he = tmphe;
+ 
+         PLTUBA_XPARAMS;
+ #undef X
++        SvREFCNT_dec(ksv);
+     }
+ 
+ #define initialize_param_iv(b) \

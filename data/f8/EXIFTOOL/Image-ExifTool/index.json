@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Image-ExifTool",
+  "releases": [
+    {
+      "version": "13.55",
+      "cpan_path": "E/EX/EXIFTOOL/Image-ExifTool-13.55.tar.gz",
+      "source_sha256": "5f4c81d34ad406538c2871ad72dbfceb5d9b412b2f16cbbeb4d712d270846667",
+      "patch_sets": [
+        {
+          "id": "strict-regex-deref",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/strict-regex-deref.patch",
+              "sha256": "bfc155ab00c9093a2f2614315c70e069aec2250c9dcfb721016b4756d58802c8"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

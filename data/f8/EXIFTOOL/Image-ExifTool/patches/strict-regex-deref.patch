@@ -1,0 +1,11 @@
+--- a/lib/Image/ExifTool/Writer.pl
++++ b/lib/Image/ExifTool/Writer.pl
+@@ -1551,7 +1551,7 @@
+             # check first for matching tag
+             unless ($$set[1] eq $lcTag or $$set[1] eq '*') {
+                 # handle wildcards
+-                next unless $$opts{WILD} and $lcTag =~ /^$$set[1]$/;
++                next unless $$opts{WILD} and $lcTag =~ /^$set->[1]$/;
+             }
+             # then check for matching group
+             if (@{$$set[0]}) {

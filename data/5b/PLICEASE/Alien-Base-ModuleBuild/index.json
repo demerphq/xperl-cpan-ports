@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "Alien-Base-ModuleBuild",
+  "releases": [
+    {
+      "version": "1.17",
+      "cpan_path": "P/PL/PLICEASE/Alien-Base-ModuleBuild-1.17.tar.gz",
+      "source_sha256": "fe7270ac735adde864e468e21c642a471ba88ba25ad30da94578832132f2b9f4",
+      "patch_sets": [
+        {
+          "id": "render-caught-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/render-caught-errors.patch",
+              "sha256": "226a73811ff8ae83da638a143d30cf395635b057d52b17944f22ddad42f2d482"
+            }
+          ],
+          "recipes": [
+            "exception-text-boundary-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

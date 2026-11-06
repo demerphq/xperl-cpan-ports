@@ -1,0 +1,51 @@
+--- a/lib/SOAP/WSDL/Client.pm	2020-01-20 17:25:15
++++ b/lib/SOAP/WSDL/Client.pm	2026-11-06 18:41:44
+@@ -183,7 +183,10 @@
+                 ? ($result_body, $result_header)
+                 : $result_body;
+         }
+-        elsif (blessed $@) { #}&& $@->isa('SOAP::WSDL::SOAP::Typelib::Fault11')) {
++        # XPerl wraps a caught string die in XPerl::Exception: that is an
++        # error message, not a fault object, so build a fault from it.
++        elsif (blessed $@
++            && !( ${^XPERL_VERSION} && ref($@) eq 'XPerl::Exception' )) { #}&& $@->isa('SOAP::WSDL::SOAP::Typelib::Fault11')) {
+             return $@;
+         }
+         else {
+--- a/lib/SOAP/WSDL/Generator/Template/XSD/simpleType.tt	2014-08-20 14:34:40
++++ b/lib/SOAP/WSDL/Generator/Template/XSD/simpleType.tt	2026-11-06 18:41:30
+@@ -23,7 +23,7 @@
+ 
+ [% head1 %] NAME
+ 
+-[% XSD.create_name(simpleType) %]
++[% XSD.create_xsd_name(simpleType) %]
+ 
+ [% head1 %] DESCRIPTION
+ 
+--- a/lib/SOAP/WSDL/Server/CGI.pm	2020-01-20 17:25:15
++++ b/lib/SOAP/WSDL/Server/CGI.pm	2026-11-06 18:41:30
+@@ -67,6 +67,10 @@
+     # caveat: SOAP::WSDL::SOAP::Typelib::Fault11 is false in bool context...
+     if ($@ || blessed $@) {
+         my $exception = $@;
++        # XPerl wraps a caught string die in XPerl::Exception; that is
++        # error text, not a SOAP fault object to serialize.
++        $exception = "$exception"
++            if ${^XPERL_VERSION} && ref($exception) eq q{XPerl::Exception};
+         $response = HTTP::Response->new(500);
+         $response->header('Content-type' => 'text/xml; charset="utf-8"');
+         if (blessed($exception)) {
+--- a/lib/SOAP/WSDL/Server/Simple.pm	2020-01-20 17:25:15
++++ b/lib/SOAP/WSDL/Server/Simple.pm	2026-11-06 18:41:30
+@@ -51,6 +51,10 @@
+     # caveat: SOAP::WSDL::SOAP::Typelib::Fault11 is false in bool context...
+     if ($@ || blessed $@) {
+         my $exception = $@;
++        # XPerl wraps a caught string die in XPerl::Exception; that is
++        # error text, not a SOAP fault object to serialize.
++        $exception = "$exception"
++            if ${^XPERL_VERSION} && ref($exception) eq q{XPerl::Exception};
+         $response = HTTP::Response->new(500);
+         $response->header('Content-type' => 'text/xml; charset="utf-8"');
+         if (blessed($exception)) {

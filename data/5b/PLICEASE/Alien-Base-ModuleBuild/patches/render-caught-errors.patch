@@ -1,0 +1,64 @@
+--- a/t/alien_base_modulebuild_repository.t
++++ b/t/alien_base_modulebuild_repository.t
+@@ -35,7 +35,7 @@
+   $ENV{ALIEN_INSTALL_NETWORK} = 0;
+ 
+   is(
+-    dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++    "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+     match qr/network fetch is disabled via ALIEN_INSTALL_NETWORK/,
+     'override 0',
+   );
+@@ -110,7 +110,7 @@
+     $secure_fetch = 0;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch has no digest\.  Required by ALIEN_DOWNLOAD_RULE=digest\./,
+     );
+ 
+@@ -134,7 +134,7 @@
+     $secure_fetch = 0;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch is insecure\.  Secure fetch required by ALIEN_DOWNLOAD_RULE=encrypt\./,
+     );
+ 
+@@ -156,7 +156,7 @@
+     $secure_fetch = 0;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch is insecure and has no digest\.  Required by ALIEN_DOWNLOAD_RULE=digest_or_encrypt\./,
+     );
+ 
+@@ -193,14 +193,14 @@
+     $secure_fetch = 0;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch is insecure and has no digest\.  Both are required by ALIEN_DOWNLOAD_RULE=digest_and_encrypt\./,
+     );
+ 
+     $secure_fetch = 1;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch is insecure and has no digest\.  Both are required by ALIEN_DOWNLOAD_RULE=digest_and_encrypt\./,
+     );
+ 
+@@ -210,7 +210,7 @@
+     local $default->{exact_version}  = 1.9;
+ 
+     is(
+-      dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
++      "" . dies { Alien::Base::ModuleBuild::Repository::Test->new($default)->probe },
+       match qr/^File fetch is insecure and has no digest\.  Both are required by ALIEN_DOWNLOAD_RULE=digest_and_encrypt\./,
+     );
+ 

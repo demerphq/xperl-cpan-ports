@@ -1,0 +1,33 @@
+--- a/lib/Sys/SigAction.pm
++++ b/lib/Sys/SigAction.pm
+@@ -166,7 +166,9 @@
+       sig_alarm(0);
+       die $@ if $@;
+    };
+-   die $@ if $@ and (not ref $@ or $@ != TIMEDOUT);
++   # an XPerl::Exception wraps a plain-text die; it is never TIMEDOUT
++   die $@ if $@ and (not ref $@ or ref $@ eq 'XPerl::Exception'
++                    or $@ != TIMEDOUT);
+ 
+    return $timed_out;
+ }
+--- a/t/timeout.t
++++ b/t/timeout.t
+@@ -83,7 +83,7 @@
+ eval { 
+    $ret = timeout_call( 1, \&immediate ); 
+ };
+-ok( (not ref($@) and $@ ),'immediate -- die with string' ); 
++ok( ((not ref($@) or ref($@) eq 'XPerl::Exception') and $@ ),'immediate -- die with string' ); 
+ ok( $ret == 0 ,'immediate did not timeout' ); 
+ 
+ $ret = 0;
+@@ -149,7 +149,7 @@
+    eval { 
+       $ret = timeout_call( $toobig, \&sleep_one ); 
+    };
+-   ok( (not ref($@) and $@ ),"immediate -- die with string (toobig=$toobig)" ); 
++   ok( ((not ref($@) or ref($@) eq 'XPerl::Exception') and $@ ),"immediate -- die with string (toobig=$toobig)" ); 
+    ok( $ret == 0 ,"immediate did not timeout (with toobig=$toobig)" ); 
+ }
+ 

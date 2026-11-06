@@ -1,0 +1,20 @@
+{
+  "source_sha256": "66e4781f1f64ce0d6804e020fbb48e37a8f7a2c4cf0cb3f336c36dd6f653188a",
+  "patch_set_id": "hash-entry-lifetime",
+  "patch_sha256": "a1cea0c666261425728e234a54ff4138c7f61d3cdf47c068f9fa4b119dde9dcb",
+  "date": "2026-11-06",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "pass: 19 test files, 104 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 19 test files, 104 tests"
+    }
+  ]
+}

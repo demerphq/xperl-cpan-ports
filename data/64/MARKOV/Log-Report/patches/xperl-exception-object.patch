@@ -1,0 +1,15 @@
+--- a/lib/Log/Report.pm
++++ b/lib/Log/Report.pm
+@@ -314,9 +314,10 @@
+ 	if(!$is_exception && $err && !$disp->wasFatal)
+ 	{	# Decode errors which do not origin from Log::Report reports
+ 		# Native exceptions are already logged.
+-		my ($opts, $reason, $text, $tags) = blessed $err
++		# XPerl wraps a plain-text die in an XPerl::Exception: decode it as text
++		my ($opts, $reason, $text, $tags) = blessed $err && ref $err ne 'XPerl::Exception'
+ 		  ? Log::Report::Die::exception_decode($err)
+-		  : Log::Report::Die::die_decode($err, on_die => $disp->die2reason);
++		  : Log::Report::Die::die_decode("$err", on_die => $disp->die2reason);
+ 
+ 		$disp->log($opts, $reason, __x($text, _tags => $tags));
+ 	}

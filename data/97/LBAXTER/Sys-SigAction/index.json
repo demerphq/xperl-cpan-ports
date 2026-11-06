@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "Sys-SigAction",
+  "releases": [
+    {
+      "version": "0.24",
+      "cpan_path": "L/LB/LBAXTER/Sys-SigAction-0.24.tar.gz",
+      "source_sha256": "e04c9a7fdf745d3e9cd9e8b2d5a46d826ba958c5e1e0c48b3cd132bb15396255",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-object",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-object.patch",
+              "sha256": "cb50c9d9d2a1e2e75c360e09b99dac866f0946d4fdd89845c41e14260bec5b3d"
+            }
+          ],
+          "recipes": [
+            "exception-wrapper-classification-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

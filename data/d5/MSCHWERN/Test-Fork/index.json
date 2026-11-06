@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Test-Fork",
+  "releases": [
+    {
+      "version": "0.02",
+      "cpan_path": "M/MS/MSCHWERN/Test-Fork-0.02.tar.gz",
+      "source_sha256": "fcfefbfb24f885abe827c2ad07ac3d4e1fecf213a14717fcaf3c37175045d03e",
+      "patch_sets": [
+        {
+          "id": "xperl-anon-sub-line",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-anon-sub-line.patch",
+              "sha256": "f03e1f9124c9cefa7d256d3e8272fac96a9d8f22c2ab04f9e945fbe0944c6367"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}
