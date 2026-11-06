@@ -1,0 +1,54 @@
+{
+   "author" : "AVAR",
+   "distribution" : "App-Inotify-Hookable",
+   "observations" : [
+      {
+         "cpan_path" : "A/AV/AVAR/App-Inotify-Hookable-0.09.tar.gz",
+         "id" : "ed74b396b863402a6ea36fb9742a878b6836dbf7107a284971d5f2d5a9f6e456",
+         "module" : "App::Inotify::Hookable",
+         "observed_at" : "2026-11-06T17:28:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1b7e31ccff995409dedcdd54f7d628364b1af2934bbbf2acc39f2da19822eaa6",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

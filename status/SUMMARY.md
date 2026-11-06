@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 40 of 1482 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -69,6 +69,8 @@ Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [
 | ATOOMIC | [XString](../data/bb/ATOOMIC/XString/status.json) | 0.005 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ATOOMIC | [XString](../data/bb/ATOOMIC/XString/status.json) | 0.005 | v5.45.5 | linux/x86_64-linux | installed | none |
 | AUDREYT | [Term-ANSIScreen](../data/11/AUDREYT/Term-ANSIScreen/status.json) | 1.50 | v5.45.5 | linux/x86_64-linux | installed | none |
+| AVAR | [App-Inotify-Hookable](../data/4a/AVAR/App-Inotify-Hookable/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none |
+| AVAR | [Linux-Smaps-Tiny](../data/f7/AVAR/Linux-Smaps-Tiny/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | installed | none |
 | AVAR | [MooseX-Attribute-TypeConstraint-CustomizeFatal](../data/f3/AVAR/MooseX-Attribute-TypeConstraint-CustomizeFatal/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BABF | [Text-CSV-Slurp](../data/25/BABF/Text-CSV-Slurp/status.json) | 1.03 | v5.45.5 | linux/x86_64-linux | installed | none |
 | BARBIE | [Test-CPAN-Meta](../data/55/BARBIE/Test-CPAN-Meta/status.json) | 0.25 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -881,6 +883,7 @@ Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [
 | MLEHMANN | [Guard](../data/f5/MLEHMANN/Guard/status.json) | 1.023 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MLEHMANN | [IO-AIO](../data/97/MLEHMANN/IO-AIO/status.json) | 4.81 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MLEHMANN | [JSON-XS](../data/65/MLEHMANN/JSON-XS/status.json) | 4.04 | v5.45.5 | linux/x86_64-linux | installed | none |
+| MLEHMANN | [Linux-Inotify2](../data/d2/MLEHMANN/Linux-Inotify2/status.json) | 2.3 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MLEHMANN | [String-Similarity](../data/7e/MLEHMANN/String-Similarity/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MLEHMANN | [Types-Serialiser](../data/0d/MLEHMANN/Types-Serialiser/status.json) | 1.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MLEHMANN | [common-sense](../data/89/MLEHMANN/common-sense/status.json) | 3.75 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1294,6 +1297,7 @@ Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [
 | SDP | [Lingua-Stem-Fr](../data/dd/SDP/Lingua-Stem-Fr/status.json) | 0.02 | v5.45.5 | darwin/darwin-2level | installed | none |
 | SDP | [Lingua-Stem-Fr](../data/dd/SDP/Lingua-Stem-Fr/status.json) | 0.02 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SEMANTICO | [Test-XML](../data/ff/SEMANTICO/Test-XML/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none |
+| SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | failed | none |
 | SEVEAS | [Net-SMS-WorldText](../data/9f/SEVEAS/Net-SMS-WorldText/status.json) | 1.3 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SHANCOCK | [Perl-Tidy](../data/4d/SHANCOCK/Perl-Tidy/status.json) | 20260826 | v5.45.5 | darwin/darwin-2level | installed | none |
 | SHANCOCK | [Perl-Tidy](../data/4d/SHANCOCK/Perl-Tidy/status.json) | 20260826 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1368,6 +1372,7 @@ Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [
 | TBONE | [User](../data/11/TBONE/User/status.json) | 1.9 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TCOHEN | [Memoize-Memcached](../data/ed/TCOHEN/Memoize-Memcached/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Selenium-Remote-Driver](../data/f6/TEODESIAN/Selenium-Remote-Driver/status.json) | 1.50 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TEVERETT | [Data-BitMask](../data/5c/TEVERETT/Data-BitMask/status.json) | 1.00 | v5.45.5 | linux/x86_64-linux | installed | none |
 | THALJEF | [Perl-Critic-More](../data/d1/THALJEF/Perl-Critic-More/status.json) | 1.003 | v5.45.5 | linux/x86_64-linux | installed | none |
 | THALJEF | [Pinto](../data/4b/THALJEF/Pinto/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none |
 | THINC | [DateTime-Format-Flexible](../data/28/THINC/DateTime-Format-Flexible/status.json) | 0.37 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1449,6 +1454,7 @@ Unresolved failures: 39 of 1476 release, XPerl, and platform combinations. See [
 | VEESH | [SQL-Translator](../data/1d/VEESH/SQL-Translator/status.json) | 1.66 | v5.45.5 | linux/x86_64-linux | installed | none |
 | VIPUL | [Tie-EncryptedHash](../data/58/VIPUL/Tie-EncryptedHash/status.json) | 1.24 | v5.45.5 | linux/x86_64-linux | installed | none |
 | VLADO | [Text-Ngrams](../data/42/VLADO/Text-Ngrams/status.json) | 2.007 | v5.45.5 | linux/x86_64-linux | installed | none |
+| VOJ | [File-Hotfolder](../data/5b/VOJ/File-Hotfolder/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none |
 | VPIT | [Scope-Upper](../data/24/VPIT/Scope-Upper/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | failed | none |
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | darwin/darwin-2level | installed | xperl-exception-error-state |
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | linux/x86_64-linux | installed | xperl-exception-error-state |

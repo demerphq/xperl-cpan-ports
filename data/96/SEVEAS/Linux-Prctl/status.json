@@ -1,0 +1,48 @@
+{
+   "author" : "SEVEAS",
+   "distribution" : "Linux-Prctl",
+   "observations" : [
+      {
+         "cpan_path" : "S/SE/SEVEAS/Linux-Prctl-1.6.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "8d66c8d7599262f5f279c12236dee8be9f19ecc34d0b4132dc0d3f02b1c977d4",
+         "module" : "Linux::Prctl",
+         "module_version" : "1.006000",
+         "observed_at" : "2026-11-06T17:28:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a25af8842b5612d91be73314f5ae948027d5efdcee35c964cdbb719eb02a3774",
+         "status" : "failed",
+         "version" : "1.6.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

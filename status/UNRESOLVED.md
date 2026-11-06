@@ -35,6 +35,7 @@ Prior failures remain in each distribution record after a later success.
 | PITCHLESS | [MooseX-Getopt-Usage](../data/b4/PITCHLESS/MooseX-Getopt-Usage/status.json) | 0.24 | v5.45.5 | linux/x86_64-linux | test | Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed. |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed. |
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
+| SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SVW | [Time-Out](../data/f6/SVW/Time-Out/status.json) | 1.0.0 | v5.45.5 | linux/x86_64-linux | test | Files=10, Tests=20, Failed 1/10 test programs. 1/20 subtests failed. |
 | SWALTERS | [SOAP-WSDL](../data/57/SWALTERS/SOAP-WSDL/status.json) | 3.004 | v5.45.5 | linux/x86_64-linux | test | Files=124, Tests=1129, Failed 4/124 test programs. 0/1129 subtests failed. |
 | SYP | [Net-Curl](../data/80/SYP/Net-Curl/status.json) | 0.60 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
