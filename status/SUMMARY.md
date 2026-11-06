@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 75 of 2074 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 74 of 2074 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1088,7 +1088,7 @@ Unresolved failures: 75 of 2074 release, XPerl, and platform combinations. See [
 | LUNATIC | [Text-ASCIITable](../data/7e/LUNATIC/Text-ASCIITable/status.json) | 0.22 | v5.45.5 | linux/x86_64-linux | installed | none |
 | LWP | [Mozilla-CA](../data/e7/LWP/Mozilla-CA/status.json) | 20261105 | v5.45.5 | darwin/darwin-2level | installed | none |
 | LWP | [Mozilla-CA](../data/e7/LWP/Mozilla-CA/status.json) | 20261105 | v5.45.5 | linux/x86_64-linux | installed | none |
-| MAF | [Net-ZooKeeper](../data/47/MAF/Net-ZooKeeper/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | failed | none |
+| MAF | [Net-ZooKeeper](../data/47/MAF/Net-ZooKeeper/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | installed | zookeeper-version-string |
 | MAJENSEN | [JSON-ize](../data/b6/MAJENSEN/JSON-ize/status.json) | 0.202 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MALLEN | [Test-RequiresInternet](../data/c4/MALLEN/Test-RequiresInternet/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MALLEN | [Test-RequiresInternet](../data/c4/MALLEN/Test-RequiresInternet/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none |

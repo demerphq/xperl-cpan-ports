@@ -1,0 +1,58 @@
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -23,7 +23,6 @@
+ use Getopt::Long;
+ 
+ my $ZOO_MAJOR_VERSION = 3;
+-my $ZOO_REQUIRED_VERSION = qr{^$ZOO_MAJOR_VERSION\.\d+.\d+$}ismx;
+ 
+ my @zk_inc_paths;
+ my @zk_lib_paths;
+@@ -57,11 +56,12 @@
+ chomp(my $zk_ver = qx($check_file));
+ 
+ if ($? >> 8 != 0) {
+-  die "Couldn't check zookeeper version: $zk_ver: $r";
++  die "Couldn't check ZooKeeper version (exit " . ($? >> 8) . "): $zk_ver\n";
+ }
+-elsif ($zk_ver !~ $ZOO_REQUIRED_VERSION) {
+-  warn "Net::ZooKeeper requires ZooKeeper 3.x, found $zk_ver!";
+-}
++my ($major, $minor) = $zk_ver =~ /\A(\d+)\.(\d+)\.\d+\z/
++    or die "Could not parse ZooKeeper version '$zk_ver'\n";
++die "Net::ZooKeeper requires at least ZooKeeper version 3.2.0; found $zk_ver\n"
++    unless $major == $ZOO_MAJOR_VERSION && $minor >= 2;
+ 
+ WriteMakefile(
+     'INC'          => "$zk_inc_paths-I.",
+--- a/build/check_zk_version.c
++++ b/build/check_zk_version.c
+@@ -23,7 +23,11 @@
+ #include "check_zk_version.h"
+ 
+ int main() {
++#ifdef ZOO_VERSION
++  printf("%s\n", ZOO_VERSION);
++#else
+   printf("%d.%d.%d\n", ZOO_MAJOR_VERSION, ZOO_MINOR_VERSION, ZOO_PATCH_VERSION);
++#endif
+   return 0;
+ }
+ 
+--- a/build/check_zk_version.h
++++ b/build/check_zk_version.h
+@@ -17,9 +17,10 @@
+  * limitations under the License.
+  */
+ 
+-/* keep in sync with Makefile.PL */
+-#if !defined(ZOO_MAJOR_VERSION) || ZOO_MAJOR_VERSION != 3 || \
+-    !defined(ZOO_MINOR_VERSION) || ZOO_MINOR_VERSION < 2
+-#error "Net::ZooKeeper requires at least ZooKeeper version 3.2.0"
++/* Older headers expose numeric macros; newer ones provide ZOO_VERSION. */
++#if !defined(ZOO_VERSION) && \
++    (!defined(ZOO_MAJOR_VERSION) || !defined(ZOO_MINOR_VERSION) || \
++     !defined(ZOO_PATCH_VERSION))
++#error "Cannot determine ZooKeeper version"
+ #endif
+ 

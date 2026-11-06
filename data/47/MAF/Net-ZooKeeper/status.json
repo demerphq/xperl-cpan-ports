@@ -36,6 +36,105 @@
          "status" : "failed",
          "version" : "0.41",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MAF/Net-ZooKeeper-0.41.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "bb1fa83ec8067e54aefc0a40acbe48190fe771b030669cc2a29533775d2984cd",
+         "module" : "Net::ZooKeeper",
+         "observed_at" : "2026-11-06T21:03:13Z",
+         "patch_set" : "zookeeper-version-string",
+         "patch_sha256" : [
+            "64d87c549bbc00496e1efbcba3f6bc845a5eae7868df1a0c4191f758279eec14"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "91c177f30f82302eaf3173356eef05c21bc82163df752acb469177bd14a72db9",
+         "status" : "failed",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MAF/Net-ZooKeeper-0.41.tar.gz",
+         "id" : "f4836df5935c17d67a81be6412a5c5931331a818076448a09f3721b9d0d49834",
+         "module" : "Net::ZooKeeper",
+         "observed_at" : "2026-11-06T21:03:57Z",
+         "patch_set" : "zookeeper-version-string",
+         "patch_sha256" : [
+            "64d87c549bbc00496e1efbcba3f6bc845a5eae7868df1a0c4191f758279eec14"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "91c177f30f82302eaf3173356eef05c21bc82163df752acb469177bd14a72db9",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=453",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

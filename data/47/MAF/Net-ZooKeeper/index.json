@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Net-ZooKeeper",
+  "releases": [
+    {
+      "version": "0.41",
+      "cpan_path": "M/MA/MAF/Net-ZooKeeper-0.41.tar.gz",
+      "source_sha256": "91c177f30f82302eaf3173356eef05c21bc82163df752acb469177bd14a72db9",
+      "patch_sets": [
+        {
+          "id": "zookeeper-version-string",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/zookeeper-version-string.patch",
+              "sha256": "64d87c549bbc00496e1efbcba3f6bc845a5eae7868df1a0c4191f758279eec14"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

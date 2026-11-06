@@ -43,7 +43,6 @@ Prior failures remain in each distribution record after a later success.
 | JIRO | [Digest-FarmHash](../data/86/JIRO/Digest-FarmHash/status.json) | 0.02 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | JROBINSON | [Paws](../data/f5/JROBINSON/Paws/status.json) | 0.46 | v5.45.5 | linux/x86_64-linux | test | Files=38, Tests=15108 |
 | KMACLEOD | [Frontier-RPC](../data/17/KMACLEOD/Frontier-RPC/status.json) | 0.07b4 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
-| MAF | [Net-ZooKeeper](../data/47/MAF/Net-ZooKeeper/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
 | MAXMIND | [MaxMind-DB-Reader-XS](../data/97/MAXMIND/MaxMind-DB-Reader-XS/status.json) | 1.000009 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | MBARBON | [Alien-ProtoBuf](../data/60/MBARBON/Alien-ProtoBuf/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
