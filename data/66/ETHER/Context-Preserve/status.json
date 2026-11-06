@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Context-Preserve",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Context-Preserve-0.03.tar.gz",
+         "id" : "d8d3201761a72ebbfca943db983783ef1f16642be4c3d29675f05f56ce9197c3",
+         "module" : "Context::Preserve",
+         "observed_at" : "2026-11-05T23:10:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "09914a4c2c7bdb99cab680c183cbf492ec98d6e23fbcc487fcc4ae10567dfd1f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

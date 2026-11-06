@@ -1,0 +1,42 @@
+{
+   "author" : "VEESH",
+   "distribution" : "DBIx-Class-Schema-Loader",
+   "observations" : [
+      {
+         "cpan_path" : "V/VE/VEESH/DBIx-Class-Schema-Loader-0.07053.tar.gz",
+         "id" : "5c1a0b4279ed98672fb623cd78ae05f209e691f53d78395395612cac98ab39ca",
+         "module" : "DBIx::Class::Schema::Loader",
+         "observed_at" : "2026-11-05T23:33:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c9f8cbebfcadc19b6407a1598fd8f9a7a81bcaf67b7ae4e877906af85ba44b14",
+         "status" : "installed",
+         "test_summary" : "Files=41, Tests=1339",
+         "version" : "0.07053",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

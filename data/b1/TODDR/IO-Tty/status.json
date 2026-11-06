@@ -1,0 +1,42 @@
+{
+   "author" : "TODDR",
+   "distribution" : "IO-Tty",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TODDR/IO-Tty-1.31.tar.gz",
+         "id" : "16f13af0af5058092e61f3401769a4a5afd4cdcc13174f8fe7a851447557b1f9",
+         "module" : "IO::Tty",
+         "observed_at" : "2026-11-05T21:51:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d597af221628571cbecf35b44520148c44798dfc8a9867774e60453f79d25ff7",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=64",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

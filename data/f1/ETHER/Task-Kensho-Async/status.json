@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-Async",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-Async-0.41.tar.gz",
+         "id" : "cf9bf3c8f8437e62bac1ba0ecbd9bccd10c562736db9838ee67ee8b5f6341964",
+         "module" : "Task::Kensho::Async",
+         "observed_at" : "2026-11-05T22:48:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ba912823b15c22e0b59b93c5d631ade37344f660d69c1226aecdd7828a40aeae",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

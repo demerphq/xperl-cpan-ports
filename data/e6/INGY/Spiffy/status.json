@@ -1,0 +1,42 @@
+{
+   "author" : "INGY",
+   "distribution" : "Spiffy",
+   "observations" : [
+      {
+         "cpan_path" : "I/IN/INGY/Spiffy-0.46.tar.gz",
+         "id" : "46aef382673734501b1268307179194b0ee9a684e3469fec6eaea60d2808ce48",
+         "module" : "Spiffy",
+         "observed_at" : "2026-11-05T23:33:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8f58620a8420255c49b6c43c5ff5802bd25e4f09240c51e5bf2b022833d41da3",
+         "status" : "installed",
+         "test_summary" : "Files=32, Tests=198",
+         "version" : "0.46",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

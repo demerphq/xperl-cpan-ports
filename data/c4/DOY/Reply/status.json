@@ -1,0 +1,42 @@
+{
+   "author" : "DOY",
+   "distribution" : "Reply",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOY/Reply-0.42.tar.gz",
+         "id" : "da654d7df39f5b25969eb8c60339bb920a727e91c96c35effa424bab66062cd7",
+         "module" : "Reply",
+         "observed_at" : "2026-11-05T23:09:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4ada2a45a77a54ae10c4e9a48144ea826d5d79ad050cb9626e9f783d03ab79f2",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=24",
+         "version" : "0.42",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

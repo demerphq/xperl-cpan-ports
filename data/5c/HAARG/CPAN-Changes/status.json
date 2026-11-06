@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "CPAN-Changes",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/CPAN-Changes-0.500005.tar.gz",
+         "id" : "9c35ffa7712ae10a26617107d3bc53c9cb67868f95a77e5a5cbfd66b6e6a2cd1",
+         "module" : "CPAN::Changes",
+         "observed_at" : "2026-11-06T10:14:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1b022a0a6451827d060ee9cbfe9b2d8edbac2a3d7155cbee33ea93274b830fb5",
+         "status" : "installed",
+         "test_summary" : "Files=33, Tests=419",
+         "version" : "0.500005",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

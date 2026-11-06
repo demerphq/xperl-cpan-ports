@@ -1,0 +1,42 @@
+{
+   "author" : "RCLAMP",
+   "distribution" : "Devel-LexAlias",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCLAMP/Devel-LexAlias-0.05.tar.gz",
+         "id" : "59d57ea80f7a67e7598e702eccfec99796376eab521ae46fcf516a8dffd151fa",
+         "module" : "Devel::LexAlias",
+         "observed_at" : "2026-11-05T23:09:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5e0ad9d43e266033856e424e104a0009f8e63449e40cd5aba59ad94cb1bcee72",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=11",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

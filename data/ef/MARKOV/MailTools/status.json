@@ -1,0 +1,42 @@
+{
+   "author" : "MARKOV",
+   "distribution" : "MailTools",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARKOV/MailTools-2.22.tar.gz",
+         "id" : "09fb65838d3ba498ef4f1de791204caee3aba6d9226e197c353ed414e4cf75bc",
+         "module" : "Mail::Address",
+         "observed_at" : "2026-11-05T23:35:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3bf68bb212298fa699a52749dddff35583a74f36a92ca89c843b854f29d87c77",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=109",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

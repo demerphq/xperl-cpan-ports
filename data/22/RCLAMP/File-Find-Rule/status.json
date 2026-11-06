@@ -71,6 +71,41 @@
          "test_summary" : "Files=2, Tests=52",
          "version" : "0.35",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCLAMP/File-Find-Rule-0.35.tar.gz",
+         "id" : "7e3955a033033e51369fda6879dec753eb233e71aa55621fd206fc028fd6b5f9",
+         "module" : "File::Find::Rule",
+         "observed_at" : "2026-11-06T09:42:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2bd556289a6d44ad2ee74803258bb0b0050d246f1e81caab0b263c303acf0c82",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=52",
+         "version" : "0.35",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

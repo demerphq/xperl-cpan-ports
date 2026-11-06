@@ -1,0 +1,42 @@
+{
+   "author" : "SHANCOCK",
+   "distribution" : "Perl-Tidy",
+   "observations" : [
+      {
+         "cpan_path" : "S/SH/SHANCOCK/Perl-Tidy-20260826.tar.gz",
+         "id" : "433c83557e8bf6975d5a47eefe7b9e52a0847f0a489300034be207334cf7ff8e",
+         "module" : "Perl::Tidy",
+         "observed_at" : "2026-11-06T09:45:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "104e3e5ee5c84524d5e50324d664c7859b1ac422ab97a3e7a248985a4b4f7f64",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=673",
+         "version" : "20260826",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

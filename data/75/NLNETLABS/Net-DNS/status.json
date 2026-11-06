@@ -1,0 +1,48 @@
+{
+   "author" : "NLNETLABS",
+   "distribution" : "Net-DNS",
+   "observations" : [
+      {
+         "cpan_path" : "N/NL/NLNETLABS/Net-DNS-1.57.tar.gz",
+         "id" : "50a3af9f6fc6c5b53e2178172e10c349a75ad5325d04a1b513fb5dd3f8d4a34f",
+         "module" : "Net::DNS",
+         "observed_at" : "2026-11-05T23:46:59Z",
+         "patch_set" : "disable-online-tests-in-cpan-builds",
+         "patch_sha256" : [
+            "a6186db801a48589831aba5d6eed98c27a00092d621a0bc05184e68c0e5bf098"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7c98de329cb5d6a99abbb03aaad2866cb041092ed9936a7246908e170005b058",
+         "status" : "installed",
+         "test_summary" : "Files=106, Tests=3362",
+         "version" : "1.57",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

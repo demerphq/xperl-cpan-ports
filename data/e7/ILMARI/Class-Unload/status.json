@@ -1,0 +1,42 @@
+{
+   "author" : "ILMARI",
+   "distribution" : "Class-Unload",
+   "observations" : [
+      {
+         "cpan_path" : "I/IL/ILMARI/Class-Unload-0.12.tar.gz",
+         "id" : "e25dfd0c6a449849dd8cf12d4892e8ad1a609f48b48c215d2f847ce579c19aa0",
+         "module" : "Class::Unload",
+         "observed_at" : "2026-11-05T23:23:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2508039578fb5457fdffb22d8fa6f90be295c30417901d0fd975744e55922696",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=26",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

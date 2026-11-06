@@ -71,6 +71,41 @@
          "test_summary" : "Files=3, Tests=36",
          "version" : "0.50",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/Term-UI-0.50.tar.gz",
+         "id" : "60f2af0e2f944f680e07667ec1d2a340df87c85e55ab764f7991ae17da4ab40c",
+         "module" : "Term::UI",
+         "observed_at" : "2026-11-06T09:43:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "60bfdd6d4c158b88d370133fc65b20485a36a45b12d906000b81c78ca524163d",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=36",
+         "version" : "0.50",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

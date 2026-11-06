@@ -1,0 +1,137 @@
+{
+   "author" : "RCAPUTO",
+   "distribution" : "POE-Test-Loops",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCAPUTO/POE-Test-Loops-1.360.tar.gz",
+         "id" : "c010c269ea5b5f4c58be737fdd9a5e1a78bc036bee6fa2a29376633b87d8839a",
+         "module" : "POE::Test::Loops",
+         "observed_at" : "2026-11-05T21:51:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bed0c96fe91c98fd37e6eb59a804aaac9cc4a9e928450b76d4bf5527a9e6a47b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=3",
+         "version" : "1.360",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCAPUTO/POE-Test-Loops-1.360.tar.gz",
+         "id" : "5b6c54e5443be86d4912fba65bf977e54cbb5acfd77a985ad1c971324167ae1f",
+         "module" : "POE::Test::Loops",
+         "observed_at" : "2026-11-05T22:40:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [],
+         "source_sha256" : "bed0c96fe91c98fd37e6eb59a804aaac9cc4a9e928450b76d4bf5527a9e6a47b",
+         "status" : "failed",
+         "version" : "1.360",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCAPUTO/POE-Test-Loops-1.360.tar.gz",
+         "id" : "efe52868026e8dc55774753274af7f6f5e556e1f224aa0a3a4f177ff7fd88550",
+         "module" : "POE::Test::Loops",
+         "observed_at" : "2026-11-05T22:42:08Z",
+         "patch_set" : "xperl-exception-assertion",
+         "patch_sha256" : [
+            "dae2fc13dbc97383cdedef097ab3545959f1bb9e6bd4f9cf62382d984cb20611"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bed0c96fe91c98fd37e6eb59a804aaac9cc4a9e928450b76d4bf5527a9e6a47b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=3",
+         "version" : "1.360",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RC/RCAPUTO/POE-Test-Loops-1.360.tar.gz",
+         "id" : "ccb1c43a862111eca67d09e70ffc96afb2c0fdb253984d3fe7b7ab8d3bf5251c",
+         "module" : "POE::Test::Loops",
+         "observed_at" : "2026-11-05T22:46:14Z",
+         "patch_set" : "xperl-exception-assertion",
+         "patch_sha256" : [
+            "b975afd95da26151875094a08b0c532ec265f9686505582c12187d6d0287ec86"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bed0c96fe91c98fd37e6eb59a804aaac9cc4a9e928450b76d4bf5527a9e6a47b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=3",
+         "version" : "1.360",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

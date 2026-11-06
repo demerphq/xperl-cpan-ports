@@ -1,0 +1,42 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "String-ToIdentifier-EN",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/String-ToIdentifier-EN-0.12.tar.gz",
+         "id" : "d2ddc149e3773f8256572a64dfb8d1ebc698cc38a2d7a6e9f85e9a51ad4bc061",
+         "module" : "String::ToIdentifier::EN",
+         "observed_at" : "2026-11-05T23:32:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3afb84232930b9ac5b1ada383c8dd5907ae4e23aec5abb016f70f9e8053cdc8a",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=807",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

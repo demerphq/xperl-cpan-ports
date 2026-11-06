@@ -1,0 +1,42 @@
+{
+   "author" : "HMBRAND",
+   "distribution" : "Spreadsheet-Read",
+   "observations" : [
+      {
+         "cpan_path" : "H/HM/HMBRAND/Spreadsheet-Read-0.95.tgz",
+         "id" : "e27c4128622d57c52917211025430fb70632a99a34132d2681dde1858d03c9a3",
+         "module" : "Spreadsheet::Read",
+         "observed_at" : "2026-11-05T23:49:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "99fe77002189b6b90d9a2d502b9c597ac0beb57b4ad8531a356a5912db72107e",
+         "status" : "installed",
+         "test_summary" : "Files=72, Tests=454",
+         "version" : "0.95",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

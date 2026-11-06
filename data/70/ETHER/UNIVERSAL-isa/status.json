@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "UNIVERSAL-isa",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/UNIVERSAL-isa-1.20171012.tar.gz",
+         "id" : "03444c863889a1519bf77b5c6bd0b23da4357b75851dc476fcc1af47b672832e",
+         "module" : "UNIVERSAL::isa",
+         "observed_at" : "2026-11-06T09:16:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d16956036cb01c819dec7d294f6ef891be0bb64876989601354b293164da7f2b",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=76",
+         "version" : "1.20171012",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

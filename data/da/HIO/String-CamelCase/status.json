@@ -1,0 +1,42 @@
+{
+   "author" : "HIO",
+   "distribution" : "String-CamelCase",
+   "observations" : [
+      {
+         "cpan_path" : "H/HI/HIO/String-CamelCase-0.04.tar.gz",
+         "id" : "60ecc4041056a24bc9743939a828f98872c2678d0dc1765fa68a6cc31bdcf0da",
+         "module" : "String::CamelCase",
+         "observed_at" : "2026-11-05T23:32:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "89c3debceeceae8764f45d74023f8fbeee2d88399af67541dbdaa0b2bf2711a9",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=31",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

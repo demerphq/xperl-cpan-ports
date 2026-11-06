@@ -1,0 +1,122 @@
+{
+   "author" : "BINGOS",
+   "distribution" : "POE",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BINGOS/POE-1.370.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "12ef406f0863d60cd5add9083abf30a23490af211e55de8544ae731ca2464fff",
+         "module" : "POE",
+         "observed_at" : "2026-11-05T21:52:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "57de2b635b15fa3a31a9e55dd51122149e5414e1158ee82235062634ee18a693",
+         "status" : "failed",
+         "test_summary" : "Files=161, Tests=4204, Failed 4/161 test programs. 4/4204 subtests failed.",
+         "version" : "1.370",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/POE-1.370.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "b7342746bee6615ed79389a5febc21c52d692b12a180205e7319f2cbae58daea",
+         "module" : "POE",
+         "observed_at" : "2026-11-05T22:43:57Z",
+         "patch_set" : "xperl-exception-assertions",
+         "patch_sha256" : [
+            "75c70df8293899417c891579bf425b42b2dd6675fb41154217c6af25205c0518"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "57de2b635b15fa3a31a9e55dd51122149e5414e1158ee82235062634ee18a693",
+         "status" : "failed",
+         "test_summary" : "Files=161, Tests=4185, Failed 4/161 test programs. 0/4185 subtests failed.",
+         "version" : "1.370",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/POE-1.370.tar.gz",
+         "id" : "c8f4ffd879fd1c0dc268de9cd5eb3ea75b5ae45dde0ba3d3df6f2bb5bd91938e",
+         "module" : "POE",
+         "observed_at" : "2026-11-05T22:47:36Z",
+         "patch_set" : "xperl-exception-assertions",
+         "patch_sha256" : [
+            "5ca59da9020eb324363be89fc6d1f679c7a02a23292edb2c5657168cce45b6d0"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "57de2b635b15fa3a31a9e55dd51122149e5414e1158ee82235062634ee18a693",
+         "status" : "installed",
+         "test_summary" : "Files=161, Tests=4204",
+         "version" : "1.370",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

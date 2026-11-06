@@ -71,6 +71,41 @@
          "test_summary" : "Files=13, Tests=82",
          "version" : "2.71",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Log-Dispatch-2.71.tar.gz",
+         "id" : "0fb8e8ce98e7ebda5ff647778d0511ec46082ffc89318d0674a7edbcd2a10ba5",
+         "module" : "Log::Dispatch",
+         "observed_at" : "2026-11-06T09:16:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d60d9648c35ce2754731eb4deb7f05809ece1bd633b74d74795aed9ec732570",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=82",
+         "version" : "2.71",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

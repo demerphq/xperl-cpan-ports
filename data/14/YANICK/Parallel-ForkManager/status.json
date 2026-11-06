@@ -1,0 +1,42 @@
+{
+   "author" : "YANICK",
+   "distribution" : "Parallel-ForkManager",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YANICK/Parallel-ForkManager-2.04.tar.gz",
+         "id" : "63ff019f47ebceba7ea779221e9630d8ea0f60ef8ae989fb55374d168e737210",
+         "module" : "Parallel::ForkManager",
+         "observed_at" : "2026-11-05T22:48:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "606894fc2e9f7cd13d9ec099aaac103a8f0943d1d80c2c486bae14730a39b7fc",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=30",
+         "version" : "2.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

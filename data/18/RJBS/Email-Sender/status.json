@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Email-Sender",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Email-Sender-2.603.tar.gz",
+         "id" : "e3c774ed7c6c7b9e0d04e460996916fcaaecec187575e68e8fe3e50f3ee5a905",
+         "module" : "Email::Sender",
+         "observed_at" : "2026-11-05T23:35:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d6f2a4a1b374c0285359996673f919f9aec9519d88c55100679f88b9ebe0075",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=208",
+         "version" : "2.603",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

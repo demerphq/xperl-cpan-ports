@@ -1,0 +1,42 @@
+{
+   "author" : "MSTROUT",
+   "distribution" : "curry",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSTROUT/curry-2.000001.tar.gz",
+         "id" : "b30ef33c7e81cbc045b1c65b3cf34aa7624b775e94c694754952b61e500624af",
+         "module" : "curry",
+         "observed_at" : "2026-11-05T23:32:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c98fe2050fadeca39819d6e80d544e912184fe846cbe73539c68694fb1b51c08",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=37",
+         "version" : "2.000001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

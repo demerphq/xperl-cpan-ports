@@ -1,0 +1,42 @@
+{
+   "author" : "CHROMATIC",
+   "distribution" : "Modern-Perl",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHROMATIC/Modern-Perl-1.20250607.tar.gz",
+         "id" : "c88849c096c7e3ddc8233d967df452ea7420e217adfaa06f57bde24403a753f5",
+         "module" : "Modern::Perl",
+         "observed_at" : "2026-11-06T09:44:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "38ed7eb7b91aeed153887483e49a9a807a2e8962ab227cc6fdb5ea4dc41df128",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=168",
+         "version" : "1.20250607",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

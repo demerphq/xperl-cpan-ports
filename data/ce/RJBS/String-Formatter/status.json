@@ -71,6 +71,41 @@
          "test_summary" : "Files=6, Tests=22",
          "version" : "1.235",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/String-Formatter-1.235.tar.gz",
+         "id" : "43ee5b58216b202f4c7ca55e1add9935d0c8e41afa439c8ea83ff205d8456be7",
+         "module" : "String::Formatter",
+         "observed_at" : "2026-11-06T09:42:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "08236a913b911ce652cf08598e7c07d2df3f369fc47bf401a485a504a1660783",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=22",
+         "version" : "1.235",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

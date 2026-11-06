@@ -1,0 +1,54 @@
+{
+   "author" : "CINE",
+   "distribution" : "Lingua-Stem-Snowball-Da",
+   "observations" : [
+      {
+         "cpan_path" : "C/CI/CINE/Lingua-Stem-Snowball-Da-1.01.tar.gz",
+         "id" : "661a3f835671e1c62c48dd352e2c1018762558c52313bdc09828d18964b13825",
+         "module" : "Lingua::Stem::Snowball::Da",
+         "observed_at" : "2026-11-05T23:23:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [],
+         "source_sha256" : "2e39be4ee015c7ec47c2b067858018a7406e38d5121d655c8a46874adfa9a056",
+         "status" : "failed",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CI/CINE/Lingua-Stem-Snowball-Da-1.01.tar.gz",
+         "id" : "b13c9063409058ca7cc90c6589ec7e149135142d365edf2585907a912ed3bb82",
+         "module" : "Lingua::Stem::Snowball::Da",
+         "observed_at" : "2026-11-05T23:32:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2e39be4ee015c7ec47c2b067858018a7406e38d5121d655c8a46874adfa9a056",
+         "status" : "installed",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

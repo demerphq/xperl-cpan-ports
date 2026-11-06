@@ -1,0 +1,11 @@
+--- a/lib/Perl/Critic/PolicyFactory.pm
++++ b/lib/Perl/Critic/PolicyFactory.pm
+@@ -272,7 +272,7 @@
+         if ($eval_error) {
+             my $exception = Exception::Class->caught();
+ 
+-            if (ref $exception) {
++            if (ref $exception && UNIVERSAL::can($exception, 'rethrow')) {
+                 $exception->rethrow();
+             }
+ 

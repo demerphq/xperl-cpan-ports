@@ -1,0 +1,42 @@
+{
+   "author" : "SMUELLER",
+   "distribution" : "Class-XSAccessor",
+   "observations" : [
+      {
+         "cpan_path" : "S/SM/SMUELLER/Class-XSAccessor-1.19.tar.gz",
+         "id" : "94c4aac1963b9df807afdeef5f1a73eff7b1d1591223bcb5e3f9c5cc08373181",
+         "module" : "Class::XSAccessor",
+         "observed_at" : "2026-11-05T23:10:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "99c56b395f1239af19901f2feeb125d9ecb4e351a0d80daa9529211a4700a6f2",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=434",
+         "version" : "1.19",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

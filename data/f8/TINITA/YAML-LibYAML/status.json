@@ -1,0 +1,42 @@
+{
+   "author" : "TINITA",
+   "distribution" : "YAML-LibYAML",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-LibYAML-v0.910.0.tar.gz",
+         "id" : "94daabde4624cb44ff3c46e8dae226381380d6f8a2e8dbb4010822fa6a4031b8",
+         "module" : "YAML::XS",
+         "observed_at" : "2026-11-05T23:35:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "04310e9840b918383a5b9ae9ca4b3bde1b2771ec786c758bd2fffd79d409332b",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=1572",
+         "version" : "v0.910.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

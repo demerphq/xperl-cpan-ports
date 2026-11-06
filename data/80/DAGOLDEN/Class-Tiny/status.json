@@ -71,6 +71,41 @@
          "test_summary" : "Files=10, Tests=51",
          "version" : "1.008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Class-Tiny-1.008.tar.gz",
+         "id" : "f356c7f6e20bff1c26c8a16b21cf203f015570f80c375a8ec26ae3dcce62f44a",
+         "module" : "Class::Tiny",
+         "observed_at" : "2026-11-05T23:34:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ee058a63912fa1fcb9a72498f56ca421a2056dc7f9f4b67837446d6421815615",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=51",
+         "version" : "1.008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,42 @@
+{
+   "author" : "BPS",
+   "distribution" : "Time-ParseDate",
+   "observations" : [
+      {
+         "cpan_path" : "B/BP/BPS/Time-ParseDate-2026.033.tar.gz",
+         "id" : "8adfecb017409b0e8921d7d417f5875b06a8bbced15fc43b931f3f95035ece5a",
+         "module" : "Time::ParseDate",
+         "observed_at" : "2026-11-05T23:35:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8465c8146bd129d3be4a402b45e1b9f9c306f42b0f58a1e507bbdbd653f253b7",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=361",
+         "version" : "2026.033",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

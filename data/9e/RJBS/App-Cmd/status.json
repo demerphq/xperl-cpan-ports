@@ -71,6 +71,41 @@
          "test_summary" : "Files=19, Tests=87",
          "version" : "0.340",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/App-Cmd-0.340.tar.gz",
+         "id" : "37769feaadca450d7abd5dadde4a7ee3e80b5bb47f3c54c4f578ddcc4867fc6d",
+         "module" : "App::Cmd::Command::version",
+         "observed_at" : "2026-11-06T09:42:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "bbee8cd6b31ee9c2a6e9a10f49416c438d343102f55c1b0e50d20e1bf5f4a82e",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=87",
+         "version" : "0.340",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

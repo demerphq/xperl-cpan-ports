@@ -71,6 +71,41 @@
          "test_summary" : "Files=6, Tests=13",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MO/MONS/Test-More-UTF8-0.05.tar.gz",
+         "id" : "aed1a288f5afa59e3f01bb8a1d80a101ca21ac718cbb9c4821d7b7ae30095515",
+         "module" : "Test::More::UTF8",
+         "observed_at" : "2026-11-06T09:43:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b9f1c4b36a97cdfefaa53ed1115dd38f4b483037775f6559ee1df14acfd1ce04",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=14",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "List-SomeUtils-XS",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/List-SomeUtils-XS-0.59.tar.gz",
+         "id" : "4826b57f0ffd7228263ce56694759bca970f4917d40b914b532f1570ff4f2f16",
+         "module" : "List::SomeUtils::XS",
+         "observed_at" : "2026-11-06T09:17:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1da2d21762f40b58cbc8f3ba5239e849e5c73c4dbe0a5f3c4510118e65a2eae4",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=1",
+         "version" : "0.59",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Config-INI-Reader-Ordered",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-INI-Reader-Ordered-0.022.tar.gz",
+         "id" : "dbcaac3ee4b1cc5bbf17e77e3e06152ff0ca34b97c5c5c629c9d050532208a37",
+         "module" : "Config::INI::Reader::Ordered",
+         "observed_at" : "2026-11-05T23:09:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "072bff3b32f41af8326ec172c7d24ab28b2e5f36021f5268d0c8c2e387b06354",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=5",
+         "version" : "0.022",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Email-Abstract",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Email-Abstract-3.010.tar.gz",
+         "id" : "c8d8ec89fe9ac3e5136bc93ed27390d5958958179b8574af4b17a7459f0e5fcb",
+         "module" : "Email::Abstract",
+         "observed_at" : "2026-11-05T23:35:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8c12f68b5974cafc99d74942abefc8597193035aafd2763128e6aaafca4b7ed6",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=174",
+         "version" : "3.010",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

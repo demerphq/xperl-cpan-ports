@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Smart-Comments",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Smart-Comments-1.06.tar.gz",
+         "id" : "fb98608268dcaa77cea5457700f010ea41de1edf440c2089af7e4d48288f1716",
+         "module" : "Smart::Comments",
+         "observed_at" : "2026-11-06T09:13:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "dcf8a312134a7c6b82926a0115d93b692472a662d28cdc3a9bdf28984ada9ee3",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=120",
+         "version" : "1.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,76 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Devel-Confess",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-Confess-0.009004.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9cd9f6e4dc6b9b160b2c24e1f1e9f890ffd978b75d68ac797dbb48de4bffaa59",
+         "module" : "Devel::Confess",
+         "observed_at" : "2026-11-06T09:24:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "a8c601db345cf6929812f382062f71f5eaacad3f4f1be15b3be9d73d291a74dd",
+         "status" : "failed",
+         "test_summary" : "Files=17, Tests=120, Failed 1/17 test programs. 0/120 subtests failed.",
+         "version" : "0.009004",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-Confess-0.009004.tar.gz",
+         "id" : "65a93aa2ae6b5e1964247c46cf53a3c296ae65e1e2a24c30df980c4423112b12",
+         "module" : "Devel::Confess",
+         "observed_at" : "2026-11-06T09:32:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a8c601db345cf6929812f382062f71f5eaacad3f4f1be15b3be9d73d291a74dd",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=123",
+         "version" : "0.009004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

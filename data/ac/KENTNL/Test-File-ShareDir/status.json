@@ -71,6 +71,41 @@
          "test_summary" : "Files=17, Tests=29",
          "version" : "1.001002",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz",
+         "id" : "952de5d643ce21b2ec030f0c10249b7d9e176cb4f8476f18b4d4d0b02f5e5971",
+         "module" : "Test::File::ShareDir",
+         "observed_at" : "2026-11-05T23:34:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b33647cbb4b2f2fcfbde4f8bb4383d0ac95c2f89c4c5770eb691f1643a337aad",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=29",
+         "version" : "1.001002",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

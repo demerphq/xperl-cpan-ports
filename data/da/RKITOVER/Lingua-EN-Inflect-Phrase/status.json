@@ -1,0 +1,42 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "Lingua-EN-Inflect-Phrase",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/Lingua-EN-Inflect-Phrase-0.20.tar.gz",
+         "id" : "e7c639ce08f372ca10993149c969b05e99021f5e3639a80901991a2e0a3114af",
+         "module" : "Lingua::EN::Inflect::Phrase",
+         "observed_at" : "2026-11-05T23:32:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "55058911a99f1755de3eb449a99ffbeb92d88c01ff5dc60511a24679050ddea8",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=378",
+         "version" : "0.20",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

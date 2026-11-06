@@ -1,0 +1,42 @@
+{
+   "author" : "JTBRAUN",
+   "distribution" : "Parse-RecDescent",
+   "observations" : [
+      {
+         "cpan_path" : "J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz",
+         "id" : "cf85d8800e80d9c88464c2c323f2fc894384d46148e09774a56e38411ff09c63",
+         "module" : "Parse::RecDescent",
+         "observed_at" : "2026-11-05T23:33:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1943336a4cb54f1788a733f0827c0c55db4310d5eae15e542639c9dd85656e37",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=139",
+         "version" : "1.967015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

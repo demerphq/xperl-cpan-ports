@@ -71,6 +71,41 @@
          "test_summary" : "Files=3, Tests=8",
          "version" : "0.008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-FailWarnings-0.008.tar.gz",
+         "id" : "915096f9855ed2344851c016db6861948459b23d560f96f5c202a30beb41c577",
+         "module" : "Test::FailWarnings",
+         "observed_at" : "2026-11-06T09:42:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "da34ef9029f6849d6026201d49127d054ee6ac4b979c82210315f5721964a96f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=8",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

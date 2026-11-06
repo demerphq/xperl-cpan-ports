@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Email-Date-Format",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Email-Date-Format-1.008.tar.gz",
+         "id" : "54dc9e427fd9f0550f66aceadfd5d323b23472556db0dcbf9c8f031342dda5ce",
+         "module" : "Email::Date::Format",
+         "observed_at" : "2026-11-05T23:35:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "432b7c83ff88749af128003f5257c573aec1a463418db90ed22843cbbc258b4f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "1.008",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

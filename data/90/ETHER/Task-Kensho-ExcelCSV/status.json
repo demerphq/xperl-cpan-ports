@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-ExcelCSV",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-ExcelCSV-0.41.tar.gz",
+         "id" : "28e508f76068d47a59acadac4de4bba5c6f7720a86e8faa44f77f7e7e7eba544",
+         "module" : "Task::Kensho::ExcelCSV",
+         "observed_at" : "2026-11-05T23:49:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ae182588b3d7b43b5d2aa4822d6b4d5d3960453eac89976b7d63b8e9130611a2",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

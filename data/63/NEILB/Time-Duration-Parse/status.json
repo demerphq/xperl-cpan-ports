@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Time-Duration-Parse",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Time-Duration-Parse-0.16.tar.gz",
+         "id" : "a07c68dfcc6802bf483bc09cf741a52d202ff96decbc32adadf53d020280e8a5",
+         "module" : "Time::Duration::Parse",
+         "observed_at" : "2026-11-06T09:17:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1084a6463ee2790f99215bd76b135ca45afe2bfa6998fa6fd5470b69e1babc12",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=2051",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "CHROMATIC",
+   "distribution" : "UNIVERSAL-can",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHROMATIC/UNIVERSAL-can-1.20140328.tar.gz",
+         "id" : "4d632fbaeef42e85d8a0a8e2d5638619a66589d15250332d1ba17d128a40888a",
+         "module" : "UNIVERSAL::can",
+         "observed_at" : "2026-11-06T09:16:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "522da9f274786fe2cba99bc77cc1c81d2161947903d7fad10bd62dfb7f11990f",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=59",
+         "version" : "1.20140328",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "LDS",
+   "distribution" : "Devel-Cycle",
+   "observations" : [
+      {
+         "cpan_path" : "L/LD/LDS/Devel-Cycle-1.12.tar.gz",
+         "id" : "cb6e95f68fd2259e9ee704d4763e7cf2f99fdd4898ba5dee56a39a381ebd3109",
+         "module" : "Devel::Cycle",
+         "observed_at" : "2026-11-05T22:57:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fd3365c4d898b2b2bddbb78a46d507a18cca8490a290199547dab7f1e7390bc2",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=12",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

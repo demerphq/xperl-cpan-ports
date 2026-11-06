@@ -1,0 +1,42 @@
+{
+   "author" : "ACOBURN",
+   "distribution" : "Lingua-EN-Tagger",
+   "observations" : [
+      {
+         "cpan_path" : "A/AC/ACOBURN/Lingua-EN-Tagger-0.31.tar.gz",
+         "id" : "03a7032cef7dd1a8f53e69e6e52d40df4365934d140d2aa43f4ee443a68f88e6",
+         "module" : "Lingua::EN::Tagger",
+         "observed_at" : "2026-11-05T23:32:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "949e8c87e4808f7ba096b979220ff081bbe03b6d57890d2eecd4b83ae872e993",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=114",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

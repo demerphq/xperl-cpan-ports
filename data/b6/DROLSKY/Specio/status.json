@@ -71,6 +71,41 @@
          "test_summary" : "Files=35, Tests=348",
          "version" : "0.53",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Specio-0.53.tar.gz",
+         "id" : "fbfab368d4893ad63a0e4e301934c66ea2a7d58e57f71b2eb1854cd7c08782ab",
+         "module" : "Specio",
+         "observed_at" : "2026-11-05T23:34:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0d0eecfb9e89bd0f5f710fac42e1200a882d513a862f98497eaef5927ac6c183",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=348",
+         "version" : "0.53",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

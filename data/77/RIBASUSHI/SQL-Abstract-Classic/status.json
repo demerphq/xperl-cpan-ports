@@ -1,0 +1,42 @@
+{
+   "author" : "RIBASUSHI",
+   "distribution" : "SQL-Abstract-Classic",
+   "observations" : [
+      {
+         "cpan_path" : "R/RI/RIBASUSHI/SQL-Abstract-Classic-1.91.tar.gz",
+         "id" : "ff5f0cd784139c6163f3026b8883ceda6c9d32528bfcafa0b2062a25e2f74b0c",
+         "module" : "SQL::Abstract::Classic",
+         "observed_at" : "2026-11-05T23:11:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4e3d1dfd095b2123268586bb06b86929ea571388d4e941acccbdcda1e108ef28",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=1311",
+         "version" : "1.91",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

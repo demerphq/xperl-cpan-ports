@@ -71,6 +71,41 @@
          "test_summary" : "Files=2, Tests=12",
          "version" : "0.101344",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/MooseX-Types-Perl-0.101344.tar.gz",
+         "id" : "8317a8ac68564646136e4f8359d1cab61ca33fa011f279c44998bf87e5a00de9",
+         "module" : "MooseX::Types::Perl",
+         "observed_at" : "2026-11-06T09:42:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "87644354f74fa65235cb2bfca44277930a7eabe51acc5f81fb631530a8355e24",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=12",
+         "version" : "0.101344",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

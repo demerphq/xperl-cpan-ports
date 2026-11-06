@@ -1,0 +1,76 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "WWW-Mechanize",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-Mechanize-2.22.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "5da66df97b2b98f0d0ce5ed55682203eb9148a0e35c64bde4aa378197e4e8d41",
+         "module" : "WWW::Mechanize",
+         "observed_at" : "2026-11-05T22:59:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "2ed28cbeea54de40d08e88eb52f4dd5fcb05062efb6b2feb9da8376ca4308e60",
+         "status" : "failed",
+         "test_summary" : "Files=65, Tests=912, Failed 1/65 test programs. 0/912 subtests failed.",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-Mechanize-2.22.tar.gz",
+         "id" : "539d707bc78b10b9329ed9260c4e577e0e403028ba29cbcef34019150a7707d1",
+         "module" : "WWW::Mechanize",
+         "observed_at" : "2026-11-05T23:08:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2ed28cbeea54de40d08e88eb52f4dd5fcb05062efb6b2feb9da8376ca4308e60",
+         "status" : "installed",
+         "test_summary" : "Files=65, Tests=914",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Class-Accessor-Grouped",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Class-Accessor-Grouped-0.10014.tar.gz",
+         "id" : "b32317e99252690e44bcbc8f484b528d5ae0eb9ae416efb134e7acc98f9fad0b",
+         "module" : "Class::Accessor::Grouped",
+         "observed_at" : "2026-11-05T23:10:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "35d5b03efc09f67f3a3155c9624126c3e162c8e3ca98ff826db358533a44c4bb",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=2596",
+         "version" : "0.10014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

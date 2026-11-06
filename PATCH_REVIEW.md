@@ -1,13 +1,13 @@
 # Patch review
 
-This review classifies the 26 patch sets retained on 2026-11-06 by the code
+This review classifies the 27 patch sets retained on 2026-11-06 by the code
 they change. Classification is based on patch inspection. It does not claim
 that each patch is still needed with the installed XPerl. A clean CPAN build
 with the installed interpreter is the test for removing a patch.
 
 | Class | Distributions | Review result |
 | --- | --- | --- |
-| XPerl exception representation and propagation | Capture-Tiny, Params-Validate, DBIx-Class, IO-Async, POE-Test-Loops, Test-Exception, POE, libwww-perl, Catalyst-Runtime, Plack, Moose, Syntax-Keyword-Try, Future-AsyncAwait, Test-Trap, Moo, Template-Toolkit | Keep pending clean-release retests. Several patches change stringification or assertions, so their exact behavior should be checked against structured exception diagnostics. |
+| XPerl exception representation and propagation | Capture-Tiny, Params-Validate, DBIx-Class, IO-Async, POE-Test-Loops, Test-Exception, POE, libwww-perl, Catalyst-Runtime, Plack, Moose, Syntax-Keyword-Try, Future-AsyncAwait, Test-Trap, Moo, Template-Toolkit, Perl-Critic | Earlier patches need clean-release retests. Several change stringification or assertions, so their behavior should be checked against structured exception diagnostics. Perl-Critic was verified in the current installed run. |
 | XPerl parser or hash XS interfaces | XS-Parse-Keyword, XS-Parse-Sublike, Sereal-Encoder | Keep. These use `XPERL_VERSION` around changed internal APIs. Retest against each supported XPerl version. |
 | XPerl class object representation | Data-Printer | Keep. Review the field conversion against the current class-object API before extending its version range. |
 | Output-sensitive test fixtures | Devel-NYTProf | Retest unpatched with the current installed XPerl. This patch filters profile rows and needs closer scrutiny. |

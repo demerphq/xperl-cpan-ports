@@ -1,0 +1,42 @@
+{
+   "author" : "MATEU",
+   "distribution" : "MooX-Types-MooseLike",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATEU/MooX-Types-MooseLike-0.29.tar.gz",
+         "id" : "cd94d35075f63ab13a300dced68cfc723dce17a362bd531fa77f49ea3047d306",
+         "module" : "MooX::Types::MooseLike",
+         "observed_at" : "2026-11-05T23:35:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1d3780aa9bea430afbe65aa8c76e718f1045ce788aadda4116f59d3b7a7ad2b4",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=196",
+         "version" : "0.29",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "HERMES",
+   "distribution" : "Hash-Merge",
+   "observations" : [
+      {
+         "cpan_path" : "H/HE/HERMES/Hash-Merge-0.302.tar.gz",
+         "id" : "ef4d357f8b6d8ce7dc7a8eda86fc857ae53331147ddca60ff1a33c03a6a6e35d",
+         "module" : "Hash::Merge",
+         "observed_at" : "2026-11-05T23:11:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ae0522f76539608b61dde14670e79677e0f391036832f70a21f31adde2538644",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=510",
+         "version" : "0.302",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

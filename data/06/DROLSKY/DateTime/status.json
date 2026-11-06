@@ -71,6 +71,41 @@
          "test_summary" : "Files=51, Tests=3592",
          "version" : "1.68",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-1.68.tar.gz",
+         "id" : "80befeec2e4c30bf413baacc07c8970ee8f48cb19b0787256d9251d11d27a7bb",
+         "module" : "DateTime",
+         "observed_at" : "2026-11-05T23:35:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "dddaf4a0def18dce6b301079881a17b4a8c91184ae3fa3dc58723a3005eab9d3",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3592",
+         "version" : "1.68",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

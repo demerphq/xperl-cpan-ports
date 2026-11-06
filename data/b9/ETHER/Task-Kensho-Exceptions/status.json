@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-Exceptions",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-Exceptions-0.41.tar.gz",
+         "id" : "1ec66b47c582053b7ee9f04e7d22ca82d1feaf476c4d09bb0ba0adf0e92479fa",
+         "module" : "Task::Kensho::Exceptions",
+         "observed_at" : "2026-11-06T09:13:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d5f3cff8526e110a7bb6daa2f3313f04d4c6ce55555d5a8513353cc10c106398",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

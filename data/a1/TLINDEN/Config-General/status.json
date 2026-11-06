@@ -1,0 +1,42 @@
+{
+   "author" : "TLINDEN",
+   "distribution" : "Config-General",
+   "observations" : [
+      {
+         "cpan_path" : "T/TL/TLINDEN/Config-General-2.67.tar.gz",
+         "id" : "9a958fbde833306faa0b3e5ba982ae29d9202e1248a3f75dc713e78e2e2cb986",
+         "module" : "Config::General",
+         "observed_at" : "2026-11-05T23:09:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "473d65127b23dac0e8039c01e28bc4072cb9a6e93e81a1ea4893cea08c698db0",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=79",
+         "version" : "2.67",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

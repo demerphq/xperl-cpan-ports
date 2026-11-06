@@ -71,6 +71,41 @@
          "test_summary" : "Files=18, Tests=1021",
          "version" : "1.47",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-Locale-1.47.tar.gz",
+         "id" : "6205b04149d9a5061a53cec2ab2737829c56ef140b3973478c35c061054f2f56",
+         "module" : "DateTime::Locale",
+         "observed_at" : "2026-11-05T23:34:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "c0b25e1cdb2825d4469b96c7bbd1d7f20c5fc5fc5ae7f5e2bf6e69e08bfb9ecd",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1021",
+         "version" : "1.47",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

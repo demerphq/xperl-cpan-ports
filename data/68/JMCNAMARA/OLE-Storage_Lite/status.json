@@ -1,0 +1,42 @@
+{
+   "author" : "JMCNAMARA",
+   "distribution" : "OLE-Storage_Lite",
+   "observations" : [
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/OLE-Storage_Lite-0.24.tar.gz",
+         "id" : "5062f364f9a56b1bde1143a46eace75c55764e19446e1945b289008b9689b0ed",
+         "module" : "OLE::Storage_Lite",
+         "observed_at" : "2026-11-05T23:49:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "71c3b6ef082176c9585e620dd48f0f4782c282be73f2a653ea4b618f757bb3fd",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=199",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

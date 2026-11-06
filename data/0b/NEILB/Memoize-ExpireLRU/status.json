@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Memoize-ExpireLRU",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Memoize-ExpireLRU-0.56.tar.gz",
+         "id" : "9f2f54b0195460de40f3bc88ef33aceef847da21bdf5968c60b3a575e56ea431",
+         "module" : "Memoize::ExpireLRU",
+         "observed_at" : "2026-11-05T23:32:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ee836301cbbab9a24b05fc657edfa94b7fd8578d9836e566a191d0a5b01cd7f6",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=46",
+         "version" : "0.56",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

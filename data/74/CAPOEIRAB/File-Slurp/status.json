@@ -1,0 +1,42 @@
+{
+   "author" : "CAPOEIRAB",
+   "distribution" : "File-Slurp",
+   "observations" : [
+      {
+         "cpan_path" : "C/CA/CAPOEIRAB/File-Slurp-9999.32.tar.gz",
+         "id" : "fefab7e2132135b73da5b9b973383392fa40aa995854348e0b07807737a38f0b",
+         "module" : "File::Slurp",
+         "observed_at" : "2026-11-06T10:14:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4c3c21992a9d42be3a79dd74a3c83d27d38057269d65509a2f555ea0fb2bc5b0",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=629",
+         "version" : "9999.32",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

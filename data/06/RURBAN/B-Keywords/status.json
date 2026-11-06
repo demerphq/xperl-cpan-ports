@@ -1,0 +1,42 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "B-Keywords",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/B-Keywords-1.29.tar.gz",
+         "id" : "e1360bf0ec6243312c818cf1bf1a8cac4d0de1100575e405eb8d3bec8cc20979",
+         "module" : "B::Keywords",
+         "observed_at" : "2026-11-06T09:44:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e0aa19d3390409f0ece7342ab041c5b432c31d7cf1abf182c134b6aab78784b0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=597",
+         "version" : "1.29",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,43 @@
+{
+   "author" : "JOEY",
+   "distribution" : "Lingua-EN-Words2Nums",
+   "observations" : [
+      {
+         "cpan_path" : "J/JO/JOEY/Lingua-EN-Words2Nums-0.18.tar.gz",
+         "id" : "be93915048a4609d0bae98e8f01f0c4ce1fc3732e06fe139ab5b5cb9c0fca207",
+         "module" : "Lingua::EN::Words2Nums",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-05T23:23:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "686556797cd2a4eaa066f19bbf03ab25c06278292c9ead2f187dfd9031ea1d85",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=66",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

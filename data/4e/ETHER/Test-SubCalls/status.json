@@ -71,6 +71,41 @@
          "test_summary" : "Files=3, Tests=25",
          "version" : "1.10",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-SubCalls-1.10.tar.gz",
+         "id" : "a356769e424fd83c2a698e384ed01381a0798f85cf27a42cfd5f8f56747ae9c4",
+         "module" : "Test::SubCalls",
+         "observed_at" : "2026-11-06T09:42:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cbc1e9b35a05e71febc13e5ef547a31c8249899bb6011dbdc9d9ff366ddab6c2",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=25",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

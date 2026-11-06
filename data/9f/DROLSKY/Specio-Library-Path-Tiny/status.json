@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Specio-Library-Path-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Specio-Library-Path-Tiny-0.05.tar.gz",
+         "id" : "6a3cb94436db4b7402ce30b38f08ee2c3e74b41371c7ea22f72c907f1d978c63",
+         "module" : "Specio::Library::Path::Tiny",
+         "observed_at" : "2026-11-06T09:17:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "60df0bb9bcdaeb2c66a078bf6df9954ea4f9433d6cb680889942e542c7c27a51",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=48",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

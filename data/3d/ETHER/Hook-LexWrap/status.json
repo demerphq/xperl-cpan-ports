@@ -71,6 +71,41 @@
          "test_summary" : "Files=4, Tests=57",
          "version" : "0.26",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Hook-LexWrap-0.26.tar.gz",
+         "id" : "cf257c423e72cdc135af02cde8e9468118fe99ad1fdde584bbffea8a41ab6c82",
+         "module" : "Hook::LexWrap",
+         "observed_at" : "2026-11-06T09:42:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b60bdc5f98f94f9294b06adef82b1d996da192d5f183f9f434b610fd1137ec2d",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=58",
+         "version" : "0.26",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

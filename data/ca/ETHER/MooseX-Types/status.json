@@ -71,6 +71,41 @@
          "test_summary" : "Files=20, Tests=250",
          "version" : "0.51",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-0.51.tar.gz",
+         "id" : "9809528ddabd019bbb2e32b261b7c6ae91aae5ccb31fdf6390fc3377f5dfd013",
+         "module" : "MooseX::Types",
+         "observed_at" : "2026-11-06T09:42:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a5374c7b0273220239b19dda88b824dd73b95398c913c5c9e305edbdb5e0270f",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=250",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

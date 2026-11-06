@@ -4,6 +4,41 @@
    "observations" : [
       {
          "cpan_path" : "M/MA/MAREKR/Pod-Parser-1.67.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e1b8a66e40b1bf1e8906dc76836abca4c568a3423d17c2bc561949dbfb4bbb6d",
+         "module" : "Pod::PlainText",
+         "module_version" : "2.07",
+         "observed_at" : "2026-11-06T09:45:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "5deccbf55d750ce65588cd211c1a03fa1ef3aaa15d1ac2b8d85383a42c1427ea",
+         "status" : "failed",
+         "test_summary" : "Files=16, Tests=25, Failed 1/16 test programs. 1/25 subtests failed.",
+         "version" : "1.67",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MAREKR/Pod-Parser-1.67.tar.gz",
          "id" : "d64bd9c213d8e799fa4416d7b0acb69ffac7e17004b3e18523f01ed734946606",
          "module" : "Pod::Parser",
          "observed_at" : "2026-11-06T09:59:44Z",

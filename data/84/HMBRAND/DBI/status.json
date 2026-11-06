@@ -36,6 +36,41 @@
          "test_summary" : "Files=216, Tests=9722",
          "version" : "1.656",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/DBI-1.656.tgz",
+         "id" : "3d7fb401de4c622277b436839f4664daa5eb136f1a2b0887acb6c6d44e100fa5",
+         "module" : "DBI",
+         "observed_at" : "2026-11-05T23:10:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ab5f2b9aef00951ed4598723d6131a00b03e68193478dd5e5f211015520a6ef0",
+         "status" : "installed",
+         "test_summary" : "Files=216, Tests=9722",
+         "version" : "1.656",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

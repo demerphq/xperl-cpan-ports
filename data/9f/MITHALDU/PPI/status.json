@@ -71,6 +71,41 @@
          "test_summary" : "Files=70, Tests=53092",
          "version" : "1.291",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MITHALDU/PPI-1.291.tar.gz",
+         "id" : "2317820ea4c48a4cff67c635a464c722e5684dda7a347e98317a68e7b459e7f5",
+         "module" : "PPI::Document",
+         "observed_at" : "2026-11-06T09:43:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "74ac10bf66443ea813fb37d2ff5219c4d8e685379272d6699c812a39d91f3c1d",
+         "status" : "installed",
+         "test_summary" : "Files=70, Tests=53092",
+         "version" : "1.291",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

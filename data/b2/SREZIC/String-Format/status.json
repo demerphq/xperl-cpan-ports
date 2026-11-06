@@ -1,0 +1,42 @@
+{
+   "author" : "SREZIC",
+   "distribution" : "String-Format",
+   "observations" : [
+      {
+         "cpan_path" : "S/SR/SREZIC/String-Format-1.18.tar.gz",
+         "id" : "0308b1acaf9336805cfa51b093f1175e0264790f95955224a6e5d53652b5bdfb",
+         "module" : "String::Format",
+         "observed_at" : "2026-11-06T10:06:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9e417a8f8d9ea623beea2d13a47c0d5a696fc8602c0509b826cd45f97b76e778",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=21",
+         "version" : "1.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

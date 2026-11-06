@@ -71,6 +71,41 @@
          "test_summary" : "Files=3, Tests=14",
          "version" : "1.101246",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/String-Flogger-1.101246.tar.gz",
+         "id" : "700027f812848223569ec1edce5a6e2a54e39a20203f0ecd4eee40343242bf10",
+         "module" : "String::Flogger",
+         "observed_at" : "2026-11-06T09:42:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "15f8491e07818bb3cfa9f6bd3aabf6430ba9b4e309f18114358be3d81bff3a0f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "1.101246",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

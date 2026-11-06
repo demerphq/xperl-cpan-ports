@@ -1,0 +1,42 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "File-Next",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/File-Next-1.18.tar.gz",
+         "id" : "a3ed0327f3b6364a5d0bf6d5ee5d5a8035ccaccbbb0939ae366830b1e31ca156",
+         "module" : "File::Next",
+         "observed_at" : "2026-11-05T22:48:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f900cb39505eb6e168a9ca51a10b73f1bbde1914b923a09ecd72d9c02e6ec2ef",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=93",
+         "version" : "1.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

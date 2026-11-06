@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Email-MIME-Kit",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Email-MIME-Kit-3.000008.tar.gz",
+         "id" : "9c0cdae207886502a7cc43192ff2764dfc253f02e460e85be998adb1a79cc01f",
+         "module" : "Email::MIME::Kit",
+         "observed_at" : "2026-11-05T23:35:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "39373e092a52f0bd75c216006f48567a141aeb51cfce3e26321d0c55fb72718c",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=19",
+         "version" : "3.000008",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

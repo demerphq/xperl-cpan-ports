@@ -71,6 +71,41 @@
          "test_summary" : "Files=20, Tests=81",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Params-ValidationCompiler-0.31.tar.gz",
+         "id" : "9f63efec345218f04ea3e1892358700037e296691a2f04d4d61cd0ee84ba6db1",
+         "module" : "Params::ValidationCompiler",
+         "observed_at" : "2026-11-05T23:34:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7b6497173f1b6adb29f5d51d8cf9ec36d2f1219412b4b2410e9d77a901e84a6d",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=82",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

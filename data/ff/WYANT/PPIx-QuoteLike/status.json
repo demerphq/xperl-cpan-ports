@@ -1,0 +1,42 @@
+{
+   "author" : "WYANT",
+   "distribution" : "PPIx-QuoteLike",
+   "observations" : [
+      {
+         "cpan_path" : "W/WY/WYANT/PPIx-QuoteLike-0.024.tar.gz",
+         "id" : "ad45a36b1434f4947a9a8e43ea54949198164cbbbf320e5daf880f8bc8b1edc0",
+         "module" : "PPIx::QuoteLike",
+         "observed_at" : "2026-11-06T09:44:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b71da7748be3a0ab7c19fe8a3ddf7fec480180342c8e76654d28582281152e07",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=742",
+         "version" : "0.024",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

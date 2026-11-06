@@ -1,0 +1,42 @@
+{
+   "author" : "GAAS",
+   "distribution" : "IO-String",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GAAS/IO-String-1.08.tar.gz",
+         "id" : "5cda0ac4fe3b12a189ebf4e58181f74f32b027367826a6f94c7712ded7535822",
+         "module" : "IO::String",
+         "observed_at" : "2026-11-06T10:14:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2a3f4ad8442d9070780e58ef43722d19d1ee21a803bf7c8206877a10482de5a0",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=43",
+         "version" : "1.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

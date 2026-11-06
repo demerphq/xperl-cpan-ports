@@ -1,0 +1,42 @@
+{
+   "author" : "RCAPUTO",
+   "distribution" : "IO-Pipely",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCAPUTO/IO-Pipely-0.006.tar.gz",
+         "id" : "7e4d5d3e15b80b19f54e96adc4ed0005ecacb4965419c700a2e61b7b3167472a",
+         "module" : "IO::Pipely",
+         "observed_at" : "2026-11-05T21:50:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "0e3fcd841a327efb549fa01b2083dc3695e72ea0c63303e56ed5161bf810413b",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=23",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

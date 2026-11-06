@@ -1,0 +1,42 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "Lingua-EN-Number-IsOrdinal",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/Lingua-EN-Number-IsOrdinal-0.05.tar.gz",
+         "id" : "88b37f6909db9ffde97ddff3577c9d9fda9430498231be5d1018da47b84f981d",
+         "module" : "Lingua::EN::Number::IsOrdinal",
+         "observed_at" : "2026-11-05T23:23:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=20",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

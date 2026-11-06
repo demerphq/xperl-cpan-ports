@@ -1,0 +1,42 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Code-TidyAll",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Code-TidyAll-0.85.tar.gz",
+         "id" : "2b3668244a7988e6c4556d575170eab29b75658f6e236a64d046ba2f28516700",
+         "module" : "Code::TidyAll",
+         "observed_at" : "2026-11-06T09:17:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b902d6cd3ba30426d53c5bb7844f7860ffc57849bea25f24fd7af87a80eb63c1",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=227",
+         "version" : "0.85",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

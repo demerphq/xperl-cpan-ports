@@ -1,0 +1,42 @@
+{
+   "author" : "REHSACK",
+   "distribution" : "File-HomeDir",
+   "observations" : [
+      {
+         "cpan_path" : "R/RE/REHSACK/File-HomeDir-1.006.tar.gz",
+         "id" : "58ebb3761554f703e5ca78d3be1ada5da716a970d51496326a563c760a7208b3",
+         "module" : "File::HomeDir",
+         "observed_at" : "2026-11-05T23:09:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "593737c62df0f6dab5d4122e0b4476417945bb6262c33eedc009665ef1548852",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=81",
+         "version" : "1.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

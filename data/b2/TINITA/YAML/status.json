@@ -1,0 +1,42 @@
+{
+   "author" : "TINITA",
+   "distribution" : "YAML",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-1.321.tar.gz",
+         "id" : "726c469a5153237c44409d8428436c1b518e4bd3b34412cab345843328a5ffa6",
+         "module" : "YAML",
+         "observed_at" : "2026-11-05T23:33:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d461167b8b4aa9244f736a7a740830141e61dddee301e456bf642e81d3cea193",
+         "status" : "installed",
+         "test_summary" : "Files=54, Tests=542",
+         "version" : "1.321",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

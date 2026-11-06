@@ -1,0 +1,42 @@
+{
+   "author" : "JMCNAMARA",
+   "distribution" : "Spreadsheet-WriteExcel",
+   "observations" : [
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/Spreadsheet-WriteExcel-2.40.tar.gz",
+         "id" : "6e30decf399bd3a6dac99d14cc734626a026b64a15b4cccfb6701afa86be1b9e",
+         "module" : "Spreadsheet::WriteExcel",
+         "observed_at" : "2026-11-05T23:49:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e356aad6866cf135731268ee0e979a197443c15a04878e9cf3e80d022ad6c07e",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=1254",
+         "version" : "2.40",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

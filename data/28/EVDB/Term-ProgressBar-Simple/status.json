@@ -1,0 +1,42 @@
+{
+   "author" : "EVDB",
+   "distribution" : "Term-ProgressBar-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "E/EV/EVDB/Term-ProgressBar-Simple-0.03.tar.gz",
+         "id" : "675ebf1f2a2915c2d5c326e0c38a75ac228bf51889c137964ec7b30d0761e074",
+         "module" : "Term::ProgressBar::Simple",
+         "observed_at" : "2026-11-06T09:16:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a20db3c67d5bdfd0c1fab392c6d1c26880a7ee843af602af4f9b53a7043579a6",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

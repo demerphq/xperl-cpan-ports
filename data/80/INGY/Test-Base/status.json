@@ -1,0 +1,42 @@
+{
+   "author" : "INGY",
+   "distribution" : "Test-Base",
+   "observations" : [
+      {
+         "cpan_path" : "I/IN/INGY/Test-Base-0.89.tar.gz",
+         "id" : "feacaaed6f59bdfe41ff16ef9db7a5d74f3daddd30d5432575fc40b79bfed8b0",
+         "module" : "Test::Base",
+         "observed_at" : "2026-11-05T23:33:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "2794a1aaaeb1d3a287dd2c7286258663796562f7db9ccc6b424bc4f1de8ad014",
+         "status" : "installed",
+         "test_summary" : "Files=106, Tests=431",
+         "version" : "0.89",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

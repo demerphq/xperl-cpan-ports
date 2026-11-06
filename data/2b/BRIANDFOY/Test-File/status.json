@@ -71,6 +71,41 @@
          "test_summary" : "Files=19, Tests=197",
          "version" : "1.995",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
+         "id" : "73991caf4327ce961cd71cd6ff1e6f76bd0844a8662fc83c5e1b58dabf45f072",
+         "module" : "Test::File",
+         "observed_at" : "2026-11-05T23:34:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "8f1cc36b871493dfdac29bda459763711b5fd828895c0f326b6c8654babd5f09",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=198",
+         "version" : "1.995",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -71,6 +71,41 @@
          "test_summary" : "Files=2, Tests=1",
          "version" : "2.38",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JS/JSTOWE/TermReadKey-2.38.tar.gz",
+         "id" : "f7bbc5b7c572b6e42ab0fb0e97e44b28c7148ba6444d2e0fa157524d0d56ff82",
+         "module" : "Term::ReadKey",
+         "observed_at" : "2026-11-06T09:16:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "5a645878dc570ac33661581fbb090ff24ebce17d43ea53fd22e105a856a47290",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "2.38",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

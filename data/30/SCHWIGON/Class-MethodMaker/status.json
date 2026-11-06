@@ -1,0 +1,42 @@
+{
+   "author" : "SCHWIGON",
+   "distribution" : "Class-MethodMaker",
+   "observations" : [
+      {
+         "cpan_path" : "S/SC/SCHWIGON/class-methodmaker/Class-MethodMaker-2.25.tar.gz",
+         "id" : "c96861b1113c3d92fe9c66322d06d615d1adc2186972eecf68e6735a47d53e93",
+         "module" : "Class::MethodMaker",
+         "observed_at" : "2026-11-06T09:16:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "70bd3a6595cc40e54a9521eae3247e7d69166e6783ea5faebd59b84537e1b588",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=1252",
+         "version" : "2.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

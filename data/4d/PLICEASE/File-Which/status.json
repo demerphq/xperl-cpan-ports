@@ -1,0 +1,42 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "File-Which",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/File-Which-1.27.tar.gz",
+         "id" : "b09e7f6c463b3d31f32fc0dab68dcc00b686d03b0c3da73651ceb2ee5ab430c5",
+         "module" : "File::Which",
+         "observed_at" : "2026-11-05T23:09:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "3201f1a60e3f16484082e6045c896842261fc345de9fb2e620fd2a2c7af3a93a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=21",
+         "version" : "1.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

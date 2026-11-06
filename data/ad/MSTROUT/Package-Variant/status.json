@@ -1,0 +1,42 @@
+{
+   "author" : "MSTROUT",
+   "distribution" : "Package-Variant",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSTROUT/Package-Variant-1.003002.tar.gz",
+         "id" : "9b7f99e15ca192b608b71e50f4317f87afdc838b5e268283800cf36cbcfe601f",
+         "module" : "Package::Variant",
+         "observed_at" : "2026-11-05T23:33:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "b2ed849d2f4cdd66467512daa3f143266d6df810c5fae9175b252c57bc1536dc",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=34",
+         "version" : "1.003002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

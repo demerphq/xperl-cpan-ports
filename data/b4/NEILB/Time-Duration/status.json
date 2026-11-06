@@ -1,0 +1,42 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Time-Duration",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Time-Duration-1.21.tar.gz",
+         "id" : "7ee456bb4251d339ad942c0921d552b625b15aa4db1d8473298fbdf093a1d3e6",
+         "module" : "Time::Duration",
+         "observed_at" : "2026-11-06T09:17:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "fe340eba8765f9263694674e5dff14833443e19865e5ff427bbd79b7b5f8a9b8",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=250",
+         "version" : "1.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ARODLAND",
+   "distribution" : "Digest-HMAC",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARODLAND/Digest-HMAC-1.05.tar.gz",
+         "id" : "981856e5ed3134ae265182ad95bf80892c7e4d7f7c8c29d064c5eedc8ceceded",
+         "module" : "Digest::HMAC",
+         "observed_at" : "2026-11-05T23:35:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "215cb59cba610745cfb2d4b3f8ef756d590e57e3ad7986a992e87c4969fcdc7a",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=14",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

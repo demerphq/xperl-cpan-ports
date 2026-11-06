@@ -1,0 +1,16 @@
+{
+  "source_sha256": "572a7c8758ba1c0ab6daf0bd40297c4f0dcf1516f084522df2c2bf04d525e232",
+  "patch_set_id": "rethrow-capable-exceptions",
+  "patch_sha256": "43ef246f29c73fa2f9665d4aba5cbef8c54893612dc06ccb19364a13f8ff8e38",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "Build test",
+      "interpreter": "installed XPerl v5.45.5",
+      "result": "pass: 40 test files, 5,424 tests"
+    }
+  ],
+  "failure": "The clean release tried to call rethrow on XPerl::Exception; t/01_config.t failed one of 238 tests."
+}

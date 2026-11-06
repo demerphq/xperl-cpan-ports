@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Pod-Spell",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Pod-Spell-1.27.tar.gz",
+         "id" : "3b5186d87be301db4eea2579b7d636d1cdb9d2231577ac49823dec904dc4447f",
+         "module" : "Pod::Spell",
+         "observed_at" : "2026-11-06T10:06:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7ef56c9229f3efbc71a0462ce44490c0dd49fbf3b21fe85bb08b1eeac6f7b063",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=54",
+         "version" : "1.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

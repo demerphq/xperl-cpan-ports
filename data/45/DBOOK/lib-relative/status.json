@@ -1,0 +1,42 @@
+{
+   "author" : "DBOOK",
+   "distribution" : "lib-relative",
+   "observations" : [
+      {
+         "cpan_path" : "D/DB/DBOOK/lib-relative-1.002.tar.gz",
+         "id" : "a26ac365674610ab3dc858bfa5b7bb90436f44be2037fb3aa1ed029ddf40ef96",
+         "module" : "lib::relative",
+         "observed_at" : "2026-11-06T09:17:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e4470215167c406917603e78be4d93112cf6913cd342aeb800b412e011c8a78b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=11",
+         "version" : "1.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

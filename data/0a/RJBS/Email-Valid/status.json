@@ -1,0 +1,42 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Email-Valid",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Email-Valid-1.204.tar.gz",
+         "id" : "aed1452b7985f05eadfb040676c9db78f7bd3a44b17892be195c46ec9c7bda65",
+         "module" : "Email::Valid",
+         "observed_at" : "2026-11-05T23:47:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1c37a9b1bc76304859572b150a82c26bd4f12ec63d2d0b76505ac392104cb47f",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=47",
+         "version" : "1.204",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

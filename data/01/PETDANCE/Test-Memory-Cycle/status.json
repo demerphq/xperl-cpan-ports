@@ -1,0 +1,42 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "Test-Memory-Cycle",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/Test-Memory-Cycle-1.06.tar.gz",
+         "id" : "d6aad302ef025b9e028cd4e4f6338bb5681588ce2ea9ca4825c20f641a5fbb46",
+         "module" : "Test::Memory::Cycle",
+         "observed_at" : "2026-11-05T22:57:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9d53ddfdc964cd8454cb0da4c695b6a3ae47b45839291c34cb9d8d1cfaab3202",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=38",
+         "version" : "1.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

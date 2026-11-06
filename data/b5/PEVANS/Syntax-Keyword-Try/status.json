@@ -1,0 +1,82 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Syntax-Keyword-Try",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Syntax-Keyword-Try-0.31.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "35f6a6e911ed1c2fa4fd75dfb7ea1cea56ec5323b0a89cc18261a07e9299dac6",
+         "module" : "Syntax::Keyword::Try",
+         "observed_at" : "2026-11-05T23:49:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7bc6242d746378982a599b34de35f07d3decc9e09d5646f8fa3b87f459414a4a",
+         "status" : "failed",
+         "test_summary" : "Files=19, Tests=78, Failed 1/19 test programs. 1/78 subtests failed.",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Syntax-Keyword-Try-0.31.tar.gz",
+         "id" : "5fbc42b213b5f69261277dbc54d42d07baeec27de166c2b967901ee12d1443ff",
+         "module" : "Syntax::Keyword::Try",
+         "observed_at" : "2026-11-06T09:13:26Z",
+         "patch_set" : "structured-exception-fallthrough",
+         "patch_sha256" : [
+            "6b24d9f6b294f4ad8de93db8919dc6a62bbc79920adf637eae28e533842d9066"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7bc6242d746378982a599b34de35f07d3decc9e09d5646f8fa3b87f459414a4a",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=78",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

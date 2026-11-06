@@ -71,6 +71,41 @@
          "test_summary" : "Files=3, Tests=4",
          "version" : "0.103019",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/CPAN-Uploader-0.103019.tar.gz",
+         "id" : "986f47850b8e6318d4fbb01d8a8c00c047df2d9c2031cef2445f34e38379bfc7",
+         "module" : "CPAN::Uploader",
+         "observed_at" : "2026-11-06T09:17:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f1adcb543d5a1ce59be08a25578125992c6dcf1d4888fd9ff658823b46922c24",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=4",
+         "version" : "0.103019",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

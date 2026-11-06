@@ -71,6 +71,41 @@
          "test_summary" : "Files=375, Tests=9134",
          "version" : "2.010001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Type-Tiny-2.010001.tar.gz",
+         "id" : "37182d77cd3487aada9dfb3f374636fdde5da6b3c3734afca91baba679b1f31c",
+         "module" : "Types::Standard",
+         "observed_at" : "2026-11-06T09:43:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cd583e4983039f35052d490f0c4439124ba667d4f09c4e3aec47de5200f9921a",
+         "status" : "installed",
+         "test_summary" : "Files=375, Tests=9157",
+         "version" : "2.010001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,42 @@
+{
+   "author" : "TMTM",
+   "distribution" : "Spreadsheet-WriteExcel-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "T/TM/TMTM/Spreadsheet-WriteExcel-Simple-1.04.tar.gz",
+         "id" : "e19dde28e581508c09f8a4eb31ee8c2ea22602e12c21236bb0c00ecc7f4e6442",
+         "module" : "Spreadsheet::WriteExcel::Simple",
+         "observed_at" : "2026-11-05T23:49:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f7775aa437407f951a13d947c0e0accf4ac0f909397d8411c5fbba427858b7c3",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=1",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

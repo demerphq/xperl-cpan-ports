@@ -1,0 +1,42 @@
+{
+   "author" : "PREACTION",
+   "distribution" : "Log-Any",
+   "observations" : [
+      {
+         "cpan_path" : "P/PR/PREACTION/Log-Any-1.720.tar.gz",
+         "id" : "759c88081d44e33b9f7102cf94ababb58387cf01838de41162041200c0c09fd7",
+         "module" : "Log::Any",
+         "observed_at" : "2026-11-06T09:16:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1fa8a6121dce297406f67adbcb4d92db01e9dd85781cb6ef710dc333bb9cfd56",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=551",
+         "version" : "1.720",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

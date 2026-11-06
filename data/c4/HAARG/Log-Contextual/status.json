@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Log-Contextual",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Log-Contextual-0.009001.tar.gz",
+         "id" : "5f31041c0deb0d57f694199929541edb02b6ede90b134bab4e24ae025f48be4c",
+         "module" : "Log::Contextual",
+         "observed_at" : "2026-11-06T09:16:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e75687284bfe03b0e46bf9dc5306e65eed680708ec83e4a00fe29608b8fdcc91",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=347",
+         "version" : "0.009001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

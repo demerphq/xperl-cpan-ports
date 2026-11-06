@@ -1,0 +1,42 @@
+{
+   "author" : "ROBIN",
+   "distribution" : "PadWalker",
+   "observations" : [
+      {
+         "cpan_path" : "R/RO/ROBIN/PadWalker-2.5.tar.gz",
+         "id" : "041b0e1e1930f21196b118770d5a682cb710c6dba3dbb07ecce7a54a10ef5b6d",
+         "module" : "PadWalker",
+         "observed_at" : "2026-11-05T22:57:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "07b26abb841146af32072a8d68cb90176ffb176fd9268e6f2f7d106f817a0cd0",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=82",
+         "version" : "2.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

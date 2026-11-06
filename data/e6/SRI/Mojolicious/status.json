@@ -155,6 +155,48 @@
          "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
          "version" : "9.53",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SRI/Mojolicious-9.53.tar.gz",
+         "id" : "94c0fc30737b23ad981634e8d5be3414f3e66278ff2db85f0a407d964cf50bc1",
+         "module" : "Mojo::IOLoop",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-05T21:50:47Z",
+         "patch_set" : "localize-color-environment",
+         "patch_sha256" : [
+            "0def97e666c709519477b570730b585e7859dc7b1be303758c6913264036aeb1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
+         "status" : "installed",
+         "test_summary" : "Files=109, Tests=3736",
+         "version" : "9.53",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,42 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Algorithm-C3",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Algorithm-C3-0.11.tar.gz",
+         "id" : "ef525e2df262dbb0f3d485d7cc8a6dbdddeca043b3768d8ac8c8fedce796cf7d",
+         "module" : "Algorithm::C3",
+         "observed_at" : "2026-11-05T23:10:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "aaf48467765deea6e48054bc7d43e46e4d40cbcda16552c629d37be098289309",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=66",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

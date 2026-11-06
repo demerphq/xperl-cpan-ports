@@ -1,0 +1,42 @@
+{
+   "author" : "OVID",
+   "distribution" : "Test-Class-Most",
+   "observations" : [
+      {
+         "cpan_path" : "O/OV/OVID/Test-Class-Most-0.08.tar.gz",
+         "id" : "39d5d1e9c752274abdc817a76a14379b50292b520363d4e33bd77c3e85a6e788",
+         "module" : "Test::Class::Most",
+         "observed_at" : "2026-11-06T09:17:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "634cded86bba5dde07ced72ffb8a46705ff93aa844b98e96bde05540234c7dff",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=18",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

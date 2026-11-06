@@ -71,6 +71,41 @@
          "test_summary" : "Files=58, Tests=506",
          "version" : "6.040",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Dist-Zilla-6.040.tar.gz",
+         "id" : "3474959c4e371f553529f2d0e130a2fe7b590beb999af54c132e97a5bbfdb6f2",
+         "module" : "Dist::Zilla",
+         "observed_at" : "2026-11-06T09:44:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "d8d6f304022ec984612e816780336f84d0bc79036ab08621b71b26321db0bc73",
+         "status" : "installed",
+         "test_summary" : "Files=58, Tests=506",
+         "version" : "6.040",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

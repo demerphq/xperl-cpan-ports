@@ -1,0 +1,42 @@
+{
+   "author" : "PHRED",
+   "distribution" : "Archive-Zip",
+   "observations" : [
+      {
+         "cpan_path" : "P/PH/PHRED/Archive-Zip-1.68.tar.gz",
+         "id" : "b92810e46b6653e6b55835a159c754bbc000a1acf1f6742f323ae816541b502a",
+         "module" : "Archive::Zip",
+         "observed_at" : "2026-11-05T23:47:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "984e185d785baf6129c6e75f8eb44411745ac00bf6122fb1c8e822a3861ec650",
+         "status" : "installed",
+         "test_summary" : "Files=28, Tests=911",
+         "version" : "1.68",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

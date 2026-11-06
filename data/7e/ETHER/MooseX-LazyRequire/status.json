@@ -71,6 +71,41 @@
          "test_summary" : "Files=4, Tests=12",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-LazyRequire-0.11.tar.gz",
+         "id" : "6cdceec4062d3e6692cd0ca6ea2c67cdd2ea0275a1020f2812833c06902dc153",
+         "module" : "MooseX::LazyRequire",
+         "observed_at" : "2026-11-06T09:42:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "ef620c1e019daf9cf3f23a943d25a94c91e93ab312bcd63be2e9740ec0b94288",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=12",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

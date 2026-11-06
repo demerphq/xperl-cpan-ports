@@ -1,0 +1,42 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Test-Most",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Test-Most-0.42.tar.gz",
+         "id" : "120438a1e1c30ba58f6be10db9ece99079a152628a092b18041f29bad78c2211",
+         "module" : "Test::Most",
+         "observed_at" : "2026-11-06T09:17:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a418935483def0a46259a50bff6320842792a5a02777192667de222475253075",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=103",
+         "version" : "0.42",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

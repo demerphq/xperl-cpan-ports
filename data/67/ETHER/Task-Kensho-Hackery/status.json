@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Task-Kensho-Hackery",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Task-Kensho-Hackery-0.41.tar.gz",
+         "id" : "33e9b2c7f536ee3aadeb30932b1a518731f6a259ff6e087cb6d34e85d471d194",
+         "module" : "Task::Kensho::Hackery",
+         "observed_at" : "2026-11-06T09:16:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4a0273de46fd44eafc562b952f876a0108811fa60a9d942d7eceb7c224d66cfb",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

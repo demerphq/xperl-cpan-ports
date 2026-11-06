@@ -1,0 +1,42 @@
+{
+   "author" : "HMBRAND",
+   "distribution" : "Text-CSV_XS",
+   "observations" : [
+      {
+         "cpan_path" : "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+         "id" : "c60d8553eac88eb0df3493b168447fac7ee10f78115193baea16799dd5468f27",
+         "module" : "Text::CSV_XS",
+         "observed_at" : "2026-11-05T23:49:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+         "status" : "installed",
+         "test_summary" : "Files=36, Tests=52671",
+         "version" : "1.65",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

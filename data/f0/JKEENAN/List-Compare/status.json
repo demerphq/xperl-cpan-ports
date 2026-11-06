@@ -1,0 +1,42 @@
+{
+   "author" : "JKEENAN",
+   "distribution" : "List-Compare",
+   "observations" : [
+      {
+         "cpan_path" : "J/JK/JKEENAN/List-Compare-0.55.tar.gz",
+         "id" : "885a0c33d36a1b1928674137127b3771b42238c7f54aec1028e86d75ed391083",
+         "module" : "List::Compare",
+         "observed_at" : "2026-11-06T09:17:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "cc719479836579d52b02bc328ed80a98f679df043a99b5710ab2c191669eb837",
+         "status" : "installed",
+         "test_summary" : "Files=52, Tests=4190",
+         "version" : "0.55",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

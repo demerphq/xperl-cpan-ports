@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Perl-Critic",
+  "releases": [
+    {
+      "version": "1.156",
+      "cpan_path": "P/PE/PETDANCE/Perl-Critic-1.156.tar.gz",
+      "source_sha256": "572a7c8758ba1c0ab6daf0bd40297c4f0dcf1516f084522df2c2bf04d525e232",
+      "patch_sets": [
+        {
+          "id": "rethrow-capable-exceptions",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/rethrow-capable-exceptions.patch",
+              "sha256": "43ef246f29c73fa2f9665d4aba5cbef8c54893612dc06ccb19364a13f8ff8e38"
+            }
+          ],
+          "recipes": ["exception-wrapper-classification-v1"]
+        }
+      ]
+    }
+  ]
+}

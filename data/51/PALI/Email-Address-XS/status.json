@@ -1,0 +1,42 @@
+{
+   "author" : "PALI",
+   "distribution" : "Email-Address-XS",
+   "observations" : [
+      {
+         "cpan_path" : "P/PA/PALI/Email-Address-XS-1.05.tar.gz",
+         "id" : "41c33ce07ccbcd09c0ba736a21ca91f4a2226410f5544aa72f3aa1eac03db194",
+         "module" : "Email::Address::XS",
+         "observed_at" : "2026-11-05T23:35:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "1510b7f10d67201037cd50d22c9d6b26eeca55ededa4cdb46bbca27e59a4ea16",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=653",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

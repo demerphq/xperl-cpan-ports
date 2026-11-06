@@ -1,0 +1,42 @@
+{
+   "author" : "SBURKE",
+   "distribution" : "Text-Unidecode",
+   "observations" : [
+      {
+         "cpan_path" : "S/SB/SBURKE/Text-Unidecode-1.30.tar.gz",
+         "id" : "68514335814615445cc425d57b2438fcc35cfa39eaf391e897cedfe26e146f1a",
+         "module" : "Text::Unidecode",
+         "observed_at" : "2026-11-05T23:32:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6c24f14ddc1d20e26161c207b73ca184eed2ef57f08b5fb2ee196e6e2e88b1c6",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1483",
+         "version" : "1.30",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

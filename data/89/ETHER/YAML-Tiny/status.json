@@ -71,6 +71,41 @@
          "test_summary" : "Files=13, Tests=58",
          "version" : "1.76",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/YAML-Tiny-1.76.tar.gz",
+         "id" : "82bcb1221324e68355b386a88878c0fd93b2d47068a91dd7dc3e377aa09da4a8",
+         "module" : "YAML::Tiny",
+         "observed_at" : "2026-11-06T09:43:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a8d584394cf069bf8f17cba3dd5099003b097fce316c31fb094f1b1c171c08a3",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=58",
+         "version" : "1.76",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
