@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "distribution": "App-perlbrew",
+  "releases": [
+    {
+      "version": "1.02",
+      "cpan_path": "G/GU/GUGOD/App-perlbrew-1.02.tar.gz",
+      "source_sha256": "24064b227481737b65d95e2dab5b677b90c720f8e9a19d28b2152728617c24ed",
+      "patch_sets": [
+        {
+          "id": "portable-patchperl-and-hashall",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/portable-patchperl-and-hashall.patch",
+              "sha256": "f47bfd84a8042877fe1e1dff3222730045f5afebd7130d614a65cd51c638abe4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

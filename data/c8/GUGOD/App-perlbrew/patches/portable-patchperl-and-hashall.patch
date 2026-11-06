@@ -1,0 +1,22 @@
+--- a/lib/App/perlbrew.pm
++++ b/lib/App/perlbrew.pm
+@@ -3071 +3071,3 @@
+-    hash -r
++    if [[ -o hashall ]] ; then
++        hash -r
++    fi
+--- a/t/20.patchperl.t
++++ b/t/20.patchperl.t
+@@ -15,0 +16,2 @@
++    my $clean_bin = tempdir(CLEANUP => 1);
++    symlink $^X, "$clean_bin/perl" or die "Cannot link perl into $clean_bin: $!";
+@@ -18,2 +20 @@
+-        # Since patchperl may exist in developer's environment,
+-        # we override PATH to make the probe fail not able to find patchperl.
++        # Only the test interpreter is available until a case adds patchperl.
+@@ -21 +22 @@
+-        $ENV{PATH} = "/bin";
++        $ENV{PATH} = $clean_bin;
+@@ -34 +35 @@
+-            $ENV{PATH} = "/bin:$bin";
++            $ENV{PATH} = "$clean_bin:$bin";

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "24064b227481737b65d95e2dab5b677b90c720f8e9a19d28b2152728617c24ed",
+  "patch_set_id": "portable-patchperl-and-hashall",
+  "patch_sha256": "f47bfd84a8042877fe1e1dff3222730045f5afebd7130d614a65cd51c638abe4",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The patchperl test assumes /bin lacks patchperl, which is false on this host. The generated Bash setup also runs hash -r after disabling Bash hashing, producing stderr during initialization.",
+  "tests": [
+    {
+      "command": "perl Build test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 73 test files, 858 tests"
+    },
+    {
+      "command": "perl -MTest::Harness -e 'runtests(@ARGV)' t/20.patchperl.t t/bashrc_executes.t",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 2 focused test files"
+    }
+  ]
+}
