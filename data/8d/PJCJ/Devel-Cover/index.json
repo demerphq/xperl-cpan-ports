@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "distribution": "Devel-Cover",
+  "releases": [
+    {
+      "version": "1.52",
+      "cpan_path": "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+      "source_sha256": "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+      "patch_sets": [
+        {
+          "id": "xperl-coverage-gold",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-coverage-gold.patch",
+              "sha256": "750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

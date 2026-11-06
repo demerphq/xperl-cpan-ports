@@ -1,0 +1,22 @@
+{
+  "source_sha256": "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+  "patch_set_id": "xperl-coverage-gold",
+  "patch_sha256": "750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "Eight end-to-end coverage reports differ from golden output generated on older Perl versions. Differences include source quoting and statement attribution to subroutine boundaries. The other 78 test files pass against existing golden output.",
+  "generation": "utils/create_gold generated eight XPerl v5.45.5 reports. The test helper selects these only under XPerl and uses ordinary Perl golden files otherwise.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 86 test files, 102 tests"
+    },
+    {
+      "command": "perl -Ilib -c lib/Devel/Cover/Test.pm and cover_gold probe",
+      "interpreter": "Perl v5.36.3",
+      "result": "syntax OK; ordinary Perl selects existing cond_branch.5.020000 golden file"
+    }
+  ]
+}

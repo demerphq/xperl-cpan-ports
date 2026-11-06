@@ -1,0 +1,1262 @@
+--- a/lib/Devel/Cover/Test.pm
++++ b/lib/Devel/Cover/Test.pm
+@@ -169,0 +170,3 @@
++  my $xperl_test = "xperl_$test";
++  $test = $xperl_test
++    if ${^XPERL_VERSION} && _get_right_version($td, $xperl_test) ne "5.0";
+--- /dev/null
++++ b/test_output/cover/xperl_cond_branch.5.045005
+@@ -0,0 +1,498 @@
++Reading database from ...
++
++
++----------------- ------ ------ ------ ------ ------
++File                stmt   bran   cond    sub  total
++----------------- ------ ------ ------ ------ ------
++tests/cond_branch   90.2   79.3   32.9  100.0   76.1
++Total               90.2   79.3   32.9  100.0   76.1
++----------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/cond_branch
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2002-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10             1                    1   use strict;
++               1                        
++               1                        
++11             1                    1   use warnings;
++               1                        
++               1                        
++12                                      
++13             1                        my @x;
++14                                      
++15             1                        for my $y (0, 0) {
++16             2                            for my $z (1, 0) {
++17    ***      4   * 50   * 33                  if ($y && $z) {
++18    ***     *0                                    $x[1]++;
++19                                              } else {
++20             4                                    $x[2]++;
++21                                              }
++22    ***      4    100   * 66                  if ($y || $z) {
++23             2                                    $x[3]++;
++24                                              } else {
++25             2                                    $x[4]++;
++26                                              }
++27                                      
++28    ***      4   * 50                         $y && $x[5]++;
++29    ***      4   * 50                         $x[5]++ if $y;
++30                                      
++31             4    100                         $z && $x[6]++;
++32             4    100                         $x[6]++ if $z;
++33                                      
++34    ***      4   * 50                         $y || $x[7]++;
++35    ***      4   * 50                         $x[7]++ unless $y;
++36                                      
++37             4    100                         $z || $x[8]++;
++38             4    100                         $x[8]++ unless $z;
++39                                      
++40    ***      4   * 50                         $y ? $x[9]++  : $x[10]++;
++41             4    100                         $z ? $x[11]++ : $x[12]++;
++42                                      
++43    ***      4   * 50   * 33                  if ($y) {
++      ***          * 50   * 66          
++                    100                 
++44    ***     *0                                    $x[13]++;
++45                                              } elsif ($y && $z) {
++46    ***     *0                                    $x[14]++;
++47                                              } elsif ($y || $z) {
++48             2                                    $x[15]++;
++49                                              } else {
++50             2                                    $x[16]++;
++51                                              }
++52                                      
++53    ***      4   * 50   * 33                  $y && $z && $x[17]++; $y && $z && $x[18]++;
++      ***      4   * 50   * 33          
++54                                          }
++55                                      }
++56                                      
++57                                      
++58             1                        for my $y (0, 1) {
++59             2    100                     $y || next;
++60             1                            $x[18]++;
++61                                      }
++62                                      
++63             1                        for my $y (1, 0) {
++64             2    100                     $y || next;
++65             1                            $x[19]++;
++66                                      }
++67                                      
++68             1                        for my $y (0, 1) {
++69             2    100                     $y && next;
++70             1                            $x[20]++;
++71                                      }
++72                                      
++73             1                        for my $y (1, 0) {
++74             2    100                     $y && next;
++75             1                            $x[21]++;
++76                                      }
++77                                      
++78             1                        for my $y (0, 1) {
++79             1                    1       no warnings "void";
++               1                        
++               1                        
++80    ***      2          *  0              my $w = $y xor next;
++81    ***     *0                            $x[22]++;
++82                                      }
++83                                      
++84             1                        for my $y (1, 0) {
++85             1                    1       no warnings "void";
++               1                        
++               1                        
++86    ***      2          *  0              my $w = $y xor next;
++87    ***     *0                            $x[23]++;
++88                                      }
++89                                      
++90                                      
++91             1                        for my $y (0, 1) {
++92    ***      1   * 50                     $y || last;
++93    ***     *0                            $x[24]++;
++94                                      }
++95                                      
++96             1                        for my $y (1, 0) {
++97             2    100                     $y || last;
++98             1                            $x[25]++;
++99                                      }
++100                                     
++101            1                        for my $y (0, 1) {
++102            2    100                     $y && last;
++103            1                            $x[26]++;
++104                                     }
++105                                     
++106            1                        for my $y (1, 0) {
++107   ***      1   * 50                     $y && last;
++108   ***     *0                            $x[27]++;
++109                                     }
++110                                     
++111            1                        for my $y (0, 1) {
++112            1                    1       no warnings "void";
++               1                        
++               1                        
++113   ***      1          *  0              my $w = $y xor last;
++114   ***     *0                            $x[28]++;
++115                                     }
++116                                     
++117            1                        for my $y (1, 0) {
++118            1                    1       no warnings "void";
++               1                        
++               1                        
++119   ***      1          *  0              my $w = $y xor last;
++120   ***     *0                            $x[29]++;
++121                                     }
++122                                     
++123                                     
++124            1                        for my $y (0, 1) {
++125   ***      1   * 50                     $y || goto G1;
++126   ***     *0                            $x[30]++;
++127                                     }
++128                                     G1:
++129                                     
++130            1                        for my $y (1, 0) {
++131            2    100                     $y || goto G2;
++132            1                            $x[31]++;
++133                                     }
++134                                     G2:
++135                                     
++136            1                        for my $y (0, 1) {
++137            2    100                     $y && goto G3;
++138            1                            $x[32]++;
++139                                     }
++140                                     G3:
++141                                     
++142            1                        for my $y (1, 0) {
++143   ***      1   * 50                     $y && goto G4;
++144   ***     *0                            $x[33]++;
++145                                     }
++146                                     G4:
++147                                     
++148            1                        for my $y (0, 1) {
++149            1                    1       no warnings "void";
++               1                        
++               1                        
++150   ***      1          *  0              my $w = $y xor goto G5;
++151   ***     *0                            $x[34]++;
++152                                     }
++153                                     G5:
++154                                     
++155            1                        for my $y (1, 0) {
++156            1                    1       no warnings "void";
++               1                        
++               1                        
++157   ***      1          *  0              my $w = $y xor goto G6;
++158   ***     *0                            $x[35]++;
++159                                     }
++160                                     G6:
++161                                     
++162                                     
++163            1                        my $z;
++164                                     
++165            1                        $z = -1;
++166            1                        for my $y (0, 1) {
++167            3                            $z++;
++168            3    100                     last if $z > 1;
++169            2    100                     $z || redo;
++170            1                            $x[36]++;
++171                                     }
++172                                     
++173            1                        $z = -1;
++174            1                        for my $y (1, 0) {
++175            3                            $z++;
++176            3    100                     last if $z > 1;
++177            2    100                     !$z || redo;
++178            1                            $x[37]++;
++179                                     }
++180                                     
++181            1                        $z = -1;
++182            1                        for my $y (0, 1) {
++183            3                            $z++;
++184            3    100                     last if $z > 1;
++185            2    100                     $z && redo;
++186            1                            $x[38]++;
++187                                     }
++188                                     
++189            1                        $z = -1;
++190            1                        for my $y (1, 0) {
++191            3                            $z++;
++192            3    100                     last if $z > 1;
++193            2    100                     !$z && redo;
++194            1                            $x[39]++;
++195                                     }
++196                                     
++197                                     
++198            1                        $z = -1;
++199            1                        for my $y (0, 1) {
++200            3                            $z++;
++201            3    100                     last if $z > 1;
++202            1                    1       no warnings "void";
++               1                        
++               1                        
++203   ***      2          *  0              my $w = $z xor redo;
++204   ***     *0                            $x[40]++;
++205                                     }
++206                                     
++207            1                        $z = -1;
++208            1                        for my $y (1, 0) {
++209            3                            $z++;
++210            3    100                     last if $z > 1;
++211            1                    1       no warnings "void";
++               1                        
++               1                        
++212   ***      2          *  0              my $w = !$z xor redo;
++213   ***     *0                            $x[41]++;
++214                                     }
++215                                     
++216                                     
++217            1                        my @s = (
++218                                         sub {
++219            4    100             4           shift || return;
++220            2                                $x[42]++;
++221                                         },
++222                                     
++223                                         sub {
++224            4    100             4           shift && return;
++225            2                                $x[43]++;
++226                                         },
++227                                     
++228                                         sub {
++229            1                    1           no warnings "void";
++               1                        
++               1                        
++230   ***      4          *  0      4           shift xor return;
++231   ***     *0                                $x[44]++;
++232                                         },
++233                                     
++234                                         sub {
++235            4           100      4           my $x = shift || return;
++236            2                                $x[45]++;
++237                                         },
++238                                     
++239                                         sub {
++240            4           100      4           my $x = shift && return;
++241            2                                $x[46]++;
++242                                         },
++243                                     
++244                                         sub {
++245            4                    4           my $x = shift;
++246            4                                for my $y (1 .. 2) {
++247            6           100                      my $z = $x || last;
++248            4                                    $x[47]++;
++249                                             }
++250                                         },
++251                                     
++252                                         sub {
++253            4                    4           my $x = shift;
++254            4                                for my $y (1 .. 2) {
++255            8           100                      my $z = $x || next;
++256            4                                    $x[48]++;
++257                                             }
++258                                         },
++259                                     
++260                                         sub {
++261            4                    4           my $x = shift;
++262            4                                for my $y (1 .. 2) {
++263           10           100                      my $z = $x++ || redo;
++264            8                                    $x[49]++;
++265                                             }
++266                                         },
++267                                     
++268                                         sub {
++269            4                    4           my $x = shift;
++270            4                                for my $y (1 .. 2) {
++271            6           100                      my $z = $x || goto GR;
++272            4                                    $x[50]++;
++273                                             }
++274                                     GR:
++275                                         },
++276                                     
++277                                         sub {
++278            4                    4           my $x = shift;
++279            4                                for my $y (1 .. 2) {
++280            8           100                      eval { my $z = $x || die };
++               8                        
++281            8                                    $x[51]++;
++282                                             }
++283                                         },
++284                                     );
++285                                     
++286            1                        for my $s (@s) {
++287           10                            for my $y (0, 1) {
++288           20                                $s->($y)
++289                                         }
++290                                     
++291           10                            for my $y (1, 0) {
++292           20                                $s->($y)
++293                                         }
++294                                     }
++295                                     
++296                                     
++297            1                        my ($a, $b) = (0, 1);
++298                                     
++299   ***      1   * 50   * 33          if ($a && $b) {
++      ***          * 50   * 33          
++      ***          * 50   * 50          
++300   ***     *0                            print "path 1\n";
++301                                     } elsif (!$a && !$b) {
++302   ***     *0                            print "path 2\n";
++303                                     } elsif ($b || 0) {
++304            1                            print "path 3\n";
++305   ***      1   * 50   * 33              if (!$b || $a) {
++      ***          * 50   * 33          
++306   ***     *0                                print "path 4\n";
++307                                         } elsif (!$a && $b) {
++308            1                                print "path 5\n";
++309                                         }
++310                                     }
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++17    ***     50      0      4   if ($y and $z) { }
++22           100      2      2   if ($y or $z) { }
++28    ***     50      0      4   if $y
++29    ***     50      0      4   if $y
++31           100      2      2   if $z
++32           100      2      2   if $z
++34    ***     50      4      0   unless $y
++35    ***     50      4      0   unless $y
++37           100      2      2   unless $z
++38           100      2      2   unless $z
++40    ***     50      0      4   $y ? :
++41           100      2      2   $z ? :
++43    ***     50      0      4   if ($y) { }
++      ***     50      0      4   elsif ($y and $z) { }
++             100      2      2   elsif ($y or $z) { }
++53    ***     50      0      4   if $y and $z
++      ***     50      0      4   if $y and $z
++59           100      1      1   unless $y
++64           100      1      1   unless $y
++69           100      1      1   if $y
++74           100      1      1   if $y
++92    ***     50      1      0   unless $y
++97           100      1      1   unless $y
++102          100      1      1   if $y
++107   ***     50      1      0   if $y
++125   ***     50      1      0   unless $y
++131          100      1      1   unless $y
++137          100      1      1   if $y
++143   ***     50      1      0   if $y
++168          100      1      2   if $z > 1
++169          100      1      1   unless $z
++176          100      1      2   if $z > 1
++177          100      1      1   if $z
++184          100      1      2   if $z > 1
++185          100      1      1   if $z
++192          100      1      2   if $z > 1
++193          100      1      1   unless $z
++201          100      1      2   if $z > 1
++210          100      1      2   if $z > 1
++219          100      2      2   unless shift()
++224          100      2      2   if shift()
++299   ***     50      0      1   if ($a and $b) { }
++      ***     50      0      1   elsif (not $a || $b) { }
++      ***     50      1      0   elsif ($b or 0) { }
++305   ***     50      0      1   if (not $b or $a) { }
++      ***     50      1      0   elsif (not $a and $b) { }
++
++
++Conditions
++----------
++
++and 2 conditions
++
++line  err      %      l     !l   expr
++----- --- ------ ------ ------   ----
++240          100      2      2   shift() && (return)
++
++and 3 conditions
++
++line  err      %     !l  l&&!r   l&&r   expr
++----- --- ------ ------ ------ ------   ----
++17    ***     33      4      0      0   $y and $z
++43    ***     33      4      0      0   $y and $z
++53    ***     33      4      0      0   $y and $z
++      ***     33      4      0      0   $y and $z
++299   ***     33      1      0      0   $a and $b
++305   ***     33      0      0      1   not $a and $b
++
++or 2 conditions
++
++line  err      %      l     !l   expr
++----- --- ------ ------ ------   ----
++235          100      2      2   shift() || (return)
++247          100      4      2   $x || (last)
++255          100      4      4   $x || (next)
++263          100      8      2   $x++ || (redo)
++271          100      4      2   $x || (goto GR)
++280          100      4      4   $x || die()
++299   ***     50      1      0   $b or 0
++
++or 3 conditions
++
++line  err      %      l  !l&&r !l&&!r   expr
++----- --- ------ ------ ------ ------   ----
++22    ***     66      0      2      2   $y or $z
++43    ***     66      0      2      2   $y or $z
++299   ***     33      0      1      0   $a || $b
++305   ***     33      0      0      1   not $b or $a
++
++xor 4 conditions
++
++line  err      %   l&&r  l&&!r  !l&&r !l&&!r   expr
++----- --- ------ ------ ------ ------ ------   ----
++80    ***      0      0      0      0      0   my $w = $y xor next
++86    ***      0      0      0      0      0   my $w = $y xor next
++113   ***      0      0      0      0      0   my $w = $y xor last
++119   ***      0      0      0      0      0   my $w = $y xor last
++150   ***      0      0      0      0      0   my $w = $y xor goto G5
++157   ***      0      0      0      0      0   my $w = $y xor goto G6
++203   ***      0      0      0      0      0   my $w = $z xor redo
++212   ***      0      0      0      0      0   my $w = !$z xor redo
++230   ***      0      0      0      0      0   shift() xor return
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location             
++---------- ----- ---------------------
++BEGIN          1 tests/cond_branch:10 
++BEGIN          1 tests/cond_branch:11 
++BEGIN          1 tests/cond_branch:112
++BEGIN          1 tests/cond_branch:118
++BEGIN          1 tests/cond_branch:149
++BEGIN          1 tests/cond_branch:156
++BEGIN          1 tests/cond_branch:202
++BEGIN          1 tests/cond_branch:211
++BEGIN          1 tests/cond_branch:229
++BEGIN          1 tests/cond_branch:79 
++BEGIN          1 tests/cond_branch:85 
++__ANON__       4 tests/cond_branch:219
++__ANON__       4 tests/cond_branch:224
++__ANON__       4 tests/cond_branch:230
++__ANON__       4 tests/cond_branch:235
++__ANON__       4 tests/cond_branch:240
++__ANON__       4 tests/cond_branch:245
++__ANON__       4 tests/cond_branch:253
++__ANON__       4 tests/cond_branch:261
++__ANON__       4 tests/cond_branch:269
++__ANON__       4 tests/cond_branch:278
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_cond_or.5.045005
+@@ -0,0 +1,280 @@
++Reading database from ...
++
++
++---------------- ------ ------ ------ ------ ------
++File               stmt   bran   cond    sub  total
++---------------- ------ ------ ------ ------ ------
++tests/cond_or      89.4   33.3   63.3   60.0   70.0
++tests/cond_or.pl  100.0    n/a   57.5  100.0   75.7
++Total              92.8   33.3   61.0   75.0   71.9
++---------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/cond_or
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2002-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10                                      # __COVER__ skip_test $^O eq "cygwin"
++11                                      # __COVER__ skip_reason Busted on cygwin
++12                                      
++13             1                    1   use strict;
++               1                        
++               1                        
++14             1                    1   use warnings;
++               1                        
++               1                        
++15                                      
++16             1                        my @x;
++17                                      
++18             1                        my $y  = 1;
++19             1                        my $z  = 0;
++20             1                        $::foo = 17;
++21                                      
++22             1                        $ENV{PATH} = "/bin";
++23             1                        system "pwd";
++24             1                    1   use lib "tests";
++               1                        
++               1                        
++25             1                        my $file = "cond_or.pl";
++26    ***      1   * 50                 unless (my $return = do $file) {
++27    ***     *0   *  0                     die "couldn't parse $file: $@" if $@;
++28    ***     *0   *  0                     die "couldn't do $file: $!"    unless defined $return;
++29    ***     *0   *  0                     die "couldn't run $file"       unless $return;
++30                                      }
++31                                      
++32             1                        for my $i (0 .. 10) {
++33    ***     11   * 50                     $y ||
++34                                              $x[1]++;
++35                                      
++36    ***     11   * 50   * 33              $y ||
++37                                              $x[0]++ ||
++38                                              $x[1]++;
++39                                      
++40    ***     11   * 50                     $x[2]++
++41                                              unless $z;
++42                                      
++43            11                            for (0 .. 2) {
++44            33                                $x[3]++;
++45                                          }
++46                                      
++47    ***     11   * 50                     if ($z) {
++48    ***     *0                                $x[4]++;
++49                                          } else {
++50            11                                $x[5]++;
++51                                          }
++52                                      
++53    ***     11          * 33              my $p = $y || $z;
++54    ***     11          * 33              my $q = $z || $y;
++55            11           100              my $r = $i || "qqq";
++56            11           100              my $s = $i || [];
++57            11                            my $t = $y | $z;
++58    ***     11          * 50              my $u = $y || 0;
++59    ***     11          * 50              my $v = $y || undef;
++60    ***     11          * 50              my $w = $z || 0;
++61                                      
++62    ***     11          * 33              $p     ||= $y;
++63    ***     11          * 33              $p     ||= $z;
++64    ***     11          * 66              $x[ 6] ||= $y;
++65    ***     11          * 33              $x[ 7] ||= $z;
++66            11           100              $x[ 8] ||= 1;
++67            11           100              $x[ 9] ||= {};
++68            11           100              $x[10] ||= \"foo";
++69            11           100              $x[11] ||= \$y;
++70            11           100              $x[12] ||= \*STDIO;
++71    ***     11          * 66     *0       $x[13] ||= sub { 1 };
++      ***     *0                        
++72            11           100              $x[14] ||= *::foo{SCALAR};
++73    ***     11          * 50              $x[15] ||= *STDIO{IO};
++74            11           100              $x[16] ||= bless {}, "XXX";
++75            11           100              $x[17] ||= $i == 1;
++76    ***     11          * 33              $w     ||= ref($i) eq "SCALAR";
++77            11           100              $x[18] ||= <<"EOD";
++78                                      blah
++79                                      EOD
++80    ***     11   * 50                     cond_dor(\@x) if exists &cond_dor;
++81    ***     11          *  0     *0       sub { $x[19] ||= 1 };
++      ***     *0                        
++82                                      }
++83                                      
++84                                      # print join(", ", @x), "\n";
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++26    ***     50      0      1   unless (my $return = do $file)
++27    ***      0      0      0   if $@
++28    ***      0      0      0   unless defined $return
++29    ***      0      0      0   unless $return
++33    ***     50      0     11   unless $y
++36    ***     50      0     11   unless $y or $x[0]++
++40    ***     50     11      0   unless $z
++47    ***     50      0     11   if ($z) { }
++80    ***     50     11      0   if exists &main::cond_dor
++
++
++Conditions
++----------
++
++or 2 conditions
++
++line  err      %      l     !l   expr
++----- --- ------ ------ ------   ----
++55           100     10      1   $i || 'qqq'
++56           100     10      1   $i || []
++58    ***     50     11      0   $y || 0
++59    ***     50     11      0   $y || undef
++60    ***     50      0     11   $z || 0
++66           100     10      1   $x[8] ||= 1
++67           100     10      1   $x[9] ||= {}
++68           100     10      1   $x[10] ||= \"foo"
++69           100     10      1   $x[11] ||= \$y
++70           100     10      1   $x[12] ||= \*STDIO
++72           100     10      1   $x[14] ||= *foo{"SCALAR"}
++73    ***     50      0     11   $x[15] ||= *STDIO{"IO"}
++74           100     10      1   $x[16] ||= bless({}, "XXX")
++77           100     10      1   $x[18] ||= "blah\n"
++81    ***      0      0      0   $x[19] ||= 1
++
++or 3 conditions
++
++line  err      %      l  !l&&r !l&&!r   expr
++----- --- ------ ------ ------ ------   ----
++36    ***     33     11      0      0   $y or $x[0]++
++53    ***     33     11      0      0   $y || $z
++54    ***     33      0     11      0   $z || $y
++62    ***     33     11      0      0   $p ||= $y
++63    ***     33     11      0      0   $p ||= $z
++64    ***     66     10      1      0   $x[6] ||= $y
++65    ***     33      0      0     11   $x[7] ||= $z
++71    ***     66     10      1      0   $x[13] ||= sub {
++	1;
++}
++
++75           100      9      1      1   $x[17] ||= $i == 1
++76    ***     33      0      0     11   $w ||= ref $i eq 'SCALAR'
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location        
++---------- ----- ----------------
++BEGIN          1 tests/cond_or:13
++BEGIN          1 tests/cond_or:14
++BEGIN          1 tests/cond_or:24
++
++Uncovered Subroutines
++---------------------
++
++Subroutine Count Location        
++---------- ----- ----------------
++__ANON__       0 tests/cond_or:71
++__ANON__       0 tests/cond_or:81
++
++
++tests/cond_or.pl
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2002-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10             1                    1   use strict;
++               1                        
++               1                        
++11             1                    1   use warnings;
++               1                        
++               1                        
++12                                      
++13                                      sub cond_dor {
++14            11                   11       my ($x) = @_;
++15                                      
++16    ***     11          * 50              $x->[18] //= undef;
++17    ***     11          * 50              $x->[18] //= 0;
++18    ***     11          * 50              $x->[18] //= 0;
++19    ***     11          * 50              $x->[18] //= 1;
++20    ***     11          * 50              $x->[18] //= 1;
++21                                      
++22            11           100              $x->[19] //= 1;
++23    ***     11          * 50              $x->[19] //= 1;
++24    ***     11          * 50              $x->[19] //= 0;
++25    ***     11          * 50              $x->[19] //= undef;
++26    ***     11          * 50              $x->[19] //= 1;
++27                                      
++28    ***     11          * 50              $x->[20]   = $x->[21] // undef;
++29    ***     11          * 50              $x->[20]   = $x->[21] // 0;
++30    ***     11          * 50              $x->[20]   = $x->[21] // 0;
++31    ***     11          * 50              $x->[20]   = $x->[21] // 1;
++32    ***     11          * 50              $x->[20]   = $x->[21] // 1;
++33                                      
++34            11           100              $x->[22]   = $x->[22] // undef;
++35            11           100              $x->[22]   = $x->[22] // 0;
++36    ***     11          * 50              $x->[22]   = $x->[22] // 0;
++37    ***     11          * 50              $x->[22]   = $x->[22] // 1;
++38    ***     11          * 50              $x->[22]   = $x->[22] // 1;
++39                                      }
++40                                      
++41                                      1;
++
++
++Conditions
++----------
++
++or 2 conditions
++
++line  err      %      l     !l   expr
++----- --- ------ ------ ------   ----
++16    ***     50     11      0   $x->[18] //= undef
++17    ***     50     11      0   $x->[18] //= 0
++18    ***     50     11      0   $x->[18] //= 0
++19    ***     50     11      0   $x->[18] //= 1
++20    ***     50     11      0   $x->[18] //= 1
++22           100     10      1   $x->[19] //= 1
++23    ***     50     11      0   $x->[19] //= 1
++24    ***     50     11      0   $x->[19] //= 0
++25    ***     50     11      0   $x->[19] //= undef
++26    ***     50     11      0   $x->[19] //= 1
++28    ***     50      0     11   $x->[21] // undef
++29    ***     50      0     11   $x->[21] // 0
++30    ***     50      0     11   $x->[21] // 0
++31    ***     50      0     11   $x->[21] // 1
++32    ***     50      0     11   $x->[21] // 1
++34           100     10      1   $x->[22] // undef
++35           100     10      1   $x->[22] // 0
++36    ***     50     11      0   $x->[22] // 0
++37    ***     50     11      0   $x->[22] // 1
++38    ***     50     11      0   $x->[22] // 1
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location           
++---------- ----- -------------------
++BEGIN          1 tests/cond_or.pl:10
++BEGIN          1 tests/cond_or.pl:11
++cond_dor      11 tests/cond_or.pl:14
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_deparse.5.045005
+@@ -0,0 +1,64 @@
++Reading database from ...
++
++
++------------- ------ ------ ------ ------ ------
++File            stmt   bran   cond    sub  total
++------------- ------ ------ ------ ------ ------
++tests/deparse   91.6    n/a    n/a   75.0   87.5
++Total           91.6    n/a    n/a   75.0   87.5
++------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/deparse
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl -l
++2                                       
++3                                       # Copyright 2004-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10             1                    1   use strict;
++               1                        
++               1                        
++11             1                    1   use warnings;
++               1                        
++               1                        
++12                                      
++13             1                    1   use B::Deparse;
++               1                        
++               1                        
++14                                      
++15             1                        my $xx = sub {
++16    ***     *0                   *0       print "xx";
++17                                      };
++18                                      
++19             1                        print B::Deparse->new->coderef2text($xx)
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location        
++---------- ----- ----------------
++BEGIN          1 tests/deparse:10
++BEGIN          1 tests/deparse:11
++BEGIN          1 tests/deparse:13
++
++Uncovered Subroutines
++---------------------
++
++Subroutine Count Location        
++---------- ----- ----------------
++__ANON__       0 tests/deparse:16
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_dynamic_subs.5.045005
+@@ -0,0 +1,118 @@
++Reading database from ...
++
++
++------------------ ------ ------ ------ ------ ------
++File                 stmt   bran   cond    sub  total
++------------------ ------ ------ ------ ------ ------
++tests/dynamic_subs   97.2   75.0    n/a   80.0   92.0
++Total                97.2   75.0    n/a   80.0   92.0
++------------------ ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/dynamic_subs
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2004-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10    ***     *0                   *0   sub unused { 0 }
++11    ***                          *0   sub empty  {   }
++12                                      
++13                                      sub gen {
++14             4                    4       my $x = shift;
++15             4                            sub {
++16             5                    5           my $y = shift;
++17    ***      5   * 50                         return $x + $y if $y;
++18                                          }
++19                                      };
++20                                      
++21             1                        my $o = gen(1);
++22             1                        my $p = $o->(7);
++23             1                        my $q = $o->(8);
++24             1                        my $r = gen(1)->(2);
++25             1                        my $s = gen(3)->(4);
++26             1                        my $t = gen(5)->(6);
++27                                      
++28             1                        print "$p, $q, $r, $s, $t\n";
++29                                      
++30             1                        for my $func (qw(f1 f2 f3)) {
++31             1                    1       no strict "refs";
++               1                        
++               1                        
++32             3                            *$func = sub {
++33             2                    2           print "$func\n";
++34                                          }
++35                                      }
++36                                      
++37             1                        f1();
++38             1                        f2();
++39                                      
++40                                      sub AUTOLOAD {
++41             3                    3       my $func = $AUTOLOAD;
++42             3                            $func =~ s/^.*:://;
++43             1                    1       no strict "refs";
++               1                        
++               1                        
++44             3    100                     if ($func eq "add") {
++45             1                                *$func = sub {
++46             3                    3               print "Add!\n";
++47                                              };
++48                                          } else {
++49             2                                *$func = sub {
++50             2                    2               print "$func\n";
++51                                              };
++52                                          }
++53             3                            goto &$func
++54                                      }
++55                                      
++56             1                        add();
++57             1                        add();
++58             1                        add();
++59             1                        qaz();
++60             1                        wsx();
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++17    ***     50      5      0   if $y
++44           100      1      2   if ($func eq 'add') { }
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location             
++---------- ----- ---------------------
++AUTOLOAD       3 tests/dynamic_subs:41
++BEGIN          1 tests/dynamic_subs:31
++BEGIN          1 tests/dynamic_subs:43
++__ANON__       5 tests/dynamic_subs:16
++__ANON__       2 tests/dynamic_subs:33
++__ANON__       3 tests/dynamic_subs:46
++__ANON__       2 tests/dynamic_subs:50
++gen            4 tests/dynamic_subs:14
++
++Uncovered Subroutines
++---------------------
++
++Subroutine Count Location             
++---------- ----- ---------------------
++empty          0 tests/dynamic_subs:11
++unused         0 tests/dynamic_subs:10
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_overload_bool.5.045005
+@@ -0,0 +1,89 @@
++Reading database from ...
++
++
++------------------- ------ ------ ------ ------ ------
++File                  stmt   bran   cond    sub  total
++------------------- ------ ------ ------ ------ ------
++tests/overload_bool   69.2   50.0   50.0   25.0   56.5
++Total                 69.2   50.0   50.0   25.0   56.5
++------------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/overload_bool
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2006-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10                                      package Foo;
++11                                      use overload
++12    ***      1                   *0      '""' => sub { shift->render},
++      ***     *0                        
++13             1                    1      bool => sub { die "I was used as a bool and shouldn't be\n"; 1 };
++      ***      1                   *0   
++      ***     *0                        
++      ***     *0                        
++14                                      
++15                                      sub render {
++16    ***     *0                   *0      "foo";
++17                                      }
++18                                      
++19             1                        my $foo = 1;
++20    ***      1   * 50                 bless {}, 'Foo' if $foo;
++21                                      
++22             1                        my $boolobj = bless {}, 'Foo';
++23    ***      1          * 50          $boolobj //= 5;
++24    ***      1          * 50          my $var; $var //= bless {}, "Foo";
++               1                        
++25                                      
++26                                      1;
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++20    ***     50      1      0   if $foo
++
++
++Conditions
++----------
++
++or 2 conditions
++
++line  err      %      l     !l   expr
++----- --- ------ ------ ------   ----
++23    ***     50      1      0   $boolobj //= 5
++24    ***     50      0      1   $var //= bless({}, "Foo")
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location              
++---------- ----- ----------------------
++BEGIN          1 tests/overload_bool:13
++
++Uncovered Subroutines
++---------------------
++
++Subroutine Count Location              
++---------- ----- ----------------------
++__ANON__       0 tests/overload_bool:12
++__ANON__       0 tests/overload_bool:13
++render         0 tests/overload_bool:16
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_overload_bool2.5.045005
+@@ -0,0 +1,64 @@
++Reading database from ...
++
++
++-------------------- ------ ------ ------ ------ ------
++File                   stmt   bran   cond    sub  total
++-------------------- ------ ------ ------ ------ ------
++tests/overload_bool2   93.3    n/a    n/a  100.0   94.7
++Total                  93.3    n/a    n/a  100.0   94.7
++-------------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/overload_bool2
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2014-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10             1                    1   use strict;
++               1                        
++               1                        
++11             1                    1   use warnings;
++               1                        
++               1                        
++12                                      
++13                                      {
++14             1                            package Cat;
++      ***     *0                        
++15                                      
++16             1                    1       use overload (bool => "meh");
++               1                        
++               1                        
++17                                      
++18             2                    2       sub meh { 1 }
++19                                      }
++20                                      
++21             1                        my $string = "hi";
++22             1                        my $x = bless \$string, "Cat";
++23                                      
++24             1                        my $fn = eval 'require $x';
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location               
++---------- ----- -----------------------
++BEGIN          1 tests/overload_bool2:10
++BEGIN          1 tests/overload_bool2:11
++BEGIN          1 tests/overload_bool2:16
++meh            2 tests/overload_bool2:18
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_recursive_sub.5.045005
+@@ -0,0 +1,60 @@
++Reading database from ...
++
++
++------------------- ------ ------ ------ ------ ------
++File                  stmt   bran   cond    sub  total
++------------------- ------ ------ ------ ------ ------
++tests/recursive_sub  100.0  100.0    n/a  100.0  100.0
++Total                100.0  100.0    n/a  100.0  100.0
++------------------- ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/recursive_sub
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       # Copyright 2022-2026, Paul Johnson (paul@pjcj.net)
++4                                       
++5                                       # This software is free.  It is licensed under the same terms as Perl itself.
++6                                       
++7                                       # The latest version of this software should be available from my homepage:
++8                                       # https://pjcj.net
++9                                       
++10             1                    1   use feature "current_sub";
++               1                        
++               1                        
++11                                      
++12                                      sub recursive_func
++13                                      {
++14             4                    4       my ($ref) = @_;
++15             4    100                     return $ref unless ref $ref eq "ARRAY";
++16             3                            return __SUB__->($ref->[0]);
++17                                      }
++18                                      
++19             1                        recursive_func([[[]]]);
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++15           100      1      3   unless ref $ref eq 'ARRAY'
++
++
++Covered Subroutines
++-------------------
++
++Subroutine     Count Location              
++-------------- ----- ----------------------
++BEGIN              1 tests/recursive_sub:10
++recursive_func     4 tests/recursive_sub:14
++
++
+--- /dev/null
++++ b/test_output/cover/xperl_redefine_sub.5.045005
+@@ -0,0 +1,59 @@
++Reading database from ...
++
++
++------------------ ------ ------ ------ ------ ------
++File                 stmt   bran   cond    sub  total
++------------------ ------ ------ ------ ------ ------
++tests/redefine_sub  100.0  100.0    n/a  100.0  100.0
++Total               100.0  100.0    n/a  100.0  100.0
++------------------ ------ ------ ------ ------ ------
++
++
++Run: ...
++Perl version: ...
++OS: ...
++Start: ...
++Finish: ...
++
++tests/redefine_sub
++
++line  err   stmt   bran   cond    sub   code
++1                                       #!/usr/bin/perl
++2                                       
++3                                       sub s1 {
++4              2                    2       my $t = shift;
++5              2    100                     if ($t > 5) {
++6              1                                print 5;
++7                                           } else {
++8              1                                print $t;
++9                                           }
++10                                      }
++11                                      
++12             1                        my $c = *main::s1{CODE};
++13                                      
++14             1                        *main::s1 = sub {
++15             2                    2       print "extra";
++16             2                            &$c(@_);
++17                                      };
++18                                      
++19             1                        s1(1);
++20             1                        s1(7);
++
++
++Branches
++--------
++
++line  err      %   true  false   branch
++----- --- ------ ------ ------   ------
++5            100      1      1   if ($t > 5) { }
++
++
++Covered Subroutines
++-------------------
++
++Subroutine Count Location             
++---------- ----- ---------------------
++__ANON__       2 tests/redefine_sub:15
++s1             2 tests/redefine_sub:4 
++
++
