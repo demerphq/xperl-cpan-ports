@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 5 of 1000 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 4 of 1000 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -452,7 +452,7 @@ Unresolved failures: 5 of 1000 release, XPerl, and platform combinations. See [U
 | HMBRAND | [Data-Peek](../data/7b/HMBRAND/Data-Peek/status.json) | 0.54 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HMBRAND | [Spreadsheet-Read](../data/21/HMBRAND/Spreadsheet-Read/status.json) | 0.95 | v5.45.5 | darwin/darwin-2level | installed | none |
 | HMBRAND | [Spreadsheet-Read](../data/21/HMBRAND/Spreadsheet-Read/status.json) | 0.95 | v5.45.5 | linux/x86_64-linux | installed | none |
-| HMBRAND | [Text-CSV_XS](../data/64/HMBRAND/Text-CSV_XS/status.json) | 1.65 | v5.45.5 | darwin/darwin-2level | failed | none |
+| HMBRAND | [Text-CSV_XS](../data/64/HMBRAND/Text-CSV_XS/status.json) | 1.65 | v5.45.5 | darwin/darwin-2level | installed | types-value-lifetime |
 | HMBRAND | [Text-CSV_XS](../data/64/HMBRAND/Text-CSV_XS/status.json) | 1.65 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILMARI | [Catalyst-Authentication-Store-DBIx-Class](../data/ed/ILMARI/Catalyst-Authentication-Store-DBIx-Class/status.json) | 0.1506 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILMARI | [Class-Unload](../data/e7/ILMARI/Class-Unload/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | installed | none |

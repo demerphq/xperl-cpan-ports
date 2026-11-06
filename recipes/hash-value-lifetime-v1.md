@@ -11,6 +11,9 @@ and arrange cleanup after the last use. Read flags and string data through
 the retained `SV*`, not through the old `SV**`. If a returned character
 pointer refers into that value, keep the value alive until the copy is done.
 This change is also safe on ordinary Perl and does not need an `XPERL` guard.
+`Text::CSV_XS` 1.65 had the same pattern without any callback: it stored
+into the object hash (`hold_sv`) and then read through the `SV**` from an
+earlier `hv_fetch`, which crashed in `cx_SetupCsv` once XPerl moved the entry.
 
 Test hash mutation during overload or tied hooks, especially deletion,
 rehashing, and changes to the input string. The `HTML-Parser` 3.86 patch

@@ -1,0 +1,14 @@
+--- a/CSV_XS.xs
++++ b/CSV_XS.xs
+@@ -853,8 +853,9 @@
+ 	    }
+ 
+ 	if ((svp = hv_fetchs (self, "_types",         FALSE)) && *svp && SvOK (*svp)) {
+-	    hold_sv (self, "_TYPES_HELD", *svp);
+-	    csv->types = SvPV (*svp, len);
++	    SV *types = *svp;	/* hold_sv () may invalidate svp */
++	    hold_sv (self, "_TYPES_HELD", types);
++	    csv->types = SvPV (types, len);
+ 	    csv->types_len = len;
+ 	    }
+ 

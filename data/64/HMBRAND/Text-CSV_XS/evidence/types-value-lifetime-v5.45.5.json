@@ -1,0 +1,25 @@
+{
+  "source_sha256": "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+  "patch_set_id": "types-value-lifetime",
+  "patch_sha256": "d139bae7d6ff2d202af529e33163c7ed5fb47b449a34ef2490fd9a98669064a9",
+  "date": "2026-11-06",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "xperl install-ported --only HMBRAND/Text-CSV_XS",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "pass: 36 test files, 52671 tests"
+    },
+    {
+      "command": "perl Makefile.PL && make test (original, without the patch)",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "fail: t/30_types.t SIGSEGV in cx_SetupCsv after test 12"
+    },
+    {
+      "command": "perl Makefile.PL && make test",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 36 test files, 52671 tests (with and without the patch)"
+    }
+  ]
+}
