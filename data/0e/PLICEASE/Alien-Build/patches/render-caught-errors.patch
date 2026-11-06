@@ -1,0 +1,172 @@
+--- a/t/alien_build.t
++++ b/t/alien_build.t
+@@ -1947,7 +1947,7 @@
+         note _dump($file);
+ 
+         is
+-          dies { $build->check_digest($file) },
++          "" . dies { $build->check_digest($file) },
+           match qr/^No digest for foo.txt.gz/,
+           "dies when no digest specified";
+ 
+@@ -1984,7 +1984,7 @@
+         };
+ 
+         is
+-          dies { $build->check_digest($file) },
++          "" . dies { $build->check_digest($file) },
+           match qr/^foo.txt.gz SHA256 digest does not match: got $good, expected $bad/,
+           'bad signature with filename';
+ 
+@@ -2002,7 +2002,7 @@
+         };
+ 
+         is
+-          dies { $build->check_digest($file) },
++          "" . dies { $build->check_digest($file) },
+           match qr/^No plugin provides digest algorithm for FOO92/,
+           'no algorithm';
+ 
+@@ -2025,7 +2025,7 @@
+           note _dump($file);
+ 
+           is
+-            dies { $build->check_digest($file) },
++            "" . dies { $build->check_digest($file) },
+             match qr/^bogus.txt.gz has no content/,
+             'error on missing file';
+ 
+@@ -2036,7 +2036,7 @@
+           note _dump($file);
+ 
+           is
+-            dies { $build->check_digest($file) },
++            "" . dies { $build->check_digest($file) },
+             match qr/^File has no filename/,
+             'error on missing filename';
+ 
+@@ -2047,7 +2047,7 @@
+           note _dump($file);
+ 
+           is
+-            dies { $build->check_digest($file) },
++            "" . dies { $build->check_digest($file) },
+             match qr/^File is wrong type/,
+             'error on wrote file type';
+ 
+@@ -2057,7 +2057,7 @@
+           note _dump($file);
+ 
+           is
+-            dies { $build->check_digest($file) },
++            "" . dies { $build->check_digest($file) },
+             match qr/^File is wrong type/,
+             'error on wrote file type';
+ 
+@@ -2077,7 +2077,7 @@
+         note _dump($file);
+ 
+         is
+-          dies { $build->check_digest($file) },
++          "" . dies { $build->check_digest($file) },
+           match qr/^Missing file in digest check: bogus.txt.gz/,
+           'error on missing file';
+ 
+--- a/t/alien_build_interpolate.t
++++ b/t/alien_build_interpolate.t
+@@ -130,7 +130,7 @@
+     'able to fetch alien.install.foo.bar using meta->interpolator->interpolate';
+ 
+   is
+-    dies { $build->meta->interpolator->interpolate('%{.install.foo.bar1}', $build) },
++    "" . dies { $build->meta->interpolator->interpolate('%{.install.foo.bar1}', $build) },
+     match qr/^No property \.install\.foo\.bar1/,
+     'unable to interpolate invalid property';
+ 
+--- a/t/alien_build_plugin_digest_negotiate.t
++++ b/t/alien_build_plugin_digest_negotiate.t
+@@ -37,7 +37,7 @@
+       'check digest works';
+ 
+     is
+-      dies { $build->check_digest(__FILE__) },
++      "" . dies { $build->check_digest(__FILE__) },
+       match qr/SHA256 digest does not match/,
+       'check digest throws exception on bad signature';
+   };
+@@ -54,7 +54,7 @@
+       'fetch works with right signature';
+ 
+     is
+-      dies { $build->fetch(__FILE__) },
++      "" . dies { $build->fetch(__FILE__) },
+       match qr/SHA256 digest does not match/,
+       'fetch dies with wrong signature';
+ 
+@@ -80,7 +80,7 @@
+     $download_filename = path(__FILE__)->absolute;
+ 
+     is
+-      dies { $build->download },
++      "" . dies { $build->download },
+       match qr/SHA256 digest does not match/,
+       'download dies with wrong signature';
+   };
+@@ -123,7 +123,7 @@
+       'check digest works foo.txt';
+ 
+     is
+-      dies { $build->check_digest(__FILE__) },
++      "" . dies { $build->check_digest(__FILE__) },
+       match qr/SHA256 digest does not match/,
+       'check digest throws exception on bad signature';
+   };
+@@ -149,7 +149,7 @@
+       'fetch works foo.txt';
+ 
+     is
+-      dies { $build->fetch(__FILE__) },
++      "" . dies { $build->fetch(__FILE__) },
+       match qr/SHA256 digest does not match/,
+       'fetch throws exception on bad signature';
+ 
+@@ -190,7 +190,7 @@
+     $download_filename = path(__FILE__)->absolute;
+ 
+     is
+-      dies { $build->download },
++      "" . dies { $build->download },
+       match qr/SHA256 digest does not match/,
+       'download dies with wrong signature';
+   };
+@@ -268,7 +268,7 @@
+     alienfile_skip_if_missing_prereqs;
+ 
+     is
+-      dies { $build->fetch($url) },
++      "" . dies { $build->fetch($url) },
+       match qr/^listing fetch not allowed/,
+       'works by default';
+ 
+--- a/t/alien_build_plugin_digest_sha.t
++++ b/t/alien_build_plugin_digest_sha.t
+@@ -54,7 +54,7 @@
+         'plugin returns 1 for valid signature';
+ 
+       is
+-        dies { $build->meta->call_hook( check_digest => $build, $file, 'SHA256', $bad ) },
++        "" . dies { $build->meta->call_hook( check_digest => $build, $file, 'SHA256', $bad ) },
+         match qr/^foo.txt.gz SHA256 digest does not match: got $good, expected $bad/,
+         'plugin dies on invalid signature';
+     }
+--- a/t/alienfile.t
++++ b/t/alienfile.t
+@@ -903,7 +903,7 @@
+     'fetch works with good sig';
+ 
+   is
+-    dies { $build->fetch(__FILE__) },
++    "" . dies { $build->fetch(__FILE__) },
+     match qr/SHA256 digest does not match/,
+     'fetch dies with bad sig';
+ 

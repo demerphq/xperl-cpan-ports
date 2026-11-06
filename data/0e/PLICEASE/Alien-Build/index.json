@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Alien-Build",
+  "releases": [
+    {
+      "version": "2.88",
+      "cpan_path": "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+      "source_sha256": "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+      "patch_sets": [
+        {
+          "id": "render-caught-errors",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/render-caught-errors.patch",
+              "sha256": "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c"
+            }
+          ],
+          "recipes": ["exception-text-boundary-v1"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source_sha256": "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+  "patch_set_id": "render-caught-errors",
+  "patch_sha256": "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "Test2 regex matchers inspect caught XPerl exception references as references. Rendering the caught errors before matching preserves the tests' error-text assertions.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 87 test files, 425 tests"
+    },
+    {
+      "command": "perl -MTest2::V0 -e 'is \"\" . dies { die \"foo\" }, match qr/foo/; done_testing'",
+      "interpreter": "Perl v5.38.2",
+      "result": "pass: 1 test"
+    }
+  ],
+  "ordinary_perl_full_suite": "Not run: the host's ordinary Perl environment lacks File::chdir."
+}
