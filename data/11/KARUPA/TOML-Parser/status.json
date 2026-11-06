@@ -1,0 +1,54 @@
+{
+   "author" : "KARUPA",
+   "distribution" : "TOML-Parser",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KARUPA/TOML-Parser-0.91.tar.gz",
+         "id" : "e886951baf6aa53843ffed2206f2eb9b940b2c6d946b7de4c5754042ff23b0b9",
+         "module" : "TOML::Parser",
+         "observed_at" : "2026-11-06T22:54:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2a8513b904e377e0cae726910be676f4ff96bd960001c358dd66dc7c37aa9a8e",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=59",
+         "version" : "0.91",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "NOTBENH",
+   "distribution" : "String-Clean",
+   "observations" : [
+      {
+         "cpan_path" : "N/NO/NOTBENH/String-Clean-0.031.tar.gz",
+         "id" : "465b63dcd01032b7f535c69bf5f83eda1247de387b3b3150e1c081d3d17957a0",
+         "module" : "String::Clean::XSS",
+         "observed_at" : "2026-11-06T22:59:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c9d28eb8f175824253d2327adf53069e426c24d155a61312a0dac80cfffaafe1",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=28",
+         "version" : "0.031",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

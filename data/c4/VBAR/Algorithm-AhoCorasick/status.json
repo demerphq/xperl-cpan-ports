@@ -1,0 +1,55 @@
+{
+   "author" : "VBAR",
+   "distribution" : "Algorithm-AhoCorasick",
+   "observations" : [
+      {
+         "cpan_path" : "V/VB/VBAR/Algorithm-AhoCorasick-0.04.tar.gz",
+         "id" : "de5803a53fc985d14b5ba04ea6083ef06f862a31dc7b7dacb2eaea9c2974f82e",
+         "module" : "Algorithm::AhoCorasick::SearchMachine",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T23:06:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d99742d86f022264afb014b917b5bd2b64a8c1165d86cb8259f53ea0a458f6f2",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=59",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

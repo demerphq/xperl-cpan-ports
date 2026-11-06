@@ -1,0 +1,54 @@
+{
+   "author" : "JKUTEJ",
+   "distribution" : "Sys-Path",
+   "observations" : [
+      {
+         "cpan_path" : "J/JK/JKUTEJ/Sys-Path-0.17.tar.gz",
+         "id" : "44fef4d795d251ec2d0af79ca18d05dfca3b9793908f71492d2d988d1f7b6f6e",
+         "module" : "Sys::Path",
+         "observed_at" : "2026-11-06T23:00:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2446268e8c6edebc7f46280603237811b6f8d0c0bbce066b6c716f5d31c84f2b",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=75",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -88,6 +88,53 @@
          "test_summary" : "Files=1, Tests=46",
          "version" : "0.56",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Memoize-ExpireLRU-0.56.tar.gz",
+         "id" : "b36540d847a6e7d4e01048cab48f101d9dbf6bd4a1b1c6edfe51f38c290aa772",
+         "module" : "Memoize::ExpireLRU",
+         "observed_at" : "2026-11-06T22:58:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ee836301cbbab9a24b05fc657edfa94b7fd8578d9836e566a191d0a5b01cd7f6",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=46",
+         "version" : "0.56",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

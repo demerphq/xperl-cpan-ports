@@ -41,6 +41,53 @@
          "test_summary" : "Files=12, Tests=21",
          "version" : "1.004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-Roo-1.004.tar.gz",
+         "id" : "1e1b642b0a87dd22b254c4af644ab01a7f8e6666670ea320b468c5f50624622d",
+         "module" : "Test::Roo",
+         "observed_at" : "2026-11-06T22:53:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "21129a3cecb507b00948e16cf15fcde5dc4db235aba84afd7f47d22013a9ded6",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=21",
+         "version" : "1.004",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

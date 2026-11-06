@@ -1,0 +1,54 @@
+{
+   "author" : "AMBS",
+   "distribution" : "Text-BibTeX",
+   "observations" : [
+      {
+         "cpan_path" : "A/AM/AMBS/Text-BibTeX-1.00.tar.gz",
+         "id" : "d0a748b42546942771819a7b0878f1fd63d544315121f1cceae0a0a8e655a8fa",
+         "module" : "Text::BibTeX",
+         "observed_at" : "2026-11-06T22:53:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8c67d5c85bb11720eeb01776cdddece4dc7d1480b73b9676799f95b6ea97021c",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=707",
+         "version" : "1.00",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

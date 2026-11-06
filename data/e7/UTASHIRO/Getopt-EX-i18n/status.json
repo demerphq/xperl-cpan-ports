@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Getopt-EX-i18n",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Getopt-EX-i18n-1.02.tar.gz",
+         "id" : "e41fe795a19f5f077053e35ecc55d3193b8ea9a3b126e4daf9d0dfc7f98b54d2",
+         "module" : "Getopt::EX::i18n",
+         "observed_at" : "2026-11-06T23:05:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "143a6c90a7c89a74d2f0d2ef657a476dd83afef186c055007d3c7a5f6dbad934",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=16",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

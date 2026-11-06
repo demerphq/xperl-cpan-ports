@@ -1,0 +1,54 @@
+{
+   "author" : "ROBN",
+   "distribution" : "Prometheus-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "R/RO/ROBN/Prometheus-Tiny-0.011.tar.gz",
+         "id" : "a5453756e88be37184f865bcda8c9935ec4890f0cbd506681c442a01663cead9",
+         "module" : "Prometheus::Tiny",
+         "observed_at" : "2026-11-06T23:02:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8db1480f3c89eb86d414cf5f47feed8df3112b38c463cb8f65b4c064e20b1e13",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=69",
+         "version" : "0.011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

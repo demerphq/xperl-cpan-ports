@@ -190,6 +190,61 @@
          "test_summary" : "Files=86, Tests=100, Failed 1/86 test programs. 1/100 subtests failed.",
          "version" : "1.52",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "id" : "1b814120f57e147785b8e1ee55f8bd51bb28d2f846f9210b46c30442c6a0d15f",
+         "module" : "Devel::Cover",
+         "observed_at" : "2026-11-06T23:00:49Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-coverage-gold",
+         "patch_sha256" : [
+            "750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "status" : "installed",
+         "test_summary" : "Files=86, Tests=105",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "YANICK",
+   "distribution" : "Dancer-Plugin-REST",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YANICK/Dancer-Plugin-REST-0.12.tar.gz",
+         "id" : "cbe800db4924e6e40cc0ac44369d3146c358a477c850b0aa0bfe65848a3e5e98",
+         "module" : "Dancer::Plugin::REST",
+         "observed_at" : "2026-11-06T23:08:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6697d5f9667e15c61dd06c0d18aacc0e80fac0499826f85cdafe47dcdb5b37d5",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=50",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

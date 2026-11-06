@@ -1,0 +1,55 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Twiggy",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Twiggy-0.1026.tar.gz",
+         "id" : "e649a600e4c0d76e2ec2c8a92ea572b454031b84484d5e9ea3014bbfa212a849",
+         "module" : "Plack::Handler::Twiggy",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T22:58:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4d91ea6ed9ae9a8ef4314dc2a7cf52eb026b365be68386b35ea6864dfac57f9e",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=129",
+         "version" : "0.1026",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

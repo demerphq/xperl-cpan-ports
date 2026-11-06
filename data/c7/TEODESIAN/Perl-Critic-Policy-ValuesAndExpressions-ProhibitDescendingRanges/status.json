@@ -1,0 +1,54 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "Perl-Critic-Policy-ValuesAndExpressions-ProhibitDescendingRanges",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Perl-Critic-Policy-ValuesAndExpressions-ProhibitDescendingRanges-0.001.tar.gz",
+         "id" : "0e9c100c39c31669fbd801a0cf682382d76c43272d9b30dd6f98700041e621b8",
+         "module" : "Perl::Critic::Policy::ValuesAndExpressions::ProhibitDescendingRanges",
+         "observed_at" : "2026-11-06T23:09:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "68aad581304a74e86b96843fa4b3f44c3c38d2830c10f5a4c5471f90c7b7336a",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=139",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Params-Get",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Params-Get-0.17.tar.gz",
+         "id" : "eb054abfe9b057d67821a84f72a7ea2f26680b24cad99088aa20d4e21ff0b9df",
+         "module" : "Params::Get",
+         "observed_at" : "2026-11-06T23:08:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "59d139a6a67828f90300d03655941f41d91c9da31d58caf1b16eb47f52bb0792",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=476",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

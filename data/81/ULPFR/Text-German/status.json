@@ -88,6 +88,53 @@
          "test_summary" : "Files=2, Tests=34",
          "version" : "0.06",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "U/UL/ULPFR/Text-German-0.06.tar.gz",
+         "id" : "db41a2c8e1c4156c1bfeb51a2a31e13ca3b7ee233c6f9443a2dd0f10fec5c192",
+         "module" : "Text::German",
+         "observed_at" : "2026-11-06T23:05:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "922d4f19012d9773b11f4a6f642105e9f913f5866f4461b6059ca674d5bb07dd",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=34",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

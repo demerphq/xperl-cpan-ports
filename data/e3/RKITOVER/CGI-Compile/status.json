@@ -1,0 +1,54 @@
+{
+   "author" : "RKITOVER",
+   "distribution" : "CGI-Compile",
+   "observations" : [
+      {
+         "cpan_path" : "R/RK/RKITOVER/CGI-Compile-0.27.tar.gz",
+         "id" : "ccd0d97a684e3bbe0bdd337f412e965127dc38dc2676af0ab1a98c35d7a4cfbf",
+         "module" : "CGI::Compile",
+         "observed_at" : "2026-11-06T23:02:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f6b0bae840260ee0b45a1a5be36e25b07ca91eedda264a83ce4f41483cb88ddd",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=134",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

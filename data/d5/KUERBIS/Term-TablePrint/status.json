@@ -1,0 +1,54 @@
+{
+   "author" : "KUERBIS",
+   "distribution" : "Term-TablePrint",
+   "observations" : [
+      {
+         "cpan_path" : "K/KU/KUERBIS/Term-TablePrint-0.183.tar.gz",
+         "id" : "f90be7f50986b2e28ed98752ebcb35863304b1ac35ee14d7af4c1f7321bde02e",
+         "module" : "Term::TablePrint",
+         "observed_at" : "2026-11-06T22:56:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "22e961137e71e92bbf9ad2fa59a7e23e8b85e94c6c293ede915725ef6927e034",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.183",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

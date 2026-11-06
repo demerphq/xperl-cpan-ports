@@ -1,0 +1,54 @@
+{
+   "author" : "LNATION",
+   "distribution" : "Bijection-XS",
+   "observations" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Bijection-XS-0.12.tar.gz",
+         "id" : "5fe6aedfb831a2b15a2bdadcbd165116de3a23f9541a68aaf284333703cc5185",
+         "module" : "Bijection::XS",
+         "observed_at" : "2026-11-06T23:33:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "37ed69c3ca4ad314e7cabe43695b06e61fa556b7be877f5c523905ac0a5c6289",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=5042",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

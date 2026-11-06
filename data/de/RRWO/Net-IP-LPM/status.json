@@ -1,0 +1,54 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Net-IP-LPM",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Net-IP-LPM-1.13.tar.gz",
+         "id" : "71c4a4fbe6e9ee8a4f6ae93dc5bfdc9825550eb9112b088e9856650561ba42b3",
+         "module" : "Net::IP::LPM",
+         "observed_at" : "2026-11-06T23:02:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d9c73316ac3fe8be086cd0f01300af3f32ddd1a5c058ff320b54d66f700acfeb",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=67",
+         "version" : "1.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

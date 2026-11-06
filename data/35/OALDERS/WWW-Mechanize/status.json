@@ -127,6 +127,53 @@
          "test_summary" : "Files=65, Tests=914",
          "version" : "2.22",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/WWW-Mechanize-2.22.tar.gz",
+         "id" : "f9deea837017567b6b3cc376fb58ac3cefc7ce85f5e4754940406556be571271",
+         "module" : "WWW::Mechanize",
+         "observed_at" : "2026-11-06T23:03:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2ed28cbeea54de40d08e88eb52f4dd5fcb05062efb6b2feb9da8376ca4308e60",
+         "status" : "installed",
+         "test_summary" : "Files=65, Tests=914",
+         "version" : "2.22",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "JROBINSON",
+   "distribution" : "Locale-Object",
+   "observations" : [
+      {
+         "cpan_path" : "J/JR/JROBINSON/Locale-Object-0.82.tar.gz",
+         "id" : "6906d4168350ca37cb61bb36566ea63705bae76cf94e2970ff73ba3313c88882",
+         "module" : "Locale::Object",
+         "observed_at" : "2026-11-06T22:55:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "559e8122116f891b2c2de85ea990cc3ad49c395bdcf26bb89f008c9c01ed35d8",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=77",
+         "version" : "0.82",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

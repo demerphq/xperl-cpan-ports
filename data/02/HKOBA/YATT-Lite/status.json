@@ -1,0 +1,128 @@
+{
+   "author" : "HKOBA",
+   "distribution" : "YATT-Lite",
+   "observations" : [
+      {
+         "cpan_path" : "H/HK/HKOBA/YATT-Lite-0.201.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "caa0db70c9d9673a68b631d70e214ad882a0125fbecccfc915ee147edc980aea",
+         "module" : "YATT::Lite",
+         "observed_at" : "2026-11-06T23:05:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "41f3855a1f1f52d8321d57f98f6ef31c1a489a36ec9b7b4bf4f84d59027f2fad",
+         "status" : "failed",
+         "test_summary" : "Files=90, Tests=2366, Failed 3/90 test programs. 11/2366 subtests failed.",
+         "version" : "0.201",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HK/HKOBA/YATT-Lite-0.201.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "1768a8ddb66222df517840b6be2428d1ccb2b6679cfc975e1f322793edbf21d8",
+         "module" : "YATT::Lite",
+         "observed_at" : "2026-11-06T23:27:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "41f3855a1f1f52d8321d57f98f6ef31c1a489a36ec9b7b4bf4f84d59027f2fad",
+         "status" : "installed",
+         "test_summary" : "Files=90, Tests=2370",
+         "version" : "0.201",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,55 @@
+{
+   "author" : "ETJ",
+   "distribution" : "PDL-Fit",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETJ/PDL-Fit-2.101.tar.gz",
+         "id" : "afe7b386b99eca78b1e3b1704d6567e2df4bedc1ca3c73200e1d0180a98e8500",
+         "module" : "PDL::Fit::LM",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-06T23:21:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "68241b2608ada1d8565b2dc70c0477dc726ec38d534ce1057e9ad3f7bb71898c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "2.101",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Graphics-ColorNames",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Graphics-ColorNames-v3.5.0.tar.gz",
+         "id" : "5850f86426598515cd37f83ad8d1dc028f4306a886c0eaefe620ad8bb4fdeaf0",
+         "module" : "Graphics::ColorNames",
+         "observed_at" : "2026-11-06T23:02:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b67bf61f4308698fdd7cd492be60b60bea5cc7af9bc797b7a2178151e5159135",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=135",
+         "version" : "v3.5.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

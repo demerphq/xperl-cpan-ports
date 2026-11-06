@@ -41,6 +41,53 @@
          "test_summary" : "Files=4, Tests=17",
          "version" : "v1.0.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SK/SKAJI/Command-Runner-v1.0.0.tar.gz",
+         "id" : "408bd110c9a649810585b6c9f4417e9cf3669cdcbe7cf56c14304684bfaac36f",
+         "module" : "Command::Runner",
+         "observed_at" : "2026-11-06T23:04:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "80061e9d5e9d1d7cd61cc47bd0944e69ed8e5bb68e16e159d5caf902e11ebc38",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=17",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

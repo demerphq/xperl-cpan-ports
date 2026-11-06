@@ -262,6 +262,53 @@
          "test_summary" : "Files=6, Tests=14",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MO/MONS/Test-More-UTF8-0.05.tar.gz",
+         "id" : "20c5c4d9aea07fd8cd6fa789f3d7e9257247e27ba910517e572de1b631c0846a",
+         "module" : "Test::More::UTF8",
+         "observed_at" : "2026-11-06T22:58:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b9f1c4b36a97cdfefaa53ed1115dd38f4b483037775f6559ee1df14acfd1ce04",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=15",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=6, Tests=64",
          "version" : "2.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEEJO/JavaScript-Packer-2.12.tar.gz",
+         "id" : "bb13734873297b576e5607b05d5b646827a2b3ec75780b97618a54f4d8f11b50",
+         "module" : "JavaScript::Packer",
+         "observed_at" : "2026-11-06T22:56:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b46799f76564e9b43ba451316b4518b511d1428ab5bc3f26b573c0eded7a4ba4",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=64",
+         "version" : "2.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

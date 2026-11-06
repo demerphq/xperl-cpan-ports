@@ -1,0 +1,54 @@
+{
+   "author" : "ZEFRAM",
+   "distribution" : "Scalar-String",
+   "observations" : [
+      {
+         "cpan_path" : "Z/ZE/ZEFRAM/Scalar-String-0.003.tar.gz",
+         "id" : "4b889e73125949b907eede0e02b82f88fc9155f71af9602aa3860b2466b793a4",
+         "module" : "Scalar::String",
+         "observed_at" : "2026-11-06T23:08:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f54a17c9b78713b02cc43adfadf60b49467e7634d31317e8b9e9e97c26d68b52",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=1061",
+         "version" : "0.003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

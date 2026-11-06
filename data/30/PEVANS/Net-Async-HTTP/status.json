@@ -1,0 +1,54 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Net-Async-HTTP",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Net-Async-HTTP-0.50.tar.gz",
+         "id" : "35f1a3bb1bcce8c0215f3852b9f944cea993548a3079b375825f9baae02be886",
+         "module" : "Net::Async::HTTP",
+         "observed_at" : "2026-11-06T23:01:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "92845b8ffdd2dc81decbe8a7b99203e4e34971de6624acb5c10aa9ff07885b87",
+         "status" : "installed",
+         "test_summary" : "Files=41, Tests=565",
+         "version" : "0.50",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

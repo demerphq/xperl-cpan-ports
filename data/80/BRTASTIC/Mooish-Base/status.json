@@ -1,0 +1,54 @@
+{
+   "author" : "BRTASTIC",
+   "distribution" : "Mooish-Base",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRTASTIC/Mooish-Base-1.005.tar.gz",
+         "id" : "41387ad2f9d6a68bb2330c49dc82e80e5579b01d6a3e7969338ce1bdb1842ffa",
+         "module" : "Mooish::Base",
+         "observed_at" : "2026-11-06T22:53:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1fcefd94cad84feba821f17b6e2c563692589aa401e763387df670732fe8c737",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=8",
+         "version" : "1.005",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -88,6 +88,53 @@
          "test_summary" : "Files=1, Tests=16",
          "version" : "0.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SD/SDP/Lingua-Stem-Fr-0.02.tar.gz",
+         "id" : "70e2ed02a7a4b58d201a74599dcf7191b423f1a073d635bf560e2c268831e562",
+         "module" : "Lingua::Stem::Fr",
+         "observed_at" : "2026-11-06T23:03:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d4f64b3a8898a185343218526d5ac68a4a1f8e6c4418d6ba95d62f5f9d5d96f",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=16",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

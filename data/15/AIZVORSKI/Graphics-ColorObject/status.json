@@ -1,0 +1,55 @@
+{
+   "author" : "AIZVORSKI",
+   "distribution" : "Graphics-ColorObject",
+   "observations" : [
+      {
+         "cpan_path" : "A/AI/AIZVORSKI/Graphics-ColorObject-0.5.0.tar.gz",
+         "id" : "560238e9a581a5af5506ccf5212eab8619955a08321708c689933bbcfc9bc411",
+         "module" : "Graphics::ColorObject",
+         "module_version" : "0.005000",
+         "observed_at" : "2026-11-06T23:02:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "15551e99dfed38c687b6738ef2677e2d66d5b08ac5955ed59305db93dad1549b",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=20416",
+         "version" : "0.5.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "ETJ",
+   "distribution" : "ExtUtils-F77",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETJ/ExtUtils-F77-1.26.tar.gz",
+         "id" : "564761920341e7723ba7346e7e743caee83896e65bf0bb5177d38b0aadffeeed",
+         "module" : "ExtUtils::F77",
+         "observed_at" : "2026-11-06T22:53:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "abdd1d3eec4ca4fcae5f152b40bcaa862e3c806e07e4aa9123757f6aa48b9dd6",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "1.26",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

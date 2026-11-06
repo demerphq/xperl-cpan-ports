@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Text-ANSI-Tabs",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Text-ANSI-Tabs-1.06.tar.gz",
+         "id" : "dd1136240e6100592231d160b79701ebf16da91c2c3d23208fe77cb0856a2b53",
+         "module" : "Text::ANSI::Tabs",
+         "observed_at" : "2026-11-06T23:06:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8017e477fc6b6dea04d581a090962aefd4798954506a0bc420299c7b1edde139",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=213",
+         "version" : "1.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

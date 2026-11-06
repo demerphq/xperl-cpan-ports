@@ -94,6 +94,61 @@
          "test_summary" : "Files=10, Tests=205",
          "version" : "0.87",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "N/NW/NWCLARK/Devel-Size-0.87.tar.gz",
+         "id" : "d47ae366fd15251ba9cc48fce58e6f4d9ffa1fefdfb1387329c448274bd927bb",
+         "module" : "Devel::Size",
+         "observed_at" : "2026-11-06T22:59:00Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-hash-storage",
+         "patch_sha256" : [
+            "0c8e8f760b670b609b5823d8dff03c8eb0972581f1004a69edb3ea11bc9ed5c7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=205",
+         "version" : "0.87",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

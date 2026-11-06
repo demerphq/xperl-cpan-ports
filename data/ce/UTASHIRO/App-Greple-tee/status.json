@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "App-Greple-tee",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/App-Greple-tee-1.05.tar.gz",
+         "id" : "b0201ec637ae5f6f27a2321b7f14b5e379d6f9ebd71ee91a5d45e635f8a25b7a",
+         "module" : "App::Greple::tee",
+         "observed_at" : "2026-11-06T23:06:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3ca04bbd576fa65cee2b98a4cd7deba6f126b188262fe6b9a04358331140e4df",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=36",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

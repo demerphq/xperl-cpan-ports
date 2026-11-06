@@ -1,0 +1,128 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "App-FileSync",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/App-FileSync-0.002.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "d97e2979af8dfd872c040cba285696160fb81f7d2a7511ce94b6828fbcdc3bd6",
+         "module" : "App::FileSync",
+         "observed_at" : "2026-11-06T23:43:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1a647a9fd59dc778c1a1dc4ebbe86a9c151c80a4169a83d68a058a57568ec742",
+         "status" : "failed",
+         "test_summary" : "Files=24, Tests=1485, Failed 1/24 test programs. 2/1485 subtests failed.",
+         "version" : "0.002.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NH/NHORNE/App-FileSync-0.002.0.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9f4852f30582e461a920e82f49a2ef517cd2885d27bda0ae8b76881a6290c352",
+         "module" : "App::FileSync",
+         "observed_at" : "2026-11-06T23:47:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1a647a9fd59dc778c1a1dc4ebbe86a9c151c80a4169a83d68a058a57568ec742",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=1485",
+         "version" : "0.002.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

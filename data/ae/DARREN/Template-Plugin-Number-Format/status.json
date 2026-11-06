@@ -1,0 +1,54 @@
+{
+   "author" : "DARREN",
+   "distribution" : "Template-Plugin-Number-Format",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DARREN/Template-Plugin-Number-Format-1.06.tar.gz",
+         "id" : "64eeb12c547d0dd997f2570e2111da0f9ad8f28eed40d1ee148a17e1358be684",
+         "module" : "Template::Plugin::Number::Format",
+         "observed_at" : "2026-11-06T23:05:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0865836a1bcbc34d4a0ee34b5ccc14d7b511f1fd300bf390f002dac349539843",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=29",
+         "version" : "1.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

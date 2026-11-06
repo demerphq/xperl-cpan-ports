@@ -88,6 +88,53 @@
          "test_summary" : "Files=2, Tests=199",
          "version" : "0.24",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/OLE-Storage_Lite-0.24.tar.gz",
+         "id" : "a5cd7543cccd796d215329b1397047aa6ba3f2154b17310022229853f5945cd5",
+         "module" : "OLE::Storage_Lite",
+         "observed_at" : "2026-11-06T22:54:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "71c3b6ef082176c9585e620dd48f0f4782c282be73f2a653ea4b618f757bb3fd",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=199",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

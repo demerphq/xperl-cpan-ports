@@ -1,0 +1,54 @@
+{
+   "author" : "HMBRAND",
+   "distribution" : "System-Info",
+   "observations" : [
+      {
+         "cpan_path" : "H/HM/HMBRAND/System-Info-0.069.tgz",
+         "id" : "3d55fb272b99b4431197b95a4c3b834e96d77bbb1156cb260c216a0988f4e9c4",
+         "module" : "System::Info",
+         "observed_at" : "2026-11-06T22:54:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e64b6db121048b4f7bf090e3585c5a2be0ec86609096e6e6d64359640dc207bf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=209",
+         "version" : "0.069",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

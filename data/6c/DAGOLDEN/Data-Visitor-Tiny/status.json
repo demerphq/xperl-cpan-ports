@@ -1,0 +1,54 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Data-Visitor-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Data-Visitor-Tiny-0.001.tar.gz",
+         "id" : "e22e8b7cb4c4c4267f75bde408865c3c0894e667dc78dc780a841e378e6d2c61",
+         "module" : "Data::Visitor::Tiny",
+         "observed_at" : "2026-11-06T22:53:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "13bbcc9e9848095e3ab456b01f67c044a275d363555544c21041fcf56e0dcc40",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=7",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

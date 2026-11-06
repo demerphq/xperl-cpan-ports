@@ -1,0 +1,54 @@
+{
+   "author" : "JKUTEJ",
+   "distribution" : "JSON-Util",
+   "observations" : [
+      {
+         "cpan_path" : "J/JK/JKUTEJ/JSON-Util-0.06.tar.gz",
+         "id" : "08663e92fde7033a168d8adf142e4b7cb86250a97ea711eb4ff3265c32751d44",
+         "module" : "JSON::Util",
+         "observed_at" : "2026-11-06T22:54:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "601800cd7a47e5c81f266241404d497f4dfc785e9b1227344159a8b64a76e79c",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=10",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

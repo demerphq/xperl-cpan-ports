@@ -1,0 +1,54 @@
+{
+   "author" : "CGILMORE",
+   "distribution" : "I18N-AcceptLanguage",
+   "observations" : [
+      {
+         "cpan_path" : "C/CG/CGILMORE/I18N-AcceptLanguage-1.04.tar.gz",
+         "id" : "f9afd207d6a8eeb2db0a032f76106311454d472ecbb22341cacb67a23edf00c3",
+         "module" : "I18N::AcceptLanguage",
+         "observed_at" : "2026-11-06T22:53:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "312e41169591fc4c8f6f1e7fe129820f42f7dbe38506d9103ff41aa720f40309",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=34",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

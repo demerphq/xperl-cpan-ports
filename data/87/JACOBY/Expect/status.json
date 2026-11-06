@@ -192,6 +192,61 @@
          "test_summary" : "Files=8, Tests=101",
          "version" : "1.38",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JA/JACOBY/Expect-1.38.tar.gz",
+         "id" : "c81a20e2235a053a174442349713d4a2a6a6bdcd1f0123386d77afbd1f84c2cc",
+         "module" : "Expect",
+         "observed_at" : "2026-11-06T22:55:39Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-version-banner",
+         "patch_sha256" : [
+            "dc29036862d1fd4318b1db12eb321d4cf14bb85ae115d3d37e07b7a953c149d8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=101",
+         "version" : "1.38",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

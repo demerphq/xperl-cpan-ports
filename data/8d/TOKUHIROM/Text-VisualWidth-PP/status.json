@@ -1,0 +1,54 @@
+{
+   "author" : "TOKUHIROM",
+   "distribution" : "Text-VisualWidth-PP",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/Text-VisualWidth-PP-0.09.tar.gz",
+         "id" : "9f910a62d1b482b37c47c918579462aaf1f3ff5bcb59089af16a41e9a8594be7",
+         "module" : "Text::VisualWidth::PP",
+         "observed_at" : "2026-11-06T23:05:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "de886bddf781fa444b7f1fa34b563ff9d95a55c34bc4234065452432140de5fd",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=63",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

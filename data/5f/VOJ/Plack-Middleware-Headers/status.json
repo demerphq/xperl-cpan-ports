@@ -1,0 +1,54 @@
+{
+   "author" : "VOJ",
+   "distribution" : "Plack-Middleware-Headers",
+   "observations" : [
+      {
+         "cpan_path" : "V/VO/VOJ/Plack-Middleware-Headers-0.11.tar.gz",
+         "id" : "b62412519ff8e32df69cd28a0296d4fc7552fc3e5c493526d4d7791382a79b8c",
+         "module" : "Plack::Middleware::Headers",
+         "observed_at" : "2026-11-06T23:07:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "79e9ee709bc93c136a2ebd00fa60f9097139f7076192079bcd4ffebfd791c46e",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=26",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

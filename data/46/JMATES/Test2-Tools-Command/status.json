@@ -1,0 +1,54 @@
+{
+   "author" : "JMATES",
+   "distribution" : "Test2-Tools-Command",
+   "observations" : [
+      {
+         "cpan_path" : "J/JM/JMATES/Test2-Tools-Command-0.20.tar.gz",
+         "id" : "562caa1048adead07b381ca5b6f2eec59a9fe9ab9578622e95dcce373576f105",
+         "module" : "Test2::Tools::Command",
+         "observed_at" : "2026-11-06T22:54:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c466468854bbf5f35222aecb987d596267de1f25c73aef8149cde11c58456858",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=39",
+         "version" : "0.20",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

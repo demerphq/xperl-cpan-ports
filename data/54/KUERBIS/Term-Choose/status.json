@@ -1,0 +1,54 @@
+{
+   "author" : "KUERBIS",
+   "distribution" : "Term-Choose",
+   "observations" : [
+      {
+         "cpan_path" : "K/KU/KUERBIS/Term-Choose-1.783.tar.gz",
+         "id" : "8032feb3de80e7d2c5084eb00adaaddc8ccf1b0d358741c8b2d9fbe0864e7b44",
+         "module" : "Term::Choose",
+         "observed_at" : "2026-11-06T22:55:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dae091abba73f2ba50822f5c5fa7835bf8c9c888e7edb467ca0c1de8a2ea2b0c",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=176",
+         "version" : "1.783",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

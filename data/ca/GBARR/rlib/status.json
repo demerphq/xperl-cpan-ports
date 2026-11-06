@@ -1,0 +1,54 @@
+{
+   "author" : "GBARR",
+   "distribution" : "rlib",
+   "observations" : [
+      {
+         "cpan_path" : "G/GB/GBARR/rlib-0.02.tar.gz",
+         "id" : "d3c8931aa2206c57f2ab3d204a50356ab57466e308093d19d561e310047f35cc",
+         "module" : "rlib",
+         "observed_at" : "2026-11-06T22:53:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ce721283257bd44ce0b1acb94f929c0a55628d5f6c449e0d5bf5fd599e79b3be",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=7",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

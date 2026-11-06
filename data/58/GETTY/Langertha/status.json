@@ -1,0 +1,53 @@
+{
+   "author" : "GETTY",
+   "distribution" : "Langertha",
+   "observations" : [
+      {
+         "cpan_path" : "G/GE/GETTY/Langertha-0.505.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "5ae5bbb03ce5ce61161afb89351b48b059ea22129cbaa0abcd22f121b287cb4f",
+         "module" : "Langertha",
+         "observed_at" : "2026-11-06T23:47:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "16b05c291284f29acc55bdf506bf787beb9ba4c5021506c8a79cce7b323ae317",
+         "status" : "failed",
+         "test_summary" : "Files=245, Tests=11359, Failed 12/245 test programs. 30/11359 subtests failed.",
+         "version" : "0.505",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

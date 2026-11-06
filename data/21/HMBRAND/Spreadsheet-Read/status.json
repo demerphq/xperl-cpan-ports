@@ -88,6 +88,99 @@
          "test_summary" : "Files=72, Tests=454",
          "version" : "0.95",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Spreadsheet-Read-0.95.tgz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "23e8e1548e4e60585ec88667ccd05edacb6ab01b1c3ed4df31716a1aa45067ed",
+         "module" : "Spreadsheet::Read",
+         "observed_at" : "2026-11-06T22:54:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "99fe77002189b6b90d9a2d502b9c597ac0beb57b4ad8531a356a5912db72107e",
+         "status" : "failed",
+         "test_summary" : "Files=72, Tests=1716, Failed 1/72 test programs. 1/1716 subtests failed.",
+         "version" : "0.95",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Spreadsheet-Read-0.95.tgz",
+         "id" : "f95e7ee4df556fab61ed13715ed4a75622fa29bc5a2f481bb78204448f1a716d",
+         "module" : "Spreadsheet::Read",
+         "observed_at" : "2026-11-06T23:28:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "99fe77002189b6b90d9a2d502b9c597ac0beb57b4ad8531a356a5912db72107e",
+         "status" : "installed",
+         "test_summary" : "Files=72, Tests=5101",
+         "version" : "0.95",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

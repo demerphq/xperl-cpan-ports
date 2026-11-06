@@ -1,0 +1,54 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Test-CPANfile",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Test-CPANfile-0.08.tar.gz",
+         "id" : "bd326d3fe56f69925cb33fef88bb01503445b82c337b4b8edfa05f0f2732ef12",
+         "module" : "Test::CPANfile",
+         "observed_at" : "2026-11-06T22:54:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "48edb5c93fce52239207f36ca6216473e4177fbc6ef0ae443c1c4728e1ffc882",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

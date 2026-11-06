@@ -1,0 +1,54 @@
+{
+   "author" : "ROSCH",
+   "distribution" : "IPC-Signal",
+   "observations" : [
+      {
+         "cpan_path" : "R/RO/ROSCH/IPC-Signal-1.00.tar.gz",
+         "id" : "d789a1bcf219bb159d60707e0f3ee794934b2bf2f3054908ebb78c070203af54",
+         "module" : "IPC::Signal",
+         "observed_at" : "2026-11-06T23:02:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7c21f9c8c2d0c0f0f0f46e77de7c3d879dd562668ddf0525875c38cef2076fd0",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=7",
+         "version" : "1.00",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

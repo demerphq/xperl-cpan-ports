@@ -135,6 +135,53 @@
          "test_summary" : "Files=2, Tests=4",
          "version" : "0.007",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Crypt-SysRandom-0.008.tar.gz",
+         "id" : "ede4b304c9cab47df8eb105203e234db8813f46319faec7d56a6459e3f58e7d8",
+         "module" : "Crypt::SysRandom",
+         "observed_at" : "2026-11-06T22:56:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ab6ac0b737e83a45a13c4ba502c9286c73622609e09f1a21d63eddb1d6597726",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

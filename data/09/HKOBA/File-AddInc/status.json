@@ -1,0 +1,54 @@
+{
+   "author" : "HKOBA",
+   "distribution" : "File-AddInc",
+   "observations" : [
+      {
+         "cpan_path" : "H/HK/HKOBA/File-AddInc-0.003.tar.gz",
+         "id" : "232667dd3bc1adb17f45834c5fa1df63ca6d3e11e5b960425917d225244af52d",
+         "module" : "File::AddInc",
+         "observed_at" : "2026-11-06T23:05:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b0d5eda1109d3932a2476dd6feddb717f875a3b9b845741a9cd8c14dec61a28c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=7",
+         "version" : "0.003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

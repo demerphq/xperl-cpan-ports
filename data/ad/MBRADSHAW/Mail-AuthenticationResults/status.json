@@ -1,0 +1,54 @@
+{
+   "author" : "MBRADSHAW",
+   "distribution" : "Mail-AuthenticationResults",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBRADSHAW/Mail-AuthenticationResults-2.20261029.tar.gz",
+         "id" : "3ca9edf7104b1153b6358883fa8cf31c93d4f9180d18a827f9197c4ba060997a",
+         "module" : "Mail::AuthenticationResults::Header::AuthServID",
+         "observed_at" : "2026-11-06T22:58:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ab41923a44154359a05d5c9e8cd9aec02d3695764eb4d3c118ef6cdf18ac74db",
+         "status" : "installed",
+         "test_summary" : "Files=35, Tests=408",
+         "version" : "2.20261029",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

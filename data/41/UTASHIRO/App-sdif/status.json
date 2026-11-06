@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "App-sdif",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/App-sdif-4.49.tar.gz",
+         "id" : "9e10c446eb276df945dd5bc6bf272479ab12f330d95cb72d6b9a833131d9c845",
+         "module" : "App::sdif",
+         "observed_at" : "2026-11-06T23:06:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "347dd8dd87a0863dd1afc207c5b3110b7329a462ed18aba65fc36896b71b7d8c",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=31",
+         "version" : "4.49",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

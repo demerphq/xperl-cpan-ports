@@ -239,6 +239,61 @@
          "test_summary" : "Files=25, Tests=201",
          "version" : "0.51",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+         "id" : "6aff9f3a5db8744c8fbab9a8b4240959edfbaf08fad5bbc5eefb15a4c0c0f9a8",
+         "module" : "XS::Parse::Keyword",
+         "observed_at" : "2026-11-06T22:59:48Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-parser-errors",
+         "patch_sha256" : [
+            "3321022b485537ccb0e8c2569b55be01256c5e40c2586c2e1c3605c15c400436"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=201",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

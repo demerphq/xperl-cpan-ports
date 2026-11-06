@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "App-Greple",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/App-Greple-10.05.tar.gz",
+         "id" : "e6406a25ef856263b536d0dc08c3695b6623e7a0f0582cf02aaacd236c1c9316",
+         "module" : "App::Greple",
+         "observed_at" : "2026-11-06T23:06:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ee604c51b1fb97074d0abf6d9825593dcf1c90f5e594697e4359c6e5de3269ff",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=200",
+         "version" : "10.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

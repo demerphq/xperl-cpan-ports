@@ -88,6 +88,53 @@
          "test_summary" : "Files=15, Tests=273",
          "version" : "0.54",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HM/HMBRAND/Data-Peek-0.54.tgz",
+         "id" : "3561a0d0c208423367a62159225d836090e11996d9e30d67961a424e8f530f5d",
+         "module" : "Data::Peek",
+         "observed_at" : "2026-11-06T22:54:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4dbf2205d43fb7d963ba29902cd563a5ea6c3c6bb49a9493c40ce8b0f8572980",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=274",
+         "version" : "0.54",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

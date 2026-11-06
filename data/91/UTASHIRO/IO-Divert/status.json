@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "IO-Divert",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/IO-Divert-0.99.tar.gz",
+         "id" : "9e3373447b2c9276cb5a23bfc49751d7f0c6e430875264d7ecc67c4f4897ca78",
+         "module" : "IO::Divert",
+         "observed_at" : "2026-11-06T23:05:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e6a1b80e6a78d2ab24ce42dc1981de5cf4a6cbc2ba2b05a790ba8f2a88577d09",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=12",
+         "version" : "0.99",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

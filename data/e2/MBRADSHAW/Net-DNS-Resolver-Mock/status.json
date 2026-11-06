@@ -1,0 +1,54 @@
+{
+   "author" : "MBRADSHAW",
+   "distribution" : "Net-DNS-Resolver-Mock",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBRADSHAW/Net-DNS-Resolver-Mock-1.20230216.tar.gz",
+         "id" : "1ee3e09686df8625689240164f035dc94a4dfcf6843f3079ee320542e36d2758",
+         "module" : "Net::DNS::Resolver::Mock",
+         "observed_at" : "2026-11-06T22:59:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed4930577fd1a29d6435b5875533d3b28f5c1258a35833fe6ca2cb6a2685a49b",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=41",
+         "version" : "1.20230216",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "AALLGOOD",
+   "distribution" : "Meteorology-PET",
+   "observations" : [
+      {
+         "cpan_path" : "A/AA/AALLGOOD/Meteorology-PET-0.01.tar.gz",
+         "id" : "d89395d61a7f8813740ab1235d437eb73f6b45f9110ed88139bf1319310b02b8",
+         "module" : "Meteorology::PET",
+         "observed_at" : "2026-11-06T22:53:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2f3a2c868f34f67bcdf5a3c4861c3a912230deb7b4a2a1d445bbdfdc76f0c800",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=16",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

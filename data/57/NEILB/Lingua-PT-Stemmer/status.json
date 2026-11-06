@@ -88,6 +88,53 @@
          "test_summary" : "Files=1, Tests=12",
          "version" : "0.02",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Lingua-PT-Stemmer-0.02.tar.gz",
+         "id" : "326966a885a9e9a38e6c63d00374ffb56e52bea37dcf6dedaeed2f1e6befeed5",
+         "module" : "Lingua::GL::Stemmer",
+         "observed_at" : "2026-11-06T22:58:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "596df01f8ab79ffffd450e94836a544371d8a4c93a15f7e88ea2f1b79c46849d",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=12",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

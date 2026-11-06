@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "App-WebPerimeterScan",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/App-WebPerimeterScan-0.001.0.tar.gz",
+         "id" : "4034633b1df2129cdbb55bd916a473eddb34ae6c8d11004a144265278c840be0",
+         "module" : "App::WebPerimeterScan",
+         "observed_at" : "2026-11-06T23:42:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "35eaecc46141028a8bf82867d770ff7affd932bc74d03c97883957763969eac9",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=284",
+         "version" : "0.001.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

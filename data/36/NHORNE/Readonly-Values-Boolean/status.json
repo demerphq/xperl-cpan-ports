@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Readonly-Values-Boolean",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Readonly-Values-Boolean-0.01.tar.gz",
+         "id" : "da5dbfa7ac105159ffc1949c4309a675d5ed9dda964ac4c239d5ffb7436fc271",
+         "module" : "Readonly::Values::Boolean",
+         "observed_at" : "2026-11-06T23:07:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e4f2080da895ed4143c00118d13d930f45cc0f300d49934db529ae57d4417d26",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=7",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

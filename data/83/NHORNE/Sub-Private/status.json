@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Sub-Private",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Sub-Private-0.09.tar.gz",
+         "id" : "b939181a41e9b0e1533d443ed8c5cb26aaf7a458cef8bcc85c609dec6dde8c57",
+         "module" : "Sub::Private",
+         "observed_at" : "2026-11-06T23:08:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bb23b8e27e5155f4fffac387a94b755e7bfbc32705a0b4432828e7ba01040159",
+         "status" : "installed",
+         "test_summary" : "Files=34, Tests=250",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Sub-Protected",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Sub-Protected-0.03.tar.gz",
+         "id" : "0d2fb6a166307697f67398a5c89c774a4b24f870de7d44a347f3036e74ab828b",
+         "module" : "Sub::Protected",
+         "observed_at" : "2026-11-06T23:08:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1d071072b808ccf0d9916ab6884694761be8ef2e3e1bcc745e7d5171e7a35bf0",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=189",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

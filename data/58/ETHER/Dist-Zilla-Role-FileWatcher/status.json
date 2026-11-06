@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Dist-Zilla-Role-FileWatcher",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Dist-Zilla-Role-FileWatcher-0.006.tar.gz",
+         "id" : "9af2a6fb5c13e67ee7dff31482c7fabccf95dfebd6986e55641edd6204076473",
+         "module" : "Dist::Zilla::Role::FileWatcher",
+         "observed_at" : "2026-11-06T23:06:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe3a44b9586daf1277fcbbbaf7216b02ce23efbbd694f0df11b7f75344be4e96",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=17",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

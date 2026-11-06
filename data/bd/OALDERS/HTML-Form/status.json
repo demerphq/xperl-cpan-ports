@@ -88,6 +88,53 @@
          "test_summary" : "Files=12, Tests=223",
          "version" : "6.13",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Form-6.13.tar.gz",
+         "id" : "a33bfaa5cda586ac103ac79a387a3d3b044999e734343d11301c4317c74b015a",
+         "module" : "HTML::Form",
+         "observed_at" : "2026-11-06T22:59:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ae5ad0f6fe70b1a382789d5e83a9b669cc541ee9d459e1bfa89b43ae0c014cdd",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=223",
+         "version" : "6.13",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

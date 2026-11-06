@@ -1,0 +1,128 @@
+{
+   "author" : "LNATION",
+   "distribution" : "HAMT",
+   "observations" : [
+      {
+         "cpan_path" : "L/LN/LNATION/HAMT-0.04.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "a8e774b7417e22baec86a81cb37ffceaa9a5e89c14a620a6b88f8b2c4fb18d8e",
+         "module" : "HAMT",
+         "observed_at" : "2026-11-06T22:57:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "20493d4ba0d1b85b5ef28fbc79d1be622d34ffc4fec9c27050de0d687d4bb6b8",
+         "status" : "failed",
+         "test_summary" : "Files=32, Tests=1956, Failed 2/32 test programs. 0/1956 subtests failed.",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LN/LNATION/HAMT-0.04.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "132e286cc2f9ebe59192e37e7f11c15256a4b321c51b35f7412590a1e8fc7f8d",
+         "module" : "HAMT",
+         "observed_at" : "2026-11-06T23:35:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "20493d4ba0d1b85b5ef28fbc79d1be622d34ffc4fec9c27050de0d687d4bb6b8",
+         "status" : "installed",
+         "test_summary" : "Files=32, Tests=2045",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

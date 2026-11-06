@@ -1,0 +1,53 @@
+{
+   "author" : "BOWMANBS",
+   "distribution" : "CGI-Expand",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOWMANBS/CGI-Expand-2.05.tar.gz",
+         "id" : "4cd6baabc75c920a110c2db6ddd9253d7c832ea75e67774d747462c34d63a68a",
+         "module" : "CGI::Expand",
+         "observed_at" : "2026-11-06T22:53:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6e82d118e3c4c0c2dafcda5875ede5e8ddbfffe0b7dfaa648e451e039a45a4a9",
+         "status" : "installed",
+         "version" : "2.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

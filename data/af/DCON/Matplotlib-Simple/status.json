@@ -1,0 +1,128 @@
+{
+   "author" : "DCON",
+   "distribution" : "Matplotlib-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCON/Matplotlib-Simple-0.3341.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9d2eb96af426741ce5642ecb2186328621d0f4e008b0bd07af3302a0fc0f7c31",
+         "module" : "Matplotlib::Simple",
+         "observed_at" : "2026-11-06T22:59:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8e9bdc7d2aded0082e92c86d6b5d867bad0f1c8c635c2fb8973c81bebc47f1e6",
+         "status" : "failed",
+         "test_summary" : "Files=20, Tests=1939, Failed 4/20 test programs. 6/1939 subtests failed.",
+         "version" : "0.3341",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCON/Matplotlib-Simple-0.3341.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e5db6be9b1d793c98c5e7ee3c2b44304aeaba83ce4398c33bcfca237bdc78e61",
+         "module" : "Matplotlib::Simple",
+         "observed_at" : "2026-11-06T23:12:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8e9bdc7d2aded0082e92c86d6b5d867bad0f1c8c635c2fb8973c81bebc47f1e6",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=2099",
+         "version" : "0.3341",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

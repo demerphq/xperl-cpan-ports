@@ -1,0 +1,54 @@
+{
+   "author" : "RJBS",
+   "distribution" : "Pod-Elemental-PerlMunger",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJBS/Pod-Elemental-PerlMunger-0.200007.tar.gz",
+         "id" : "0bc5d8e71225a5359742afbd09c83a0a95249d7fc64a1152d1cf990f61044781",
+         "module" : "Pod::Elemental::PerlMunger",
+         "observed_at" : "2026-11-06T23:05:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "51895e4c41a079eadef9f24f5dc48e3245a5c06e3404ed79c85fa5cefeb795a9",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=11",
+         "version" : "0.200007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

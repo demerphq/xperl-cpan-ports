@@ -1,0 +1,54 @@
+{
+   "author" : "BRTASTIC",
+   "distribution" : "Value-Diff",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRTASTIC/Value-Diff-0.002.tar.gz",
+         "id" : "6b5b7f0bfa7dc6dc75daa650f6b85eb999deb238dbc0198d3c1d22dbb950bf6d",
+         "module" : "Value::Diff",
+         "observed_at" : "2026-11-06T22:53:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "15aec5be595aefa4cb2f2c9d404dce6dfc5c8c6ca0c099f20ea741b1d3de1be9",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=15",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

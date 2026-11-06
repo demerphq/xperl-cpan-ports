@@ -1,0 +1,54 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "Perl-Critic-Policy-Variables-RequireNoAutovivification",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Perl-Critic-Policy-Variables-RequireNoAutovivification-0.001.tar.gz",
+         "id" : "5bebf12d2c417abd487586c3957e4173980f1db7e1327da1cfe1d8df08b62c4d",
+         "module" : "Perl::Critic::Policy::Variables::RequireNoAutovivification",
+         "observed_at" : "2026-11-06T23:09:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "01135aa7b03791f80e314a6fb19236c1a1476dc3bb8959500362ccb6787e0aed",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=133",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

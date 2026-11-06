@@ -1,0 +1,54 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Graphics-ColorNames-Windows",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Graphics-ColorNames-Windows-v3.3.1.tar.gz",
+         "id" : "12bb462c5245c5570d22d49c85462a0d877ea88bb21bb2c037b45b7338bf4343",
+         "module" : "Graphics::ColorNames::Windows",
+         "observed_at" : "2026-11-06T23:02:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4ff749bc1488b6dd775d410e6eefe1b18d1d6a816e12dd7d5efe1f789e77bc14",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=4",
+         "version" : "v3.3.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

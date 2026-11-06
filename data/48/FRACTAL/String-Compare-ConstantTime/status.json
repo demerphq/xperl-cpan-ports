@@ -1,0 +1,54 @@
+{
+   "author" : "FRACTAL",
+   "distribution" : "String-Compare-ConstantTime",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FRACTAL/String-Compare-ConstantTime-0.321.tar.gz",
+         "id" : "51be9f24b3c879777ee426779e6903c87c6af82e618a3ee7ba1213d90cbc8bb9",
+         "module" : "String::Compare::ConstantTime",
+         "observed_at" : "2026-11-06T22:53:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0b26ba2b121d8004425d4485d1d46f59001c83763aa26624dff6220d7735d7f7",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=28",
+         "version" : "0.321",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

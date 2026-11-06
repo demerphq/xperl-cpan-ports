@@ -1,0 +1,54 @@
+{
+   "author" : "ETJ",
+   "distribution" : "PDL-Transform-Color",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETJ/PDL-Transform-Color-1.011.tar.gz",
+         "id" : "885e5b9f0515e4d6080675a8846986e8965a5f6020d1cf6f3e50330b2c94538f",
+         "module" : "PDL::Transform::Color",
+         "observed_at" : "2026-11-06T23:29:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "56c24abf1969209a80dcb25c3cf2939ba43709a2e3b74a840058a243c98cf861",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=33",
+         "version" : "1.011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

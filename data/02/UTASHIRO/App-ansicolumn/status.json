@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "App-ansicolumn",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/App-ansicolumn-1.62.tar.gz",
+         "id" : "defd7ee2d18dc66783acb1d6bf70afb4c656e076783f78e767b14633ebff90df",
+         "module" : "App::ansicolumn",
+         "observed_at" : "2026-11-06T23:06:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "415e60a0558482c4824b645860d3380ab637897f14ae2a834bb790953747b4c0",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=134",
+         "version" : "1.62",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

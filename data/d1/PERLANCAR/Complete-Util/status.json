@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "Complete-Util",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Complete-Util-0.620.tar.gz",
+         "id" : "124bf1ad3fd57cef5fd585a30f2905b1fa3e6f6505b939080994eaf56df903db",
+         "module" : "Complete::Util",
+         "observed_at" : "2026-11-06T22:59:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a1644f2ca6483a80cba83590f356ef58a4044a0dcd5468753635ba01be797f0b",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=55",
+         "version" : "0.620",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

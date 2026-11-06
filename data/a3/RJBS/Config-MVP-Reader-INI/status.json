@@ -168,6 +168,53 @@
          "test_summary" : "Files=2, Tests=10",
          "version" : "2.101465",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-Reader-INI-2.101465.tar.gz",
+         "id" : "8e9ab933065d90bfbed8aa91cf12c2816b90fe07146aed8fc5ce6f0d81c5764b",
+         "module" : "Config::MVP::Reader::INI",
+         "observed_at" : "2026-11-06T23:01:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "13c7aa27c1df98cd33ada399e59ff38fabfa9d65513e42af02f72c2d3f636247",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=10",
+         "version" : "2.101465",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=8, Tests=75",
          "version" : "0.048",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GE/GENEHACK/Git-Wrapper-0.048.tar.gz",
+         "id" : "74a3379ea5c993b9b830982fea10881e314291d43931bcf2719dee01d43f6129",
+         "module" : "Git::Wrapper",
+         "observed_at" : "2026-11-06T23:05:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9e3bff7486193fa7e4c80774aa175188ff75a71d558ecc06501ddab24c45188d",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=75",
+         "version" : "0.048",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

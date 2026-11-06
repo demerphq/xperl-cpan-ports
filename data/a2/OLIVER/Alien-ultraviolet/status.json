@@ -1,0 +1,53 @@
+{
+   "author" : "OLIVER",
+   "distribution" : "Alien-ultraviolet",
+   "observations" : [
+      {
+         "cpan_path" : "O/OL/OLIVER/Alien-ultraviolet-1.001001.tar.gz",
+         "id" : "fb516767b79ca41971f0b91d232d33cac8823b4eab68512c3d03102e255949ac",
+         "module" : "Alien::ultraviolet",
+         "observed_at" : "2026-11-06T23:00:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "685d0e11f7cd03056ad039b2b20f9c9904b10c45d497b8979a0860347140aea0",
+         "status" : "installed",
+         "version" : "1.001001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

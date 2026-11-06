@@ -1,0 +1,54 @@
+{
+   "author" : "MAKIS",
+   "distribution" : "Data-Random-String",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAKIS/Data-Random-String-0.03.tar.gz",
+         "id" : "9b3bb6c98fb464efed3ed5f841bb5997a2c63d4f3829246ba725ae1c6986c463",
+         "module" : "Data::Random::String",
+         "observed_at" : "2026-11-06T22:57:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "803d201d8dd6d2de0b4d3c57c277d03f42c9c8e6138477ecf7d8153a3084c1df",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=6",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

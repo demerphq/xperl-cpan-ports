@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Geo-Location-Predicate",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Geo-Location-Predicate-0.02.tar.gz",
+         "id" : "335727ebf7cc8acde4ce4a185d7b78b77a414be8477ab8fbab0652194065eb6f",
+         "module" : "Geo::Location::Predicate",
+         "observed_at" : "2026-11-06T23:07:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "300caf56d3712d02a73f9ee922bfd76cae5c59d6a6cb9c96aec220ae221b40d2",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=40",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

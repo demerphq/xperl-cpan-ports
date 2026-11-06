@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "Module-List-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Module-List-Tiny-0.004003.tar.gz",
+         "id" : "3fea10861ad10d5c5ee47261dc240ab6697a6b63318ac1e7e54b2a734d2d6494",
+         "module" : "Module::List::Tiny",
+         "observed_at" : "2026-11-06T22:59:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ef062f9dba67bd4cee704081cd048fb8aff0fe68ae4dc0f2f2db236148d4da7c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=1",
+         "version" : "0.004003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

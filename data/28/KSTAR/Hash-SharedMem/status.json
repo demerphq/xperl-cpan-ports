@@ -1,0 +1,54 @@
+{
+   "author" : "KSTAR",
+   "distribution" : "Hash-SharedMem",
+   "observations" : [
+      {
+         "cpan_path" : "K/KS/KSTAR/Hash-SharedMem-0.007.tar.gz",
+         "id" : "d18be8c1d4bfe64a9b6782ea649c5ce4fd435138bb18646eb6d70b556dc44b5b",
+         "module" : "Hash::SharedMem",
+         "observed_at" : "2026-11-06T23:10:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "095f03556f9f345357e9f5a2ffa0e7a1a74581ac91fc6e76f45c62b23b5e595a",
+         "status" : "installed",
+         "test_summary" : "Files=31, Tests=39796",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Signal-Mask",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Signal-Mask-0.009.tar.gz",
+         "id" : "82512ea5b93383a95a128023e289a5393566bef9822ea601750a249ca1a55cca",
+         "module" : "Signal::Mask",
+         "observed_at" : "2026-11-06T23:02:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7071c50ca2a9ea7c0ed79667267e3c048f5135fcc6d433f9aeee70b4c0357ace",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=18",
+         "version" : "0.009",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Text-ANSI-Printf",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Text-ANSI-Printf-2.07.tar.gz",
+         "id" : "86d00379f0c05c93398b789adc83fe7a32c7ef7c57079b59d8c97a2e1d73dee5",
+         "module" : "Text::ANSI::Printf",
+         "observed_at" : "2026-11-06T23:06:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8be4b96b8a6081e87561725e867b8524b4818290ceb1174156f33aaeac867e46",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=105",
+         "version" : "2.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

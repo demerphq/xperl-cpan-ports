@@ -1,0 +1,54 @@
+{
+   "author" : "SEKIMURA",
+   "distribution" : "LWP-UserAgent-WithCache",
+   "observations" : [
+      {
+         "cpan_path" : "S/SE/SEKIMURA/LWP-UserAgent-WithCache-0.13.tar.gz",
+         "id" : "bc79577195991343ea48f97bebd15c4167b568023dec2084d9f675c05097df36",
+         "module" : "LWP::UserAgent::WithCache",
+         "observed_at" : "2026-11-06T23:03:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bb5993da4d3e817c1d67928446c2f9ec7cd234afa24cb90556f8d899279ed175",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=10",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

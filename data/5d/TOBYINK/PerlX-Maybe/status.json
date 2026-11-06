@@ -1,0 +1,54 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "PerlX-Maybe",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/PerlX-Maybe-1.202.tar.gz",
+         "id" : "35be480cfdb3d3d96196e9074f0d33870e2fb4ac495e83a809a4bc1c8ae39330",
+         "module" : "PerlX::Maybe",
+         "observed_at" : "2026-11-06T23:04:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "21a74fafb35a62d3308295c16cb1e0596543207df67d974b3c2516e9bddca308",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=11",
+         "version" : "1.202",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

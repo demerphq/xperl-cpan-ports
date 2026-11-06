@@ -1,0 +1,54 @@
+{
+   "author" : "MINIMAL",
+   "distribution" : "Pod-Markdown-Github",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MINIMAL/Pod-Markdown-Github-0.04.tar.gz",
+         "id" : "8f00923fef0ec0dde48b090eb40f8d7e08d0ae976db8f1f2e6cfc3d161327d09",
+         "module" : "Pod::Markdown::Github",
+         "observed_at" : "2026-11-06T22:58:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b37e2f009c4cce4924fb23ee43146e506722971bea6bced2dac15d080a3bc613",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=24",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

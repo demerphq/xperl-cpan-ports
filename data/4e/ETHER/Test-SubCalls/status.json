@@ -262,6 +262,53 @@
          "test_summary" : "Files=3, Tests=25",
          "version" : "1.10",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-SubCalls-1.10.tar.gz",
+         "id" : "b8f4f0d59c6972f305f3f1e553f5dccdebc44419c319c93b44a29c7816c0920a",
+         "module" : "Test::SubCalls",
+         "observed_at" : "2026-11-06T22:53:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cbc1e9b35a05e71febc13e5ef547a31c8249899bb6011dbdc9d9ff366ddab6c2",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=25",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -88,6 +88,53 @@
          "test_summary" : "Files=11, Tests=37",
          "version" : "0.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Struct-Dumb-0.16.tar.gz",
+         "id" : "86b5de1cd502b74528603e6e5740f18873837d8c22e8291b38864fe693a3186d",
+         "module" : "Struct::Dumb",
+         "observed_at" : "2026-11-06T22:59:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ebc9032640777a5bf900a30de0e554356af9cd95101e512a34fe15535c682508",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=37",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

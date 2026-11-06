@@ -1,0 +1,54 @@
+{
+   "author" : "BRIANDFOY",
+   "distribution" : "Perl-Version",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/Perl-Version-1.019.tar.gz",
+         "id" : "e0292f090447189552302cdde592aa3e63e9b029dcdc3c3b33989da14f467409",
+         "module" : "Perl::Version",
+         "observed_at" : "2026-11-06T22:53:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a45a6e3f0d92fcb33214248a52d443e2b8ffd5fffdaf09b54cb7cb9dff588004",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=1059",
+         "version" : "1.019",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

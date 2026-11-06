@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Music-NWC2MusicXML",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Music-NWC2MusicXML-0.002.4.tar.gz",
+         "id" : "b033fa16eb944e6812ce9ea344fcfd029eca7fe56f3082597b2ed86ac2983b87",
+         "module" : "Music::NWC2MusicXML",
+         "observed_at" : "2026-11-06T23:43:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fde9e5a18145d0c8ac0fdc182a0d8c14d90766ca5f98f0e95d5122436913d048",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=837",
+         "version" : "0.002.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

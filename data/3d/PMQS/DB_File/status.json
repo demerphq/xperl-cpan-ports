@@ -1,0 +1,47 @@
+{
+   "author" : "PMQS",
+   "distribution" : "DB_File",
+   "observations" : [
+      {
+         "cpan_path" : "P/PM/PMQS/DB_File-1.861.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "a7eadeb836539740e9c4faa29f0430b0e1a6be1f519c62e16bb9a38ba9b4e866",
+         "module" : "DB_File",
+         "observed_at" : "2026-11-06T23:00:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "608bc6ff234ae08ac5bf6b85887882965aaa89554cf09d09fb926fd4e389094f",
+         "status" : "failed",
+         "version" : "1.861",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

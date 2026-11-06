@@ -1,0 +1,54 @@
+{
+   "author" : "LNATION",
+   "distribution" : "Devel-XSCover",
+   "observations" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Devel-XSCover-0.09.tar.gz",
+         "id" : "feca57a3a50e91c8f6d80f1686791421a68b4f4d2e51047a5de6372c83de8297",
+         "module" : "Devel::XSCover",
+         "observed_at" : "2026-11-06T23:01:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d03bda323ff6d0581b9021f689935c9ad66ce4ab187ac29b0d6aeb6990070f7f",
+         "status" : "installed",
+         "test_summary" : "Files=70, Tests=903",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

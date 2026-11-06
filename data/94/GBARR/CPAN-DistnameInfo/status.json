@@ -41,6 +41,53 @@
          "test_summary" : "Files=2, Tests=829",
          "version" : "0.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GB/GBARR/CPAN-DistnameInfo-0.12.tar.gz",
+         "id" : "98f9443a3ca92a0c25d8985863241d67c4bfb3f44ec9d805e287690781d93b2b",
+         "module" : "CPAN::DistnameInfo",
+         "observed_at" : "2026-11-06T22:53:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2f24fbe9f7eeacbc269d35fc61618322fc17be499ee0cd9018f370934a9f2435",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=829",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

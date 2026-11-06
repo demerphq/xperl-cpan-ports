@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Mojolicious-Plugin-Buffer",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Mojolicious-Plugin-Buffer-0.002.0.tar.gz",
+         "id" : "e657594d606f20079378d8b249c1b97e036886e80b31c06c947753698b6f0ba0",
+         "module" : "Mojolicious::Plugin::Buffer",
+         "observed_at" : "2026-11-06T23:09:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3d2861edb50f3ff34929fb7f23827b37d05cded7563f51848f7c012ea8446562",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=205",
+         "version" : "0.002.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

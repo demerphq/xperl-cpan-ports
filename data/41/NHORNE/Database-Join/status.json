@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Database-Join",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Database-Join-0.011.1.tar.gz",
+         "id" : "fef16a9e944ef6dcd44b4fa136f0c76d5971d7f45737f9645896243b835db19b",
+         "module" : "Database::Join",
+         "observed_at" : "2026-11-06T23:42:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bd412f2cccf8b16d8ef865a9dfb219dc56fafe36e02bde5229eab478c77604b7",
+         "status" : "installed",
+         "test_summary" : "Files=37, Tests=1902",
+         "version" : "0.011.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Test-Refcount",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Test-Refcount-0.10.tar.gz",
+         "id" : "ad1d97634063a401677b1ee6f6836c4b5280750768fb98cf40f77333b9d3b40a",
+         "module" : "Test::Refcount",
+         "observed_at" : "2026-11-06T22:59:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0457c20a4956473d157c4faaff8814154bc93f6e2b543c2812a19ff8e3370eb2",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=21",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

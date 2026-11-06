@@ -1,0 +1,54 @@
+{
+   "author" : "NEILB",
+   "distribution" : "URI-Fetch",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/URI-Fetch-0.15.tar.gz",
+         "id" : "0d5486a2975f3d9e19cc7f3080b383a3615fbc79ef9d7e40c0c04b75ac4e00d9",
+         "module" : "URI::Fetch",
+         "observed_at" : "2026-11-06T22:58:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "379f39f24c6dae5c536332b17979fd90799dabccdfe8e792e7eead3eb8cda50c",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=1",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

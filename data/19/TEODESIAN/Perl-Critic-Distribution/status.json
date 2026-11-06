@@ -1,0 +1,53 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "Perl-Critic-Distribution",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Perl-Critic-Distribution-0.002.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "1105870f093fdcebd79e24caab5f56516bd68282188f05f4eee1a17eedaa82bb",
+         "module" : "Perl::Critic::Distribution",
+         "observed_at" : "2026-11-06T23:09:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c919cb7437fcf37940561a3014e8096488899bc2196ee51bde0eb468b8b5eacc",
+         "status" : "failed",
+         "test_summary" : "Files=18, Tests=12, Failed 1/18 test programs. 1/12 subtests failed.",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

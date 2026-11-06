@@ -88,6 +88,53 @@
          "test_summary" : "Files=4, Tests=60",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-Middleware-ReverseProxy-0.17.tar.gz",
+         "id" : "42d19373e7e823b68525d17fe69331c45469204c4b133705123091e4ea70d2dc",
+         "module" : "Plack::Middleware::ReverseProxy",
+         "observed_at" : "2026-11-06T22:58:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f9bdd9c40cc0b79ec583881925032409a926cc2747cbed09b2ff221c3cb64254",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=60",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

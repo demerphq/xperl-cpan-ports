@@ -1,0 +1,54 @@
+{
+   "author" : "KAZUHO",
+   "distribution" : "Parallel-Prefork",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZUHO/Parallel-Prefork-0.18.tar.gz",
+         "id" : "673d2ad51138c6ec234bc351e6f71b02a3c9e91142b176f0235967acdd008e98",
+         "module" : "Parallel::Prefork",
+         "observed_at" : "2026-11-06T23:02:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f1c1f48f1ae147a58bc88f9cb2f570d6bb15ea4c0d589abd4c3084ddc961596e",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=23",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

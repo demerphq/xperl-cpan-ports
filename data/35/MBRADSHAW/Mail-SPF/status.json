@@ -1,0 +1,128 @@
+{
+   "author" : "MBRADSHAW",
+   "distribution" : "Mail-SPF",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBRADSHAW/Mail-SPF-3.20261105.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "a9bec271f62948fff512c8a0bb41097a73de95030ba32c8d155b71e0a84a6375",
+         "module" : "Mail::SPF",
+         "observed_at" : "2026-11-06T22:59:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5f7bc11d3f866d755afae5ecb79ac77b1ec0be2a4a2357175be2a9135dcfe6fd",
+         "status" : "failed",
+         "test_summary" : "Files=14, Tests=240, Failed 1/14 test programs. 2/240 subtests failed.",
+         "version" : "3.20261105",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MB/MBRADSHAW/Mail-SPF-3.20261105.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9a7284f2eef8001f4b6d8e8fc2fa63485b0859e64662f93eb1976956a4980213",
+         "module" : "Mail::SPF",
+         "observed_at" : "2026-11-06T23:37:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5f7bc11d3f866d755afae5ecb79ac77b1ec0be2a4a2357175be2a9135dcfe6fd",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=240",
+         "version" : "3.20261105",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

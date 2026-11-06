@@ -95,6 +95,53 @@
          "test_summary" : "Files=24, Tests=455",
          "version" : "0.62",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BK/BKB/JSON-Parse-0.62.tar.gz",
+         "id" : "57eca18ea118240d2448f023cf331d31a7c76226b9904b22d4a0f272317795cf",
+         "module" : "JSON::Parse",
+         "observed_at" : "2026-11-06T22:53:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6273180f9392497401ddd6d820706f5aa86c1be88891dd6aab4d906b5cff66d9",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=455",
+         "version" : "0.62",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

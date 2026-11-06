@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Params-Validate-Strict",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Params-Validate-Strict-0.41.tar.gz",
+         "id" : "87dedc9ea24fd2220f3e98461f2071e88d1ef7feef203c802a1430e55d5254c5",
+         "module" : "Params::Validate::Strict",
+         "observed_at" : "2026-11-06T23:08:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fa295883c576c9c77f9254db0e76d4400b20d17993950bbf60a2acacf57b1e4c",
+         "status" : "installed",
+         "test_summary" : "Files=43, Tests=1535",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

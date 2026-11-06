@@ -1,0 +1,53 @@
+{
+   "author" : "CHORNY",
+   "distribution" : "Net-Ping-External",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHORNY/Net-Ping-External-0.15.tar.gz",
+         "id" : "4742630f9ad7e805330acd326515536dee12f14717a618c1808009f71043aa2f",
+         "module" : "Net::Ping::External",
+         "observed_at" : "2026-11-06T22:53:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "aad917fc678e774670b2b94072fd368d97fc09537f2cc802ea2b51398dec04fb",
+         "status" : "installed",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,128 @@
+{
+   "author" : "MLEHMANN",
+   "distribution" : "AnyEvent-MCP",
+   "observations" : [
+      {
+         "cpan_path" : "M/ML/MLEHMANN/AnyEvent-MCP-0.82.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "3c8ddf5657d74c1b65e43050f76a1dede67eaf01dd314980285d8098e64db40c",
+         "module" : "AnyEvent::MCP",
+         "observed_at" : "2026-11-06T22:58:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a65abc28292871c537c579d420d74b1fa92188d46fe4149b5d678e58e2742f43",
+         "status" : "failed",
+         "test_summary" : "Files=31, Tests=1503, Failed 4/31 test programs. 8/1503 subtests failed.",
+         "version" : "0.82",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/AnyEvent-MCP-0.82.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "8e4e30412d65598c76f824fb3e884b5ab47f48ac44211715b98f9e243fec4f7f",
+         "module" : "AnyEvent::MCP",
+         "observed_at" : "2026-11-06T23:39:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a65abc28292871c537c579d420d74b1fa92188d46fe4149b5d678e58e2742f43",
+         "status" : "installed",
+         "test_summary" : "Files=31, Tests=1944",
+         "version" : "0.82",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

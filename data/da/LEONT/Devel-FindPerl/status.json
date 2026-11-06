@@ -168,6 +168,53 @@
          "test_summary" : "Files=2, Tests=2",
          "version" : "0.016",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/Devel-FindPerl-0.016.tar.gz",
+         "id" : "6596b4aa019205e26ed5eadbc5ac9a304c6a4bb2def17e5564708f2f21ac8dc5",
+         "module" : "Devel::FindPerl",
+         "observed_at" : "2026-11-06T22:56:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "43a2bf2f787a3f1b881179063162b2aa3e7cb044f6e5e76ec6466ae90a861138",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.016",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

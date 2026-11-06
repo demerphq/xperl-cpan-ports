@@ -1,0 +1,54 @@
+{
+   "author" : "TOKUHIROM",
+   "distribution" : "Module-Build-Pluggable",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/Module-Build-Pluggable-0.10.tar.gz",
+         "id" : "719d98bfa931a212de9ef377640c9546e33902d80ddd6fd94a613ca6a6608e47",
+         "module" : "Module::Build::Pluggable",
+         "observed_at" : "2026-11-06T23:05:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e5bb2acb117792c984628812acb0fec376cb970caee8ede57535e04d762b0e40",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=12",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

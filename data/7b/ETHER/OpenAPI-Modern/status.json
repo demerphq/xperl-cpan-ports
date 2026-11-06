@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "OpenAPI-Modern",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/OpenAPI-Modern-0.152.tar.gz",
+         "id" : "bc412a3ee711db4cd5c4abfbb23bf341e24b3c40d9944b8c10f163867cb51d39",
+         "module" : "OpenAPI::Modern",
+         "observed_at" : "2026-11-06T23:14:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dbcb17f7bd8a7c3ca523e9cb59f4addc79256973363b0fa432edbd845f3a32f8",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=383",
+         "version" : "0.152",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

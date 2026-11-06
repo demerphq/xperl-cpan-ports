@@ -1,0 +1,54 @@
+{
+   "author" : "XSAWYERX",
+   "distribution" : "Module-Version",
+   "observations" : [
+      {
+         "cpan_path" : "X/XS/XSAWYERX/Module-Version-0.201.tar.gz",
+         "id" : "92c1d75dbb35f1185f8e26e0fb8c33b1e63b072fe27a59a8766e6aa2850c21e6",
+         "module" : "Module::Version",
+         "observed_at" : "2026-11-06T23:08:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "87c3b3dadd30b80003d405065e2ed94adbc3fcbfe77dc6b7f97e33bf8404aa5a",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=35",
+         "version" : "0.201",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Config-Abstraction",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Config-Abstraction-0.41.tar.gz",
+         "id" : "c4c7c74084926ef56661a74916161b80c06aff634e62dea484b0d14c74ada43e",
+         "module" : "Config::Abstraction",
+         "observed_at" : "2026-11-06T23:41:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7dfdd533111cd02a00012c9c8ae84abbcbc330fc9bbf88f98d16287111d63f97",
+         "status" : "installed",
+         "test_summary" : "Files=37, Tests=917",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

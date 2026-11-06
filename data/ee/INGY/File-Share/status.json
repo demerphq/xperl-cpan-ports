@@ -135,6 +135,53 @@
          "test_summary" : "Files=3, Tests=2",
          "version" : "0.27",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IN/INGY/File-Share-0.27.tar.gz",
+         "id" : "d57e72adcf320927027bd743746c136ea338be1bb2058b192a8fa8ec9112980c",
+         "module" : "File::Share",
+         "observed_at" : "2026-11-06T22:54:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d6e8f4b55ebd38e0bb45e44392e3fa27dc1fde16abc5d1ff53e157e19a5755be",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=2",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

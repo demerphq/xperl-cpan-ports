@@ -1,0 +1,54 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "Plack-Middleware-Expires",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Plack-Middleware-Expires-0.06.tar.gz",
+         "id" : "cd9e6277ad9c11d3805794e8aaa11b6d039f6634b153336a7e062d92047bc13c",
+         "module" : "Plack::Middleware::Expires",
+         "observed_at" : "2026-11-06T22:54:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c7489e717c2ffd52f85ea9fb4e603e76e150ab7b9b2b9046fd433461626b2113",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=48",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

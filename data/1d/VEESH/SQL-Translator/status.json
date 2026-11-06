@@ -41,6 +41,53 @@
          "test_summary" : "Files=75, Tests=1720",
          "version" : "1.66",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "V/VE/VEESH/SQL-Translator-1.66.tar.gz",
+         "id" : "b00b7af4918c13c1131e26fc682b097becd188fad1fa3574149313574b14b513",
+         "module" : "SQL::Translator",
+         "observed_at" : "2026-11-06T23:07:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f7ff7e369d8293a394cb3783b54b745e7faf44422e8a83bfcc359378a6e56145",
+         "status" : "installed",
+         "test_summary" : "Files=75, Tests=2022",
+         "version" : "1.66",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

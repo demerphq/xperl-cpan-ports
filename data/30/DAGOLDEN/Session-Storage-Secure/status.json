@@ -1,0 +1,54 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Session-Storage-Secure",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Session-Storage-Secure-1.000.tar.gz",
+         "id" : "e123c53c07de3d1573b8dfa2cb583769ff9feaf30fad055cb138f40bc4936ca4",
+         "module" : "Session::Storage::Secure",
+         "observed_at" : "2026-11-06T23:01:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "58b2f04eba56a9924494bb3eddd426affa75c3dded1c563f8296fcc13f8e666b",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=37",
+         "version" : "1.000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

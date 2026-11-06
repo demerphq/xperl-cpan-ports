@@ -206,6 +206,61 @@
          "test_summary" : "Files=106, Tests=3362",
          "version" : "1.57",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "N/NL/NLNETLABS/Net-DNS-1.57.tar.gz",
+         "id" : "9eba5c678b3b59ab630ce659202e8edf18e327a86851417c6c53198ade776b2d",
+         "module" : "Net::DNS",
+         "observed_at" : "2026-11-06T22:59:10Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "disable-online-tests-in-cpan-builds",
+         "patch_sha256" : [
+            "a6186db801a48589831aba5d6eed98c27a00092d621a0bc05184e68c0e5bf098"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7c98de329cb5d6a99abbb03aaad2866cb041092ed9936a7246908e170005b058",
+         "status" : "installed",
+         "test_summary" : "Files=106, Tests=3374",
+         "version" : "1.57",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

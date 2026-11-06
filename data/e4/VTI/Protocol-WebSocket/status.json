@@ -1,0 +1,54 @@
+{
+   "author" : "VTI",
+   "distribution" : "Protocol-WebSocket",
+   "observations" : [
+      {
+         "cpan_path" : "V/VT/VTI/Protocol-WebSocket-0.26.tar.gz",
+         "id" : "e3cb62861c5b6e98ad38e6126d594d4f9d780057100591e6ceeddad9e0eb2c71",
+         "module" : "Protocol::WebSocket",
+         "observed_at" : "2026-11-06T23:07:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5837d03711a7a3254f0afecb7e409e8b09376060c38a5b8295e8ee9af7575522",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=685",
+         "version" : "0.26",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

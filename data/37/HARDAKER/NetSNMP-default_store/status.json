@@ -1,0 +1,82 @@
+{
+   "author" : "HARDAKER",
+   "distribution" : "NetSNMP-default_store",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HARDAKER/NetSNMP-default_store-5.0404.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "configure"
+         },
+         "id" : "6826935e82b7e3348da3c933f77687e20a2244d28183b4194a02aaf637a20566",
+         "module" : "NetSNMP::default_store",
+         "observed_at" : "2026-11-06T22:54:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "configure"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "11d882f0ac278fe23c9d199d514a9f1bb8edfc3027964a024966185daeb50886",
+         "status" : "failed",
+         "version" : "5.0404",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HARDAKER/NetSNMP-default_store-5.0404.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "configure"
+         },
+         "id" : "1914f4532e5f3e94623a3da2c0d47ad89dd2a132ec200dc09e2b4b160c34d720",
+         "module" : "NetSNMP::default_store",
+         "observed_at" : "2026-11-06T23:24:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "11d882f0ac278fe23c9d199d514a9f1bb8edfc3027964a024966185daeb50886",
+         "status" : "failed",
+         "version" : "5.0404",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

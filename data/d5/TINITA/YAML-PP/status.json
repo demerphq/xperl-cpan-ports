@@ -331,6 +331,61 @@
          "test_summary" : "Files=45, Tests=7527",
          "version" : "v0.43.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "id" : "dde6c18100d113e66fd4062856c22d9615ab92c9c52d862aed73f286185aa5b8",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-06T23:04:43Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "localize-no-color",
+         "patch_sha256" : [
+            "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=7527",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

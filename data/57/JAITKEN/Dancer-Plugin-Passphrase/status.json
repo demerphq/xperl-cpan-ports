@@ -1,0 +1,130 @@
+{
+   "author" : "JAITKEN",
+   "distribution" : "Dancer-Plugin-Passphrase",
+   "observations" : [
+      {
+         "cpan_path" : "J/JA/JAITKEN/Dancer-Plugin-Passphrase-2.0.1.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "be5cb051e2a7fa094f410b4e938fb046cb5cab51881315566214bdb67a22bc23",
+         "module" : "Dancer::Plugin::Passphrase",
+         "module_version" : "2.000001",
+         "observed_at" : "2026-11-06T23:08:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "33b49fd46cf6732ccf2b0cf2761c6e72911e9e029f93b914a1f8b7f7ea4f7ba5",
+         "status" : "failed",
+         "test_summary" : "Files=13, Tests=107, Failed 2/13 test programs. 4/107 subtests failed.",
+         "version" : "2.0.1",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JA/JAITKEN/Dancer-Plugin-Passphrase-2.0.1.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "407e0258f0b5e021c2ff25434a110ad470e52df4a7c0afaef21d845b3a0e4f69",
+         "module" : "Dancer::Plugin::Passphrase",
+         "module_version" : "2.000001",
+         "observed_at" : "2026-11-06T23:28:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "33b49fd46cf6732ccf2b0cf2761c6e72911e9e029f93b914a1f8b7f7ea4f7ba5",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=107",
+         "version" : "2.0.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -190,6 +190,143 @@
          "test_summary" : "Files=52, Tests=244, Failed 1/52 test programs. 2/244 subtests failed.",
          "version" : "0.71",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/Future-AsyncAwait-0.71.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "5789ce94bde3f17837ad36943866dc861804078630c433779f623895bc4ec002",
+         "module" : "Future::AsyncAwait",
+         "observed_at" : "2026-11-06T22:59:56Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-savestack",
+         "patch_sha256" : [
+            "0e55660c6582ca2054e5c94d92c696d49e49e9a54c3162120c4c7461db53dee8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+         "status" : "failed",
+         "test_summary" : "Files=52, Tests=233, Failed 1/52 test programs. 2/233 subtests failed.",
+         "version" : "0.71",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/Future-AsyncAwait-0.71.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "8132582b7d41f9e6128aeeda4abfc09c215a8f5c032905187bf9f62fb528c441",
+         "module" : "Future::AsyncAwait",
+         "observed_at" : "2026-11-06T23:43:33Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-savestack",
+         "patch_sha256" : [
+            "0e55660c6582ca2054e5c94d92c696d49e49e9a54c3162120c4c7461db53dee8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+         "status" : "installed",
+         "test_summary" : "Files=52, Tests=233",
+         "version" : "0.71",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

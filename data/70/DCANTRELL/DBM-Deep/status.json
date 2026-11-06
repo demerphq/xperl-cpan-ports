@@ -1,0 +1,128 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "DBM-Deep",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/DBM-Deep-2.0019.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "688f265f97ca653bcdc598bdb60739ab0d1a169b90d228387309dbceddec285b",
+         "module" : "DBM::Deep",
+         "observed_at" : "2026-11-06T22:53:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5d61a5e6b4e4afc16d33e5290d5248b04a4fc4ee4c0a7dfc7fdd625968fba340",
+         "status" : "failed",
+         "test_summary" : "Files=59, Tests=1568, Failed 2/59 test programs. 1/1568 subtests failed.",
+         "version" : "2.0019",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCANTRELL/DBM-Deep-2.0019.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "d5d07a8d8dd12472c2822221b7932fe5121a6091bc5362fb1242ef37a9109bff",
+         "module" : "DBM::Deep",
+         "observed_at" : "2026-11-06T22:57:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5d61a5e6b4e4afc16d33e5290d5248b04a4fc4ee4c0a7dfc7fdd625968fba340",
+         "status" : "installed",
+         "test_summary" : "Files=59, Tests=1586",
+         "version" : "2.0019",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

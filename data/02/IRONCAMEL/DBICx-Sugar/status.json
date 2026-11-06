@@ -1,0 +1,54 @@
+{
+   "author" : "IRONCAMEL",
+   "distribution" : "DBICx-Sugar",
+   "observations" : [
+      {
+         "cpan_path" : "I/IR/IRONCAMEL/DBICx-Sugar-0.0200.tar.gz",
+         "id" : "f4fe703c7a73d0218923636ae1d40ebb0650afd4d36634ee9dc69d33f23a8926",
+         "module" : "DBICx::Sugar",
+         "observed_at" : "2026-11-06T23:07:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3261e13248128f1ad023a6370f903dd4e09814d16abd441f807f94c0f2b385f9",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=19",
+         "version" : "0.0200",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

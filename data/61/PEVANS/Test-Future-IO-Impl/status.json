@@ -88,6 +88,53 @@
          "test_summary" : "Files=2, Tests=2",
          "version" : "0.21",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Test-Future-IO-Impl-0.21.tar.gz",
+         "id" : "2fecb6c6769f591908944ed69e565698b0e1b8697da4fcfc63a981b8a3480ea4",
+         "module" : "Test::Future::IO::Impl",
+         "observed_at" : "2026-11-06T22:59:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b9318c526497b5cb32dc0d8616020af02f5e746d592b95ce44ce0e00ea04047d",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "BRIANDFOY",
+   "distribution" : "Business-ISBN-Data",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/Business-ISBN-Data-20261103.001.tar.gz",
+         "id" : "a8128f78ca0b91f5c68f14bcd18c17c4e72a2b241fa5e354d511ce2a3a72c479",
+         "module" : "Business::ISBN::Data",
+         "observed_at" : "2026-11-06T22:53:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "eedac6fa7a6cb988fc2ac4e305a6b9944e39cc546ce69743258bd1a38fce224c",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=21",
+         "version" : "20261103.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

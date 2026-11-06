@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Time-Spec",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Time-Spec-0.008.tar.gz",
+         "id" : "c7cdbc1e96f0173eb6107135e8facf0e8db2cd03a7564254672fd2a7ad741694",
+         "module" : "Time::Spec",
+         "observed_at" : "2026-11-06T22:56:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "981f16b438e74ec125cbfd8a3b21ff9d12227c374bec52404dfcbfaf5f390d82",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=13",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

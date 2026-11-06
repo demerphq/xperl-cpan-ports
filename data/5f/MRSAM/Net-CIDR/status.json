@@ -1,0 +1,54 @@
+{
+   "author" : "MRSAM",
+   "distribution" : "Net-CIDR",
+   "observations" : [
+      {
+         "cpan_path" : "M/MR/MRSAM/Net-CIDR-0.27.tar.gz",
+         "id" : "eb89cc8af99b08cab5a6474e021b6c17f3308e3d1f3b773ca0304d71198d5042",
+         "module" : "Net::CIDR",
+         "observed_at" : "2026-11-06T22:58:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9e950fef4422264dc8efab30dbbd3ce2be125e61b3f5c50111d15506d3b570e3",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

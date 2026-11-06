@@ -1,0 +1,54 @@
+{
+   "author" : "PORTAONE",
+   "distribution" : "Authen-Radius",
+   "observations" : [
+      {
+         "cpan_path" : "P/PO/PORTAONE/Authen-Radius-0.37.tar.gz",
+         "id" : "a6a295940db4ee930cf1058d08c4246fd2dfa0c70e1f39e7c3883ddfbda65b3c",
+         "module" : "Authen::Radius",
+         "observed_at" : "2026-11-06T23:00:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "41af6b620715ded7392d4a7b4433a1f6869387ebb5135ff90f88198de1332bd1",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=147",
+         "version" : "0.37",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

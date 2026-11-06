@@ -1,0 +1,55 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Test-Log-Abstraction",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Test-Log-Abstraction-0.002.1.tar.gz",
+         "id" : "35a08f494b393caddc78e1f47a86e281eae37a11505ba292f50f163924d48ed0",
+         "module" : "Test::Log::Abstraction",
+         "module_version" : "0.002001",
+         "observed_at" : "2026-11-06T23:42:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "739ef7803d1f106df00494d065a9ec9571ff03910518b734da79326770beb99c",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=535",
+         "version" : "0.002.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,119 @@
+{
+   "author" : "LEMBARK",
+   "distribution" : "FindBin-libs",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEMBARK/FindBin-libs-v5.1.5.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "5b245819120cc379afe3ac2da07929a8dabf829e4fdb52db22de261ab83ba516",
+         "module" : "FindBin::libs",
+         "module_version" : "5.000003",
+         "observed_at" : "2026-11-06T22:56:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "76c53babc8437e377a6abaa7f70dacdca716fffb2c092ca2fecae2e19d165691",
+         "status" : "failed",
+         "version" : "v5.1.5",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEMBARK/FindBin-libs-v5.1.5.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "d5f34547b7c0a8ebe81efc4c76ca497f5ba5e171d263e4b9ee9e032b9c7e7a1d",
+         "module" : "FindBin::libs",
+         "module_version" : "5.000003",
+         "observed_at" : "2026-11-06T23:30:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "76c53babc8437e377a6abaa7f70dacdca716fffb2c092ca2fecae2e19d165691",
+         "status" : "installed",
+         "test_summary" : "Files=48, Tests=128",
+         "version" : "v5.1.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

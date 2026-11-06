@@ -182,6 +182,53 @@
          "test_summary" : "Files=9, Tests=61",
          "version" : "2.30",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RS/RSAVAGE/Config-Tiny-2.30.tgz",
+         "id" : "04dbadc8c7ec973d53c7ee5735e89a259c323e87c0c1cb783168669f3029d31d",
+         "module" : "Config::Tiny",
+         "observed_at" : "2026-11-06T23:02:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b2f7345619b3b8e636dd39ea010731c9dc2bfb8f022bcbd86ae6ad17866e110d",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=61",
+         "version" : "2.30",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

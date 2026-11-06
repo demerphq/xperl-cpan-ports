@@ -1,0 +1,54 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Net-Async-WebSocket",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Net-Async-WebSocket-0.14.tar.gz",
+         "id" : "9c86676e2a1ca4b55aba36583958be79f354d00b4857281aee6883368d2c9738",
+         "module" : "Net::Async::WebSocket::Client",
+         "observed_at" : "2026-11-06T23:07:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0ee6a0ac32d733fdf0e2394c9760cd4563bacd28b6a8e1fa4e63c671ff77c827",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=26",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

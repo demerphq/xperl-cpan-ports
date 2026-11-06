@@ -1,0 +1,54 @@
+{
+   "author" : "GUGOD",
+   "distribution" : "Template-Plugin-CSV",
+   "observations" : [
+      {
+         "cpan_path" : "G/GU/GUGOD/Template-Plugin-CSV-0.04.tar.gz",
+         "id" : "dc3f9a6fa89ac3a85c1fd09a7c207f22794697ffd8898f29666a93de497b441d",
+         "module" : "Template::Plugin::CSV",
+         "observed_at" : "2026-11-06T23:05:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cc96af7d7ce7381d8ec12266732bd508d74eaa972192d0e09f438edea15c4887",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=2",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

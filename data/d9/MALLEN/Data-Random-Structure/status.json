@@ -1,0 +1,54 @@
+{
+   "author" : "MALLEN",
+   "distribution" : "Data-Random-Structure",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MALLEN/Data-Random-Structure-0.01.tar.gz",
+         "id" : "dd71f2e0cbf4518431d2b6bcacd848ad120ef007af6af3826d4ad95ca7c2037e",
+         "module" : "Data::Random::Structure",
+         "observed_at" : "2026-11-06T22:57:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0f15c9d2da7d1e7616341c59111d0cbbbc3e7dc3a6d5fa39dd9542749e9e9394",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

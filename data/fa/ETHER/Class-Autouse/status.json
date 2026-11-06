@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Class-Autouse",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Autouse-2.02.tar.gz",
+         "id" : "26bd62ce4f01613410f5b06590406ce454ff5f380ca9fa1c97f2d0657e04ad12",
+         "module" : "Class::Autouse",
+         "observed_at" : "2026-11-06T22:53:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "538e9575423a8185d8c9f1b92e71e21e44bb9414deb060adb9467a0bad490898",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=861",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

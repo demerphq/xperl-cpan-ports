@@ -1,0 +1,54 @@
+{
+   "author" : "MWADAMS",
+   "distribution" : "JSON-Schema-Corvus-XS",
+   "observations" : [
+      {
+         "cpan_path" : "M/MW/MWADAMS/JSON-Schema-Corvus-XS-v0.1.1.tar.gz",
+         "id" : "d872ab82955adf7f16e46590205daa1e2dedebb6e361e08d8ff386bbc4443e9f",
+         "module" : "JSON::Schema::Corvus::XS",
+         "observed_at" : "2026-11-06T22:58:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b754238ca06c817bc4047a62784ea41cba3e78d189359320d38a54ea8500aa0f",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=14",
+         "version" : "v0.1.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

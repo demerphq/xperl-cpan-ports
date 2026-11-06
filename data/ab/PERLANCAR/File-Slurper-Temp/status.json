@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "File-Slurper-Temp",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/File-Slurper-Temp-0.010.tar.gz",
+         "id" : "a77664b3dd21f2859a5f085efdfd9c48d263e60a0a63d93a27e83a61a441be78",
+         "module" : "File::Slurper::Temp",
+         "observed_at" : "2026-11-06T22:59:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8202adb95f552b90b95159219f5eaa94f89638d82f697132b2c9b7063217a50d",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=4",
+         "version" : "0.010",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

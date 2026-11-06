@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Text-ANSI-Fold-Util",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Text-ANSI-Fold-Util-1.06.tar.gz",
+         "id" : "f8e9393cbcf7cbef58762adaab0f5ae8307ef34ac5145d110e0e383fe2005674",
+         "module" : "Text::ANSI::Fold::Util",
+         "observed_at" : "2026-11-06T23:06:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "744034f5d2029ba798e7ab4f5f140fe8183fae497ac320d9d190666dee244ead",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=21",
+         "version" : "1.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

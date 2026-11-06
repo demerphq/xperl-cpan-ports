@@ -1,0 +1,54 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "Module-Build-Pluggable-CPANfile",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Module-Build-Pluggable-CPANfile-0.05.tar.gz",
+         "id" : "23952f1bbb6231e351423122a15bc45887bfdb8ceae4393a4dbd96cba8703026",
+         "module" : "Module::Build::Pluggable::CPANfile",
+         "observed_at" : "2026-11-06T23:05:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4aec6cba240cb6e78016406b6a3a875634cc2aec08ffc5f1572da1cdc40e1e7c",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=7",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

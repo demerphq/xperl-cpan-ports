@@ -1,0 +1,54 @@
+{
+   "author" : "HMBRAND",
+   "distribution" : "DBD-CSV",
+   "observations" : [
+      {
+         "cpan_path" : "H/HM/HMBRAND/DBD-CSV-0.64.tgz",
+         "id" : "3dc63a9fdb503e8ca485e90c6f656f98fb93b48c5ded489654bcd178ccee3827",
+         "module" : "DBD::CSV",
+         "observed_at" : "2026-11-06T22:54:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7d4d8e54957c75fb374ab27d4e8729affe62e2e13da0c347e9a9088f39c735ae",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=1604",
+         "version" : "0.64",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "BRIANDFOY",
+   "distribution" : "CPANSA-DB",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/CPANSA-DB-20261101.010.tar.gz",
+         "id" : "b7a4fe4b4ed40f9342611ce14d398fea685015ab14b0dba1b450bc5ee126595c",
+         "module" : "CPANSA::DB",
+         "observed_at" : "2026-11-06T23:04:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9393db0a7f02fdc482c56b9112a615125118ec002defe7766ada5118d13b7ccd",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=5",
+         "version" : "20261101.010",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

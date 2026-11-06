@@ -1,0 +1,150 @@
+{
+   "author" : "JOVAN",
+   "distribution" : "Physics-Ellipsometry-VASE",
+   "observations" : [
+      {
+         "cpan_path" : "J/JO/JOVAN/Physics-Ellipsometry-VASE-1.04.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "802e6d889fcb83aa8d71c6f8dbb68928d78f8106ba87ce88175a92eb11b30794",
+         "module" : "Physics::Ellipsometry::VASE",
+         "observed_at" : "2026-11-06T23:21:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c6bacce947af7c410d7fffbb69ce7a926fe01aa9fb1dbdae19c142ba95d785cb",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed.",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JO/JOVAN/Physics-Ellipsometry-VASE-1.04.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "a498c1debd400e62dfd590ebbc09487d1e8fe456ab05030a6a84ea1fb11e00be",
+         "module" : "Physics::Ellipsometry::VASE",
+         "observed_at" : "2026-11-06T23:29:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c6bacce947af7c410d7fffbb69ce7a926fe01aa9fb1dbdae19c142ba95d785cb",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed.",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JO/JOVAN/Physics-Ellipsometry-VASE-1.04.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "381a700172d0952ba7bfe3621ff03a81798e5abdcb618610a1899a6b19d03b35",
+         "module" : "Physics::Ellipsometry::VASE",
+         "observed_at" : "2026-11-06T23:31:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c6bacce947af7c410d7fffbb69ce7a926fe01aa9fb1dbdae19c142ba95d785cb",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed.",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

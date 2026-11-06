@@ -1,0 +1,54 @@
+{
+   "author" : "AUDREYT",
+   "distribution" : "Unicode-EastAsianWidth",
+   "observations" : [
+      {
+         "cpan_path" : "A/AU/AUDREYT/Unicode-EastAsianWidth-12.0.tar.gz",
+         "id" : "ccc394c612899d362f6a7f6848a159e9f30282275894d078b8a4fce4d694b08d",
+         "module" : "Unicode::EastAsianWidth",
+         "observed_at" : "2026-11-06T22:53:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2a5bfd926c4fe5f77e6137da2c31ac2545282ae5fec6e9af0fdd403555a90ff4",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "12.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

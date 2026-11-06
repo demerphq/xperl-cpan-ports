@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Geo-Coder-List",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Geo-Coder-List-0.40.tar.gz",
+         "id" : "d41afeb85bf563562f6aee7a6b9810c43f646f23d86981df1d52b67d506adb1a",
+         "module" : "Geo::Coder::List",
+         "observed_at" : "2026-11-06T23:44:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6cd8eb37df3fbef6db016a0a51839506802794aa32045f976048fd635a8d5eb3",
+         "status" : "installed",
+         "test_summary" : "Files=57, Tests=776",
+         "version" : "0.40",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

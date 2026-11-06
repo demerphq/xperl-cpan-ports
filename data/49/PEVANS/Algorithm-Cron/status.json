@@ -1,0 +1,54 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Algorithm-Cron",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Algorithm-Cron-0.10.tar.gz",
+         "id" : "c20867fdf1c082f6014f8c6acece253d568d4576ae4c4a5c4ef266cec9c158bb",
+         "module" : "Algorithm::Cron",
+         "observed_at" : "2026-11-06T22:59:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "adbc89ffbb758259e8ed18a9b99308ec853cac2f828a7c6530ce636d1056de3b",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=62",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

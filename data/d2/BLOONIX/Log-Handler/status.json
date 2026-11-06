@@ -1,0 +1,54 @@
+{
+   "author" : "BLOONIX",
+   "distribution" : "Log-Handler",
+   "observations" : [
+      {
+         "cpan_path" : "B/BL/BLOONIX/Log-Handler-0.90.tar.gz",
+         "id" : "149cd2cea60a5f10f745a6ffac074d15b0e9e5fad34513f19830f0730f1490dd",
+         "module" : "Log::Handler",
+         "observed_at" : "2026-11-06T22:53:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3a5c80e7128454770f83acab8cbd3e70e5ec3d59a61dc32792a178f0b31bf74d",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=195",
+         "version" : "0.90",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

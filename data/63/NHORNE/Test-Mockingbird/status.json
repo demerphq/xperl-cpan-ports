@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Test-Mockingbird",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Test-Mockingbird-0.14.tar.gz",
+         "id" : "7da9d1d9d930eb57e87f9d786eeeefc5360cc15499bfc094f4f1468e2600f7ae",
+         "module" : "Test::Mockingbird::TimeTravel",
+         "observed_at" : "2026-11-06T23:07:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "59d76deed18bf62e13354ed762782a6aad6b11972b289cf24373499f038a53cc",
+         "status" : "installed",
+         "test_summary" : "Files=37, Tests=734",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

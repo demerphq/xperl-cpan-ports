@@ -1,0 +1,54 @@
+{
+   "author" : "MANWAR",
+   "distribution" : "Map-Tube-Plugin-Formatter",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MANWAR/Map-Tube-Plugin-Formatter-0.17.tar.gz",
+         "id" : "6cff34e88c6f9b1f45ac956c0678e14fd4df5088b7e64b779f9f09c65d193039",
+         "module" : "Map::Tube::Plugin::Formatter",
+         "observed_at" : "2026-11-06T22:57:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f02f91f5c0987eb8fc07b69e4d777508294c7e8be19f07c6f7d59be719910d24",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=2",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

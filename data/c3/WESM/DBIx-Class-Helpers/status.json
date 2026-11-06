@@ -1,0 +1,54 @@
+{
+   "author" : "WESM",
+   "distribution" : "DBIx-Class-Helpers",
+   "observations" : [
+      {
+         "cpan_path" : "W/WE/WESM/DBIx-Class-Helpers-2.037000.tar.gz",
+         "id" : "e08e686a342abaebdb8dbb5635ecd49fcebbb51c2fabe5fdc66e4a33d6bbb56d",
+         "module" : "DBIx::Class::Helpers",
+         "observed_at" : "2026-11-06T23:07:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a42b61c42865cbdb2e95b29c3951ef255c4d72c5c7332a402d7eedc09dcdeba1",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=235",
+         "version" : "2.037000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

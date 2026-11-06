@@ -1,0 +1,54 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Robots-Validate",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Robots-Validate-v0.4.14.tar.gz",
+         "id" : "c4d9ca8f1c2f319ba9321334842d6ae5446d01ec1daf61a6d640f626f0d24340",
+         "module" : "Robots::Validate",
+         "observed_at" : "2026-11-06T23:06:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "784cbfd46e04887b2bc78f9c1032be79d4f4a6ae44319445d2ed89fcb9951656",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=71",
+         "version" : "v0.4.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

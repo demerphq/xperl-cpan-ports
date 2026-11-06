@@ -1,0 +1,54 @@
+{
+   "author" : "BRTASTIC",
+   "distribution" : "Gears",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRTASTIC/Gears-0.104.tar.gz",
+         "id" : "36cd6890f1b4c6125325f40da1ccdced9d650ac7a1ef882c57151a47deb3e159",
+         "module" : "Gears",
+         "observed_at" : "2026-11-06T23:04:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "663ef2f2d67c2548f9f48eeddbbd80ff671ffa57350a279d4c5ad91110235378",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=113",
+         "version" : "0.104",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

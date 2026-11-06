@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=5",
          "version" : "1.32",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Lingua-EN-FindNumber-1.32.tar.gz",
+         "id" : "a29c264fe45d81a7a6b4fbf3de5e5c70dcb4b589296ed87e20e7b6bcc682f442",
+         "module" : "Lingua::EN::FindNumber",
+         "observed_at" : "2026-11-06T22:58:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1d176d1c863fb9844bd19d2c2a4e68a0ed73da158f724a89405b90db7e8dbd04",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "1.32",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

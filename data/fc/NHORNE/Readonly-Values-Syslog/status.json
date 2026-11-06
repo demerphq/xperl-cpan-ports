@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Readonly-Values-Syslog",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Readonly-Values-Syslog-0.04.tar.gz",
+         "id" : "8bf233385f090e6776c475603517f5c2b8b9a1fc65ef6f33c3b16ea76ffd741e",
+         "module" : "Readonly::Values::Syslog",
+         "observed_at" : "2026-11-06T23:07:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3c1d3391ce987ff9177f67a456ca0e38ecd17caf4605c2fed566b6f0dfb1f696",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=24",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

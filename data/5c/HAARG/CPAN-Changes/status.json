@@ -88,6 +88,53 @@
          "test_summary" : "Files=33, Tests=419",
          "version" : "0.500005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/CPAN-Changes-0.500005.tar.gz",
+         "id" : "1a32dc0d91d991f5a075e10daa64b4b46e750e09e66f83d2df65ae941ecec180",
+         "module" : "CPAN::Changes",
+         "observed_at" : "2026-11-06T22:54:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1b022a0a6451827d060ee9cbfe9b2d8edbac2a3d7155cbee33ea93274b830fb5",
+         "status" : "installed",
+         "test_summary" : "Files=33, Tests=419",
+         "version" : "0.500005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -245,6 +245,61 @@
          "test_summary" : "Files=40, Tests=5417",
          "version" : "1.156",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PETDANCE/Perl-Critic-1.156.tar.gz",
+         "id" : "9a629e4be00775e2c4e3172913eb3cfa59eee8bcaa656f9e5c36bc43292d5877",
+         "module" : "Perl::Critic",
+         "observed_at" : "2026-11-06T23:08:58Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "rethrow-capable-exceptions",
+         "patch_sha256" : [
+            "43ef246f29c73fa2f9665d4aba5cbef8c54893612dc06ccb19364a13f8ff8e38"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "572a7c8758ba1c0ab6daf0bd40297c4f0dcf1516f084522df2c2bf04d525e232",
+         "status" : "installed",
+         "test_summary" : "Files=40, Tests=8218",
+         "version" : "1.156",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

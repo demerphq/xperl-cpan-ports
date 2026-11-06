@@ -1,0 +1,54 @@
+{
+   "author" : "RRWO",
+   "distribution" : "Data-Float",
+   "observations" : [
+      {
+         "cpan_path" : "R/RR/RRWO/Data-Float-0.015.tar.gz",
+         "id" : "4e00991118e57a7a585b8e85598418f78cb983578b0926c5869d06523fe7b7ce",
+         "module" : "Data::Float",
+         "observed_at" : "2026-11-06T23:02:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8a6cb97aea2f5cfa4fad85d8c39c0ff27822a598626aba4e7f456e0f6d1ff30a",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=720",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

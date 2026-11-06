@@ -182,6 +182,53 @@
          "test_summary" : "Files=16, Tests=253",
          "version" : "1.71",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/AppConfig-1.71.tar.gz",
+         "id" : "6f3593b2980609e9e4a6fb1abab32db1c22ac70d6463a5595e107945520581fa",
+         "module" : "AppConfig",
+         "observed_at" : "2026-11-06T22:58:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1177027025ecb09ee64d9f9f255615c04db5e14f7536c344af632032eb887b0f",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=253",
+         "version" : "1.71",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

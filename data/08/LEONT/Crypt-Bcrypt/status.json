@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Crypt-Bcrypt",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Crypt-Bcrypt-0.011.tar.gz",
+         "id" : "c1697465f727ada9cf563ae72eba036a89c1a971cf6e8b1d284d62dd83eaad0a",
+         "module" : "Crypt::Bcrypt",
+         "observed_at" : "2026-11-06T22:56:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "67fca68b0526e734e2d95bc6b32bad01c319e587abf63e4cf3422da66bbea3a0",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=37",
+         "version" : "0.011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

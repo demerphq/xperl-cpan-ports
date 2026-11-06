@@ -1,0 +1,54 @@
+{
+   "author" : "KENTNL",
+   "distribution" : "Path-FindDev",
+   "observations" : [
+      {
+         "cpan_path" : "K/KE/KENTNL/Path-FindDev-v0.5.3.tar.gz",
+         "id" : "82343aad04514a0c09152e9ad320ced2e391bbaa3e4b578ca0379e674d8efa19",
+         "module" : "Path::FindDev",
+         "observed_at" : "2026-11-06T22:54:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "beb465d3060ad7d71d338d48ade5798a96d3cd2bc40a3d619b940372038808b9",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=5",
+         "version" : "v0.5.3",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "BRIANDFOY",
+   "distribution" : "CPAN-Audit",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/CPAN-Audit-20261105.001.tar.gz",
+         "id" : "67997ac2526bbf78e100715c03f72e2e69ddc2034ad7b9e432ab4fd79ac003b3",
+         "module" : "CPAN::Audit",
+         "observed_at" : "2026-11-06T23:04:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe4b3f83afdac976cbd924f16ddcb0479d9d1776cb5258fb1e05b4faf2242130",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=37",
+         "version" : "20261105.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

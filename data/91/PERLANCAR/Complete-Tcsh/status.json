@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "Complete-Tcsh",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Complete-Tcsh-0.030.tar.gz",
+         "id" : "76b42426075c2c06b56cf77e70fb750bd5a28adffe31765d617ea6a7362d3e3a",
+         "module" : "Complete::Tcsh",
+         "observed_at" : "2026-11-06T22:59:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e330fd9772559840d1c3abbc54616c39ec5219720f5e6df925f389deba305f1f",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=1",
+         "version" : "0.030",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

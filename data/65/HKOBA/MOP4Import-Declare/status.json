@@ -1,0 +1,54 @@
+{
+   "author" : "HKOBA",
+   "distribution" : "MOP4Import-Declare",
+   "observations" : [
+      {
+         "cpan_path" : "H/HK/HKOBA/MOP4Import-Declare-0.073.tar.gz",
+         "id" : "22ea7f3a53263894a29da3e225a3c6133eefcb8d55a387ae78af768665c9108e",
+         "module" : "MOP4Import::Declare",
+         "observed_at" : "2026-11-06T23:05:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b5b4b6f44e66ed95d38596d5c38f302cfbe4b1561cbd5e91e71159630f21afc6",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=150",
+         "version" : "0.073",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

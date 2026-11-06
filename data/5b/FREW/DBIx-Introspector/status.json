@@ -1,0 +1,54 @@
+{
+   "author" : "FREW",
+   "distribution" : "DBIx-Introspector",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FREW/DBIx-Introspector-0.001005.tar.gz",
+         "id" : "e669751aab648aaa8e802e133b3f06c31cc2023f137e68163df59de88b54f2b1",
+         "module" : "DBIx::Introspector",
+         "observed_at" : "2026-11-06T22:55:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "96a94d2cc690c1fa8fd34113e3b084bf2a469a323a9780285aef92ddc381e63a",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=17",
+         "version" : "0.001005",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

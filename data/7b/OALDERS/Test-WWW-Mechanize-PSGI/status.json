@@ -1,0 +1,54 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "Test-WWW-Mechanize-PSGI",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/Test-WWW-Mechanize-PSGI-0.39.tar.gz",
+         "id" : "43e54acca526472a65869e5758aa465ba82a4f2fe83210527e76101761c46613",
+         "module" : "Test::WWW::Mechanize::PSGI",
+         "observed_at" : "2026-11-06T23:03:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "476b3ab3b47d534e4d6a0f4990021d5d34c69ec937ac0716e66ce8a7bc879958",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=33",
+         "version" : "0.39",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

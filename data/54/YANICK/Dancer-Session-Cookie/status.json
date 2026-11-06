@@ -1,0 +1,54 @@
+{
+   "author" : "YANICK",
+   "distribution" : "Dancer-Session-Cookie",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YANICK/Dancer-Session-Cookie-0.30.tar.gz",
+         "id" : "43c1c5c2f3a7b4309e29aec66fb1ee7e9a50042af6ef5243910032efb9beda09",
+         "module" : "Dancer::Session::Cookie",
+         "observed_at" : "2026-11-06T23:08:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "526790cf91b8d2501a58292284bf511a2f00b05f51aa0aff713ff5166b4d6412",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=47",
+         "version" : "0.30",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

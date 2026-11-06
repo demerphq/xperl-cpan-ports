@@ -1,0 +1,54 @@
+{
+   "author" : "KAZUHO",
+   "distribution" : "Server-Starter",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZUHO/Server-Starter-0.35.tar.gz",
+         "id" : "be18beff699a64260367f6e1118621ecc2c70d98ca0e443447f811c3784dc3c3",
+         "module" : "Server::Starter",
+         "observed_at" : "2026-11-06T22:56:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "676dc0d6cff4648538332c63c32fb88ad09ed868213ea9e62e3f19fad41b9c40",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=126",
+         "version" : "0.35",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

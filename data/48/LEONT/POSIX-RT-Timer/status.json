@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "POSIX-RT-Timer",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/POSIX-RT-Timer-0.024.tar.gz",
+         "id" : "1de79c7b3c94d569d71f56faa09fa82264545c9df1ea937fe26f33bb6d17b0dd",
+         "module" : "POSIX::RT::Clock",
+         "observed_at" : "2026-11-06T22:57:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5cb9a39c762b4d7b5fe3a89240118e4497130fde3d8d149e72dd2c6445ce9296",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=33",
+         "version" : "0.024",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

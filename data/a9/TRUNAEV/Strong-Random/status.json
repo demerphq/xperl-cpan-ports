@@ -1,0 +1,54 @@
+{
+   "author" : "TRUNAEV",
+   "distribution" : "Strong-Random",
+   "observations" : [
+      {
+         "cpan_path" : "T/TR/TRUNAEV/Strong-Random-0.96.tar.gz",
+         "id" : "648451f85f31f505b0b713aae9e61617e1861a53a7c46c5ec93f2e9618b7e8d8",
+         "module" : "Strong::Random",
+         "observed_at" : "2026-11-06T23:05:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a967d9b0c055d42aeee369b0380d6e88630c31d91c7e404c7f3b20569ba2f8d7",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.96",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -41,6 +41,53 @@
          "test_summary" : "Files=27, Tests=283",
          "version" : "0.43",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/XML-Atom-0.43.tar.gz",
+         "id" : "f80a3449f43713e5fe82d5ee406966a68c2d4a4b0ff453f8bb3085d570f052e1",
+         "module" : "XML::Atom",
+         "observed_at" : "2026-11-06T22:58:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4e593896a6f6e7cf2a796895108db567653589ffabf929a1e458a7bf6dbb0b2d",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=283",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

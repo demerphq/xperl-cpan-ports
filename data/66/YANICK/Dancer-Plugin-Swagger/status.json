@@ -1,0 +1,55 @@
+{
+   "author" : "YANICK",
+   "distribution" : "Dancer-Plugin-Swagger",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YANICK/Dancer-Plugin-Swagger-0.3.0.tar.gz",
+         "id" : "987c86a52dd515b0c546e7c2e9e8655a54a3caa84efcd93d0488549ebdb6b07b",
+         "module" : "Dancer::Plugin::Swagger",
+         "module_version" : "v0.3.0",
+         "observed_at" : "2026-11-06T23:08:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4054201064b55bfb0d847542617a4683bb1b934dcfe60594814e65c166345138",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=12",
+         "version" : "0.3.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

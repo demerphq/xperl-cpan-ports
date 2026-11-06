@@ -88,6 +88,53 @@
          "test_summary" : "Files=29, Tests=34992",
          "version" : "0.46",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHANSEN/Time-Moment-0.46.tar.gz",
+         "id" : "6aaea880256bf4847cd05a04515aa3c353e3a60738469662222308974907d617",
+         "module" : "Time::Moment",
+         "observed_at" : "2026-11-06T22:53:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e1ec4c0b8bac451490f60ddb21b6e4849db49febb681e1cb04737e2d2731e5ad",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=35020",
+         "version" : "0.46",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,104 @@
+{
+   "author" : "DCON",
+   "distribution" : "Stats-LikeR",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "11dd978e9780565074275dee704dd495ead9e5de9ee179704632e62b2c3a3bb5",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-06T22:54:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "failed",
+         "test_summary" : "Files=254, Tests=31, Failed 252/254 test programs. 23/31 subtests failed.",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e4423363dec260b3f1c2f605e714b445d365f608aba9acf86704692047fed1db",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-06T23:05:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "failed",
+         "test_summary" : "Files=254, Tests=31, Failed 252/254 test programs. 23/31 subtests failed.",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Getopt-EX-termcolor",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Getopt-EX-termcolor-1.10.tar.gz",
+         "id" : "77c15ca049de63ab9ea1b704166cf2f31a4d0e3a2ab6f4df98ed0ac8ef01b56e",
+         "module" : "Getopt::EX::termcolor",
+         "observed_at" : "2026-11-06T23:05:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c29aab25a85dfaac46fa2042766896857f6f3fb17893aa5fb3e8fd042246b192",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=19",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

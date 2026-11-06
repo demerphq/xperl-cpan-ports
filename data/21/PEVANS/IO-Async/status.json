@@ -139,6 +139,61 @@
          "test_summary" : "Files=64, Tests=1671",
          "version" : "0.805",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/IO-Async-0.805.tar.gz",
+         "id" : "69268c3543fc763a8afa95e56724860a22ada8b72b7b824e15fab6481dbb8310",
+         "module" : "IO::Async",
+         "observed_at" : "2026-11-06T23:01:22Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-worker",
+         "patch_sha256" : [
+            "9492f8568678df1ddcb757db8bd6f89861af96f8ac1d18034283a3619a67ba1f"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "77f997b74953dbdf63a750fcff4338d1bfacd89100e1fb27c3473f0a222a9a0c",
+         "status" : "installed",
+         "test_summary" : "Files=64, Tests=1741",
+         "version" : "0.805",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

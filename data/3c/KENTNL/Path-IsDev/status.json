@@ -1,0 +1,54 @@
+{
+   "author" : "KENTNL",
+   "distribution" : "Path-IsDev",
+   "observations" : [
+      {
+         "cpan_path" : "K/KE/KENTNL/Path-IsDev-1.001003.tar.gz",
+         "id" : "d851c2c19fa3dc2301b6a221f4844c0d6fe09ab3ffafc0fb3cb6e7f3a4faf589",
+         "module" : "Path::IsDev",
+         "observed_at" : "2026-11-06T22:54:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "37d66bfe205d7916824a46ad6290b8fb170fc602c16f8dc8169576f2ad682949",
+         "status" : "installed",
+         "test_summary" : "Files=39, Tests=111",
+         "version" : "1.001003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

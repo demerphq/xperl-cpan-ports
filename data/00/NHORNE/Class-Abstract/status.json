@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "Class-Abstract",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/Class-Abstract-0.03.tar.gz",
+         "id" : "64b19ac3f54b0fb7f5c29fe77766701adc1693b553a5c1e99fd7e64eaf7ab513",
+         "module" : "Class::Abstract",
+         "observed_at" : "2026-11-06T23:41:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a7d11bd9b8c6339227ffc6bfdf7d77d8b51d89f47fbcad53c0989f4d8c919bd1",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=225",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,128 @@
+{
+   "author" : "BRONG",
+   "distribution" : "Mail-DKIM2",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRONG/Mail-DKIM2-0.30.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "2312f4a7f207be3bbce5a0bb8aba20beee66c2526ced4649877a925c3c8cd5de",
+         "module" : "Mail::DKIM2",
+         "observed_at" : "2026-11-06T23:03:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "122a91f4610ded7573e3ed68350c48aa5dfdade370fe76a6aca57c7f4cc367fa",
+         "status" : "failed",
+         "test_summary" : "Files=99, Tests=2174, Failed 27/99 test programs. 44/2174 subtests failed.",
+         "version" : "0.30",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BR/BRONG/Mail-DKIM2-0.30.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "8ebf09c70e97aa8ad208737713c8d7e177952afd6ce4e7c4d659bb46dfb4d154",
+         "module" : "Mail::DKIM2",
+         "observed_at" : "2026-11-06T23:10:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "122a91f4610ded7573e3ed68350c48aa5dfdade370fe76a6aca57c7f4cc367fa",
+         "status" : "installed",
+         "test_summary" : "Files=99, Tests=2917",
+         "version" : "0.30",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

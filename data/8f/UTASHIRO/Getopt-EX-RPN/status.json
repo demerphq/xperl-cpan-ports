@@ -1,0 +1,54 @@
+{
+   "author" : "UTASHIRO",
+   "distribution" : "Getopt-EX-RPN",
+   "observations" : [
+      {
+         "cpan_path" : "U/UT/UTASHIRO/Getopt-EX-RPN-0.01.tar.gz",
+         "id" : "87f3addb36b6303420bd055d7acbc281a347c6ce9ca3224a4e3908c604a3b535",
+         "module" : "Getopt::EX::RPN",
+         "observed_at" : "2026-11-06T23:05:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "85327f131586eee8b2299aa72b9c828bc2f32225e7636de93fa2b0a80d6eed54",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=10",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

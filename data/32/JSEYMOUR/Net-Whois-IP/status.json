@@ -1,0 +1,54 @@
+{
+   "author" : "JSEYMOUR",
+   "distribution" : "Net-Whois-IP",
+   "observations" : [
+      {
+         "cpan_path" : "J/JS/JSEYMOUR/Net-Whois-IP-1.21.tar.gz",
+         "id" : "84b8875f6e82b0fe12621154fed55ba025991cd3d16983fb2df62a7e9913c359",
+         "module" : "Net::Whois::IP",
+         "observed_at" : "2026-11-06T23:03:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "687921bc7e8d4fb2491b4f2e9214491812f7c953152a010dca3828a8c19d701f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=21",
+         "version" : "1.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

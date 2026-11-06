@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "Getopt-Long-Complete",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Getopt-Long-Complete-0.318.tar.gz",
+         "id" : "2273d20d54544b115cc442dae1197ad834f5a435d9f8e7d6d147475146f87d4f",
+         "module" : "Getopt::Long::Complete",
+         "observed_at" : "2026-11-06T22:59:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed2be319a8bc6b621f1ae7fbdcceaba24d47184a72451344465dafa50fcf6c03",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=3",
+         "version" : "0.318",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

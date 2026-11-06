@@ -1,0 +1,54 @@
+{
+   "author" : "PERLANCAR",
+   "distribution" : "Complete-Env",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Complete-Env-0.400.tar.gz",
+         "id" : "3fdf43ce52ca34abfc8a305e84fc95bec0e9f0f7d5785ffbc6970135df432f0c",
+         "module" : "Complete::Env",
+         "observed_at" : "2026-11-06T22:59:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1ab3f82dd49bd2c3763a2a141e5133e74cb14d1d66b7f3180e622cab1dd1099c",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=4",
+         "version" : "0.400",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

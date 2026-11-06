@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "HTML-OSM",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/HTML-OSM-0.14.tar.gz",
+         "id" : "a9031bcf4177ac66445bcfd81cb21879710e168fec36a589ec885e33c384fe5c",
+         "module" : "HTML::OSM",
+         "observed_at" : "2026-11-06T23:42:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "56f9203dafb10bd8893515cb01f550ce7debae23025869828e6dbe3d75be4bb6",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=567",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

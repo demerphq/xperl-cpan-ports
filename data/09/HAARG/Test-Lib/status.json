@@ -135,6 +135,53 @@
          "test_summary" : "Files=7, Tests=9",
          "version" : "0.003",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Test-Lib-0.003.tar.gz",
+         "id" : "9f9511618bd67312845a0199790c8886ded3a0c2b3f34b74db2b8565b48479ba",
+         "module" : "Test::Lib",
+         "observed_at" : "2026-11-06T22:54:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d84b48d92567cba3d0afb1e8175aab836bfa8a838e19ac9080cabc2e3f9dc9f5",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=9",
+         "version" : "0.003",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
