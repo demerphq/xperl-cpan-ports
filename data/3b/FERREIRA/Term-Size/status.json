@@ -1,0 +1,54 @@
+{
+   "author" : "FERREIRA",
+   "distribution" : "Term-Size",
+   "observations" : [
+      {
+         "cpan_path" : "F/FE/FERREIRA/Term-Size-0.211.tar.gz",
+         "id" : "53dd825551e7a3fa892785a4745eac26a753b00a1140299954d7074e3729ad74",
+         "module" : "Term::Size",
+         "observed_at" : "2026-11-06T17:10:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5962b4bde52329774718296c92315e936da7f9c4451e92186cf072f27790b3fb",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=22",
+         "version" : "0.211",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

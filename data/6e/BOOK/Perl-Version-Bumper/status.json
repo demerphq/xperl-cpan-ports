@@ -1,0 +1,54 @@
+{
+   "author" : "BOOK",
+   "distribution" : "Perl-Version-Bumper",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOOK/Perl-Version-Bumper-0.277.tar.gz",
+         "id" : "4457c1757698e4e69e2a76047af5cd6146595b8f1b66362a3e73acb367d4d6fb",
+         "module" : "Perl::Version::Bumper",
+         "observed_at" : "2026-11-06T17:11:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9dc2608909db0bde2c89a59641a76febd03a758dc69ad7f1fb52c97120b683db",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=106",
+         "version" : "0.277",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

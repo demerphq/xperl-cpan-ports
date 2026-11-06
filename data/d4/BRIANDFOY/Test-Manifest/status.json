@@ -1,0 +1,54 @@
+{
+   "author" : "BRIANDFOY",
+   "distribution" : "Test-Manifest",
+   "observations" : [
+      {
+         "cpan_path" : "B/BR/BRIANDFOY/Test-Manifest-2.026.tar.gz",
+         "id" : "2a56692014a03e9b7c7e8f82d7e71a83bfecd5a2839ebac4cb1ed95ff84e8d2a",
+         "module" : "Test::Manifest",
+         "observed_at" : "2026-11-06T17:09:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e0355da0a89afe100168ac1851e2bc53c83738f0db387a53038b1978829aad25",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=16",
+         "version" : "2.026",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

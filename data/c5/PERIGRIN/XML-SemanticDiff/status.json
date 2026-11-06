@@ -1,0 +1,54 @@
+{
+   "author" : "PERIGRIN",
+   "distribution" : "XML-SemanticDiff",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PERIGRIN/XML-SemanticDiff-1.0007.tar.gz",
+         "id" : "5db33e1534d174c702fc103516e5f5e21d22921af0c40836d9f22df45ef47e78",
+         "module" : "XML::SemanticDiff",
+         "observed_at" : "2026-11-06T17:13:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "05fdefefbbc3f6b62fc7c9b5fabafb6b695ed68f0a3d958577251d1f0402a0f5",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=47",
+         "version" : "1.0007",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "MLEHMANN",
+   "distribution" : "AnyEvent-HTTP",
+   "observations" : [
+      {
+         "cpan_path" : "M/ML/MLEHMANN/AnyEvent-HTTP-2.25.tar.gz",
+         "id" : "67459bb56a384a78777e4154fc61059574871aa3401e4b333e095a01221eba03",
+         "module" : "AnyEvent::HTTP",
+         "observed_at" : "2026-11-06T17:12:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5cfa53416124176f6f4cd32b00ea8ca79a2d5df51258683989cd04fe86e25013",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=28",
+         "version" : "2.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

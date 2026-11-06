@@ -1,0 +1,54 @@
+{
+   "author" : "JLEADER",
+   "distribution" : "Perl-Critic-Policy-BuiltinFunctions-ProhibitReturnOr",
+   "observations" : [
+      {
+         "cpan_path" : "J/JL/JLEADER/Perl-Critic-Policy-BuiltinFunctions-ProhibitReturnOr-0.01.tar.gz",
+         "id" : "354a9b593c3d459caba5b6164599e9209da71968a032d36263eb4afd8513cd1f",
+         "module" : "Perl::Critic::Policy::BuiltinFunctions::ProhibitReturnOr",
+         "observed_at" : "2026-11-06T17:11:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "79575206514db2c2fd744daa8d948ef763950ced3f9c06973b419b79b99d930f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=11",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

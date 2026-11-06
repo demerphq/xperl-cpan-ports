@@ -1,0 +1,54 @@
+{
+   "author" : "MBARBON",
+   "distribution" : "Plack-Middleware-Camelcadedb",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBARBON/Plack-Middleware-Camelcadedb-0.03.tar.gz",
+         "id" : "9abdc200d677f26c23335ad82e6eb813e940775c47f55285147039a36e99ed60",
+         "module" : "Plack::Middleware::Camelcadedb",
+         "observed_at" : "2026-11-06T17:13:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0e0ed7cd23deb0465f6ece381c0fa97f4fb9933e5a08991aeaeeafbd3e0f399d",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=3",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

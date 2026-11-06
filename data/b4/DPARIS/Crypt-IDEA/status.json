@@ -1,0 +1,53 @@
+{
+   "author" : "DPARIS",
+   "distribution" : "Crypt-IDEA",
+   "observations" : [
+      {
+         "cpan_path" : "D/DP/DPARIS/Crypt-IDEA-1.10.tar.gz",
+         "id" : "32e697aa4b2e8b2dcb3365aac67d7d50da3bac02ebc06b7ad4cec9639bfa511f",
+         "module" : "Crypt::IDEA",
+         "observed_at" : "2026-11-06T17:10:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "33bd78c11924a0fc1ff3eedde94078cbbf6b6ca9ede046d2b2f561e9e9a72019",
+         "status" : "installed",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "KAZUHO",
+   "distribution" : "MIME-Base64-URLSafe",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZUHO/MIME-Base64-URLSafe-0.01.tar.gz",
+         "id" : "91533c61175cb6809766891aebd24cc0e72a7b956761421b67ff8dd066bd17e4",
+         "module" : "MIME::Base64::URLSafe",
+         "observed_at" : "2026-11-06T17:11:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cb9966c50538bb676ab67bc40a7c841019b23ba2243d0ffcc2ccf084e5c33798",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=17",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "Test-Taint",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/Test-Taint-1.08.tar.gz",
+         "id" : "d3757b49929023aeb5cff7bb78ae8e1673a691b53ea722999befd12980ebce9c",
+         "module" : "Test::Taint",
+         "observed_at" : "2026-11-06T17:13:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5d594d4257352c93785024c63aa0a7b73d912ceca9611cd975ce83aab021a97d",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=145",
+         "version" : "1.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

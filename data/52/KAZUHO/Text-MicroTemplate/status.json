@@ -1,0 +1,54 @@
+{
+   "author" : "KAZUHO",
+   "distribution" : "Text-MicroTemplate",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZUHO/Text-MicroTemplate-0.24.tar.gz",
+         "id" : "feb0b41c49bfe543dba481229675590e57de3201c7e74f87c2af9a19e708ae39",
+         "module" : "Text::MicroTemplate",
+         "observed_at" : "2026-11-06T17:11:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "32801e71f35ee8aaa0d576cec125cee46b3d4915ae642bc64962120d4f97b4c8",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=79",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

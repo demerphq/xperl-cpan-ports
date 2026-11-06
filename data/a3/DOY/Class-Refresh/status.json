@@ -1,0 +1,54 @@
+{
+   "author" : "DOY",
+   "distribution" : "Class-Refresh",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOY/Class-Refresh-0.07.tar.gz",
+         "id" : "48fad282ac934a5aa25947fed90fe6327b367eb00247aec5e9b4ec04441e89e4",
+         "module" : "Class::Refresh",
+         "observed_at" : "2026-11-06T17:10:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e3b0035355cbb35a2aee3f223688d578946a7a7c570acd398b28cddb1fd4beb3",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=113",
+         "version" : "0.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

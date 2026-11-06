@@ -1,0 +1,54 @@
+{
+   "author" : "ARISTOTLE",
+   "distribution" : "Parallel-Iterator",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARISTOTLE/Parallel-Iterator-1.002.tar.gz",
+         "id" : "1003f2c2d99ec7fb5d0cd93ef213a80f31456b539444c18b7fb8a83302e3a746",
+         "module" : "Parallel::Iterator",
+         "observed_at" : "2026-11-06T17:09:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "83749a5293cd76c55963cc11b1cfe89ba8c3223e83c8b1b8b52fe9f672e6d931",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=29",
+         "version" : "1.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

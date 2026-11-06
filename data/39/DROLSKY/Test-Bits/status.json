@@ -1,0 +1,54 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Test-Bits",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Test-Bits-0.02.tar.gz",
+         "id" : "b5f4a6440d155073a7fd9cd4168bf5af71998248fc39ed85b7a21209b50da12d",
+         "module" : "Test::Bits",
+         "observed_at" : "2026-11-06T17:10:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a9826f56483a27e2c63156590f328a3633e30375c10dfc89f6690e3929de0bc3",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=46",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

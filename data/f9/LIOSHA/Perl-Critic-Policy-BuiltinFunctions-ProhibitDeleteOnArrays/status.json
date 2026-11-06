@@ -1,0 +1,54 @@
+{
+   "author" : "LIOSHA",
+   "distribution" : "Perl-Critic-Policy-BuiltinFunctions-ProhibitDeleteOnArrays",
+   "observations" : [
+      {
+         "cpan_path" : "L/LI/LIOSHA/Perl-Critic-Policy-BuiltinFunctions-ProhibitDeleteOnArrays-0.02.tar.gz",
+         "id" : "6d1562248a5484a6823479064d410f4eeec7e1bc30bff56a4ae9e1393ebaa278",
+         "module" : "Perl::Critic::Policy::BuiltinFunctions::ProhibitDeleteOnArrays",
+         "observed_at" : "2026-11-06T17:11:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "aa44739f46ece970e7b7780803afc48325c86d5a6d8200fd1f8c26825d208f40",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=4",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

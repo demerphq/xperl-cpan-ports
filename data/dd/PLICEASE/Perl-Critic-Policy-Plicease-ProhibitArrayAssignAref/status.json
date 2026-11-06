@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Perl-Critic-Policy-Plicease-ProhibitArrayAssignAref",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Perl-Critic-Policy-Plicease-ProhibitArrayAssignAref-100.00.tar.gz",
+         "id" : "54cb78bb042e39c6fd667ac1b84a0e6fb7ceed5202edab675bfb77584b86daf9",
+         "module" : "Perl::Critic::Policy::Plicease::ProhibitArrayAssignAref",
+         "observed_at" : "2026-11-06T17:14:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d8b73230d2b8bf2b80104fc0a758c748b9ff37b08bf81baa73f8d709e20cfebe",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=38",
+         "version" : "100.00",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

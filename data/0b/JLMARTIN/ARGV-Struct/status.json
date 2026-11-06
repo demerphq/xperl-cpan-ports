@@ -1,0 +1,54 @@
+{
+   "author" : "JLMARTIN",
+   "distribution" : "ARGV-Struct",
+   "observations" : [
+      {
+         "cpan_path" : "J/JL/JLMARTIN/ARGV-Struct-0.06.tar.gz",
+         "id" : "2e601a4154b0099a1902a46a36c1e4b5c07e05ab0ed99b6026fd62ecf1c55ee9",
+         "module" : "ARGV::Struct",
+         "observed_at" : "2026-11-06T17:11:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a2ef174e35632c1b6ebffe8a9b6374c8a6d4adfda35d2afe1e730802444b5f69",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=26",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

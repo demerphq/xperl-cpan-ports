@@ -1,0 +1,54 @@
+{
+   "author" : "DOMQ",
+   "distribution" : "Pod-Snippets",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOMQ/Pod-Snippets-0.14.tar.gz",
+         "id" : "cb5b52dce03e8f53f42c14375c85ffdc8ab76a0c8c346990cbcf1c3800389ce3",
+         "module" : "Pod::Snippets",
+         "observed_at" : "2026-11-06T17:09:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c9a8bd3734e20306bcc751af43ec698b3890f35add53c2abf56a0d92ec7550ac",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=89",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

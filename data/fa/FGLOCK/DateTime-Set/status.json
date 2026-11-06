@@ -1,0 +1,54 @@
+{
+   "author" : "FGLOCK",
+   "distribution" : "DateTime-Set",
+   "observations" : [
+      {
+         "cpan_path" : "F/FG/FGLOCK/DateTime-Set-0.3900.tar.gz",
+         "id" : "ed261df7f6673627a3e35ba8dec5fd35847b7adb6cae66a7ec0368199eb7c8b9",
+         "module" : "DateTime::Set",
+         "observed_at" : "2026-11-06T17:10:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "94f41c3924aafde4ef7fa6b58e0595d4038d8ac5ffd62ba111b13c5f4dbc0946",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=347",
+         "version" : "0.3900",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

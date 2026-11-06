@@ -1,0 +1,54 @@
+{
+   "author" : "GAAS",
+   "distribution" : "Unicode-String",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GAAS/GAAS/Unicode-String-2.10.tar.gz",
+         "id" : "8a1f23a9bfaa740e8593f89cf1a4e94a563724f1435598a47787052def1c2440",
+         "module" : "Unicode::String",
+         "observed_at" : "2026-11-06T17:10:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "894a110ece479546af8afec0972eec7320c86c4dea4e6b354dff3c7526ba9b68",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=112",
+         "version" : "2.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

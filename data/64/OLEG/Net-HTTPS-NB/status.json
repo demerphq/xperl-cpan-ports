@@ -1,0 +1,54 @@
+{
+   "author" : "OLEG",
+   "distribution" : "Net-HTTPS-NB",
+   "observations" : [
+      {
+         "cpan_path" : "O/OL/OLEG/Net-HTTPS-NB-0.16.tar.gz",
+         "id" : "f9dda7008f61b3b68eb62b8c607bb82960095effe09bec9c8568ae48ad3462d2",
+         "module" : "Net::HTTPS::NB",
+         "observed_at" : "2026-11-06T17:13:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "75e45a2c1869f940cdaab72dd279457ef2096a044fe18bcdc06f933bca68df81",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

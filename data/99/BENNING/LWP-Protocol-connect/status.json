@@ -1,0 +1,54 @@
+{
+   "author" : "BENNING",
+   "distribution" : "LWP-Protocol-connect",
+   "observations" : [
+      {
+         "cpan_path" : "B/BE/BENNING/LWP-Protocol-connect-6.09.tar.gz",
+         "id" : "5841c0cf46c83a6a5af34feebae54d73b93784d68a3e7209faa9a233ce620e6b",
+         "module" : "LWP::Protocol::connect",
+         "observed_at" : "2026-11-06T17:09:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9f252394775e23aa42c3176611e5930638ab528d5190110b4731aa5b0bf35a15",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=1",
+         "version" : "6.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

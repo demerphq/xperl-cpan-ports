@@ -1,0 +1,54 @@
+{
+   "author" : "CUB",
+   "distribution" : "Text-SimpleTable-AutoWidth",
+   "observations" : [
+      {
+         "cpan_path" : "C/CU/CUB/Text-SimpleTable-AutoWidth-0.09.tar.gz",
+         "id" : "ef9e2ec78b7fef62a9d9f3399b96744f7f592cbc993e3218da7ccd3aa15a3fb6",
+         "module" : "Text::SimpleTable::AutoWidth",
+         "observed_at" : "2026-11-06T17:09:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1c176e8e1c01bbe86a7f3acde4473f0f034d410050246f2eba4cf68a08daf643",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=6",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

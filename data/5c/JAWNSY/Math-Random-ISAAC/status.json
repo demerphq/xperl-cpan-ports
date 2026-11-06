@@ -1,0 +1,54 @@
+{
+   "author" : "JAWNSY",
+   "distribution" : "Math-Random-ISAAC",
+   "observations" : [
+      {
+         "cpan_path" : "J/JA/JAWNSY/Math-Random-ISAAC-1.004.tar.gz",
+         "id" : "88d7ff505a05d2eb248122d48ab8679a4eeb248559aa225187374ac527c7445c",
+         "module" : "Math::Random::ISAAC",
+         "observed_at" : "2026-11-06T17:10:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2773f02fbf207e9745e76a037df08bf5a8cc987ed23c57040ce7f7b1561f2b7c",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=609",
+         "version" : "1.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

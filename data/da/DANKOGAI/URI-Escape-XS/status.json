@@ -1,0 +1,54 @@
+{
+   "author" : "DANKOGAI",
+   "distribution" : "URI-Escape-XS",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DANKOGAI/URI-Escape-XS-0.14.tar.gz",
+         "id" : "81a05dbd87c7243a34f6a553b6413d6a88e932b7b36f6d8ceaa278956653caf5",
+         "module" : "URI::Escape::XS",
+         "observed_at" : "2026-11-06T17:09:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c39ac50c6c2b831ae4bf08692e6ca5d4a3f9c57dc4d7f9c4cb0663e2c86c2759",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=734",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

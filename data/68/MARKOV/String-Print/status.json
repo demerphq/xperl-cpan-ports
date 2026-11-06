@@ -1,0 +1,54 @@
+{
+   "author" : "MARKOV",
+   "distribution" : "String-Print",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MARKOV/String-Print-1.02.tar.gz",
+         "id" : "89380ec522e62c27b32b611f5ef9a568041765c1124dbebf063103371cfda841",
+         "module" : "String::Print",
+         "observed_at" : "2026-11-06T17:13:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3049536486459e38e1d791c07ce022326a91a302beaf01dcdb0e7b703a5da6cc",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=298",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,53 @@
+{
+   "author" : "PHRED",
+   "distribution" : "SOAP-Lite",
+   "observations" : [
+      {
+         "cpan_path" : "P/PH/PHRED/SOAP-Lite-1.27.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "fabd9e8846cbbcb1d011ae5b9bedd5c21bd66442c8fc91d87f0f7bb7136f3f4d",
+         "module" : "SOAP::Lite",
+         "observed_at" : "2026-11-06T17:13:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e359106bab1a45a16044a4c2f8049fad034e5ded1517990bc9b5f8d86dddd301",
+         "status" : "failed",
+         "test_summary" : "Files=56, Tests=888, Failed 1/56 test programs. 0/888 subtests failed.",
+         "version" : "1.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

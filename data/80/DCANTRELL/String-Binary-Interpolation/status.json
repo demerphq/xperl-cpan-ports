@@ -1,0 +1,55 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "String-Binary-Interpolation",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/String-Binary-Interpolation-1.0.1.tar.gz",
+         "id" : "f69596bcfb2047b322df5716412a6c200514cc00f83423bb16a017655ec0a91d",
+         "module" : "String::Binary::Interpolation",
+         "module_version" : "1.000001",
+         "observed_at" : "2026-11-06T17:09:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c2370dd16ea2a68ce64693e75e70f0d5522acb200f59399e87105c47580acb64",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=3",
+         "version" : "1.0.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,53 @@
+{
+   "author" : "KMX",
+   "distribution" : "Crypt-OpenSSL-Bignum",
+   "observations" : [
+      {
+         "cpan_path" : "K/KM/KMX/Crypt-OpenSSL-Bignum-0.09.tar.gz",
+         "id" : "a5ceb6a467c23a7cb49b790f229704cb5ded7ef6d38b70128f2a069ff19c77a6",
+         "module" : "Crypt::OpenSSL::Bignum",
+         "observed_at" : "2026-11-06T17:11:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "234e72fb8396d45527e6fd45e43759c5c3f3a208cf8f29e6a22161a996fd42dc",
+         "status" : "installed",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

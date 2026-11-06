@@ -1,0 +1,47 @@
+{
+   "author" : "GONZUS",
+   "distribution" : "Parser-GraphQL-XS",
+   "observations" : [
+      {
+         "cpan_path" : "G/GO/GONZUS/Parser-GraphQL-XS-0.000004.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "fec1c0f4cab9cf8f4399bbed8042e6468c6d16ab2e43a6d19793b62bd0f353b1",
+         "module" : "Parser::GraphQL::XS",
+         "observed_at" : "2026-11-06T17:12:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c2ac4a8aec5876cc8b72c5115716aa4d1912ce6561a713722a60aed9e7275cf7",
+         "status" : "failed",
+         "version" : "0.000004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

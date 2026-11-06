@@ -1,0 +1,54 @@
+{
+   "author" : "ATOOMIC",
+   "distribution" : "Overload-FileCheck",
+   "observations" : [
+      {
+         "cpan_path" : "A/AT/ATOOMIC/Overload-FileCheck-0.015.tar.gz",
+         "id" : "52d9e04c9e87d8dad6b3e4482033bf401760965b16091a899f8018a35ed82f31",
+         "module" : "Overload::FileCheck",
+         "observed_at" : "2026-11-06T17:13:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c5898f0f612b699aae4ca9ee704dee3ea7de5815d2a544231b104a042ac309ec",
+         "status" : "installed",
+         "test_summary" : "Files=66, Tests=1513",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

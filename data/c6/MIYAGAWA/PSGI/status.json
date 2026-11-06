@@ -1,0 +1,53 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "PSGI",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/PSGI-1.102.tar.gz",
+         "id" : "7bdc31dc0e36252e8272f414074847eb701311165ae4a547f1ca67ada64dfe5c",
+         "module" : "PSGI",
+         "observed_at" : "2026-11-06T17:12:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a56c446740917da86925c29fc6633b9df839b21cf98f6a27086598ed90ee1f47",
+         "status" : "installed",
+         "version" : "1.102",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "DateTime-Format-ICal",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-Format-ICal-0.09.tar.gz",
+         "id" : "4b98d1b6bdabc310d3ad98a3777a28758fee6d2730f7cb212da578f729b2755f",
+         "module" : "DateTime::Format::ICal",
+         "observed_at" : "2026-11-06T17:11:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8b09f6539f5e9c0df0e6135031699ed4ef9eef8165fc80aefeecc817ef997c33",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=134",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

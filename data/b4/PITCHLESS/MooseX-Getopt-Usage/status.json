@@ -1,0 +1,53 @@
+{
+   "author" : "PITCHLESS",
+   "distribution" : "MooseX-Getopt-Usage",
+   "observations" : [
+      {
+         "cpan_path" : "P/PI/PITCHLESS/MooseX-Getopt-Usage-0.24.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "fb543f74599b346cdb51f72ca135b0caee68af3856fcbe8442122d354993a0ef",
+         "module" : "MooseX::Getopt::Usage",
+         "observed_at" : "2026-11-06T17:13:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f2187638d46a61d791339480a29b6ad94588eeb0a5088463d72a13965dc19eaa",
+         "status" : "failed",
+         "test_summary" : "Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed.",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

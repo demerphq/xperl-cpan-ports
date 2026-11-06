@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Crypt-Random-Source",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Crypt-Random-Source-0.14.tar.gz",
+         "id" : "2fac83bdd31feb1cdf9e59effed182a4191f7ce673bd4e1f06323a10211e953e",
+         "module" : "Crypt::Random::Source",
+         "observed_at" : "2026-11-06T17:10:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ec4ece269f9ad1958c6e298ecee2e5a4345e357f3a4ffb2c748116af876eede6",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=48",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

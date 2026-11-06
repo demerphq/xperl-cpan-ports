@@ -1,0 +1,54 @@
+{
+   "author" : "MSCHWERN",
+   "distribution" : "Hash-StoredIterator",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSCHWERN/Hash-StoredIterator-0.008.tar.gz",
+         "id" : "7443818448fddfa848096262b95113a18dd33e16aef146ef05c45e77adcd485a",
+         "module" : "Hash::StoredIterator",
+         "observed_at" : "2026-11-06T17:12:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b9cbc4dcd8233e8d1d7f1481ddb79a4a5f9db7180cb3ef02b4bcbee05e65ea0c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

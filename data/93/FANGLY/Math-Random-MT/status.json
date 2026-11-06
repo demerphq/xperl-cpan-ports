@@ -1,0 +1,54 @@
+{
+   "author" : "FANGLY",
+   "distribution" : "Math-Random-MT",
+   "observations" : [
+      {
+         "cpan_path" : "F/FA/FANGLY/Math-Random-MT-1.17.tar.gz",
+         "id" : "b42a8a94a05df46130c264d84d93f7d783c8943c44ff2527460d70e96af981ae",
+         "module" : "Math::Random::MT",
+         "observed_at" : "2026-11-06T17:10:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "069a1d98a619cba1f1ab91fbd6edceb642e84e7d162c4f0e2442139037b5b0da",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=125",
+         "version" : "1.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

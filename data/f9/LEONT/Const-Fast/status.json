@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Const-Fast",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Const-Fast-0.014.tar.gz",
+         "id" : "b3551fdc8d46a1f4e21ea0854fdcd9902709d44614e6615b3687a9c1356857d6",
+         "module" : "Const::Fast",
+         "observed_at" : "2026-11-06T17:11:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f805953a08c57846a16a4d85d7b766398afaf7c36c1465fcb1dea09e5fa394db",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=26",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

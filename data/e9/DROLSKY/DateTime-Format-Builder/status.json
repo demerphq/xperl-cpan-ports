@@ -1,0 +1,54 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "DateTime-Format-Builder",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz",
+         "id" : "9ebdeffa0a4b0bae14460200618418af4510d759520e6136320a7836f5b3f157",
+         "module" : "DateTime::Format::Builder",
+         "observed_at" : "2026-11-06T17:10:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "61ffb23d85b3ca1786b2da3289e99b57e0625fe0e49db02a6dc0cb62c689e2f2",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=230",
+         "version" : "0.83",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

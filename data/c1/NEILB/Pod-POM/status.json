@@ -1,0 +1,54 @@
+{
+   "author" : "NEILB",
+   "distribution" : "Pod-POM",
+   "observations" : [
+      {
+         "cpan_path" : "N/NE/NEILB/Pod-POM-2.01.tar.gz",
+         "id" : "2d151da9e40e4a01e7486c047f348f4fc80292e5c121426292a4d18917c517cb",
+         "module" : "Pod::POM",
+         "observed_at" : "2026-11-06T17:13:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1b50fba9bbdde3ead192beeba0eaddd0c614e3afb1743fa6fff805f57c56f7f4",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=134",
+         "version" : "2.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

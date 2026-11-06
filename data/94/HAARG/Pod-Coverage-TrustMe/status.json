@@ -1,0 +1,54 @@
+{
+   "author" : "HAARG",
+   "distribution" : "Pod-Coverage-TrustMe",
+   "observations" : [
+      {
+         "cpan_path" : "H/HA/HAARG/Pod-Coverage-TrustMe-0.002002.tar.gz",
+         "id" : "75a099acdd81974ff234b3e886b98ed11783ab59e43ba048a891847d2c11fde4",
+         "module" : "Pod::Coverage::TrustMe",
+         "observed_at" : "2026-11-06T17:10:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0c93cc7f5e05f4ba6c28801ab1dcd30fd4e99679d05da12cc09fac73066843e6",
+         "status" : "installed",
+         "test_summary" : "Files=32, Tests=94",
+         "version" : "0.002002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

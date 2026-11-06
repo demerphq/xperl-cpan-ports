@@ -1,0 +1,47 @@
+{
+   "author" : "MOB",
+   "distribution" : "Sys-CpuAffinity",
+   "observations" : [
+      {
+         "cpan_path" : "M/MO/MOB/Sys-CpuAffinity-1.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "2b4ee4305330a5956412d8506369cb3cad3363d1d7a4352a37f0f0cfbab30c1a",
+         "module" : "Sys::CpuAffinity",
+         "observed_at" : "2026-11-06T17:12:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe32c05f3eb059708c647f2bb85b250458591f2ba9051d8d866f546a387ee848",
+         "status" : "failed",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

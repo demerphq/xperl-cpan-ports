@@ -1,0 +1,53 @@
+{
+   "author" : "MIKEK",
+   "distribution" : "Statistics-Distributions",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIKEK/Statistics-Distributions-1.02.tar.gz",
+         "id" : "b15455a7407bfd417a21afbdbddd94ad4da7df4a981819f0dcf168e79fe1c7e9",
+         "module" : "Statistics::Distributions",
+         "observed_at" : "2026-11-06T17:11:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f99f396abf84ca37aa2cea31ad45d73aaee48752c999136c4b91389428d733c8",
+         "status" : "installed",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

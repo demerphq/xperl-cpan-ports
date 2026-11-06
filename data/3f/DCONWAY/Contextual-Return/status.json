@@ -1,0 +1,53 @@
+{
+   "author" : "DCONWAY",
+   "distribution" : "Contextual-Return",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "43f45c8ecc5e5c7d7802a7a096e4b18eba61fa38f854d7e722e6d9759b159091",
+         "module" : "Contextual::Return",
+         "observed_at" : "2026-11-06T17:09:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "09fe1415e16e49a69e13c0ef6e6a4a3fd8b856f389d3f3e624d7ab3b71719f78",
+         "status" : "failed",
+         "test_summary" : "Files=32, Tests=381, Failed 1/32 test programs. 1/381 subtests failed.",
+         "version" : "0.004014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

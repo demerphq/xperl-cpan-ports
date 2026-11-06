@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Types-URI",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-URI-0.10.tar.gz",
+         "id" : "e1f673b4c06da479e38edd5df2985f8ca80306b58ff2c3473be95121f45deb77",
+         "module" : "MooseX::Types::URI",
+         "observed_at" : "2026-11-06T17:10:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "330ab1d134eef8542ae2b6852f0131eb53d7d903a02f90740cc00dc98eee08cc",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=72",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

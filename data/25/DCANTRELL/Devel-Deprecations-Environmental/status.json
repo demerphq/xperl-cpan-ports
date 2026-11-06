@@ -1,0 +1,54 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Devel-Deprecations-Environmental",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Devel-Deprecations-Environmental-1.101.tar.gz",
+         "id" : "1ea722b6afcfb15230910df67fa61d82271376720dfb94fe753676ea6cf53b9d",
+         "module" : "Devel::Deprecations::Environmental",
+         "observed_at" : "2026-11-06T17:10:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4be482d3c3dc3ad1ef4743fab380ceb901b74156507953a83484df69da25a6a6",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=48",
+         "version" : "1.101",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

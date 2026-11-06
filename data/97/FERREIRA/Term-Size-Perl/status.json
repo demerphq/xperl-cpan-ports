@@ -1,0 +1,54 @@
+{
+   "author" : "FERREIRA",
+   "distribution" : "Term-Size-Perl",
+   "observations" : [
+      {
+         "cpan_path" : "F/FE/FERREIRA/Term-Size-Perl-0.031.tar.gz",
+         "id" : "7fd95ad8dff3a02808397b1031c1258d54112cd6f96c1e3d460c98760a7e91e5",
+         "module" : "Term::Size::Perl",
+         "observed_at" : "2026-11-06T17:10:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ae9a6746cb1b305ddc8f8d8ca46878552b9c1123628971e13a275183822f209e",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=18",
+         "version" : "0.031",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

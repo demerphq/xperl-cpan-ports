@@ -1,0 +1,54 @@
+{
+   "author" : "GENE",
+   "distribution" : "Math-Counting",
+   "observations" : [
+      {
+         "cpan_path" : "G/GE/GENE/Math-Counting-0.1307.tar.gz",
+         "id" : "eb2f9748b1dae8b79454a231decf6953b2fa62a7fa50141085f7593af4295495",
+         "module" : "Math::Counting",
+         "observed_at" : "2026-11-06T17:10:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5779f022676d8fcb9da4917ef3e9732fe5343c0b977136571756aadd2de8b3bb",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=89",
+         "version" : "0.1307",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

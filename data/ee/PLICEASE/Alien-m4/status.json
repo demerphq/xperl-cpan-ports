@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Alien-m4",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-m4-0.21.tar.gz",
+         "id" : "463a0111dfda40267dbe95dbefc70d7aea47f24b8e871d7aed96d7832f473bc6",
+         "module" : "Alien::m4",
+         "observed_at" : "2026-11-06T17:13:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ab2a405c803944fd01c51fa1e9f2befd5871ab03f1744dec2a56689f2148d361",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

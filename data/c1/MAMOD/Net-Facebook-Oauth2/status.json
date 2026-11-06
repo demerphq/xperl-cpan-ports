@@ -1,0 +1,54 @@
+{
+   "author" : "MAMOD",
+   "distribution" : "Net-Facebook-Oauth2",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAMOD/Net-Facebook-Oauth2-0.12.tar.gz",
+         "id" : "ba42c7b57fc45b7d96b97c37fd50a59e5d3344e62fa4a9098f5d17b4c652f9a2",
+         "module" : "Net::Facebook::Oauth2",
+         "observed_at" : "2026-11-06T17:11:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f97a97a1cb7eb1fb8e5d115a74c058b462646a1b7ea43227ed2cd8011f580225",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=14",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

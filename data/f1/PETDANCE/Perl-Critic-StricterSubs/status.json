@@ -1,0 +1,54 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "Perl-Critic-StricterSubs",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/Perl-Critic-StricterSubs-0.08.tar.gz",
+         "id" : "9120cf22f02079f68a9bf41029186108c633bcaa1b9ecb85e0136b4b1e476f45",
+         "module" : "Perl::Critic::StricterSubs",
+         "observed_at" : "2026-11-06T17:13:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cde14d314304294744d2add923386b3047f430bc7d0a7d2664052a4edbfc2a03",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=76",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

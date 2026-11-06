@@ -1,0 +1,53 @@
+{
+   "author" : "PEVANS",
+   "distribution" : "Parser-MGC",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Parser-MGC-0.23.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "1b681e024ede6eefd03ae7371a8b658f9eae3ff7084d09348cdface6475417cb",
+         "module" : "Parser::MGC",
+         "observed_at" : "2026-11-06T17:13:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b575c1af07387e5ffafeb3acfb5c9d2510bb09b0ff794418030d65cf653df7d9",
+         "status" : "failed",
+         "test_summary" : "Files=34, Tests=203, Failed 2/34 test programs. 2/203 subtests failed.",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

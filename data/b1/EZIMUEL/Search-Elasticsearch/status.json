@@ -1,0 +1,54 @@
+{
+   "author" : "EZIMUEL",
+   "distribution" : "Search-Elasticsearch",
+   "observations" : [
+      {
+         "cpan_path" : "E/EZ/EZIMUEL/Search-Elasticsearch-8.12.tar.gz",
+         "id" : "6f51ba508eaaec50a97e1e0497da16b170bf269758517461807a422e559b69fc",
+         "module" : "Search::Elasticsearch",
+         "observed_at" : "2026-11-06T17:14:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "02769df0ec74deace9b4f07e5a596c110830872dff162af1452b633c1332fda9",
+         "status" : "installed",
+         "test_summary" : "Files=73, Tests=575",
+         "version" : "8.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

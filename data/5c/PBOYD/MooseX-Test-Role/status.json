@@ -1,0 +1,55 @@
+{
+   "author" : "PBOYD",
+   "distribution" : "MooseX-Test-Role",
+   "observations" : [
+      {
+         "cpan_path" : "P/PB/PBOYD/MooseX-Test-Role-0.08.tar.gz",
+         "id" : "8c0668a223949574059e1c7f1377bd3b4a4a880379115258a79d8a21e2499d01",
+         "module" : "MooseX::Test::Role",
+         "module_version" : "0.07",
+         "observed_at" : "2026-11-06T17:13:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe116ae838803f001441bd401cacd2fddd0f051dce95c91c23e69cdd443d0440",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=25",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

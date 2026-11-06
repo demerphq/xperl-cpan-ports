@@ -1,0 +1,53 @@
+{
+   "author" : "EXODIST",
+   "distribution" : "Getopt-Yath",
+   "observations" : [
+      {
+         "cpan_path" : "E/EX/EXODIST/Getopt-Yath-2.000011.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "2bb5de088a1e3e9113febf109d262c66f385c63c9408a1c0f1b657dd4edb412d",
+         "module" : "Getopt::Yath",
+         "observed_at" : "2026-11-06T17:10:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2b0f78f94d246ead5c8f21550c5f00bcde93fd957e45b64a6db261137646f5ce",
+         "status" : "failed",
+         "test_summary" : "Files=10, Tests=296, Failed 2/10 test programs. 2/296 subtests failed.",
+         "version" : "2.000011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

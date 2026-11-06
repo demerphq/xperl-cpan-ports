@@ -1,0 +1,54 @@
+{
+   "author" : "DAVIDO",
+   "distribution" : "List-BinarySearch-XS",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAVIDO/List-BinarySearch-XS-0.09.tar.gz",
+         "id" : "9f835afe6a146376a4a0326343161d193124d56eefcb49d36a6e26530a615943",
+         "module" : "List::BinarySearch::XS",
+         "observed_at" : "2026-11-06T17:09:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9ceb9fc3c1fc3418eb8d372be03d566a35dde6df06d55a6096a305891581f4c2",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=18",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

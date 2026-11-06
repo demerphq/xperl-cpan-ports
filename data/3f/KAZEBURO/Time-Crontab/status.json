@@ -1,0 +1,54 @@
+{
+   "author" : "KAZEBURO",
+   "distribution" : "Time-Crontab",
+   "observations" : [
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Time-Crontab-0.04.tar.gz",
+         "id" : "80e481d348f76990f5ed98f054338c4c6d39c52c5f8062022e30817242e181f2",
+         "module" : "Time::Crontab",
+         "observed_at" : "2026-11-06T17:11:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b5dc7bb2c30424b41144523bdc8c90b904efedb12c736624c0c749a36395ba6f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=32",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

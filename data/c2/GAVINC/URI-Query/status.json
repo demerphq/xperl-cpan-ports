@@ -1,0 +1,54 @@
+{
+   "author" : "GAVINC",
+   "distribution" : "URI-Query",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GAVINC/URI-Query-0.16.tar.gz",
+         "id" : "fbde161077b3a1224953575e0342c4db1c245b613706635a0552c70f5e13312b",
+         "module" : "URI::Query",
+         "observed_at" : "2026-11-06T17:10:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b4e62de79b468dcd7ee835e4dfd0035c83faf92e6c44b79bcdd9a50287fb8c18",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=93",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

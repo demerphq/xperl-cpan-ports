@@ -1,0 +1,54 @@
+{
+   "author" : "FREW",
+   "distribution" : "Math-Random-Secure",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FREW/Math-Random-Secure-0.080001.tar.gz",
+         "id" : "be4fabc6c95510f3a6b6a4d7a87799e3092d2ebe36c63c948370706280d01799",
+         "module" : "Math::Random::Secure",
+         "observed_at" : "2026-11-06T17:10:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bfa4a4e817eca722067c1ff3da12ab5ab80d6c57daa5e5e7ab9350ca2c71eb35",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=31",
+         "version" : "0.080001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

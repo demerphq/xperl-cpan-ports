@@ -1,0 +1,54 @@
+{
+   "author" : "PETDANCE",
+   "distribution" : "Test2-Tools-Explain",
+   "observations" : [
+      {
+         "cpan_path" : "P/PE/PETDANCE/Test2-Tools-Explain-0.02.tar.gz",
+         "id" : "bfe74e07fc29c230c7a01fc2fe70a763a816bb5c4c2dca915b63cfc995ef2b62",
+         "module" : "Test2::Tools::Explain",
+         "observed_at" : "2026-11-06T17:13:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e476bd1739e68f418617c308c3c3cf742de6a595c23bbac2c270e14159f73122",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=3",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

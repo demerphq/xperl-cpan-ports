@@ -1,0 +1,54 @@
+{
+   "author" : "BBC",
+   "distribution" : "Log-Trace",
+   "observations" : [
+      {
+         "cpan_path" : "B/BB/BBC/Log-Trace-1.070.tar.gz",
+         "id" : "180f41f8dc1574a3c6466d5514108430121dd381c0718c110ac4be7f10a0d0fa",
+         "module" : "Log::Trace",
+         "observed_at" : "2026-11-06T17:09:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9ecb8258ef30c2f24deff4917240d0fe73242da5b2192402f79815b092ed36e3",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=83",
+         "version" : "1.070",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "MSCHWARTZ",
+   "distribution" : "Unicode-Map",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSCHWARTZ/Unicode-Map-0.112.tar.gz",
+         "id" : "9411a5f140bf69677270efab92458cc3755a013a9887d26fc55cb4be4355bbab",
+         "module" : "Unicode::Map",
+         "observed_at" : "2026-11-06T17:12:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "10f0c2f12ebba57dcd4f46d24cf242c1915d31ec0a4ec36b4df18c9ca0cb4a5a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=11",
+         "version" : "0.112",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

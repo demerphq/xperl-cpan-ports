@@ -1,0 +1,54 @@
+{
+   "author" : "JJATRIA",
+   "distribution" : "Config-AWS",
+   "observations" : [
+      {
+         "cpan_path" : "J/JJ/JJATRIA/Config-AWS-0.12.tar.gz",
+         "id" : "e60e8e08c8ccdd1adf991a4d7136d3df6be2da3d995d7269b240e25e6518bccc",
+         "module" : "Config::AWS",
+         "observed_at" : "2026-11-06T17:11:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1509d1bf38bf7291eea2e5c48fcdc6bd25904bc87ab6cb6ffea6403647b06b5a",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=9",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

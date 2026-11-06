@@ -1,0 +1,54 @@
+{
+   "author" : "DANKOGAI",
+   "distribution" : "Regexp-Trie",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DANKOGAI/Regexp-Trie-0.02.tar.gz",
+         "id" : "beead839027b55fb865dee6af8445d74401a19d81981eb735f9d52a0793712f0",
+         "module" : "Regexp::Trie",
+         "observed_at" : "2026-11-06T17:09:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fb2bf94ed8dbc1f4a95d9fc8f710cb67b3f796c6efc9c4bb4c2cfa3ebaa1c5fa",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

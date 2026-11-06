@@ -1,0 +1,54 @@
+{
+   "author" : "MIHYAERU",
+   "distribution" : "Test-Deep-ArrayEachNotEmpty",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIHYAERU/Test-Deep-ArrayEachNotEmpty-0.01.tar.gz",
+         "id" : "a8b6ded8788ee3787094e8ff534c640947df954617515c3435552c1df48276c6",
+         "module" : "Test::Deep::ArrayEachNotEmpty",
+         "observed_at" : "2026-11-06T17:11:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e117c0a528e4cb91f92680b596a4dc023b934bebd49ca9fc32dc300b7bf461b8",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=20",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "ASB",
+   "distribution" : "SQL-Abstract-Limit",
+   "observations" : [
+      {
+         "cpan_path" : "A/AS/ASB/SQL-Abstract-Limit-0.143.tar.gz",
+         "id" : "836bcff4e22d670dcc2ff0203a1be5ccaa82561144c03e2ad47562ce06da1561",
+         "module" : "SQL::Abstract::Limit",
+         "observed_at" : "2026-11-06T17:09:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d18afd78893bd830ba2465c0ae6a33425460159003864ded3b5adcf51189cae9",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=33",
+         "version" : "0.143",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "DAGOLDEN",
+   "distribution" : "Hash-Ordered",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Hash-Ordered-0.014.tar.gz",
+         "id" : "d97d47182837b8979f17ba126ed93831876aaa54793e2b89601aaba59b49742b",
+         "module" : "Hash::Ordered",
+         "observed_at" : "2026-11-06T17:09:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8dc36cd79155ae37ab8a3de5fd9120ffba9a31e409258c28529ec5251c59747b",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=112",
+         "version" : "0.014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "KRYDE",
+   "distribution" : "Pod-MinimumVersion",
+   "observations" : [
+      {
+         "cpan_path" : "K/KR/KRYDE/Pod-MinimumVersion-50.tar.gz",
+         "id" : "b0b1cd44750cb4fa68781340ee3d371631eb8e69636380a4d6cbf0bd6ebf2ae9",
+         "module" : "Pod::MinimumVersion",
+         "observed_at" : "2026-11-06T17:11:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0bd2812d9aacbd99bb71fa103a4bb129e955c138ba7598734207dc9fb67b5a6f",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=115",
+         "version" : "50",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

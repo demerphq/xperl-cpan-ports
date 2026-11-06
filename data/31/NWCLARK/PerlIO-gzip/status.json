@@ -1,0 +1,54 @@
+{
+   "author" : "NWCLARK",
+   "distribution" : "PerlIO-gzip",
+   "observations" : [
+      {
+         "cpan_path" : "N/NW/NWCLARK/PerlIO-gzip-0.20.tar.gz",
+         "id" : "8cd9bb7fac5b65c81f7ddc06832585ee690da6984cf0eef89d2ed2fb765b575c",
+         "module" : "PerlIO::gzip",
+         "observed_at" : "2026-11-06T17:13:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4848679a3f201e3f3b0c5f6f9526e602af52923ffa471a2a3657db786bd3bdc5",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=561",
+         "version" : "0.20",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

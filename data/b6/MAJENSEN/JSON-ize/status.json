@@ -1,0 +1,54 @@
+{
+   "author" : "MAJENSEN",
+   "distribution" : "JSON-ize",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAJENSEN/JSON-ize-0.202.tar.gz",
+         "id" : "82be6cbc6d6bdd659d9584fc8b23b76faef5f004e50dc70969397522c88e6d2f",
+         "module" : "JSON::ize",
+         "observed_at" : "2026-11-06T17:13:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0b9cee5a21d8ce25728284b18c4d984cae9a2bae7387ecc106435427681064b4",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=30",
+         "version" : "0.202",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

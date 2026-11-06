@@ -1,0 +1,53 @@
+{
+   "author" : "DELTA",
+   "distribution" : "Digest-Perl-MD5",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DELTA/Digest-Perl-MD5-1.91.tar.gz",
+         "id" : "3a6d5131a1abf413a9dbac009f26b76ae63da7ff03363c887a29bb893ec411c4",
+         "module" : "Digest::Perl::MD5",
+         "observed_at" : "2026-11-06T17:09:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "718e41717fb82a9ab3f0809d211fddcdbdef91dc198887d82b88723aa54afcd5",
+         "status" : "installed",
+         "version" : "1.91",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

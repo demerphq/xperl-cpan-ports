@@ -1,0 +1,53 @@
+{
+   "author" : "JFEARN",
+   "distribution" : "XML-Catalog",
+   "observations" : [
+      {
+         "cpan_path" : "J/JF/JFEARN/XML-Catalog-1.03.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "cf9039a67ff98ab0f54be91c88fa3bc5ebbf615a528477e685ab81b2c250031f",
+         "module" : "XML::Catalog",
+         "observed_at" : "2026-11-06T17:11:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "55cd8f68ffc0899cc5d265b4f4573c88c435a2620fd85993d25f5f81bfa169d7",
+         "status" : "failed",
+         "test_summary" : "Files=1, Tests=5, Failed 1/1 test programs. 3/5 subtests failed.",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "Markdent",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/Markdent-0.41.tar.gz",
+         "id" : "7d67e2cf1112cd16f7399fed28642ac968e1fd8cdd8cdb25900d9f333e3a8e60",
+         "module" : "Markdent",
+         "observed_at" : "2026-11-06T17:12:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe65e1e7577125356956cd2a64dc0b3f8d5af9f58807e28812f05f3a3a7dff5f",
+         "status" : "installed",
+         "test_summary" : "Files=37, Tests=226",
+         "version" : "0.41",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "AJNN",
+   "distribution" : "Neo4j-Error",
+   "observations" : [
+      {
+         "cpan_path" : "A/AJ/AJNN/Neo4j-Error-0.02.tar.gz",
+         "id" : "500bb503f5022aecc1b5438ea7436a30ef0dec4de95e3615e73d665abbd5b231",
+         "module" : "Neo4j::Error",
+         "observed_at" : "2026-11-06T17:09:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d1d1159e2a74095ce3165936bf639cf765c7fb0396891840387cb79dd4649357",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=28",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

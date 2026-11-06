@@ -1,0 +1,54 @@
+{
+   "author" : "DOY",
+   "distribution" : "Data-Stream-Bulk",
+   "observations" : [
+      {
+         "cpan_path" : "D/DO/DOY/Data-Stream-Bulk-0.11.tar.gz",
+         "id" : "805ebef88c6a3d61f0b68f4908eb5ba304021e84c55b2a5ed5b8ce710ed2a3da",
+         "module" : "Data::Stream::Bulk::Callback",
+         "observed_at" : "2026-11-06T17:10:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "06e08432a6b97705606c925709b99129ad926516e477d58e4461e4b3d9f30917",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=170",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

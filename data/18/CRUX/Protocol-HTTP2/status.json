@@ -1,0 +1,54 @@
+{
+   "author" : "CRUX",
+   "distribution" : "Protocol-HTTP2",
+   "observations" : [
+      {
+         "cpan_path" : "C/CR/CRUX/Protocol-HTTP2-1.14.tar.gz",
+         "id" : "c651859b4102613493ac851b7091baa3d688ea0bf4e1bd578c395bcf06b5e1fb",
+         "module" : "Protocol::HTTP2",
+         "observed_at" : "2026-11-06T17:12:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a53f27ea2fbac156a4cd4981d8ef749c1bef366c2909134b4d31da21644b496e",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=37",
+         "version" : "1.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

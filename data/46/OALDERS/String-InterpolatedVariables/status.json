@@ -1,0 +1,54 @@
+{
+   "author" : "OALDERS",
+   "distribution" : "String-InterpolatedVariables",
+   "observations" : [
+      {
+         "cpan_path" : "O/OA/OALDERS/String-InterpolatedVariables-2.000000.tar.gz",
+         "id" : "9efab2750b6cc45a27f20d04538cf028c70ea3c6639e6803c304fb3ef7caf316",
+         "module" : "String::InterpolatedVariables",
+         "observed_at" : "2026-11-06T17:13:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9ac4683b3c3b9f49224bacd52a9e86ccf0a2ddfa2e32ec24c7893ef1d4b134cc",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=11",
+         "version" : "2.000000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

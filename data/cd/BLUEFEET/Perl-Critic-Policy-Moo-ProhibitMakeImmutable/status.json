@@ -1,0 +1,54 @@
+{
+   "author" : "BLUEFEET",
+   "distribution" : "Perl-Critic-Policy-Moo-ProhibitMakeImmutable",
+   "observations" : [
+      {
+         "cpan_path" : "B/BL/BLUEFEET/Perl-Critic-Policy-Moo-ProhibitMakeImmutable-0.06.tar.gz",
+         "id" : "4c9db0f0e3c893bb704e4540e46671c5472ee3c7a78568b3a7d249b289729d78",
+         "module" : "Perl::Critic::Policy::Moo::ProhibitMakeImmutable",
+         "observed_at" : "2026-11-06T17:09:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "432f833aab4a7c9f1238f0de4c350dd690d7c64512750c6aa267423c09e6a73d",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

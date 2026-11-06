@@ -1,0 +1,54 @@
+{
+   "author" : "PHOENIX",
+   "distribution" : "Term-ReadPassword",
+   "observations" : [
+      {
+         "cpan_path" : "P/PH/PHOENIX/Term-ReadPassword-0.11.tar.gz",
+         "id" : "6331f24a9d6bc18f0fa328592624b8c1451fe6e52ecf6340c3f92f2e3e36126d",
+         "module" : "Term::ReadPassword",
+         "observed_at" : "2026-11-06T17:13:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e1a866345b35f9ffef7d0037e13d6d4cb280310089f98c20713880bc70fb4323",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "MIYAGAWA",
+   "distribution" : "Plack-Middleware-Deflater",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-Middleware-Deflater-0.14.tar.gz",
+         "id" : "0eff92a74f0178c2d648662eb98a3fe74055b2b84b4f16c1a1d76dc344187a5a",
+         "module" : "Plack::Middleware::Deflater",
+         "observed_at" : "2026-11-06T17:12:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3be60b383e9e02dc5f32409ba88b37cd7584c275d02832daadd64e7311678586",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=19",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "EXODIST",
+   "distribution" : "Test2-Plugin-UUID",
+   "observations" : [
+      {
+         "cpan_path" : "E/EX/EXODIST/Test2-Plugin-UUID-0.002011.tar.gz",
+         "id" : "17cf51c9ce75dc7657906b544f6093bc197e57896e5273a2fe8e462786dd6527",
+         "module" : "Test2::Plugin::UUID",
+         "observed_at" : "2026-11-06T17:10:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "de7ea41617d7b96c7d184d1a01cba2dc30c566d1ce02c7b23289e6ad26a40c74",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=5",
+         "version" : "0.002011",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

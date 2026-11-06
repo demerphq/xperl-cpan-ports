@@ -1,0 +1,54 @@
+{
+   "author" : "PHRED",
+   "distribution" : "Any-URI-Escape",
+   "observations" : [
+      {
+         "cpan_path" : "P/PH/PHRED/Any-URI-Escape-0.01.tar.gz",
+         "id" : "ca9343b7dd4922c3cb0fa0dea646363306107c2dc59e73064e1ca779b574d5ea",
+         "module" : "Any::URI::Escape",
+         "observed_at" : "2026-11-06T17:13:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e3813cec9f108fa5c0be66e08c1986bfba4d242151b0f9f4ec5e0c5e17108c4c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=4",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "KRYDE",
+   "distribution" : "Perl-Critic-Pulp",
+   "observations" : [
+      {
+         "cpan_path" : "K/KR/KRYDE/Perl-Critic-Pulp-100.tar.gz",
+         "id" : "58fb518c1d2c062ff4a2181871f0da46b52b689377e3b4b2a570a71a1094461a",
+         "module" : "Perl::Critic::Pulp",
+         "observed_at" : "2026-11-06T17:12:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "17d33add2260ac49791250ccd32da8bca8063bf6fcf406ddb12b3a0076578e98",
+         "status" : "installed",
+         "test_summary" : "Files=43, Tests=2612",
+         "version" : "100",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

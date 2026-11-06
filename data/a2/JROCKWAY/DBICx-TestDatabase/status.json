@@ -1,0 +1,54 @@
+{
+   "author" : "JROCKWAY",
+   "distribution" : "DBICx-TestDatabase",
+   "observations" : [
+      {
+         "cpan_path" : "J/JR/JROCKWAY/DBICx-TestDatabase-0.05.tar.gz",
+         "id" : "9807919ea86eeea58a79c789b2bc3e1c501a930de276bd3e374c596c9d6b77fb",
+         "module" : "DBICx::TestDatabase",
+         "observed_at" : "2026-11-06T17:11:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8e3bc2530b01216188c3aa65acdbd2f59c4e631f3ae085dfc439abd89f8f0acf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=18",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

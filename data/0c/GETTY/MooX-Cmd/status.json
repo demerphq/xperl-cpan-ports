@@ -1,0 +1,54 @@
+{
+   "author" : "GETTY",
+   "distribution" : "MooX-Cmd",
+   "observations" : [
+      {
+         "cpan_path" : "G/GE/GETTY/MooX-Cmd-1.000.tar.gz",
+         "id" : "04f3ffc067e53f4cbf8eb89eb2edf800bd7ddaae6ac112580a0279d3b74c7a35",
+         "module" : "MooX::Cmd",
+         "observed_at" : "2026-11-06T17:10:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d8c0e64431cf3447bb5cd6971277ef53e34122bd32ac42ae719bdb15f8a60f16",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=122",
+         "version" : "1.000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

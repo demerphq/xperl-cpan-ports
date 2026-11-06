@@ -1,0 +1,54 @@
+{
+   "author" : "JETTERO",
+   "distribution" : "Net-IMAP-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "J/JE/JETTERO/Net-IMAP-Simple-1.2212.tar.gz",
+         "id" : "a936839469754d741c57e9023bfef0c89b732f87eada39c776e4025273e77dda",
+         "module" : "Net::IMAP::Simple",
+         "observed_at" : "2026-11-06T17:11:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9812cd0aa3be333768b6069e8b13a761fcd9fe42dc6b8b5a5ea1870dac5b7f55",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=143",
+         "version" : "1.2212",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

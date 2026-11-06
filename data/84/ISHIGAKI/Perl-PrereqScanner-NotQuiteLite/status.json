@@ -1,0 +1,54 @@
+{
+   "author" : "ISHIGAKI",
+   "distribution" : "Perl-PrereqScanner-NotQuiteLite",
+   "observations" : [
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Perl-PrereqScanner-NotQuiteLite-0.9918.tar.gz",
+         "id" : "2493c7098e88517e3e7ad19f88230cfe13359d3c04f93849833f7ac643cebfa8",
+         "module" : "Perl::PrereqScanner::NotQuiteLite",
+         "observed_at" : "2026-11-06T17:11:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4b2799f478cca0bd9c980f748b0625df627ee3d203b39f00f8b469a0ab39605c",
+         "status" : "installed",
+         "test_summary" : "Files=95, Tests=804",
+         "version" : "0.9918",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "MAXMIND",
+   "distribution" : "Data-IEEE754",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAXMIND/Data-IEEE754-0.02.tar.gz",
+         "id" : "ef437040d38a540a2df184d683b9df02c17a4971755861e136bb4b86f8b963ac",
+         "module" : "Data::IEEE754",
+         "observed_at" : "2026-11-06T17:11:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c6f4ab134672823413b50f07479b1a1b051f4cee42dd3ce7eb1583d6691b671d",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=47",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

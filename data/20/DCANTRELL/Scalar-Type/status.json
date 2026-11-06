@@ -1,0 +1,55 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Scalar-Type",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Scalar-Type-1.0.1.tar.gz",
+         "id" : "80f55a67145f29da4f7c86e0b3f528942945991423a6eb937081c90c66ea0efe",
+         "module" : "Scalar::Type",
+         "module_version" : "1.000001",
+         "observed_at" : "2026-11-06T17:09:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "97ad94ba5a46005d9b3e589acb8b051b1399dffdf461abf7fc7c7def5f019ec5",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=31",
+         "version" : "1.0.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

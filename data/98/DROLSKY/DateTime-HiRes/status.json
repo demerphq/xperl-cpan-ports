@@ -1,0 +1,54 @@
+{
+   "author" : "DROLSKY",
+   "distribution" : "DateTime-HiRes",
+   "observations" : [
+      {
+         "cpan_path" : "D/DR/DROLSKY/DateTime-HiRes-0.04.tar.gz",
+         "id" : "11563d3bc7defea403aa9ca2d240c8e5f5c186e9893094d55701c825958a0b36",
+         "module" : "DateTime::HiRes",
+         "observed_at" : "2026-11-06T17:10:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1c23159332c30f9eba54b75e6692be4dea8052243eaff3026c9c90b8b64bc395",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=7",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

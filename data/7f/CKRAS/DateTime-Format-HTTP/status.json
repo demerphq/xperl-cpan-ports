@@ -1,0 +1,54 @@
+{
+   "author" : "CKRAS",
+   "distribution" : "DateTime-Format-HTTP",
+   "observations" : [
+      {
+         "cpan_path" : "C/CK/CKRAS/DateTime-Format-HTTP-0.43.tar.gz",
+         "id" : "87ffe515f42258e60a711622e3bcf60f8f8edda09e8283a35129aa55efd7c4d7",
+         "module" : "DateTime::Format::HTTP",
+         "observed_at" : "2026-11-06T17:09:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4e7e82211f3749a73f6f2556f7048cff0725c7d7e52cb819fd51b1bba9fa0b58",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=136",
+         "version" : "0.43",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

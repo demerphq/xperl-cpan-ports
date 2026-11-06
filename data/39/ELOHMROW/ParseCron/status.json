@@ -1,0 +1,54 @@
+{
+   "author" : "ELOHMROW",
+   "distribution" : "ParseCron",
+   "observations" : [
+      {
+         "cpan_path" : "E/EL/ELOHMROW/ParseCron-0.02.tar.gz",
+         "id" : "58fa63b66f91fa101302df167266f72be10acfeb8b53bda6422aaa9c5ba35ddb",
+         "module" : "ParseCron",
+         "observed_at" : "2026-11-06T17:10:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "81204818b69d3e83372852564aa4b39f415988d92ebb6b7a22616f90ae29c5f3",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=3",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

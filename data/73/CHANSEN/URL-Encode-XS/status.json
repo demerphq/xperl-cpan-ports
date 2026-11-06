@@ -1,0 +1,54 @@
+{
+   "author" : "CHANSEN",
+   "distribution" : "URL-Encode-XS",
+   "observations" : [
+      {
+         "cpan_path" : "C/CH/CHANSEN/URL-Encode-XS-0.03.tar.gz",
+         "id" : "d8d6b62665553a685951133ba02f9bcd32c7279d5b21bbc5ae52acc313a30edd",
+         "module" : "URL::Encode::XS",
+         "observed_at" : "2026-11-06T17:09:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d44f416bd3e58e3b3366ab420705da02c7118fc848a97ce089366ea0461fa823",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=468",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

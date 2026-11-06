@@ -1,0 +1,54 @@
+{
+   "author" : "AVAR",
+   "distribution" : "MooseX-Attribute-TypeConstraint-CustomizeFatal",
+   "observations" : [
+      {
+         "cpan_path" : "A/AV/AVAR/MooseX-Attribute-TypeConstraint-CustomizeFatal-0.03.tar.gz",
+         "id" : "b26ed4d2811bf7f10f959142a8d1736e03c4dc0c712d65c90f574eda71627835",
+         "module" : "MooseX::Attribute::TypeConstraint::CustomizeFatal",
+         "observed_at" : "2026-11-06T17:09:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a4bb1f7ccefa2bd14298c582e11f97a61542eecde14b90a4e958ebebb2dc8630",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=16",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

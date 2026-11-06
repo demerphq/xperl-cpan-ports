@@ -1,0 +1,47 @@
+{
+   "author" : "DCANTRELL",
+   "distribution" : "Sub-Attribute",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Sub-Attribute-0.07.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "08d92193b79425e14f4b4b0a6ced4d65bac86b45f37eb7bccbd74f0999715c3a",
+         "module" : "Sub::Attribute",
+         "observed_at" : "2026-11-06T17:12:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6f0e3d494d77132b26ef3908a569e9b78797df6c22be82c202b4d171225b8f26",
+         "status" : "failed",
+         "version" : "0.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

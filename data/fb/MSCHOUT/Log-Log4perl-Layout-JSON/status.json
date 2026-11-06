@@ -1,0 +1,54 @@
+{
+   "author" : "MSCHOUT",
+   "distribution" : "Log-Log4perl-Layout-JSON",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSCHOUT/Log-Log4perl-Layout-JSON-0.61.tar.gz",
+         "id" : "4b2f690aac89aef90340ac8379e9cdf4e2c6c76a42e6313d926c2a5f26b71db2",
+         "module" : "Log::Log4perl::Layout::JSON",
+         "observed_at" : "2026-11-06T17:12:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4e60fefe8b6b5e62415cf634525eadae80618aeb0bf353226a3b3b68eaade943",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=30",
+         "version" : "0.61",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

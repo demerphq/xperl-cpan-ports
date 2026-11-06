@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Alien-Role-Dino",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-Role-Dino-0.08.tar.gz",
+         "id" : "6bc67d782699a1784210086b0e7d2f25d2f2d967e85c1ce80b38d223d012ac63",
+         "module" : "Alien::Role::Dino",
+         "observed_at" : "2026-11-06T17:13:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "84d212619d8afa342d4d216c80ede9d896f114065c3146ca9e8914c321f01872",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=8",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

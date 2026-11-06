@@ -1,0 +1,54 @@
+{
+   "author" : "EXODIST",
+   "distribution" : "Test2-Plugin-MemUsage",
+   "observations" : [
+      {
+         "cpan_path" : "E/EX/EXODIST/Test2-Plugin-MemUsage-0.002006.tar.gz",
+         "id" : "0d15fc86156bff3529de8b9c1f2cad7b59d2fd262cfeb229008f75bd3e133232",
+         "module" : "Test2::Plugin::MemUsage",
+         "observed_at" : "2026-11-06T17:10:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5bd68242cc6218546a22e15085c1b1caa4bf2264f1d4501c7b99f405907486fb",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=39",
+         "version" : "0.002006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
