@@ -1,0 +1,6 @@
+--- a/Expat/Expat.pm
++++ b/Expat/Expat.pm
+@@ -613 +613,2 @@
+-        die $@ if ref $@;
++        die $@ if ref $@
++            && !(${^XPERL_VERSION} && ref($@) eq 'XPerl::Exception');

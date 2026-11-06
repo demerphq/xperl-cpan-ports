@@ -1,0 +1,21 @@
+{
+  "source_sha256": "a358fd7c49f5e27717a644a9102bd21dc7fc25a415983279c59b1580e2b62a58",
+  "patch_set_id": "xperl-error-context",
+  "patch_sha256": "4b61204e4bc72252da94d312f35480a2f8a8c8de0e9c61053d98ae3a9112a83e",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "Expat.pm treats every reference in $@ as a handler-thrown object. XPerl's text exception wrapper therefore skips the ErrorContext formatter and loses the XML line number.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 62 test files, 719 tests"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 62 test files, 719 tests"
+    }
+  ]
+}
