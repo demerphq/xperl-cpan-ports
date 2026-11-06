@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "SOAP-WSDL",
+  "releases": [
+    {
+      "version": "3.004",
+      "cpan_path": "S/SW/SWALTERS/SOAP-WSDL-3.004.tar.gz",
+      "source_sha256": "e2cc1e42eace8dbb384e509d04644191afcdd8df0fec144376cebafad3f15744",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-object",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-object.patch",
+              "sha256": "86c4e5d25e52f8f74103e5f28f826715da885c92aec44de93850584f0da2c846"
+            }
+          ],
+          "recipes": [
+            "exception-wrapper-classification-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

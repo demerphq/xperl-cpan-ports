@@ -1,0 +1,12 @@
+--- a/t/TestMLBridge.pm
++++ b/t/TestMLBridge.pm
+@@ -25,7 +25,8 @@
+ sub eval_catch {
+     my ($self, $perl) = @_;
+     eval $perl;
+-    return $@;
++    # XPerl may deliver the error as an XPerl::Exception object; compare as text
++    return "$@";
+ }
+ 
+ 1;

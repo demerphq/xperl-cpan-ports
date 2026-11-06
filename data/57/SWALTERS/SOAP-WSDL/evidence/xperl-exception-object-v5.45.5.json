@@ -1,0 +1,20 @@
+{
+  "source_sha256": "e2cc1e42eace8dbb384e509d04644191afcdd8df0fec144376cebafad3f15744",
+  "patch_set_id": "xperl-exception-object",
+  "patch_sha256": "86c4e5d25e52f8f74103e5f28f826715da885c92aec44de93850584f0da2c846",
+  "date": "2026-11-06",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "pass: 124 test files, 1228 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 124 test files, 1228 tests"
+    }
+  ]
+}

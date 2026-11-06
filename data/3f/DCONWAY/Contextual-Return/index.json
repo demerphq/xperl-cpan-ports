@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "Contextual-Return",
+  "releases": [
+    {
+      "version": "0.004014",
+      "cpan_path": "D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz",
+      "source_sha256": "09fe1415e16e49a69e13c0ef6e6a4a3fd8b856f389d3f3e624d7ab3b71719f78",
+      "patch_sets": [
+        {
+          "id": "xperl-propagated-line",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-propagated-line.patch",
+              "sha256": "f78fade897ba176c89f4a3776e4bec1f9527bb679220bbf93548ee71e5aa18c8"
+            }
+          ],
+          "recipes": [
+            "exception-propagation-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

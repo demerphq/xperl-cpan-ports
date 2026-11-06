@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "JSON-SL",
+  "releases": [
+    {
+      "version": "v1.0.7",
+      "cpan_path": "M/MN/MNUNBERG/JSON-SL-1.0.7.tar.gz",
+      "source_sha256": "66e4781f1f64ce0d6804e020fbb48e37a8f7a2c4cf0cb3f336c36dd6f653188a",
+      "patch_sets": [
+        {
+          "id": "hash-entry-lifetime",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/hash-entry-lifetime.patch",
+              "sha256": "a1cea0c666261425728e234a54ff4138c7f61d3cdf47c068f9fa4b119dde9dcb"
+            }
+          ],
+          "recipes": [
+            "hash-value-lifetime-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_sha256": "fcfefbfb24f885abe827c2ad07ac3d4e1fecf213a14717fcaf3c37175045d03e",
+  "patch_set_id": "xperl-anon-sub-line",
+  "patch_sha256": "f03e1f9124c9cefa7d256d3e8272fac96a9d8f22c2ab04f9e945fbe0944c6367",
+  "date": "2026-11-06",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bb8ac6efef)",
+      "result": "pass: 3 test files, 17 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 3 test files, 17 tests"
+    }
+  ]
+}

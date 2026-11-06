@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "Inline",
+  "releases": [
+    {
+      "version": "0.87",
+      "cpan_path": "I/IN/INGY/Inline-0.87.tar.gz",
+      "source_sha256": "105e4271ace1c1b5a264d771ff111d8b928b256002888222862c7be9686f39c5",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-text",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-text.patch",
+              "sha256": "fc95cb6ff5f77bae577360eae7d719e3d75e1a853106553634b81f29ec69b40c"
+            }
+          ],
+          "recipes": [
+            "exception-text-boundary-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

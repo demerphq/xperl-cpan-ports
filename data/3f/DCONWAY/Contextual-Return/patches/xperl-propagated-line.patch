@@ -1,0 +1,13 @@
+--- a/t/failures.t
++++ b/t/failures.t
+@@ -46,7 +46,9 @@
+ my $line = __LINE__+1;
+ ok !eval { foo(); 1 }           => 'VOID is fatal';
+ like $@, qr/Abyss/              => 'Error message is correct';
+-like $@, qr/line $line\Z/       => 'Error line is correct';
++# XPerl appends a '...propagated at' line when an error is rethrown
++(my $error = "$@") =~ s/^\t\.\.\.propagated at [^\n]*\n//mg;
++like $error, qr/line $line\Z/    => 'Error line is correct';
+ 
+ 
+ sub double_or_nothing {
