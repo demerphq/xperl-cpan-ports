@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "distribution": "Sub-Delete",
+  "releases": [
+    {
+      "version": "1.00003",
+      "cpan_path": "D/DJ/DJERIUS/Sub-Delete-1.00003.tar.gz",
+      "source_sha256": "296a0036c5610faeaeb2c1545c89e9994150e8c889fa2eac79fe1ba4dc2d128a",
+      "patch_sets": [
+        {
+          "id": "untie-error-after-test",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/untie-error-after-test.patch",
+              "sha256": "c7efab76e62b737020b5b5e967431c209bd27990761641a5b1fad8f8267a27f3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

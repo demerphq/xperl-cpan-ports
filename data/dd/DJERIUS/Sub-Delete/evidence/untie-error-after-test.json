@@ -1,0 +1,21 @@
+{
+  "source_sha256": "296a0036c5610faeaeb2c1545c89e9994150e8c889fa2eac79fe1ba4dc2d128a",
+  "patch_set_id": "untie-error-after-test",
+  "patch_sha256": "c7efab76e62b737020b5b5e967431c209bd27990761641a5b1fad8f8267a27f3",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The final test leaves $@ tied to a class without FETCH. The test harness reads $@ at shutdown and exits with status 22 after all 26 assertions pass.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 1 test file, 26 tests"
+    },
+    {
+      "command": "perl -Iblib/lib -Iblib/arch t/test.t",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 26 tests"
+    }
+  ]
+}
