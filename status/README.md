@@ -28,5 +28,7 @@ and interpreter architecture name (for example `linux/x86_64-linux` or
 and 64-bit support, and XPerl commit. Results from different platforms are
 kept as separate rows, so a failure on one host does not hide a success on
 another. Observations imported before receipts recorded the platform show
-`unrecorded`. A result describes the platform it was observed on; it is not
-a claim for other platforms.
+`unrecorded` until a platform is assigned with
+`bin/import-receipts --rebuild --assume-platform OS/ARCHNAME`, which only
+affects observations that have no platform. A result describes the platform
+it was observed on; it is not a claim for other platforms.

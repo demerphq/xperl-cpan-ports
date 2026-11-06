@@ -116,6 +116,25 @@ like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| dar
 $unresolved = read_file(File::Spec->catfile($root, 'status', 'UNRESOLVED.md'));
 like($unresolved, qr/Example-Feature.*darwin\/darwin-2level.*test/,
      'platform failure is unresolved for that platform only');
+
+# Observations imported before receipts recorded a platform can be assigned
+# one when it is known; observations that have a platform keep it.
+is(system($^X, $script, '--rebuild', '--assume-platform', 'linux/x86_64-linux'),
+   0, 'backfill of unrecorded platforms succeeds');
+$status = JSON::PP->new->decode(read_file($status_path));
+my %keys;
+$keys{$_->{platform}{key} // 'none'}++ for @{$status->{observations}};
+is_deeply(\%keys, { 'linux/x86_64-linux' => 2, 'darwin/darwin-2level' => 1 },
+          'only observations without a platform are backfilled');
+my ($linux) = grep { $_->{platform}{key} eq 'linux/x86_64-linux' }
+    @{$status->{observations}};
+is_deeply($linux->{platform},
+          { key => 'linux/x86_64-linux', os => 'linux', archname => 'x86_64-linux' },
+          'backfilled platform derives its OS and architecture from the key');
+$summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
+unlike($summary, qr/\| unrecorded \|/, 'no unrecorded rows remain');
+isnt(system($^X, $script, '--rebuild', '--assume-platform', 'not a key'), 0,
+     'a malformed platform key is rejected');
 done_testing();
 
 sub write_json {
