@@ -1,6 +1,9 @@
 --- a/t/90_regression/leolo-sig-die.t
 +++ b/t/90_regression/leolo-sig-die.t
-@@ -99 +99,9 @@
+@@ -96,4 +96,12 @@
+ eval { $poe_kernel->run };
+ 
+ # make sure we caught the execption thrown in array_ctx3
 -is($@, "array_ctx3\nmore\n", 'exited when expected');
 +if (${^XPERL_VERSION}) {
 +  my $error = $@;
@@ -11,10 +14,12 @@
 +else {
 +  is($@, "array_ctx3\nmore\n", 'exited when expected');
 +}
-+}
 --- a/t/90_regression/rt19908-merlyn-stop.t
 +++ b/t/90_regression/rt19908-merlyn-stop.t
-@@ -37,2 +37,10 @@
+@@ -34,5 +34,13 @@
+ 
+ eval { POE::Kernel->run() };
+ $SIG{ALRM} = "IGNORE";
 -ok($@ eq "stop\n", "stopped due to a 'stop' exception (in _stop)");
 +if (${^XPERL_VERSION}) {
 +  my $error = $@;

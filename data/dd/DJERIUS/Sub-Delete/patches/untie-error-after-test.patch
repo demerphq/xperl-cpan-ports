@@ -1,6 +1,7 @@
 --- a/t/test.t
 +++ b/t/test.t
 @@ -145,3 +145,4 @@
+ tie $@, "";
  sub feck;
  ok eval{delete_sub 'feck';1}, '$@ is quite literally untouched';
 +untie $@;
