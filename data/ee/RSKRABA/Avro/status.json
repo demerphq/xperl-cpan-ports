@@ -1,0 +1,54 @@
+{
+   "author" : "RSKRABA",
+   "distribution" : "Avro",
+   "observations" : [
+      {
+         "cpan_path" : "R/RS/RSKRABA/Avro-1.12.2.tar.gz",
+         "id" : "7e3b4dc5334a17c0c7c667b782df17bb81b654d49fdf9e0f3d46bcce3e86e8a2",
+         "module" : "Avro",
+         "observed_at" : "2026-11-06T17:10:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f636089c24c6c9cee353843f9d44818858f07e92eed28d274e030efd16a4b5d8",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=377",
+         "version" : "1.12.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

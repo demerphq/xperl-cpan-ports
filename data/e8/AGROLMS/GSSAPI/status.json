@@ -5,6 +5,52 @@
       {
          "cpan_path" : "A/AG/AGROLMS/GSSAPI-0.28.tar.gz",
          "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "a7435208dd9fc4e72c06bc17f964ac97d0c93bf68bb0ff8e9f928015ad87bc29",
+         "module" : "GSSAPI",
+         "observed_at" : "2026-11-06T17:03:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7d8f2c7b61762fb4ec72d2ec281290f2f87f9c7d298273da4525432a65e770d6",
+         "status" : "failed",
+         "test_summary" : "Files=9, Tests=148, Failed 3/9 test programs. 2/148 subtests failed.",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AG/AGROLMS/GSSAPI-0.28.tar.gz",
+         "failure" : {
             "exit_status" : 0,
             "phase" : "configure",
             "validation_error" : "configure did not produce Makefile"

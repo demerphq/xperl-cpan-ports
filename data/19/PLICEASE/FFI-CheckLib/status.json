@@ -86,6 +86,59 @@
          "test_summary" : "Files=9, Tests=68",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz",
+         "id" : "8d8550e27899e2ea1b6c7c90228a83d6121fa1a0835a6b13ff794205adc66390",
+         "module" : "FFI::CheckLib",
+         "observed_at" : "2026-11-06T17:06:12Z",
+         "patch_set" : "render-caught-error",
+         "patch_sha256" : [
+            "373d66542417552dd08249c268b26510eabbb84431984af6f0e44927009dd555"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "04d885fc377d44896e5ea1c4ec310f979bb04f2f18658a7e7a4d509f7e80bb80",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=68",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

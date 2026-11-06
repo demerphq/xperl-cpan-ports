@@ -139,6 +139,59 @@
          "test_summary" : "Files=40, Tests=5417",
          "version" : "1.156",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PETDANCE/Perl-Critic-1.156.tar.gz",
+         "id" : "70d3912ac9f01c8b8372edf30f15b5c7a32099884ad51476a0584c40314cfb09",
+         "module" : "Perl::Critic",
+         "observed_at" : "2026-11-06T17:09:59Z",
+         "patch_set" : "rethrow-capable-exceptions",
+         "patch_sha256" : [
+            "43ef246f29c73fa2f9665d4aba5cbef8c54893612dc06ccb19364a13f8ff8e38"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "572a7c8758ba1c0ab6daf0bd40297c4f0dcf1516f084522df2c2bf04d525e232",
+         "status" : "installed",
+         "test_summary" : "Files=40, Tests=5417",
+         "version" : "1.156",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

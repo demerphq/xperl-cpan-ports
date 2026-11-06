@@ -1,0 +1,53 @@
+{
+   "author" : "IPH",
+   "distribution" : "AnyEvent-Redis-RipeRedis",
+   "observations" : [
+      {
+         "cpan_path" : "I/IP/IPH/AnyEvent-Redis-RipeRedis-1.62.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "da13193bb993a795d3ac9c6f1a6fe86861e4374d710bc441efb52f792e934fb3",
+         "module" : "AnyEvent::Redis::RipeRedis",
+         "observed_at" : "2026-11-06T17:09:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1f185d0634817581ad415ca67fc033d527cdb4c6d46d21b60fb7efa66a9d391c",
+         "status" : "failed",
+         "test_summary" : "Files=14, Tests=82, Failed 8/14 test programs. 0/82 subtests failed.",
+         "version" : "1.62",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

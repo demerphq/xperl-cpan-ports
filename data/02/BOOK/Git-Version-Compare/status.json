@@ -1,0 +1,54 @@
+{
+   "author" : "BOOK",
+   "distribution" : "Git-Version-Compare",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOOK/Git-Version-Compare-1.005.tar.gz",
+         "id" : "41cc36a0ebe30d71ed1b7d9196b5d74fc237ba5d9b2d04659523a4e97043b64e",
+         "module" : "Git::Version::Compare",
+         "observed_at" : "2026-11-06T17:04:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "357fded9e55f95eb2f516a18f5dc1b4720a9deef9e2c0e76bcd5fe4aeb9b3cbb",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=13396",
+         "version" : "1.005",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

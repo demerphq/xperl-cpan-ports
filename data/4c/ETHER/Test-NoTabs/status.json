@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "E/ET/ETHER/Test-NoTabs-2.02.tar.gz",
+         "id" : "d60f0d758d68e9be38baeea2fd005e56865ad7b06bd83aec2d0591c440e3bf4d",
+         "module" : "Test::NoTabs",
+         "observed_at" : "2026-11-06T17:04:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fb75c6a38721f0169e11c1e7dbe5329ed7216885a0b01123f342dd86d3356030",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=16",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-NoTabs-2.02.tar.gz",
          "id" : "1ff71d0b3774893d71388edd2c6ae8fa1e61d511958f8250bce50b982f4a6789",
          "module" : "Test::NoTabs",
          "observed_at" : "2026-11-06T17:10:21Z",

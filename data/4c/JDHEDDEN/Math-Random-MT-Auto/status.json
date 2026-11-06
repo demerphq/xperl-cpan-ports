@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "J/JD/JDHEDDEN/Math-Random-MT-Auto-6.23.tar.gz",
+         "id" : "c8dce132afb6e00020bdcddffd3b53ce67d0d168f5e4b65e02564aa9e0f3f442",
+         "module" : "Math::Random::MT::Auto",
+         "observed_at" : "2026-11-06T17:07:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "58bcb5ad3162964ff5a0c4d2dcbaa0202c2c85d9c470496f3b7a998757776313",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=5429",
+         "version" : "6.23",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JD/JDHEDDEN/Math-Random-MT-Auto-6.23.tar.gz",
          "id" : "1c2646b2aacd7d3665842b233fa8f807fc8b48175e5a62248cae79d613d1b38a",
          "module" : "Math::Random::MT::Auto",
          "observed_at" : "2026-11-06T17:11:11Z",

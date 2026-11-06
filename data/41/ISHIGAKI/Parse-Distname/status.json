@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "I/IS/ISHIGAKI/Parse-Distname-0.05.tar.gz",
+         "id" : "03a6cff69103827906111cfb7f251778a71e761e7ff003c67bfbfd49b912b467",
+         "module" : "Parse::Distname",
+         "observed_at" : "2026-11-06T17:06:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a5fa93bec2dab76d883da12d4f344b73bf8beb0cc4b66c24376f3e0f387aef07",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=857",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Parse-Distname-0.05.tar.gz",
          "id" : "02f9dc886d61cc5c85b221bdf661ef8844526b4507881eec0f6e60f733326563",
          "module" : "Parse::Distname",
          "observed_at" : "2026-11-06T17:10:45Z",

@@ -168,6 +168,53 @@
          "test_summary" : "Files=6, Tests=45",
          "version" : "6.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTTP-Daemon-6.17.tar.gz",
+         "id" : "dd5d104370bcfac50de4b38552709f61af00831c20f17112ff3249c4c66c2036",
+         "module" : "HTTP::Daemon",
+         "observed_at" : "2026-11-06T17:06:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "16281580c40e23108d028434698b5d7d53637bf904c9df822481e253cbec920c",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=45",
+         "version" : "6.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

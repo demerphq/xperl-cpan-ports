@@ -1,0 +1,55 @@
+{
+   "author" : "BIGFOOT",
+   "distribution" : "CLI-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BIGFOOT/CLI-Simple-2.4.0.tar.gz",
+         "id" : "97dbc100d810bd4a68f9406a9052229113e0a2629ce5c3f2873ea21b725dda59",
+         "module" : "CLI::Simple",
+         "module_version" : "v2.4.0",
+         "observed_at" : "2026-11-06T17:07:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f12fb9a4f222152db98d0a9808f603e6496380741020509edc97382bf600bf9e",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=69",
+         "version" : "2.4.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

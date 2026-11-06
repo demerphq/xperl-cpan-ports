@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/ML/MLEHMANN/Types-Serialiser-1.01.tar.gz",
+         "id" : "c9ec8efc96570a18b931a69f9bdfcf70d963a30ae06bf33380047c1626605d89",
+         "module" : "Types::Serialiser",
+         "observed_at" : "2026-11-06T17:05:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f8c7173b0914d0e3d957282077b366f0c8c70256715eaef3298ff32b92388a80",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=25",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/Types-Serialiser-1.01.tar.gz",
          "id" : "1d4c327f9388293b2db142cd94eed056d047bab709ac7c60a2557301049beac6",
          "module" : "Types::Serialiser",
          "observed_at" : "2026-11-06T17:12:36Z",

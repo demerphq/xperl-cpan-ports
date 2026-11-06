@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "S/SB/SBECK/Date-Manip-7.00.tar.gz",
+         "id" : "ebe32d0c9227352e85cf9bc4ced439c52e45bfd7e5c32bc878e293f8860fb2f0",
+         "module" : "Date::Manip",
+         "observed_at" : "2026-11-06T17:07:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+         "status" : "installed",
+         "test_summary" : "Files=209, Tests=4533",
+         "version" : "7.00",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SB/SBECK/Date-Manip-7.00.tar.gz",
          "id" : "9d22575a276229fc7a564389023048a035e05b61f5a687ab8bbe3448601dc5e2",
          "module" : "Date::Manip",
          "observed_at" : "2026-11-06T17:16:37Z",

@@ -1,0 +1,54 @@
+{
+   "author" : "GUIDO",
+   "distribution" : "Data-Walk",
+   "observations" : [
+      {
+         "cpan_path" : "G/GU/GUIDO/Data-Walk-2.01.tar.gz",
+         "id" : "89051e2b6f2db8326b60244f661e0fe07e7f87d50f6ab18fec9b16527a22b67d",
+         "module" : "Data::Walk",
+         "observed_at" : "2026-11-06T17:04:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "88461561839fcbfebe1121cebee9bade20e609a12f8c7cb386eac22c8c54334a",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=266",
+         "version" : "2.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

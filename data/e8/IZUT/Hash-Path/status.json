@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "I/IZ/IZUT/Hash-Path-0.02.tar.gz",
+         "id" : "b7abc8e2a1925d49c4c4a02436801ded3c5f350764d6e1728a3db2a71ed1bb23",
+         "module" : "Hash::Path",
+         "observed_at" : "2026-11-06T17:04:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b2339aa665c770a8ee7bd4385a67b00c578ae0142de5762657f7094679456eaf",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=14",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IZ/IZUT/Hash-Path-0.02.tar.gz",
          "id" : "454739ed7ddcbb52a05fd930a40424811a9fb5708692da2b00080162551dfe5c",
          "module" : "Hash::Path",
          "observed_at" : "2026-11-06T17:10:45Z",

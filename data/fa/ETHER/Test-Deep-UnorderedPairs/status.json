@@ -1,0 +1,54 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Test-Deep-UnorderedPairs",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Test-Deep-UnorderedPairs-0.006.tar.gz",
+         "id" : "be9fd3e580b384fc97db892290f596b5131b05d97c28ba66d341608d383a62ae",
+         "module" : "Test::Deep::UnorderedPairs",
+         "observed_at" : "2026-11-06T17:06:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d6911a9c69b22a26cad198032e6445cfd2a9d6cec4fc3d8a7ca9b965525ccc5",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=15",
+         "version" : "0.006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

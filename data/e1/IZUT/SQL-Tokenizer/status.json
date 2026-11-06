@@ -1,0 +1,54 @@
+{
+   "author" : "IZUT",
+   "distribution" : "SQL-Tokenizer",
+   "observations" : [
+      {
+         "cpan_path" : "I/IZ/IZUT/SQL-Tokenizer-0.24.tar.gz",
+         "id" : "eba03e72ea6f735620950fe2315cffea90ad4e4e32b41e56792464506b3aa7b1",
+         "module" : "SQL::Tokenizer",
+         "observed_at" : "2026-11-06T17:04:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "faa869bc426573641536a09f53502e540d5e3e3ad6a7aa1ac625d3f6976b42e1",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=71",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

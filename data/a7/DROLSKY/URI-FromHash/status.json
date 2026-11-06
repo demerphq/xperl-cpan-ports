@@ -41,6 +41,53 @@
          "test_summary" : "Files=16, Tests=23",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/URI-FromHash-0.05.tar.gz",
+         "id" : "ea0f53a00518d2f6c9921a0ae92e9e6b31ccd6f978b5c7910e322d025a6168b9",
+         "module" : "URI::FromHash",
+         "observed_at" : "2026-11-06T17:08:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a7cac5bccee9f2e2d8ad0f605400163712cd0ac64df2fb834f760fb49f2f6fd0",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=23",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

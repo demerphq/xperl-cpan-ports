@@ -1,0 +1,55 @@
+{
+   "author" : "OCBNET",
+   "distribution" : "CSS-Sass",
+   "observations" : [
+      {
+         "cpan_path" : "O/OC/OCBNET/CSS-Sass-3.6.4.tar.gz",
+         "id" : "a3d01aac0c0c83a8b2898f827f71aee7c2c12daa59c00b1c1785b085350b8d93",
+         "module" : "CSS::Sass",
+         "module_version" : "3.006004",
+         "observed_at" : "2026-11-06T17:10:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "24529e606e1aae914f53e869e42e6bb0eed3e8c9c256343c8f37fa29d9c06941",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=8107",
+         "version" : "3.6.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -139,6 +139,59 @@
          "test_summary" : "Files=41, Tests=695",
          "version" : "1.002001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GA/GARU/Data-Printer-1.002001.tar.gz",
+         "id" : "cda0984a7151eb3de02dd8d94c28da24cfc7fbc556477eed426ab71b7e51354b",
+         "module" : "Data::Printer",
+         "observed_at" : "2026-11-06T17:04:30Z",
+         "patch_set" : "xperl-class-fields",
+         "patch_sha256" : [
+            "35e7156a52785853c7eed5b2dfd7aa54820be799bf38698e7463ff08d6f58f2a"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "96292d29edf85eca10724a00e0af509c40b17b9b5638c00332d703599b6f3b74",
+         "status" : "installed",
+         "test_summary" : "Files=41, Tests=650",
+         "version" : "1.002001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "FAYLAND",
+   "distribution" : "Amazon-S3-SignedURLGenerator",
+   "observations" : [
+      {
+         "cpan_path" : "F/FA/FAYLAND/Amazon-S3-SignedURLGenerator-0.02.tar.gz",
+         "id" : "d11b346a0eb479039dd54e62ebe8fa3df697ec6dc0ae684d916ba73e3d490925",
+         "module" : "Amazon::S3::SignedURLGenerator",
+         "observed_at" : "2026-11-06T17:06:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7c22e4000c7ec5924bf1eef446712460961fe9634daaddbb8fcad87f9981ba41",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=1",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

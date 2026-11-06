@@ -1,0 +1,54 @@
+{
+   "author" : "NWELLNHOF",
+   "distribution" : "Email-MIME-RFC2047",
+   "observations" : [
+      {
+         "cpan_path" : "N/NW/NWELLNHOF/Email-MIME-RFC2047-0.97.tar.gz",
+         "id" : "9838d758e3e17ab812881501c9f0e9f8414ef19c83ba05275b6c9b10fb1b539c",
+         "module" : "Email::MIME::RFC2047",
+         "observed_at" : "2026-11-06T17:06:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a75bc4c8f9534941d4f08efdb6fbdedbeb63aaef0bcb49f5a2c56ee87808360b",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=155",
+         "version" : "0.97",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

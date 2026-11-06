@@ -1,0 +1,53 @@
+{
+   "author" : "IKRUGLOV",
+   "distribution" : "HADaemon-Control",
+   "observations" : [
+      {
+         "cpan_path" : "I/IK/IKRUGLOV/HADaemon-Control-1.005.tar.gz",
+         "id" : "d4218f6b3e65ad90dc6f8d6edecb95f1142a70375a1ec0731466e470258094d6",
+         "module" : "HADaemon::Control",
+         "observed_at" : "2026-11-06T17:05:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "66e8d1302db3298cd3278f0dd37bd8f53df0d28112e4c493ed17e3a58016f4bb",
+         "status" : "installed",
+         "version" : "1.005",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

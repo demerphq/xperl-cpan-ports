@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "IO-Compress-Brotli",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/IO-Compress-Brotli-0.023.tar.gz",
+         "id" : "51f5ec6e006ca687e808657e458dc9c4c734cdc3a2e4f8d34736f12aa90ac582",
+         "module" : "IO::Compress::Brotli",
+         "observed_at" : "2026-11-06T17:07:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fb30386115589dbdc71ff3ab0af1b67c33c202df4bbdb4e00093f1c50a2cf2f8",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=269",
+         "version" : "0.023",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

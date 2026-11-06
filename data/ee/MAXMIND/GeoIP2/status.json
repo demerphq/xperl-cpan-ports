@@ -1,0 +1,54 @@
+{
+   "author" : "MAXMIND",
+   "distribution" : "GeoIP2",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAXMIND/GeoIP2-2.006002.tar.gz",
+         "id" : "310d5bd7e77c851cab2f60dc9eaf71d93857d6090d396a5e9c78cfde04fe0fa7",
+         "module" : "GeoIP2",
+         "observed_at" : "2026-11-06T17:10:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "090542a8eee9bd3c12e59c4b65624c89d01ffd94204f1f076a1db40b26c09834",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=500",
+         "version" : "2.006002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

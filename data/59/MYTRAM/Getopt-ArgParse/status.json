@@ -1,0 +1,55 @@
+{
+   "author" : "MYTRAM",
+   "distribution" : "Getopt-ArgParse",
+   "observations" : [
+      {
+         "cpan_path" : "M/MY/MYTRAM/Getopt-ArgParse-1.0.6.tar.gz",
+         "id" : "aa52c90d24077bb92c7023bbfbffb205134bfa185be592e7491d9555fd3d89c7",
+         "module" : "Getopt::ArgParse",
+         "module_version" : "1.000006",
+         "observed_at" : "2026-11-06T17:06:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b97b12bc93aab3ebd8e294ef6188241022ec84ded8d7ac8351b675ea0c123e7d",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=171",
+         "version" : "1.0.6",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

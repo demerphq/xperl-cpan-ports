@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "E/ET/ETHER/Devel-PartialDump-0.20.tar.gz",
+         "id" : "71fdbf07c164db3ab20c7662e08307ddf87dcf42c9f5217b9472e70ceec521d0",
+         "module" : "Devel::PartialDump",
+         "observed_at" : "2026-11-06T17:09:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "aef0ff3ea59a9691967c2885118ff667156084957089c4388f49db646fd3d907",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=28",
+         "version" : "0.20",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Devel-PartialDump-0.20.tar.gz",
          "id" : "b621b93f14c566dfb00993535e08136cf4a2f885dace8a3954c58c3141788526",
          "module" : "Devel::PartialDump",
          "observed_at" : "2026-11-06T17:10:15Z",

@@ -1,0 +1,54 @@
+{
+   "author" : "RENEEB",
+   "distribution" : "HTTP-Tiny-Multipart",
+   "observations" : [
+      {
+         "cpan_path" : "R/RE/RENEEB/HTTP-Tiny-Multipart-0.08.tar.gz",
+         "id" : "cb19a888e9d57338cc8a7ef7e8bb8f4cceadabcd0af3615fc2b6b8a1b35ccdb1",
+         "module" : "HTTP::Tiny::Multipart",
+         "observed_at" : "2026-11-06T17:06:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed0d43d470797c236be7f83e414e31561560ef3f88fab1ec09def20d98c361d6",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=29",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

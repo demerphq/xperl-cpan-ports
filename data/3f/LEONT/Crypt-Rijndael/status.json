@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "Crypt-Rijndael",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/Crypt-Rijndael-1.16.tar.gz",
+         "id" : "3b944175ad38c8b4275f11c8c342af0b695f4f40a849202f545c7f0119dc4e56",
+         "module" : "Crypt::Rijndael",
+         "observed_at" : "2026-11-06T17:05:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6540085e3804b82a6f0752c1122cf78cadd221990136dd6fd4c097d056c84d40",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=132",
+         "version" : "1.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

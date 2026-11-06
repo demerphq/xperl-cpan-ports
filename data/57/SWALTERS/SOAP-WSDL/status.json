@@ -8,6 +8,52 @@
             "exit_status" : 2,
             "phase" : "test"
          },
+         "id" : "7af5d127d6bcbb0f310af4110c566ca1238dd4f50f2348aec8cffc5fe212bc94",
+         "module" : "SOAP::WSDL",
+         "observed_at" : "2026-11-06T17:09:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e2cc1e42eace8dbb384e509d04644191afcdd8df0fec144376cebafad3f15744",
+         "status" : "failed",
+         "test_summary" : "Files=124, Tests=1129, Failed 4/124 test programs. 0/1129 subtests failed.",
+         "version" : "3.004",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SW/SWALTERS/SOAP-WSDL-3.004.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
          "id" : "e4dfe128a6f99075f05d8f2f4a0f49d8d2d03c0847aaba01f86e388ef22fc2ac",
          "module" : "SOAP::WSDL",
          "observed_at" : "2026-11-06T17:17:14Z",

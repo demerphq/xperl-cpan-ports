@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "C/CH/CHORNY/Class-Std-0.013.tar.gz",
+         "id" : "da1dc25ab166dd0ccdcc8d0495f5a8c1e97922c7d35c4f97722ca1e78246720e",
+         "module" : "Class::Std",
+         "observed_at" : "2026-11-06T17:05:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bcd6d82f6c8af0fe069fced7dd165a4795b0b6e92351c7d4e5a1ab9a14fc35c6",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=275",
+         "version" : "0.013",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHORNY/Class-Std-0.013.tar.gz",
          "id" : "8542829fa400b680c346a24d403a15800004c8653e202ab9ae2b0d09a67cd7f9",
          "module" : "Class::Std",
          "observed_at" : "2026-11-06T17:09:45Z",

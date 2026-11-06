@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "E/EH/EHERMAN/Algorithm-ConsistentHash-CHash-0.04.tar.gz",
+         "id" : "5a5527f1a8a8cebbb9dd4538d2cbc2bb0efe69c80b06091c4d651447a0abe28f",
+         "module" : "Algorithm::ConsistentHash::CHash",
+         "observed_at" : "2026-11-06T17:04:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c84dadf7898cc9e6a64493e451f0b91881ddd2ef509427381354e9c5739501a7",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EH/EHERMAN/Algorithm-ConsistentHash-CHash-0.04.tar.gz",
          "id" : "132fb88488f50ac2f08a791b9766beaa19469ef5a9d4fddd07d1d3bf56ffc3da",
          "module" : "Algorithm::ConsistentHash::CHash",
          "observed_at" : "2026-11-06T17:10:10Z",

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DM/DMUEY/Digest-MD5-File-0.08.tar.gz",
+         "id" : "7d44ff1d4435043266486b85cf37655c67ce6f0271a9253623de9a28411b96dc",
+         "module" : "Digest::MD5::File",
+         "observed_at" : "2026-11-06T17:09:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "adb43a54e32627b4f7e57c9640e6eb06d0bb79d8ea54cd0bd79ed35688fb1218",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DM/DMUEY/Digest-MD5-File-0.08.tar.gz",
          "id" : "f4d5c647202877648b9a976c98d81a48eaee60db07b623873528f6abcb4bb2a1",
          "module" : "Digest::MD5::File",
          "observed_at" : "2026-11-06T17:09:57Z",

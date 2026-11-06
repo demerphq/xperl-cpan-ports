@@ -4,6 +4,54 @@
    "observations" : [
       {
          "cpan_path" : "N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz",
+         "id" : "76f3576717ca9c4f8cc57e208c47f9fe0bc29c51e1ba07bb9d491558492317b1",
+         "module" : "Text::LineFold",
+         "module_version" : "2018.012",
+         "observed_at" : "2026-11-06T17:06:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "486762e4cacddcc77b13989f979a029f84630b8175e7fef17989e157d4b6318a",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=6963",
+         "version" : "2019.001",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz",
          "id" : "ea5f237b4499bdedcb4d14db028bffefcb73f611163317ba091d283fd245d4b8",
          "module" : "Text::LineFold",
          "module_version" : "2018.012",

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "S/ST/STIGTSP/Net-CIDR-Lite-0.24.tar.gz",
+         "id" : "3f88ecf54704530eec9e6d7f01fb4448ce519a9305b143c04dd4702556da11ba",
+         "module" : "Net::CIDR::Lite",
+         "observed_at" : "2026-11-06T17:07:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fab06ac4ee60a98161c66c1050fa1f24f6b99709ad0f4b0eddc84ec71ca7ad17",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=70",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/ST/STIGTSP/Net-CIDR-Lite-0.24.tar.gz",
          "id" : "32a13649f0aa60e5f3bb9a5658b1fa8f05c98566291faa79477cbd1cf8b81a38",
          "module" : "Net::CIDR::Lite",
          "observed_at" : "2026-11-06T17:16:47Z",

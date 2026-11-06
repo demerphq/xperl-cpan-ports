@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "I/IN/INGY/boolean-0.46.tar.gz",
+         "id" : "84694347d2d08ca551177c5acae1ced8520d7036d0c466d04dacb5b9df19b2ab",
+         "module" : "boolean",
+         "observed_at" : "2026-11-06T17:04:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "95c088085c3e83bf680fe6ce16d8264ec26310490f7d1680e416ea7a118f156a",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=89",
+         "version" : "0.46",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IN/INGY/boolean-0.46.tar.gz",
          "id" : "7dda1398d39aabb02cd4776fcfa290946172936839db671cb0db0170d1866e9a",
          "module" : "boolean",
          "observed_at" : "2026-11-06T17:10:43Z",

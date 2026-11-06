@@ -1,0 +1,54 @@
+{
+   "author" : "GAAS",
+   "distribution" : "File-CounterFile",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GAAS/File-CounterFile-1.04.tar.gz",
+         "id" : "1d1aff3857faf6be96f92a91990572391f44a172e49a8beece7d2cc23891e427",
+         "module" : "File::CounterFile",
+         "observed_at" : "2026-11-06T17:04:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3fd6d66ffa92b884fc9feb4f200daf47250570520c6955fdca7e717fd4a6ac1f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=101",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

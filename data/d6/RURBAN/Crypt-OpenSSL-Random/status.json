@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "R/RU/RURBAN/Crypt-OpenSSL-Random-0.17.tar.gz",
+         "id" : "734ac4dfa459a7e924f256815615f7331f58afa8f78257208f64ad9b2d226bae",
+         "module" : "Crypt::OpenSSL::Random",
+         "observed_at" : "2026-11-06T17:06:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a571b24181baaa76c96704e92acffc6934ff593e380dade274db4e43c140ad51",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=6",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RU/RURBAN/Crypt-OpenSSL-Random-0.17.tar.gz",
          "id" : "ac1e6e5e364affcc189bca603de68844c866a9e679f735fd28046edd5bc60649",
          "module" : "Crypt::OpenSSL::Random",
          "observed_at" : "2026-11-06T17:15:12Z",

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "S/SE/SEMANTICO/Test-XML-0.08.tar.gz",
+         "id" : "b9d53e219239997cd9a1ce330e3f723219bcb736daade6f75481787f8b20a69a",
+         "module" : "Test::XML",
+         "observed_at" : "2026-11-06T17:08:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "eb54cc23cdec860d3ad8ac8a697cbf038d0dec95229912d975c301890ca83ee2",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=78",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SE/SEMANTICO/Test-XML-0.08.tar.gz",
          "id" : "cfe0f509be3c1c6a2d802c70ae8c2a15787b94ba8c036d131af9a3ee967b093f",
          "module" : "Test::XML",
          "observed_at" : "2026-11-06T17:15:31Z",

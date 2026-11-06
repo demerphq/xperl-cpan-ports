@@ -1,0 +1,54 @@
+{
+   "author" : "BTYLER",
+   "distribution" : "Devel-Optic",
+   "observations" : [
+      {
+         "cpan_path" : "B/BT/BTYLER/Devel-Optic-0.015.tar.gz",
+         "id" : "8f17008b968899e39a16983454c53800ebfbdbc062db27d7b850f7fd2fcfd792",
+         "module" : "Devel::Optic",
+         "observed_at" : "2026-11-06T17:10:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2448768d67a0507d6b82623226c82ba9b905822a81c426c3684934600945aae6",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=21",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

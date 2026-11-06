@@ -1,0 +1,55 @@
+{
+   "author" : "ATTILA",
+   "distribution" : "JS-SourceMap",
+   "observations" : [
+      {
+         "cpan_path" : "A/AT/ATTILA/JS-SourceMap-0.1.2.tar.gz",
+         "id" : "a8b41c5a4d9538b051167608bbe138fa214d806bc31955d6050150a68b2ba417",
+         "module" : "JS::SourceMap",
+         "module_version" : "0.001002",
+         "observed_at" : "2026-11-06T17:05:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3ed8927f9c9e9b52d7bbf8be347ef347641b14f7bb30db10ff65d1468dc96b1d",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=14248",
+         "version" : "0.1.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

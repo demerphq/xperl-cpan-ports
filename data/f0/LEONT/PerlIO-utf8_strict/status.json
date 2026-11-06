@@ -168,6 +168,53 @@
          "test_summary" : "Files=8, Tests=5816",
          "version" : "0.010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz",
+         "id" : "8b6e150321e42717a2a4dc722dd2633a69d2bf1dd739872b54e0df6a17c1d7a8",
+         "module" : "PerlIO::utf8_strict",
+         "observed_at" : "2026-11-06T17:05:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bcd2848b72df290b5e984fae8b1a6ca96f6d072003cf222389a8c9e8e1c570cd",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=5816",
+         "version" : "0.010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

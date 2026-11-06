@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "R/RG/RGARCIA/Sub-Current-0.03.tar.gz",
+         "id" : "244d61d1ddaf67b601c5e5e69acaf75cd519bc80f2035b4352767d0c5ee333ed",
+         "module" : "Sub::Current",
+         "observed_at" : "2026-11-06T17:06:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c6a8004d001595b1cf764b9e409c5f245c83daa2490ee1bbbe570ce7c695e610",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=30",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RG/RGARCIA/Sub-Current-0.03.tar.gz",
          "id" : "1e85e592f65815a410a27f9922accb112b6c1bacfe7f8c56676da7533a003ccd",
          "module" : "Sub::Current",
          "observed_at" : "2026-11-06T17:14:51Z",

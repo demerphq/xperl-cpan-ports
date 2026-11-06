@@ -1,0 +1,54 @@
+{
+   "author" : "MATTBM",
+   "distribution" : "Crypt-Blowfish_PP",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATTBM/Crypt-Blowfish_PP-1.12.tar.gz",
+         "id" : "9dd1ce782df80c9da4554b26c55196814954211abc80109ff9266b2b582ee2f9",
+         "module" : "Crypt::Blowfish_PP",
+         "observed_at" : "2026-11-06T17:05:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "714f1a3e94f658029d108ca15ed20f0842e73559ae5fc1faee86d4f2195fcf8c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=5",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

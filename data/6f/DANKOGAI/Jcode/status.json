@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DA/DANKOGAI/Jcode-2.07.tar.gz",
+         "id" : "6ee7c6c5d2fd5634b3d42dec847a81578f3cd5cfa648cf7cf9d83f8624071314",
+         "module" : "Jcode",
+         "observed_at" : "2026-11-06T17:04:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed1ce473ec869089e52016cfc8355165ebc37be9694ba4e829c7eb4ba1c45f8d",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=244",
+         "version" : "2.07",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DANKOGAI/Jcode-2.07.tar.gz",
          "id" : "796da6401a0f59295895b1389b39c68538dae1d94fb3241849772dc957008e22",
          "module" : "Jcode",
          "observed_at" : "2026-11-06T17:09:51Z",

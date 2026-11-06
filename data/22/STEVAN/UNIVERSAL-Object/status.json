@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "S/ST/STEVAN/UNIVERSAL-Object-0.17.tar.gz",
+         "id" : "18589b8dcc8fcee44cf0c1d54d6a2aaf92b1ab6f0a8b3f3b82eecde1ca7d9aee",
+         "module" : "UNIVERSAL::Object",
+         "observed_at" : "2026-11-06T17:07:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1fd8845e53cb36715030e3fa20f17793cca505acecaa460a6611c907cd442e4b",
+         "status" : "installed",
+         "test_summary" : "Files=31, Tests=364",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/ST/STEVAN/UNIVERSAL-Object-0.17.tar.gz",
          "id" : "9930e6a15e1ff59d51566fe71a50c1180bc0f3bbced518377cfa14db3b822d1b",
          "module" : "UNIVERSAL::Object",
          "observed_at" : "2026-11-06T17:16:46Z",

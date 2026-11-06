@@ -1,0 +1,53 @@
+{
+   "author" : "AMS",
+   "distribution" : "Crypt-Twofish",
+   "observations" : [
+      {
+         "cpan_path" : "A/AM/AMS/Crypt-Twofish-2.18.tar.gz",
+         "id" : "5d9582ba774d013c1addac457e25008d054c0bf68f28da44d23c5e799495a42c",
+         "module" : "Crypt::Twofish",
+         "observed_at" : "2026-11-06T17:03:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5881555d6187972a2382aa0d4db2d74c970b06774c621b6ca523739236d2d501",
+         "status" : "installed",
+         "version" : "2.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

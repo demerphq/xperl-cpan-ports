@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/ML/MLEHMANN/Canary-Stability-2013.tar.gz",
+         "id" : "8565b73db55e4c304e391f098619a32697a2625fcba093abe98b0700a2a6a0de",
+         "module" : "Canary::Stability",
+         "observed_at" : "2026-11-06T17:05:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a5c91c62cf95fcb868f60eab5c832908f6905221013fea2bce3ff57046d7b6ea",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "2013",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/Canary-Stability-2013.tar.gz",
          "id" : "2a764fcc4c0a1a6595bb568f772e0b333ab43f6d376dae9ef03fdbc14463ee45",
          "module" : "Canary::Stability",
          "observed_at" : "2026-11-06T17:12:28Z",

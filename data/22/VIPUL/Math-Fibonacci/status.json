@@ -1,0 +1,54 @@
+{
+   "author" : "VIPUL",
+   "distribution" : "Math-Fibonacci",
+   "observations" : [
+      {
+         "cpan_path" : "V/VI/VIPUL/Math-Fibonacci-1.5.tar.gz",
+         "id" : "fe7a3075ccbbf90166f409aaebb70d485f2644ab41cdcff5ad13893e9a290500",
+         "module" : "Math::Fibonacci",
+         "observed_at" : "2026-11-06T17:09:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "70a8286e94558df99dc92f52d83e1e20a7b8f7852bcc3a1de7d9e338260b99ba",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=19",
+         "version" : "1.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

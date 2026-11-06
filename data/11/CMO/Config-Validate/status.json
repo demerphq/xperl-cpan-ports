@@ -1,0 +1,55 @@
+{
+   "author" : "CMO",
+   "distribution" : "Config-Validate",
+   "observations" : [
+      {
+         "cpan_path" : "C/CM/CMO/Config-Validate-0.2.6.tar.gz",
+         "id" : "0953b94d720e53e5451ed4a359dc640d6141b4b04868fcea673351316d29c236",
+         "module" : "Config::Validate",
+         "module_version" : "0.002006",
+         "observed_at" : "2026-11-06T17:08:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c5564170128b2a681fc891664b61abaf4c39df630ddcad7decf3c5732c3035a2",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=208",
+         "version" : "0.2.6",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

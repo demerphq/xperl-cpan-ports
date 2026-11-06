@@ -124,6 +124,53 @@
          "test_summary" : "Files=8, Tests=44",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RG/RGARCIA/Test-LongString-0.17.tar.gz",
+         "id" : "11913a24cda65a81ef2730ac35ed887d9d9d72fd49ca746a34477d1929450281",
+         "module" : "Test::LongString",
+         "observed_at" : "2026-11-06T17:06:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "abc4349eaf04d1bec1e464166a3018591ea846d8f3c5c9c8af4ac4905d3e974f",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=45",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

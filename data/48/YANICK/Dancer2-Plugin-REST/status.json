@@ -1,0 +1,53 @@
+{
+   "author" : "YANICK",
+   "distribution" : "Dancer2-Plugin-REST",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YA/YANICK/Dancer2-Plugin-REST-1.03.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "b85e9ac0c855765b61b395a0c9505151483cdd1485734aa842fca0b4875b1471",
+         "module" : "Dancer2::Plugin::REST",
+         "observed_at" : "2026-11-06T17:11:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fde2817ae68c3d2189308d04b8501f3627af8e85736a7f5258d4bec1f31cdb8f",
+         "status" : "failed",
+         "test_summary" : "Files=9, Tests=44, Failed 1/9 test programs. 1/44 subtests failed.",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "ZOFFIX",
+   "distribution" : "Test-Synopsis",
+   "observations" : [
+      {
+         "cpan_path" : "Z/ZO/ZOFFIX/Test-Synopsis-0.18.tar.gz",
+         "id" : "72bb60a4f5c0165c4f5a4f5f30471fb4b169f9bd4d3ad19d0332beeb07bdd9e4",
+         "module" : "Test::Synopsis",
+         "observed_at" : "2026-11-06T17:10:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e7cb9cbb03cb62184e59183c1d0a7ea3a76f972bd1bf0af13f16b7f59960b1f0",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=19",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

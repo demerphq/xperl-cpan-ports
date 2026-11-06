@@ -168,6 +168,53 @@
          "test_summary" : "Files=28, Tests=1218",
          "version" : "2.35",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/TimeDate-2.35.tar.gz",
+         "id" : "bf620415f5ef18907c7031c54c94fb7393e12f75bdbb2123105272fa332a5c17",
+         "module" : "Date::Parse",
+         "observed_at" : "2026-11-06T17:04:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "baddd0306ae2e86e9ec28d3de5439e514643e80b3735e43bd0fbb426d73304de",
+         "status" : "installed",
+         "test_summary" : "Files=28, Tests=1218",
+         "version" : "2.35",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

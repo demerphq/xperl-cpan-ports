@@ -139,6 +139,59 @@
          "test_summary" : "Files=155, Tests=1279",
          "version" : "1.0057",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
+         "id" : "3da6d905984065fcd3b71359ca7f67b6e60851a8f2875f4ee8997690a550e136",
+         "module" : "Plack",
+         "observed_at" : "2026-11-06T17:09:57Z",
+         "patch_set" : "xperl-canonical-stacktrace",
+         "patch_sha256" : [
+            "db68151f5895821db824213cf0027de6f84f52b6e81eb773afeaa9e16d2b2d16"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "01cfe036276703f62cf6c1cec7c7e630420677498dfa7bc333ad88eca9d7a765",
+         "status" : "installed",
+         "test_summary" : "Files=155, Tests=1297",
+         "version" : "1.0057",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

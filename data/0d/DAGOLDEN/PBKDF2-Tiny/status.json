@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DA/DAGOLDEN/PBKDF2-Tiny-0.005.tar.gz",
+         "id" : "11a488d798381fa97c176cf52a58363d5df914856ad9e1eafb0210b20d896a5f",
+         "module" : "PBKDF2::Tiny",
+         "observed_at" : "2026-11-06T17:04:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b4e21dc59b30265eaaa41b705087ec03447d9c655a14ac40ff46e4de29eabf8e",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=4",
+         "version" : "0.005",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/PBKDF2-Tiny-0.005.tar.gz",
          "id" : "79c9d6903fc2456e17ce0ce6c91a5400d88ef2e309e0b0d2b5d2197b1d86d8e7",
          "module" : "PBKDF2::Tiny",
          "observed_at" : "2026-11-06T17:09:49Z",

@@ -1,0 +1,54 @@
+{
+   "author" : "ZEFRAM",
+   "distribution" : "Params-Classify",
+   "observations" : [
+      {
+         "cpan_path" : "Z/ZE/ZEFRAM/Params-Classify-0.015.tar.gz",
+         "id" : "af10437825d21f294c36ce3d82ecaa517d25623257ee2e449305771f21495147",
+         "module" : "Params::Classify",
+         "observed_at" : "2026-11-06T17:10:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "398ec15cd899fcd8bef3db9ea1748bf631f15f6c32be203e475b67df510a5914",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=4749",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

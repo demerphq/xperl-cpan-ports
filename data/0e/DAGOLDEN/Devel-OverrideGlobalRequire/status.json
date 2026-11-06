@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DA/DAGOLDEN/Devel-OverrideGlobalRequire-0.001.tar.gz",
+         "id" : "75ea175d05eadb7fdae6008b867c1b7ce32db1556b4c595e697219f90960b0e8",
+         "module" : "Devel::OverrideGlobalRequire",
+         "observed_at" : "2026-11-06T17:04:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0791892de3ae292af4a94e382f21db1ee88210875031851e6ea82c3410785ef9",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Devel-OverrideGlobalRequire-0.001.tar.gz",
          "id" : "414dc6ae93ded4c20e13d536cc2ac34250bdfb7213297a49c00aef7dadd23de2",
          "module" : "Devel::OverrideGlobalRequire",
          "observed_at" : "2026-11-06T17:09:48Z",

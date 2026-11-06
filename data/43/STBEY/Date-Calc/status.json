@@ -1,0 +1,54 @@
+{
+   "author" : "STBEY",
+   "distribution" : "Date-Calc",
+   "observations" : [
+      {
+         "cpan_path" : "S/ST/STBEY/Date-Calc-6.4.tar.gz",
+         "id" : "ac2099a38c429f3c9b33129a69e0149797b6b1d975276734ceb31954b4e95e45",
+         "module" : "Date::Calc",
+         "observed_at" : "2026-11-06T17:07:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7ce137b2e797b7c0901f3adf1a05a19343356cd1f04676aa1c56a9f624f859ad",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3381",
+         "version" : "6.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

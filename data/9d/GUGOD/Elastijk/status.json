@@ -1,0 +1,54 @@
+{
+   "author" : "GUGOD",
+   "distribution" : "Elastijk",
+   "observations" : [
+      {
+         "cpan_path" : "G/GU/GUGOD/Elastijk-0.13.tar.gz",
+         "id" : "df797b3fd34988596ff7a3715a54329f1d98056fe4ae3bc318f01e85f9589932",
+         "module" : "Elastijk",
+         "observed_at" : "2026-11-06T17:10:25Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8be195e72f2ac36afae0969aed5ac93321641e65d42e7569f4c85c72aa38febb",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=15",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "N/NE/NEILB/Array-Diff-0.09.tar.gz",
+         "id" : "be0b057b393d59fec0065de360b2f82adcb46aca2ce6c20dca9448d46f103f0e",
+         "module" : "Array::Diff",
+         "observed_at" : "2026-11-06T17:06:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8006392e9861e741537c2bbc9116c8e42b962f2e07e8d641a2ff6a11c6445077",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=17",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Array-Diff-0.09.tar.gz",
          "id" : "2c583d5e2545ea86acf5efde9c06a8f02e55b9d873d35d44d1ec6a8483b499b6",
          "module" : "Array::Diff",
          "observed_at" : "2026-11-06T17:12:58Z",

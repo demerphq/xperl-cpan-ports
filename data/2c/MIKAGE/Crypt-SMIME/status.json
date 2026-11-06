@@ -1,0 +1,54 @@
+{
+   "author" : "MIKAGE",
+   "distribution" : "Crypt-SMIME",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIKAGE/Crypt-SMIME-0.34.tar.gz",
+         "id" : "235fb61116279fe0fb4c88630b8e2bb63f95e1ec2d37472e2f0e19fc8604b745",
+         "module" : "Crypt::SMIME",
+         "observed_at" : "2026-11-06T17:10:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a340ea669356f4a00608c6d1ef141c10ce10dce0232e976fe8db79f16fd6e535",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=67",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

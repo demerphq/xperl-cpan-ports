@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "Y/YV/YVES/Algorithm-ConsistentHash-JumpHash-0.05.tar.gz",
+         "id" : "dfd9a3a750441a5116361bc62b892cfa7e1fdc3571694c071b888b33b432d186",
+         "module" : "Algorithm::ConsistentHash::JumpHash",
+         "observed_at" : "2026-11-06T17:10:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e2e1f127c771c23b8e1d782ab5d954ff3171444b07f0ae2d6c9bc895b40cbd22",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=8",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Y/YV/YVES/Algorithm-ConsistentHash-JumpHash-0.05.tar.gz",
          "id" : "bb69e12024679f5fa47b386493670500f305dc48673146fdde735b25e8a832a0",
          "module" : "Algorithm::ConsistentHash::JumpHash",
          "observed_at" : "2026-11-06T17:19:54Z",

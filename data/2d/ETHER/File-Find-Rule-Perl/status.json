@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "E/ET/ETHER/File-Find-Rule-Perl-1.16.tar.gz",
+         "id" : "7f72871b84c708ec24df9d4a23f54c49a876454889f6b71fb2ff17bf3f7ee7ae",
+         "module" : "File::Find::Rule::Perl",
+         "observed_at" : "2026-11-06T17:06:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ae1886050d9ca21223c073e2870abdc80dc30e3f55289a11c37da3820a8321ff",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=31",
+         "version" : "1.16",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/File-Find-Rule-Perl-1.16.tar.gz",
          "id" : "82118c776851b9a4164a223bbf49e5094297fe9a1994e693091cdacca251258f",
          "module" : "File::Find::Rule::Perl",
          "observed_at" : "2026-11-06T17:10:15Z",

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "N/NE/NEILB/Constant-FromGlobal-0.10.tar.gz",
+         "id" : "a36c5f82354868d191a2187c74b25ea540cc595e883d25cdd45b040eb9186f22",
+         "module" : "Constant::FromGlobal",
+         "observed_at" : "2026-11-06T17:06:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "82404d576a784f57a7c2b0397551fe752ef40328f27c0e862d11f995f76a9fda",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=28",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Constant-FromGlobal-0.10.tar.gz",
          "id" : "b6877187f6e75ed9cd0e3805bc77eba58c1e2e62cb23bb38d3901c34c7c5e094",
          "module" : "Constant::FromGlobal",
          "observed_at" : "2026-11-06T17:12:57Z",

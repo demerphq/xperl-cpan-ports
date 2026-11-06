@@ -1,0 +1,54 @@
+{
+   "author" : "LEEJO",
+   "distribution" : "Regexp-RegGrp",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEEJO/Regexp-RegGrp-2.01.tar.gz",
+         "id" : "43da40a73ef3c8d67ebcb0929bdd4544f4809c80d57db456354f6c928b9c473a",
+         "module" : "Regexp::RegGrp",
+         "observed_at" : "2026-11-06T17:05:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "02118337e7f09fa76cb585c79030e439f017ca791b0a662f8d34008603b7168d",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=79",
+         "version" : "2.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

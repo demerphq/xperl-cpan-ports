@@ -1,0 +1,54 @@
+{
+   "author" : "LEEJO",
+   "distribution" : "JavaScript-Packer",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEEJO/JavaScript-Packer-2.12.tar.gz",
+         "id" : "741f0e9057df714a434d5d697dd8d1c48a173fdca942e48843bc15929db4a112",
+         "module" : "JavaScript::Packer",
+         "observed_at" : "2026-11-06T17:05:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b46799f76564e9b43ba451316b4518b511d1428ab5bc3f26b573c0eded7a4ba4",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=64",
+         "version" : "2.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

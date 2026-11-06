@@ -1,0 +1,54 @@
+{
+   "author" : "ETJ",
+   "distribution" : "MooX-Thunking",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETJ/MooX-Thunking-0.08.tar.gz",
+         "id" : "cd9de0a7e2d026615f641c6e3740c36775dc792d2cde95a02de47a864b7b0219",
+         "module" : "MooX::Thunking",
+         "observed_at" : "2026-11-06T17:08:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bfdc103c7440d62d97fd9ff3b4e64fe858ca7653bb084b25b20cc821cb88c57c",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=16",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

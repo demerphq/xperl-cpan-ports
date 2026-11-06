@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "N/NE/NEZUMI/MIME-Charset-1.013.1.tar.gz",
+         "id" : "76e12108120f13f97a70836a9cf54ec362de1b1eb01de7bc213b994c03b06c6b",
+         "module" : "MIME::Charset",
+         "observed_at" : "2026-11-06T17:06:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1bb7a6e0c0d251f23d6e60bf84c9adefc5b74eec58475bfee4d39107e60870f0",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=105",
+         "version" : "1.013.1",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEZUMI/MIME-Charset-1.013.1.tar.gz",
          "id" : "c11238964e9791d4d29accb506aee6bb8407dcc9b670a34d8462edad1fd9f77f",
          "module" : "MIME::Charset",
          "observed_at" : "2026-11-06T17:13:06Z",
