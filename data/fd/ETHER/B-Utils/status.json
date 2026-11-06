@@ -35,6 +35,47 @@
          "test_summary" : "Files=22, Tests=211, Failed 1/22 test programs. 1/211 subtests failed.",
          "version" : "0.28",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/B-Utils-0.28.tar.gz",
+         "id" : "0dead87297d91a1e026cabc175ac949bc0ee8d3e678fb8380e171bbbe9a45b58",
+         "module" : "B::Utils",
+         "observed_at" : "2026-11-06T15:02:14Z",
+         "patch_set" : "xperl-cop-line",
+         "patch_sha256" : [
+            "0d545a49e8e00d16e53b89aee89d718f9f94392b703507341182c69c78600d76"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=211",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

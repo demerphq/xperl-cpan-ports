@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Expect",
+  "releases": [
+    {
+      "version": "1.38",
+      "cpan_path": "J/JA/JACOBY/Expect-1.38.tar.gz",
+      "source_sha256": "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+      "patch_sets": [
+        {
+          "id": "xperl-version-banner",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-version-banner.patch",
+              "sha256": "dc29036862d1fd4318b1db12eb321d4cf14bb85ae115d3d37e07b7a953c149d8"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+   "author" : "JACOBY",
+   "distribution" : "Expect",
+   "observations" : [
+      {
+         "cpan_path" : "J/JA/JACOBY/Expect-1.38.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "d0a5ef81bbb0190f558cc5e1341df2bd090367fe558307ec227689169a46bb08",
+         "module" : "Expect",
+         "observed_at" : "2026-11-06T15:03:43Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+         "status" : "failed",
+         "test_summary" : "Files=8, Tests=101, Failed 1/8 test programs. 1/101 subtests failed.",
+         "version" : "1.38",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

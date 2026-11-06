@@ -1,0 +1,16 @@
+{
+  "source_sha256": "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+  "patch_set_id": "xperl-version-banner",
+  "patch_sha256": "dc29036862d1fd4318b1db12eb321d4cf14bb85ae115d3d37e07b7a953c149d8",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The test expects no second Copyright match after Larry Wall, but XPerl's version banner adds a legitimate XPerl Copyright line.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 8 test files, 101 tests"
+    }
+  ]
+}

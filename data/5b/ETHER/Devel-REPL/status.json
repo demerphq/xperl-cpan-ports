@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Devel-REPL",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Devel-REPL-1.003029.tar.gz",
+         "id" : "b60b105913918718509500874316a53d005d30e0205e6de41ceb057309c14f3c",
+         "module" : "Devel::REPL",
+         "observed_at" : "2026-11-06T15:02:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7c87ebd88fe3abab2ff8c3fb681c6446ee7a2dc1390a6df7aa604f2634473c69",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=61",
+         "version" : "1.003029",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

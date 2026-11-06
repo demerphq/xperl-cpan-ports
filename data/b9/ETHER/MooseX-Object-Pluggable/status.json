@@ -1,0 +1,42 @@
+{
+   "author" : "ETHER",
+   "distribution" : "MooseX-Object-Pluggable",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Object-Pluggable-0.0014.tar.gz",
+         "id" : "627e86acdb3f738f1ea2d9f1a292ac5cf96e397375d584e2a6b198e2e3b66a59",
+         "module" : "MooseX::Object::Pluggable",
+         "observed_at" : "2026-11-06T15:02:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "f3bf7cbbe83f59c2111463e0c7dc8e69fa53fb3a8903f36f36d3f886cc3e64e0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=72",
+         "version" : "0.0014",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

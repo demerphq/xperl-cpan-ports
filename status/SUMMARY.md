@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- | --- |
@@ -141,7 +141,7 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | EHUELS | [Authen-SASL](../data/da/EHUELS/Authen-SASL/status.json) | 2.2100 | v5.45.5 | installed | none |
 | ETHER | [App-Nopaste](../data/91/ETHER/App-Nopaste/status.json) | 1.013 | v5.45.5 | installed | none |
 | ETHER | [B-Hooks-EndOfScope](../data/77/ETHER/B-Hooks-EndOfScope/status.json) | 0.28 | v5.45.5 | installed | none |
-| ETHER | [B-Utils](../data/fd/ETHER/B-Utils/status.json) | 0.28 | v5.45.5 | failed | none |
+| ETHER | [B-Utils](../data/fd/ETHER/B-Utils/status.json) | 0.28 | v5.45.5 | installed | xperl-cop-line |
 | ETHER | [Carp-Clan](../data/08/ETHER/Carp-Clan/status.json) | 6.08 | v5.45.5 | installed | none |
 | ETHER | [Catalyst-Action-REST](../data/fc/ETHER/Catalyst-Action-REST/status.json) | 1.22 | v5.45.5 | installed | none |
 | ETHER | [Catalyst-Controller-ActionRole](../data/97/ETHER/Catalyst-Controller-ActionRole/status.json) | 0.17 | v5.45.5 | installed | none |
@@ -155,6 +155,7 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [Context-Preserve](../data/66/ETHER/Context-Preserve/status.json) | 0.03 | v5.45.5 | installed | none |
 | ETHER | [Data-Dumper-Concise](../data/cc/ETHER/Data-Dumper-Concise/status.json) | 2.023 | v5.45.5 | installed | none |
 | ETHER | [Data-Visitor](../data/45/ETHER/Data-Visitor/status.json) | 0.32 | v5.45.5 | installed | none |
+| ETHER | [Devel-REPL](../data/5b/ETHER/Devel-REPL/status.json) | 1.003029 | v5.45.5 | installed | none |
 | ETHER | [File-ShareDir-Install](../data/8a/ETHER/File-ShareDir-Install/status.json) | 0.14 | v5.45.5 | installed | none |
 | ETHER | [Hook-LexWrap](../data/3d/ETHER/Hook-LexWrap/status.json) | 0.26 | v5.45.5 | installed | none |
 | ETHER | [JSON-MaybeXS](../data/c0/ETHER/JSON-MaybeXS/status.json) | 1.004008 | v5.45.5 | installed | none |
@@ -165,6 +166,7 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [MooseX-Getopt](../data/5c/ETHER/MooseX-Getopt/status.json) | 0.78 | v5.45.5 | installed | none |
 | ETHER | [MooseX-LazyRequire](../data/7e/ETHER/MooseX-LazyRequire/status.json) | 0.11 | v5.45.5 | installed | none |
 | ETHER | [MooseX-MethodAttributes](../data/23/ETHER/MooseX-MethodAttributes/status.json) | 0.32 | v5.45.5 | installed | none |
+| ETHER | [MooseX-Object-Pluggable](../data/b9/ETHER/MooseX-Object-Pluggable/status.json) | 0.0014 | v5.45.5 | installed | none |
 | ETHER | [MooseX-Role-Parameterized](../data/76/ETHER/MooseX-Role-Parameterized/status.json) | 1.11 | v5.45.5 | installed | none |
 | ETHER | [MooseX-SimpleConfig](../data/84/ETHER/MooseX-SimpleConfig/status.json) | 0.11 | v5.45.5 | installed | none |
 | ETHER | [MooseX-Types](../data/ca/ETHER/MooseX-Types/status.json) | 0.51 | v5.45.5 | installed | none |
@@ -294,6 +296,7 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | ISHIGAKI | [Parse-PMFile](../data/95/ISHIGAKI/Parse-PMFile/status.json) | 0.48 | v5.45.5 | installed | none |
 | ISHIGAKI | [Test-UseAllModules](../data/84/ISHIGAKI/Test-UseAllModules/status.json) | 0.17 | v5.45.5 | installed | none |
 | ISHIGAKI | [Text-CSV](../data/79/ISHIGAKI/Text-CSV/status.json) | 2.06 | v5.45.5 | installed | none |
+| JACOBY | [Expect](../data/87/JACOBY/Expect/status.json) | 1.38 | v5.45.5 | failed | none |
 | JJNAPIORK | [Catalyst-Runtime](../data/57/JJNAPIORK/Catalyst-Runtime/status.json) | 5.90132 | v5.45.5 | installed | xperl-exception-rendering |
 | JJNAPIORK | [Catalyst-View-TT](../data/80/JJNAPIORK/Catalyst-View-TT/status.json) | 0.46 | v5.45.5 | installed | none |
 | JJNAPIORK | [CatalystX-Profile](../data/43/JJNAPIORK/CatalystX-Profile/status.json) | 0.02 | v5.45.5 | installed | none |
@@ -446,7 +449,9 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | PRBRENAN | [Math-Cartesian-Product](../data/e1/PRBRENAN/Math-Cartesian-Product/status.json) | 1.009 | v5.45.5 | installed | none |
 | PREACTION | [Log-Any](../data/68/PREACTION/Log-Any/status.json) | 1.720 | v5.45.5 | installed | none |
 | RCAPUTO | [IO-Pipely](../data/00/RCAPUTO/IO-Pipely/status.json) | 0.006 | v5.45.5 | installed | none |
+| RCAPUTO | [Lexical-Persistence](../data/f8/RCAPUTO/Lexical-Persistence/status.json) | 1.023 | v5.45.5 | installed | none |
 | RCAPUTO | [POE-Test-Loops](../data/22/RCAPUTO/POE-Test-Loops/status.json) | 1.360 | v5.45.5 | installed | xperl-exception-assertion |
+| RCLAMP | [Class-Accessor-Chained](../data/1c/RCLAMP/Class-Accessor-Chained/status.json) | 0.01 | v5.45.5 | installed | none |
 | RCLAMP | [Devel-Caller](../data/44/RCLAMP/Devel-Caller/status.json) | 2.07 | v5.45.5 | installed | none |
 | RCLAMP | [Devel-LexAlias](../data/71/RCLAMP/Devel-LexAlias/status.json) | 0.05 | v5.45.5 | installed | none |
 | RCLAMP | [File-Find-Rule](../data/22/RCLAMP/File-Find-Rule/status.json) | 0.35 | v5.45.5 | installed | none |
@@ -537,6 +542,7 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | RWSTAUNER | [Dist-Metadata](../data/56/RWSTAUNER/Dist-Metadata/status.json) | 0.927 | v5.45.5 | installed | none |
 | RWSTAUNER | [File-Spec-Native](../data/12/RWSTAUNER/File-Spec-Native/status.json) | 1.004 | v5.45.5 | installed | none |
 | SANKO | [Readonly](../data/43/SANKO/Readonly/status.json) | 2.05 | v5.45.5 | installed | none |
+| SARTAK | [Devel-StackTrace-WithLexicals](../data/5b/SARTAK/Devel-StackTrace-WithLexicals/status.json) | 2.01 | v5.45.5 | installed | none |
 | SBURKE | [Text-Unidecode](../data/91/SBURKE/Text-Unidecode/status.json) | 1.30 | v5.45.5 | installed | none |
 | SCHWIGON | [Class-MethodMaker](../data/30/SCHWIGON/Class-MethodMaker/status.json) | 2.25 | v5.45.5 | installed | none |
 | SDP | [Lingua-Stem-Fr](../data/dd/SDP/Lingua-Stem-Fr/status.json) | 0.02 | v5.45.5 | installed | none |
@@ -594,5 +600,6 @@ Unresolved failures: 2 of 589 release and XPerl combinations. See [UNRESOLVED.md
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | installed | none |
 | YANICK | [Parallel-ForkManager](../data/14/YANICK/Parallel-ForkManager/status.json) | 2.04 | v5.45.5 | installed | none |
 | YVES | [Carp-Assert](../data/65/YVES/Carp-Assert/status.json) | 0.22 | v5.45.5 | installed | none |
+| YVES | [Data-Dump-Streamer](../data/31/YVES/Data-Dump-Streamer/status.json) | 2.42 | v5.45.5 | installed | none |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 6.003 | v5.45.5 | installed | none |
 | YVES | [Sereal-Encoder](../data/de/YVES/Sereal-Encoder/status.json) | 6.003 | v5.45.5 | installed | xperl-hash-entries |

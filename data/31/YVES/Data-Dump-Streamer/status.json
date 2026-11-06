@@ -1,0 +1,42 @@
+{
+   "author" : "YVES",
+   "distribution" : "Data-Dump-Streamer",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Data-Dump-Streamer-2.42.tar.gz",
+         "id" : "498021488e0a6650a7ba4fba2c484d4ef3b182c9fa06a22698853c24c5698e58",
+         "module" : "Data::Dump::Streamer",
+         "observed_at" : "2026-11-06T15:02:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "47f6e51fb45ce7be561e01481add0c2e1c0cd85df4b9e212f3923cd3064d1cad",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=375",
+         "version" : "2.42",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

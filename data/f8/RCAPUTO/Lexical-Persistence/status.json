@@ -1,0 +1,43 @@
+{
+   "author" : "RCAPUTO",
+   "distribution" : "Lexical-Persistence",
+   "observations" : [
+      {
+         "cpan_path" : "R/RC/RCAPUTO/Lexical-Persistence-1.023.tar.gz",
+         "id" : "e8d70b76e692c343104d3d9088dd045e4f71f58f184ce8e3d0a03aa17ec16193",
+         "module" : "Lexical::Persistence",
+         "module_version" : "1.020",
+         "observed_at" : "2026-11-06T15:02:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "94d2fa4a743885ca9cea9f7042d9e7a3a69f5bd7cc18aa630c7f7f5e8ae36944",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=56",
+         "version" : "1.023",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

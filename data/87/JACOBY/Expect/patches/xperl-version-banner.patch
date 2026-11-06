@@ -1,0 +1,11 @@
+--- a/t/01-test.t
++++ b/t/01-test.t
+@@ -22,7 +22,7 @@
+ 	$exp->log_user(0);
+ 	is( $exp->expect( 10, "krzlbrtz",   "Copyright" ), 2 );
+ 	is( $exp->expect( 10, "Larry Wall", "krzlbrtz" ),  1 );
+-	ok( not $exp->expect( 3, "Copyright" ) );
++	ok( not $exp->expect( 3, ${^XPERL_VERSION} ? "Larry Wall" : "Copyright" ) );
+ };
+ 
+ 
