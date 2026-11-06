@@ -30,6 +30,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
          "status" : "failed",
          "test_summary" : "Files=71, Tests=841, Failed 4/71 test programs. 19/841 subtests failed.",
@@ -71,6 +76,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
          "status" : "installed",
          "test_summary" : "Files=71, Tests=841",
@@ -112,6 +122,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
          "status" : "installed",
          "test_summary" : "Files=71, Tests=841",
@@ -153,6 +168,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
          "status" : "installed",
          "test_summary" : "Files=71, Tests=841",

@@ -25,6 +25,11 @@
                "name" : "build"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
          "status" : "failed",
          "version" : "1.12",
@@ -59,6 +64,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
          "status" : "installed",
          "test_summary" : "Files=19, Tests=1873",
@@ -94,6 +104,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
          "status" : "installed",
          "test_summary" : "Files=19, Tests=1873",
@@ -129,6 +144,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
          "status" : "installed",
          "test_summary" : "Files=19, Tests=1873",

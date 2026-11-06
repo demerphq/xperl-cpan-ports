@@ -10,6 +10,11 @@
          "patch_set" : null,
          "patch_sha256" : [],
          "phases" : [],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "2e39be4ee015c7ec47c2b067858018a7406e38d5121d655c8a46874adfa9a056",
          "status" : "failed",
          "version" : "1.01",
@@ -44,6 +49,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "2e39be4ee015c7ec47c2b067858018a7406e38d5121d655c8a46874adfa9a056",
          "status" : "installed",
          "version" : "1.01",

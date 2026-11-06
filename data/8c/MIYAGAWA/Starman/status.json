@@ -31,6 +31,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "4a33f20a6a3250938fc85e21779e34c56e156895fe4a8fa8c83ac4e96ecaef61",
          "status" : "installed",
          "test_summary" : "Files=31, Tests=531",

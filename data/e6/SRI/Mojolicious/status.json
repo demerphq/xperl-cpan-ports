@@ -30,6 +30,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
          "status" : "failed",
          "test_summary" : "Files=109, Tests=3736, Failed 2/109 test programs. 2/3736 subtests failed.",
@@ -70,6 +75,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
          "status" : "failed",
          "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
@@ -110,6 +120,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
          "status" : "failed",
          "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
@@ -150,6 +165,11 @@
                "name" : "test"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
          "status" : "failed",
          "test_summary" : "Files=109, Tests=3725, Failed 1/109 test programs. 1/3725 subtests failed.",
@@ -192,6 +212,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7a1417d6183929e274885c81e109e3a331c059c33ce1824929c1de81d9fe73bf",
          "status" : "installed",
          "test_summary" : "Files=109, Tests=3736",

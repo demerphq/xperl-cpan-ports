@@ -22,6 +22,11 @@
                "validation_error" : "configure did not produce Makefile"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7caa5aee72f53be59d8b84eecb6864a07c612a12ea6b27d5c706960edcd54587",
          "status" : "failed",
          "version" : "2.003000",
@@ -56,6 +61,11 @@
                "name" : "install"
             }
          ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "key" : "linux/x86_64-linux",
+            "os" : "linux"
+         },
          "source_sha256" : "7caa5aee72f53be59d8b84eecb6864a07c612a12ea6b27d5c706960edcd54587",
          "status" : "installed",
          "test_summary" : "Files=23, Tests=279",
