@@ -1,0 +1,42 @@
+{
+   "author" : "ARODLAND",
+   "distribution" : "FCGI-ProcManager",
+   "observations" : [
+      {
+         "cpan_path" : "A/AR/ARODLAND/FCGI-ProcManager-0.28.tar.gz",
+         "id" : "e38a87373c5c73314797173131fefb1f62c8ba9d01e5ef49c0043903743e1480",
+         "module" : "FCGI::ProcManager",
+         "observed_at" : "2026-11-06T15:28:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "e1c958c042427a175e051e0008f2025e8ec80613d3c7750597bf8e529b04420e",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.28",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "ABRAXXA",
+   "distribution" : "CatalystX-SimpleLogin",
+   "observations" : [
+      {
+         "cpan_path" : "A/AB/ABRAXXA/CatalystX-SimpleLogin-0.21.tar.gz",
+         "id" : "efc62fa714a554f814bfd9b908651c7f4d7658822534d0fb6665cdf697893466",
+         "module" : "CatalystX::SimpleLogin",
+         "observed_at" : "2026-11-06T15:28:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "6ccf97c824c7737572f535fd4a590bd3fe9ea5e12eaa6beffbef4b179b11b89d",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=100",
+         "version" : "0.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

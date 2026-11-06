@@ -1,0 +1,42 @@
+{
+   "author" : "BOBTFISH",
+   "distribution" : "Task-Catalyst",
+   "observations" : [
+      {
+         "cpan_path" : "B/BO/BOBTFISH/Task-Catalyst-4.02.tar.gz",
+         "id" : "a92bfa3423a97b560bfbe7293b9451c9597da5c4b5ad09585e943cd83674b268",
+         "module" : "Task::Catalyst",
+         "observed_at" : "2026-11-06T15:28:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "9acd7b65fe09c4874aa72145ad341e66f0cac49c656e1a62f18206c615d9706d",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=1",
+         "version" : "4.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

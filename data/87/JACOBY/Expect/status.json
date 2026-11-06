@@ -35,6 +35,47 @@
          "test_summary" : "Files=8, Tests=101, Failed 1/8 test programs. 1/101 subtests failed.",
          "version" : "1.38",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JA/JACOBY/Expect-1.38.tar.gz",
+         "id" : "89375cb7187215da15ae4fca1c517d2587ffd290573b67058a3d6c7c273453e2",
+         "module" : "Expect",
+         "observed_at" : "2026-11-06T15:09:10Z",
+         "patch_set" : "xperl-version-banner",
+         "patch_sha256" : [
+            "dc29036862d1fd4318b1db12eb321d4cf14bb85ae115d3d37e07b7a953c149d8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=101",
+         "version" : "1.38",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

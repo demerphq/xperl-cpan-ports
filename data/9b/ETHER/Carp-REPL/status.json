@@ -1,0 +1,76 @@
+{
+   "author" : "ETHER",
+   "distribution" : "Carp-REPL",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Carp-REPL-0.18.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "04dd3a6400b3a37e66b6ceb72fee98282b38aca17b7a69b3d1cf7e4b0b9f7541",
+         "module" : "Carp::REPL",
+         "observed_at" : "2026-11-06T15:09:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "78afef4ebdd3fd3848c60839cabe0766a8cbf419a29e6a80246c5752fb17d1a7",
+         "status" : "failed",
+         "test_summary" : "Files=15, Tests=375, Failed 1/15 test programs. 9/375 subtests failed.",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Carp-REPL-0.18.tar.gz",
+         "id" : "eb0258226ea32b9ed8952daf966d644621b14f4bb4904b9ad20ed55ff4f4aeed",
+         "module" : "Carp::REPL",
+         "observed_at" : "2026-11-06T15:28:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "78afef4ebdd3fd3848c60839cabe0766a8cbf419a29e6a80246c5752fb17d1a7",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=375",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

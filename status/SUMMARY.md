@@ -3,12 +3,13 @@
 Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 2 of 609 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- | --- |
 | ABIGAIL | [Regexp-Common](../data/5b/ABIGAIL/Regexp-Common/status.json) | 2024080801 | v5.45.5 | installed | none |
 | ABRAXXA | [Catalyst-Authentication-Credential-HTTP](../data/c4/ABRAXXA/Catalyst-Authentication-Credential-HTTP/status.json) | 1.019 | v5.45.5 | installed | none |
+| ABRAXXA | [CatalystX-SimpleLogin](../data/ea/ABRAXXA/CatalystX-SimpleLogin/status.json) | 0.21 | v5.45.5 | installed | none |
 | ABRAXXA | [HTML-FormHandler](../data/6e/ABRAXXA/HTML-FormHandler/status.json) | 0.410002 | v5.45.5 | installed | none |
 | ACALPINI | [Lingua-Stem-It](../data/a4/ACALPINI/Lingua-Stem-It/status.json) | 0.02 | v5.45.5 | installed | none |
 | ACOBURN | [Lingua-EN-Tagger](../data/c1/ACOBURN/Lingua-EN-Tagger/status.json) | 0.31 | v5.45.5 | installed | none |
@@ -25,6 +26,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | ARODLAND | [CLI-Osprey](../data/2b/ARODLAND/CLI-Osprey/status.json) | 0.09 | v5.45.5 | installed | none |
 | ARODLAND | [Catalyst-Plugin-Session-Store-DBIC](../data/b9/ARODLAND/Catalyst-Plugin-Session-Store-DBIC/status.json) | 0.15 | v5.45.5 | installed | none |
 | ARODLAND | [Digest-HMAC](../data/44/ARODLAND/Digest-HMAC/status.json) | 1.05 | v5.45.5 | installed | none |
+| ARODLAND | [FCGI-ProcManager](../data/42/ARODLAND/FCGI-ProcManager/status.json) | 0.28 | v5.45.5 | installed | none |
 | ASB | [CHI](../data/d2/ASB/CHI/status.json) | 0.61 | v5.45.5 | installed | none |
 | ASH | [WWW-Mechanize-TreeBuilder](../data/32/ASH/WWW-Mechanize-TreeBuilder/status.json) | 1.20000 | v5.45.5 | installed | none |
 | ASKSH | [Snowball-Norwegian](../data/34/ASKSH/Snowball-Norwegian/status.json) | 1.2 | v5.45.5 | installed | none |
@@ -52,7 +54,9 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | BOBTFISH | [Catalyst-Plugin-I18N](../data/1a/BOBTFISH/Catalyst-Plugin-I18N/status.json) | 0.10 | v5.45.5 | installed | none |
 | BOBTFISH | [Catalyst-Plugin-Session-Store-Delegate](../data/39/BOBTFISH/Catalyst-Plugin-Session-Store-Delegate/status.json) | 0.06 | v5.45.5 | installed | none |
 | BOBTFISH | [Catalyst-Plugin-StackTrace](../data/e2/BOBTFISH/Catalyst-Plugin-StackTrace/status.json) | 0.12 | v5.45.5 | installed | none |
+| BOBTFISH | [Task-Catalyst](../data/53/BOBTFISH/Task-Catalyst/status.json) | 4.02 | v5.45.5 | installed | none |
 | BPS | [HTTP-Server-Simple](../data/e0/BPS/HTTP-Server-Simple/status.json) | 0.52 | v5.45.5 | installed | none |
+| BPS | [Test-Expect](../data/1c/BPS/Test-Expect/status.json) | 0.34 | v5.45.5 | installed | none |
 | BPS | [Time-ParseDate](../data/0f/BPS/Time-ParseDate/status.json) | 2026.033 | v5.45.5 | installed | none |
 | BRIANDFOY | [IO-Interactive](../data/9c/BRIANDFOY/IO-Interactive/status.json) | 1.027 | v5.45.5 | installed | none |
 | BRIANDFOY | [Test-File](../data/2b/BRIANDFOY/Test-File/status.json) | 1.995 | v5.45.5 | installed | none |
@@ -106,6 +110,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | DDICK | [Crypt-URandom](../data/d3/DDICK/Crypt-URandom/status.json) | 0.55 | v5.45.5 | installed | none |
 | DDICK | [Test-MockTime](../data/83/DDICK/Test-MockTime/status.json) | 0.17 | v5.45.5 | installed | none |
 | DHOSS | [Catalyst-View-Email](../data/c7/DHOSS/Catalyst-View-Email/status.json) | 0.36 | v5.45.5 | installed | none |
+| DJERIUS | [Expect-Simple](../data/12/DJERIUS/Expect-Simple/status.json) | 0.04 | v5.45.5 | installed | none |
 | DJERIUS | [Sub-Delete](../data/dd/DJERIUS/Sub-Delete/status.json) | 1.00003 | v5.45.5 | installed | untie-error-after-test |
 | DMUEY | [File-Copy-Recursive](../data/1e/DMUEY/File-Copy-Recursive/status.json) | 0.45 | v5.45.5 | installed | none |
 | DOY | [Dist-CheckConflicts](../data/7d/DOY/Dist-CheckConflicts/status.json) | 0.11 | v5.45.5 | installed | none |
@@ -143,6 +148,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [B-Hooks-EndOfScope](../data/77/ETHER/B-Hooks-EndOfScope/status.json) | 0.28 | v5.45.5 | installed | none |
 | ETHER | [B-Utils](../data/fd/ETHER/B-Utils/status.json) | 0.28 | v5.45.5 | installed | xperl-cop-line |
 | ETHER | [Carp-Clan](../data/08/ETHER/Carp-Clan/status.json) | 6.08 | v5.45.5 | installed | none |
+| ETHER | [Carp-REPL](../data/9b/ETHER/Carp-REPL/status.json) | 0.18 | v5.45.5 | installed | none |
 | ETHER | [Catalyst-Action-REST](../data/fc/ETHER/Catalyst-Action-REST/status.json) | 1.22 | v5.45.5 | installed | none |
 | ETHER | [Catalyst-Controller-ActionRole](../data/97/ETHER/Catalyst-Controller-ActionRole/status.json) | 0.17 | v5.45.5 | installed | none |
 | ETHER | [Catalyst-Manual](../data/e1/ETHER/Catalyst-Manual/status.json) | 5.9013 | v5.45.5 | installed | none |
@@ -156,6 +162,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | ETHER | [Data-Dumper-Concise](../data/cc/ETHER/Data-Dumper-Concise/status.json) | 2.023 | v5.45.5 | installed | none |
 | ETHER | [Data-Visitor](../data/45/ETHER/Data-Visitor/status.json) | 0.32 | v5.45.5 | installed | none |
 | ETHER | [Devel-REPL](../data/5b/ETHER/Devel-REPL/status.json) | 1.003029 | v5.45.5 | installed | none |
+| ETHER | [FCGI](../data/7a/ETHER/FCGI/status.json) | 0.82 | v5.45.5 | installed | none |
 | ETHER | [File-ShareDir-Install](../data/8a/ETHER/File-ShareDir-Install/status.json) | 0.14 | v5.45.5 | installed | none |
 | ETHER | [Hook-LexWrap](../data/3d/ETHER/Hook-LexWrap/status.json) | 0.26 | v5.45.5 | installed | none |
 | ETHER | [JSON-MaybeXS](../data/c0/ETHER/JSON-MaybeXS/status.json) | 1.004008 | v5.45.5 | installed | none |
@@ -220,6 +227,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | EXODIST | [Test2-Plugin-IOEvents](../data/e4/EXODIST/Test2-Plugin-IOEvents/status.json) | 0.001001 | v5.45.5 | installed | none |
 | FLORA | [Catalyst-Plugin-Session-Store-File](../data/9b/FLORA/Catalyst-Plugin-Session-Store-File/status.json) | 0.18 | v5.45.5 | installed | none |
 | FLORA | [CatalystX-LeakChecker](../data/04/FLORA/CatalystX-LeakChecker/status.json) | 0.06 | v5.45.5 | installed | none |
+| FLORA | [CatalystX-REPL](../data/af/FLORA/CatalystX-REPL/status.json) | 0.04 | v5.45.5 | installed | none |
 | FREW | [IO-All](../data/c2/FREW/IO-All/status.json) | 0.87 | v5.45.5 | installed | none |
 | FREW | [Sub-Exporter-Progressive](../data/d3/FREW/Sub-Exporter-Progressive/status.json) | 0.001013 | v5.45.5 | installed | none |
 | FREW | [Syntax-Keyword-Gather](../data/4f/FREW/Syntax-Keyword-Gather/status.json) | 1.003002 | v5.45.5 | installed | none |
@@ -274,6 +282,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | HAARG | [Win32-ShellQuote](../data/99/HAARG/Win32-ShellQuote/status.json) | 0.003001 | v5.45.5 | installed | none |
 | HAARG | [local-lib](../data/d6/HAARG/local-lib/status.json) | 2.000029 | v5.45.5 | installed | none |
 | HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | installed | none |
+| HDP | [MooseX-RelatedClassRoles](../data/c4/HDP/MooseX-RelatedClassRoles/status.json) | 0.004 | v5.45.5 | installed | none |
 | HERMES | [Clone-Choose](../data/2a/HERMES/Clone-Choose/status.json) | 0.010 | v5.45.5 | installed | none |
 | HERMES | [Hash-Merge](../data/11/HERMES/Hash-Merge/status.json) | 0.302 | v5.45.5 | installed | none |
 | HIDEAKIO | [Module-Build-XSUtil](../data/18/HIDEAKIO/Module-Build-XSUtil/status.json) | 0.19 | v5.45.5 | installed | none |
@@ -296,7 +305,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | ISHIGAKI | [Parse-PMFile](../data/95/ISHIGAKI/Parse-PMFile/status.json) | 0.48 | v5.45.5 | installed | none |
 | ISHIGAKI | [Test-UseAllModules](../data/84/ISHIGAKI/Test-UseAllModules/status.json) | 0.17 | v5.45.5 | installed | none |
 | ISHIGAKI | [Text-CSV](../data/79/ISHIGAKI/Text-CSV/status.json) | 2.06 | v5.45.5 | installed | none |
-| JACOBY | [Expect](../data/87/JACOBY/Expect/status.json) | 1.38 | v5.45.5 | failed | none |
+| JACOBY | [Expect](../data/87/JACOBY/Expect/status.json) | 1.38 | v5.45.5 | installed | xperl-version-banner |
 | JJNAPIORK | [Catalyst-Runtime](../data/57/JJNAPIORK/Catalyst-Runtime/status.json) | 5.90132 | v5.45.5 | installed | xperl-exception-rendering |
 | JJNAPIORK | [Catalyst-View-TT](../data/80/JJNAPIORK/Catalyst-View-TT/status.json) | 0.46 | v5.45.5 | installed | none |
 | JJNAPIORK | [CatalystX-Profile](../data/43/JJNAPIORK/CatalystX-Profile/status.json) | 0.02 | v5.45.5 | installed | none |
@@ -381,6 +390,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | MSCHWERN | [URI-Find](../data/d7/MSCHWERN/URI-Find/status.json) | 20160806 | v5.45.5 | installed | none |
 | MSTROUT | [App-FatPacker](../data/77/MSTROUT/App-FatPacker/status.json) | 0.010008 | v5.45.5 | installed | none |
 | MSTROUT | [Package-Variant](../data/ad/MSTROUT/Package-Variant/status.json) | 1.003002 | v5.45.5 | installed | none |
+| MSTROUT | [Test-WWW-Mechanize-Catalyst](../data/52/MSTROUT/Test-WWW-Mechanize-Catalyst/status.json) | 0.62 | v5.45.5 | installed | none |
 | MSTROUT | [curry](../data/37/MSTROUT/curry/status.json) | 2.000001 | v5.45.5 | installed | none |
 | NEILB | [AppConfig](../data/77/NEILB/AppConfig/status.json) | 1.71 | v5.45.5 | installed | none |
 | NEILB | [Clone-PP](../data/73/NEILB/Clone-PP/status.json) | 1.09 | v5.45.5 | installed | none |
@@ -442,6 +452,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | PHRED | [Archive-Zip](../data/9b/PHRED/Archive-Zip/status.json) | 1.68 | v5.45.5 | installed | none |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | installed | xperl-coverage-gold |
 | PLICEASE | [Class-Inspector](../data/11/PLICEASE/Class-Inspector/status.json) | 1.36 | v5.45.5 | installed | none |
+| PLICEASE | [FFI-CheckLib](../data/19/PLICEASE/FFI-CheckLib/status.json) | 0.31 | v5.45.5 | failed | none |
 | PLICEASE | [File-Listing](../data/f8/PLICEASE/File-Listing/status.json) | 6.16 | v5.45.5 | installed | none |
 | PLICEASE | [File-Which](../data/4d/PLICEASE/File-Which/status.json) | 1.27 | v5.45.5 | installed | none |
 | PLICEASE | [MooseX-NonMoose](../data/05/PLICEASE/MooseX-NonMoose/status.json) | 0.27 | v5.45.5 | installed | none |
@@ -545,6 +556,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | SARTAK | [Devel-StackTrace-WithLexicals](../data/5b/SARTAK/Devel-StackTrace-WithLexicals/status.json) | 2.01 | v5.45.5 | installed | none |
 | SBURKE | [Text-Unidecode](../data/91/SBURKE/Text-Unidecode/status.json) | 1.30 | v5.45.5 | installed | none |
 | SCHWIGON | [Class-MethodMaker](../data/30/SCHWIGON/Class-MethodMaker/status.json) | 2.25 | v5.45.5 | installed | none |
+| SCHWIGON | [Test-utf8](../data/b7/SCHWIGON/Test-utf8/status.json) | 1.03 | v5.45.5 | installed | none |
 | SDP | [Lingua-Stem-Fr](../data/dd/SDP/Lingua-Stem-Fr/status.json) | 0.02 | v5.45.5 | installed | none |
 | SHANCOCK | [Perl-Tidy](../data/4d/SHANCOCK/Perl-Tidy/status.json) | 20260826 | v5.45.5 | installed | none |
 | SHAY | [Class-Singleton](../data/97/SHAY/Class-Singleton/status.json) | 1.6 | v5.45.5 | installed | none |
@@ -588,6 +600,7 @@ Unresolved failures: 2 of 596 release and XPerl combinations. See [UNRESOLVED.md
 | TODDR | [IPC-Run](../data/04/TODDR/IPC-Run/status.json) | 20260402.0 | v5.45.5 | installed | none |
 | TODDR | [Template-Toolkit](../data/ff/TODDR/Template-Toolkit/status.json) | 3.106 | v5.45.5 | installed | xperl-exception-wrapper |
 | TODDR | [XML-Parser](../data/96/TODDR/XML-Parser/status.json) | 2.59 | v5.45.5 | installed | xperl-error-context |
+| TOKUHIROM | [FCGI-Client](../data/8b/TOKUHIROM/FCGI-Client/status.json) | 0.09 | v5.45.5 | installed | none |
 | TOKUHIROM | [HTTP-Headers-Fast](../data/b9/TOKUHIROM/HTTP-Headers-Fast/status.json) | 0.22 | v5.45.5 | installed | none |
 | TOKUHIROM | [Router-Simple](../data/6d/TOKUHIROM/Router-Simple/status.json) | 0.18 | v5.45.5 | installed | none |
 | TOKUHIROM | [Test-Requires](../data/d4/TOKUHIROM/Test-Requires/status.json) | 0.11 | v5.45.5 | installed | none |

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "04d885fc377d44896e5ea1c4ec310f979bb04f2f18658a7e7a4d509f7e80bb80",
+  "patch_set_id": "render-caught-error",
+  "patch_sha256": "373d66542417552dd08249c268b26510eabbb84431984af6f0e44927009dd555",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "Test2's regex matcher compares the caught XPerl exception reference as a reference instead of rendering its message; two error text assertions fail.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 9 test files, 68 tests"
+    },
+    {
+      "command": "prove -Iblib/lib -Iblib/arch t/ffi_checklib.t",
+      "interpreter": "Perl v5.38.2",
+      "result": "pass: 1 test file, 8 tests"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+--- a/t/ffi_checklib.t
++++ b/t/ffi_checklib.t
+@@ -193,7 +193,8 @@
+ 
+   subtest 'invalid name' => sub {
+ 
+-    is dies { FFI::CheckLib::find_lib( lib => 'bar', alien => ['x..y']) }, match qr/Doesn't appear to be a valid Alien name x\.\.y/;
++    my $error = dies { FFI::CheckLib::find_lib( lib => 'bar', alien => ['x..y']) };
++    is "$error", match qr/Doesn't appear to be a valid Alien name x\.\.y/;
+ 
+   };
+ 
+@@ -204,7 +205,8 @@
+       $INC{'Alien/libbaz.pm'} = __PACKAGE__;
+     }
+ 
+-    is dies { FFI::CheckLib::find_lib( lib => 'baz', alien => ['Alien::libbaz']) }, match qr/Alien Alien::libbaz doesn't provide a dynamic_libs method/;
++    my $error = dies { FFI::CheckLib::find_lib( lib => 'baz', alien => ['Alien::libbaz']) };
++    is "$error", match qr/Alien Alien::libbaz doesn't provide a dynamic_libs method/;
+   };
+ 
+   subtest 'not installed' => sub {

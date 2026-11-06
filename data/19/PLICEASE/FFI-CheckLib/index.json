@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "FFI-CheckLib",
+  "releases": [
+    {
+      "version": "0.31",
+      "cpan_path": "P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz",
+      "source_sha256": "04d885fc377d44896e5ea1c4ec310f979bb04f2f18658a7e7a4d509f7e80bb80",
+      "patch_sets": [
+        {
+          "id": "render-caught-error",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/render-caught-error.patch",
+              "sha256": "373d66542417552dd08249c268b26510eabbb84431984af6f0e44927009dd555"
+            }
+          ],
+          "recipes": ["exception-text-boundary-v1"]
+        }
+      ]
+    }
+  ]
+}

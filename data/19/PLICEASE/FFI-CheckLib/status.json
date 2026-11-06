@@ -1,0 +1,41 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "FFI-CheckLib",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "92747635b8b72e5a4e7d6bb57f19295b30b60ab933d9f447533b7117e4b5981a",
+         "module" : "FFI::CheckLib",
+         "observed_at" : "2026-11-06T15:29:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "source_sha256" : "04d885fc377d44896e5ea1c4ec310f979bb04f2f18658a7e7a4d509f7e80bb80",
+         "status" : "failed",
+         "test_summary" : "Files=9, Tests=68, Failed 1/9 test programs. 1/68 subtests failed.",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

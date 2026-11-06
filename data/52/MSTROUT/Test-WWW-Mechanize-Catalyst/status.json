@@ -1,0 +1,42 @@
+{
+   "author" : "MSTROUT",
+   "distribution" : "Test-WWW-Mechanize-Catalyst",
+   "observations" : [
+      {
+         "cpan_path" : "M/MS/MSTROUT/Test-WWW-Mechanize-Catalyst-0.62.tar.gz",
+         "id" : "7d2819372ca5153508ee6084e36359016b8891c20860191789be43d2cd4692fb",
+         "module" : "Test::WWW::Mechanize::Catalyst",
+         "observed_at" : "2026-11-06T15:28:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "183bde1ae7aba70dcb3ed777c5548237f42c3ed551fd5bc658cee86d0216acb1",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=109",
+         "version" : "0.62",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,42 @@
+{
+   "author" : "SCHWIGON",
+   "distribution" : "Test-utf8",
+   "observations" : [
+      {
+         "cpan_path" : "S/SC/SCHWIGON/Test-utf8-1.03.tar.gz",
+         "id" : "97f927f7b4d5131c753821ee10a9f6cf4929ceec6a999424adb9a3694f2265ab",
+         "module" : "Test::utf8",
+         "observed_at" : "2026-11-06T15:28:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "a24737b31ec016189a16c7f0e4de2ff0cbd705ccaef7066387195139c5bc2439",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=40",
+         "version" : "1.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

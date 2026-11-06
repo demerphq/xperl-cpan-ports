@@ -1,0 +1,42 @@
+{
+   "author" : "HDP",
+   "distribution" : "MooseX-RelatedClassRoles",
+   "observations" : [
+      {
+         "cpan_path" : "H/HD/HDP/MooseX-RelatedClassRoles-0.004.tar.gz",
+         "id" : "0726b1a7464e40407c769ef0e44de62e1cf6ee08bf3fef3f14baf9df09c5b0c6",
+         "module" : "MooseX::RelatedClassRoles",
+         "observed_at" : "2026-11-06T15:28:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "30db7a237dd26022216fffb970b985285347130b36923c711aa0956adcb47e9f",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=5",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

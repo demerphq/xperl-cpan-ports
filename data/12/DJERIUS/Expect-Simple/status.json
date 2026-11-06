@@ -1,0 +1,42 @@
+{
+   "author" : "DJERIUS",
+   "distribution" : "Expect-Simple",
+   "observations" : [
+      {
+         "cpan_path" : "D/DJ/DJERIUS/Expect-Simple-0.04.tar.gz",
+         "id" : "9ef4aa43023f1eb55a4a79f731345f62fe364636c1a57ffb1221f4c51f7a6e52",
+         "module" : "Expect::Simple",
+         "observed_at" : "2026-11-06T15:09:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "source_sha256" : "af83b92185e642695913ff138efe819752e80857759996deafcaab2700ad5db5",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=6",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
