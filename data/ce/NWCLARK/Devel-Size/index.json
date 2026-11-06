@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Devel-Size",
+  "releases": [
+    {
+      "version": "0.87",
+      "cpan_path": "N/NW/NWCLARK/Devel-Size-0.87.tar.gz",
+      "source_sha256": "c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47",
+      "patch_sets": [
+        {
+          "id": "xperl-hash-storage",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-hash-storage.patch",
+              "sha256": "0c8e8f760b670b609b5823d8dff03c8eb0972581f1004a69edb3ea11bc9ed5c7"
+            }
+          ],
+          "recipes": ["hash-entry-traversal-v1"]
+        }
+      ]
+    }
+  ]
+}
