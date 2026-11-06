@@ -25,7 +25,8 @@ Look up a module in the CPAN index first. Then use the resolved author and
 distribution to find its registry index. The layout is in
 [SHARDING.md](SHARDING.md). The format and matching rules are in
 [FORMAT.md](FORMAT.md); submission guidance is in
-[CONTRIBUTING.md](CONTRIBUTING.md).
+[CONTRIBUTING.md](CONTRIBUTING.md). The current patch audit and clean-release
+retest priorities are in [PATCH_REVIEW.md](PATCH_REVIEW.md).
 
 Patch files modify a working copy of the upstream release. They must never
 replace the original archive in the installer's cache. The installer records

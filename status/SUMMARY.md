@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, and XPerl version.
 Older failures remain in the distribution records.
 
-Unresolved failures: 1 of 226 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 1 of 227 release and XPerl combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Status | Patch set |
 | --- | --- | --- | --- | --- | --- |
@@ -131,6 +131,7 @@ Unresolved failures: 1 of 226 release and XPerl combinations. See [UNRESOLVED.md
 | LEONT | [Software-License](../data/78/LEONT/Software-License/status.json) | 0.104007 | v5.45.5 | installed | none |
 | MALLEN | [Test-RequiresInternet](../data/c4/MALLEN/Test-RequiresInternet/status.json) | 0.05 | v5.45.5 | installed | none |
 | MANWAR | [CGI-Simple](../data/85/MANWAR/CGI-Simple/status.json) | 1.282 | v5.45.5 | installed | none |
+| MAREKR | [Pod-Parser](../data/fb/MAREKR/Pod-Parser/status.json) | 1.67 | v5.45.5 | installed | none |
 | MARKOV | [MIME-Types](../data/7c/MARKOV/MIME-Types/status.json) | 2.30 | v5.45.5 | installed | none |
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | installed | none |
 | MITHALDU | [PPI](../data/9f/MITHALDU/PPI/status.json) | 1.291 | v5.45.5 | installed | none |
