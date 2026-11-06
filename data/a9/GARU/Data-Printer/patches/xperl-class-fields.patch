@@ -1,0 +1,45 @@
+--- a/lib/Data/Printer/Filter/GenericClass.pm
++++ b/lib/Data/Printer/Filter/GenericClass.pm
+@@ -167,0 +168,10 @@
++            my $internals;
++            if (${^XPERL_VERSION} && $reftype eq 'SCALAR') {
++                require builtin;
++                if (builtin::is_class_object($object)) {
++                    my $fields = builtin::class_object_to_hash($object);
++                    delete $fields->{'$self'};
++                    $internals = $ddp->parse_as('HASH', $fields);
++                }
++            }
++            $internals //= $ddp->parse_as($reftype, $object);
+@@ -170 +180 @@
+-                    . $ddp->parse_as($reftype, $object)
++                    . $internals
+--- a/t/027-nativeperlclass.t
++++ b/t/027-nativeperlclass.t
+@@ -55 +55,21 @@
+-is $res, 'MyClass  {
++my $expected = ${^XPERL_VERSION} ? 'MyClass  {
++    parents: MyBaseClass
++    public methods (5):
++        CONSTRUCT, foo, implements, not_a_method
++        MyBaseClass:
++            base_foo
++    private methods (0)
++    internals: {
++        MyBaseClass   {
++            $one     "um",
++            $three   0,
++            $two     undef
++        },
++        MyClass       {
++            $five    42,
++            $four    42,
++            $seven   "quatro",
++            $six     "seis"
++        }
++    }
++}' : 'MyClass  {
+@@ -63 +83,2 @@
+-}', 'parsed perl 5.38 native object type';
++}';
++is $res, $expected, 'parsed perl native object type';
