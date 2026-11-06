@@ -88,6 +88,53 @@
          "test_summary" : "Files=8, Tests=54",
          "version" : "1.27",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Pod-Spell-1.27.tar.gz",
+         "id" : "8b37ef7064138bd6bf79ebc166d909e76a2964f6bb2daa8f7354a4bcb6f65218",
+         "module" : "Pod::Spell",
+         "observed_at" : "2026-11-06T17:06:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7ef56c9229f3efbc71a0462ce44490c0dd49fbf3b21fe85bb08b1eeac6f7b063",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=54",
+         "version" : "1.27",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "STBEY",
+   "distribution" : "Date-Calc-XS",
+   "observations" : [
+      {
+         "cpan_path" : "S/ST/STBEY/Date-Calc-XS-6.4.tar.gz",
+         "id" : "a734f3a6d8eb01b9e0ff9981eefd1715a2f6614642aa04a5f18d065874f5f395",
+         "module" : "Date::Calc::XS",
+         "observed_at" : "2026-11-06T17:07:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5f1a3b9080e837dec2efbac3ab067c35d485253895dce7947a2c8c56738a5ab3",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=3381",
+         "version" : "6.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

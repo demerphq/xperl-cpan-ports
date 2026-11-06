@@ -1,0 +1,54 @@
+{
+   "author" : "MIKEM",
+   "distribution" : "Digest-MD4",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MIKEM/DigestMD4/Digest-MD4-1.9.tar.gz",
+         "id" : "7fd3f31702858441992ce47f525d8a89968d9bb17c067d8d874ec628d3f3021f",
+         "module" : "Digest::MD4",
+         "observed_at" : "2026-11-06T17:05:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "665110bba32470f398f311cd6462fd8975d7c83675ff674bc2f6c7b72b0caaa6",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=273",
+         "version" : "1.9",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

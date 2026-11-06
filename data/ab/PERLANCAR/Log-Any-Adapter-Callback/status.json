@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "P/PE/PERLANCAR/Log-Any-Adapter-Callback-0.102.tar.gz",
+         "id" : "6996217b2a3251c1a20c079f9cd2d0f602f83628357b6756098862aeb551a099",
+         "module" : "Log::Any::Adapter::Callback",
+         "observed_at" : "2026-11-06T17:06:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7c01883265bdab65344257c1b1d1e69fbe300e7693dddeebb98f9f67310e07cd",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=2",
+         "version" : "0.102",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PERLANCAR/Log-Any-Adapter-Callback-0.102.tar.gz",
          "id" : "570150c1b9b6fe30f250074a78528590f860b84ef3f719e87278343c6c9e8a46",
          "module" : "Log::Any::Adapter::Callback",
          "observed_at" : "2026-11-06T17:13:16Z",

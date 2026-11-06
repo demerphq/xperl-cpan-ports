@@ -1,0 +1,54 @@
+{
+   "author" : "CAPOEIRAB",
+   "distribution" : "Test-Spelling",
+   "observations" : [
+      {
+         "cpan_path" : "C/CA/CAPOEIRAB/Test-Spelling-0.25.tar.gz",
+         "id" : "73f5200105f9a36d156345029fb8e9a97ac7e41664dca9c6a4a0566a9b8e7b55",
+         "module" : "Test::Spelling",
+         "observed_at" : "2026-11-06T17:06:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "38c659f03a4d7362e16832a3489d17f86a2ea36471d335e17ce323457df5bc60",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=23",
+         "version" : "0.25",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,47 @@
+{
+   "author" : "VPIT",
+   "distribution" : "indirect",
+   "observations" : [
+      {
+         "cpan_path" : "V/VP/VPIT/indirect-0.39.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "b5108d29e7d89ea6011de7f091fc6a5517b50370da7ec46b913a5f3c1469fb7a",
+         "module" : "indirect",
+         "observed_at" : "2026-11-06T17:09:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "71733c4c348e98fdd575b44a52042428c39888a18c25656efe59ef3d7d0d27e5",
+         "status" : "failed",
+         "version" : "0.39",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

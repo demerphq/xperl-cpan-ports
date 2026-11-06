@@ -1,0 +1,55 @@
+{
+   "author" : "AMIRI",
+   "distribution" : "Elasticsearch-Model",
+   "observations" : [
+      {
+         "cpan_path" : "A/AM/AMIRI/Elasticsearch-Model-0.1.5.tar.gz",
+         "id" : "57407f323152fdf63b531c3c446af37217b8c93c503d86a79e5d266410ed0b84",
+         "module" : "Elasticsearch::Model",
+         "module_version" : "0.001005",
+         "observed_at" : "2026-11-06T17:10:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4c11716791a2eea870fe76e2f9f04c97944c53446a963c7869bc3391ae1eaebe",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=54",
+         "version" : "0.1.5",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

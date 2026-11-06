@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "P/PE/PEVANS/Devel-Refcount-0.10.tar.gz",
+         "id" : "f2263ecf0e7c9fb11b4db81f051d4a2f95054f926613ce0f6f31e5e5e3ff7194",
+         "module" : "Devel::Refcount",
+         "observed_at" : "2026-11-06T17:06:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b654d46963d1a881426ba15994f28f52eb839b0d135bf239b4d1bf38b1caca4a",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=44",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Devel-Refcount-0.10.tar.gz",
          "id" : "5e53b7c30165d00cddb54eb9e7759ef678dee02190d14e72921ac24e95cbbaf5",
          "module" : "Devel::Refcount",
          "observed_at" : "2026-11-06T17:13:22Z",

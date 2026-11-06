@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "A/AK/AKHUETTEL/REST-Client-281.tar.gz",
+         "id" : "848af077e114f867da8b29472a58af4545d049a78e413e341793fb6f939a451c",
+         "module" : "REST::Client",
+         "observed_at" : "2026-11-06T17:09:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fa10d21a0037e682601efe66738a758ff7521094aa01229e93c888a679b2c8f6",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=42",
+         "version" : "281",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AK/AKHUETTEL/REST-Client-281.tar.gz",
          "id" : "13753a8b962373071aaa9ed9078e8aacc6737f02fcad78e895bf1047c0404b2c",
          "module" : "REST::Client",
          "observed_at" : "2026-11-06T17:09:37Z",

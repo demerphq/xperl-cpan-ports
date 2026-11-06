@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DB/DBOOK/Perl-MinimumVersion-1.44.tar.gz",
+         "id" : "e2390638f80a384f3d80e1b37ae034be922dc9800b04cce97be75850b14f24f8",
+         "module" : "Perl::MinimumVersion",
+         "observed_at" : "2026-11-06T17:09:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ffa9c8a2f099660a81361eb8bac56a335793b3e160fa5b1d97078b83142ce8cb",
+         "status" : "installed",
+         "test_summary" : "Files=22, Tests=275",
+         "version" : "1.44",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DB/DBOOK/Perl-MinimumVersion-1.44.tar.gz",
          "id" : "cb032927490094c64132c3351a6792005d7f82f559bfcd9e0dffeddf863a3fc6",
          "module" : "Perl::MinimumVersion",
          "observed_at" : "2026-11-06T17:10:22Z",

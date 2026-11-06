@@ -1,0 +1,47 @@
+{
+   "author" : "MBARBON",
+   "distribution" : "Devel-StatProfiler",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBARBON/Devel-StatProfiler-0.57.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "cb943cad4fa96534588fd97eb5bffc8d11bf5ac312a6eafdf63a375e5c5ea87f",
+         "module" : "Devel::StatProfiler",
+         "observed_at" : "2026-11-06T17:07:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5add96885415f8744c9cec97944950922db82c202300cf80dd840b439dc7c440",
+         "status" : "failed",
+         "version" : "0.57",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

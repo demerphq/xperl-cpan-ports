@@ -1,0 +1,54 @@
+{
+   "author" : "STEVAN",
+   "distribution" : "Directory-Scanner",
+   "observations" : [
+      {
+         "cpan_path" : "S/ST/STEVAN/Directory-Scanner-0.04.tar.gz",
+         "id" : "9f6f7ecd88eb632c011cb532d1e1b055ab03e1acfb7b4502ca999591d1026e8e",
+         "module" : "Directory::Scanner",
+         "observed_at" : "2026-11-06T17:10:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cb2e256dc5c64ca23549580ef5aa71c79ec28ebcd2bc854dfa10414c552360ae",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=24",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -88,6 +88,53 @@
          "test_summary" : "Files=8, Tests=26",
          "version" : "0.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IL/ILMARI/Class-Unload-0.12.tar.gz",
+         "id" : "532749383c769566fc690f7b4ee996e652e9ef775a8165f81178d3b22461d1cf",
+         "module" : "Class::Unload",
+         "observed_at" : "2026-11-06T17:08:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2508039578fb5457fdffb22d8fa6f90be295c30417901d0fd975744e55922696",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=22",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

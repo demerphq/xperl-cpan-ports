@@ -1,0 +1,54 @@
+{
+   "author" : "STEVAN",
+   "distribution" : "decorators",
+   "observations" : [
+      {
+         "cpan_path" : "S/ST/STEVAN/decorators-0.01.tar.gz",
+         "id" : "247c18d187397606ae29d45ce2a1043703d3abf1ec9c7dbe06a4cba7933f74d0",
+         "module" : "decorators",
+         "observed_at" : "2026-11-06T17:10:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5ea3b52fba5035b52facf9477c5086de900d4936b96da6236c5d22345c2f6c23",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=152",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

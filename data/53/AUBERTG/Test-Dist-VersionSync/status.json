@@ -1,0 +1,54 @@
+{
+   "author" : "AUBERTG",
+   "distribution" : "Test-Dist-VersionSync",
+   "observations" : [
+      {
+         "cpan_path" : "A/AU/AUBERTG/Test-Dist-VersionSync-v1.2.0.tar.gz",
+         "id" : "ee403fc6ee76e3db4a5e2cbbd3dcfa3e3b524c377ff6baac76ac2af05165b1b6",
+         "module" : "Test::Dist::VersionSync",
+         "observed_at" : "2026-11-06T17:05:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "890178671cab1a7e44bb8754209127ac5f2d2b5b5d53ea399552cfcc2ab1ff19",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=47",
+         "version" : "v1.2.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

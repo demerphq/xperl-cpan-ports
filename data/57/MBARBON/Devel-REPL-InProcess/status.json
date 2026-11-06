@@ -1,0 +1,54 @@
+{
+   "author" : "MBARBON",
+   "distribution" : "Devel-REPL-InProcess",
+   "observations" : [
+      {
+         "cpan_path" : "M/MB/MBARBON/Devel-REPL-InProcess-0.05.tar.gz",
+         "id" : "d11440634baa82f6453c1c30f80f3c014db214f0c947a4ba576f9c9ec45ccdf7",
+         "module" : "Devel::REPL::InProcess",
+         "observed_at" : "2026-11-06T17:10:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1c5929167debf74a81f59e1954ecfc22ed667605095ec872238f3543345abb9b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -9,6 +9,43 @@
             "phase" : "configure",
             "validation_error" : "configure did not produce Makefile"
          },
+         "id" : "6aae9a2d7bdf19122df5be8a19114159cf28af80faf03ee169b429eebf89e464",
+         "module" : "Net::LibIDN",
+         "observed_at" : "2026-11-06T17:07:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure",
+               "validation_error" : "configure did not produce Makefile"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2f8acc9442b3866ec7dc63cd449fc693ae3e930d5d3e5e9430fbb6f393bdbb17",
+         "status" : "failed",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TH/THOR/Net-LibIDN-0.12.tar.gz",
+         "failure" : {
+            "exit_status" : 0,
+            "phase" : "configure",
+            "validation_error" : "configure did not produce Makefile"
+         },
          "id" : "5f0b2bf961a7372919421b813fd58b45ff3d513bb323ab46d8ee3d732de5a79c",
          "module" : "Net::LibIDN",
          "observed_at" : "2026-11-06T17:17:18Z",

@@ -1,0 +1,54 @@
+{
+   "author" : "DCOPPIT",
+   "distribution" : "Benchmark-Timer",
+   "observations" : [
+      {
+         "cpan_path" : "D/DC/DCOPPIT/Benchmark-Timer-0.7112.tar.gz",
+         "id" : "31f4392d738fa66f4599725c468f162c1fa875e7a8eaf1a8a09ef6a1f75d266f",
+         "module" : "Benchmark::Timer",
+         "observed_at" : "2026-11-06T17:06:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0278447d9ad9d773d59a4ebd6db8afeadde81c8fa5d6a8738f5e7d578e2a402e",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=36",
+         "version" : "0.7112",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

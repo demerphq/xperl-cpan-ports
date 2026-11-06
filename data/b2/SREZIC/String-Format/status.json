@@ -88,6 +88,53 @@
          "test_summary" : "Files=6, Tests=21",
          "version" : "1.18",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SREZIC/String-Format-1.18.tar.gz",
+         "id" : "4deb637bf54392cafd2e27d35768c7d23d2728db02db265b2490176d1d82dd38",
+         "module" : "String::Format",
+         "observed_at" : "2026-11-06T17:07:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9e417a8f8d9ea623beea2d13a47c0d5a696fc8602c0509b826cd45f97b76e778",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=21",
+         "version" : "1.18",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

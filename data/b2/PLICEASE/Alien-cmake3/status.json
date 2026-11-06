@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "P/PL/PLICEASE/Alien-cmake3-0.10.tar.gz",
+         "id" : "4d56d5e5a14d5189d74edae7599d0352082da62d709f372ae9e929e57f28362d",
+         "module" : "Alien::cmake3",
+         "observed_at" : "2026-11-06T17:07:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c87a09d8687b5c5057b825c56329513d8b1b7741b1ec4fca346465ee0219485f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=7",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-cmake3-0.10.tar.gz",
          "id" : "baaa9b635b9f18696298a94840bf95e644f1b33a086b1a001cfe5fdd7d89c502",
          "module" : "Alien::cmake3",
          "observed_at" : "2026-11-06T17:13:52Z",

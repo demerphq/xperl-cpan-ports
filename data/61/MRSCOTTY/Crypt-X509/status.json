@@ -1,0 +1,54 @@
+{
+   "author" : "MRSCOTTY",
+   "distribution" : "Crypt-X509",
+   "observations" : [
+      {
+         "cpan_path" : "M/MR/MRSCOTTY/Crypt-X509-0.55.tar.gz",
+         "id" : "3597f4b84309f5fb823741069e6fc27a5b349b703d936a5fc328d57923559540",
+         "module" : "Crypt::X509",
+         "observed_at" : "2026-11-06T17:07:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "14796b11d15f76ad7444e78a619b70ffdd9130868dd0b00d858579c9303821c7",
+         "status" : "installed",
+         "test_summary" : "Files=0, Tests=0",
+         "version" : "0.55",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

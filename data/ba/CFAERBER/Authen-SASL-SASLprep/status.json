@@ -1,0 +1,54 @@
+{
+   "author" : "CFAERBER",
+   "distribution" : "Authen-SASL-SASLprep",
+   "observations" : [
+      {
+         "cpan_path" : "C/CF/CFAERBER/Authen-SASL-SASLprep-1.100.tar.gz",
+         "id" : "5d3c55c19a7161de602d298f6317a0dd66ebd4da1f8f8288413229262ddd396f",
+         "module" : "Authen::SASL::SASLprep",
+         "observed_at" : "2026-11-06T17:05:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a4cccc34bb3f53acf0ba78c9fc61af8d156d109d1c10487ba5988a55077d1f70",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=64",
+         "version" : "1.100",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

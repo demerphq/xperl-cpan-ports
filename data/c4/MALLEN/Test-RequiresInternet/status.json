@@ -168,6 +168,53 @@
          "test_summary" : "Files=7, Tests=4",
          "version" : "0.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz",
+         "id" : "0e3feba7709f9be8f5e3b8f307c8330aebe3afa9a5d7de265b1b1765524592f5",
+         "module" : "Test::RequiresInternet",
+         "observed_at" : "2026-11-06T17:05:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bba7b32a1cc0d58ce2ec20b200a7347c69631641e8cae8ff4567ad24ef1e833e",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=4",
+         "version" : "0.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

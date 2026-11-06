@@ -133,6 +133,59 @@
          "test_summary" : "Files=30, Tests=1336",
          "version" : "0.65",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "V/VP/VPIT/Variable-Magic-0.65.tar.gz",
+         "id" : "9876fa5c90b1371eda05f0d8fe1a21389164e2166aa41fe804bdc6598e0b2baa",
+         "module" : "Variable::Magic",
+         "observed_at" : "2026-11-06T17:09:29Z",
+         "patch_set" : "xperl-exception-error-state",
+         "patch_sha256" : [
+            "37758c23d0ad13b0ecebaad11f7476237096aeaf74907c3d0e46e4f3156a2ac7"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "457bfb1b2369e44c0e2ef3e7b61580831107cbeebf0f5d8c4b9b02368550b91e",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=1336",
+         "version" : "0.65",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

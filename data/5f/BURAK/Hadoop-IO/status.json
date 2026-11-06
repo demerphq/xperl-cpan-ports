@@ -1,0 +1,54 @@
+{
+   "author" : "BURAK",
+   "distribution" : "Hadoop-IO",
+   "observations" : [
+      {
+         "cpan_path" : "B/BU/BURAK/Hadoop-IO-0.003.tar.gz",
+         "id" : "3ec0ca774f485ec8ddb83221a971ab7c2b7230fe91636654358a26424e595401",
+         "module" : "Hadoop::IO",
+         "observed_at" : "2026-11-06T17:09:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "400d4151fd61731c0ce0a1451940537ea26dc557b6b4e89c3f9e7b1ceb782f40",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=10",
+         "version" : "0.003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

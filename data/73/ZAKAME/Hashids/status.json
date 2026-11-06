@@ -1,0 +1,54 @@
+{
+   "author" : "ZAKAME",
+   "distribution" : "Hashids",
+   "observations" : [
+      {
+         "cpan_path" : "Z/ZA/ZAKAME/Hashids-1.001013.tar.gz",
+         "id" : "b304fe76e9e52d519ff03691268f1d9a1ef0e5383509a225a162fcc41b28c858",
+         "module" : "Hashids",
+         "observed_at" : "2026-11-06T17:10:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "46e54e0f1adbd114afa44bc90cd436dc797fae106eef26c573f147b613b1706d",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=22",
+         "version" : "1.001013",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

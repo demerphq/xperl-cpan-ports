@@ -1,0 +1,54 @@
+{
+   "author" : "NI-S",
+   "distribution" : "Devel-Leak",
+   "observations" : [
+      {
+         "cpan_path" : "N/NI/NI-S/Devel-Leak-0.03.tar.gz",
+         "id" : "a1ef23fc6d0601ccc16427e3b60b7d8ce2d03083ca858e6d5dcd86055fdaed3a",
+         "module" : "Devel::Leak",
+         "observed_at" : "2026-11-06T17:06:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "6f42c34f11e2b4e3ea2e0e6b9416a88a685add447910caf4d91dd2c178177252",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

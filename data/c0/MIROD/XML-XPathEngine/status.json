@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/MI/MIROD/XML-XPathEngine-0.14.tar.gz",
+         "id" : "fd0dc066ed0bf34606539117f0dee77fb40088c2ff09418ec899a778a7214b0e",
+         "module" : "XML::XPathEngine",
+         "observed_at" : "2026-11-06T17:05:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d2fe7bcbbd0beba1444f4a733401e7b8aa5282fad4266d42735dd74582b2e264",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=50",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIROD/XML-XPathEngine-0.14.tar.gz",
          "id" : "876ee349d71f10a44e2fbd0923a7fdd2f5603c584849d613f34e2312f6465909",
          "module" : "XML::XPathEngine",
          "observed_at" : "2026-11-06T17:11:56Z",

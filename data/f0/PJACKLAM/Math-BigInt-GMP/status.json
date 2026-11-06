@@ -1,0 +1,47 @@
+{
+   "author" : "PJACKLAM",
+   "distribution" : "Math-BigInt-GMP",
+   "observations" : [
+      {
+         "cpan_path" : "P/PJ/PJACKLAM/Math-BigInt-GMP-1.7003.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "435cd38a45e10c838e8c707322157abb5b716e9ee92518fd5f213df51538a486",
+         "module" : "Math::BigInt::GMP",
+         "observed_at" : "2026-11-06T17:06:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a165628b277d1e833f5b657ca836db81bc44e04c107cfe9f5b8bd94755642ed5",
+         "status" : "failed",
+         "version" : "1.7003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

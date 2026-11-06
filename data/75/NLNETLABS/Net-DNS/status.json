@@ -100,6 +100,59 @@
          "test_summary" : "Files=106, Tests=3362",
          "version" : "1.57",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NL/NLNETLABS/Net-DNS-1.57.tar.gz",
+         "id" : "ad56d306587e8e7e584415ecdb5d806f0583c6dee5158b7e721c6916fabf923a",
+         "module" : "Net::DNS",
+         "observed_at" : "2026-11-06T17:06:10Z",
+         "patch_set" : "disable-online-tests-in-cpan-builds",
+         "patch_sha256" : [
+            "a6186db801a48589831aba5d6eed98c27a00092d621a0bc05184e68c0e5bf098"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7c98de329cb5d6a99abbb03aaad2866cb041092ed9936a7246908e170005b058",
+         "status" : "installed",
+         "test_summary" : "Files=106, Tests=3362",
+         "version" : "1.57",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

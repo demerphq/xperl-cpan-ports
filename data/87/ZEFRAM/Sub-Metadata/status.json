@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "Z/ZE/ZEFRAM/Sub-Metadata-0.002.tar.gz",
+         "id" : "60d840dec909a7518f66d7a7d91b3b9797a97eb2c3aeaa1ea3d2d950098b0dda",
+         "module" : "Sub::Metadata",
+         "observed_at" : "2026-11-06T17:10:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a22f9eeac78f040fc0055fec7e2c8442d425dbf285967619f4424d2577c484d0",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=139",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Z/ZE/ZEFRAM/Sub-Metadata-0.002.tar.gz",
          "id" : "41dce1cc7117400d562505ef1aea1408ef38b05b3feaeb9ed10284368030f633",
          "module" : "Sub::Metadata",
          "observed_at" : "2026-11-06T17:20:13Z",

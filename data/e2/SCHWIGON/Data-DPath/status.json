@@ -1,0 +1,54 @@
+{
+   "author" : "SCHWIGON",
+   "distribution" : "Data-DPath",
+   "observations" : [
+      {
+         "cpan_path" : "S/SC/SCHWIGON/Data-DPath-0.60.tar.gz",
+         "id" : "aee95454d9bd963b41b3d8d8901ee5afb9a17b694be76819391face74efc7b74",
+         "module" : "Data::DPath",
+         "observed_at" : "2026-11-06T17:07:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "99f4426d458c5bb8d4c510e0c2629c8a88ae4f4661c0b1e45c5550362f92ecc1",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=518",
+         "version" : "0.60",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

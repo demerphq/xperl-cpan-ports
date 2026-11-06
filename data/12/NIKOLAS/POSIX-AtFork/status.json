@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "N/NI/NIKOLAS/POSIX-AtFork-0.04.tar.gz",
+         "id" : "6d5f483897bd7fe0028b596de99d9fea5d6552523f9736f26a3f369c66f5de0c",
+         "module" : "POSIX::AtFork",
+         "observed_at" : "2026-11-06T17:09:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c2e2293a86d487144bc8f7ba08e7c4b76b11b0e4dfdc41809845d30efa07e60e",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=35",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NI/NIKOLAS/POSIX-AtFork-0.04.tar.gz",
          "id" : "880b0f1663e483d65c037043e696a562b454810be319bbf2afb0a6227389fdd7",
          "module" : "POSIX::AtFork",
          "observed_at" : "2026-11-06T17:13:08Z",

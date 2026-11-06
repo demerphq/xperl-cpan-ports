@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Term-Clui",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Term-Clui-1.76.tar.gz",
+         "id" : "d101a26228e5417b0970afbeb7f28d2292d5304041e4777fe5aacb3c52ba14c8",
+         "module" : "Term::Clui",
+         "observed_at" : "2026-11-06T17:06:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b8ee8cd2252a43244d1f84b76eb0407e72eafc24e5d53aabac719d869dfbf11f",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "1.76",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

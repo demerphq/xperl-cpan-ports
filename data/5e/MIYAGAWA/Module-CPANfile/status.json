@@ -41,6 +41,53 @@
          "test_summary" : "Files=8, Tests=41",
          "version" : "1.1004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIYAGAWA/Module-CPANfile-1.1004.tar.gz",
+         "id" : "351ec9b04195ea03afec03948167f74d237057c899813b98c4c2904f81c8c377",
+         "module" : "Module::CPANfile",
+         "observed_at" : "2026-11-06T17:05:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "88efbe2e9a642dceaa186430fedfcf999aaf0e06f6cced28a714b8e56b514921",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=41",
+         "version" : "1.1004",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,47 @@
+{
+   "author" : "MAUKE",
+   "distribution" : "Function-Parameters",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MAUKE/Function-Parameters-2.002006.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "a1ca7fe6a5ba179a3c6da84065a125a0d60dc8ecee1091e9521b43281e15b86a",
+         "module" : "Function::Parameters",
+         "observed_at" : "2026-11-06T17:06:46Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ec36c5d891f31a90a6b6d6198d983a5974603ad5eb4f9376af807ac37493f9a2",
+         "status" : "failed",
+         "version" : "2.002006",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

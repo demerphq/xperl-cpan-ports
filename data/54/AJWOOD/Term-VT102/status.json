@@ -1,0 +1,54 @@
+{
+   "author" : "AJWOOD",
+   "distribution" : "Term-VT102",
+   "observations" : [
+      {
+         "cpan_path" : "A/AJ/AJWOOD/Term-VT102-0.91.tar.gz",
+         "id" : "3f53a81e6d06ea3fe4b31d1a6d50481ad1de2aa169b7b509921ea8aa4189c58a",
+         "module" : "Term::VT102",
+         "observed_at" : "2026-11-06T17:03:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f954e0310941d45c0fc3eb4a40f5d3a00d68119e277d303a1e6af11ded6fbd94",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=85",
+         "version" : "0.91",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

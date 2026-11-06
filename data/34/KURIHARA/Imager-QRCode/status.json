@@ -1,0 +1,54 @@
+{
+   "author" : "KURIHARA",
+   "distribution" : "Imager-QRCode",
+   "observations" : [
+      {
+         "cpan_path" : "K/KU/KURIHARA/Imager-QRCode-0.035.tar.gz",
+         "id" : "cc45f01a73d42d330e7c3c3bf871f98e840eebe7002cfb667abd76b5a3e5acd0",
+         "module" : "Imager::QRCode",
+         "observed_at" : "2026-11-06T17:09:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2a848deba29eb3942c44709a6853e318acab0c468cbfedbb9baae54760032513",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=9",
+         "version" : "0.035",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

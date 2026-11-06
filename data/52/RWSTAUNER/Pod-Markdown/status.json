@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "R/RW/RWSTAUNER/Pod-Markdown-3.400.tar.gz",
+         "id" : "a1257de044ad47fa498ee464e26052a72d58e0497e233633e4f713f0e17db368",
+         "module" : "Pod::Markdown",
+         "observed_at" : "2026-11-06T17:07:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a626e99bcd4e7d214e43d4722a54e3aafac3713862f7479cfb94a0e2879f8442",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=356",
+         "version" : "3.400",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RW/RWSTAUNER/Pod-Markdown-3.400.tar.gz",
          "id" : "f9462b6684bfc4d06325df71a0a1bda673d6746c867aef6856db34f5c7f619d7",
          "module" : "Pod::Markdown",
          "observed_at" : "2026-11-06T17:15:22Z",

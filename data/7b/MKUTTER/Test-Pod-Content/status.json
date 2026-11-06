@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/MK/MKUTTER/Test-Pod-Content-v0.0.6.tar.gz",
+         "id" : "9f4145fee42243706510fc8131252b3409381da2686f0cec96d618546963e0bd",
+         "module" : "Test::Pod::Content",
+         "observed_at" : "2026-11-06T17:05:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "752bd838c75e113c176e36cb4a5f41b4b34b44bd13d607a92dc7bdf3c903975c",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=4",
+         "version" : "v0.0.6",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MK/MKUTTER/Test-Pod-Content-v0.0.6.tar.gz",
          "id" : "1c06c0920b5e8d113ab813e19594fb53deddd5b2a966c32b3153a2d80354fb05",
          "module" : "Test::Pod::Content",
          "observed_at" : "2026-11-06T17:12:26Z",

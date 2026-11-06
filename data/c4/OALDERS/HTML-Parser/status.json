@@ -231,6 +231,59 @@
          "test_summary" : "Files=50, Tests=475",
          "version" : "3.86",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "id" : "6ebca503a83dccb0c3c20f5bf9c6fa62b70013d363930aeb6ed2fc79ed938508",
+         "module" : "HTML::Parser",
+         "observed_at" : "2026-11-06T17:06:31Z",
+         "patch_set" : "stable-entity-value",
+         "patch_sha256" : [
+            "c41ba0b487a418932f2c4c3cd95db28dece11ec740a90e3fe903988df8b1c8cd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=481",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

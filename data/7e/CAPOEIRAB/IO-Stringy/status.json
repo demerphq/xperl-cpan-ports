@@ -88,6 +88,53 @@
          "test_summary" : "Files=8, Tests=127",
          "version" : "2.113",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CA/CAPOEIRAB/IO-Stringy-2.113.tar.gz",
+         "id" : "d38d01bcb25e4504a684af9960fe586e9e24eb7623e96117a61752b4fb1ebaa3",
+         "module" : "IO::Scalar",
+         "observed_at" : "2026-11-06T17:04:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "51220fcaf9f66a639b69d251d7b0757bf4202f4f9debd45bdd341a6aca62fe4e",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=127",
+         "version" : "2.113",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

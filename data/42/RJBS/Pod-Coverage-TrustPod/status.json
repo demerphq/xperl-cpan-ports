@@ -41,6 +41,53 @@
          "test_summary" : "Files=3, Tests=12",
          "version" : "0.100006",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Pod-Coverage-TrustPod-0.100006.tar.gz",
+         "id" : "ffafac2ac909bb727fce54e1af7b2961b988d2fd592428c717e56eafa61fcff2",
+         "module" : "Pod::Coverage::TrustPod",
+         "observed_at" : "2026-11-06T17:06:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "358adc2504f039eb69098aa99bdde6ae9dc935364a8e144f6405e8293b3a7ca3",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=12",
+         "version" : "0.100006",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

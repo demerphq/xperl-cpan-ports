@@ -1,0 +1,54 @@
+{
+   "author" : "SFINK",
+   "distribution" : "Math-Calc-Units",
+   "observations" : [
+      {
+         "cpan_path" : "S/SF/SFINK/Math-Calc-Units-1.07.tar.gz",
+         "id" : "6d981345024cb136c36c3314a252ba3997da91396d6df76c7e7f3163987474b8",
+         "module" : "Math::Calc::Units",
+         "observed_at" : "2026-11-06T17:07:04Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "61e3cfdb27bb3bee27beb97124dd930760e1039edc1eb7816c2f5627765f8f8f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=79",
+         "version" : "1.07",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -86,6 +86,59 @@
          "test_summary" : "Files=8, Tests=101",
          "version" : "1.38",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JA/JACOBY/Expect-1.38.tar.gz",
+         "id" : "3d3c0639879e95cc2d7777b55efd2480b601c243928ed21802ed4f2e123eed04",
+         "module" : "Expect",
+         "observed_at" : "2026-11-06T17:09:30Z",
+         "patch_set" : "xperl-version-banner",
+         "patch_sha256" : [
+            "dc29036862d1fd4318b1db12eb321d4cf14bb85ae115d3d37e07b7a953c149d8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7b1048335f327958903867cea079dc072ea07f4eafae1b40c2e6f25db21686c0",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=101",
+         "version" : "1.38",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

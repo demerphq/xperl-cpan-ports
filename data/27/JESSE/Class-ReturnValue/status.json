@@ -1,0 +1,54 @@
+{
+   "author" : "JESSE",
+   "distribution" : "Class-ReturnValue",
+   "observations" : [
+      {
+         "cpan_path" : "J/JE/JESSE/Class-ReturnValue-0.55.tar.gz",
+         "id" : "2b65db7a0e5d4d26eee22a6882d683784faf64cc4b170fdb7306d5d1abd38533",
+         "module" : "Class::ReturnValue",
+         "observed_at" : "2026-11-06T17:04:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "ed3836885d78f734ccd7a98550ec422a616df7c31310c1b7b1f6459f5fb0e4bd",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=32",
+         "version" : "0.55",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

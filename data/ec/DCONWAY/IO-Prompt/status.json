@@ -41,6 +41,53 @@
          "test_summary" : "Files=3, Tests=3",
          "version" : "0.997004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCONWAY/IO-Prompt-0.997004.tar.gz",
+         "id" : "9b6c6ff6dc60c878f068bf7fc28591e2c6d800600ef8d0eba83ce05c63f399a3",
+         "module" : "IO::Prompt",
+         "observed_at" : "2026-11-06T17:06:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f17bb305ee6ac8b5b203e6d826eb940c4f3f6d6f4bfe719c3b3a225f46f58615",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=3",
+         "version" : "0.997004",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

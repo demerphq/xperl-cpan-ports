@@ -1,0 +1,54 @@
+{
+   "author" : "DAMS",
+   "distribution" : "Action-Retry",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAMS/Action-Retry-0.24.tar.gz",
+         "id" : "5c4aee3e4325f47592d7e0a98962852036026dd6b64146038f2b9a4831a69996",
+         "module" : "Action::Retry",
+         "observed_at" : "2026-11-06T17:09:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a3759742c5bef2d1975ab73d35499d8113324919b24936130255cff07d0294f7",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=30",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

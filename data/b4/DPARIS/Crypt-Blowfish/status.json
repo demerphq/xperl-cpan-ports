@@ -4,6 +4,52 @@
    "observations" : [
       {
          "cpan_path" : "D/DP/DPARIS/Crypt-Blowfish-2.14.tar.gz",
+         "id" : "80603356ea84619d297108b1233d6c4a1e9ad89d13720a370d637c1a92e61233",
+         "module" : "Crypt::Blowfish",
+         "observed_at" : "2026-11-06T17:04:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "46b3431ffb6bf5b9cb359f79565d48407e652ad2b04fdf5ca62a69e7197a67b1",
+         "status" : "installed",
+         "version" : "2.14",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DP/DPARIS/Crypt-Blowfish-2.14.tar.gz",
          "id" : "0d2b69c7bbe0d836daab2214042b564ebb2ba3bde02b771828890fdfa927ec79",
          "module" : "Crypt::Blowfish",
          "observed_at" : "2026-11-06T17:10:01Z",

@@ -1,0 +1,54 @@
+{
+   "author" : "IZUT",
+   "distribution" : "Common-CLI",
+   "observations" : [
+      {
+         "cpan_path" : "I/IZ/IZUT/Common-CLI-0.04.tar.gz",
+         "id" : "e63d4dd1d6548f574292784f7b2aedc31988e27597299d98f669f25bebf40349",
+         "module" : "Common::CLI",
+         "observed_at" : "2026-11-06T17:07:30Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "452c82fd1746d7cf8e82447ce175a9792b77aa47887dff49bbd9f4976f67ee5f",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=15",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/ML/MLEHMANN/common-sense-3.75.tar.gz",
+         "id" : "9111aeb930ec2d7e4dbda8067d47dd441afaa506e2587750fe3f387f0393d472",
+         "module" : "common::sense",
+         "observed_at" : "2026-11-06T17:05:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a86a1c4ca4f3006d7479064425a09fa5b6689e57261fcb994fe67d061cba0e7e",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=2",
+         "version" : "3.75",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/common-sense-3.75.tar.gz",
          "id" : "ff0458fa9922194a3c38bf0b7c560ab06db0eaa08cfaeb2e69353f9c039ed937",
          "module" : "common::sense",
          "observed_at" : "2026-11-06T17:12:33Z",

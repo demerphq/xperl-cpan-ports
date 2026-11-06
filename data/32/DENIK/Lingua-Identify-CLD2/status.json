@@ -1,0 +1,47 @@
+{
+   "author" : "DENIK",
+   "distribution" : "Lingua-Identify-CLD2",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DENIK/Lingua-Identify-CLD2-0.03.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "cbd5334b59d66ac09e8ff94674c5da5aced4faca14713aa150bcb4b7ac5872b5",
+         "module" : "Lingua::Identify::CLD2",
+         "observed_at" : "2026-11-06T17:07:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cb65ada7d017db31ddbe34ab19de166b31ef40e0bc576f75839a073c35e2b603",
+         "status" : "failed",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

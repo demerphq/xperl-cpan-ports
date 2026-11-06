@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "E/EX/EXODIST/Importer-0.026.tar.gz",
+         "id" : "b95a30542c8ff9b5255fb3d24b57195f137f63e116b61e864b16099f7088fd44",
+         "module" : "Importer",
+         "observed_at" : "2026-11-06T17:04:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e08fa84e13cb998b7a897fc8ec9c3459fcc1716aff25cc343e36ef875891b0ef",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=41",
+         "version" : "0.026",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/EX/EXODIST/Importer-0.026.tar.gz",
          "id" : "55c201da309dbff10eaf067b3923787db592c8baf7da4e9d41bdd20520589aa8",
          "module" : "Importer",
          "observed_at" : "2026-11-06T17:10:23Z",

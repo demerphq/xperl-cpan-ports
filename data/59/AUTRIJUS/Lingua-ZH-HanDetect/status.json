@@ -1,0 +1,54 @@
+{
+   "author" : "AUTRIJUS",
+   "distribution" : "Lingua-ZH-HanDetect",
+   "observations" : [
+      {
+         "cpan_path" : "A/AU/AUTRIJUS/Lingua-ZH-HanDetect-0.04.tar.gz",
+         "id" : "3428204ccae56684e9bc03e3bb6ffc2c6e6998e93c5d7b99ff6bc3e705265008",
+         "module" : "Lingua::ZH::HanDetect",
+         "observed_at" : "2026-11-06T17:03:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "92cff3451d13103afbdca1268c3dc51ab93343233a06b63d45f11d9a53d29aec",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=7",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

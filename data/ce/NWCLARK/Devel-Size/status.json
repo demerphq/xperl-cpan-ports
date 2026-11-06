@@ -1,0 +1,47 @@
+{
+   "author" : "NWCLARK",
+   "distribution" : "Devel-Size",
+   "observations" : [
+      {
+         "cpan_path" : "N/NW/NWCLARK/Devel-Size-0.87.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "26b1b348a4e63458519bb6e66d51cbe6265d08b0bb44884b608e83145cee5292",
+         "module" : "Devel::Size",
+         "observed_at" : "2026-11-06T17:06:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47",
+         "status" : "failed",
+         "version" : "0.87",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

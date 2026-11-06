@@ -41,6 +41,53 @@
          "test_summary" : "Files=4, Tests=15",
          "version" : "0.04",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BIGPRESH/Data-Censor-0.04.tar.gz",
+         "id" : "b9e98dd0d422e3fee9bfc587b1ffb8b8c6243b094573727b4c48d0db05567792",
+         "module" : "Data::Censor",
+         "observed_at" : "2026-11-06T17:10:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b713694b004362ba799baca9ee96a5d1c45a5e297711e3312f741ef511e2cc83",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=15",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

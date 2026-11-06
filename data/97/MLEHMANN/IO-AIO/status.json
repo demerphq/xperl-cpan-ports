@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "M/ML/MLEHMANN/IO-AIO-4.81.tar.gz",
+         "id" : "04d379c8e45a8e4d9d3f311ddd8687c6bffa046a64dcac1f032b089f78bea4f5",
+         "module" : "IO::AIO",
+         "observed_at" : "2026-11-06T17:05:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "67029f20e9b734ac1f483f7175d4ce45f924581c7de8fdf44e20c79be6dc0729",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=67",
+         "version" : "4.81",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/IO-AIO-4.81.tar.gz",
          "id" : "31327243ded115c25a1b4c57d31a123638a4d4bfab5e463c6c5f8329364847c6",
          "module" : "IO::AIO",
          "observed_at" : "2026-11-06T17:12:53Z",

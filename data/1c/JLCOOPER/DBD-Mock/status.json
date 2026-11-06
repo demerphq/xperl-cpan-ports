@@ -1,0 +1,54 @@
+{
+   "author" : "JLCOOPER",
+   "distribution" : "DBD-Mock",
+   "observations" : [
+      {
+         "cpan_path" : "J/JL/JLCOOPER/DBD-Mock-1.60.tar.gz",
+         "id" : "579c6bb0f4f7293d5b5e2b2fa7c168601403fe9dcfd32b5b1490d766fb2351b4",
+         "module" : "DBD::Mock",
+         "observed_at" : "2026-11-06T17:05:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "507ba08f5ec5ca7d8543a0142539998444efa6ae5686673fef40502a80abae82",
+         "status" : "installed",
+         "test_summary" : "Files=42, Tests=872",
+         "version" : "1.60",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

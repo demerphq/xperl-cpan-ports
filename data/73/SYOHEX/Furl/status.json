@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "S/SY/SYOHEX/Furl-3.15.tar.gz",
+         "id" : "ea9154911dbdb96e4600f28e9a58f4b154eb682684bf415ccc4495797652092b",
+         "module" : "Furl",
+         "observed_at" : "2026-11-06T17:11:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dc77c95559336b36bb8238dfc10d40dd811fc63c306f333b83f0179b0388ae31",
+         "status" : "installed",
+         "test_summary" : "Files=53, Tests=216",
+         "version" : "3.15",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SY/SYOHEX/Furl-3.15.tar.gz",
          "id" : "9d5a1be438df4543ebfec10844600e18d9a0a4241341dc7543635ef677b1833e",
          "module" : "Furl",
          "observed_at" : "2026-11-06T17:17:52Z",

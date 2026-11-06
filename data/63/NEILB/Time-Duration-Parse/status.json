@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=2051",
          "version" : "0.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Time-Duration-Parse-0.16.tar.gz",
+         "id" : "e757a541bbbec2ea52133da0728c59822299d161be67033d26639e7e06dafae4",
+         "module" : "Time::Duration::Parse",
+         "observed_at" : "2026-11-06T17:06:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1084a6463ee2790f99215bd76b135ca45afe2bfa6998fa6fd5470b69e1babc12",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=2051",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

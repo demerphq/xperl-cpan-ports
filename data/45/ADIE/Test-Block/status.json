@@ -1,0 +1,53 @@
+{
+   "author" : "ADIE",
+   "distribution" : "Test-Block",
+   "observations" : [
+      {
+         "cpan_path" : "A/AD/ADIE/Test-Block-0.13.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "da068c2ab391714f3e755bb00de0ac6ae734ef42d4a37791e37ded4db2a2f2ad",
+         "module" : "Test::Block",
+         "observed_at" : "2026-11-06T17:05:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3dd81b5aafba85b097985faa071886ec55749732fb49c55669d8b0fc0d1d391b",
+         "status" : "failed",
+         "test_summary" : "Files=6, Tests=26, Failed 2/6 test programs. 4/26 subtests failed.",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

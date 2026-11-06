@@ -1,0 +1,54 @@
+{
+   "author" : "TOKUHIROM",
+   "distribution" : "Devel-CheckBin",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/Devel-CheckBin-0.04.tar.gz",
+         "id" : "97c2f237db8f21f738909a42a30ece1a146db1f06cb3bbdab0757d637a914103",
+         "module" : "Devel::CheckBin",
+         "observed_at" : "2026-11-06T17:08:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "157f3db59c29ed1d49133a469cee772c885ad4ee64e8692a91b3ebfdbe2fe3e4",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=5",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

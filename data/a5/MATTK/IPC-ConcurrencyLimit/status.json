@@ -1,0 +1,54 @@
+{
+   "author" : "MATTK",
+   "distribution" : "IPC-ConcurrencyLimit",
+   "observations" : [
+      {
+         "cpan_path" : "M/MA/MATTK/IPC-ConcurrencyLimit-0.17.tar.gz",
+         "id" : "dfcab9fe27b80296cba03fab040abf43895980eef567a102f173918b77abeb64",
+         "module" : "IPC::ConcurrencyLimit",
+         "observed_at" : "2026-11-06T17:05:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2e4d75be52e90fc605837d5a8e9fb269c0a87dd3d361f3012c0ff94a5fbdcfef",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=75",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

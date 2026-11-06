@@ -1,0 +1,55 @@
+{
+   "author" : "BIGFOOT",
+   "distribution" : "Amazon-S3",
+   "observations" : [
+      {
+         "cpan_path" : "B/BI/BIGFOOT/Amazon-S3-2.1.2.tar.gz",
+         "id" : "043fc8950d3dc8e90f6d7a63b1008c7fa512ae1e5a0a963e0bbcb2be4155bc04",
+         "module" : "Amazon::S3",
+         "module_version" : "v2.1.2",
+         "observed_at" : "2026-11-06T17:09:53Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7490335e3d54774dc782de8e620920afde8a4f7344371db3d56233293ce95cba",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=56",
+         "version" : "2.1.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

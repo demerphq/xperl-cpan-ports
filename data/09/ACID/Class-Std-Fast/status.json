@@ -4,6 +4,54 @@
    "observations" : [
       {
          "cpan_path" : "A/AC/ACID/Class-Std-Fast-v0.0.8.tar.gz",
+         "id" : "0cc5cda0abb81957a3db5bab9138a63cb64c90661c9541a849245c3ad125785b",
+         "module" : "Class::Std::Fast",
+         "module_version" : "0.000008",
+         "observed_at" : "2026-11-06T17:05:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1bd43763c6a373183097a30e787f5d6713b0db27511c52d533266b59d2cfa780",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=323",
+         "version" : "v0.0.8",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AC/ACID/Class-Std-Fast-v0.0.8.tar.gz",
          "id" : "9f8f696417aab86ac4dc20f697d6cb2176628a20905d71f9c57960815768d8e4",
          "module" : "Class::Std::Fast",
          "module_version" : "0.000008",

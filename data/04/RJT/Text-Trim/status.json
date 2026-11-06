@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "R/RJ/RJT/Text-Trim-1.04.tar.gz",
+         "id" : "c7dccbde01203f1c789416b8d12dc08df9793916909844e3b07d52a5189b22e3",
+         "module" : "Text::Trim",
+         "observed_at" : "2026-11-06T17:06:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d5878a9079d33cd1766cf6abc44cd625bd00a0213d2ce8e3143fe6944abaaa11",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=64",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJT/Text-Trim-1.04.tar.gz",
          "id" : "3eeaaa75060f36d55d78f99862f3e6d63f4392528ba19e220fe676709b03f891",
          "module" : "Text::Trim",
          "observed_at" : "2026-11-06T17:15:07Z",

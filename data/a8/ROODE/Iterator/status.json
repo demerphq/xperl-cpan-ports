@@ -1,0 +1,54 @@
+{
+   "author" : "ROODE",
+   "distribution" : "Iterator",
+   "observations" : [
+      {
+         "cpan_path" : "R/RO/ROODE/Iterator-0.03.tar.gz",
+         "id" : "0a64c836e17cb04973dd2d56db32272af9ce503f53e308dba3fdb60db1b2d3ea",
+         "module" : "Iterator",
+         "observed_at" : "2026-11-06T17:06:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5b88a0434eb04927bd0a65e6f920f3ae6ac39b322e72e1b197018b70b0cef87f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=64",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

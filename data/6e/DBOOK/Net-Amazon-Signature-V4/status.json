@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "D/DB/DBOOK/Net-Amazon-Signature-V4-0.22.tar.gz",
+         "id" : "af53805228bac5e20fa3bc2f3b91df6d7e1820b998facfa33de8641b59b2de32",
+         "module" : "Net::Amazon::Signature::V4",
+         "observed_at" : "2026-11-06T17:06:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "522fea266c8b31a6c3de7e3be5db715972038714a0239bfbbe1fccad4d065cfe",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=126",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DB/DBOOK/Net-Amazon-Signature-V4-0.22.tar.gz",
          "id" : "7aec373892355f4c6dd7d89a7d12b50ae4e1b201d40524e15d9dc2bb8785d612",
          "module" : "Net::Amazon::Signature::V4",
          "observed_at" : "2026-11-06T17:11:27Z",

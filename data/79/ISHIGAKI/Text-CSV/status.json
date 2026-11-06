@@ -41,6 +41,53 @@
          "test_summary" : "Files=40, Tests=52725",
          "version" : "2.06",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IS/ISHIGAKI/Text-CSV-2.06.tar.gz",
+         "id" : "b799f6dfde7ceb217b8ff80a63a7a9960014a40ed56286e5ad06daf885e37fbc",
+         "module" : "Text::CSV",
+         "observed_at" : "2026-11-06T17:04:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dfcaec925a788b0ba41e51bc6d16e21b0e98b4c7af9b79395090add75f5e506f",
+         "status" : "installed",
+         "test_summary" : "Files=40, Tests=52725",
+         "version" : "2.06",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

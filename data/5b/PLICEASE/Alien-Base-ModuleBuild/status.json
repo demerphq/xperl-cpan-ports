@@ -1,0 +1,53 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Alien-Base-ModuleBuild",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-Base-ModuleBuild-1.17.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "test"
+         },
+         "id" : "739980c301e5c3bc45efb9e58cb5db7fa9f31370db5e6933d728a052c5bb96a9",
+         "module" : "Alien::Base::ModuleBuild",
+         "observed_at" : "2026-11-06T17:06:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fe7270ac735adde864e468e21c642a471ba88ba25ad30da94578832132f2b9f4",
+         "status" : "failed",
+         "test_summary" : "Files=9, Tests=56, Failed 1/9 test programs. 2/56 subtests failed.",
+         "version" : "1.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

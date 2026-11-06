@@ -1,0 +1,54 @@
+{
+   "author" : "RJRAY",
+   "distribution" : "Image-Size",
+   "observations" : [
+      {
+         "cpan_path" : "R/RJ/RJRAY/Image-Size-3.300.tar.gz",
+         "id" : "b6285f63c0bcd5f910236943133114b606bda02139545e780528f5a5e92f6a97",
+         "module" : "Image::Size",
+         "observed_at" : "2026-11-06T17:06:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "53c9b1f86531cde060ee63709d1fda73cabc0cf2d581d29b22b014781b9f026b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=24",
+         "version" : "3.300",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

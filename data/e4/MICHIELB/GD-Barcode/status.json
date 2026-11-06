@@ -1,0 +1,54 @@
+{
+   "author" : "MICHIELB",
+   "distribution" : "GD-Barcode",
+   "observations" : [
+      {
+         "cpan_path" : "M/MI/MICHIELB/GD-Barcode-2.02.tar.gz",
+         "id" : "570e7f509d6c720e7d31b77b3dd23690acdd8653f48adcf8fb06f6e8f07132b8",
+         "module" : "GD::Barcode",
+         "observed_at" : "2026-11-06T17:05:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1384dbbe99513d17a16045e6f659110a6dcd11a7a445114a42518bcef08bd2a6",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=37",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

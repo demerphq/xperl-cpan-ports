@@ -41,6 +41,53 @@
          "test_summary" : "Files=3, Tests=3",
          "version" : "0.51",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz",
+         "id" : "410f8de57b35f25e4726177539253a68e68f57f5417b6ab4ce35010206304b91",
+         "module" : "XML::SAX::Expat",
+         "observed_at" : "2026-11-06T17:08:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4c016213d0ce7db2c494e30086b59917b302db8c292dcd21f39deebd9780c83f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=3",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "PLICEASE",
+   "distribution" : "Return-MultiLevel",
+   "observations" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/Return-MultiLevel-0.08.tar.gz",
+         "id" : "ca10f5f0d639fde30e3db5ff93e46caf99f15ba4d2f05441f8e9ce3361a84daa",
+         "module" : "Return::MultiLevel",
+         "observed_at" : "2026-11-06T17:06:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "51b1aef30c5c4009f640267a08589212e87dcd101800f0d20f9c635c9ffe88a1",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=9",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

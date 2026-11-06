@@ -1,0 +1,54 @@
+{
+   "author" : "YVES",
+   "distribution" : "Data-Consumer",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Data-Consumer-0.17.tar.gz",
+         "id" : "719bf085b57db85d6af970f2beb2fc6e4076530f6d79ecfa79a758cafd0b8ab4",
+         "module" : "Data::Consumer",
+         "observed_at" : "2026-11-06T17:10:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "799ba35fa0fe05dcdda03ab8bed6fe7ec6d859e19d0d6525896ad733cf2a3d5b",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=16",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

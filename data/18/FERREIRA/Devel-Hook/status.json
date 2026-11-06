@@ -4,6 +4,53 @@
    "observations" : [
       {
          "cpan_path" : "F/FE/FERREIRA/Devel-Hook-0.011.tar.gz",
+         "id" : "122b43b9eb53622f3fed2c689ffb571be17cab71a6663c5e035626c12f80c47c",
+         "module" : "Devel::Hook",
+         "observed_at" : "2026-11-06T17:04:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3005d45e9da6b8c2a8e77efec1c588d1c69c5e0d7446245aa3cf15e7e2bfaba0",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=65",
+         "version" : "0.011",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FE/FERREIRA/Devel-Hook-0.011.tar.gz",
          "id" : "93ad8b8c65ef57f32b49eb5202c9a6815b78fe94778bd8943c83dc993b42d038",
          "module" : "Devel::Hook",
          "observed_at" : "2026-11-06T17:10:29Z",
