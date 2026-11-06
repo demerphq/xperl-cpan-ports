@@ -84,6 +84,38 @@ my $other_path = File::Spec->catfile($root, 'data', $other_prefix, 'BOB',
 ok(-f $other_path, 'other author has a separate status record');
 is(scalar @{JSON::PP->new->decode(read_file($status_path))->{observations}}, 2,
    'first author retains its observations');
+
+# A result from another platform for the same release and XPerl version is
+# recorded beside the earlier result instead of replacing it.
+my $mac = File::Spec->catdir($root, 'mac', 'work', 'release-d');
+make_path($mac);
+$receipt->{cpan_path} = 'A/AU/AUTHOR/older/Example-Feature-2.0.tar.gz';
+$receipt->{status} = 'failed';
+$receipt->{phases} = [{ name => 'test', exit_status => 1 }];
+$receipt->{platform} = {
+    key => 'darwin/darwin-2level', os => 'darwin', osvers => '25.6.0',
+    archname => 'darwin-2level', cc => 'cc', cc_version => 'clang 21',
+    make => 'make', usethreads => 0, use64bitall => 1,
+    xperl_commit => 'b' x 40,
+};
+write_json(File::Spec->catfile($mac, 'receipt.json'), $receipt);
+is(system($^X, $script, '--cache', File::Spec->catdir($root, 'mac')),
+   0, 'result from another platform imports');
+$status = JSON::PP->new->decode(read_file($status_path));
+my ($mac_observation) =
+    grep { ($_->{platform}{key} // '') eq 'darwin/darwin-2level' }
+    @{$status->{observations}};
+ok($mac_observation, 'observation records its platform');
+is($mac_observation->{platform}{cc_version}, 'clang 21',
+   'platform details are retained');
+my $summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
+like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| unrecorded \| installed \|/,
+     'earlier result without a platform keeps its own summary row');
+like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| darwin\/darwin-2level \| failed \|/,
+     'new platform has a separate summary row');
+$unresolved = read_file(File::Spec->catfile($root, 'status', 'UNRESOLVED.md'));
+like($unresolved, qr/Example-Feature.*darwin\/darwin-2level.*test/,
+     'platform failure is unresolved for that platform only');
 done_testing();
 
 sub write_json {
