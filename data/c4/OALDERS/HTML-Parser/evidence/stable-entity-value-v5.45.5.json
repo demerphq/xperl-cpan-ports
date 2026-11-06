@@ -1,7 +1,7 @@
 {
   "source_sha256": "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
   "patch_set_id": "stable-entity-value",
-  "patch_sha256": "bf5c03b8f926b5003c78aed332bab2d63f1cacc89b777a8b6d729eeedbd8626f",
+  "patch_sha256": "1fa031ce3c1da551fbb57cbbce14acbc1b893c318f7e1b2a8086ab2c26140cca",
   "upstream_pull_request": "https://github.com/libwww-perl/HTML-Parser/pull/72",
   "date": "2026-11-05",
   "platform": "x86_64-linux",

@@ -1,13 +1,14 @@
 --- a/util.c
 +++ b/util.c
-@@ -204,8 +204,13 @@
+@@ -204,8 +204,14 @@
  			repl_len = len;
  			repl_utf8 = orig_utf8;
  		    } else {
 -			repl = SvPV(*svp, repl_len);
 -			repl_utf8 = SvUTF8(*svp);
 +			SV *repl_sv = *svp;
-+			if (!SvPOK(repl_sv) || SvROK(repl_sv) || SvGMAGICAL(repl_sv)) {
++			if (SvGMAGICAL(repl_sv) || SvAMAGIC(repl_sv) ||
++			    (!SvPOK(repl_sv) && !SvROK(repl_sv))) {
 +			    SvREFCNT_inc_simple_void(repl_sv);
 +			    SAVEFREESV(repl_sv);
 +			}
@@ -16,14 +17,15 @@
  		    }
  		}
  		else if (expand_prefix) {
-@@ -219,8 +224,13 @@
+@@ -219,8 +225,14 @@
  				repl_len = len;
  				repl_utf8 = orig_utf8;
  			    } else {
 -				repl = SvPV(*svp, repl_len);
 -				repl_utf8 = SvUTF8(*svp);
 +				SV *repl_sv = *svp;
-+				if (!SvPOK(repl_sv) || SvROK(repl_sv) || SvGMAGICAL(repl_sv)) {
++				if (SvGMAGICAL(repl_sv) || SvAMAGIC(repl_sv) ||
++				    (!SvPOK(repl_sv) && !SvROK(repl_sv))) {
 +				    SvREFCNT_inc_simple_void(repl_sv);
 +				    SAVEFREESV(repl_sv);
 +				}
