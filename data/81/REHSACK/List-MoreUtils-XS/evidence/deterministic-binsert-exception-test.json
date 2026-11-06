@@ -1,0 +1,30 @@
+{
+  "source_sha256": "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+  "patch_set_id": "deterministic-binsert-exception-test",
+  "patch_sha256": "74ea752f86e2bf3e83d0313636b88b74aa48e6514b7c388d5da5685d45691cb1",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "environment": {
+    "Test::LeakTrace": "0.17",
+    "XPERL_VERSION": 1
+  },
+  "failure": "The original test randomly selected either a throwing or non-throwing binsert comparison. Test::LeakTrace warm-up and measurement could take different paths, reporting -46, 0, or +47 leaked scalars.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 61 test files, 4519 tests"
+    },
+    {
+      "command": "20 separate runs of t/xs/binsert.t",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 20 of 20 runs, zero reported leaks in the exception-path test"
+    },
+    {
+      "command": "make test",
+      "interpreter": "Perl v5.36.3",
+      "result": "pass: 61 test files, 4519 tests"
+    }
+  ]
+}

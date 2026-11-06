@@ -1,0 +1,11 @@
+--- a/t/xs/binsert.t
++++ b/t/xs/binsert.t
+@@ -132,7 +132,7 @@
+ leak_free_ok(
+     'binsert with stack-growing and exception' => sub {
+         my @list = map { $_ * 2 } 1 .. 100;
+-        my $elem = int(rand(100)) + 1;
++        my $elem = 100;
+         eval {
+             binsert { grow_stack(); $_ <=> $elem or die "Goal!"; $_ <=> $elem } $elem, @list;
+         };
