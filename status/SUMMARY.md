@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 74 of 2078 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 74 of 2079 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -851,6 +851,7 @@ Unresolved failures: 74 of 2078 release, XPerl, and platform combinations. See [
 | ILMARI | [multidimensional](../data/7d/ILMARI/multidimensional/status.json) | 0.014 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | failed | none |
 | ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | linux/x86_64-linux | installed | none |
+| ILYAZ | [Proc-Spawner](../data/b6/ILYAZ/Proc-Spawner/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILYAZ | [Term-ReadLine-Perl](../data/03/ILYAZ/Term-ReadLine-Perl/status.json) | 1.0303 | v5.45.5 | darwin/darwin-2level | installed | none |
 | INGY | [File-Share](../data/ee/INGY/File-Share/status.json) | 0.27 | v5.45.5 | darwin/darwin-2level | installed | none |
 | INGY | [File-Share](../data/ee/INGY/File-Share/status.json) | 0.27 | v5.45.5 | linux/x86_64-linux | installed | none |

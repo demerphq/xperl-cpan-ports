@@ -1,0 +1,100 @@
+{
+   "author" : "ILYAZ",
+   "distribution" : "Proc-Spawner",
+   "observations" : [
+      {
+         "cpan_path" : "I/IL/ILYAZ/modules/Proc-Spawner-0.08.zip",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "5a9aa8c4d0d422f54e00d7775fa6dcb3ff58d43e6f8980c7d9a733319faf6f2f",
+         "module" : "Proc::Spawner",
+         "observed_at" : "2026-11-06T23:32:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3f50a605b601c6fd098b604b13c3bec4528dff44b2a0de0d07d53ddea6c6c389",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=58, Failed 1/5 test programs. 1/58 subtests failed.",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IL/ILYAZ/modules/Proc-Spawner-0.08.zip",
+         "id" : "9bf878c16763bd06f046faf37b0821faa824c82539cf3e787abf9964dd8bd340",
+         "module" : "Proc::Spawner",
+         "observed_at" : "2026-11-06T23:36:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3f50a605b601c6fd098b604b13c3bec4528dff44b2a0de0d07d53ddea6c6c389",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=58",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
