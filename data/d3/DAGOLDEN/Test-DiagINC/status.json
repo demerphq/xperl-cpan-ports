@@ -95,6 +95,53 @@
          "test_summary" : "Files=4, Tests=29",
          "version" : "0.010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-DiagINC-0.010.tar.gz",
+         "id" : "737d75185a8d6a23006852b5d6a471db4b0677a8c60b1aabdecbc40bb7388fae",
+         "module" : "Test::DiagINC",
+         "observed_at" : "2026-11-06T18:43:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5bcb8d356c509e359d53d869c07efdaa8fee5d6cf99897018b9a914ceb21222e",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=29",
+         "version" : "0.010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

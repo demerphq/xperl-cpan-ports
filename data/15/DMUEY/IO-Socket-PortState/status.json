@@ -48,6 +48,53 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "0.03",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DM/DMUEY/IO-Socket-PortState-0.03.tar.gz",
+         "id" : "ccf2852d94d8d239d1b3fda9fa6955617e94f71ffd0363b99b8162d746c6a106",
+         "module" : "IO::Socket::PortState",
+         "observed_at" : "2026-11-06T18:42:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9b6272699d2afd6f65aaa118e2613da28a9f3ba7a80c30bd0cfb16619db131bc",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

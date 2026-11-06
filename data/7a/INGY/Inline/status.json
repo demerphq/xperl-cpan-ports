@@ -47,6 +47,59 @@
          "test_summary" : "Files=11, Tests=26, Failed 1/11 test programs. 0/26 subtests failed.",
          "version" : "0.87",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IN/INGY/Inline-0.87.tar.gz",
+         "id" : "4d61300791c964d1daaa151eae258322709cab5c2509c86e60b45dab9079d49a",
+         "module" : "Inline",
+         "observed_at" : "2026-11-06T18:42:55Z",
+         "patch_set" : "xperl-exception-text",
+         "patch_sha256" : [
+            "fc95cb6ff5f77bae577360eae7d719e3d75e1a853106553634b81f29ec69b40c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "105e4271ace1c1b5a264d771ff111d8b928b256002888222862c7be9686f39c5",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=33",
+         "version" : "0.87",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

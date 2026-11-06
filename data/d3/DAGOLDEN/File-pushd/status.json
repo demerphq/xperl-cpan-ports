@@ -215,6 +215,53 @@
          "test_summary" : "Files=4, Tests=49",
          "version" : "1.016",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/File-pushd-1.016.tar.gz",
+         "id" : "364083f1280413f9f7d19b95f04d65ded1a3f5f64b0928ba56ae9e6c8924ec03",
+         "module" : "File::pushd",
+         "observed_at" : "2026-11-06T18:42:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d73a7f09442983b098260df3df7a832a5f660773a313ca273fa8b56665f97cdc",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=49",
+         "version" : "1.016",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

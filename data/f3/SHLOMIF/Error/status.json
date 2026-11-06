@@ -139,6 +139,59 @@
          "test_summary" : "Files=15, Tests=63",
          "version" : "0.17031",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHLOMIF/Error-0.17031.tar.gz",
+         "id" : "8c8dc2f12460d0afc609f0818aa907a3195d4bebdde74906d8817f3167ceae9c",
+         "module" : "Error",
+         "observed_at" : "2026-11-06T18:45:15Z",
+         "patch_set" : "objectify-xperl-text-exceptions",
+         "patch_sha256" : [
+            "1d53c3412efa6b04f5df964f25c0cac070fc0d5ee0b61e1c3808c6f4ae41e97d"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "0a85374cf9cbde5a5075f16e62246e5d36abde63ec08c5c5694f128f4546852f",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=63",
+         "version" : "0.17031",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

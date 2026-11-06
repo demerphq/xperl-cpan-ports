@@ -1,0 +1,53 @@
+{
+   "author" : "AVAR",
+   "distribution" : "Data-FlexSerializer",
+   "observations" : [
+      {
+         "cpan_path" : "A/AV/AVAR/Data-FlexSerializer-1.10.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "4fb11c9ba4c847be956c37c88af33b78bad3a3e315c024364aaff4df87d787e4",
+         "module" : "Data::FlexSerializer",
+         "observed_at" : "2026-11-06T18:49:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "dae494a1e242cd691b18a47bcf07faeb04bdff2711aaebbac9023e07daa3c759",
+         "status" : "failed",
+         "test_summary" : "Files=5, Tests=648, Failed 1/5 test programs. 14/648 subtests failed.",
+         "version" : "1.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

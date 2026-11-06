@@ -135,6 +135,53 @@
          "test_summary" : "Files=54, Tests=542",
          "version" : "1.321",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-1.321.tar.gz",
+         "id" : "730f1a8b4fcb79804f39a72c580936d532f35757a8359509c5c7e3d8ba00529e",
+         "module" : "YAML",
+         "observed_at" : "2026-11-06T18:45:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d461167b8b4aa9244f736a7a740830141e61dddee301e456bf642e81d3cea193",
+         "status" : "installed",
+         "test_summary" : "Files=54, Tests=542",
+         "version" : "1.321",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=2817",
          "version" : "2010011301",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AB/ABIGAIL/Digest-Trivial-2010011301.tar.gz",
+         "id" : "91a3a6eaa50e86b27dd091a25f6e0e32ac9ebbe78587bcdd8f1c991543e6671d",
+         "module" : "Digest::Trivial",
+         "observed_at" : "2026-11-06T18:42:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1a70726c34e9b073a58549c6a33f6ba4494e29578c93b748a0077c12788308f2",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=2817",
+         "version" : "2010011301",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

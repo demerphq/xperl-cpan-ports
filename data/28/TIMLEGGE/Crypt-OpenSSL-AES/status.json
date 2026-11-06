@@ -48,6 +48,53 @@
          "test_summary" : "Files=20, Tests=143",
          "version" : "0.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenSSL-AES-0.23.tar.gz",
+         "id" : "0433b7f59c12fa33d534118dbf9879808d2e4451bec17b50c017b42eaf328d08",
+         "module" : "Crypt::OpenSSL::AES",
+         "observed_at" : "2026-11-06T18:45:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "a70bc89c8d5eabde9b83dec7131b756c247b5c1fb8980f23a42bdd47751d4887",
+         "status" : "installed",
+         "test_summary" : "Files=20, Tests=143",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

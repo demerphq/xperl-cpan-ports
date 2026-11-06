@@ -1,0 +1,54 @@
+{
+   "author" : "DANAJ",
+   "distribution" : "Math-Prime-Util",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DANAJ/Math-Prime-Util-0.75.tar.gz",
+         "id" : "bc928d22275ecc436b650553117eb2806eab5c5dd6822312e192f2787a0e83f7",
+         "module" : "Math::Prime::Util",
+         "observed_at" : "2026-11-06T18:42:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "85c17cbeb5927d71f024a2e1f197bff61e1ca6da249053e1683b62c894bb8881",
+         "status" : "installed",
+         "test_summary" : "Files=139, Tests=3764",
+         "version" : "0.75",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -48,6 +48,53 @@
          "test_summary" : "Files=6, Tests=19",
          "version" : "0.047",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHCAT/HBase-JSONRest-0.047.tar.gz",
+         "id" : "b3672c94c6a7043af9f43494ef974cecb52ccb8a25d386b79e5b2912ea102db5",
+         "module" : "HBase::JSONRest",
+         "observed_at" : "2026-11-06T18:44:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "72f8dd9b10e13c1529ff69a930b7869f5d52cda7420196009bfd9597bbebde0d",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=19",
+         "version" : "0.047",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

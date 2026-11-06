@@ -48,6 +48,53 @@
          "test_summary" : "Files=2, Tests=16",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BK/BKB/Convert-Moji-0.11.tar.gz",
+         "id" : "504a9810929541dd16d1c1b7885d2752512b789632c9d9baf2be8b612c184183",
+         "module" : "Convert::Moji",
+         "observed_at" : "2026-11-06T18:42:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "28de563d202fc7cfa229cb7122c9a784a30a3210eb2fe5e6009cfca2130e85d5",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=16",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

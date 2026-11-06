@@ -88,6 +88,53 @@
          "test_summary" : "Files=7, Tests=139",
          "version" : "0.51",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KA/KASEI/Class-Accessor-0.51.tar.gz",
+         "id" : "8be68e1b10fc5b84e066812c629882e0dbd177644809c3a6b1b55d1196be6e32",
+         "module" : "Class::Accessor",
+         "observed_at" : "2026-11-06T18:43:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "bf12a3e5de5a2c6e8a447b364f4f5a050bf74624c56e315022ae7992ff2f411c",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=139",
+         "version" : "0.51",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

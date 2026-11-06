@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=147",
          "version" : "1.24",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BIGPRESH/Business-Tax-VAT-Validation-1.24.tar.gz",
+         "id" : "3f356f8b33f79f71627e994a2cba797a59f22553fa48d1e1a0b73bc133a45b47",
+         "module" : "Business::Tax::VAT::Validation",
+         "observed_at" : "2026-11-06T18:47:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "d4060f4da7c88cdfe7c1b2f0cc3c012b09be7db77d32dac68dd56a204253a2e1",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=147",
+         "version" : "1.24",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=1, Tests=7",
          "version" : "0.03",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-DES_EDE3-0.03.tar.gz",
+         "id" : "2358def09d27704a40aa7e8dd00e894c06fc4998da3547c1ef7f572d347a0a2f",
+         "module" : "Crypt::DES_EDE3",
+         "observed_at" : "2026-11-06T18:45:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "28592db7b9e34745aa91f3e19e5dbbb83aaf472a29e707b9791d0d02b3e227f5",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=7",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

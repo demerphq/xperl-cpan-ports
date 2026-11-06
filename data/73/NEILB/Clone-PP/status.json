@@ -215,6 +215,53 @@
          "test_summary" : "Files=7, Tests=48",
          "version" : "1.09",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NE/NEILB/Clone-PP-1.09.tar.gz",
+         "id" : "ac8f44ae25d4813a62664f121e8fc8f6f2cca2467099b1fd0e28b45b0c72879c",
+         "module" : "Clone::PP",
+         "observed_at" : "2026-11-06T18:43:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4bb44697ef82105bd8d6204e550796a1eea89ce7108a98e0b7bf3ae4700d1c34",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=48",
+         "version" : "1.09",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=8, Tests=33",
          "version" : "0.30",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BI/BINGOS/Module-Install-ReadmeFromPod-0.30.tar.gz",
+         "id" : "e0480aee0676fdbcf28eeea99bd7008421a63d2894e8a697acc0ec3ff03308f5",
+         "module" : "Module::Install::ReadmeFromPod",
+         "observed_at" : "2026-11-06T18:46:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "79f6df5536619faffbda696bdd25ccad17c469bf32e51cd3e613366d49400169",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=33",
+         "version" : "0.30",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

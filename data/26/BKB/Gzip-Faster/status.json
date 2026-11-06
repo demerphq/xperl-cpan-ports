@@ -48,6 +48,53 @@
          "test_summary" : "Files=4, Tests=80",
          "version" : "0.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BK/BKB/Gzip-Faster-0.23.tar.gz",
+         "id" : "0509a21a7a230239cb8542a46bfd610e51955a7a6c76f8e4f2bf1086b811f9eb",
+         "module" : "Gzip::Faster",
+         "observed_at" : "2026-11-06T18:42:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "2290943f1c06f0238cd751cabb218eb6a1ed22a1bee8072c8123dbd98d4b686b",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=80",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -47,6 +47,52 @@
          "test_summary" : "Files=2, Tests=0",
          "version" : "0.01",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PU/PUNYTAN/Emoji-NationalFlag-0.01.tar.gz",
+         "failure" : {
+            "exit_status" : 1,
+            "phase" : "test"
+         },
+         "id" : "511c65dab5d1e1ffbb0b6fd338be49712490d1cc1fe6669c0b8f25413bd0b2d8",
+         "module" : "Emoji::NationalFlag",
+         "observed_at" : "2026-11-06T18:44:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 1,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "19b47bec9c1d9899701ad2031f69333289175bc6a6e8429233a724e0038c805b",
+         "status" : "failed",
+         "test_summary" : "Files=2, Tests=0",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

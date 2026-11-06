@@ -48,6 +48,53 @@
          "test_summary" : "Files=3, Tests=29",
          "version" : "0.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AU/AUDREYT/Encode-HanExtra-0.23.tar.gz",
+         "id" : "95c44fa7cc6b152b6270dfe1117991acbb4170b3baf3d50d7a52089a4e6eea80",
+         "module" : "Encode::HanExtra",
+         "observed_at" : "2026-11-06T18:42:22Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1fd4b06cada70858003af153f94c863b3b95f2e3d03ba18d0451a81d51db443a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=29",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

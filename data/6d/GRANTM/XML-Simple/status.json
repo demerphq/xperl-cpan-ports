@@ -88,6 +88,53 @@
          "test_summary" : "Files=14, Tests=503",
          "version" : "2.25",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "G/GR/GRANTM/XML-Simple-2.25.tar.gz",
+         "id" : "df75d509f1614abe4587aa3f3cf3cb5f0911803fd6074f66bd8aeed935681090",
+         "module" : "XML::Simple",
+         "observed_at" : "2026-11-06T18:46:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "531fddaebea2416743eb5c4fdfab028f502123d9a220405a4100e68fc480dbf8",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=503",
+         "version" : "2.25",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

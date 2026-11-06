@@ -47,6 +47,52 @@
          "test_summary" : "Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed.",
          "version" : "2.73",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHLOMIF/IO-Socket-INET6-2.73.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "6a7a57f6cc23a1f10de5ba49f998b1346fa7868e9be279a5c1895af9384c28ce",
+         "module" : "IO::Socket::INET6",
+         "observed_at" : "2026-11-06T18:48:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b6da746853253d5b4ac43191b4f69a4719595ee13a7ca676a8054cf36e6d16bb",
+         "status" : "failed",
+         "test_summary" : "Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed.",
+         "version" : "2.73",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

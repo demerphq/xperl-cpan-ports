@@ -1,0 +1,54 @@
+{
+   "author" : "FAYLAND",
+   "distribution" : "Lingua-Han-PinYin",
+   "observations" : [
+      {
+         "cpan_path" : "F/FA/FAYLAND/Lingua-Han-PinYin-0.23.tar.gz",
+         "id" : "a2393919240add28bcab029ccb7b8e214d1bf1aa8c8543c57164d34797a8741e",
+         "module" : "Lingua::Han::PinYin",
+         "observed_at" : "2026-11-06T18:42:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "283632c44b1e964e9402807b6c53761c079d5bd443436d2d6ea5767d35e85cab",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=51",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

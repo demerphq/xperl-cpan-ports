@@ -47,6 +47,59 @@
          "test_summary" : "Files=8, Tests=87, Failed 1/8 test programs. 2/87 subtests failed.",
          "version" : "0.24",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LB/LBAXTER/Sys-SigAction-0.24.tar.gz",
+         "id" : "5d404d551eeca65d1fc7a0732ee874de6bbc8ffeb49c4da0041fa63730dc1436",
+         "module" : "Sys::SigAction",
+         "observed_at" : "2026-11-06T18:43:32Z",
+         "patch_set" : "xperl-exception-object",
+         "patch_sha256" : [
+            "cb50c9d9d2a1e2e75c360e09b99dac866f0946d4fdd89845c41e14260bec5b3d"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "e04c9a7fdf745d3e9cd9e8b2d5a46d826ba958c5e1e0c48b3cd132bb15396255",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=87",
+         "version" : "0.24",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

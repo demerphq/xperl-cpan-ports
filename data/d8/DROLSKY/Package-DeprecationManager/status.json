@@ -215,6 +215,53 @@
          "test_summary" : "Files=3, Tests=30",
          "version" : "0.18",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Package-DeprecationManager-0.18.tar.gz",
+         "id" : "0801f2c82e3a8b96ba94388a5cef38578d657bda56aa9186d55e0ee30ece5234",
+         "module" : "Package::DeprecationManager",
+         "observed_at" : "2026-11-06T18:46:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b68d3f0ced55b7615fddbb6029b89f92a34fe0dd8c6fd6bceffc157d56834fe8",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=30",
+         "version" : "0.18",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=18, Tests=1002",
          "version" : "0.40",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NI/NIERLEIN/Monitoring-Plugin-0.40.tar.gz",
+         "id" : "1b31c08c62fc59533d2f86837819de1aaec3077fcd78bcb87d0e4ca629fd4968",
+         "module" : "Monitoring::Plugin",
+         "observed_at" : "2026-11-06T18:46:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "f8ba6b7e27d2bb0a4f9a32955a2442d4e428d1c48b80c8b12142ff611be7236f",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=1002",
+         "version" : "0.40",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

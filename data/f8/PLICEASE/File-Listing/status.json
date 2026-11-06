@@ -215,6 +215,53 @@
          "test_summary" : "Files=2, Tests=6",
          "version" : "6.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/File-Listing-6.16.tar.gz",
+         "id" : "c07c59cf218c50265d9f00c91fbe266aadc03820d2921f7ee734e292ef25d655",
+         "module" : "File::Listing",
+         "observed_at" : "2026-11-06T18:44:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "189b3a13fc0a1ba412b9d9ec5901e9e5e444cc746b9f0156d4399370d33655c6",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=6",
+         "version" : "6.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

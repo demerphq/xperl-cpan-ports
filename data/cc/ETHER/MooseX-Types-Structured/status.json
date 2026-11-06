@@ -95,6 +95,53 @@
          "test_summary" : "Files=23, Tests=362",
          "version" : "0.36",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/MooseX-Types-Structured-0.36.tar.gz",
+         "id" : "e442f3039e907aab40e817ef3dbdd4ad185f82f8f8c461f411f8789be676a052",
+         "module" : "MooseX::Types::Structured",
+         "observed_at" : "2026-11-06T18:48:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "43cdb652f9638723e3577cb0f8b5468620244c9636e7659811e5b4a801603d57",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=352",
+         "version" : "0.36",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,6 +48,53 @@
          "test_summary" : "Files=2, Tests=6",
          "version" : "1.112071",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MITHALDU/Test-InDistDir-1.112071.tar.gz",
+         "id" : "8242c2a02b3a1a4b6c8a00cb0705eb45d16c21bc8671c638bbf8820f901710ac",
+         "module" : "Test::InDistDir",
+         "observed_at" : "2026-11-06T18:43:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "922c5c63314f406f4cbb35ec423ac2154d2c2b71a65addb7732c9d240a83fefb",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=6",
+         "version" : "1.112071",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

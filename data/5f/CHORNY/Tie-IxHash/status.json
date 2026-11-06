@@ -215,6 +215,53 @@
          "test_summary" : "Files=3, Tests=28",
          "version" : "1.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "C/CH/CHORNY/Tie-IxHash-1.23.tar.gz",
+         "id" : "ebbb16a1eca7dd9622fdc467e8cd893b4c5ff8931e81e3886f4306b50ba581fb",
+         "module" : "Tie::IxHash",
+         "observed_at" : "2026-11-06T18:42:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "fabb0b8c97e67c9b34b6cc18ed66f6c5e01c55b257dcf007555e0b027d4caf56",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=28",
+         "version" : "1.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

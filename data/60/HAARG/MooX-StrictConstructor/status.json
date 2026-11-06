@@ -95,6 +95,53 @@
          "test_summary" : "Files=3, Tests=23",
          "version" : "0.013",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/MooX-StrictConstructor-0.013.tar.gz",
+         "id" : "c6d608ebae73d0bd0296694ff809404b8ff0444c5b5d214f9272b6acc129985c",
+         "module" : "MooX::StrictConstructor",
+         "observed_at" : "2026-11-06T18:44:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b956a4a0fef3e48837a573b89d99dfb399fff89012ca77e7d80d7d76f04b4e9b",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=23",
+         "version" : "0.013",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

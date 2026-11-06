@@ -1,0 +1,54 @@
+{
+   "author" : "HUGMEIR",
+   "distribution" : "fs-Promises",
+   "observations" : [
+      {
+         "cpan_path" : "H/HU/HUGMEIR/fs-Promises-0.04.tar.gz",
+         "id" : "2549c30bdaf96f57615715f22884cb82c26a817939bfc0a2e680474a540ddc50",
+         "module" : "fs::Promises",
+         "observed_at" : "2026-11-06T18:48:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "b38cea9431fb0d284d2e20f9a915b26be044fa3869be3875e9a7115e67a6d335",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "0.04",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

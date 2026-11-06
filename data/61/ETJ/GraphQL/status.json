@@ -1,0 +1,53 @@
+{
+   "author" : "ETJ",
+   "distribution" : "GraphQL",
+   "observations" : [
+      {
+         "cpan_path" : "E/ET/ETJ/GraphQL-0.54.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "06929ff2b875dfdf5128a2fc5267f7f46b5a2bfce53eb0bc7741a09fb8ba955f",
+         "module" : "GraphQL",
+         "observed_at" : "2026-11-06T18:48:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "8872958e1b39cb31421b89243e91628968c62ece1f72151fd269698f169d68e5",
+         "status" : "failed",
+         "test_summary" : "Files=24, Tests=387, Failed 2/24 test programs. 3/387 subtests failed.",
+         "version" : "0.54",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

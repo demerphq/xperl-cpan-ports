@@ -48,6 +48,53 @@
          "test_summary" : "Files=88, Tests=9249",
          "version" : "0.9735",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETJ/Graph-0.9735.tar.gz",
+         "id" : "2dfa0eec292eeffc555f6271988658b6b45011fff4a36821bf717250ca06998d",
+         "module" : "Graph",
+         "observed_at" : "2026-11-06T18:45:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5c9a51f89efe7a36db288590bf66753f2417afd41b82363e39f2f3101d498065",
+         "status" : "installed",
+         "test_summary" : "Files=88, Tests=9230",
+         "version" : "0.9735",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

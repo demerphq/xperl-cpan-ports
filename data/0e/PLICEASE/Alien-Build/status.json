@@ -139,6 +139,59 @@
          "test_summary" : "Files=87, Tests=443",
          "version" : "2.88",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+         "id" : "657f5c97c590f7a9d5b390a8bf9ea509ce78517f8bce1936698a6b22473dfa6c",
+         "module" : "Alien::Base::Wrapper",
+         "observed_at" : "2026-11-06T18:44:35Z",
+         "patch_set" : "render-caught-errors",
+         "patch_sha256" : [
+            "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+         "status" : "installed",
+         "test_summary" : "Files=87, Tests=443",
+         "version" : "2.88",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

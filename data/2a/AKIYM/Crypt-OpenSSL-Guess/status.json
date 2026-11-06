@@ -95,6 +95,53 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "0.15",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AK/AKIYM/Crypt-OpenSSL-Guess-0.15.tar.gz",
+         "id" : "95f46ce7a17714ee0f96e638d861fb7ce5008df7fb93b26646bc4458d72b0b75",
+         "module" : "Crypt::OpenSSL::Guess",
+         "observed_at" : "2026-11-06T18:42:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1c5033381819fdb4c9087dd291b90ec70e7810d31d57eade9b388eccfd70386d",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=1, Tests=10",
          "version" : "0.004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Sub-Infix-0.004.tar.gz",
+         "id" : "c2528d7525d2829ee74716f1c0cd181a9cebe54e945faa8275882c3a5da8606b",
+         "module" : "Sub::Infix",
+         "observed_at" : "2026-11-06T18:45:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "5caeaada66ab4afdfdae56c023e099880543a9a7c1f931f20a834d5881c15ecb",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=10",
+         "version" : "0.004",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

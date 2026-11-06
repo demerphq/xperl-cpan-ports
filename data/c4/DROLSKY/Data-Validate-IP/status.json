@@ -95,6 +95,53 @@
          "test_summary" : "Files=4, Tests=4171",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DR/DROLSKY/Data-Validate-IP-0.31.tar.gz",
+         "id" : "bc1c39e7caac4f8245b199243fb17d8f2fb9bd0f387b23189c787e3add88cea9",
+         "module" : "Data::Validate::IP",
+         "observed_at" : "2026-11-06T18:46:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "734aff86b6f9cad40e1c4da81f28faf18e0802c76a566d95e5613d4318182fc1",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=4171",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

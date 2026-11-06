@@ -97,6 +97,54 @@
          "test_summary" : "Files=4, Tests=3",
          "version" : "v2026.2",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HU/HURRICUP/Devel-Camelcadedb-v2026.2.tar.gz",
+         "id" : "e02d8d980d10754431cc3c89e74a33811e72c9a8d09f5738f58002dc51d801a9",
+         "module" : "Devel::Camelcadedb",
+         "module_version" : "2026.200",
+         "observed_at" : "2026-11-06T18:44:57Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9f7734b394bcd8779b0acbe3e299948bf86dde779555ffb0a794a260cdb530ad",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=3",
+         "version" : "v2026.2",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

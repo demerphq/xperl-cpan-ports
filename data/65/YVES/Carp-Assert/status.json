@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=44",
          "version" : "0.22",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "Y/YV/YVES/Carp-Assert-0.22.tar.gz",
+         "id" : "2f69da6f94f784fa0d32a51e88976cc5cc3ffeb6f6a8db55464087452491b82a",
+         "module" : "Carp::Assert",
+         "observed_at" : "2026-11-06T18:48:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "807ea97c6bed76ac2e4969efba7dae48fefeb9f28797f112671b3ac8a49355f7",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=44",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

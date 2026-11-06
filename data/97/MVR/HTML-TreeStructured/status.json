@@ -47,6 +47,52 @@
          "test_summary" : "Files=1, Tests=1, Failed 1/1 test programs. 1/1 subtests failed.",
          "version" : "1.01",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MV/MVR/HTML-TreeStructured-1.01.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e93b4988c23ee6f524a2b6972afbbd18f045ffd8937acf090fb17b609463f05d",
+         "module" : "HTML::TreeStructured",
+         "observed_at" : "2026-11-06T18:43:58Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "635877fe5d531492f638561f018e166bfc9453c706fb0f9cb8dae878fb422a65",
+         "status" : "failed",
+         "test_summary" : "Files=1, Tests=1, Failed 1/1 test programs. 1/1 subtests failed.",
+         "version" : "1.01",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=2, Tests=9",
          "version" : "0.01",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SN/SNKWATT/Data-Binary-0.01.tar.gz",
+         "id" : "de2835855244d1025c800eecd711c690d0845ee21901670aa3ed9b8317826458",
+         "module" : "Data::Binary",
+         "observed_at" : "2026-11-06T18:45:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4821a2de10ac7108f4dcb284a71b876981b0cb1ea6c5ed6afb177bf2e7cb8d73",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=9",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

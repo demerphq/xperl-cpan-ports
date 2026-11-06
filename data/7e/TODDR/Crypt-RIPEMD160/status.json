@@ -48,6 +48,53 @@
          "test_summary" : "Files=9, Tests=142",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TODDR/Crypt-RIPEMD160-0.14.tar.gz",
+         "id" : "f7a1fc1fd012032f6e01e48eff60a6e5d7d62cf7bd3cd1161322e8391b56ceae",
+         "module" : "Crypt::RIPEMD160",
+         "observed_at" : "2026-11-06T18:46:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "676ae30eab1461e7cfd2a75c7f7654c6040183fe793e0852f161e4d3b1c4a287",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=142",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

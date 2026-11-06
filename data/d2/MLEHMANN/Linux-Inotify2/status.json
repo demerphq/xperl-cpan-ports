@@ -48,6 +48,46 @@
          "test_summary" : "Files=2, Tests=6",
          "version" : "2.3",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/Linux-Inotify2-2.3.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "b6e1c4fb56f51a33f5b422a520a4ab77201f474accc93eee65a80ad1d6a8b4ab",
+         "module" : "Linux::Inotify2",
+         "observed_at" : "2026-11-06T18:43:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "cb99150f9ffa51dbc3be5ee98d8e91c98cdfeae22eb88e718f2cf367bf270d17",
+         "status" : "failed",
+         "version" : "2.3",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

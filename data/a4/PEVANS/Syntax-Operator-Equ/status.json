@@ -48,6 +48,53 @@
          "test_summary" : "Files=11, Tests=54",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Syntax-Operator-Equ-0.11.tar.gz",
+         "id" : "2d9dc62ecbf06f5fc836bf62aee1cc15aef76cf219e9a0389fa05ff80678f188",
+         "module" : "Syntax::Operator::Equ",
+         "observed_at" : "2026-11-06T18:44:37Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "28dda068ab7c3f124d6236b9aed9d07a2d6282ec17f7f6077e2fe2e83822ea3f",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=54",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

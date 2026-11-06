@@ -135,6 +135,53 @@
          "test_summary" : "Files=29, Tests=462",
          "version" : "1.720",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PR/PREACTION/Log-Any-1.720.tar.gz",
+         "id" : "5afb5c954d824cd3aafa1153f68e564dedcc1dbb210eccdc19c6489c7fdd0ef2",
+         "module" : "Log::Any",
+         "observed_at" : "2026-11-06T18:44:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "1fa8a6121dce297406f67adbcb4d92db01e9dd85781cb6ef710dc333bb9cfd56",
+         "status" : "installed",
+         "test_summary" : "Files=29, Tests=462",
+         "version" : "1.720",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

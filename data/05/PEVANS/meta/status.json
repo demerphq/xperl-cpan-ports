@@ -48,6 +48,53 @@
          "test_summary" : "Files=14, Tests=169",
          "version" : "0.015",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/meta-0.015.tar.gz",
+         "id" : "7d014cce9bac8825a4b2b9889042f51d70e81e57db0e067d6fb3a93083eabb14",
+         "module" : "meta",
+         "observed_at" : "2026-11-06T18:44:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "04eae3e0a124eb2479ebd9a167319f4db4d920be65e59e16ae0cd6cf7e59e6a5",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=169",
+         "version" : "0.015",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

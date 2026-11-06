@@ -48,6 +48,53 @@
          "test_summary" : "Files=26, Tests=267",
          "version" : "1.45",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SR/SREZIC/Image-Info-1.45.tar.gz",
+         "id" : "7e09bd3e3b8bee95388cde535e1bd5a9c4228551358c69e86cf8324d0d73f05f",
+         "module" : "Image::Info",
+         "observed_at" : "2026-11-06T18:45:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d6c1d28c29b137b1a5152e628083d8437577336d8bea191605dda20d55b3539",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=267",
+         "version" : "1.45",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

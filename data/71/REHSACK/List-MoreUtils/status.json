@@ -132,6 +132,52 @@
          "test_summary" : "Files=122, Tests=9066",
          "version" : "0.430",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-0.430.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "ce161cb8b88a0eb98216a8b86486c4d9ce94fff79b1ac08d0cab85b80d9c186e",
+         "module" : "List::MoreUtils",
+         "observed_at" : "2026-11-06T18:46:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "63b1f7842cd42d9b538d1e34e0330de5ff1559e4c2737342506418276f646527",
+         "status" : "failed",
+         "test_summary" : "Files=122, Tests=9066, Failed 1/122 test programs. 1/9066 subtests failed.",
+         "version" : "0.430",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

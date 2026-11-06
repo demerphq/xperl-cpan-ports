@@ -48,6 +48,53 @@
          "test_summary" : "Files=6, Tests=3",
          "version" : "0.007",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BU/BURAK/Hadoop-HDFS-Command-0.007.tar.gz",
+         "id" : "3437d83a459ee95576ee6be1850e8ab3f9b0fe5bbbff7edcc1d06a7da3a37f8d",
+         "module" : "Hadoop::HDFS::Command",
+         "observed_at" : "2026-11-06T18:48:41Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "adff6bd64833b1b4bf3b95596f130ef15ceb6741b9a7233821d435b731e29bda",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=3",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

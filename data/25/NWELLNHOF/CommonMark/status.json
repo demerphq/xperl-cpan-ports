@@ -38,6 +38,43 @@
          "status" : "failed",
          "version" : "0.310100",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "N/NW/NWELLNHOF/CommonMark-0.310100.tar.gz",
+         "failure" : {
+            "exit_status" : 0,
+            "phase" : "configure",
+            "validation_error" : "configure did not produce Makefile"
+         },
+         "id" : "03b9f6998192a6c584c7150381c9b1876f86ba4424b5a307f1cb36af4259a1f7",
+         "module" : "CommonMark",
+         "observed_at" : "2026-11-06T18:45:19Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure",
+               "validation_error" : "configure did not produce Makefile"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "04f361ee304256c41547d222b9f3b590fa22f0cdbb343f61632261a797816171",
+         "status" : "failed",
+         "version" : "0.310100",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

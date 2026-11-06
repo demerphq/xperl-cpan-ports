@@ -48,6 +48,53 @@
          "test_summary" : "Files=2, Tests=27",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Hash-Util-FieldHash-Compat-0.11.tar.gz",
+         "id" : "174b1193034b0e0f6e56b02d7431bcf2b68af5d2500f8896063e134fb93bb2cf",
+         "module" : "Hash::Util::FieldHash::Compat",
+         "observed_at" : "2026-11-06T18:42:23Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "642e46a75b537ba11420b30f8b03403c90a06a15458cd8009f339fe9e5f3741b",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=27",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

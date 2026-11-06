@@ -95,6 +95,53 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SM/SMUELLER/Module-Build-WithXSpp-0.14.tar.gz",
+         "id" : "82ae77da2915ff4a941c6f7aa1b0504d2b92f85ca4abf8a314690130bcde4029",
+         "module" : "Module::Build::WithXSpp",
+         "observed_at" : "2026-11-06T18:45:26Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "53b3c8c8fdbd50fc3dad3d19da20f1b6414ef70665b9311710c802969e746934",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

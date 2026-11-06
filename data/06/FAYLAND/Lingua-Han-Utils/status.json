@@ -1,0 +1,54 @@
+{
+   "author" : "FAYLAND",
+   "distribution" : "Lingua-Han-Utils",
+   "observations" : [
+      {
+         "cpan_path" : "F/FA/FAYLAND/Lingua-Han-Utils-0.13.tar.gz",
+         "id" : "c4d632aaed428acd2e36d6bc7e86112e9934f8c7188b7e1207b95011b645c220",
+         "module" : "Lingua::Han::Utils",
+         "observed_at" : "2026-11-06T18:42:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "981194d943024561c5de8689b518e946f2ed783b5cf87e81049132b5abc164ed",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=11",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

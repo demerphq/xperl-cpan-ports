@@ -93,6 +93,59 @@
          "test_summary" : "Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed.",
          "version" : "1.46",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MA/MARKOV/Log-Report-1.46.tar.gz",
+         "id" : "d3034af98ed81aca9f3b2776e5061f50a264cb92b19f587d939221e9541e5742",
+         "module" : "Log::Report",
+         "observed_at" : "2026-11-06T18:44:38Z",
+         "patch_set" : "xperl-exception-object",
+         "patch_sha256" : [
+            "963442f880c897b6c11a455d1341e4d665a060a277c27304b9158dc27e95c009"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "9d5a72563d9056364579d022cc317c1726e905c70d26f06720e498dc05910e86",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=279",
+         "version" : "1.46",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
