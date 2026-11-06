@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "XML-LibXML",
+  "releases": [
+    {
+      "version": "2.0213",
+      "cpan_path": "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
+      "source_sha256": "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+      "patch_sets": [
+        {
+          "id": "append-croak-location",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/append-croak-location.patch",
+              "sha256": "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3"
+            }
+          ],
+          "recipes": []
+        }
+      ]
+    }
+  ]
+}

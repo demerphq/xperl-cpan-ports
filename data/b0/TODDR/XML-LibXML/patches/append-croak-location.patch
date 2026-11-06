@@ -1,0 +1,11 @@
+--- a/LibXML.xs
++++ b/LibXML.xs
+@@ -2503,7 +2503,7 @@
+     INIT:
+         real_doc = (xmlDocPtr) PmmSvNode(doc);
+         if (real_doc == NULL) {
+-            croak("No document to process!\n");
++            croak("No document to process!");
+             XSRETURN_UNDEF;
+         }
+     CODE:

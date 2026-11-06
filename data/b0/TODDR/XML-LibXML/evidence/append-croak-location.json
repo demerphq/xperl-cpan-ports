@@ -1,0 +1,17 @@
+{
+  "source_sha256": "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+  "patch_set_id": "append-croak-location",
+  "patch_sha256": "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3",
+  "date": "2026-11-06",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "failure": "The XS croak message ends in a newline, suppressing Perl's same-line location suffix while two tests expect that suffix. Removing the newline makes the throw agree with the tests.",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 86 test files, 2652 tests"
+    }
+  ],
+  "ordinary_perl_full_suite": "Not run: the host's ordinary Perl environment lacks Alien::Base::Wrapper at configure time."
+}
