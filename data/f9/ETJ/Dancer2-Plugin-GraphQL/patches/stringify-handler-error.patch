@@ -1,0 +1,23 @@
+--- a/lib/Dancer2/Plugin/GraphQL.pm
++++ b/lib/Dancer2/Plugin/GraphQL.pm
+@@ -97,7 +97,7 @@
+     }
+     my $body = $JSON->decode($app->request->body);
+     my $data = eval { $handler->($app, $body, $EXECUTE) };
+-    $data = { errors => [ { message => $@ } ] } if $@;
++    $data = { errors => [ { message => "$@" } ] } if $@;
+     $app->send_as(JSON => $data);
+   };
+   foreach my $method (@DEFAULT_METHODS) {
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -63,6 +63,9 @@
+ );
+ 
+ sub MY::postamble {
++  # README.md is regenerated with the develop prereq Pod::Markdown; only do
++  # that in an author checkout, not when building a (patched) release
++  return '' if !-d '.git';
+   <<EOF;
+ pure_all :: README.md
+ 
