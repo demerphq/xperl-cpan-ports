@@ -262,6 +262,53 @@
          "test_summary" : "Files=6, Tests=86",
          "version" : "1.36",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Class-Inspector-1.36.tar.gz",
+         "id" : "05cdd0efd8d558ac3c4031942ac97a80c9f3d87ea02f7acde8d45934b0cdc6af",
+         "module" : "Class::Inspector",
+         "observed_at" : "2026-11-07T19:20:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "cc295d23a472687c24489d58226ead23b9fdc2588e522f0b5f0747741700694e",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=86",
+         "version" : "1.36",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

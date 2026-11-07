@@ -13,18 +13,21 @@ For example:
 
 ```perl
 my $error = $@;
-require XPerl::DiagGroup;
+require XPerl::DiagGroup unless $error->can('has_diagnostic');
 ok($error->has_diagnostic('ERROR_USER_TEXT', text => "bad exit\n"),
    'original error survives rethrow');
 ```
 
 Keep the ordinary Perl assertion in the other branch. Check a propagation
 diagnostic by its code when the test needs to verify the rethrow itself. If
+the method is built into XPerl, the compatibility line above loads nothing;
+older builds with the same XPerl version need the Perl module. If
 the object API is not available at that boundary, match the complete original
 message and allow only the specific propagation line. Keep that pattern
 anchored. Do not remove propagation context or change the module's exception
 handling merely to satisfy an exact-string test.
 
-The `Capture-Tiny` 0.50 patch is an example. Its adjusted test passes under
-XPerl v5.45.5 and ordinary Perl v5.38.2. This recipe does not assert that
+The `Capture-Tiny` 0.50 patch is an example. Exception::Died 0.06 uses the
+original `ERROR_USER_TEXT` parameter to populate its `eval_error` field.
+Both patches pass on XPerl v5.45.5 and ordinary Perl. This recipe does not assert that
 every `$@` difference is propagation context; inspect each failure first.

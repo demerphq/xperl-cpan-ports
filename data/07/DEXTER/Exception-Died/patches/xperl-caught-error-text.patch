@@ -1,0 +1,24 @@
+--- a/lib/Exception/Died.pm
++++ b/lib/Exception/Died.pm
+@@ -332,6 +332,21 @@
+         $self->{eval_error} =~ s/( at (?!.*\bat\b.*).* line \d+( thread \d+)?\.?)?\n$//s;
+         $self->{eval_error} = undef if $self->{eval_error} eq '';
+     }
++    elsif (${^XPERL_VERSION} && UNIVERSAL::isa($@, 'XPerl::Exception')) {
++        my $error = $@;
++        require XPerl::DiagGroup unless $error->can('find_diagnostic');
++
++        # XPerl keeps the original die text in the diagnostic parameters.
++        # Rendering the exception here would include rethrow context.
++        my $diagnostic = $error->find_diagnostic('ERROR_USER_TEXT');
++        my ($text) = $diagnostic
++            ? grep { $_->{name} eq 'text' } @{$diagnostic->params}
++            : ();
++        $self->{eval_error} = $text ? $text->{value} : "$error";
++        while ($self->{eval_error} =~ s/\t\.\.\.propagated at (?!.*\bat\b.*).* line \d+( thread \d+)?\.\n$//s) { }
++        $self->{eval_error} =~ s/( at (?!.*\bat\b.*).* line \d+( thread \d+)?\.?)?\n$//s;
++        $self->{eval_error} = undef if $self->{eval_error} eq '';
++    }
+     elsif (do { my $e = $@; local $@; local $SIG{__DIE__}; eval { $e->isa('Exception::Died') } }) {
+         $self->{eval_error} = $@->{eval_error};
+         $self->{eval_error} = undef if defined $self->{eval_error} and $self->{eval_error} eq '';

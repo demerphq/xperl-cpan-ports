@@ -1,0 +1,20 @@
+{
+  "source_sha256": "35c440bc2afd4d57e241a0db1b4e68d9d5295df2db8d789d39b5f45105978ab5",
+  "patch_set_id": "xperl-caught-error-text",
+  "patch_sha256": "b2de569b7bc6016849e88b521bce18581a010c3ff892192c3b46743958a7f4fe",
+  "date": "2026-11-07",
+  "platform": "x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 2 test files, 34 tests"
+    },
+    {
+      "command": "make test with PERL5LIB for required modules",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 2 test files, 34 tests"
+    }
+  ]
+}

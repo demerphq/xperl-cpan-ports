@@ -1,0 +1,54 @@
+{
+   "author" : "DEXTER",
+   "distribution" : "constant-boolean",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DEXTER/constant-boolean-0.02.tar.gz",
+         "id" : "54407e327dba6680e7a16eaf527e262bd1721b8cbb7d9d362e62d1079b3f808b",
+         "module" : "constant::boolean",
+         "observed_at" : "2026-11-07T19:20:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "cd2c59d58061ce1a4975a313160df7186f62eea2655b85d520e5e24e9eeb0fe9",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=15",
+         "version" : "0.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

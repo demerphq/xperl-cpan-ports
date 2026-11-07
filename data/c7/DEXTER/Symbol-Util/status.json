@@ -1,0 +1,54 @@
+{
+   "author" : "DEXTER",
+   "distribution" : "Symbol-Util",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DEXTER/Symbol-Util-0.0203.tar.gz",
+         "id" : "2c349cd8a4068fb0702c4cba9bd0b85d43b301fa7839326947af8f836437ad88",
+         "module" : "Symbol::Util",
+         "observed_at" : "2026-11-07T19:20:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "55b661dd22f9ce9b9be5a7e0a3f5289ac00cd254c21e3d8603289a565ae6dc32",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=307",
+         "version" : "0.0203",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

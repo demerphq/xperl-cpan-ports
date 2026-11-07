@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2496 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2502 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -427,6 +427,12 @@ Unresolved failures: 85 of 2496 release, XPerl, and platform combinations. See [
 | DEMIGUISE | [Dancer2-Plugin-Feed](../data/af/DEMIGUISE/Dancer2-Plugin-Feed/status.json) | 1.263070 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DENIK | [Lingua-Identify-CLD2](../data/32/DENIK/Lingua-Identify-CLD2/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | failed | none |
 | DEXTER | [AnyEvent-DNS-EtcHosts](../data/d0/DEXTER/AnyEvent-DNS-EtcHosts/status.json) | 0.0105 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DEXTER | [Exception-Base](../data/93/DEXTER/Exception-Base/status.json) | 0.2501 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DEXTER | [Exception-Died](../data/07/DEXTER/Exception-Died/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | xperl-caught-error-text |
+| DEXTER | [Symbol-Util](../data/c7/DEXTER/Symbol-Util/status.json) | 0.0203 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DEXTER | [Test-Assert](../data/d1/DEXTER/Test-Assert/status.json) | 0.0504 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DEXTER | [Test-Unit-Lite](../data/45/DEXTER/Test-Unit-Lite/status.json) | 0.1202 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DEXTER | [constant-boolean](../data/d4/DEXTER/constant-boolean/status.json) | 0.02 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DFARRELL | [Data-FormValidator](../data/de/DFARRELL/Data-FormValidator/status.json) | 4.88 | v5.45.5 | darwin/darwin-2level | installed | none |
 | DGL | [re-engine-RE2](../data/88/DGL/re-engine-RE2/status.json) | 0.18 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DHOSS | [Catalyst-View-Email](../data/c7/DHOSS/Catalyst-View-Email/status.json) | 0.36 | v5.45.5 | linux/x86_64-linux | installed | none |

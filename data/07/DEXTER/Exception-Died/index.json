@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "distribution": "Exception-Died",
+  "releases": [
+    {
+      "version": "0.06",
+      "cpan_path": "D/DE/DEXTER/Exception-Died-0.06.tar.gz",
+      "source_sha256": "35c440bc2afd4d57e241a0db1b4e68d9d5295df2db8d789d39b5f45105978ab5",
+      "patch_sets": [
+        {
+          "id": "xperl-caught-error-text",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-caught-error-text.patch",
+              "sha256": "b2de569b7bc6016849e88b521bce18581a010c3ff892192c3b46743958a7f4fe"
+            }
+          ],
+          "recipes": ["exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}

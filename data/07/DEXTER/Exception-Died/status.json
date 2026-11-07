@@ -1,0 +1,108 @@
+{
+   "author" : "DEXTER",
+   "distribution" : "Exception-Died",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DEXTER/Exception-Died-0.06.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "e0c3218f5ef410ab1c8339c6e16f0ea4477ad8ccd60d4484d214317ba5e2cc6b",
+         "module" : "Exception::Died",
+         "observed_at" : "2026-11-07T19:20:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "35c440bc2afd4d57e241a0db1b4e68d9d5295df2db8d789d39b5f45105978ab5",
+         "status" : "failed",
+         "test_summary" : "Files=2, Tests=34, Failed 1/2 test programs. 4/34 subtests failed.",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DE/DEXTER/Exception-Died-0.06.tar.gz",
+         "id" : "e4e589811e5fa714c3c38b631d918d8705e2d4528e10177357fe2739285c588f",
+         "module" : "Exception::Died",
+         "observed_at" : "2026-11-07T20:27:22Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-caught-error-text",
+         "patch_sha256" : [
+            "b2de569b7bc6016849e88b521bce18581a010c3ff892192c3b46743958a7f4fe"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "35c440bc2afd4d57e241a0db1b4e68d9d5295df2db8d789d39b5f45105978ab5",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=34",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

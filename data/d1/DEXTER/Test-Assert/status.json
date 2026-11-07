@@ -1,0 +1,54 @@
+{
+   "author" : "DEXTER",
+   "distribution" : "Test-Assert",
+   "observations" : [
+      {
+         "cpan_path" : "D/DE/DEXTER/Test-Assert-0.0504.tar.gz",
+         "id" : "218bd929a4be725e88e6ff52f7f503cea3c8560eb4d1371b8f824384aeae2ef0",
+         "module" : "Test::Assert",
+         "observed_at" : "2026-11-07T19:20:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "cfa36da96c504331ff2026747ba47d477efe835cf6cf234ee10cb05fa9fb8ba4",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=45",
+         "version" : "0.0504",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
