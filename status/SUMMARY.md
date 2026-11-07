@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2496 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -748,7 +748,8 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | FAYLAND | [Lingua-Han-PinYin](../data/7e/FAYLAND/Lingua-Han-PinYin/status.json) | 0.23 | v5.45.5 | darwin/darwin-2level | installed | none |
 | FAYLAND | [Lingua-Han-Utils](../data/06/FAYLAND/Lingua-Han-Utils/status.json) | 0.13 | v5.45.5 | darwin/darwin-2level | installed | none |
 | FBARRIOS | [Term-VT102-Boundless](../data/38/FBARRIOS/Term-VT102-Boundless/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none |
-| FERREIRA | [Carp-Always](../data/ea/FERREIRA/Carp-Always/status.json) | 0.16 | v5.45.5 | darwin/darwin-2level | installed | none |
+| FERREIRA | [Carp-Always](../data/ea/FERREIRA/Carp-Always/status.json) | 0.16 | v5.45.5 | darwin/darwin-2level | installed (needs-core-api) | none |
+| FERREIRA | [Carp-Always](../data/ea/FERREIRA/Carp-Always/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux | installed (needs-core-api) | none |
 | FERREIRA | [Devel-Hook](../data/18/FERREIRA/Devel-Hook/status.json) | 0.011 | v5.45.5 | darwin/darwin-2level | installed | none |
 | FERREIRA | [Devel-Hook](../data/18/FERREIRA/Devel-Hook/status.json) | 0.011 | v5.45.5 | linux/x86_64-linux | installed | none |
 | FERREIRA | [Term-Size](../data/3b/FERREIRA/Term-Size/status.json) | 0.211 | v5.45.5 | darwin/darwin-2level | installed | none |

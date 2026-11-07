@@ -26,9 +26,9 @@ through explicit propagation, and keep nested exceptions separate. Review
 legacy `__DIE__` handlers for migration to `__EXCEPT__` during AI-assisted
 ports, but inspect their handling of reference throws and warnings first.
 
-## Handler survey: Devel::Confess, MCE, and Test::FailWarnings
+## Handler survey
 
-Passing distribution tests do not establish that a handler preserves the
+Passing distribution tests does not establish that a handler preserves the
 diagnostic graph. Devel::Confess 0.009004 passes its suite on XPerl v5.45.5,
 but its `__DIE__` handler renders and rethrows a native division-by-zero
 error. The caught exception then has `ERROR_USER_TEXT` instead of
@@ -41,9 +41,16 @@ rendered text. The current public diagnostic API does not provide a stable
 way to add a stack trace, so this case needs a core API decision before a
 distribution patch.
 
+Carp::Always 0.16 has the same diagnostic-loss pattern. Its `__DIE__`
+handler calls `die` with a `Carp::longmess` string. A native division-by-zero
+error becomes `ERROR_USER_TEXT` after the handler runs. Its distribution
+tests pass, so a focused diagnostic-code check is needed when evaluating
+trace middleware.
+
 MCE 1.904 passes its suite on XPerl, but its `__DIE__` handler examines
 `$^S`, writes an error and may exit a worker. Treat it as worker-control
-code, not just trace formatting. Test::FailWarnings 0.008 passes its suite
-and a warning-capture probe; its `__WARN__` handler consumes rendered text,
-which XPerl continues to supply. These uses do not call for a mechanical
-switch to `__EXCEPT__`.
+code, not just trace formatting. An MCE::Child probe with a dying child
+reports the error to its parent. Test::FailWarnings 0.008 and
+Test::NoWarnings 1.06 pass their suites and focused warning-capture probes;
+their `__WARN__` handlers consume rendered text, which XPerl continues to
+supply. These uses do not call for a mechanical switch to `__EXCEPT__`.

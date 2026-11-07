@@ -182,6 +182,53 @@
          "test_summary" : "Files=106, Tests=426",
          "version" : "0.89",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "I/IN/INGY/Test-Base-0.89.tar.gz",
+         "id" : "d2d9792f056caae8bb7ffcb86535dba727bb111aeaf9032e6a5230d52caee9c6",
+         "module" : "Test::Base",
+         "observed_at" : "2026-11-07T19:15:32Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "2794a1aaaeb1d3a287dd2c7286258663796562f7db9ccc6b424bc4f1de8ad014",
+         "status" : "installed",
+         "test_summary" : "Files=106, Tests=426",
+         "version" : "0.89",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

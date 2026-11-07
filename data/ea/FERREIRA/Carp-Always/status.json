@@ -95,7 +95,60 @@
          "test_summary" : "Files=4, Tests=17",
          "version" : "0.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FE/FERREIRA/Carp-Always-0.16.tar.gz",
+         "id" : "a20681f180cea8b312b6fc8f83756eef0e76b1fa87f426ebf782047a062ab12f",
+         "module" : "Carp::Always",
+         "observed_at" : "2026-11-07T19:15:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "98aa11492171c016fb0827581ab1fa5ed01b1e99c6357489ddf3a827315866f1",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=17",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
-   "schema" : 2
+   "schema" : 2,
+   "triage" : {
+      "disposition" : "needs-core-api",
+      "reason" : "Carp::Always 0.16 installs and passes its suite, but its __DIE__ handler rethrows rendered text. A native division-by-zero diagnostic then changes from ERROR_NUMERIC_DOMAIN_DIVISION_BY_ZERO to ERROR_USER_TEXT. Preserving both the canonical exception and the added stack trace needs stable structured stack-trace support.",
+      "source_sha256" : "98aa11492171c016fb0827581ab1fa5ed01b1e99c6357489ddf3a827315866f1",
+      "version" : "0.16"
+   }
 }
