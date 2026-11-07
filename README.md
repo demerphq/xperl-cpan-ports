@@ -45,6 +45,25 @@ the XPerl interpreter:
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
 
+## Browse build results
+
+Open [status/SUMMARY.md](status/SUMMARY.md) and search for the distribution
+name. Each row gives its CPAN author, release version, XPerl version,
+platform, latest status, and patch set. Click the distribution name to read
+its `status.json`, which retains earlier observations as well as the latest
+one. [status/UNRESOLVED.md](status/UNRESOLVED.md) lists recorded failures
+whose latest observation has not succeeded.
+
+The linked distribution directory may also contain `index.json` for patch
+selection, `patches/` for the actual diffs, and `evidence/` for validation.
+The same distribution name can occur under different authors, so check the
+author in the summary row. A result on one platform or XPerl version does
+not establish compatibility on another. New local install results appear in
+these pages only after their receipts are reviewed, imported, and committed.
+
+From a local checkout, search the summary with `rg -n 'Distribution-Name'
+status/SUMMARY.md status/UNRESOLVED.md`.
+
 Author consent for upstream XPerl patches and the review queue are described
 in [AUTHOR_POLICY.md](AUTHOR_POLICY.md). Author records stay in repository 0
 when distribution data is sharded.
