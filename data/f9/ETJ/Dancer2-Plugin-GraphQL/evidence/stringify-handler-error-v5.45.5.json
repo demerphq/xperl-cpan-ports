@@ -1,0 +1,26 @@
+{
+  "source_sha256": "3fb5a03f42a7e68ae3a64bfae109c5515208c7ba4aeb97b6acf10f0fe0dda0b6",
+  "patch_set_id": "stringify-handler-error",
+  "patch_sha256": "aa3623b3a216e1a0fe24474ea2162f91842235b3dcb96d71dc48ebab285d1f36",
+  "date": "2026-11-07",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 3 test files, 6 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 3 test files, 6 tests (original archive also passes)"
+    },
+    {
+      "command": "xperl-install install with this patch set and GraphQL #10 (targeted rerun)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "installed, patch set applied"
+    }
+  ],
+  "failure": "t/ajax.t \"GraphQL with die\" failed on XPerl; the original passes on Perl 5.44. When a route handler dies, the plugin builds { errors => [ { message => $@ } ] } and sends it as JSON. On XPerl $@ is an XPerl::Exception object, which the JSON encoder cannot serialize, so the client receives an empty body instead of the error. The patch stringifies $@ for the message. The patch also skips the Makefile.PL rule that regenerates README.md with pod2markdown (a develop-only prereq) outside a git checkout: patching the module makes it newer than README.md, so an install build would otherwise run pod2markdown, fail, and leave README.md empty."
+}
