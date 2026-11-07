@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 84 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -708,7 +708,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | ETJ | [ExtUtils-F77](../data/e2/ETJ/ExtUtils-F77/status.json) | 1.26 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [Graph](../data/45/ETJ/Graph/status.json) | 0.9735 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETJ | [Graph](../data/45/ETJ/Graph/status.json) | 0.9735 | v5.45.5 | linux/x86_64-linux | installed | none |
-| ETJ | [GraphQL](../data/61/ETJ/GraphQL/status.json) | 0.54 | v5.45.5 | darwin/darwin-2level | failed | none |
+| ETJ | [GraphQL](../data/61/ETJ/GraphQL/status.json) | 0.54 | v5.45.5 | darwin/darwin-2level | installed | client-error-text-without-rethrow-context |
 | ETJ | [GraphViz](../data/28/ETJ/GraphViz/status.json) | 2.26 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETJ | [GraphViz2](../data/cf/ETJ/GraphViz2/status.json) | 2.67 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [Inline-Java](../data/c6/ETJ/Inline-Java/status.json) | 0.67 | v5.45.5 | darwin/darwin-2level | failed | none |
