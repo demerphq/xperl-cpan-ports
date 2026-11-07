@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 83 of 2502 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 83 of 2503 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -596,6 +596,7 @@ Unresolved failures: 83 of 2502 release, XPerl, and platform combinations. See [
 | ETHER | [Hook-LexWrap](../data/3d/ETHER/Hook-LexWrap/status.json) | 0.26 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETHER | [JSON-MaybeXS](../data/c0/ETHER/JSON-MaybeXS/status.json) | 1.004008 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETHER | [JSON-MaybeXS](../data/c0/ETHER/JSON-MaybeXS/status.json) | 1.004008 | v5.45.5 | linux/x86_64-linux | installed | none |
+| ETHER | [JSON-Schema-Modern](../data/28/ETHER/JSON-Schema-Modern/status.json) | 0.652 | v5.45.5 | darwin/darwin-2level | installed | stringify-caught-error-text |
 | ETHER | [JSON-Schema-Modern](../data/28/ETHER/JSON-Schema-Modern/status.json) | 0.652 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETHER | [Mac-SystemDirectory](../data/3f/ETHER/Mac-SystemDirectory/status.json) | 0.14 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETHER | [Module-Install](../data/02/ETHER/Module-Install/status.json) | 1.21 | v5.45.5 | darwin/darwin-2level | installed | none |
