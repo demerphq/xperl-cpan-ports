@@ -1,0 +1,24 @@
+{
+  "source_sha256": "4134533716d87af8fff56e250c488ad06df0a7bff48e7cf7de63ff6bc8d9c17f",
+  "patch_set_id": "compile-error-order-test",
+  "patch_sha256": "ea00bf263b65ac8dbbdf9eb3698e60da654184ab3436ea2813d202ae51c9c72c",
+  "date": "2026-11-07",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 2 test files, 483 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 2 test files, 483 tests"
+    }
+  ],
+  "failure": "24 of 482 t/basic.t checks failed on XPerl: the \"BAREWORD dies\" checks for functions that need more than one argument (sysread, seek, socket, ...), and \"socketpair my $fh, BAREWORD\". The parser queues \"Not enough arguments for FUNC\" before the module's op-check hook croaks. XPerl keeps that queued error first in $@ and appends the module's \"Use of bareword filehandle in FUNC\" diagnostic, so the test's ^-anchored pattern fails. Perl 5.44 replaces the queued compile errors with the croak message. The module still dies with its own message on XPerl; the patch makes ^ match at the start of any line of $@.",
+  "environment": {
+    "B::Hooks::OP::Check": "0.22"
+  }
+}

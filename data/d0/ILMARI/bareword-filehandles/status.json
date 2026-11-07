@@ -47,6 +47,61 @@
          "test_summary" : "Files=2, Tests=483, Failed 1/2 test programs. 24/483 subtests failed.",
          "version" : "0.007",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "I/IL/ILMARI/bareword-filehandles-0.007.tar.gz",
+         "id" : "852c3d2d694f2e4f1a0fc89e49ce7773986b7157cfcde317e267add770791a4b",
+         "module" : "bareword::filehandles",
+         "observed_at" : "2026-11-07T14:05:01Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "compile-error-order-test",
+         "patch_sha256" : [
+            "ea00bf263b65ac8dbbdf9eb3698e60da654184ab3436ea2813d202ae51c9c72c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "4134533716d87af8fff56e250c488ad06df0a7bff48e7cf7de63ff6bc8d9c17f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=483",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

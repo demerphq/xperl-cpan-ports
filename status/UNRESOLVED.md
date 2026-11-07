@@ -39,7 +39,6 @@ Prior failures remain in each distribution record after a later success.
 | HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | HUGMEIR | [Alien-libmariadbclient](../data/7f/HUGMEIR/Alien-libmariadbclient/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
-| ILMARI | [bareword-filehandles](../data/d0/ILMARI/bareword-filehandles/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=483, Failed 1/2 test programs. 24/483 subtests failed. |
 | ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | test | Files=26, Tests=2, Failed 25/26 test programs. 0/2 subtests failed. |
 | IPH | [AnyEvent-Redis-RipeRedis](../data/61/IPH/AnyEvent-Redis-RipeRedis/status.json) | 1.62 | v5.45.5 | darwin/darwin-2level | test | Files=14, Tests=82, Failed 8/14 test programs. 0/82 subtests failed. |
 | IVAN | [Net-HTTPS-Any](../data/81/IVAN/Net-HTTPS-Any/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | test | Files=5, Tests=11, Failed 1/5 test programs. 3/11 subtests failed. |
