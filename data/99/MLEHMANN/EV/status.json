@@ -48,53 +48,6 @@
          "test_summary" : "Files=11, Tests=6875",
          "version" : "4.37",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/ML/MLEHMANN/EV-4.37.tar.gz",
-         "id" : "233e9f610844c892f001408f53b346a4e24e538c1709467ccf27f88e67ad3eb5",
-         "module" : "EV",
-         "observed_at" : "2026-11-06T18:43:51Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "18bb66df4932ea61471dfb6057b5b27944f32d5be31fca832030a0c8082422a5",
-         "status" : "installed",
-         "test_summary" : "Files=11, Tests=6875",
-         "version" : "4.37",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

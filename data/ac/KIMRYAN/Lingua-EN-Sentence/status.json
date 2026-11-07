@@ -48,53 +48,6 @@
          "test_summary" : "Files=1, Tests=3",
          "version" : "0.34",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "K/KI/KIMRYAN/Lingua-EN-Sentence-0.34.tar.gz",
-         "id" : "154366db5872ca21f274b89ed9f24eac5e1adcbbd84468fb3b55567e9c46baa5",
-         "module" : "Lingua::EN::Sentence",
-         "observed_at" : "2026-11-06T18:43:21Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "5aef213ae0785e7bf854cc6c12530b87cc110843edcab227149cd72fceee34b9",
-         "status" : "installed",
-         "test_summary" : "Files=1, Tests=3",
-         "version" : "0.34",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

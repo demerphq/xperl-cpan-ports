@@ -49,54 +49,6 @@
          "test_summary" : "Files=4, Tests=10",
          "version" : "0.010",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BO/BOLAV/Hash-Diff-0.010.tar.gz",
-         "id" : "9de3493f911c599dcc71a9256597a5848a793dc116e1c9c52cd8354da5eda0c0",
-         "module" : "Hash::Diff",
-         "module_version" : "0.01",
-         "observed_at" : "2026-11-06T18:42:55Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "bc9a4aa38ec98f0a98289e35abf9a17c2f2a3239a2209a329800e0970aa2e0c5",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=10",
-         "version" : "0.010",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

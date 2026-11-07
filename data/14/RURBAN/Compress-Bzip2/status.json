@@ -88,53 +88,6 @@
          "test_summary" : "Files=32, Tests=572",
          "version" : "2.28",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RU/RURBAN/Compress-Bzip2-2.28.tar.gz",
-         "id" : "bacded24e3d1a2bda5caf7c4556be8edec9f69345100a793968f543c253ba00f",
-         "module" : "Compress::Bzip2",
-         "observed_at" : "2026-11-06T18:45:13Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "859f835c3f5c998810d8b2a6f9e282ff99d6cb66ccfa55cae7e66dafb035116e",
-         "status" : "installed",
-         "test_summary" : "Files=32, Tests=572",
-         "version" : "2.28",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

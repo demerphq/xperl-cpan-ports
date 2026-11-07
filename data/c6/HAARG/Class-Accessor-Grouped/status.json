@@ -138,53 +138,6 @@
       },
       {
          "cpan_path" : "H/HA/HAARG/Class-Accessor-Grouped-0.10014.tar.gz",
-         "id" : "a5e8bb25446a0aac036811fd221c272de754df0c6dedbebf10fa560b8ed5c6c5",
-         "module" : "Class::Accessor::Grouped",
-         "observed_at" : "2026-11-06T18:45:29Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "35d5b03efc09f67f3a3155c9624126c3e162c8e3ca98ff826db358533a44c4bb",
-         "status" : "installed",
-         "test_summary" : "Files=11, Tests=1603",
-         "version" : "0.10014",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "H/HA/HAARG/Class-Accessor-Grouped-0.10014.tar.gz",
          "id" : "94c5e574edd95540787f23f120881f908589ac8e2b0e79917113d2509b81f6f9",
          "module" : "Class::Accessor::Grouped",
          "observed_at" : "2026-11-06T22:53:56Z",

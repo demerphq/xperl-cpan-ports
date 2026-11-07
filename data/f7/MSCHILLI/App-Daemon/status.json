@@ -48,53 +48,6 @@
          "test_summary" : "Files=5, Tests=19",
          "version" : "0.22",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MS/MSCHILLI/App-Daemon-0.22.tar.gz",
-         "id" : "f3b5eb6468971859c3216baa24795376f0254d926694a1d85657abcd55a2e8c1",
-         "module" : "App::Daemon",
-         "observed_at" : "2026-11-06T18:47:27Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "474e9b87a6bd9d327affe47a0648f94638c876bb1aa419691be3d81c47a4dbd7",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=19",
-         "version" : "0.22",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

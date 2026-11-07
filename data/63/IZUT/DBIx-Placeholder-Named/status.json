@@ -48,53 +48,6 @@
          "test_summary" : "Files=8, Tests=113",
          "version" : "0.08",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "I/IZ/IZUT/DBIx-Placeholder-Named-0.08.tar.gz",
-         "id" : "76e366218ee3e447f3df48b635e0cb033177d924e50f5b1703dd7f194d57b71d",
-         "module" : "DBIx::Placeholder::Named",
-         "observed_at" : "2026-11-06T18:43:53Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "30983b4025ffc9cf00ebf1c0f776fc2ce1326590efa494602ea49c2ce82a93d5",
-         "status" : "installed",
-         "test_summary" : "Files=8, Tests=113",
-         "version" : "0.08",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

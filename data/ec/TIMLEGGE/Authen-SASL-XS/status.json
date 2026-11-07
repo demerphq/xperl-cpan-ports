@@ -85,53 +85,6 @@
          "status" : "failed",
          "version" : "1.02",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TI/TIMLEGGE/Authen-SASL-XS-1.02.tar.gz",
-         "id" : "4160b9568db8812b3425ad3086a0b5bc55225c762c3f18ee5e92a0291be8afda",
-         "module" : "Authen::SASL::XS",
-         "observed_at" : "2026-11-06T18:45:37Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "fa4fb562aea2a2e2f3a5de677c4188ee721b7e18ce771bd1a4b92b22d2461f47",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=6",
-         "version" : "1.02",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

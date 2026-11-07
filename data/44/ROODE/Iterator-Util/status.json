@@ -48,53 +48,6 @@
          "test_summary" : "Files=9, Tests=134",
          "version" : "0.02",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RO/ROODE/Iterator-Util-0.02.tar.gz",
-         "id" : "a627d1869d9cba4e1a8d3e42bd1ee151ea1223f893bd5e07e11b3708bb80656c",
-         "module" : "Iterator::Util",
-         "observed_at" : "2026-11-06T18:45:01Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "6182e488f1f1961d8653d6bb3ecb1222776ff2835b51ac120918c5238c1eb563",
-         "status" : "installed",
-         "test_summary" : "Files=9, Tests=134",
-         "version" : "0.02",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

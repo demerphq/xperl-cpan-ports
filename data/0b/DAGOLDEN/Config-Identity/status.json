@@ -47,52 +47,6 @@
          "test_summary" : "Files=2, Tests=13, Failed 1/2 test programs. 0/13 subtests failed.",
          "version" : "0.0019",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "D/DA/DAGOLDEN/Config-Identity-0.0019.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "test"
-         },
-         "id" : "59255078f79c31fdf6bbd0ba81b7622b11bf7704d5982cd08f3fd0299d6b3186",
-         "module" : "Config::Identity",
-         "observed_at" : "2026-11-06T18:47:52Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "test"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "29520bdb37659e641491b0c69661429a1a89b6a2e475c2f9b4ebf27e45e812a8",
-         "status" : "failed",
-         "test_summary" : "Files=2, Tests=13, Failed 1/2 test programs. 0/13 subtests failed.",
-         "version" : "0.0019",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

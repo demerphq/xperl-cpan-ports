@@ -91,53 +91,6 @@
       },
       {
          "cpan_path" : "S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz",
-         "id" : "684617821f9d5ae957d844a43198cf2cf9b48a9dc6dc72b45fe71cf39b3c664b",
-         "module" : "Devel::CheckCompiler",
-         "observed_at" : "2026-11-06T18:45:32Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "768b7697b4b8d4d372c7507b65e9dd26aa4223f7100183bbb4d3af46d43869b5",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=10",
-         "version" : "0.07",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz",
          "id" : "f7a059aab9b63d35acf394ea2413cf544d7a10d8ab0ac26dfc7082ce7733bf4d",
          "module" : "Devel::CheckCompiler",
          "observed_at" : "2026-11-06T23:04:11Z",

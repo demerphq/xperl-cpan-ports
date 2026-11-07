@@ -48,53 +48,6 @@
          "test_summary" : "Files=4, Tests=8",
          "version" : "0.006",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TO/TOBYINK/LV-0.006.tar.gz",
-         "id" : "37e88981495b2aaed115bc9f491f0ef1bdc5001e892fd5832684fc0139d991c0",
-         "module" : "LV",
-         "observed_at" : "2026-11-06T18:45:55Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "fa88c2d4af0b1126d46401e6355a65496d033cfc2a6a944653011a638adfa75c",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=8",
-         "version" : "0.006",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -75,43 +75,6 @@
          "status" : "failed",
          "version" : "1.906",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "O/OD/ODENBACH/Authen-Krb5-1.906.tar.gz",
-         "failure" : {
-            "exit_status" : 0,
-            "phase" : "configure",
-            "validation_error" : "configure did not produce Build"
-         },
-         "id" : "8b04b8cd76e2a9f36d8c33aac89cccf852c2185a511f7456eba7e285fe3d45aa",
-         "module" : "Authen::Krb5",
-         "observed_at" : "2026-11-06T18:45:19Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure",
-               "validation_error" : "configure did not produce Build"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "2dc0928efb13b5f305df3452088e63f92b67acea87fbd470308f460f79126e84",
-         "status" : "failed",
-         "version" : "1.906",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -48,53 +48,6 @@
          "test_summary" : "Files=2, Tests=74",
          "version" : "0.40",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "C/CH/CHOCOLATE/Scalar-Util-Numeric-0.40.tar.gz",
-         "id" : "1e09d197b46ed56c0cc311bbccc3ccc7eb9ef75692dee227ca9e395e8034f12b",
-         "module" : "Scalar::Util::Numeric",
-         "observed_at" : "2026-11-06T18:42:12Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "d7501b6d410703db5b1c1942fbfc41af8964a35525d7f766058acf5ca2cc4440",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=74",
-         "version" : "0.40",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

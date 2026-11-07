@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "F/FE/FERREIRA/Carp-Always-0.16.tar.gz",
-         "id" : "82e4ce987f706046a0ad5c5e25d0db7292b897f1ef4d57f082ddf0e8faceee28",
-         "module" : "Carp::Always",
-         "observed_at" : "2026-11-06T18:44:37Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "98aa11492171c016fb0827581ab1fa5ed01b1e99c6357489ddf3a827315866f1",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=17",
-         "version" : "0.16",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "F/FE/FERREIRA/Carp-Always-0.16.tar.gz",
          "id" : "a20681f180cea8b312b6fc8f83756eef0e76b1fa87f426ebf782047a062ab12f",
          "module" : "Carp::Always",
          "observed_at" : "2026-11-07T19:15:33Z",

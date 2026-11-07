@@ -48,53 +48,6 @@
          "test_summary" : "Files=3, Tests=7",
          "version" : "2.03",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "N/NU/NUFFIN/HTML-FromANSI-2.03.tar.gz",
-         "id" : "9dd8ca2865ced5eb771b4a97abe3c1686d49ba4ee4cdc15ae8550bd5d1f164ea",
-         "module" : "HTML::FromANSI",
-         "observed_at" : "2026-11-06T18:44:36Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "21776345ed701b2c04c7b09380af943f9984cc7f99624087aea45db5fc09c359",
-         "status" : "installed",
-         "test_summary" : "Files=3, Tests=7",
-         "version" : "2.03",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -88,53 +88,6 @@
          "test_summary" : "Files=4, Tests=12",
          "version" : "0.010008",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MS/MSTROUT/App-FatPacker-0.010008.tar.gz",
-         "id" : "4e8eac3aa71a22ca067c13d2f34abf955efbee2b5bc6823044e6d78b8cf547a4",
-         "module" : "App::FatPacker",
-         "observed_at" : "2026-11-06T18:43:57Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "129db36dc845661a582286810cfe2d5216eb2ce082bad40ae1fcdce0f45deccf",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=12",
-         "version" : "0.010008",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

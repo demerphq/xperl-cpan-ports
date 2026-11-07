@@ -135,53 +135,6 @@
          "test_summary" : "Files=16, Tests=94",
          "version" : "1.18",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PE/PETDANCE/File-Next-1.18.tar.gz",
-         "id" : "f17c57ea643af41a15fd305d61b7bb549096da0ea6234c6758c42c530f95d70e",
-         "module" : "File::Next",
-         "observed_at" : "2026-11-06T18:48:03Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "f900cb39505eb6e168a9ca51a10b73f1bbde1914b923a09ecd72d9c02e6ec2ef",
-         "status" : "installed",
-         "test_summary" : "Files=16, Tests=94",
-         "version" : "1.18",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "G/GE/GETTY/HTTP-Body-1.24.tar.gz",
-         "id" : "577df3f4ea24e12c59f09f2283839e9d20e159462677a0f252eedf3a11ef758b",
-         "module" : "HTTP::Body",
-         "observed_at" : "2026-11-05T13:02:09Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "b2e79921972b099dd0b85c0f874f2447967d74cc501e6092400bd3ed76dd2c8d",
-         "status" : "installed",
-         "test_summary" : "Files=21, Tests=277",
-         "version" : "1.24",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "G/GE/GETTY/HTTP-Body-1.24.tar.gz",
          "id" : "b85a5d14c4773cb6b3e14d56bbb62e14ed03286ccff0ab99426f8025512732b0",
          "module" : "HTTP::Body",
          "observed_at" : "2026-11-06T15:12:02Z",

@@ -41,46 +41,6 @@
          "status" : "failed",
          "version" : "1.60",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PE/PETDANCE/HTML-Tidy-1.60.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "build"
-         },
-         "id" : "3f2bb976c05900da2be6cf03ec28b8983d9c82ba3f786b71dbfa22e99e27ed6d",
-         "module" : "HTML::Tidy",
-         "observed_at" : "2026-11-06T18:44:06Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "build"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "bcfbf65d687f8e672cf60c9821bcd65d5e8c72a78272b67bb0ac1c699a13d7c7",
-         "status" : "failed",
-         "version" : "1.60",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

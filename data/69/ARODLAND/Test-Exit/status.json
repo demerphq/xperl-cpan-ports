@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "A/AR/ARODLAND/Test-Exit-0.11.tar.gz",
-         "id" : "00a193f8afc6caf1f61ee8104626b17392f464c201ec90e45851174b9f1a57f2",
-         "module" : "Test::Exit",
-         "observed_at" : "2026-11-06T18:44:51Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "fbda92d37e0481d18eebc81e48d025228b57184c59b2d5a6f6bdf87042e8c7b2",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=10",
-         "version" : "0.11",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "A/AR/ARODLAND/Test-Exit-0.11.tar.gz",
          "id" : "d82a47e3052e3b3b3a396dc101a86f3335bd86ba9642d79646368ba703533c88",
          "module" : "Test::Exit",
          "observed_at" : "2026-11-06T23:00:03Z",

@@ -88,53 +88,6 @@
          "test_summary" : "Files=7, Tests=94",
          "version" : "0.1011",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "D/DA/DAGOLDEN/File-chdir-0.1011.tar.gz",
-         "id" : "6623762108c5b6b331c228a793285d61d5494127aa7e79715b28a56d27626f9a",
-         "module" : "File::chdir",
-         "observed_at" : "2026-11-06T18:42:14Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "31ebf912df48d5d681def74b9880d78b1f3aca4351a0ed1fe3570b8e03af6c79",
-         "status" : "installed",
-         "test_summary" : "Files=7, Tests=94",
-         "version" : "0.1011",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

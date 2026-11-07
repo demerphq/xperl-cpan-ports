@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
-         "id" : "e92bc34451254ebb8e16a93fb9f1741e187f0df78b8ca2eeb3fd77d2619ef4ef",
-         "module" : "Test::File",
-         "observed_at" : "2026-11-05T12:26:08Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "8f1cc36b871493dfdac29bda459763711b5fd828895c0f326b6c8654babd5f09",
-         "status" : "installed",
-         "test_summary" : "Files=19, Tests=197",
-         "version" : "1.995",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
          "id" : "73991caf4327ce961cd71cd6ff1e6f76bd0844a8662fc83c5e1b58dabf45f072",
          "module" : "Test::File",
          "observed_at" : "2026-11-05T23:34:23Z",
@@ -174,53 +134,6 @@
          "id" : "46b43bf02c13eff25c3edf6f8ae470d7dc6aa8bceedd81213c9482136bdd42bc",
          "module" : "Test::File",
          "observed_at" : "2026-11-06T17:04:04Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "8f1cc36b871493dfdac29bda459763711b5fd828895c0f326b6c8654babd5f09",
-         "status" : "installed",
-         "test_summary" : "Files=19, Tests=197",
-         "version" : "1.995",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
-         "id" : "98a1c1b7fed140ef8b3e709ac7cb02f3854560a5b0067d2e6bb25c2e24f070c1",
-         "module" : "Test::File",
-         "observed_at" : "2026-11-06T18:42:11Z",
          "patch_set" : null,
          "patch_sha256" : [],
          "phases" : [

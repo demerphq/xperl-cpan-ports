@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "S/SY/SYMKAT/Daemon-Control-0.001010.tar.gz",
-         "id" : "097410553388d5a5a19f967525a8ededa155e59c1c2ad3a5d8636d68bb571c62",
-         "module" : "Daemon::Control",
-         "observed_at" : "2026-11-06T18:46:15Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "8440389a83166f5b993f806d9f60460677ee2af1c613600968989333d70d4707",
-         "status" : "installed",
-         "test_summary" : "Files=11, Tests=87",
-         "version" : "0.001010",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/SY/SYMKAT/Daemon-Control-0.001010.tar.gz",
          "id" : "cd4c5b7e4c3cebd9a026a7b25609af498c3059832c5fd27d8cfa137f0275175c",
          "module" : "Daemon::Control",
          "observed_at" : "2026-11-06T23:04:54Z",

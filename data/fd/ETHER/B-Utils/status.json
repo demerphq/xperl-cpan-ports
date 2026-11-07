@@ -139,59 +139,6 @@
          "test_summary" : "Files=22, Tests=211",
          "version" : "0.28",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "E/ET/ETHER/B-Utils-0.28.tar.gz",
-         "id" : "a7dafef9a8deca71edc71c2e32d321459db874a0c37eecf10e8dc5c400bd850f",
-         "module" : "B::Utils",
-         "observed_at" : "2026-11-06T18:42:31Z",
-         "patch_set" : "xperl-cop-line",
-         "patch_sha256" : [
-            "0d545a49e8e00d16e53b89aee89d718f9f94392b703507341182c69c78600d76"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
-         "status" : "installed",
-         "test_summary" : "Files=22, Tests=211",
-         "version" : "0.28",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,524 @@
+{
+   "entries" : [
+      {
+         "author" : "RANDIR",
+         "distribution" : "Class-Accessor-Inherited-XS",
+         "evidence_paths" : [
+            "data/ac/RANDIR/Class-Accessor-Inherited-XS/evidence/repair-v5.45.5-0.39-622826f6dec5.json"
+         ],
+         "index_path" : "data/ac/RANDIR/Class-Accessor-Inherited-XS/index.json",
+         "native_files" : [
+            "xs/accessors.h"
+         ],
+         "patch_paths" : [
+            "data/ac/RANDIR/Class-Accessor-Inherited-XS/patches/repair-v5.45.5-0.39-622826f6dec5.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "0.39"
+      },
+      {
+         "author" : "NWCLARK",
+         "distribution" : "Devel-Arena",
+         "evidence_paths" : [
+            "data/3d/NWCLARK/Devel-Arena/evidence/repair-v5.45.5-0.23-ff66cbfa9a5e.json"
+         ],
+         "index_path" : "data/3d/NWCLARK/Devel-Arena/index.json",
+         "native_files" : [
+            "Arena.xs"
+         ],
+         "patch_paths" : [
+            "data/3d/NWCLARK/Devel-Arena/patches/repair-v5.45.5-0.23-ff66cbfa9a5e.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1",
+            "hash-shared-string-table-v1"
+         ],
+         "version" : "0.23"
+      },
+      {
+         "author" : "PEVANS",
+         "distribution" : "Devel-MAT-Dumper",
+         "evidence_paths" : [
+            "data/af/PEVANS/Devel-MAT-Dumper/evidence/repair-v5.45.5-0.52-2f0886fdc52e.json"
+         ],
+         "index_path" : "data/af/PEVANS/Devel-MAT-Dumper/index.json",
+         "native_files" : [
+            "lib/Devel/MAT/Dumper.xs"
+         ],
+         "patch_paths" : [
+            "data/af/PEVANS/Devel-MAT-Dumper/patches/repair-v5.45.5-0.52-2f0886fdc52e.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1",
+            "hash-size-accounting-v1",
+            "hash-shared-string-table-v1"
+         ],
+         "version" : "0.52"
+      },
+      {
+         "author" : "NWCLARK",
+         "distribution" : "Devel-Size",
+         "evidence_paths" : [
+            "data/ce/NWCLARK/Devel-Size/evidence/xperl-hash-storage-v5.45.5.json"
+         ],
+         "index_path" : "data/ce/NWCLARK/Devel-Size/index.json",
+         "native_files" : [
+            "Size.xs"
+         ],
+         "patch_paths" : [
+            "data/ce/NWCLARK/Devel-Size/patches/xperl-hash-storage.patch"
+         ],
+         "patch_set" : "xperl-hash-storage",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "0.87"
+      },
+      {
+         "author" : "TIMB",
+         "distribution" : "Devel-SizeMe",
+         "evidence_paths" : [
+            "data/d7/TIMB/Devel-SizeMe/evidence/repair-v5.45.5-0.19-0e6419d86545.json"
+         ],
+         "index_path" : "data/d7/TIMB/Devel-SizeMe/index.json",
+         "native_files" : [
+            "SizeMe.xs"
+         ],
+         "patch_paths" : [
+            "data/d7/TIMB/Devel-SizeMe/patches/repair-v5.45.5-0.19-0e6419d86545.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1",
+            "hash-size-accounting-v1",
+            "hash-shared-string-table-v1"
+         ],
+         "version" : "0.19"
+      },
+      {
+         "author" : "MAUKE",
+         "distribution" : "Function-Parameters",
+         "evidence_paths" : [
+            "data/06/MAUKE/Function-Parameters/evidence/xperl-parser-errors-v5.45.5.json"
+         ],
+         "index_path" : "data/06/MAUKE/Function-Parameters/index.json",
+         "native_files" : [
+            "Parameters.xs"
+         ],
+         "patch_paths" : [
+            "data/06/MAUKE/Function-Parameters/patches/xperl-parser-errors.patch"
+         ],
+         "patch_set" : "xperl-parser-errors",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "2.002006"
+      },
+      {
+         "author" : "PEVANS",
+         "distribution" : "Future-AsyncAwait",
+         "evidence_paths" : [
+            "data/c0/PEVANS/Future-AsyncAwait/evidence/xperl-exception-savestack-v5.45.5.json"
+         ],
+         "index_path" : "data/c0/PEVANS/Future-AsyncAwait/index.json",
+         "native_files" : [
+            "lib/Future/AsyncAwait.xs"
+         ],
+         "patch_paths" : [
+            "data/c0/PEVANS/Future-AsyncAwait/patches/xperl-exception-savestack.patch"
+         ],
+         "patch_set" : "xperl-exception-savestack",
+         "recipes" : [
+            "suspended-exception-state-v1",
+            "exception-propagation-v1"
+         ],
+         "version" : "0.71"
+      },
+      {
+         "author" : "OALDERS",
+         "distribution" : "HTML-Parser",
+         "evidence_paths" : [
+            "data/c4/OALDERS/HTML-Parser/evidence/stable-entity-value-v5.45.5.json"
+         ],
+         "index_path" : "data/c4/OALDERS/HTML-Parser/index.json",
+         "native_files" : [
+            "util.c"
+         ],
+         "patch_paths" : [
+            "data/c4/OALDERS/HTML-Parser/patches/stable-entity-value.patch"
+         ],
+         "patch_set" : "stable-entity-value",
+         "recipes" : [
+            "hash-value-lifetime-v1"
+         ],
+         "version" : "3.86"
+      },
+      {
+         "author" : "SALVA",
+         "distribution" : "Hash-Spy",
+         "evidence_paths" : [
+            "data/5b/SALVA/Hash-Spy/evidence/repair-v5.45.5-0.01-b04214c988b1.json"
+         ],
+         "index_path" : "data/5b/SALVA/Hash-Spy/index.json",
+         "native_files" : [
+            "Spy.xs"
+         ],
+         "patch_paths" : [
+            "data/5b/SALVA/Hash-Spy/patches/repair-v5.45.5-0.01-b04214c988b1.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-metadata-manipulation-v1"
+         ],
+         "version" : "0.01"
+      },
+      {
+         "author" : "JJORE",
+         "distribution" : "Internals-DumpArenas",
+         "evidence_paths" : [
+            "data/c3/JJORE/Internals-DumpArenas/evidence/repair-v5.45.5-0.12-be32c6a0176e.json"
+         ],
+         "index_path" : "data/c3/JJORE/Internals-DumpArenas/index.json",
+         "native_files" : [
+            "DumpArenas.xs"
+         ],
+         "patch_paths" : [
+            "data/c3/JJORE/Internals-DumpArenas/patches/repair-v5.45.5-0.12-be32c6a0176e.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "0.12"
+      },
+      {
+         "author" : "MNUNBERG",
+         "distribution" : "JSON-SL",
+         "evidence_paths" : [
+            "data/7c/MNUNBERG/JSON-SL/evidence/hash-entry-lifetime-v5.45.5.json"
+         ],
+         "index_path" : "data/7c/MNUNBERG/JSON-SL/index.json",
+         "native_files" : [
+            "SL.xs"
+         ],
+         "patch_paths" : [
+            "data/7c/MNUNBERG/JSON-SL/patches/hash-entry-lifetime.patch"
+         ],
+         "patch_set" : "hash-entry-lifetime",
+         "recipes" : [
+            "hash-value-lifetime-v1"
+         ],
+         "version" : "v1.0.7"
+      },
+      {
+         "author" : "RAZ",
+         "distribution" : "JavaBin",
+         "evidence_paths" : [
+            "data/0c/RAZ/JavaBin/evidence/repair-v5.45.5-0.9-5b3bf06662f0.json"
+         ],
+         "index_path" : "data/0c/RAZ/JavaBin/index.json",
+         "native_files" : [
+            "JavaBin.c"
+         ],
+         "patch_paths" : [
+            "data/0c/RAZ/JavaBin/patches/repair-v5.45.5-0.9-5b3bf06662f0.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "0.9"
+      },
+      {
+         "author" : "MAF",
+         "distribution" : "Net-ZooKeeper",
+         "evidence_paths" : [],
+         "index_path" : "data/47/MAF/Net-ZooKeeper/index.json",
+         "native_files" : [
+            "build/check_zk_version.c",
+            "build/check_zk_version.h"
+         ],
+         "patch_paths" : [
+            "data/47/MAF/Net-ZooKeeper/patches/zookeeper-version-string.patch"
+         ],
+         "patch_set" : "zookeeper-version-string",
+         "recipes" : [],
+         "version" : "0.41"
+      },
+      {
+         "author" : "PEVANS",
+         "distribution" : "Object-Pad",
+         "evidence_paths" : [
+            "data/bf/PEVANS/Object-Pad/evidence/xperl-v5.45.5-linux.json"
+         ],
+         "index_path" : "data/bf/PEVANS/Object-Pad/index.json",
+         "native_files" : [
+            "include/object_pad_class.h",
+            "lib/Object/Pad.xs",
+            "src/class.c",
+            "src/field.c"
+         ],
+         "patch_paths" : [
+            "data/bf/PEVANS/Object-Pad/patches/xperl-class-header.patch"
+         ],
+         "patch_set" : "xperl-class-header",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "0.825"
+      },
+      {
+         "author" : "DROLSKY",
+         "distribution" : "Params-Validate",
+         "evidence_paths" : [
+            "data/10/DROLSKY/Params-Validate/evidence/xperl-exception-callbacks-v5.45.5.json"
+         ],
+         "index_path" : "data/10/DROLSKY/Params-Validate/index.json",
+         "native_files" : [
+            "lib/Params/Validate/XS.xs"
+         ],
+         "patch_paths" : [
+            "data/10/DROLSKY/Params-Validate/patches/xperl-exception-callbacks.patch"
+         ],
+         "patch_set" : "xperl-exception-callbacks",
+         "recipes" : [
+            "exception-wrapper-classification-v1"
+         ],
+         "version" : "1.31"
+      },
+      {
+         "author" : "YVES",
+         "distribution" : "Sereal-Encoder",
+         "evidence_paths" : [
+            "data/de/YVES/Sereal-Encoder/evidence/xperl-hash-entries-v5.45.5.json"
+         ],
+         "index_path" : "data/de/YVES/Sereal-Encoder/index.json",
+         "native_files" : [
+            "srl_encoder.c"
+         ],
+         "patch_paths" : [
+            "data/de/YVES/Sereal-Encoder/patches/xperl-hash-entries.patch"
+         ],
+         "patch_set" : "xperl-hash-entries",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "6.003"
+      },
+      {
+         "author" : "YVES",
+         "distribution" : "Sereal-Encoder",
+         "evidence_paths" : [
+            "data/de/YVES/Sereal-Encoder/evidence/xperl-hash-entries-7.001-v5.45.5.json"
+         ],
+         "index_path" : "data/de/YVES/Sereal-Encoder/index.json",
+         "native_files" : [
+            "srl_encoder.c"
+         ],
+         "patch_paths" : [
+            "data/de/YVES/Sereal-Encoder/patches/xperl-hash-entries-7.001.patch"
+         ],
+         "patch_set" : "xperl-hash-entries",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "7.001"
+      },
+      {
+         "author" : "DCON",
+         "distribution" : "Stats-LikeR",
+         "evidence_paths" : [
+            "data/0f/DCON/Stats-LikeR/evidence/xperl-v5.45.5-linux.json"
+         ],
+         "index_path" : "data/0f/DCON/Stats-LikeR/index.json",
+         "native_files" : [
+            "LikeR.xs"
+         ],
+         "patch_paths" : [
+            "data/0f/DCON/Stats-LikeR/patches/xperl-hash-entry-traversal.patch"
+         ],
+         "patch_set" : "xperl-hash-entry-traversal",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "0.3416"
+      },
+      {
+         "author" : "HMBRAND",
+         "distribution" : "Text-CSV_XS",
+         "evidence_paths" : [
+            "data/64/HMBRAND/Text-CSV_XS/evidence/types-value-lifetime-v5.45.5.json"
+         ],
+         "index_path" : "data/64/HMBRAND/Text-CSV_XS/index.json",
+         "native_files" : [
+            "CSV_XS.xs"
+         ],
+         "patch_paths" : [
+            "data/64/HMBRAND/Text-CSV_XS/patches/types-value-lifetime.patch"
+         ],
+         "patch_set" : "types-value-lifetime",
+         "recipes" : [
+            "hash-value-lifetime-v1"
+         ],
+         "version" : "1.65"
+      },
+      {
+         "author" : "VPIT",
+         "distribution" : "Variable-Magic",
+         "evidence_paths" : [
+            "data/88/VPIT/Variable-Magic/evidence/xperl-exception-error-state.json"
+         ],
+         "index_path" : "data/88/VPIT/Variable-Magic/index.json",
+         "native_files" : [
+            "Magic.xs"
+         ],
+         "patch_paths" : [
+            "data/88/VPIT/Variable-Magic/patches/xperl-exception-error-state.patch"
+         ],
+         "patch_set" : "xperl-exception-error-state",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "0.65"
+      },
+      {
+         "author" : "TODDR",
+         "distribution" : "XML-LibXML",
+         "evidence_paths" : [
+            "data/b0/TODDR/XML-LibXML/evidence/append-croak-location.json"
+         ],
+         "index_path" : "data/b0/TODDR/XML-LibXML/index.json",
+         "native_files" : [
+            "LibXML.xs"
+         ],
+         "patch_paths" : [
+            "data/b0/TODDR/XML-LibXML/patches/append-croak-location.patch"
+         ],
+         "patch_set" : "append-croak-location",
+         "recipes" : [],
+         "version" : "2.0213"
+      },
+      {
+         "author" : "SYBER",
+         "distribution" : "XS-Framework",
+         "evidence_paths" : [
+            "data/e9/SYBER/XS-Framework/evidence/repair-v5.45.5-1.6.2-3b1d3c7b2765.json"
+         ],
+         "index_path" : "data/e9/SYBER/XS-Framework/index.json",
+         "native_files" : [
+            "src/xs/Hash.cc",
+            "src/xs/Hash.h",
+            "t/svapi/hash.cc"
+         ],
+         "patch_paths" : [
+            "data/e9/SYBER/XS-Framework/patches/repair-v5.45.5-1.6.2-3b1d3c7b2765.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "hash-entry-traversal-v1"
+         ],
+         "version" : "1.6.2"
+      },
+      {
+         "author" : "PEVANS",
+         "distribution" : "XS-Parse-Keyword",
+         "evidence_paths" : [
+            "data/4f/PEVANS/XS-Parse-Keyword/evidence/xperl-parser-errors-v5.45.5.json"
+         ],
+         "index_path" : "data/4f/PEVANS/XS-Parse-Keyword/index.json",
+         "native_files" : [
+            "src/infix.c",
+            "src/keyword.c"
+         ],
+         "patch_paths" : [
+            "data/4f/PEVANS/XS-Parse-Keyword/patches/xperl-parser-errors.patch"
+         ],
+         "patch_set" : "xperl-parser-errors",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "0.51"
+      },
+      {
+         "author" : "PEVANS",
+         "distribution" : "XS-Parse-Sublike",
+         "evidence_paths" : [
+            "data/ff/PEVANS/XS-Parse-Sublike/evidence/xperl-parser-errors-v5.45.5.json"
+         ],
+         "index_path" : "data/ff/PEVANS/XS-Parse-Sublike/index.json",
+         "native_files" : [
+            "lib/XS/Parse/Sublike.xs",
+            "src/parse_subsignature_ex.c"
+         ],
+         "patch_paths" : [
+            "data/ff/PEVANS/XS-Parse-Sublike/patches/xperl-parser-errors.patch"
+         ],
+         "patch_set" : "xperl-parser-errors",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "0.42"
+      },
+      {
+         "author" : "VPIT",
+         "distribution" : "indirect",
+         "evidence_paths" : [
+            "data/0a/VPIT/indirect/evidence/xperl-parser-errors-v5.45.5.json"
+         ],
+         "index_path" : "data/0a/VPIT/indirect/index.json",
+         "native_files" : [
+            "indirect.xs"
+         ],
+         "patch_paths" : [
+            "data/0a/VPIT/indirect/patches/xperl-parser-errors.patch"
+         ],
+         "patch_set" : "xperl-parser-errors",
+         "recipes" : [
+            "parser-error-count-v1"
+         ],
+         "version" : "0.39"
+      },
+      {
+         "author" : "RANDIR",
+         "distribution" : "namespace-clean-xs",
+         "evidence_paths" : [
+            "data/80/RANDIR/namespace-clean-xs/evidence/repair-v5.45.5-0.09-fc8ef6adc110.json"
+         ],
+         "index_path" : "data/80/RANDIR/namespace-clean-xs/index.json",
+         "native_files" : [
+            "xs.xs"
+         ],
+         "patch_paths" : [
+            "data/80/RANDIR/namespace-clean-xs/patches/repair-v5.45.5-0.09-fc8ef6adc110.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.09"
+      },
+      {
+         "author" : "HIO",
+         "distribution" : "perlec",
+         "evidence_paths" : [
+            "data/87/HIO/perlec/evidence/repair-v5.45.5-0.08-8bfed87d6a3b.json"
+         ],
+         "index_path" : "data/87/HIO/perlec/index.json",
+         "native_files" : [
+            "perlec.c"
+         ],
+         "patch_paths" : [
+            "data/87/HIO/perlec/patches/repair-v5.45.5-0.08-8bfed87d6a3b.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "regex-internals-v1"
+         ],
+         "version" : "0.08"
+      }
+   ],
+   "schema" : 1
+}

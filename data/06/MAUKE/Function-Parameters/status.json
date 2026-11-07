@@ -94,59 +94,6 @@
          "test_summary" : "Files=57, Tests=1475",
          "version" : "2.002006",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MA/MAUKE/Function-Parameters-2.002006.tar.gz",
-         "id" : "6e9901fabadba33553846565f9aa0f1142d883125f195fbaeed5662a839d7886",
-         "module" : "Function::Parameters",
-         "observed_at" : "2026-11-06T18:44:50Z",
-         "patch_set" : "xperl-parser-errors",
-         "patch_sha256" : [
-            "7b267a644fa210b9df887d40ce1ff1c3e3b56512513fea50b6755cabc0f93610"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "ec36c5d891f31a90a6b6d6198d983a5974603ad5eb4f9376af807ac37493f9a2",
-         "status" : "installed",
-         "test_summary" : "Files=57, Tests=1475",
-         "version" : "2.002006",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -13,6 +13,10 @@ relative to the release root and usable with `patch -p1`.
 Build and run the distribution's tests with XPerl after applying the patch.
 Test with ordinary Perl when practical. Add or update the distribution index
 and include the patch's SHA-256 digest. Put a test record under `evidence/`.
+Only add another evidence record when it contains new build, platform, or
+test information.
+If the patch changes native source, run `bin/build-xs-index` and include the
+updated `status/XS-PATCHES.md` and `status/XS-PATCHES.json` in the change.
 If the issue is likely to recur, add a recipe that explains the general fix
 without assuming this distribution's source layout.
 

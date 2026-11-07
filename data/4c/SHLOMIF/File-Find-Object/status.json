@@ -97,54 +97,6 @@
          "test_summary" : "Files=7, Tests=83",
          "version" : "0.3.9",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/SH/SHLOMIF/File-Find-Object-0.3.9.tar.gz",
-         "id" : "7b0cb26799a3562c13a90852b7740769d69649355804f27430dd44399ec946b6",
-         "module" : "File::Find::Object",
-         "module_version" : "v0.3.9",
-         "observed_at" : "2026-11-06T18:45:29Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "7e99afe4a9d992fcef1dfea42e1f95475706aed94f185068a89f729b512735f8",
-         "status" : "installed",
-         "test_summary" : "Files=7, Tests=83",
-         "version" : "0.3.9",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

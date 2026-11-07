@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "P/PE/PETDANCE/ack-v3.10.0.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "test"
-         },
-         "id" : "75851713dc57c1042d06c75bf91830a9ec5a4c9099907ffddd86f8db4ef47624",
-         "module" : "App::Ack",
-         "module_version" : "3.010000",
-         "observed_at" : "2026-11-05T22:55:46Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "test"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "65e83cfb38a71fca725e9a14a8201ee871e629fc6b10231e1303dd3501ba563a",
-         "status" : "failed",
-         "test_summary" : "Files=70, Tests=896, Failed 4/70 test programs. 15/896 subtests failed.",
-         "version" : "v3.10.0",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PE/PETDANCE/ack-v3.10.0.tar.gz",
          "id" : "51a1fca8010e5d98ae40454ba8f39d52ae3a0ddc339d4fc5d936ccea73e45936",
          "module" : "App::Ack",
          "module_version" : "3.010000",

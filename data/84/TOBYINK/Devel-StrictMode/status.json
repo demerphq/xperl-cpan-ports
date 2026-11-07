@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "T/TO/TOBYINK/Devel-StrictMode-0.003.tar.gz",
-         "id" : "169905a4ac2342a3ee70dc2618d5138e13c515d40e9e08d53803cc237bd37578",
-         "module" : "Devel::StrictMode",
-         "observed_at" : "2026-11-06T18:45:54Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "b0a7de5f8aaacd8302e69ae5df0b8fd1550a3a28fbdf077cb57abcadece565f0",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=4",
-         "version" : "0.003",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TO/TOBYINK/Devel-StrictMode-0.003.tar.gz",
          "id" : "ef5b9e307b3ceb9ad7b98a2138cb3707a91fc807f016e6e438f1633a82a4cff8",
          "module" : "Devel::StrictMode",
          "observed_at" : "2026-11-06T23:04:51Z",

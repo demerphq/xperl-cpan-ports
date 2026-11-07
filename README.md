@@ -21,6 +21,8 @@ authors/<first>/<first-two>/<Author>.json
 upstream-queue/<first>/<first-two>/<Author>/<entry>.json
 status/SUMMARY.md
 status/UNRESOLVED.md
+status/XS-PATCHES.md
+status/XS-PATCHES.json
 status/bundled-with-xperl.json
 ```
 
@@ -69,6 +71,15 @@ these pages only after their receipts are reviewed, imported, and committed.
 
 From a local checkout, search the summary with `rg -n 'Distribution-Name'
 status/SUMMARY.md status/UNRESOLVED.md`.
+
+## Browse XS and C fixes
+
+Open [status/XS-PATCHES.md](status/XS-PATCHES.md) to find registered patches
+that change `.xs`, `.c`, `.h`, or `.inc` files. Each row links the exact
+release, patch, and matching validation evidence. The generated
+`status/XS-PATCHES.json` carries the same information for tools. Run
+`bin/build-xs-index` after registering a patch that touches native source;
+`bin/build-xs-index --check` verifies that the catalog is current.
 
 Author consent for upstream XPerl patches and the review queue are described
 in [AUTHOR_POLICY.md](AUTHOR_POLICY.md). Author records stay in repository 0

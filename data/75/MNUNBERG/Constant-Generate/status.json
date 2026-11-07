@@ -48,53 +48,6 @@
          "test_summary" : "Files=6, Tests=27",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MN/MNUNBERG/Constant-Generate-0.17.tar.gz",
-         "id" : "793f8061b654ddc8dc1532c22df87a1a575e6dcda0b952f19e51af87b1728ef1",
-         "module" : "Constant::Generate",
-         "observed_at" : "2026-11-06T18:43:52Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "fb34eef48d7c18fe445fa2651c68d65877adc71ee674233bd11989c40c4eb870",
-         "status" : "installed",
-         "test_summary" : "Files=6, Tests=27",
-         "version" : "0.17",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

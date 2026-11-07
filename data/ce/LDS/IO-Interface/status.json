@@ -48,53 +48,6 @@
          "test_summary" : "Files=2, Tests=16",
          "version" : "1.09",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "L/LD/LDS/IO-Interface-1.09.tar.gz",
-         "id" : "a0b3264886e61481111e12b44033e7087c11de369b23f8d7ce257a5196fe22ed",
-         "module" : "IO::Interface",
-         "observed_at" : "2026-11-06T18:43:25Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "e63e81c52eb1e0e60ec2d983f5552d2493e117179925c96757f23c4bd9fa713a",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=16",
-         "version" : "1.09",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

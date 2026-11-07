@@ -48,53 +48,6 @@
          "test_summary" : "Files=56, Tests=125228",
          "version" : "2.004",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TI/TIMLEGGE/Crypt-NaCl-Sodium-2.004.tar.gz",
-         "id" : "b54dfe769170ea8968bb26129d61c848f3add33efec455ae57c0abdcaef405f7",
-         "module" : "Crypt::NaCl::Sodium",
-         "observed_at" : "2026-11-06T18:45:51Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "0c9b7c91b01edb967b3ca4570a71795ea08f8a4bad041b1e62c4a60305e47437",
-         "status" : "installed",
-         "test_summary" : "Files=56, Tests=125228",
-         "version" : "2.004",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

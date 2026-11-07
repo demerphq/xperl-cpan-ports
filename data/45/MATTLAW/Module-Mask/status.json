@@ -139,59 +139,6 @@
          "test_summary" : "Files=4, Tests=30",
          "version" : "0.06",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MA/MATTLAW/Module-Mask-0.06.tar.gz",
-         "id" : "1393ea15f915c8be58bd1f56f2ccbae965c63a9a8f7c8b31c5a77038fbadae1e",
-         "module" : "Module::Mask",
-         "observed_at" : "2026-11-06T18:43:36Z",
-         "patch_set" : "check-original-mask-diagnostic",
-         "patch_sha256" : [
-            "83e3d683a322dfa85ea09af9f3582edb6545f6b562c9174a508acd9fc0ab9a50"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "2d73f81ff21c9fa28102791e546ff257164b3025f7832544c8223fb87c1e7e77",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=30",
-         "version" : "0.06",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

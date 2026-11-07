@@ -139,59 +139,6 @@
          "test_summary" : "Files=86, Tests=2634",
          "version" : "2.0213",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
-         "id" : "91e24bff55fc5876288ffffc57ad305897663048aa9e5cccc5963e8d5f536f9d",
-         "module" : "XML::LibXML",
-         "observed_at" : "2026-11-06T18:46:12Z",
-         "patch_set" : "append-croak-location",
-         "patch_sha256" : [
-            "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
-         "status" : "installed",
-         "test_summary" : "Files=86, Tests=2634",
-         "version" : "2.0213",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

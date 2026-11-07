@@ -95,53 +95,6 @@
          "test_summary" : "Files=3, Tests=97",
          "version" : "0.08",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "X/XM/XMIKEW/DateTime-Format-MySQL-0.08.tar.gz",
-         "id" : "3a220f3bfb4be361e6b42813cebb26f72b3f3262d8aa7717ac686c491edbc1f0",
-         "module" : "DateTime::Format::MySQL",
-         "observed_at" : "2026-11-06T18:48:34Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "19cb70e98584655e354d2d6a8e71cc5ca902dddc3ac44416712f9163d122b9e8",
-         "status" : "installed",
-         "test_summary" : "Files=3, Tests=97",
-         "version" : "0.08",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

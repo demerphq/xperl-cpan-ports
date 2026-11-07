@@ -48,53 +48,6 @@
          "test_summary" : "Files=7, Tests=27",
          "version" : "0.003003",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "N/NE/NERDVANA/Log-Any-Adapter-TAP-0.003003.tar.gz",
-         "id" : "bc8d743eb9b38de86c6ff3c7e0f073cac0dc2ba38d74167e3009cdbec5ddc954",
-         "module" : "Log::Any::Adapter::TAP",
-         "observed_at" : "2026-11-06T18:44:17Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "131f0689b2b42b1b31449714c6eda8f811dd96a7c86748f1e03b239cfd0121c0",
-         "status" : "installed",
-         "test_summary" : "Files=7, Tests=27",
-         "version" : "0.003003",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

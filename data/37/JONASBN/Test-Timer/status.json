@@ -95,53 +95,6 @@
          "test_summary" : "Files=10, Tests=88",
          "version" : "2.12",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "J/JO/JONASBN/Test-Timer-2.12.tar.gz",
-         "id" : "1b0070895c03038a8a3797d7dbe5477e52eeb67f2d6e2f6c017d33fdefa2297a",
-         "module" : "Test::Timer",
-         "observed_at" : "2026-11-06T18:46:08Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "eb1b5c199793cc1c591a3d1fe5d15c16fda539755ba6d5dd2138d5638821f2fc",
-         "status" : "installed",
-         "test_summary" : "Files=10, Tests=88",
-         "version" : "2.12",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

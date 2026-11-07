@@ -72,6 +72,7 @@ if (-d $data_dir) {
 }
 
 my $imported = 0;
+my %new_ids;
 for my $cache (@caches) {
     die "cache directory does not exist: $cache\n" unless -d $cache;
     find({
@@ -102,7 +103,7 @@ for my $cache (@caches) {
             }
             push @{$entry->{observations}},
                 observation($receipt, $path, $id, $release_version);
-            ++$imported;
+            $new_ids{$id} = 1;
         },
     }, $cache);
 }
@@ -115,6 +116,25 @@ for my $key (sort keys %records) {
         $a->{observed_at} cmp $b->{observed_at}
             || $a->{id} cmp $b->{id}
     } @{$entry->{observations}};
+
+    # Repeated builds add no new facts. Keep the first observation for each
+    # unchanged result, but retain a result after a different outcome.
+    my (%previous, @distinct);
+    for my $observation (@{$entry->{observations}}) {
+        my $selector = join "\0",
+            @{$observation}{qw(version source_sha256 xperl_version)},
+            platform_key($observation);
+        my %facts = %$observation;
+        delete @facts{qw(id observed_at)};
+        my $content = $json->encode(\%facts);
+        next if defined($previous{$selector})
+            && $previous{$selector} eq $content;
+        push @distinct, $observation;
+        $previous{$selector} = $content;
+    }
+    $entry->{observations} = \@distinct;
+    $imported += grep { $new_ids{$_->{id}} } @distinct;
+
     write_file(status_path($author, $distribution), $json->encode($entry));
     my %latest;
     for my $observation (@{$entry->{observations}}) {
@@ -198,6 +218,7 @@ sub read_file ($path) {
 }
 
 sub write_file ($path, $data) {
+    return if -f $path && read_file($path) eq $data;
     make_path(dirname($path));
     open my $file, '>', $path or die "cannot write $path: $!\n";
     print {$file} $data;

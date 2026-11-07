@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "E/ET/ETHER/Hook-LexWrap-0.26.tar.gz",
-         "id" : "a68f75d828d4b85a7c0e4eaecd9b33bdf33744e23dd5aed263ee4b9d436df7c3",
-         "module" : "Hook::LexWrap",
-         "observed_at" : "2026-11-05T12:27:21Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "b60bdc5f98f94f9294b06adef82b1d996da192d5f183f9f434b610fd1137ec2d",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=57",
-         "version" : "0.26",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "E/ET/ETHER/Hook-LexWrap-0.26.tar.gz",
          "id" : "cf257c423e72cdc135af02cde8e9468118fe99ad1fdde584bbffea8a41ab6c82",
          "module" : "Hook::LexWrap",
          "observed_at" : "2026-11-06T09:42:41Z",
@@ -174,53 +134,6 @@
          "id" : "294193e819600baf7c337bf7206f6db01cc721288a23b140a2f1b79f102502a9",
          "module" : "Hook::LexWrap",
          "observed_at" : "2026-11-06T17:04:14Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "b60bdc5f98f94f9294b06adef82b1d996da192d5f183f9f434b610fd1137ec2d",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=57",
-         "version" : "0.26",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "E/ET/ETHER/Hook-LexWrap-0.26.tar.gz",
-         "id" : "5c3e6882881a8f049c7f6401610b91de43d24ec1934dbcc4baf36b63a1651e8e",
-         "module" : "Hook::LexWrap",
-         "observed_at" : "2026-11-06T18:42:23Z",
          "patch_set" : null,
          "patch_sha256" : [],
          "phases" : [

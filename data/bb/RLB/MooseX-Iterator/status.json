@@ -48,53 +48,6 @@
          "test_summary" : "Files=5, Tests=46",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RL/RLB/MooseX-Iterator-0.11.tar.gz",
-         "id" : "118afb92b2753497d011f07459d7faa4733652d14dd0e6479ca0d9b04eb153cf",
-         "module" : "MooseX::Iterator",
-         "observed_at" : "2026-11-06T18:47:29Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "1be558d13c8c940e94a263ac95f707f9d7f3e407602024085ef0b79f9b282efe",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=46",
-         "version" : "0.11",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

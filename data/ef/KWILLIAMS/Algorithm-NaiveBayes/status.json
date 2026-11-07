@@ -48,53 +48,6 @@
          "test_summary" : "Files=3, Tests=23",
          "version" : "0.04",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "K/KW/KWILLIAMS/Algorithm-NaiveBayes-0.04.tar.gz",
-         "id" : "057bf4a191b94631d9c2d821120db685968a9a86ef1b936c2803be9ca706af9b",
-         "module" : "Algorithm::NaiveBayes",
-         "observed_at" : "2026-11-06T18:43:23Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "fd769448ec977a3626a135b02e0d5fcd41de2d9d14ade0632194d1ad801eeccd",
-         "status" : "installed",
-         "test_summary" : "Files=3, Tests=23",
-         "version" : "0.04",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

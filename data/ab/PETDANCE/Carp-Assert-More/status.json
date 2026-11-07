@@ -93,54 +93,6 @@
       },
       {
          "cpan_path" : "P/PE/PETDANCE/Carp-Assert-More-2.9.0.tar.gz",
-         "id" : "d72b0506ec4461db226bb7c375e6abccc3ead6077d4f255aae8caf08adefd5f1",
-         "module" : "Carp::Assert::More",
-         "module_version" : "2.009000",
-         "observed_at" : "2026-11-06T18:44:06Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "cdf7d445a2caeb55ff0a3f92f3b0f6d589a0bab935bb6028792e7e1261b48b14",
-         "status" : "installed",
-         "test_summary" : "Files=55, Tests=602",
-         "version" : "2.9.0",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PE/PETDANCE/Carp-Assert-More-2.9.0.tar.gz",
          "id" : "f802c246e32839d8b884eff422c4fcec8629a6b4981583746964b34f868f6ca7",
          "module" : "Carp::Assert::More",
          "module_version" : "2.009000",

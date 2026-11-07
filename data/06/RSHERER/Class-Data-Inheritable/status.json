@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz",
-         "id" : "057693c685f28b372b51428fd0053f7dc88943e82deca8a01e2078282f271d37",
-         "module" : "Class::Data::Inheritable",
-         "observed_at" : "2026-11-05T12:25:42Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "aa1ae68a611357b7bfd9a2f64907cc196ddd6d047cae64ef9d0ad099d98ae54a",
-         "status" : "installed",
-         "test_summary" : "Files=3, Tests=15",
-         "version" : "0.10",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz",
          "id" : "78221cc921cd74996cfee6ac7ec1d66adf7ba1b675804686a2268abc949d44cd",
          "module" : "Class::Data::Inheritable",
          "observed_at" : "2026-11-05T23:34:01Z",
@@ -174,53 +134,6 @@
          "id" : "4bd02b96fbbb6107a568a17bd14e2cd45bf2397e2aa7d23e6170301566293250",
          "module" : "Class::Data::Inheritable",
          "observed_at" : "2026-11-06T17:06:53Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "aa1ae68a611357b7bfd9a2f64907cc196ddd6d047cae64ef9d0ad099d98ae54a",
-         "status" : "installed",
-         "test_summary" : "Files=3, Tests=17",
-         "version" : "0.10",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz",
-         "id" : "426446c52bf537d479ab3623d1085207736b4db8cb3bd73f379f2e0e4f8a08ea",
-         "module" : "Class::Data::Inheritable",
-         "observed_at" : "2026-11-06T18:44:58Z",
          "patch_set" : null,
          "patch_sha256" : [],
          "phases" : [

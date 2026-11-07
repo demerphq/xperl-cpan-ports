@@ -95,53 +95,6 @@
          "test_summary" : "Files=11, Tests=196",
          "version" : "0.25",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BA/BARBIE/Test-CPAN-Meta-0.25.tar.gz",
-         "id" : "074b3f8c46f90681c9984a329d6670152af8fee76099bba1ac2c19ac365eaec4",
-         "module" : "Test::CPAN::Meta",
-         "observed_at" : "2026-11-06T18:42:07Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "f55b4f9cf6bc396d0fe8027267685cb2ac4affce897d0967a317fac6db5a8db5",
-         "status" : "installed",
-         "test_summary" : "Files=11, Tests=196",
-         "version" : "0.25",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

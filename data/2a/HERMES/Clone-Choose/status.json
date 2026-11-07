@@ -138,53 +138,6 @@
       },
       {
          "cpan_path" : "H/HE/HERMES/Clone-Choose-0.010.tar.gz",
-         "id" : "99d43850f92a3daa92e5b077239befc12d621c2a4e07677aff67b082aeff200c",
-         "module" : "Clone::Choose",
-         "observed_at" : "2026-11-06T18:42:49Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "5623481f58cee8edb96cd202aad0df5622d427e5f748b253851dfd62e5123632",
-         "status" : "installed",
-         "test_summary" : "Files=52, Tests=195",
-         "version" : "0.010",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "H/HE/HERMES/Clone-Choose-0.010.tar.gz",
          "id" : "885a02d5a6893dec696434e376b59cde8208198b1b7952308791eeb3ee3b1d28",
          "module" : "Clone::Choose",
          "observed_at" : "2026-11-06T22:54:06Z",

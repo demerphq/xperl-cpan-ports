@@ -48,53 +48,6 @@
          "test_summary" : "Files=6, Tests=94",
          "version" : "0.006",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "Z/ZE/ZEFRAM/Class-Mix-0.006.tar.gz",
-         "id" : "70410b86940bc232c06e48ca86a732a6478f7f016cff41733639e0b2af51ea74",
-         "module" : "Class::Mix",
-         "observed_at" : "2026-11-06T18:48:56Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "8747f643893914f8c44979f1716d0c1ec8a41394796555447944e860f1ff7c0b",
-         "status" : "installed",
-         "test_summary" : "Files=6, Tests=94",
-         "version" : "0.006",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

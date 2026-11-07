@@ -95,53 +95,6 @@
          "test_summary" : "Files=23, Tests=20413",
          "version" : "2.600",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PJ/PJCJ/Net-IDN-Encode-2.600.tar.gz",
-         "id" : "f2c74dd5a427c5ad342a3ae1e9e92e1276ca0695aeaab1dea93999bb14b5ec0a",
-         "module" : "Net::IDN::Encode",
-         "observed_at" : "2026-11-06T18:44:12Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "104f56c025ca7c914741bd860d0faee988242b9fa5043885fdf024e870df7bf3",
-         "status" : "installed",
-         "test_summary" : "Files=23, Tests=20413",
-         "version" : "2.600",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

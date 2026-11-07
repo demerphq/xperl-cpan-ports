@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "A/AR/ARISTOTLE/Test-File-Contents-0.242.tar.gz",
-         "id" : "3bef72c27e89502d6db5be5d2c0bec40483b5d71ea67e2155032d601a638bab3",
-         "module" : "Test::File::Contents",
-         "observed_at" : "2026-11-06T18:44:32Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "a838ac0b6f6e10e89613b50ca61773cdba9ba4787ba82e7bb65daaf7084aa50b",
-         "status" : "installed",
-         "test_summary" : "Files=1, Tests=70",
-         "version" : "0.242",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "A/AR/ARISTOTLE/Test-File-Contents-0.242.tar.gz",
          "id" : "f4110c1927adb7e592ebdb066fbba829b3639c08bfbcefa777442735421e1cf1",
          "module" : "Test::File::Contents",
          "observed_at" : "2026-11-06T22:53:03Z",

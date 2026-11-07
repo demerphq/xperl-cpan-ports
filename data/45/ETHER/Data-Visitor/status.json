@@ -88,53 +88,6 @@
          "test_summary" : "Files=11, Tests=106",
          "version" : "0.32",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "E/ET/ETHER/Data-Visitor-0.32.tar.gz",
-         "id" : "b4d98554ef4b50eaaabf0ca6d2f261947b68f7e49c04aa76b44c9c0767456fe7",
-         "module" : "Data::Visitor",
-         "observed_at" : "2026-11-06T18:47:48Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "b194290f257cc6275a039374111554c666a1650e4c01ad799c1e0a277f47917d",
-         "status" : "installed",
-         "test_summary" : "Files=11, Tests=106",
-         "version" : "0.32",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

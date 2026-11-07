@@ -138,53 +138,6 @@
       },
       {
          "cpan_path" : "M/MS/MSCHILLI/Log-Log4perl-1.58.tar.gz",
-         "id" : "4d101a41f12f421f4a8f771840dfc55b5da90fd6083e0ff39c07245aef8eeb1e",
-         "module" : "Log::Log4perl",
-         "observed_at" : "2026-11-06T18:44:22Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "48765ea8efb096fec1418e6b1ef8379845c607506fe7e63561cd1b41dd3efef6",
-         "status" : "installed",
-         "test_summary" : "Files=75, Tests=753",
-         "version" : "1.58",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MS/MSCHILLI/Log-Log4perl-1.58.tar.gz",
          "id" : "9b74a115522cc4496aa671c11a53eb1185f7197bc664ad2dd15bef74e7411b9b",
          "module" : "Log::Log4perl",
          "observed_at" : "2026-11-06T22:58:52Z",

@@ -95,53 +95,6 @@
          "test_summary" : "Files=23, Tests=619",
          "version" : "0.41",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenSSL-RSA-0.41.tar.gz",
-         "id" : "a0ccca5443d591093e9e1e56d4d5acb6b582cc9fa0d73575c961d34a39ecfb89",
-         "module" : "Crypt::OpenSSL::RSA",
-         "observed_at" : "2026-11-06T18:45:49Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "82fa839897b88e9c245b6265f3be26d3bc879cae4c7a8151fad4a307c3366822",
-         "status" : "installed",
-         "test_summary" : "Files=23, Tests=619",
-         "version" : "0.41",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

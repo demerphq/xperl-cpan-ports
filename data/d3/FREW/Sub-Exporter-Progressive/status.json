@@ -44,46 +44,6 @@
       },
       {
          "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
-         "id" : "0c5730e26f440e03d9de1ce6d3cc6efc8f1cdbb9e1e2a9258e5d719a86add4e6",
-         "module" : "Sub::Exporter::Progressive",
-         "observed_at" : "2026-11-05T12:23:37Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "d535b7954d64da1ac1305b1fadf98202769e3599376854b2ced90c382beac056",
-         "status" : "installed",
-         "test_summary" : "Files=8, Tests=61",
-         "version" : "0.001013",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
          "id" : "da27f3a43b89ccbf24e3f749ff5c11e088d01ffbd6eec4c8b22d178790a24f73",
          "module" : "Sub::Exporter::Progressive",
          "observed_at" : "2026-11-05T13:03:00Z",
@@ -174,53 +134,6 @@
          "id" : "5de71e3b4b52a52d1284098775125185f0e129fbdcf7432fc065418883a79037",
          "module" : "Sub::Exporter::Progressive",
          "observed_at" : "2026-11-06T17:04:24Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "d535b7954d64da1ac1305b1fadf98202769e3599376854b2ced90c382beac056",
-         "status" : "installed",
-         "test_summary" : "Files=8, Tests=59",
-         "version" : "0.001013",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz",
-         "id" : "791ea3bc4ccab07e94ef5d55afda0d4a5d038cc2c02bc2f5f0b5c9abcc4adf60",
-         "module" : "Sub::Exporter::Progressive",
-         "observed_at" : "2026-11-06T18:42:34Z",
          "patch_set" : null,
          "patch_sha256" : [],
          "phases" : [

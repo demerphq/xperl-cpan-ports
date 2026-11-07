@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "W/WE/WESM/DBIx-Class-Candy-0.005004.tar.gz",
-         "id" : "77f368290ae93542198a06130ce5f5e335acfbdc4cfc49383a28c2109c2013ff",
-         "module" : "DBIx::Class::Candy",
-         "observed_at" : "2026-11-06T18:48:43Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "631e161c08ff7afbf9a3fc9b49d1d7946cc89730eb440fc8ed87c589d0e00aee",
-         "status" : "installed",
-         "test_summary" : "Files=7, Tests=21",
-         "version" : "0.005004",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "W/WE/WESM/DBIx-Class-Candy-0.005004.tar.gz",
          "id" : "40cfe4195dbb0a228e8438a5c5572089f251a7ee2cb43e1376fe29b47fcea63b",
          "module" : "DBIx::Class::Candy",
          "observed_at" : "2026-11-06T23:07:29Z",

@@ -89,52 +89,6 @@
       },
       {
          "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
-         "id" : "05f3ce0757791368f25e75a3779db30194715241bc1e2365df7592797fadf442",
-         "module" : "Params::Validate",
-         "observed_at" : "2026-11-05T12:21:54Z",
-         "patch_set" : "xperl-exception-callbacks",
-         "patch_sha256" : [
-            "b84860570120f2e1ab97dcdd77b25bcbd72715eef19d1b225f8f3ef0ac677dcf"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "x86_64-linux",
-            "key" : "linux/x86_64-linux",
-            "os" : "linux"
-         },
-         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
-         "status" : "installed",
-         "test_summary" : "Files=38, Tests=2512",
-         "version" : "1.31",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
          "id" : "328161db7c1fd5eccd09ca027a9054cd925731883057e72aa8fe9b123aea5a82",
          "module" : "Params::Validate",
          "observed_at" : "2026-11-05T13:05:03Z",
@@ -237,59 +191,6 @@
          "id" : "fa805cb288f1b9974ab4b80e8f99403b072e369a55677b2ea2cd6f8f7beb6977",
          "module" : "Params::Validate",
          "observed_at" : "2026-11-06T17:08:22Z",
-         "patch_set" : "xperl-exception-callbacks",
-         "patch_sha256" : [
-            "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
-         "status" : "installed",
-         "test_summary" : "Files=38, Tests=2515",
-         "version" : "1.31",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
-         "id" : "8d3451a53da42a17cf18e8aadb59846bc3eefdf1406345b707ceadbb515d535a",
-         "module" : "Params::Validate",
-         "observed_at" : "2026-11-06T18:46:27Z",
          "patch_set" : "xperl-exception-callbacks",
          "patch_sha256" : [
             "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"

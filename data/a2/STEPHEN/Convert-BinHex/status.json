@@ -48,53 +48,6 @@
          "test_summary" : "Files=6, Tests=18",
          "version" : "1.125",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/ST/STEPHEN/Convert-BinHex-1.125.tar.gz",
-         "id" : "5ee24d7c42b917417ea01bf4d9e2d621f610adb912da102cd8e7063c644e6afc",
-         "module" : "Convert::BinHex",
-         "observed_at" : "2026-11-06T18:45:30Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "513591b4be46bd7eb91e83197721b4a045a9753a3dd2f11de82c9d3013226397",
-         "status" : "installed",
-         "test_summary" : "Files=6, Tests=18",
-         "version" : "1.125",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

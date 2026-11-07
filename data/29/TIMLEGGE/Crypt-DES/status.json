@@ -93,52 +93,6 @@
          "status" : "installed",
          "version" : "2.09",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TI/TIMLEGGE/Crypt-DES-2.09.tar.gz",
-         "id" : "db061fd287d6cf138b3290c27018ddd7dc42d2c4434ababdc2a9b501beb48a55",
-         "module" : "Crypt::DES",
-         "observed_at" : "2026-11-06T18:45:39Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "149cdc0a14e944b4cc5eefb7560c78d8cb25254f9f9774547c880355a7e9f40c",
-         "status" : "installed",
-         "version" : "2.09",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

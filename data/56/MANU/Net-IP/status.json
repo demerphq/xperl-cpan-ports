@@ -95,53 +95,6 @@
          "test_summary" : "Files=2, Tests=36069",
          "version" : "1.26",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MA/MANU/Net-IP-1.26.tar.gz",
-         "id" : "bf0f720da7215096019ce6f7f45f78961dbe37f5cc9dc40b6e1e971c7bd64286",
-         "module" : "Net::IP",
-         "observed_at" : "2026-11-06T18:43:37Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "040f16f3066647d761b724a3b70754d28cbd1e6fe5ea01c63ed1cd857117d639",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=36069",
-         "version" : "1.26",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

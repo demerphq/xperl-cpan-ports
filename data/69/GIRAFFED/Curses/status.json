@@ -48,53 +48,6 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "1.46",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "G/GI/GIRAFFED/Curses-1.46.tar.gz",
-         "id" : "6ffc233142b5f9c2250784d2cf9792d550b2b8280d116233e263b37f210d8475",
-         "module" : "Curses",
-         "observed_at" : "2026-11-06T18:43:00Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "9631d6e3e2859c85913d8b8724f61fbebb9e932e9e50aa0493a4e0276660a3f9",
-         "status" : "installed",
-         "test_summary" : "Files=1, Tests=1",
-         "version" : "1.46",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

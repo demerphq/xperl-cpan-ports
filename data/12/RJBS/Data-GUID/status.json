@@ -48,53 +48,6 @@
          "test_summary" : "Files=5, Tests=96",
          "version" : "0.051",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RJ/RJBS/Data-GUID-0.051.tar.gz",
-         "id" : "6e652a75387259f3c40f4152b41b578528b5243c221bd5d95902fee153493d1a",
-         "module" : "Data::GUID",
-         "observed_at" : "2026-11-06T18:44:54Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "68ea77c73fca891382f206e12449094501b6fbf2e57f54902d5064227cfd8e2e",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=96",
-         "version" : "0.051",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

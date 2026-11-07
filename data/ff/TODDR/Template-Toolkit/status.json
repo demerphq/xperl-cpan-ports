@@ -194,59 +194,6 @@
          "xperl_version" : "v5.45.5"
       },
       {
-         "cpan_path" : "T/TO/TODDR/Template-Toolkit-3.106.tar.gz",
-         "id" : "5e077e9c081ac4704c743376322299e8faef89d9b2c411a600a4939ac5d1ac92",
-         "module" : "Template",
-         "observed_at" : "2026-11-06T18:46:25Z",
-         "patch_set" : "xperl-exception-wrapper",
-         "patch_sha256" : [
-            "96013e2e3224680be8846dc48b87876ac96fd2c1cc7307bc2179d57a6ff5da7d"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "c7474050be80201f1fb55f0a569b9c0ab6c1c3f0cebbd7e601bda9b4046eec85",
-         "status" : "installed",
-         "test_summary" : "Files=121, Tests=3300",
-         "version" : "3.106",
-         "xperl_version" : "v5.45.5"
-      },
-      {
          "advisories" : [],
          "cpan_path" : "T/TO/TODDR/Template-Toolkit-3.106.tar.gz",
          "id" : "3a135c3b38f8885c47c7518177d46de3b2f4de33ee846bafb02e3ba0d823c54b",

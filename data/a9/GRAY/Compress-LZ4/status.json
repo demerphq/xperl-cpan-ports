@@ -48,53 +48,6 @@
          "test_summary" : "Files=2, Tests=2068",
          "version" : "0.25",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "G/GR/GRAY/Compress-LZ4-0.25.tar.gz",
-         "id" : "aa5586f6232c7c60fe5fe76f3ae38e31a348288615997b7ed9bfcf20eaf01c4e",
-         "module" : "Compress::LZ4",
-         "observed_at" : "2026-11-06T18:42:43Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "4f48853ecbf98143cdea019b45580b9537c4929dd6fc109d90d2f0da43dd0e88",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=2068",
-         "version" : "0.25",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

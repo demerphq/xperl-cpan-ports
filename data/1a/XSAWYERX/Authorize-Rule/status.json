@@ -48,53 +48,6 @@
          "test_summary" : "Files=21, Tests=165",
          "version" : "0.009",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "X/XS/XSAWYERX/Authorize-Rule-0.009.tar.gz",
-         "id" : "2a5afe20257a75f9e2ed1c864c77dde7907594a90d0c6368d4e0566d997998e8",
-         "module" : "Authorize::Rule",
-         "observed_at" : "2026-11-06T18:48:35Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "3dfdb2c51d0539ea812f85c2d04abfb3daeb815b51199ca2696ee8120ebfb667",
-         "status" : "installed",
-         "test_summary" : "Files=21, Tests=165",
-         "version" : "0.009",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "J/JM/JMM/Heap-0.80.tar.gz",
-         "id" : "dc26c2f52e1a8113ce0f008971366f3862d2acbe1e7b78e25aaed8c4ed0e7d23",
-         "module" : "Heap",
-         "observed_at" : "2026-11-06T18:43:15Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "ccda29f3c93176ad0fdfff4dd6f5e4ac90b370cba4b028386b7343bf64139bde",
-         "status" : "installed",
-         "test_summary" : "Files=13, Tests=2473",
-         "version" : "0.80",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "J/JM/JMM/Heap-0.80.tar.gz",
          "id" : "f4ae76e986a85bfe4aa553506d3d80ec05532eb2d71ada9884e73c4dd8c82e7d",
          "module" : "Heap",
          "observed_at" : "2026-11-06T22:54:39Z",

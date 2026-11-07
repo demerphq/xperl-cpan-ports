@@ -91,53 +91,6 @@
       },
       {
          "cpan_path" : "I/IS/ISHIGAKI/Test-UseAllModules-0.17.tar.gz",
-         "id" : "e0232d673582209fd11564013fa091581f70824e8494ce2fe3550678f0e51660",
-         "module" : "Test::UseAllModules",
-         "observed_at" : "2026-11-06T18:42:57Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "a71f2fe8b96ab8bfc2760aa1d3135ea049a5b20dcb105457b769a1195c7a2509",
-         "status" : "installed",
-         "test_summary" : "Files=10, Tests=13",
-         "version" : "0.17",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "I/IS/ISHIGAKI/Test-UseAllModules-0.17.tar.gz",
          "id" : "88120fbb368b611586c8f234380fd71881fe33f7ceae3062844fdc4eab52252c",
          "module" : "Test::UseAllModules",
          "observed_at" : "2026-11-06T22:54:21Z",

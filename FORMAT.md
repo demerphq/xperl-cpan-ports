@@ -81,6 +81,7 @@ record should identify the source digest, patch-set ID, patch digests, XPerl
 version and configuration, platform, build and test commands, results, and
 date. Evidence says what was tested; the version interval says where a patch
 may apply. The two are deliberately distinct.
+Do not add another evidence file when only the recording date differs.
 
 Recipes are Markdown files under `recipes/`, named by the IDs in patch sets.
 They explain the symptom, affected XPerl change, preferred port, compatibility

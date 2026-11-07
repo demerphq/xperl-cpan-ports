@@ -48,53 +48,6 @@
          "test_summary" : "Files=12, Tests=189",
          "version" : "1.419",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MT/MTHURN/I18N-Charset-1.419.tar.gz",
-         "id" : "a25368be4eb5058daf3faca67d99c93f27af2fc80e4c03a7bf6c87f0136a0b3f",
-         "module" : "I18N::Charset",
-         "observed_at" : "2026-11-06T18:44:28Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "8eaf3dfd4712b318a27bbd6763bba9d5521bbf2dfddd1348f00d5fa649d12598",
-         "status" : "installed",
-         "test_summary" : "Files=12, Tests=189",
-         "version" : "1.419",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

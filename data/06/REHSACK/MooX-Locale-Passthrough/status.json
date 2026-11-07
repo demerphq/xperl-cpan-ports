@@ -95,53 +95,6 @@
          "test_summary" : "Files=2, Tests=4",
          "version" : "0.001",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RE/REHSACK/MooX-Locale-Passthrough-0.001.tar.gz",
-         "id" : "a41a7ae8cefcdef99c6ed326038da86f4c3bc6bda519d33e47b4c711568c7ccc",
-         "module" : "MooX::Locale::Passthrough",
-         "observed_at" : "2026-11-06T18:44:23Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "7a05827e52ab5a1dde2ea5c712927b1e58c8d251664d966627adf9dd30ec0512",
-         "status" : "installed",
-         "test_summary" : "Files=2, Tests=4",
-         "version" : "0.001",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -42,47 +42,6 @@
          "status" : "failed",
          "version" : "3",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "J/JC/JCRISTY/Image-Magick-7.1.2-3.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "build"
-         },
-         "id" : "187cfee87d3c60074f2196651c96f4fa6b01d71a6ed85ede70275f033d150fb4",
-         "module" : "Image::Magick",
-         "module_version" : "7.001001",
-         "observed_at" : "2026-11-06T18:43:07Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "build"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "dc6ee21aed560d36f36be608909344bd2e25d63ab5d959553401e02f5df28a6b",
-         "status" : "failed",
-         "version" : "3",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

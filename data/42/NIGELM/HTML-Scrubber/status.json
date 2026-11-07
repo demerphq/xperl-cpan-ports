@@ -48,53 +48,6 @@
          "test_summary" : "Files=17, Tests=172",
          "version" : "0.19",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "N/NI/NIGELM/HTML-Scrubber-0.19.tar.gz",
-         "id" : "dd9e90f6199ddd3b4138b834b8d60f4dcc7f114ccefb427ea712857cf232865e",
-         "module" : "HTML::Scrubber",
-         "observed_at" : "2026-11-06T18:44:59Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "ae285578f8565f9154c63e4234704b57b6835f77a2f82ffe724899d453262bb1",
-         "status" : "installed",
-         "test_summary" : "Files=17, Tests=172",
-         "version" : "0.19",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

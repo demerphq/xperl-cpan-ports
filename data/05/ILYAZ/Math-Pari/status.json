@@ -94,52 +94,6 @@
          "test_summary" : "Files=26, Tests=1343",
          "version" : "2.030528",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "I/IL/ILYAZ/modules/Math-Pari-2.030528.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "test"
-         },
-         "id" : "fbd651237fac13c4843d7e3fa8190397586b3c5d3a1ecf0d1c9119be0e103b8f",
-         "module" : "Math::Pari",
-         "observed_at" : "2026-11-06T18:43:19Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "test"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "67f74d216c69635ab1c6ea3e27ce19750a94a2b560ae7288bb2d6cf714fce6c8",
-         "status" : "failed",
-         "test_summary" : "Files=26, Tests=2, Failed 25/26 test programs. 0/2 subtests failed.",
-         "version" : "2.030528",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

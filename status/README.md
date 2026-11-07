@@ -6,6 +6,11 @@ the CPAN archive, source hash, requested module, distribution release
 version, XPerl version, platform, selected patch set, build phases, and test
 count when available. The receipt content hash identifies an observation.
 Importing the same cache again does not duplicate it.
+Results with the same recorded build facts are stored once even if separate
+receipts have different IDs or timestamps. The first observation stays in
+place. A different result for the same release, XPerl version, and platform
+is a new observation; a later return to the earlier result records that
+state change.
 
 The importer derives the author and distribution release version from the
 CPAN archive.

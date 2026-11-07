@@ -138,53 +138,6 @@
       },
       {
          "cpan_path" : "P/PE/PETDANCE/Test-Memory-Cycle-1.06.tar.gz",
-         "id" : "0167e7e244b37f9629fc91c302668afc3c5fe7c7e1ccbf67422c02f3e44391b7",
-         "module" : "Test::Memory::Cycle",
-         "observed_at" : "2026-11-06T18:44:58Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "9d53ddfdc964cd8454cb0da4c695b6a3ae47b45839291c34cb9d8d1cfaab3202",
-         "status" : "installed",
-         "test_summary" : "Files=9, Tests=39",
-         "version" : "1.06",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "P/PE/PETDANCE/Test-Memory-Cycle-1.06.tar.gz",
          "id" : "064aced8d53907f5df9fe125dc7d2af6ef06e01d237c4b6689a3e57345e7130d",
          "module" : "Test::Memory::Cycle",
          "observed_at" : "2026-11-06T23:02:04Z",

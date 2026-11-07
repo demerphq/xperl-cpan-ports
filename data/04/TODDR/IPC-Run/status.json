@@ -88,53 +88,6 @@
          "test_summary" : "Files=47, Tests=904",
          "version" : "20260402.0",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "T/TO/TODDR/IPC-Run-20260402.0.tar.gz",
-         "id" : "6af5fae4e7ced5caecd5fec241a0ecd47e3e90697fc0cf97aa3d770082ae235a",
-         "module" : "IPC::Run",
-         "observed_at" : "2026-11-06T18:47:04Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "d6a326a8b1ffb19495dea4ff5a09ef138bf3562ab1b069d3fb7efbc77b9f6aca",
-         "status" : "installed",
-         "test_summary" : "Files=47, Tests=904",
-         "version" : "20260402.0",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

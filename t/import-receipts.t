@@ -95,10 +95,34 @@ is($status->{observations}[0]{version}, '2.0',
    'distribution release version comes from archive');
 is($status->{observations}[0]{module_version}, '1.0',
    'different module version is retained');
+my $status_mtime = time - 30;
+utime($status_mtime, $status_mtime, $status_path);
 is(system($^X, $script, '--cache', File::Spec->catdir($root, 'success')),
    0, 'repeat import succeeds');
 $status = JSON::PP->new->decode(read_file($status_path));
 is(scalar @{$status->{observations}}, 2, 'repeat import is idempotent');
+is((stat($status_path))[9], $status_mtime,
+   'unchanged status is not rewritten');
+
+my $first_success_time = $secured->{observed_at};
+my $repeat = File::Spec->catdir($root, 'repeat', 'work', 'release-e');
+make_path($repeat);
+$receipt->{run_nonce} = 'a separate build with the same result';
+my $repeat_receipt = File::Spec->catfile($repeat, 'receipt.json');
+write_json($repeat_receipt, $receipt);
+utime(time, time, $repeat_receipt);
+is(system($^X, $script, '--cache', File::Spec->catdir($root, 'repeat')),
+   0, 'identical result from another receipt imports');
+$status = JSON::PP->new->decode(read_file($status_path));
+is(scalar @{$status->{observations}}, 2,
+   'same build facts do not create another observation');
+my ($kept_success) = grep { $_->{status} eq 'installed' }
+    @{$status->{observations}};
+is($kept_success->{observed_at}, $first_success_time,
+   'repeated result does not update the original observation time');
+is((stat($status_path))[9], $status_mtime,
+   'identical build facts do not rewrite the status');
+
 is(system($^X, $script, '--rebuild'), 0,
    'summary can be rebuilt without importing receipts');
 my $other = File::Spec->catdir($root, 'other', 'work', 'release-c');

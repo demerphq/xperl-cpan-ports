@@ -95,53 +95,6 @@
          "test_summary" : "Files=164, Tests=27301",
          "version" : "0.091",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "M/MI/MIK/CryptX-0.091.tar.gz",
-         "id" : "88562c49dad1aec94d466b6e926a5cda8046b3818071f955f6809a31b92778fe",
-         "module" : "CryptX",
-         "observed_at" : "2026-11-06T18:44:20Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "3a82d5cf786985e5de5339d1236ce4b27306db5e6b1ed5fa15038ded6d44859a",
-         "status" : "installed",
-         "test_summary" : "Files=164, Tests=27301",
-         "version" : "0.091",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

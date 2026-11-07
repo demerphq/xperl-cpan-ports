@@ -41,46 +41,6 @@
          "status" : "failed",
          "version" : "0.000014",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "G/GO/GONZUS/JavaScript-V8-XS-0.000014.tar.gz",
-         "failure" : {
-            "exit_status" : 2,
-            "phase" : "build"
-         },
-         "id" : "9f292c63074673214b2b36ce4299c8cefeb0596e3064fd6d4ebf36ac74449531",
-         "module" : "JavaScript::V8::XS",
-         "observed_at" : "2026-11-06T18:44:53Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 2,
-               "name" : "build"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "70915c387c3b9c94b5a270e71bda7c3eab0ac643b01ca82a26f57c415e8b4649",
-         "status" : "failed",
-         "version" : "0.000014",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

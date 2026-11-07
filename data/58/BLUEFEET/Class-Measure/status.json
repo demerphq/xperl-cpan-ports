@@ -48,53 +48,6 @@
          "test_summary" : "Files=4, Tests=29",
          "version" : "0.10",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BL/BLUEFEET/Class-Measure-0.10.tar.gz",
-         "id" : "977add92752f6072a00ed9b6723efbab37eb226642da258026ba81b035c847dd",
-         "module" : "Class::Measure::Length",
-         "observed_at" : "2026-11-06T18:44:53Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "c0b79eb09a66cc41fb83aadbd24874372b465a74407b96e0722994eefbfd24ca",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=29",
-         "version" : "0.10",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,53 +95,6 @@
          "test_summary" : "Files=35, Tests=285",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/ST/STEVAN/MOP-0.14.tar.gz",
-         "id" : "b8100eec203f61281f3c6e787ad13107936e8ba5ea57ee4c7eac702bfd86d882",
-         "module" : "MOP",
-         "observed_at" : "2026-11-06T18:49:01Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "38de364994be0a6f0b743bc60e2d1e0d9ff7be9b9c474589d81eb08f5b9844d2",
-         "status" : "installed",
-         "test_summary" : "Files=35, Tests=285",
-         "version" : "0.14",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

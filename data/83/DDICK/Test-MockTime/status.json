@@ -135,53 +135,6 @@
          "test_summary" : "Files=5, Tests=33",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "D/DD/DDICK/Test-MockTime-0.17.tar.gz",
-         "id" : "0ed2764a67f3cb7704d61966f8c232575dba7d211d6246e328a55093ca033090",
-         "module" : "Test::MockTime",
-         "observed_at" : "2026-11-06T18:42:46Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "3363e118b2606f1d6abc956f22b0d09109772b7086155fb5c9c7f983350602f9",
-         "status" : "installed",
-         "test_summary" : "Files=5, Tests=33",
-         "version" : "0.17",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

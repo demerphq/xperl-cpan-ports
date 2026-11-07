@@ -144,60 +144,6 @@
          "xperl_version" : "v5.45.5"
       },
       {
-         "cpan_path" : "C/CR/CROMEDOME/Dancer2-2.3.0.tar.gz",
-         "id" : "d97ef776d267fbacece25fc35c7cccc227639dc718f153406bf73c9e045936d8",
-         "module" : "Dancer2",
-         "module_version" : "v2.3.0",
-         "observed_at" : "2026-11-06T18:49:20Z",
-         "patch_set" : "xperl-error-message",
-         "patch_sha256" : [
-            "9d0891556ab6c26840a827ac428ef726889f6e256f0e6d1013e96d6af54a008f"
-         ],
-         "phases" : [
-            {
-               "exit_status" : 0,
-               "name" : "patch"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "4764563277d667a757070483ec69aa2241555d405e6308252e3ffefe11645e7b",
-         "status" : "installed",
-         "test_summary" : "Files=217, Tests=1778",
-         "version" : "2.3.0",
-         "xperl_version" : "v5.45.5"
-      },
-      {
          "advisories" : [],
          "cpan_path" : "C/CR/CROMEDOME/Dancer2-2.3.0.tar.gz",
          "id" : "6dcb33b3610d46b7ce13e7fe43fbd67bee41d325e28dcd2e1a195168e21311ae",

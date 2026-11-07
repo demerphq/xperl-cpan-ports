@@ -48,53 +48,6 @@
          "test_summary" : "Files=24, Tests=427",
          "version" : "0.10",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "R/RR/RRWO/HTTP-Headers-ActionPack-0.10.tar.gz",
-         "id" : "18d49e18eb88fa056107f66d2409b039e584cb4da1e17ceba8baf069ae666048",
-         "module" : "HTTP::Headers::ActionPack",
-         "observed_at" : "2026-11-06T18:46:10Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "64297d4951c2b70599349b356ea9a8f7f73f9367e64ac62db39cf9da20506956",
-         "status" : "installed",
-         "test_summary" : "Files=24, Tests=427",
-         "version" : "0.10",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

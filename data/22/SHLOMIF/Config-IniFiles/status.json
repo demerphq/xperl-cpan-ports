@@ -51,53 +51,6 @@
       },
       {
          "cpan_path" : "S/SH/SHLOMIF/Config-IniFiles-3.003000.tar.gz",
-         "id" : "f65e678e46ae62b2714cfe534dc668878558ab61c007f809d2e61d282a3f6bcd",
-         "module" : "Config::IniFiles",
-         "observed_at" : "2026-11-06T18:45:14Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "4f6f8eb0c4efbc9398a0f1ef0c97fb7704eee4ccd90af1a31dda32854aa81164",
-         "status" : "installed",
-         "test_summary" : "Files=41, Tests=222",
-         "version" : "3.003000",
-         "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "S/SH/SHLOMIF/Config-IniFiles-3.003000.tar.gz",
          "id" : "353ed59d8a2dd62d68777cd81a662ac82d5815283fae14c7049a7c1f53695faa",
          "module" : "Config::IniFiles",
          "observed_at" : "2026-11-06T23:03:44Z",

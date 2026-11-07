@@ -95,53 +95,6 @@
          "test_summary" : "Files=4, Tests=40",
          "version" : "1.19",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "B/BB/BBC/Hash-Flatten-1.19.tar.gz",
-         "id" : "f36cca7d1d0ce9bb0adad2f89702b5aa863a4b28c0096d9408a7a7441d68f72e",
-         "module" : "Hash::Flatten",
-         "observed_at" : "2026-11-06T18:42:09Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "70c6c49d8b6c460746417a5098edd2a0fd31fd8b86c54bf8492e853c1f4e4b98",
-         "status" : "installed",
-         "test_summary" : "Files=4, Tests=38",
-         "version" : "1.19",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

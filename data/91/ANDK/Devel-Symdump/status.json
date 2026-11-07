@@ -88,53 +88,6 @@
          "test_summary" : "Files=9, Tests=29",
          "version" : "2.18",
          "xperl_version" : "v5.45.5"
-      },
-      {
-         "cpan_path" : "A/AN/ANDK/Devel-Symdump-2.18.tar.gz",
-         "id" : "0dee8aa4b9a6fd816ae132bec971f2933e42be6c34439d75f77c227f43d1df1e",
-         "module" : "Devel::Symdump",
-         "observed_at" : "2026-11-06T18:42:04Z",
-         "patch_set" : null,
-         "patch_sha256" : [],
-         "phases" : [
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "configure"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "build"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "test"
-            },
-            {
-               "attempt" : 1,
-               "exit_status" : 0,
-               "name" : "install"
-            }
-         ],
-         "platform" : {
-            "archname" : "darwin-2level",
-            "cc" : "cc",
-            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
-            "key" : "darwin/darwin-2level",
-            "make" : "make",
-            "os" : "darwin",
-            "osvers" : "25.6.0",
-            "use64bitall" : 1,
-            "usethreads" : 0,
-            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
-         },
-         "source_sha256" : "826f81a107f5592a2516766ed43beb47e10cc83edc9ea48090b02a36040776c0",
-         "status" : "installed",
-         "test_summary" : "Files=9, Tests=29",
-         "version" : "2.18",
-         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
