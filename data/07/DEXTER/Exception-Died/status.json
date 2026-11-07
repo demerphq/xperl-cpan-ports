@@ -102,6 +102,61 @@
          "test_summary" : "Files=2, Tests=34",
          "version" : "0.06",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DE/DEXTER/Exception-Died-0.06.tar.gz",
+         "id" : "7fcb197f7ba3cbe5698b2d357a88f1cdd69d90d44bd17efb17f2e55bfc56c8f5",
+         "module" : "Exception::Died",
+         "observed_at" : "2026-11-07T20:29:32Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-caught-error-text",
+         "patch_sha256" : [
+            "b2de569b7bc6016849e88b521bce18581a010c3ff892192c3b46743958a7f4fe"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "68347a59ec4bcd89ab98f6dc1cce9125b30966a3"
+         },
+         "source_sha256" : "35c440bc2afd4d57e241a0db1b4e68d9d5295df2db8d789d39b5f45105978ab5",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=34",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

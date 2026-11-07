@@ -5,6 +5,7 @@
   "date": "2026-11-07",
   "platform": "x86_64-linux",
   "xperl_version": "v5.45.5",
+  "xperl_commit": "68347a59ec4bcd89ab98f6dc1cce9125b30966a3",
   "tests": [
     {
       "command": "make test",
@@ -15,6 +16,11 @@
       "command": "make test with PERL5LIB for required modules",
       "interpreter": "Perl v5.44.0",
       "result": "pass: 2 test files, 34 tests"
+    },
+    {
+      "command": "xperl-install install-ported --only DEXTER/Exception-Died",
+      "interpreter": "XPerl v5.45.5 at commit 68347a59ec",
+      "result": "pass: clean registry replay, 2 test files, 34 tests; graph query works without loading XPerl::DiagGroup.pm"
     }
   ]
 }
