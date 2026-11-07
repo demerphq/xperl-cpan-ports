@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 84 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -955,7 +955,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | ILMARI | [Class-Unload](../data/e7/ILMARI/Class-Unload/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILMARI | [Devel-OverloadInfo](../data/c6/ILMARI/Devel-OverloadInfo/status.json) | 0.008 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ILMARI | [Devel-OverloadInfo](../data/c6/ILMARI/Devel-OverloadInfo/status.json) | 0.008 | v5.45.5 | linux/x86_64-linux | installed | none |
-| ILMARI | [bareword-filehandles](../data/d0/ILMARI/bareword-filehandles/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level | failed | none |
+| ILMARI | [bareword-filehandles](../data/d0/ILMARI/bareword-filehandles/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level | installed | compile-error-order-test |
 | ILMARI | [multidimensional](../data/7d/ILMARI/multidimensional/status.json) | 0.014 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ILMARI | [multidimensional](../data/7d/ILMARI/multidimensional/status.json) | 0.014 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | failed | none |
