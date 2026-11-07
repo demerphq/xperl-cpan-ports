@@ -8,8 +8,11 @@ and append propagation diagnostics. Keying a trace by `refaddr` of that
 object keeps the first stack trace across rethrows and distinguishes a
 nested exception raised by a destructor.
 
-Use `__EXCEPT__` for XPerl's text exceptions, and retain the ordinary
-`__DIE__` path for Perl and user-thrown references. `Try::Tiny` may clear
+For XPerl, design trace handling around the canonical exception received by
+`__EXCEPT__`. Do not route it through an existing `__DIE__` formatter or
+render and rethrow its text: that loses diagnostic codes, parameters, and
+object identity. Retain the ordinary `__DIE__` path for Perl and
+user-thrown references. `Try::Tiny` may clear
 `${^ERROR_OBJ}` before its catch callback, while `$@` still exposes the
 canonical object for text exceptions. Test both text and reference throws.
 
@@ -25,6 +28,14 @@ traces: retain the first capture for a canonical exception, preserve it
 through explicit propagation, and keep nested exceptions separate. Review
 legacy `__DIE__` handlers for migration to `__EXCEPT__` during AI-assisted
 ports, but inspect their handling of reference throws and warnings first.
+
+A native port is complete only when a focused probe shows that the original
+diagnostic code and parameters survive, the exception retains its identity
+through rethrows, and trace handling keeps nested exceptions separate. Test
+warning-only exceptions and expected internal exceptions when the hook can
+see them. A passing distribution suite alone does not establish this. If a
+stable core API is needed to attach a trace, keep the port marked
+`needs-core-api` until that API and its focused tests exist.
 
 ## Handler survey
 
