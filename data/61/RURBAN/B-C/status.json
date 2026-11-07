@@ -109,5 +109,11 @@
          "xperl_version" : "v5.45.5"
       }
    ],
-   "schema" : 2
+   "schema" : 2,
+   "triage" : {
+      "disposition" : "out-of-date-with-blead",
+      "reason" : "B-C 1.57 was released on 2019-05-07. It relies on Perl internals that have since changed. The initial build failed on BmUSEFUL and PadnamePV/PadnameLEN, and an exploratory repair still failed 79 of 117 test programs. Leave this release unfixed pending an upstream update or separate porting effort.",
+      "source_sha256" : "0452a611d343adf9d95fceab6ba6b66176e3ad7fccce5280922c0e431f5149ff",
+      "version" : "1.57"
+   }
 }

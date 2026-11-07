@@ -72,7 +72,7 @@ Prior failures remain in each distribution record after a later success.
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed. |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | test | Files=122, Tests=9066, Failed 1/122 test programs. 1/9066 subtests failed. |
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
-| RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. |
+| RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. (out-of-date-with-blead) |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | SHLOMIF | [IO-Socket-INET6](../data/62/SHLOMIF/IO-Socket-INET6/status.json) | 2.73 | v5.45.5 | darwin/darwin-2level | test | Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed. |

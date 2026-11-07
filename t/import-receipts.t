@@ -40,6 +40,22 @@ my $unresolved = read_file(File::Spec->catfile($root, 'status',
                                                'UNRESOLVED.md'));
 like($unresolved, qr/Example-Feature.*build/, 'failure is indexed');
 
+my $prefix = unpack 'H2', siphash_2_4('AUTHOR/Example-Feature', "\0" x 16);
+my $status_path = File::Spec->catfile($root, 'data', $prefix, 'AUTHOR',
+                                     'Example-Feature', 'status.json');
+my $triage_status = JSON::PP->new->decode(read_file($status_path));
+$triage_status->{triage} = {
+    version => '2.0', source_sha256 => 'a' x 64,
+    disposition => 'out-of-date-with-blead',
+    reason => 'This release uses removed Perl internals.',
+};
+write_json($status_path, $triage_status);
+is(system($^X, $script, '--rebuild'), 0,
+   'summary rebuild preserves release triage');
+$unresolved = read_file(File::Spec->catfile($root, 'status', 'UNRESOLVED.md'));
+like($unresolved, qr/Example-Feature.*out-of-date-with-blead/,
+     'unresolved report shows the release disposition');
+
 $receipt->{status} = 'installed';
 $receipt->{registry} = {
     patch_set => 'cve-2024-45321-https-defaults',
@@ -61,11 +77,10 @@ $unresolved = read_file(File::Spec->catfile($root, 'status',
                                             'UNRESOLVED.md'));
 unlike($unresolved, qr/Example-Feature.*build/,
        'successful retry resolves the failure');
-my $prefix = unpack 'H2', siphash_2_4('AUTHOR/Example-Feature', "\0" x 16);
-my $status_path = File::Spec->catfile($root, 'data', $prefix, 'AUTHOR',
-                                     'Example-Feature', 'status.json');
 my $status = JSON::PP->new->decode(read_file($status_path));
 is($status->{author}, 'AUTHOR', 'status is scoped to the CPAN author');
+is($status->{triage}{disposition}, 'out-of-date-with-blead',
+   'later receipt import retains release triage');
 is(scalar @{$status->{observations}}, 2, 'both outcomes remain recorded');
 my ($secured) = grep { $_->{status} eq 'installed' }
     @{$status->{observations}};

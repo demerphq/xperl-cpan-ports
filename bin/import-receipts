@@ -124,7 +124,7 @@ for my $key (sort keys %records) {
     }
     push @current, map {
         { author => $author, distribution => $distribution,
-          observation => $_ }
+          observation => $_, triage => $entry->{triage} }
     } values %latest;
 }
 
@@ -162,12 +162,20 @@ for my $row (@unresolved) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
     my $failure = $observation->{failure} // {};
+    my $result = $observation->{test_summary}
+        // ("exit " . ($failure->{exit_status} // '?'));
+    my $triage = $row->{triage};
+    if ($triage
+        && $triage->{version} eq $observation->{version}
+        && $triage->{source_sha256} eq $observation->{source_sha256}) {
+        $result .= " ($triage->{disposition})";
+    }
     $unresolved .= join(' | ',
         "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
         platform_key($observation),
         $failure->{phase} // 'unknown',
-        $observation->{test_summary} // ("exit " . ($failure->{exit_status} // '?')))
+        $result)
         . " |\n";
 }
 write_file(File::Spec->catfile($status_dir, 'UNRESOLVED.md'), $unresolved);
