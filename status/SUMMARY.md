@@ -1866,7 +1866,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | REHSACK | [Hash-MoreUtils](../data/de/REHSACK/Hash-MoreUtils/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | failed | none |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | linux/x86_64-linux | installed | none |
-| REHSACK | [List-MoreUtils-XS](../data/81/REHSACK/List-MoreUtils-XS/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | installed | deterministic-binsert-exception-test |
+| REHSACK | [List-MoreUtils-XS](../data/81/REHSACK/List-MoreUtils-XS/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | installed | deterministic-exception-leak-tests |
 | REHSACK | [List-MoreUtils-XS](../data/81/REHSACK/List-MoreUtils-XS/status.json) | 0.430 | v5.45.5 | linux/x86_64-linux | installed | deterministic-binsert-exception-test |
 | REHSACK | [MIME-Base32](../data/56/REHSACK/MIME-Base32/status.json) | 1.303 | v5.45.5 | darwin/darwin-2level | installed | none |
 | REHSACK | [MIME-Base32](../data/56/REHSACK/MIME-Base32/status.json) | 1.303 | v5.45.5 | linux/x86_64-linux | installed | none |

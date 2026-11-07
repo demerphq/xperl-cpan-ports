@@ -242,6 +242,61 @@
          "test_summary" : "Files=61, Tests=4519",
          "version" : "0.430",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz",
+         "id" : "5e89d032834a4238e8e221676c7c489c10f24023d8e6560519dd6c36eb07af44",
+         "module" : "List::MoreUtils::XS",
+         "observed_at" : "2026-11-07T13:55:38Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "deterministic-exception-leak-tests",
+         "patch_sha256" : [
+            "1dd5cfd6bd7432a5cfdc1a1609d0db9db84e5f71a30978a4990703bfa8864eb0"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+         "status" : "installed",
+         "test_summary" : "Files=61, Tests=4511",
+         "version" : "0.430",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

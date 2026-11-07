@@ -8,15 +8,15 @@
       "source_sha256": "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
       "patch_sets": [
         {
-          "id": "deterministic-binsert-exception-test",
+          "id": "deterministic-exception-leak-tests",
           "xperl": {
             "min_inclusive": "v5.45.5",
             "max_exclusive": "v5.46.0"
           },
           "patches": [
             {
-              "path": "patches/deterministic-binsert-leak-test.patch",
-              "sha256": "74ea752f86e2bf3e83d0313636b88b74aa48e6514b7c388d5da5685d45691cb1"
+              "path": "patches/deterministic-exception-leak-tests.patch",
+              "sha256": "1dd5cfd6bd7432a5cfdc1a1609d0db9db84e5f71a30978a4990703bfa8864eb0"
             }
           ],
           "recipes": ["leak-test-stable-control-flow-v1"]
