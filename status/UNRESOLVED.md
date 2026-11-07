@@ -23,7 +23,6 @@ Prior failures remain in each distribution record after a later success.
 | DORMANDO | [Cache-Memcached](../data/14/DORMANDO/Cache-Memcached/status.json) | 1.30 | v5.45.5 | darwin/darwin-2level | test | Files=8, Tests=66, Failed 4/8 test programs. 39/66 subtests failed. |
 | DVEEDEN | [DBD-mysql](../data/56/DVEEDEN/DBD-mysql/status.json) | 5.014 | v5.45.5 | darwin/darwin-2level | configure | exit 2 |
 | DVEEDEN | [DBD-mysql](../data/56/DVEEDEN/DBD-mysql/status.json) | 5.014 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
-| ETJ | [GraphQL](../data/61/ETJ/GraphQL/status.json) | 0.54 | v5.45.5 | darwin/darwin-2level | test | Files=24, Tests=387, Failed 2/24 test programs. 3/387 subtests failed. |
 | ETJ | [Inline-Java](../data/c6/ETJ/Inline-Java/status.json) | 0.67 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | ETJ | [PGPLOT](../data/e9/ETJ/PGPLOT/status.json) | 2.37 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | EXODIST | [Fennec-Lite](../data/a2/EXODIST/Fennec-Lite/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux | test | Files=3, Tests=28, Failed 1/3 test programs. 2/28 subtests failed. |

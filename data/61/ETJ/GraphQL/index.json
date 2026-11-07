@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "distribution": "GraphQL",
+  "releases": [
+    {
+      "version": "0.54",
+      "cpan_path": "E/ET/ETJ/GraphQL-0.54.tar.gz",
+      "source_sha256": "8872958e1b39cb31421b89243e91628968c62ece1f72151fd269698f169d68e5",
+      "patch_sets": [
+        {
+          "id": "client-error-text-without-rethrow-context",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/client-error-text-without-rethrow-context.patch",
+              "sha256": "beafd6b06cf360d04f0c649986556ae3c051ade046117d7e094db79ec5a068f0"
+            }
+          ],
+          "recipes": [
+            "exception-propagation-v1",
+            "exception-text-boundary-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}

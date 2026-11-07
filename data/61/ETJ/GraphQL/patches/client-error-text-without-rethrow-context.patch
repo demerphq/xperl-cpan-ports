@@ -1,0 +1,57 @@
+--- a/lib/GraphQL/Error.pm
++++ b/lib/GraphQL/Error.pm
+@@ -8,6 +8,7 @@
+ use GraphQL::Type::Library -all;
+ use GraphQL::MaybeTypeCheck;
+ use GraphQL::Debug qw(_debug);
++use Scalar::Util ();
+ 
+ our $VERSION = '0.02';
+ 
+@@ -95,10 +96,30 @@
+   return $item if __PACKAGE__->is($item);
+   $item ||= 'Unknown error';
+   !is_Str($item)
+-    ? $self->new(message => $item.'', original_error => $item)
++    ? $self->new(message => _message_text($item), original_error => $item)
+     : $self->new(message => $item);
+ }
+ 
++# XPerl delivers plain-text die() as an XPerl::Exception, and an explicit
++# rethrow (die $@) adds a "...propagated at FILE line N." context diagnostic.
++# For an exception that is otherwise a single user-text error, use the text
++# ordinary Perl would have produced, so client messages carry no server
++# paths. Anything else keeps its full rendering.
++sub _message_text {
++  my ($item) = @_;
++  if (Scalar::Util::blessed($item) && $item->isa('XPerl::Exception')) {
++    my @roots = grep $_->code ne 'ERROR_PROPAGATION_RETHROW_CONTEXT',
++      @{ $item->contents };
++    if (@roots == 1 && $roots[0]->code eq 'ERROR_USER_TEXT') {
++      my ($text) = map $_->{value}, grep $_->{name} eq 'text',
++        @{ $roots[0]->params || [] };
++      return $text =~ /\n\z/ ? $text : $roots[0]->render . "\n"
++        if defined $text;
++    }
++  }
++  $item.'';
++}
++
+ =head2 but
+ 
+ Returns a copy of the error object, but with the given properties (as
+--- a/t/lib/GQLTest.pm
++++ b/t/lib/GQLTest.pm
+@@ -55,7 +55,11 @@
+   my $got = [ eval { $p->get } ];
+   is_deeply $got, $fulfilled or diag 'got unexpected result: ', explain $got;
+   my $e = $@;
+-  is $e, $rejected or diag 'got unexpected error: ', explain $e;
++  # XPerl adds "...propagated" context when the fake promise rethrows
++  length $rejected
++    ? like "$e", qr/\A\Q$rejected\E(?:\t\.\.\.propagated at .+ line \d+\.\n)*\z/
++    : is $e, $rejected
++    or diag 'got unexpected error: ', explain $e;
+ }
+ 
+ sub fake_promise_code {
