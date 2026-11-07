@@ -81,3 +81,23 @@ hook dies. No core-private API is needed.
 If the hook dies with a reference that is not an `XPerl::Exception`, `$@` is
 that reference alone, and the earlier compiler errors are not in it. Ordinary
 Perl stringifies the reference after them instead.
+
+## Tests that expect an op-check croak to come first
+
+A module that croaks from an op-check hook runs after the core checker. If
+the core checker has already queued a compile error, such as "Not enough
+arguments for FUNC", XPerl keeps that error first in `$@` and appends the
+module's diagnostic. Ordinary Perl replaces the queued errors with the croak
+message. A test that anchors the module's message at the start of `$@`
+therefore fails on XPerl even though the module still dies correctly.
+
+Keep the module code unchanged. In the test, match the module's message at
+the start of a line of `$@`, for example with `/m` on a `^`-anchored pattern.
+The test still fails if the module does not die, because the queued core
+error alone does not match.
+
+`bareword-filehandles` 0.007 is a worked example. Its `t/basic.t` checks
+`FUNC BAREWORD` for each filehandle function. For the 23 functions that
+take more than one argument, "Not enough arguments" was queued first, and
+24 checks failed. With `/m`, its
+2 test files and 483 tests pass on XPerl v5.45.5 and Perl v5.44.0.
