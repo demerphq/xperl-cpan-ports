@@ -1,0 +1,55 @@
+{
+   "author" : "SYBER",
+   "distribution" : "next-XS",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYBER/next-XS-1.0.8.tar.gz",
+         "id" : "13ef0c93046b5d231bb46951ded5783b075ffd8fe660976c018d05cc331e4ab5",
+         "module" : "next::XS",
+         "module_version" : "1.000008",
+         "observed_at" : "2026-11-07T12:02:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "78fef91ac3c6c0ef7d2469fa7c5c03051fd1d32e24d2d17542a85a99d37ad020",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=94",
+         "version" : "1.0.8",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

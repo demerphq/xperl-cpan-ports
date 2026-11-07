@@ -1,0 +1,55 @@
+{
+   "author" : "SYBER",
+   "distribution" : "Test-Catch",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYBER/Test-Catch-2.0.2.tar.gz",
+         "id" : "686b3477eb92a51cc3d86929ed5a21910d570c7aecb7f933b59c9dca1abb4304",
+         "module" : "Test::Catch",
+         "module_version" : "2.000002",
+         "observed_at" : "2026-11-07T12:03:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "607cca9df809be9ab6ee884e67ac576ee6fa69a20a4df5609494dbceec22cb0c",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=5",
+         "version" : "2.0.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

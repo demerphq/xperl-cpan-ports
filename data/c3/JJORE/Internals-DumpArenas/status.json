@@ -1,0 +1,128 @@
+{
+   "author" : "JJORE",
+   "distribution" : "Internals-DumpArenas",
+   "observations" : [
+      {
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "3645965a7f24bd2ffa898ff8e6a1aa74cfc0c1c4fe00be8e9108532959cd2611",
+         "module" : "Internals::DumpArenas",
+         "observed_at" : "2026-11-07T12:02:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "status" : "failed",
+         "test_summary" : "Files=1, Tests=0, Failed 1/1 test programs. 0/0 subtests failed.",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "32f4e08d71ccbf9506a56b33ca6fb2d8d1953ed921237d48dcd6ff4c6d787e50",
+         "module" : "Internals::DumpArenas",
+         "observed_at" : "2026-11-07T12:06:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,53 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "B-Flags",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/B-Flags-0.17.tar.gz",
+         "id" : "19cd68c48857b990a7af498c09aeaf9c17c116b8bd8376cd6d268fa0708d2d91",
+         "module" : "B::Flags",
+         "observed_at" : "2026-11-07T12:02:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "c1db97d01315bed109b4c48958cd32195cfc9ef5d3b7707eb47840c1d57c10b2",
+         "status" : "installed",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

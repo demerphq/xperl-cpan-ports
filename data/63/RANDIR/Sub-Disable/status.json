@@ -1,0 +1,54 @@
+{
+   "author" : "RANDIR",
+   "distribution" : "Sub-Disable",
+   "observations" : [
+      {
+         "cpan_path" : "R/RA/RANDIR/Sub-Disable-1.02.tar.gz",
+         "id" : "2bc1b3305f4ed950a422bae8a046f2843672a9e3d12b2d1541a386b5d3b803f0",
+         "module" : "Sub::Disable",
+         "observed_at" : "2026-11-07T12:02:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "122c62b68a279324f9f8ce9c8a91e030d4c0cee3ca16af7f2ab55440bc4c9c07",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=24",
+         "version" : "1.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

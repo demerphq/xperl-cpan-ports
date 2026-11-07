@@ -1,0 +1,119 @@
+{
+   "author" : "SYBER",
+   "distribution" : "XS-Framework",
+   "observations" : [
+      {
+         "cpan_path" : "S/SY/SYBER/XS-Framework-1.6.2.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "70ae6d168bd58d3eb5e74557ed809bf5a91659d4ccf26aad95f6278c9449d135",
+         "module" : "XS::Framework",
+         "module_version" : "1.006002",
+         "observed_at" : "2026-11-07T12:04:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "2a42c0d1928224b418595b6745b0343912742f4a5cfc0df64cd1428b21368ead",
+         "status" : "failed",
+         "version" : "1.6.2",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SY/SYBER/XS-Framework-1.6.2.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "1e9ed83981bf29054acf39ce908f0d3af7b1ac73af63e9f56168204dc752b6c9",
+         "module" : "XS::Framework",
+         "module_version" : "1.006002",
+         "observed_at" : "2026-11-07T12:21:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "2a42c0d1928224b418595b6745b0343912742f4a5cfc0df64cd1428b21368ead",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=301",
+         "version" : "1.6.2",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

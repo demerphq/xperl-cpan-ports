@@ -1,0 +1,54 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "Opcodes",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/Opcodes-0.16.tar.gz",
+         "id" : "38c55d2fef385dcf5f3f87ccfbc69c67b7d187ff8b8bb48f051b95b9c2634be6",
+         "module" : "Opcodes",
+         "observed_at" : "2026-11-07T12:02:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "9d8bf9f100115aa8e62497ac594dff91b63ae9f29acf3195fe4b1ff8d9b530d0",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=20",
+         "version" : "0.16",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

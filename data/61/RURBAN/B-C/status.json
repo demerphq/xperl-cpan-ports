@@ -1,0 +1,113 @@
+{
+   "author" : "RURBAN",
+   "distribution" : "B-C",
+   "observations" : [
+      {
+         "cpan_path" : "R/RU/RURBAN/B-C-1.57.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "ed3208bbe60dac522c18c439a7f2103f3ac16be9e8cb93e85e6ba6b0490f396d",
+         "module" : "B::C",
+         "observed_at" : "2026-11-07T12:02:10Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0452a611d343adf9d95fceab6ba6b66176e3ad7fccce5280922c0e431f5149ff",
+         "status" : "failed",
+         "version" : "1.57",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RU/RURBAN/B-C-1.57.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "56aa4ebaed7cadca9c93ebbea12db9af799857cbe120ef3cd5feac5ad888b14c",
+         "module" : "B::C",
+         "observed_at" : "2026-11-07T12:16:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "repair"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0452a611d343adf9d95fceab6ba6b66176e3ad7fccce5280922c0e431f5149ff",
+         "status" : "failed",
+         "test_summary" : "Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed.",
+         "version" : "1.57",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
