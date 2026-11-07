@@ -111,6 +111,109 @@
          "test_summary" : "Files=46, Tests=469",
          "version" : "0.39",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RA/RANDIR/Class-Accessor-Inherited-XS-0.39.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "b297c9a17f75c187dbf7a7e9f72aaffb3e04cfe530630ea2d6cfbb932cba6c94",
+         "module" : "Class::Accessor::Inherited::XS",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "2f6ba1305f1c876afe57efc192ee5b1de08e82e587a92d73a740ed01f7176144",
+         "status" : "failed",
+         "version" : "0.39",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RA/RANDIR/Class-Accessor-Inherited-XS-0.39.tar.gz",
+         "id" : "f69430673e0f96027935fcb9da2a4d1370c2e9973d8555eaaa4964d8734a0b8f",
+         "module" : "Class::Accessor::Inherited::XS",
+         "observed_at" : "2026-11-07T13:47:11Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "2f6ba1305f1c876afe57efc192ee5b1de08e82e587a92d73a740ed01f7176144",
+         "status" : "installed",
+         "test_summary" : "Files=46, Tests=467",
+         "version" : "0.39",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

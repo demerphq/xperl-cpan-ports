@@ -1,0 +1,90 @@
+--- a/src/xs/Hash.cc
++++ b/src/xs/Hash.cc
+@@ -23,10 +23,15 @@
+     auto sz = HvUSEDKEYS(hv) * 2;
+     if (!sz) return 0;
+     EXTEND(sp, (I32)sz);
++#ifdef XPERL_VERSION
++    for (STRLEN i = 0; i < HvENTRY_LIMIT(hv); ++i)
++        for (const HE* he = HvENTRY_FIRST(hv, i); he; he = HvENTRY_NEXT(hv, he)) {
++#else
+     STRLEN hvmax = HvMAX(hv);
+     HE** hvarr = HvARRAY(hv);
+     for (STRLEN bucket_num = 0; bucket_num <= hvmax; ++bucket_num)
+         for (const HE* he = hvarr[bucket_num]; he; he = HeNEXT(he)) {
++#endif
+             *++sp = sv_2mortal(newSVpvn(HeKEY(he), HeKLEN(he)));
+             *++sp = sv_2mortal(SvREFCNT_inc_NN(HeVAL(he)));
+         }
+--- a/src/xs/Hash.h
++++ b/src/xs/Hash.h
+@@ -118,6 +118,17 @@
+         using reference = value_type&;
+         using iterator_category = std::forward_iterator_tag;
+ 
++#ifdef XPERL_VERSION
++        const_iterator () : hv(nullptr), index(0), cur(HashEntry()) {}
++        const_iterator (HV* hash) : hv(hash), index(0), cur(HashEntry()) { operator++(); }
++        const_iterator (const const_iterator& oth) = default;
++
++        const_iterator& operator++ () {
++            if (cur) cur = HvENTRY_NEXT(hv, (HE*)cur);
++            while (!cur && index < HvENTRY_LIMIT(hv)) cur = HvENTRY_FIRST(hv, index++);
++            return *this;
++        }
++#else
+         const_iterator () : arr(NULL), end(NULL), cur(HashEntry()) {}
+ 
+         const_iterator (HV* hv) : arr(HvARRAY(hv)), end(arr ? arr + HvMAX(hv) + 1 : nullptr), cur(HashEntry()) {
+@@ -134,6 +145,7 @@
+             while (!cur && arr != end) cur = *arr++;
+             return *this;
+         }
++#endif
+ 
+         const_iterator operator++ (int) {
+             const_iterator ret = *this;
+@@ -148,15 +160,25 @@
+         const HashEntry& operator*  () { return cur; }
+ 
+         const_iterator& operator= (const const_iterator& oth) {
++#ifdef XPERL_VERSION
++            hv = oth.hv;
++            index = oth.index;
++#else
+             arr = oth.arr;
+             end = oth.end;
++#endif
+             cur = oth.cur;
+             return *this;
+         }
+ 
+     protected:
++#ifdef XPERL_VERSION
++        HV*       hv;
++        STRLEN    index;
++#else
+         HE**      arr;
+         HE**      end;
++#endif
+         HashEntry cur;
+     };
+ 
+--- a/t/svapi/hash.cc
++++ b/t/svapi/hash.cc
+@@ -167,7 +167,15 @@
+         REQUIRE(SvREFCNT(vars.iv) == icnt+1);
+ 
+         auto rcnt = SvREFCNT(vars.rv);
++#ifdef XPERL_VERSION
++        ENTER;
++        SAVETMPS;
++#endif
+         o.store("key", vars.rv);
++#ifdef XPERL_VERSION
++        FREETMPS;
++        LEAVE;
++#endif
+         REQUIRE(o.fetch("key").get() == vars.rv);
+         REQUIRE(SvREFCNT(vars.pv) == pcnt);
+         REQUIRE(SvREFCNT(vars.rv) == rcnt+1);

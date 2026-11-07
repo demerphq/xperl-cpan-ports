@@ -146,6 +146,33 @@ $summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
 unlike($summary, qr/\| unrecorded \|/, 'no unrecorded rows remain');
 isnt(system($^X, $script, '--rebuild', '--assume-platform', 'not a key'), 0,
      'a malformed platform key is rejected');
+
+# A repair registered during installation takes precedence over patches
+# selected before the repair began.
+my $repair_dir = File::Spec->catdir($root, 'repair', 'work', 'release-e');
+make_path($repair_dir);
+$receipt->{cpan_path} = 'C/CH/CHARLIE/Example-Repair-1.0.tar.gz';
+$receipt->{status} = 'installed';
+$receipt->{registration} = {
+    status => 'registered', patch_set => 'repair-v5.45.5',
+    patch_sha256 => 'c' x 64,
+};
+$receipt->{registry} = { patch_set => undef, patches => [] };
+$receipt->{phases} = [{ name => 'test', exit_status => 0 },
+                     { name => 'install', exit_status => 0 }];
+write_json(File::Spec->catfile($repair_dir, 'receipt.json'), $receipt);
+is(system($^X, $script, '--cache', File::Spec->catdir($root, 'repair')),
+   0, 'newly registered repair imports');
+my $repair_prefix = unpack 'H2',
+    siphash_2_4('CHARLIE/Example-Repair', "\0" x 16);
+my $repair_path = File::Spec->catfile($root, 'data', $repair_prefix,
+                                     'CHARLIE', 'Example-Repair', 'status.json');
+my $repair_status = JSON::PP->new->decode(read_file($repair_path));
+my $repaired = $repair_status->{observations}[0];
+is($repaired->{patch_set}, 'repair-v5.45.5',
+   'status names the registered repair patch');
+is_deeply($repaired->{patch_sha256}, ['c' x 64],
+          'status keeps the registered patch digest');
 done_testing();
 
 sub write_json {

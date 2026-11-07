@@ -1,0 +1,21 @@
+--- a/xs/accessors.h
++++ b/xs/accessors.h
+@@ -172,12 +172,16 @@
+         HV* isarev = (HV*)*svp;
+ 
+         if (HvUSEDKEYS(isarev)) {
++            SV* pl_yes = &PL_sv_yes; /* not that I care much about ithreads, but still */
++#ifdef XPERL_VERSION
++            for (STRLEN bucket_num = 0; bucket_num < HvENTRY_LIMIT(isarev); ++bucket_num) {
++                for (const HE* he = HvENTRY_FIRST(isarev, bucket_num); he; he = HvENTRY_NEXT(isarev, he)) {
++#else
+             STRLEN hvmax = HvMAX(isarev);
+             HE** hvarr = HvARRAY(isarev);
+-
+-            SV* pl_yes = &PL_sv_yes; /* not that I care much about ithreads, but still */
+             for (STRLEN bucket_num = 0; bucket_num <= hvmax; ++bucket_num) {
+                 for (const HE* he = hvarr[bucket_num]; he; he = HeNEXT(he)) {
++#endif
+                     assert(HeVAL(he) == &PL_sv_placeholder || HeVAL(he) == &PL_sv_yes);
+ 
+                     if (HeVAL(he) == pl_yes) { /* mro_core.c stores only them */

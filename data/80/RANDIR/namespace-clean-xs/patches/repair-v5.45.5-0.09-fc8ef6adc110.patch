@@ -1,0 +1,62 @@
+--- a/xs.xs
++++ b/xs.xs
+@@ -55,6 +55,16 @@
+ 
+ static void
+ NCX_foreach_sub(pTHX_ HV* stash, void (cb)(pTHX_ HE*, void*), void* data) {
++#ifdef XPERL_VERSION
++    HE* he;
++    hv_iterinit(stash);
++    while ((he = hv_iternext(stash))) {
++        GV* gv = (GV*)HeVAL(he);
++        if (!isGV(gv) || (GvCV(gv) && !GvCVGEN(gv))) {
++            cb(aTHX_ he, data);
++        }
++    }
++#else
+     STRLEN hvmax = HvMAX(stash);
+     HE** hvarr = HvARRAY(stash);
+     assert(hvarr);
+@@ -71,6 +81,7 @@
+             }
+         }
+     }
++#endif
+ }
+ 
+ static void
+@@ -229,15 +240,26 @@
+     HV* storage = GvHV(storage_gv);
+     if (!storage) return 0;
+ 
++#ifndef XPERL_VERSION
+     STRLEN hvmax = HvMAX(storage);
+     HE** hvarr = HvARRAY(storage);
+     if (!hvarr) return 0;
++#endif
+ 
+     SV* pl_remove = NCX_REMOVE;
+ 
+     DEBUGGER_FAKE_STASH;
+ 
+     HE* he;
++#ifdef XPERL_VERSION
++    hv_iterinit(storage);
++    while ((he = hv_iternext(storage))) {
++        assert(HeVAL(he) == NCX_REMOVE || HeVAL(he) == NCX_EXCLUDE);
++        if (HeVAL(he) == pl_remove) {
++            NCX_replace_glob_hek(aTHX_ stash, HeKEY_hek(he));
++        }
++    }
++#else
+     STRLEN bucket_num;
+     for (bucket_num = 0; bucket_num <= hvmax; ++bucket_num) {
+         for (he = hvarr[bucket_num]; he; he = HeNEXT(he)) {
+@@ -248,6 +270,7 @@
+             }
+         }
+     }
++#endif
+ 
+     mro_method_changed_in(stash);
+ 

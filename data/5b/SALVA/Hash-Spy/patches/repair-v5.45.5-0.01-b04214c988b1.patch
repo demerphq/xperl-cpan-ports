@@ -1,0 +1,51 @@
+--- a/Spy.xs
++++ b/Spy.xs
+@@ -4,6 +4,12 @@
+ 
+ #include "ppport.h"
+ 
++#ifdef XPERL_VERSION
++#define SPY_HvMAX(hv) HvMAX_RAW(hv)
++#else
++#define SPY_HvMAX(hv) HvMAX(hv)
++#endif
++
+ enum {
+     DELETE = 0,
+     STORE  = 1,
+@@ -96,9 +102,9 @@
+         if (!SvOOK(hv))
+             hv_iterinit(hv);
+ 
+-        max              = HvMAX(hv);
+-        HvMAX(hv)        = HvMAX(spy);
+-        HvMAX(spy)       = max;
++        max              = SPY_HvMAX(hv);
++        SPY_HvMAX(hv)    = SPY_HvMAX(spy);
++        SPY_HvMAX(spy)   = max;
+ 
+         total            = HvTOTALKEYS(hv);
+         HvTOTALKEYS(hv)  = HvTOTALKEYS(spy);
+--- a/t/Hash-Spy.t
++++ b/t/Hash-Spy.t
+@@ -3,10 +3,19 @@
+ use strict;
+ use warnings;
+ 
+-use Test::More tests => 65;
++use Test::More tests => 69;
+ 
+ use Hash::Spy qw(spy_hash);
+ 
++for my $size (0, 1, 4, 20) {
++    my %hash = map { ("key$_", $_) } 1 .. $size;
++    my %expected = %hash;
++    spy_hash %hash, store => sub {};
++    $hash{added} = 42;
++    $expected{added} = 42;
++    is_deeply(\%hash, \%expected, "spy preserves a $size-key hash");
++}
++
+ sub rand_str { join '', map chr(ord('a') + int rand 26), 0..4 + rand 7 }
+ my %master = map { rand_str() => int rand 100000 } 0..1000;
+ 

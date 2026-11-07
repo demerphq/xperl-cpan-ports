@@ -1,0 +1,82 @@
+--- a/lib/Devel/MAT/Dumper.xs
++++ b/lib/Devel/MAT/Dumper.xs
+@@ -490,6 +490,42 @@
+   size += sizeof(XPVHV);
+   int nkeys = 0;
+ 
++#ifdef XPERL_VERSION
++  if(HvARRAY(hv) && HvIS_STRTAB(hv)) {
++    STRLEN i;
++    size += HvSTR_BYTES_FOR(HvMAX(hv) + 1);
++    for(i = 0; i <= HvMAX(hv); i++) {
++      HEK *hek = HvSTRSLOTS(hv)[i];
++      if(hek && hek != HvSTR_TOMBSTONE) nkeys++;
++    }
++  }
++  else if(HvARRAY(hv)) {
++    STRLEN i;
++    if(HvIS_LINEAR(hv))
++      size += HvLINEAR_CAP(hv) * sizeof(HE);
++    else
++    {
++      size += STRUCT_OFFSET(struct hv_oa, indices) +
++        HvOA(hv)->capacity * sizeof(HE);
++#ifdef PERL_HASH_INDEX_CHAINS
++      size += (HvMAX(hv) + 1 + HvOA(hv)->capacity) *
++        HvOA_INDEX_WIDTH_FOR(HvOA(hv)->capacity);
++#ifdef PERL_HASH_CHAIN_FINGERPRINT
++      size += HvOA(hv)->capacity * HvOA_INDEX_WIDTH_FOR(HvOA(hv)->capacity);
++#endif
++#else
++      size += HvOA_INDEX_BYTES_FOR(HvMAX(hv) + 1);
++#endif
++    }
++    for(i = 0; i < HvENTRY_LIMIT(hv); i++) {
++      HE *he = HvENTRY_FIRST(hv, i);
++      if(!he) continue;
++      nkeys++;
++      if(!HvSHAREKEYS(hv))
++        size += sizeof(HEK) + he->hent_hek->hek_len + 2;
++    }
++  }
++#else
+   if(HvARRAY(hv)) {
+     int bucket;
+     for(bucket = 0; bucket <= HvMAX(hv); bucket++) {
+@@ -506,6 +542,8 @@
+     }
+   }
+ 
++#endif
++
+   write_common_sv(fh, (const SV *)hv, size);
+ 
+   return nkeys;
+@@ -518,10 +556,27 @@
+   // NULL.
+   bool is_strtab = (hv == PL_strtab);
+ 
++#ifdef XPERL_VERSION
++  STRLEN bucket;
++  if(is_strtab) {
++    for(bucket = 0; bucket <= HvMAX(hv); bucket++) {
++      HEK *hek = HvSTRSLOTS(hv)[bucket];
++      if(!hek || hek == HvSTR_TOMBSTONE) continue;
++      write_strn(fh, HEK_KEY(hek), HEK_LEN(hek));
++      write_ptr(fh, hek);
++      write_svptr(fh, NULL);
++    }
++    return;
++  }
++  for(bucket = 0; bucket < HvENTRY_LIMIT(hv); bucket++) {
++    HE *he;
++    for(he = HvENTRY_FIRST(hv, bucket); he; he = HvENTRY_NEXT(hv, he)) {
++#else
+   int bucket;
+   for(bucket = 0; bucket <= HvMAX(hv); bucket++) {
+     HE *he;
+     for(he = HvARRAY(hv)[bucket]; he; he = he->hent_next) {
++#endif
+       STRLEN keylen;
+       char *keypv = HePV(he, keylen);
+       write_strn(fh, keypv, keylen);

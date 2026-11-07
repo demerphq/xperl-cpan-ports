@@ -1,0 +1,145 @@
+--- a/Arena.xs
++++ b/Arena.xs
+@@ -6,7 +6,7 @@
+ 
+ #include "sv-table.inc"
+ 
+-#if PERL_VERSION >= 8
++#if PERL_VERSION >= 8 && !defined(XPERL_VERSION)
+ #define DO_PM_STATS
+ /* PMOP stats seem to SEGV pre 5.8.0 for some unknown reason.
+    (Well, dereferncing 0x8 is quite well known as a cause of SEGVs, it's just
+@@ -201,16 +201,28 @@
+   inc_key(stats, "total");
+ 
+   if (HvARRAY(target)) {
++#ifdef XPERL_VERSION
++    STRLEN r = HvENTRY_LIMIT(target);
++#else
+     I32 r = (I32) HvMAX(target)+1;
++#endif
+     UV keys = 0;
+     UV keylen = 0;
+     SV **count;
+     while (r--) {
++#ifdef XPERL_VERSION
++      const HE *he = HvENTRY_FIRST(target, r);
++#else
+       const HE *he = HvARRAY(target)[r];
++#endif
+       while (he) {
+ 	++keys;
+ 	keylen += HeKLEN(he);
+-	he = HeNEXT(he);
++#ifdef XPERL_VERSION
++        he = HvENTRY_NEXT(target, he);
++#else
++        he = HeNEXT(he);
++#endif
+       }
+     }
+ 
+@@ -439,7 +451,11 @@
+ 	  inc_UV_key(gp_refcnt_raw, GvREFCNT(target));
+ 
+ 	  if (!hv_exists(gp_seen, (char *)&gp, sizeof(gp))) {
+-	    const char *file = gp->gp_file;
++	    #ifdef XPERL_VERSION
++            const char *file = GvFILE(target);
++#else
++            const char *file = gp->gp_file;
++#endif
+ 
+ 	    if (file)
+ 	      inc_key(gp_files, file);
+@@ -482,7 +498,11 @@
+ 	  && type != SVTYPEMASK && !SvROK(target) && SvPVX(target)) {
+ 	HV **pvx_stats = &pvx_normal_stats;
+ 
++#ifdef XPERL_VERSION
++	if (SvIsCOW(target) && !SvIsCOW_static(target)) {
++#else
+ 	if(SvFAKE(target) && SvREADONLY(target)) {
++#endif
+ 	  /* Some sort of COW */
+ 	  if (SvLEN(target)) {
+ 	    pvx_stats = &pvx_cow_stats;
+@@ -655,7 +675,9 @@
+   store_UV(hv, "total_slots", slots);
+   store_UV(hv, "free", free);
+ 
++#ifndef XPERL_VERSION
+   store_UV(hv, "nice_chunk_size", PL_nice_chunk_size);
++#endif
+   store_UV(hv, "sizeof(SV)", sizeof(SV));
+   store_UV(hv, "sizeof(struct gp)", sizeof(struct gp));
+ 
+@@ -714,12 +736,27 @@
+ static SV *
+ shared_string_table() {
+   HV *hv = newHV();
++#ifdef XPERL_VERSION
++  STRLEN i;
++#else
+   HE *entry;
++#endif
+   /* Somehow it feels safer not to be fiddling with the count of shared hash
+      keys while iterating over them.  */
+   HvSHAREKEYS_off(hv);
+   hv_ksplit(hv, HvMAX(PL_strtab));
+ 
++#ifdef XPERL_VERSION
++  for (i = 0; i <= HvMAX(PL_strtab); i++) {
++    HEK *hek = HvSTRSLOTS(PL_strtab)[i];
++    SV *sv;
++    if (!hek || hek == HvSTR_TOMBSTONE)
++      continue;
++    sv = newSVuv(HvSTR_REFCOUNT(hek));
++    if (!hv_store(hv, HEK_KEY(hek), HEK_LEN(hek), sv, HEK_HASH(hek)))
++      SvREFCNT_dec(sv);
++  }
++#else
+   hv_iterinit(PL_strtab);
+ 
+   while ((entry = hv_iternext(PL_strtab))) {
+@@ -730,6 +767,8 @@
+     }
+   }
+ 
++#endif
++
+   return newRV_noinc((SV *) hv);
+ }
+ 
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -21,7 +21,7 @@
+ 
+ my @types;
+ my $count = 0;
+-while ($enum =~ m!SVt_(\w+),?\s+/\*\s+(\d+)\s+\*/!g) {
++while ($enum =~ m!SVt_(\w+),?\s+/\*\s+(\d+)(?:\s|,)[^*]*\*/!g) {
+     die "enum parsing in $svh out of sync -- $count != $2" unless $count == $2;
+     $types[$count] = $1;
+     $count++;
+@@ -48,7 +48,9 @@
+ 		  (map {(uc ($_), "struct xpv$_")} qw(gv cv hv av io)),
+ 		  (map {("struct xpv$_")} '', qw(iv uv nv mg lv bm fm)),
+ 		  ) {
++    print FH "#ifndef XPERL_VERSION\n" if $thing eq 'struct xpvbm';
+     print FH "  { \"$thing\", sizeof($thing) },\n";
++    print FH "#endif\n" if $thing eq 'struct xpvbm';
+ }
+ foreach my $thing (qw(MEM_SIZE Size_t I32 U32 IV UV NV Off_t Fpos_t)) {
+     print FH "#ifdef $thing\n  { \"$thing\", sizeof($thing) },\n#endif\n";
+--- a/t/Devel-Arena.t
++++ b/t/Devel-Arena.t
+@@ -39,7 +39,7 @@
+ ok($stats->{fakes}, qr/^\d+$/);
+ ok($stats->{'sizeof(SV)'}, qr/^\d+$/);
+ ok($stats->{'sizeof(SV)'} < 128);
+-ok($stats->{'nice_chunk_size'}, qr/^\d+$/);
++skip(!exists $stats->{'nice_chunk_size'}, $stats->{'nice_chunk_size'}, qr/^\d+$/);
+ 
+ ok($stats->{free} <= $stats->{total_slots});
+ ok($stats->{fakes} <= $stats->{arenas});

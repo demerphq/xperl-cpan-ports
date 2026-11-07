@@ -1,0 +1,28 @@
+{
+   "distribution" : "namespace-clean-xs",
+   "releases" : [
+      {
+         "cpan_path" : "R/RA/RANDIR/namespace-clean-xs-0.09.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.09-fc8ef6adc110.patch",
+                     "sha256" : "fc8ef6adc110f3910f535d6340829fc2fb6dc35ff9ba9ffb77652aa715a39173"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "d642e90d7f3e7e692720a1908744458f9434f78d6ef144de1d43a3a7c43e52cd",
+         "version" : "0.09"
+      }
+   ],
+   "schema" : 1
+}

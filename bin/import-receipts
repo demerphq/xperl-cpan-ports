@@ -259,6 +259,8 @@ sub observation ($receipt, $path, $id, $release_version) {
         $test_summary .= ", $failed_tests"
             if $test_summary && $failed_tests;
     }
+    my $registered = ($receipt->{registration}{status} // '') eq 'registered'
+        ? $receipt->{registration} : undef;
     return {
         id => $id,
         observed_at => strftime('%Y-%m-%dT%H:%M:%SZ',
@@ -273,12 +275,15 @@ sub observation ($receipt, $path, $id, $release_version) {
         (ref($receipt->{platform}) eq 'HASH'
             ? (platform => platform($receipt->{platform})) : ()),
         status => $status,
-        patch_set => $receipt->{registry}{patch_set},
-        (defined($receipt->{registry}{purpose})
+        patch_set => $registered ? $registered->{patch_set}
+            : $receipt->{registry}{patch_set},
+        ($registered ? (patch_purpose => 'compatibility')
+            : defined($receipt->{registry}{purpose})
             ? (patch_purpose => $receipt->{registry}{purpose}) : ()),
         ($receipt->{registry}{advisories}
             ? (advisories => $receipt->{registry}{advisories}) : ()),
-        patch_sha256 => $receipt->{registry}{patches} // [],
+        patch_sha256 => $registered ? [$registered->{patch_sha256}]
+            : $receipt->{registry}{patches} // [],
         phases => \@phases,
         ($test_summary ? (test_summary => $test_summary) : ()),
         ($failed ? (failure => {

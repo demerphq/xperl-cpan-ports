@@ -131,6 +131,109 @@
          "test_summary" : "Files=12, Tests=175",
          "version" : "0.19",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TI/TIMB/Devel-SizeMe-0.19.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "4b22d98704a7f36f9fef8fbf6e6e2182efba932c568364c2e3b546c10367511f",
+         "module" : "Devel::SizeMe",
+         "observed_at" : "2026-11-07T13:46:41Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "0e6419d8654525c9c76a7159c71e36dad9f6fde380b22e2b6a23e2bcadaa5e27"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "546e31ba83c0bf7cef37b38a462860461850473479d7d4ac6c0dadfb78d54717",
+         "status" : "failed",
+         "version" : "0.19",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TI/TIMB/Devel-SizeMe-0.19.tar.gz",
+         "id" : "1f20bbfdb881dbae5975242e48998c8033ee7b405f5c628943410e0b757039a4",
+         "module" : "Devel::SizeMe",
+         "observed_at" : "2026-11-07T13:47:13Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "0e6419d8654525c9c76a7159c71e36dad9f6fde380b22e2b6a23e2bcadaa5e27"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "546e31ba83c0bf7cef37b38a462860461850473479d7d4ac6c0dadfb78d54717",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=175",
+         "version" : "0.19",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

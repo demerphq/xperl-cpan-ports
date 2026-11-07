@@ -1,0 +1,32 @@
+{
+   "distribution" : "Devel-SizeMe",
+   "releases" : [
+      {
+         "cpan_path" : "T/TI/TIMB/Devel-SizeMe-0.19.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.19-0e6419d86545.patch",
+                     "sha256" : "0e6419d8654525c9c76a7159c71e36dad9f6fde380b22e2b6a23e2bcadaa5e27"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "hash-entry-traversal-v1",
+                  "hash-size-accounting-v1",
+                  "hash-shared-string-table-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "546e31ba83c0bf7cef37b38a462860461850473479d7d4ac6c0dadfb78d54717",
+         "version" : "0.19"
+      }
+   ],
+   "schema" : 1
+}

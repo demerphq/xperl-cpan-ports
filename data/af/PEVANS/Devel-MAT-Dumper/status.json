@@ -111,6 +111,109 @@
          "test_summary" : "Files=3, Tests=11",
          "version" : "0.52",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/Devel-MAT-Dumper-0.52.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "build"
+         },
+         "id" : "a2611842a481c6d46cebbdd9dc1f678bcf03f7a8d74d04e82e900475faab97bf",
+         "module" : "Devel::MAT::Dumper",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "2f0886fdc52e57de4d1b7df8a13cfab7e23c9e83567c1f840735278fb673f49c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "239be0a9a029eae59734876d12fad02c6c08d9a8e139442267afa4ce3192bfc2",
+         "status" : "failed",
+         "version" : "0.52",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/Devel-MAT-Dumper-0.52.tar.gz",
+         "id" : "84c728b1fb35ac23abcc45486def045b63ea96f5c14d8fbac01dab143493b81e",
+         "module" : "Devel::MAT::Dumper",
+         "observed_at" : "2026-11-07T13:47:06Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "2f0886fdc52e57de4d1b7df8a13cfab7e23c9e83567c1f840735278fb673f49c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "239be0a9a029eae59734876d12fad02c6c08d9a8e139442267afa4ce3192bfc2",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=11",
+         "version" : "0.52",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

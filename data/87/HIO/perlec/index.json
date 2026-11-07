@@ -1,0 +1,30 @@
+{
+   "distribution" : "perlec",
+   "releases" : [
+      {
+         "cpan_path" : "H/HI/HIO/perlec-0.08.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.08-8bfed87d6a3b.patch",
+                     "sha256" : "8bfed87d6a3bcf8e1fa3a61278b8e8e5fef0739a78a9a717e2a5aab36b16f2fd"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "regex-internals-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+         "version" : "0.08"
+      }
+   ],
+   "schema" : 1
+}

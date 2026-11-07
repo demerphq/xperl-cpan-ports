@@ -926,7 +926,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | HIDEAKIO | [Module-Build-XSUtil](../data/18/HIDEAKIO/Module-Build-XSUtil/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HIO | [String-CamelCase](../data/da/HIO/String-CamelCase/status.json) | 0.04 | v5.45.5 | darwin/darwin-2level | installed | none |
 | HIO | [String-CamelCase](../data/da/HIO/String-CamelCase/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
-| HIO | [perlec](../data/87/HIO/perlec/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none |
+| HIO | [perlec](../data/87/HIO/perlec/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | HKOBA | [File-AddInc](../data/09/HKOBA/File-AddInc/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HKOBA | [MOP4Import-Declare](../data/65/HKOBA/MOP4Import-Declare/status.json) | 0.073 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HKOBA | [YATT-Lite](../data/02/HKOBA/YATT-Lite/status.json) | 0.201 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1049,7 +1049,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | JJNAPIORK | [MooseX-Attribute-ENV](../data/9b/JJNAPIORK/MooseX-Attribute-ENV/status.json) | 0.02 | v5.45.5 | linux/x86_64-linux | installed | none |
 | JJNAPIORK | [PAGI](../data/83/JJNAPIORK/PAGI/status.json) | 0.003001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | JJNAPIORK | [PAGI-Tools](../data/42/JJNAPIORK/PAGI-Tools/status.json) | 0.002002 | v5.45.5 | linux/x86_64-linux | installed | none |
-| JJORE | [Internals-DumpArenas](../data/c3/JJORE/Internals-DumpArenas/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none |
+| JJORE | [Internals-DumpArenas](../data/c3/JJORE/Internals-DumpArenas/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | JKEENAN | [Devel-NYTProf](../data/f9/JKEENAN/Devel-NYTProf/status.json) | 6.16 | v5.45.5 | darwin/darwin-2level | installed | xperl-profile-fixtures |
 | JKEENAN | [Devel-NYTProf](../data/f9/JKEENAN/Devel-NYTProf/status.json) | 6.16 | v5.45.5 | linux/x86_64-linux | installed | xperl-profile-fixtures |
 | JKEENAN | [File-Copy-Recursive-Reduced](../data/57/JKEENAN/File-Copy-Recursive-Reduced/status.json) | 0.008 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1612,7 +1612,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | NUFFIN | [HTML-FromANSI](../data/e8/NUFFIN/HTML-FromANSI/status.json) | 2.03 | v5.45.5 | darwin/darwin-2level | installed | none |
 | NUFFIN | [Tie-ToObject](../data/2e/NUFFIN/Tie-ToObject/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | installed | none |
 | NUFFIN | [Tie-ToObject](../data/2e/NUFFIN/Tie-ToObject/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none |
-| NWCLARK | [Devel-Arena](../data/3d/NWCLARK/Devel-Arena/status.json) | 0.23 | v5.45.5 | linux/x86_64-linux | installed | none |
+| NWCLARK | [Devel-Arena](../data/3d/NWCLARK/Devel-Arena/status.json) | 0.23 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | NWCLARK | [Devel-Size](../data/ce/NWCLARK/Devel-Size/status.json) | 0.87 | v5.45.5 | darwin/darwin-2level | installed | xperl-hash-storage |
 | NWCLARK | [Devel-Size](../data/ce/NWCLARK/Devel-Size/status.json) | 0.87 | v5.45.5 | linux/x86_64-linux | installed | xperl-hash-storage |
 | NWCLARK | [PerlIO-gzip](../data/31/NWCLARK/PerlIO-gzip/status.json) | 0.20 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1718,7 +1718,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | PETDANCE | [ack](../data/e3/PETDANCE/ack/status.json) | v3.10.0 | v5.45.5 | darwin/darwin-2level | installed | test-environment |
 | PETDANCE | [ack](../data/e3/PETDANCE/ack/status.json) | v3.10.0 | v5.45.5 | linux/x86_64-linux | installed | test-environment |
 | PEVANS | [Algorithm-Cron](../data/49/PEVANS/Algorithm-Cron/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | installed | none |
-| PEVANS | [Devel-MAT-Dumper](../data/af/PEVANS/Devel-MAT-Dumper/status.json) | 0.52 | v5.45.5 | linux/x86_64-linux | installed | none |
+| PEVANS | [Devel-MAT-Dumper](../data/af/PEVANS/Devel-MAT-Dumper/status.json) | 0.52 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | PEVANS | [Devel-Refcount](../data/47/PEVANS/Devel-Refcount/status.json) | 0.10 | v5.45.5 | darwin/darwin-2level | installed | none |
 | PEVANS | [Devel-Refcount](../data/47/PEVANS/Devel-Refcount/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | installed | none |
 | PEVANS | [ExtUtils-CChecker](../data/48/PEVANS/ExtUtils-CChecker/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1830,11 +1830,11 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | PREACTION | [Log-Any-Adapter-Log4perl](../data/7b/PREACTION/Log-Any-Adapter-Log4perl/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | failed | none |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | failed | none |
-| RANDIR | [Class-Accessor-Inherited-XS](../data/ac/RANDIR/Class-Accessor-Inherited-XS/status.json) | 0.39 | v5.45.5 | linux/x86_64-linux | installed | none |
+| RANDIR | [Class-Accessor-Inherited-XS](../data/ac/RANDIR/Class-Accessor-Inherited-XS/status.json) | 0.39 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | RANDIR | [Sub-Disable](../data/63/RANDIR/Sub-Disable/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | installed | none |
-| RANDIR | [namespace-clean-xs](../data/80/RANDIR/namespace-clean-xs/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none |
+| RANDIR | [namespace-clean-xs](../data/80/RANDIR/namespace-clean-xs/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | RAZ | [Cache-Memcached-Fast](../data/90/RAZ/Cache-Memcached-Fast/status.json) | 0.28 | v5.45.5 | darwin/darwin-2level | installed | none |
-| RAZ | [JavaBin](../data/0c/RAZ/JavaBin/status.json) | 0.9 | v5.45.5 | linux/x86_64-linux | installed | none |
+| RAZ | [JavaBin](../data/0c/RAZ/JavaBin/status.json) | 0.9 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | RBERJON | [XML-Filter-BufferText](../data/97/RBERJON/XML-Filter-BufferText/status.json) | 1.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | RCAPUTO | [IO-Pipely](../data/00/RCAPUTO/IO-Pipely/status.json) | 0.006 | v5.45.5 | darwin/darwin-2level | installed | none |
 | RCAPUTO | [IO-Pipely](../data/00/RCAPUTO/IO-Pipely/status.json) | 0.006 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2085,7 +2085,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | RWSTAUNER | [String-Substitution](../data/63/RWSTAUNER/String-Substitution/status.json) | 1.002 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SADAHIRO | [Unicode-Regex-Set](../data/f3/SADAHIRO/Unicode-Regex-Set/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SALVA | [Config-Properties](../data/92/SALVA/Config-Properties/status.json) | 1.80 | v5.45.5 | darwin/darwin-2level | installed | none |
-| SALVA | [Hash-Spy](../data/5b/SALVA/Hash-Spy/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | installed | none |
+| SALVA | [Hash-Spy](../data/5b/SALVA/Hash-Spy/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | SALVA | [Math-Int128](../data/4c/SALVA/Math-Int128/status.json) | 0.22 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SALVA | [Math-Int64](../data/dd/SALVA/Math-Int64/status.json) | 0.57 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SALVA | [Net-OpenSSH](../data/27/SALVA/Net-OpenSSH/status.json) | 0.84 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2224,7 +2224,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | SWEETKID | [Plack-Middleware-RemoveRedundantBody](../data/80/SWEETKID/Plack-Middleware-RemoveRedundantBody/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level | installed | none |
 | SWEETKID | [Plack-Middleware-RemoveRedundantBody](../data/80/SWEETKID/Plack-Middleware-RemoveRedundantBody/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SYBER | [Test-Catch](../data/e8/SYBER/Test-Catch/status.json) | 2.0.2 | v5.45.5 | linux/x86_64-linux | installed | none |
-| SYBER | [XS-Framework](../data/e9/SYBER/XS-Framework/status.json) | 1.6.2 | v5.45.5 | linux/x86_64-linux | installed | none |
+| SYBER | [XS-Framework](../data/e9/SYBER/XS-Framework/status.json) | 1.6.2 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | SYBER | [XS-Install](../data/d6/SYBER/XS-Install/status.json) | 1.5.2 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SYBER | [XS-libcatch](../data/16/SYBER/XS-libcatch/status.json) | 3.7.1.1 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SYBER | [XS-libpanda](../data/71/SYBER/XS-libpanda/status.json) | 1.5.11 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2264,7 +2264,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | failed | none |
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | failed | none |
 | TILLY | [Sys-RunAlone](../data/5d/TILLY/Sys-RunAlone/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none |
-| TIMB | [Devel-SizeMe](../data/d7/TIMB/Devel-SizeMe/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TIMB | [Devel-SizeMe](../data/d7/TIMB/Devel-SizeMe/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 |
 | TIMK | [Text-WordDiff](../data/79/TIMK/Text-WordDiff/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TIMLEGGE | [Authen-SASL-XS](../data/ec/TIMLEGGE/Authen-SASL-XS/status.json) | 1.02 | v5.45.5 | darwin/darwin-2level | installed | none |
 | TIMLEGGE | [Authen-SASL-XS](../data/ec/TIMLEGGE/Authen-SASL-XS/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | failed | none |

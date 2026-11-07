@@ -112,6 +112,169 @@
          "status" : "installed",
          "version" : "0.08",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HI/HIO/perlec-0.08.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "6905c80362ee25783b45ef6baf975c2246ad2fbd8804006bf69d808d12f80ba6",
+         "module" : "perlec",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-07T13:46:39Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "296452d669a6eb2d77ae0f8102b78813f0ecb811ed4010f57bf20540cf7d2947"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+         "status" : "failed",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HI/HIO/perlec-0.08.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "install"
+         },
+         "id" : "0cc8e184326e325ae27868c79fbcc510fb2431887eea06bf30da634e86c0e292",
+         "module" : "perlec",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-07T13:47:04Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "296452d669a6eb2d77ae0f8102b78813f0ecb811ed4010f57bf20540cf7d2947"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+         "status" : "failed",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HI/HIO/perlec-0.08.tar.gz",
+         "id" : "19f540492a6fd859b84b507fe8c6768fb2c266645b56eb6261ace6e491f6a100",
+         "module" : "perlec",
+         "module_version" : "undef",
+         "observed_at" : "2026-11-07T13:53:38Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "8bfed87d6a3bcf8e1fa3a61278b8e8e5fef0739a78a9a717e2a5aab36b16f2fd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+         "status" : "installed",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

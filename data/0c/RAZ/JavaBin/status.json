@@ -111,6 +111,109 @@
          "test_summary" : "Files=13, Tests=165",
          "version" : "0.9",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RA/RAZ/JavaBin-0.9.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "779680f4202d2a3c3bbcb6416267e97957381016738e0637a981fceff8071d3f",
+         "module" : "JavaBin",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "5b3bf06662f06b8a186481acdf759ce0d4e5b119e676148929dfcf97f05181cf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "662a11c886df8468fae5aed5201c50144f3ff2d860863388f0525d08a017dc3e",
+         "status" : "failed",
+         "version" : "0.9",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RA/RAZ/JavaBin-0.9.tar.gz",
+         "id" : "84b5630c6d112008ffe9fbe3b41ea601a032486bc63b49765bbbe5ed20015100",
+         "module" : "JavaBin",
+         "observed_at" : "2026-11-07T13:47:08Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "5b3bf06662f06b8a186481acdf759ce0d4e5b119e676148929dfcf97f05181cf"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "662a11c886df8468fae5aed5201c50144f3ff2d860863388f0525d08a017dc3e",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=165",
+         "version" : "0.9",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,36 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "lib/Devel/MAT/Dumper.xs"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "2f0886fdc52e57de4d1b7df8a13cfab7e23c9e83567c1f840735278fb673f49c",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "239be0a9a029eae59734876d12fad02c6c08d9a8e139442267afa4ce3192bfc2",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

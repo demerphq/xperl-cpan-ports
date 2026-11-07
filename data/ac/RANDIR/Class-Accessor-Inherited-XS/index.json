@@ -1,0 +1,30 @@
+{
+   "distribution" : "Class-Accessor-Inherited-XS",
+   "releases" : [
+      {
+         "cpan_path" : "R/RA/RANDIR/Class-Accessor-Inherited-XS-0.39.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.39-622826f6dec5.patch",
+                     "sha256" : "622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "hash-entry-traversal-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "2f6ba1305f1c876afe57efc192ee5b1de08e82e587a92d73a740ed01f7176144",
+         "version" : "0.39"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,38 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "Makefile.PL",
+      "Makefile.custom",
+      "perlec.c"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "8bfed87d6a3bcf8e1fa3a61278b8e8e5fef0739a78a9a717e2a5aab36b16f2fd",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

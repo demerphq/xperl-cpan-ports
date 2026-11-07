@@ -1,0 +1,37 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "JavaBin.c",
+      "t/06-hash.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "5b3bf06662f06b8a186481acdf759ce0d4e5b119e676148929dfcf97f05181cf",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "662a11c886df8468fae5aed5201c50144f3ff2d860863388f0525d08a017dc3e",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

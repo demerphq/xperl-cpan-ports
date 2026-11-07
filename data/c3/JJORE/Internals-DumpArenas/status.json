@@ -122,6 +122,109 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "0.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "81684a16b5086faf6373778d7e2200b5b5d69d972b9f92010fbbc8d19d4babee",
+         "module" : "Internals::DumpArenas",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "be32c6a0176e0c98cb53ae8644430c78eba9a8afbf3e9e2c89f629252e8846e9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "status" : "failed",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "id" : "43dd9dfa71a08e07349af20c9f72b908be8314154291ddf422ddda90d93e0fe9",
+         "module" : "Internals::DumpArenas",
+         "observed_at" : "2026-11-07T13:47:05Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "be32c6a0176e0c98cb53ae8644430c78eba9a8afbf3e9e2c89f629252e8846e9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

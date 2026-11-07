@@ -1,0 +1,37 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "SizeMe.xs",
+      "t/recurse.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "0e6419d8654525c9c76a7159c71e36dad9f6fde380b22e2b6a23e2bcadaa5e27",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "546e31ba83c0bf7cef37b38a462860461850473479d7d4ac6c0dadfb78d54717",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

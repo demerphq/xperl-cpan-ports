@@ -1,0 +1,26 @@
+--- a/DumpArenas.xs
++++ b/DumpArenas.xs
+@@ -61,14 +61,23 @@
+ 
+ void
+ DumpHvARRAY( pTHX_ PerlIO *f, SV *sv) {
++#ifdef XPERL_VERSION
++  STRLEN key = 0;
++#else
+   I32 key = 0;
++#endif
+   HE *entry;
+   SV *tmp = newSVpv("",0);
+ 
+   PerlIO_printf(f,"HvARRAY(%#x)\n",(int)HvARRAY(sv));
+ 
++#ifdef XPERL_VERSION
++  for ( key = 0; key < HvENTRY_LIMIT(sv); ++key ) {
++    for ( entry = HvENTRY_FIRST(sv, key); entry; entry = HvENTRY_NEXT(sv, entry) ) {
++#else
+   for ( key = 0; key <= HvMAX(sv); ++key ) {
+     for ( entry = HvARRAY(sv)[key]; entry; entry = HeNEXT(entry) ) {
++#endif
+       if ( HEf_SVKEY == HeKLEN(entry) ) {
+         PerlIO_printf(
+           f, "  [SV %#x] => ",

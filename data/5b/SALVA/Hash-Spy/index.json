@@ -1,0 +1,30 @@
+{
+   "distribution" : "Hash-Spy",
+   "releases" : [
+      {
+         "cpan_path" : "S/SA/SALVA/Hash-Spy-0.01.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.01-b04214c988b1.patch",
+                     "sha256" : "b04214c988b14736774024e2ffb92c2b003be754e0a7905c5622e12b071b1278"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "hash-metadata-manipulation-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "65aed80a7c2e95309cd06568898cd59b75c5d5f409f7122bbf5bd478041d78ee",
+         "version" : "0.01"
+      }
+   ],
+   "schema" : 1
+}

@@ -1,0 +1,30 @@
+{
+   "distribution" : "JavaBin",
+   "releases" : [
+      {
+         "cpan_path" : "R/RA/RAZ/JavaBin-0.9.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.9-5b3bf06662f0.patch",
+                     "sha256" : "5b3bf06662f06b8a186481acdf759ce0d4e5b119e676148929dfcf97f05181cf"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "hash-entry-traversal-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "662a11c886df8468fae5aed5201c50144f3ff2d860863388f0525d08a017dc3e",
+         "version" : "0.9"
+      }
+   ],
+   "schema" : 1
+}

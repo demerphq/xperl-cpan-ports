@@ -1,6 +1,6 @@
 # XPerl CPAN ports
 
-This repository holds reviewed compatibility patches for original CPAN
+This repository holds compatibility patches for original CPAN
 releases and migration recipes for recurring XPerl incompatibilities. The
 XPerl installer can use a local checkout or a pinned snapshot of this
 repository. Ordinary CPAN installation does not require this registry.
@@ -35,6 +35,12 @@ Patch files modify a working copy of the upstream release. They must never
 replace the original archive in the installer's cache. The installer records
 the source archive digest, registry revision, selected patch set, patch
 digests, XPerl version, and test result in its installation receipt.
+
+Successful AI repairs enter a configured writable registry automatically.
+The installer writes the patch, exact release selector, and portable test
+evidence. Review these files and run a clean registry-only install before
+committing and publishing them. New recipes are added when a repair exposes
+guidance that applies to other distributions.
 
 The status records include both unpatched and patched builds, and retain
 earlier failures after a later success. Import local installer receipts with

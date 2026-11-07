@@ -1,0 +1,173 @@
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -1,5 +1,19 @@
+ use strict;
+ use warnings;
+ use ExtUtils::MakeMaker;
++use Config;
++use File::Spec;
+ 
+-system("cp -f Makefile.custom Makefile")==0 or die "copy failed";
++my ($install_base) = map { /^INSTALL_BASE=(.+)$/ ? $1 : () } @ARGV;
++my $archlib = defined $install_base
++    ? File::Spec->catdir($install_base, 'lib', 'perl5', $Config{archname}, 'CORE')
++    : undef;
++
++open my $in, '<', 'Makefile.custom' or die $!;
++open my $out, '>', 'Makefile' or die $!;
++while (<$in>) {
++    s/^PERLRUN=perl$/PERLRUN=$^X/;
++    s/^PERL_ARCHLIB=.*$/PERL_ARCHLIB=$archlib/ if defined $archlib;
++    print {$out} $_;
++}
++close $out or die $!;
+--- a/Makefile.custom
++++ b/Makefile.custom
+@@ -17,7 +17,7 @@
+ PERL_CCLDOPTS=$(shell $(PERLRUN) -MExtUtils::Embed -e ccopts -e ldopts)
+ PERL_ARCHLIB=$(shell $(PERLRUN) -MConfig -e 'print $$Config{archlib}')/CORE
+ 
+-CFLAGS=-Wall -g -O0 -I$(PERL_CCOPTS)
++CFLAGS=-Wall -g -O0 $(PERL_CCOPTS)
+ 
+ DLLD_Linux=gcc -shared -fPIC
+ DLLD_Darwin=cc -bundle -undefined dynamic_lookup -fPIC 
+@@ -29,6 +29,7 @@
+ all: perlec.a perlec.so
+ 
+ install: all
++	mkdir -p $(PERL_ARCHLIB)
+ 	cp -f perlec.a perlec.so perlec.h $(PERL_ARCHLIB)/
+ 
+ clean:
+@@ -42,7 +43,7 @@
+ #
+ 
+ perlec.so: perlec.c perlec.h
+-	$(DLLD) $(CFLAGS) perlec.c -o $@ $(PERL_CCLDOPTS)
++	$(DLLD) $(CFLAGS) perlec.c -o $@
+ 
+ perlec.a: perlec.c perlec.h
+ 	$(CC) $(CFLAGS) perlec.c -c $(PERL_CCOPTS)
+--- a/perlec.c
++++ b/perlec.c
+@@ -152,14 +152,25 @@
+ 	d_my_perl;
+ #endif
+ 	SV* re_sv;
++#ifndef XPERL_VERSION
+ 	OP* re_op;
+ 	PMOP* pm_op;
+ 	regexp* rx;
++#else
++	REGEXP* rx;
++#endif
+ 	
+ 	DEBUG(fprintf(stdout, "perlec:compile\r\n"));
+ 	if( perlec_regcheck(perlec, re, re_len) )
+ 	{
+ 		re_sv  = newSVpvn(re, re_len);
++#ifdef XPERL_VERSION
++		if (rx_flags & PERLEC_ROPT_UTF8)
++			SvUTF8_on(re_sv);
++		rx = pregcomp(re_sv, rxflag_map[rx_flags & 15]);
++		SvREFCNT_dec(re_sv);
++		return rx;
++#else
+ 		re_op  = newSVOP(OP_CONST, 0, re_sv);
+ 		DEBUG(fprintf(stdout, "make OP...\r\n"));
+ 		pm_op  = (PMOP*)pmruntime(newPMOP(OP_MATCH, 0), re_op, Nullop);
+@@ -178,26 +189,46 @@
+ 		DEBUG(fprintf(stdout, "do compile...\r\n"));
+ 		rx = pregcomp((char*)re, (char*)re+re_len, pm_op);
+ 		PM_SETRE(pm_op, rx);
++#endif
+ 	}else
+ 	{
+ 		DEBUG(fprintf(stdout, "regcheck failed\r\n"));
++#ifdef XPERL_VERSION
++		return NULL;
++#else
+ 		pm_op = NULL;
++#endif
+ 	}
+ 	
++#ifndef XPERL_VERSION
+ 	return pm_op;
++#endif
+ }
+ 
+ /* ----------------------------------------------------------------------------
+  * array_obj = perlec_match_rx(perlec, str, str_len, rx_obj, rx_flags).
+  *  str :: const char*
+  * ------------------------------------------------------------------------- */
++#ifdef XPERL_VERSION
++#define PERLEC_NPARENS(rx) RX_NPARENS(rx)
++#define PERLEC_START(rx, i) RX_OFFS_START(rx, i)
++#define PERLEC_END(rx, i) RX_OFFS_END(rx, i)
++#else
++#define PERLEC_NPARENS(rx) ((rx)->nparens)
++#define PERLEC_START(rx, i) ((rx)->startp[i])
++#define PERLEC_END(rx, i) ((rx)->endp[i])
++#endif
+ void* perlec_match_rx(perlec_t* perlec, const char* str, int str_len, void* re_obj, int rx_flags)
+ {
+ #ifdef PERL_IMPLICIT_CONTEXT
+ 	d_my_perl;
+ #endif
++#ifdef XPERL_VERSION
++	REGEXP* rx = re_obj;
++#else
+ 	PMOP* const pm_op = re_obj;
+ 	regexp* rx = pm_op!=NULL ? PM_GETRE(pm_op) : NULL;
++#endif
+ 	
+ 	SV* str_sv;
+ 	STRLEN len;
+@@ -212,7 +243,11 @@
+ 	assert( rx!=NULL );
+ 	str_sv = newSVpvn(str, str_len);
+ 	
++#ifdef XPERL_VERSION
++	if( rx_flags & PERLEC_ROPT_UTF8 || RX_UTF8(rx) )
++#else
+ 	if( rx_flags & PERLEC_ROPT_UTF8 || pm_op->op_pmdynflags & PMdf_CMP_UTF8 )
++#endif
+ 	{
+ 		SvUTF8_on(str_sv);
+ 		RX_MATCH_UTF8_set(rx, 1);
+@@ -229,25 +264,25 @@
+ 	if( match )
+ 	{
+ 		int i;
+-		if( rx->nparens )
++		if( PERLEC_NPARENS(rx) )
+ 		{
+ 			int guessed_size;
+ 			guessed_size = 0;
+-			for( i=0; i<rx->nparens; ++i )
++			for( i=0; i<PERLEC_NPARENS(rx); ++i )
+ 			{
+-				if( rx->startp[i]!=-1 && rx->endp[i]!=-1 )
++				if( PERLEC_START(rx, i)!=-1 && PERLEC_END(rx, i)!=-1 )
+ 				{
+-					int len = rx->endp[i] - rx->startp[i];
++					int len = PERLEC_END(rx, i) - PERLEC_START(rx, i);
+ 					guessed_size += len;
+ 				}
+ 			}
+-			ret = (*perlec->array_new)(perlec, rx->nparens, guessed_size);
+-			for( i=1; i<=rx->nparens; ++i )
++			ret = (*perlec->array_new)(perlec, PERLEC_NPARENS(rx), guessed_size);
++			for( i=1; i<=PERLEC_NPARENS(rx); ++i )
+ 			{
+-				if( rx->startp[i]!=-1 && rx->endp[i]!=-1 )
++				if( PERLEC_START(rx, i)!=-1 && PERLEC_END(rx, i)!=-1 )
+ 				{
+-					int len = rx->endp[i] - rx->startp[i];
+-					const char* s = truebase + rx->startp[i];
++					int len = PERLEC_END(rx, i) - PERLEC_START(rx, i);
++					const char* s = truebase + PERLEC_START(rx, i);
+ 					(*perlec->array_store)(ret, i-1, s, len);
+ 				}else
+ 				{

@@ -116,6 +116,109 @@
          "test_summary" : "Files=1, Tests=129",
          "version" : "0.23",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "N/NW/NWCLARK/Devel-Arena-0.23.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "aa7f864a4d2e6c171229ebbe208bacd69df75b1ba9442e2f963076a3fe6c3872",
+         "module" : "Devel::Arena",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "ff66cbfa9a5e84849e97ddd740cca7e555ea7b99dc495de993b885a5e09b34ad"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "8afa77a368b3ff368ab2c30300f60fb01d8bd3284d901b2cdaf465cbdae38185",
+         "status" : "failed",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "N/NW/NWCLARK/Devel-Arena-0.23.tar.gz",
+         "id" : "8f7af9c21edbb9cd58947be49b777c80f404dc84e96df9808307d43473fa43bb",
+         "module" : "Devel::Arena",
+         "observed_at" : "2026-11-07T13:47:05Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "ff66cbfa9a5e84849e97ddd740cca7e555ea7b99dc495de993b885a5e09b34ad"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "8afa77a368b3ff368ab2c30300f60fb01d8bd3284d901b2cdaf465cbdae38185",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=129",
+         "version" : "0.23",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

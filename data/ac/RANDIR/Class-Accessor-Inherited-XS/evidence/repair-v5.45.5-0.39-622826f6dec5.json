@@ -1,0 +1,36 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "xs/accessors.h"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "2f6ba1305f1c876afe57efc192ee5b1de08e82e587a92d73a740ed01f7176144",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

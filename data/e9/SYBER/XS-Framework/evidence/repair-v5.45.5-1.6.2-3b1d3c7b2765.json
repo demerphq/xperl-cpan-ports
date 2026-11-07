@@ -1,0 +1,38 @@
+{
+   "date" : "2026-11-07",
+   "files" : [
+      "src/xs/Hash.cc",
+      "src/xs/Hash.h",
+      "t/svapi/hash.cc"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "3b1d3c7b2765a2781417eeb4ae1eb78a6a9c3a27c18b631f8ece43351a448280",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+   },
+   "source_sha256" : "2a42c0d1928224b418595b6745b0343912742f4a5cfc0df64cd1428b21368ead",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

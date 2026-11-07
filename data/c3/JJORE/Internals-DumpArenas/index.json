@@ -1,0 +1,30 @@
+{
+   "distribution" : "Internals-DumpArenas",
+   "releases" : [
+      {
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.12-be32c6a0176e.patch",
+                     "sha256" : "be32c6a0176e0c98cb53ae8644430c78eba9a8afbf3e9e2c89f629252e8846e9"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "hash-entry-traversal-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "version" : "0.12"
+      }
+   ],
+   "schema" : 1
+}

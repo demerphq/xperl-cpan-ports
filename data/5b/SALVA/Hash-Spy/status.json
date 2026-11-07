@@ -111,6 +111,109 @@
          "test_summary" : "Files=2, Tests=70",
          "version" : "0.01",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SA/SALVA/Hash-Spy-0.01.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "972e74d2724e8bbd4d64d0f04b401925375facd216efca0aa18c52dca0c8486f",
+         "module" : "Hash::Spy",
+         "observed_at" : "2026-11-07T13:46:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "b04214c988b14736774024e2ffb92c2b003be754e0a7905c5622e12b071b1278"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "65aed80a7c2e95309cd06568898cd59b75c5d5f409f7122bbf5bd478041d78ee",
+         "status" : "failed",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SA/SALVA/Hash-Spy-0.01.tar.gz",
+         "id" : "c886cf764e7bbdfd28c690d3d3e4b1c323fcb46b62c7d1828c8f049ba9f13071",
+         "module" : "Hash::Spy",
+         "observed_at" : "2026-11-07T13:47:08Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "b04214c988b14736774024e2ffb92c2b003be754e0a7905c5622e12b071b1278"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "65aed80a7c2e95309cd06568898cd59b75c5d5f409f7122bbf5bd478041d78ee",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=70",
+         "version" : "0.01",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

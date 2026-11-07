@@ -1,0 +1,303 @@
+--- a/SizeMe.xs
++++ b/SizeMe.xs
+@@ -380,7 +380,7 @@
+ 
+ 
+ static const char *
+-svtypename(const SV *sv)
++sizeme_svtypename(const SV *sv)
+ {
+     int type = SvTYPE(sv);
+     if (type > SVt_LAST)
+@@ -396,7 +396,7 @@
+     case NPtype_SV: { /* id is pointer to the SV that sv_size() was called on */
+         const SV *sv = (SV*)npath_node->id;
+         int type = SvTYPE(sv);
+-        fprintf(fp, "SV(%s)", svtypename(sv));
++        fprintf(fp, "SV(%s)", sizeme_svtypename(sv));
+         break;
+     }
+     case NPtype_OP: { /* id is pointer to the OP op_size was called on */
+@@ -963,9 +963,9 @@
+   }
+ }
+ 
+-#define cv_name(cv) S_cv_name(aTHX_ cv)
++#define sizeme_cv_name(cv) S_sizeme_cv_name(aTHX_ cv)
+ char *
+-S_cv_name(pTHX_ CV *cv)
++S_sizeme_cv_name(pTHX_ CV *cv)
+ {
+ #ifdef CvNAME_HEK
+     if (CvNAMED(cv))
+@@ -1052,7 +1052,9 @@
+ #endif
+     );
+     if (shared) {
+-#if PERL_VERSION < 10
++#ifdef XPERL_VERSION
++	ADD_SIZE(st, "shared_hek", STRUCT_OFFSET(struct shared_hek, shared_hek_hek));
++#elif PERL_VERSION < 10
+ 	ADD_SIZE(st, "he", sizeof(struct he));
+ #else
+ 	ADD_SIZE(st, "shared_he", STRUCT_OFFSET(struct shared_he, shared_he_hek));
+@@ -1377,6 +1379,26 @@
+ 
+ #ifdef PadlistNAMES
+ 
++#ifdef XPERL_VERSION
++    NPathPushNode("PADLIST", NPtype_NAME);
++    ADD_SIZE(st, "PADLIST", sizeof(PADLIST));
++    ADD_SIZE(st, "PADs", sizeof(PAD*) * (PadlistMAX(padl) + 1));
++    if (PadlistNAMES(padl)) {
++        PADNAMELIST *names = PadlistNAMES(padl);
++        ADD_SIZE(st, "PADNAMELIST", sizeof(PADNAMELIST));
++        ADD_SIZE(st, "PADNAMEs", sizeof(PADNAME*) * (PadnamelistMAX(names) + 1));
++        for (ix = 0; ix <= PadnamelistMAX(names); ix++) {
++            PADNAME *name = PadnamelistARRAY(names)[ix];
++            if (name && check_new(st, name)) {
++                ADD_SIZE(st, "PADNAME", sizeof(PADNAME));
++                if (PadnamePV(name))
++                    ADD_SIZE(st, "padname", PadnameLEN(name) + 1);
++            }
++        }
++    }
++    for (ix = 1; ix <= PadlistMAX(padl); ix++)
++        sv_size(aTHX_ st, NPathLink("elem"), (SV*)PadlistARRAY(padl)[ix]);
++#else
+     pad_name = *PadlistARRAY(padl);
+     pad = PadlistARRAY(padl)[1];
+     pname = AvARRAY(pad_name);
+@@ -1413,6 +1435,7 @@
+             ADD_LINK_ATTR_TO_TOP(st, NPattr_NOTE, "i", ix);
+     }
+ 
++#endif /* XPERL_VERSION */
+ #else
+     /* XXX rework this to have the same node structure as above? */
+     pad_name = MUTABLE_AV(*av_fetch(MUTABLE_AV(padl), 0, FALSE));
+@@ -1455,7 +1478,7 @@
+   int follow_state = get_sv_follow_state(aTHX_ st, orig_thing);
+   if (st->trace_level >= 2) {
+     warn("sv_size 0x%p: %s refcnt=%d, seen=%lu, follow=%d, type=%d\n",
+-        thing, svtypename(thing), SvREFCNT(thing),
++        thing, sizeme_svtypename(thing), SvREFCNT(thing),
+         get_sv_follow_seencnt(aTHX_ st, thing),
+         follow_state, SvTYPE(thing));
+     if (st->trace_level >= 9)
+@@ -1480,7 +1503,7 @@
+         ADD_LINK_ATTR_TO_PREV(st, NPattr_ADDR, "", PTR2UV(thing));
+         if (get_sv_follow_seencnt(aTHX_ st, thing) == 1) {
+             /* XXX use name of link here ? */
+-            ADD_LINK_ATTR_TO_PREV(st, NPattr_LABEL, svtypename(thing), 0);
++            ADD_LINK_ATTR_TO_PREV(st, NPattr_LABEL, sizeme_svtypename(thing), 0);
+             ADD_LINK_ATTR_TO_PREV(st, NPattr_REFCNT, "", SvREFCNT(thing));
+         }
+         return 0;
+@@ -1514,6 +1537,9 @@
+   case SVt_RV: TAG;
+ #else
+   case SVt_IV: TAG;
++#ifdef XPERL_VERSION
++  case SVt_NV: TAG;
++#endif
+ #endif
+     if(st->recurse && SvROK(thing)) {
+         if (SvWEAKREF(thing) && st->recurse_into_weak) {
+@@ -1569,14 +1595,48 @@
+     if (orig_thing == (SV*)PL_strtab) {
+         ADD_ATTR(st, NPattr_LABEL, "PL_strtab", 0);
+     }
++#ifdef XPERL_VERSION
++    if (HvARRAY(thing)) {
++        if (HvIS_STRTAB(thing)) {
++            UV i;
++            ADD_SIZE(st, "strtab", HvSTR_BYTES_FOR(HvMAX(thing) + 1));
++            for (i = 0; i <= HvMAX(thing); i++) {
++                HEK *hek = HvSTRSLOTS(thing)[i];
++                if (hek && hek != HvSTR_TOMBSTONE)
++                    hek_size(aTHX_ st, hek, 1, NPathLink("hent_hek"));
++            }
++        }
++        else if (HvIS_LINEAR(thing))
++            ADD_SIZE(st, "he_array", sizeof(HE));
++        else {
++            ADD_SIZE(st, "hv_oa", STRUCT_OFFSET(struct hv_oa, indices)
++#ifdef PERL_HASH_INDEX_OA
++                     + (HvMAX(thing) + 1) * ((HvMAX(thing) + 1) <= 128 ? 1 : (HvMAX(thing) + 1) <= 32768 ? 2 : 4));
++#else
++                     + (HvMAX(thing) + 1 + HvOA(thing)->capacity
++#ifdef PERL_HASH_CHAIN_FINGERPRINT
++                        + HvOA(thing)->capacity
++#endif
++                       ) * (HvOA(thing)->capacity <= 255 ? 1 : HvOA(thing)->capacity <= 65535 ? 2 : 4));
++#endif
++            ADD_SIZE(st, "he_array", sizeof(HE) * HvOA(thing)->capacity);
++        }
++    }
++#else
+     ADD_SIZE(st, "hv_max", (sizeof(HE *) * (HvMAX(thing) + 1)));
++#endif
+     /* Now walk the bucket chain */
+     if (HvARRAY(thing)) {
+       HE *cur_entry;
+       UV cur_bucket = 0;
+ 
++#ifdef XPERL_VERSION
++      for (cur_bucket = 0; cur_bucket < HvENTRY_LIMIT(thing); cur_bucket++) {
++        cur_entry = HvENTRY_FIRST(thing, cur_bucket);
++#else
+       for (cur_bucket = 0; cur_bucket <= HvMAX(thing); cur_bucket++) {
+         cur_entry = *(HvARRAY(thing) + cur_bucket);
++#endif
+         while (cur_entry) {
+             HEK *hek = cur_entry->hent_hek;
+ 
+@@ -1585,7 +1645,9 @@
+                 NPathPushNode("HE", NPtype_NAME);
+             }
+ 
++#ifndef XPERL_VERSION
+             ADD_SIZE(st, "he", sizeof(HE));
++#endif
+             hek_size(aTHX_ st, hek, HvSHAREKEYS(thing), NPathLink("hent_hek"));
+             if (orig_thing == (SV*)PL_strtab) {
+                 /* For PL_strtab the HeVAL is used as a refcnt */
+@@ -1604,7 +1666,11 @@
+                 NPathPopNode;
+                 NPathPopNode;
+             }
++#ifdef XPERL_VERSION
++            cur_entry = HvENTRY_NEXT(thing, cur_entry);
++#else
+             cur_entry = cur_entry->hent_next;
++#endif
+         }
+       } /* bucket chain */
+     }
+@@ -1663,9 +1729,10 @@
+     goto freescalar;
+ 
+   case SVt_PVCV: TAG;
+-    ADD_ATTR(st, NPattr_LABEL, cv_name((CV *)thing), 0);
++    ADD_ATTR(st, NPattr_LABEL, sizeme_cv_name((CV *)thing), 0);
+     sv_size(aTHX_ st, NPathLink("CvGV"), (SV *)CvGV(thing));
+-    padlist_size(aTHX_ st, NPathLink("CvPADLIST"), CvPADLIST(thing));
++    if (!CvISXSUB(thing))
++        padlist_size(aTHX_ st, NPathLink("CvPADLIST"), CvPADLIST(thing));
+     if (!CvWEAKOUTSIDE(thing)) /* XXX */
+         sv_size(aTHX_ st, NPathLink("CvOUTSIDE"), (SV *)CvOUTSIDE(thing));
+     if (CvISXSUB(thing)) {
+@@ -1756,8 +1823,10 @@
+   case SVt_PVIV: TAG;
+   case SVt_PV: TAG;
+   freescalar:
+-    if(st->recurse && SvROK(thing))
+-	sv_size(aTHX_ st, NPathLink("RV"), SvRV_const(thing));
++    if (SvROK(thing)) {
++        if (st->recurse)
++            sv_size(aTHX_ st, NPathLink("RV"), SvRV_const(thing));
++    }
+     else if (SvIsCOW_shared_hash(thing))
+ 	hek_size(aTHX_ st, SvSHARED_HEK_FROM_PV(SvPVX(thing)), 1, NPathLink("SvSHARED_HEK_FROM_PV"));
+     else
+@@ -1775,7 +1844,7 @@
+   if (type >= SVt_PVMG) {
+     if (SvMAGICAL(thing))
+       magic_size(aTHX_ thing, st, NPathLink("MG"));
+-#ifdef SvOURSTASH
++#if defined(SvOURSTASH) && !defined(XPERL_VERSION)
+     /* SVpad_OUR shares same flag bit as SVpbm_VALID and others */
+     if (type == SVt_PVGV && SvPAD_OUR(thing) && SvOURSTASH(thing))
+       sv_size(aTHX_ st, NPathLink("SvOURSTASH"), (SV *)SvOURSTASH(thing));
+@@ -2018,7 +2087,7 @@
+ parser_size(pTHX_ struct state *const st, pPATH, yy_parser *parser)
+ {
+   yy_stack_frame *ps;
+-  dNPathNodes(2, NPathArg);
++  dNPathNodes(3, NPathArg);
+   if (!check_new(st, parser))
+     return;
+   NPathPushNode("yy_parser", NPtype_NAME);
+@@ -2026,8 +2095,13 @@
+ 
+   NPathPushLink("stack");
+   NPathPushNode("stack", NPtype_NAME);
++#ifdef XPERL_VERSION
++  ADD_SIZE(st, "yy_stack_frames", (parser->stack ? parser->stack_max1 + 1 - parser->stack : 0) * sizeof(yy_stack_frame));
++  ADD_ATTR(st, NPattr_NOTE, "n", parser->stack ? parser->stack_max1 + 1 - parser->stack : 0);
++#else
+   ADD_SIZE(st, "yy_stack_frames", parser->stack_size * sizeof(yy_stack_frame));
+   ADD_ATTR(st, NPattr_NOTE, "n", parser->stack_size);
++#endif
+   for (ps = parser->stack; ps <= parser->ps; ps++) {
+ #if (PERL_BCDVERSION >= 0x5011002) /* roughly */
+     if (sv_size(aTHX_ st, NPathLink("compcv"), (SV*)ps->compcv))
+@@ -2092,7 +2166,9 @@
+   sv_size(aTHX_ st, NPathLink("PL_rs"), (SV*)PL_rs);
+   sv_size(aTHX_ st, NPathLink("PL_fdpid"), (SV*)PL_fdpid);
+   sv_size(aTHX_ st, NPathLink("PL_modglobal"), (SV*)PL_modglobal);
++#ifdef PL_errors
+   sv_size(aTHX_ st, NPathLink("PL_errors"), (SV*)PL_errors);
++#endif
+   sv_size(aTHX_ st, NPathLink("PL_stashcache"), (SV*)PL_stashcache);
+   sv_size(aTHX_ st, NPathLink("PL_curstname"), (SV*)PL_curstname);
+   sv_size(aTHX_ st, NPathLink("PL_patchlevel"), (SV*)PL_patchlevel);
+@@ -2223,7 +2299,9 @@
+ #ifdef POSIX_CC_COUNT
+     for (i = 0; i < POSIX_CC_COUNT; i++) {
+         sv_size(aTHX_ st, NPathLink("PL_Posix_ptrs"), PL_Posix_ptrs[i]);
++#ifdef PL_L1Posix_ptrs
+         sv_size(aTHX_ st, NPathLink("PL_L1Posix_ptrs"), PL_L1Posix_ptrs[i]);
++#endif
+         sv_size(aTHX_ st, NPathLink("PL_XPosix_ptrs"), PL_XPosix_ptrs[i]);
+     }
+ #endif
+--- a/t/recurse.t
++++ b/t/recurse.t
+@@ -114,7 +114,8 @@
+   my $element_size = total_size(\$hash->{a});
+ 
+   cmp_ok($element_size, '<', total_size($hash), "element < hash with one element");
+-  cmp_ok($element_size, '>', total_size(\[]), "PVNV + [] > [] alone");
++  is($element_size, size(\$hash->{a}) + total_size([]),
++     "reference and array are both counted");
+ 
+   # Dereferencing the PVNV (the argument to total_size) leaves us with
+   # just the array, and this should be equal to a dereferenced array:
+@@ -135,11 +136,11 @@
+   # the outer references stripped away, so they should be the same
+   is (total_size([0..$size]), total_size( $hash->{a} ), "hash element vs. array");
+ 
+-  # the outer references included, one is just a normal ref, while the other
+-  # is a PVNV, so they shouldn't be the same:
+-  isnt (total_size(\[0..$size]), total_size( \$hash->{a} ), "[0..size] vs PVNV");
+-  # and the plain ref should be smaller
+-  cmp_ok(total_size(\[0..$size]), '<', total_size( \$hash->{a} ), "[0..size] vs. PVNV");
++  # Scalar bodies can have different sizes after storing a reference.
++  is (total_size(\[0..$size]) - size(\[0..$size]),
++      total_size([0..$size]), "plain reference recurses to array");
++  is (total_size(\$hash->{a}) - size(\$hash->{a}),
++      total_size([0..$size]), "hash element reference recurses to array");
+ 
+   $full_hash = total_size($hash);
+   $element_size = total_size(\$hash->{a});
+@@ -248,7 +249,7 @@
+     # A write action:
+     $array[1] = undef;
+ 
+-    is(total_size(\@array), $array_2_size + $undef_size,
++    is(total_size(\@array), $array_2_size + size(\$array[1]),
+        "assigning undef to a gap in an array allocates a scalar");
+ 
+     cmp_array_ro(\@array, \@copy, 'two arrays compare the same');
+@@ -278,7 +279,8 @@
+ 
+ 	# Remember, size() removes a level of referencing if present. So add
+ 	# one, so that we get the size of our reference:
+-	is(size(\$a->[0]), $expect,
++	my $got = size(\$a->[0]);
++	ok($got == $expect || ($type eq 'NV' && $got == $sizes{RV}),
+ 	   "Type $type containing a reference, size() does not recurse to the referent");
+ 	cmp_ok(total_size(\$a->[0]), '>', 1024,
+ 	       "Type $type, total_size() recurses to the referent");
