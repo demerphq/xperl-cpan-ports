@@ -1,0 +1,26 @@
+{
+  "source_sha256": "8872958e1b39cb31421b89243e91628968c62ece1f72151fd269698f169d68e5",
+  "patch_set_id": "client-error-text-without-rethrow-context",
+  "patch_sha256": "beafd6b06cf360d04f0c649986556ae3c051ade046117d7e094db79ec5a068f0",
+  "date": "2026-11-07",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 24 test files, 387 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 24 test files, 387 tests"
+    },
+    {
+      "command": "xperl-install install GraphQL with this registry",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "installed, patch set applied"
+    }
+  ],
+  "failure": "Two kinds of failure on XPerl, none on Perl 5.44. (1) GraphQL::Subscription rethrows a caught error with die $@, and GraphQL::Error->coerce stringifies it into the client-visible error message, which then ended with \"\\t...propagated at <server path>/GraphQL/Subscription.pm line 116.\" (t/subscribe.t line 218). (2) The test helper promise_test compares $@ exactly, and the test FakePromise rethrows with die @values (t/perl.t lines 524 and 526, t/subscribe.t line 319). The patch makes coerce use the text ordinary Perl would produce for an exception that, apart from rethrow context, is a single ERROR_USER_TEXT diagnostic, and lets promise_test accept trailing propagation lines after the complete expected message. A wrong or missing expected error still fails."
+}

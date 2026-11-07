@@ -47,6 +47,61 @@
          "test_summary" : "Files=24, Tests=387, Failed 2/24 test programs. 3/387 subtests failed.",
          "version" : "0.54",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "E/ET/ETJ/GraphQL-0.54.tar.gz",
+         "id" : "2100ab6a4e2dcbd584186b43b127b7237a2cae3399dd25f8276c19d7dbe0e18a",
+         "module" : "GraphQL",
+         "observed_at" : "2026-11-07T14:40:01Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "client-error-text-without-rethrow-context",
+         "patch_sha256" : [
+            "beafd6b06cf360d04f0c649986556ae3c051ade046117d7e094db79ec5a068f0"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "8872958e1b39cb31421b89243e91628968c62ece1f72151fd269698f169d68e5",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=387",
+         "version" : "0.54",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
