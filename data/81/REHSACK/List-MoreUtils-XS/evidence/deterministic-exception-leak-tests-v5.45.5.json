@@ -1,0 +1,34 @@
+{
+  "source_sha256": "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+  "patch_set_id": "deterministic-exception-leak-tests",
+  "patch_sha256": "1dd5cfd6bd7432a5cfdc1a1609d0db9db84e5f71a30978a4990703bfa8864eb0",
+  "date": "2026-11-07",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "environment": {
+    "Test::LeakTrace": "0.17"
+  },
+  "failure": "Five leak tests besides binsert (bsearch, bsearchidx, equal_range, lower_bound, upper_bound) chose a random item, so Test::LeakTrace warm-up and measurement could take different paths. lower_bound and upper_bound chose from 0..999 against a list of 1..100 and threw only about one run in ten. On the original archive, 15 of 40 runs of the six affected tests failed. Each failure reported 47 leaked scalars: binsert failed in 10 runs, lower_bound in 4 and upper_bound in 3.",
+  "tests": [
+    {
+      "command": "each changed exception case called 3 times with its fixed item",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: all six throw on every call"
+    },
+    {
+      "command": "40 runs of prove -b on the six affected t/xs tests",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 40 of 40 runs (original archive: 25 of 40)"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 61 test files, 4519 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 61 test files, 4519 tests"
+    }
+  ]
+}

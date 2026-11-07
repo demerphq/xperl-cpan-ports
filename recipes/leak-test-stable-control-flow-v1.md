@@ -46,5 +46,11 @@ their exception path ran only about one time in ten. Each now uses an item
 that is in its list, and all six are confirmed to throw under both the
 pure-Perl and XS implementations. The affected tests passed 560 runs without
 a failure, and the full suite (122 files, 9,066 tests) passes on XPerl
-v5.45.5 and Perl v5.44.0. List-MoreUtils-XS has the same random inputs in
-its other five tests, beyond the binsert one patched here.
+v5.45.5 and Perl v5.44.0.
+
+List-MoreUtils-XS 0.430 now uses the same fixed items in all six tests, in
+its `t/inline` and `t/xs` copies. Each case throws on every call. On the
+original archive, 15 of 40 runs of the six tests failed with 47 leaked
+scalars (binsert, lower_bound and upper_bound). With the patch, 40 of 40
+runs pass, and the full suite (61 files, 4,519 tests) passes on XPerl
+v5.45.5 and Perl v5.44.0.
