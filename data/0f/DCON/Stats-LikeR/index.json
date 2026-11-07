@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "distribution": "Stats-LikeR",
+  "releases": [
+    {
+      "version": "0.3416",
+      "cpan_path": "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+      "source_sha256": "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+      "patch_sets": [
+        {
+          "id": "xperl-hash-entry-traversal",
+          "purpose": "compatibility",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-hash-entry-traversal.patch",
+              "sha256": "aac1ce5644196d30bb7a308aa2948c7e39e4b235723d9512019835a6322bf534"
+            }
+          ],
+          "recipes": ["hash-entry-traversal-v1"]
+        }
+      ]
+    }
+  ]
+}

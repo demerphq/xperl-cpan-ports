@@ -98,6 +98,127 @@
          "test_summary" : "Files=254, Tests=31, Failed 252/254 test programs. 23/31 subtests failed.",
          "version" : "0.3416",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "33757dbbf7e357d44b0394c82636e96cc794afcb748ddbdc1ca7a621788384a9",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-07T08:58:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "failed",
+         "test_summary" : "Files=254, Tests=31, Failed 252/254 test programs. 23/31 subtests failed.",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "318dd27b7698f4b03c137025c857797ab6ad3c3d9b5d4a0298785670cbed1bb6",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-07T09:07:42Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "installed",
+         "test_summary" : "Files=254, Tests=69702",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

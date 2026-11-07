@@ -86,6 +86,91 @@
          "status" : "failed",
          "version" : "1.861",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PM/PMQS/DB_File-1.861.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "9b816277ebe2b18714927e41b7c9c7bdac873c22af28f0663a10e3a109820bb4",
+         "module" : "DB_File",
+         "observed_at" : "2026-11-07T08:57:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "608bc6ff234ae08ac5bf6b85887882965aaa89554cf09d09fb926fd4e389094f",
+         "status" : "failed",
+         "version" : "1.861",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PM/PMQS/DB_File-1.861.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "ae5397858e8606b2107d9dca796f46f79d923d8d5a7cde1e539ccf9408497d48",
+         "module" : "DB_File",
+         "observed_at" : "2026-11-07T08:58:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "608bc6ff234ae08ac5bf6b85887882965aaa89554cf09d09fb926fd4e389094f",
+         "status" : "failed",
+         "version" : "1.861",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

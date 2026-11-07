@@ -17,7 +17,6 @@ Prior failures remain in each distribution record after a later success.
 | CORION | [Net-Pcap](../data/3e/CORION/Net-Pcap/status.json) | 0.21 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | DAGOLDEN | [Config-Identity](../data/0b/DAGOLDEN/Config-Identity/status.json) | 0.0019 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=13, Failed 1/2 test programs. 0/13 subtests failed. |
 | DCANTRELL | [Sub-Attribute](../data/4b/DCANTRELL/Sub-Attribute/status.json) | 0.07 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
-| DCON | [Stats-LikeR](../data/0f/DCON/Stats-LikeR/status.json) | 0.3416 | v5.45.5 | linux/x86_64-linux | test | Files=254, Tests=31, Failed 252/254 test programs. 23/31 subtests failed. |
 | DCONWAY | [Contextual-Return](../data/3f/DCONWAY/Contextual-Return/status.json) | 0.004014 | v5.45.5 | linux/x86_64-linux | test | Files=32, Tests=381, Failed 1/32 test programs. 1/381 subtests failed. |
 | DENIK | [Lingua-Identify-CLD2](../data/32/DENIK/Lingua-Identify-CLD2/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | DLAND | [BSD-Sysctl](../data/c2/DLAND/BSD-Sysctl/status.json) | 0.11 | v5.45.5 | linux/x86_64-linux | configure | exit 255 |

@@ -1,0 +1,152 @@
+--- a/LikeR.xs
++++ b/LikeR.xs
+@@ -16,6 +16,16 @@
+ #include <string.h>
+ #include <stdint.h> // uint64_t — harmless if perl.h already pulled it in
+ 
++#ifdef XPERL_VERSION
++#  define LR_ENTRY_LIMIT(hv) HvENTRY_LIMIT(hv)
++#  define LR_ENTRY_FIRST(hv, i) HvENTRY_FIRST(hv, i)
++#  define LR_ENTRY_NEXT(hv, he) HvENTRY_NEXT(hv, he)
++#else
++#  define LR_ENTRY_LIMIT(hv) (HvMAX(hv) + 1)
++#  define LR_ENTRY_FIRST(hv, i) (HvARRAY(hv)[i])
++#  define LR_ENTRY_NEXT(hv, he) HeNEXT(he)
++#endif
++
+ /*Every XSUB holds what its reference arguments refer to.
+ 
+ An XSUB that takes SvRV() of an argument borrows the referent: perl's
+@@ -3151,10 +3161,25 @@
+ 	HV *hv = s->hv;
+ 	bool present = s->lazydel;	// a detached entry cannot have been freed: its flag was off
+ 	if (!present && HvARRAY(hv)) {
++#ifdef XPERL_VERSION
++		for (size_t b = 0; !present && b < (size_t)LR_ENTRY_LIMIT(hv); b++)
++			for (HE *he = LR_ENTRY_FIRST(hv, b); he; he = LR_ENTRY_NEXT(hv, he))
++				if (he == s->eiter) { present = 1; break; }
++#else
+ 		for (HE *he = HvARRAY(hv)[s->hash & HvMAX(hv)]; he; he = HeNEXT(he))
+ 			if (he == s->eiter) { present = 1; break; }
++#endif
+ 	}
+ 	hv_iterinit(hv);	// frees an entry the walk left lazily deleted, and creates the aux struct
++#ifdef XPERL_VERSION
++	if (s->lazydel) {
++		/* XPerl frees the deleted entry on reset; its storage index
++		   is enough to resume after that entry. */
++		HvRITER_set(hv, s->riter);
++		SvREFCNT_dec((SV*)hv);
++		return;
++	}
++#endif
+ 	if (present) {
+ 		HvRITER_set(hv, s->riter);
+ 		HvEITER_set(hv, s->eiter);
+@@ -3184,7 +3209,9 @@
+ #ifdef PERL_HASH_RANDOMIZE_KEYS
+ 	s->last_rand = HvAUX(hv)->xhv_last_rand;	// eiter is set, so the aux struct exists
+ #endif
++#ifndef XPERL_VERSION
+ 	if (s->lazydel) HvLAZYDEL_off(hv);	// keeps the walk's hv_iterinit() from freeing the caller's entry
++#endif
+ 	SAVEDESTRUCTOR_X(S_iter_restore, s);
+ }
+ /*iter_keep() and the scope it needs, as a pair: ITER_KEEP_BEGIN(hv) before a
+@@ -7086,14 +7113,13 @@
+ 		ITER_KEEP_END;
+ 		return;
+ 	}
+-	HE **arr = HvARRAY(hv);	// no restrict: the hash's own bucket array
+-	if (!arr) return;
++	if (!HvARRAY(hv)) return;
+ 	bool keep_hash = 1;	// FALSE when the stored hashes are not col_map's
+ #ifdef HvREHASH
+ 	if (HvREHASH(hv)) keep_hash = 0;
+ #endif
+-	for (size_t b = 0; b <= (size_t)HvMAX(hv); b++) {
+-		for (HE *he = arr[b]; he; he = HeNEXT(he)) {
++	for (size_t b = 0; b < (size_t)LR_ENTRY_LIMIT(hv); b++) {
++		for (HE *he = LR_ENTRY_FIRST(hv, b); he; he = LR_ENTRY_NEXT(hv, he)) {
+ 			if (HeVAL(he) == &PL_sv_placeholder) continue;
+ 			HEK *k = HeKEY_hek(he);
+ 			if (HEK_UTF8(k) || HEK_WASUTF8(k))
+@@ -9315,9 +9341,8 @@
+ 			}
+ 			ITER_KEEP_END;
+ 		} else if (HvARRAY(hv)) {
+-			HE **arr = HvARRAY(hv);	// no restrict: the hash's own bucket array
+-			for (size_t b = 0; !first && b <= (size_t)HvMAX(hv); b++)
+-				for (HE *he = arr[b]; !first && he; he = HeNEXT(he)) {
++			for (size_t b = 0; !first && b < (size_t)LR_ENTRY_LIMIT(hv); b++)
++				for (HE *he = LR_ENTRY_FIRST(hv, b); !first && he; he = LR_ENTRY_NEXT(hv, he)) {
+ 					SV *ev = HeVAL(he);
+ 					if (ev != &PL_sv_placeholder && SvOK(ev)) first = ev;
+ 				}
+@@ -13531,12 +13556,22 @@
+ 	PERL_UNUSED_CONTEXT;
+ 	if (SvREFCNT((SV *)rb->hv) > 1) return 0;
+ 	if ((U32)HvUSEDKEYS(rb->hv) != rb->n) return 0;
++#ifndef XPERL_VERSION
+ 	HE **arr = HvARRAY(rb->hv);	// no restrict: the hash's own bucket array
++#endif
+ 	for (U32 c = 0; c < rb->n; c++) {
+ 		if (SvREFCNT(rb->slot[c]) != 2) return 0;
++#ifdef XPERL_VERSION
++		bool found = 0;
++		for (size_t b = 0; !found && b < (size_t)LR_ENTRY_LIMIT(rb->hv); b++)
++			for (HE *he = LR_ENTRY_FIRST(rb->hv, b); he; he = LR_ENTRY_NEXT(rb->hv, he))
++				if (HeVAL(he) == rb->slot[c] && HeKEY_hek(he) == rb->hek[c]) { found = 1; break; }
++		if (!found) return 0;
++#else
+ 		HE *he = arr[rb->hash[c] & HvMAX(rb->hv)];
+ 		while (he && (HeVAL(he) != rb->slot[c] || HeKEY_hek(he) != rb->hek[c])) he = HeNEXT(he);
+ 		if (!he) return 0;
++#endif
+ 	}
+ 	return 1;
+ }
+@@ -13630,14 +13665,13 @@
+ 		ITER_KEEP_END;
+ 		return;
+ 	}
+-	HE **arr = HvARRAY(row);	// no restrict: the hash's own bucket array
+-	if (!arr) return;
++	if (!HvARRAY(row)) return;
+ 	bool keep_hash = 1;	// FALSE when the stored hashes are not `out`'s
+ #ifdef HvREHASH
+ 	if (HvREHASH(row)) keep_hash = FALSE;
+ #endif
+-	for (size_t b = 0; b <= (size_t)HvMAX(row); b++) {
+-		for (HE *he = arr[b]; he; he = HeNEXT(he)) {
++	for (size_t b = 0; b < (size_t)LR_ENTRY_LIMIT(row); b++) {
++		for (HE *he = LR_ENTRY_FIRST(row, b); he; he = LR_ENTRY_NEXT(row, he)) {
+ 			if (HeVAL(he) == &PL_sv_placeholder) continue;
+ 			HEK *k = HeKEY_hek(he);
+ 			const I32 sk = HEK_UTF8(k) ? -(I32)HEK_LEN(k) : (I32)HEK_LEN(k);
+@@ -39459,10 +39493,8 @@
+ 			}
+ 			ITER_KEEP_END;
+ 		} else if (HvKEYS(h_hv) > 0) {
+-			HE **probe_array = HvARRAY(h_hv);
+-			STRLEN probe_max = HvMAX(h_hv);
+-			for (STRLEN p_idx = 0; p_idx <= probe_max && target_inner_mode == 0; p_idx++) {
+-				for (HE *p_entry = probe_array[p_idx]; p_entry && target_inner_mode == 0; p_entry = HeNEXT(p_entry)) {
++			for (STRLEN p_idx = 0; p_idx < LR_ENTRY_LIMIT(h_hv) && target_inner_mode == 0; p_idx++) {
++				for (HE *p_entry = LR_ENTRY_FIRST(h_hv, p_idx); p_entry && target_inner_mode == 0; p_entry = LR_ENTRY_NEXT(h_hv, p_entry)) {
+ 					SV *val = HeVAL(p_entry);
+ 					if (SvROK(val)) {
+ 						if (SvTYPE(SvRV(val)) == SVt_PVHV) target_inner_mode = 1;
+@@ -39499,10 +39531,8 @@
+ 				}
+ 				ITER_KEEP_END;
+ 			} else if (HvKEYS(i_hv) > 0) {
+-				HE **probe_array = HvARRAY(i_hv);
+-				STRLEN probe_max = HvMAX(i_hv);
+-				for (STRLEN p_idx = 0; p_idx <= probe_max && target_inner_mode == 0; p_idx++) {
+-					for (HE *p_entry = probe_array[p_idx]; p_entry && target_inner_mode == 0; p_entry = HeNEXT(p_entry)) {
++				for (STRLEN p_idx = 0; p_idx < LR_ENTRY_LIMIT(i_hv) && target_inner_mode == 0; p_idx++) {
++					for (HE *p_entry = LR_ENTRY_FIRST(i_hv, p_idx); p_entry && target_inner_mode == 0; p_entry = LR_ENTRY_NEXT(i_hv, p_entry)) {
+ 						SV *val = HeVAL(p_entry);
+ 						if (SvROK(val)) {
+ 							if (SvTYPE(SvRV(val)) == SVt_PVHV) target_inner_mode = 1;

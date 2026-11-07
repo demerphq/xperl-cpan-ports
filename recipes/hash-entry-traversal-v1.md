@@ -22,6 +22,14 @@ Keep the existing ordinary Perl traversal under an XPERL_VERSION preprocessor
 guard when it depends on linked bucket chains. The Sereal-Encoder 6.003 and
 7.001 patches are tested examples for XPerl v5.45.5.
 
+Stats-LikeR 0.3416 exercises a further iterator boundary. It preserves a
+caller's `each` position while scanning hash storage directly. If a callback
+deletes the current key, XPerl frees that entry when the iterator resets.
+Restore the saved storage index without restoring the freed `HE` pointer.
+Test deletion during a callback and continuation of the caller's `each`
+loop. Its patched suite passes 254 files and 69,702 tests on XPerl v5.45.5;
+the ordinary Perl branch compiles on v5.44.0.
+
 Code that measures memory, rather than only visiting entries, must also size
 the storage itself. Entries live in one array: a linear hash
 (`HvIS_LINEAR`) allocates `HvLINEAR_CAP(hv)` of them, and an open-addressed

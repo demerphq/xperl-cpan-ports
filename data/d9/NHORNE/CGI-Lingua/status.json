@@ -1,0 +1,54 @@
+{
+   "author" : "NHORNE",
+   "distribution" : "CGI-Lingua",
+   "observations" : [
+      {
+         "cpan_path" : "N/NH/NHORNE/CGI-Lingua-0.87.tar.gz",
+         "id" : "4cd8b6e7e672bdb2b115a11d062fb9d7c1e1edbb619e8d1043e31a33b19c8f7b",
+         "module" : "CGI::Lingua",
+         "observed_at" : "2026-11-07T08:58:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "dc5266a05d3efbe7b040b97937dd302a6b006e5b1adc99e64972ca35491e78b2",
+         "status" : "installed",
+         "test_summary" : "Files=68, Tests=880",
+         "version" : "0.87",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

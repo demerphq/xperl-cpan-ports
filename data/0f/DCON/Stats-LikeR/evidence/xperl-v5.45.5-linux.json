@@ -1,0 +1,20 @@
+{
+  "source_sha256": "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+  "patch_set_id": "xperl-hash-entry-traversal",
+  "patch_sha256": "aac1ce5644196d30bb7a308aa2948c7e39e4b235723d9512019835a6322bf534",
+  "date": "2026-11-07",
+  "platform": "linux/x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "installer configure, build, test, proposal-check, install",
+      "interpreter": "installed XPerl v5.45.5, core bf91789738",
+      "result": "pass: 254 test files, 69,702 tests; proposal applies to original source"
+    },
+    {
+      "command": "perl Makefile.PL; make -j4",
+      "interpreter": "installed ordinary Perl v5.44.0",
+      "result": "pass: XS compiles and links; full suite not run because Test::Exception and Test::LeakTrace are absent"
+    }
+  ]
+}

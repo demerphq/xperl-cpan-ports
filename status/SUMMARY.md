@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 83 of 2468 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 82 of 2472 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -409,7 +409,7 @@ Unresolved failures: 83 of 2468 release, XPerl, and platform combinations. See [
 | DCANTRELL | [Test-Most](../data/2c/DCANTRELL/Test-Most/status.json) | 0.42 | v5.45.5 | darwin/darwin-2level | installed | none |
 | DCANTRELL | [Test-Most](../data/2c/DCANTRELL/Test-Most/status.json) | 0.42 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DCON | [Matplotlib-Simple](../data/af/DCON/Matplotlib-Simple/status.json) | 0.3341 | v5.45.5 | linux/x86_64-linux | installed | none |
-| DCON | [Stats-LikeR](../data/0f/DCON/Stats-LikeR/status.json) | 0.3416 | v5.45.5 | linux/x86_64-linux | failed | none |
+| DCON | [Stats-LikeR](../data/0f/DCON/Stats-LikeR/status.json) | 0.3416 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DCONWAY | [Contextual-Return](../data/3f/DCONWAY/Contextual-Return/status.json) | 0.004014 | v5.45.5 | darwin/darwin-2level | installed | xperl-propagated-line |
 | DCONWAY | [Contextual-Return](../data/3f/DCONWAY/Contextual-Return/status.json) | 0.004014 | v5.45.5 | linux/x86_64-linux | failed | none |
 | DCONWAY | [IO-Prompt](../data/ec/DCONWAY/IO-Prompt/status.json) | 0.997004 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -426,6 +426,7 @@ Unresolved failures: 83 of 2468 release, XPerl, and platform combinations. See [
 | DELTA | [Digest-Perl-MD5](../data/0c/DELTA/Digest-Perl-MD5/status.json) | 1.91 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DEMIGUISE | [Dancer2-Plugin-Feed](../data/af/DEMIGUISE/Dancer2-Plugin-Feed/status.json) | 1.263070 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DENIK | [Lingua-Identify-CLD2](../data/32/DENIK/Lingua-Identify-CLD2/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | failed | none |
+| DEXTER | [AnyEvent-DNS-EtcHosts](../data/d0/DEXTER/AnyEvent-DNS-EtcHosts/status.json) | 0.0105 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DFARRELL | [Data-FormValidator](../data/de/DFARRELL/Data-FormValidator/status.json) | 4.88 | v5.45.5 | darwin/darwin-2level | installed | none |
 | DGL | [re-engine-RE2](../data/88/DGL/re-engine-RE2/status.json) | 0.18 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DHOSS | [Catalyst-View-Email](../data/c7/DHOSS/Catalyst-View-Email/status.json) | 0.36 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1563,9 +1564,12 @@ Unresolved failures: 83 of 2468 release, XPerl, and platform combinations. See [
 | NEZUMI | [Unicode-LineBreak](../data/58/NEZUMI/Unicode-LineBreak/status.json) | 2019.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [App-FileSync](../data/b4/NHORNE/App-FileSync/status.json) | 0.002.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [App-WebPerimeterScan](../data/dd/NHORNE/App-WebPerimeterScan/status.json) | 0.001.0 | v5.45.5 | linux/x86_64-linux | installed | none |
+| NHORNE | [CGI-Info](../data/6d/NHORNE/CGI-Info/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux | installed | none |
+| NHORNE | [CGI-Lingua](../data/d9/NHORNE/CGI-Lingua/status.json) | 0.87 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [Class-Abstract](../data/00/NHORNE/Class-Abstract/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [Config-Abstraction](../data/f0/NHORNE/Config-Abstraction/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [DBD-XMLSimple](../data/13/NHORNE/DBD-XMLSimple/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none |
+| NHORNE | [Data-Random-String-Matches](../data/5b/NHORNE/Data-Random-String-Matches/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [Database-Abstraction](../data/6b/NHORNE/Database-Abstraction/status.json) | 0.55 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [Database-Join](../data/41/NHORNE/Database-Join/status.json) | 0.011.1 | v5.45.5 | linux/x86_64-linux | installed | none |
 | NHORNE | [Geo-Coder-List](../data/2e/NHORNE/Geo-Coder-List/status.json) | 0.40 | v5.45.5 | linux/x86_64-linux | installed | none |
