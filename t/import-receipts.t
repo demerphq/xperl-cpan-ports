@@ -81,6 +81,10 @@ my $status = JSON::PP->new->decode(read_file($status_path));
 is($status->{author}, 'AUTHOR', 'status is scoped to the CPAN author');
 is($status->{triage}{disposition}, 'out-of-date-with-blead',
    'later receipt import retains release triage');
+my $triaged_summary = read_file(File::Spec->catfile($root, 'status',
+                                                    'SUMMARY.md'));
+like($triaged_summary, qr/Example-Feature.*installed \(out-of-date-with-blead\)/,
+     'summary keeps release triage visible after installation');
 is(scalar @{$status->{observations}}, 2, 'both outcomes remain recorded');
 my ($secured) = grep { $_->{status} eq 'installed' }
     @{$status->{observations}};
@@ -135,9 +139,9 @@ ok($mac_observation, 'observation records its platform');
 is($mac_observation->{platform}{cc_version}, 'clang 21',
    'platform details are retained');
 my $summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
-like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| unrecorded \| installed \|/,
+like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| unrecorded \| installed \(out-of-date-with-blead\) \|/,
      'earlier result without a platform keeps its own summary row');
-like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| darwin\/darwin-2level \| failed \|/,
+like($summary, qr/\| AUTHOR \| \[Example-Feature\].* \| 2\.0 \| v5\.45\.5 \| darwin\/darwin-2level \| failed \(out-of-date-with-blead\) \|/,
      'new platform has a separate summary row');
 $unresolved = read_file(File::Spec->catfile($root, 'status', 'UNRESOLVED.md'));
 like($unresolved, qr/Example-Feature.*darwin\/darwin-2level.*test/,

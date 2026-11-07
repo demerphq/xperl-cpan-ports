@@ -309,6 +309,53 @@
          "test_summary" : "Files=3, Tests=8",
          "version" : "0.008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Test-FailWarnings-0.008.tar.gz",
+         "id" : "3cd5924f21517abc2b62c97027d04a2e84d75d223b0632f70ccc0dbc57ea51bb",
+         "module" : "Test::FailWarnings",
+         "observed_at" : "2026-11-07T18:13:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "da34ef9029f6849d6026201d49127d054ee6ac4b979c82210315f5721964a96f",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=8",
+         "version" : "0.008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -174,7 +174,60 @@
          "test_summary" : "Files=17, Tests=123",
          "version" : "0.009004",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Devel-Confess-0.009004.tar.gz",
+         "id" : "9feebd70347d30bf05307bc9e88854d38551041f1364e0ab06f8f27a639a6e9c",
+         "module" : "Devel::Confess",
+         "observed_at" : "2026-11-07T18:12:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "a8c601db345cf6929812f382062f71f5eaacad3f4f1be15b3be9d73d291a74dd",
+         "status" : "installed",
+         "test_summary" : "Files=17, Tests=122",
+         "version" : "0.009004",
+         "xperl_version" : "v5.45.5"
       }
    ],
-   "schema" : 2
+   "schema" : 2,
+   "triage" : {
+      "disposition" : "needs-core-api",
+      "reason" : "Devel::Confess 0.009004 installs and passes its suite, but its __DIE__ handler rethrows a native diagnostic as rendered text, changing ERROR_NUMERIC_DOMAIN_DIVISION_BY_ZERO to ERROR_USER_TEXT. Passing the canonical XPerl::Exception to its existing _convert helper segfaults because the helper reblesses the exception. A port needs stable structured stack-trace support without reblessing or textual rethrow.",
+      "source_sha256" : "a8c601db345cf6929812f382062f71f5eaacad3f4f1be15b3be9d73d291a74dd",
+      "version" : "0.009004"
+   }
 }

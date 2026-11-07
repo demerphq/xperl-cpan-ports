@@ -868,8 +868,8 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | HAARG | [Class-C3-Componentised](../data/d8/HAARG/Class-C3-Componentised/status.json) | 1.001002 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HAARG | [Config-Any](../data/52/HAARG/Config-Any/status.json) | 0.33 | v5.45.5 | darwin/darwin-2level | installed | none |
 | HAARG | [Config-Any](../data/52/HAARG/Config-Any/status.json) | 0.33 | v5.45.5 | linux/x86_64-linux | installed | none |
-| HAARG | [Devel-Confess](../data/17/HAARG/Devel-Confess/status.json) | 0.009004 | v5.45.5 | darwin/darwin-2level | installed | none |
-| HAARG | [Devel-Confess](../data/17/HAARG/Devel-Confess/status.json) | 0.009004 | v5.45.5 | linux/x86_64-linux | installed | none |
+| HAARG | [Devel-Confess](../data/17/HAARG/Devel-Confess/status.json) | 0.009004 | v5.45.5 | darwin/darwin-2level | installed (needs-core-api) | none |
+| HAARG | [Devel-Confess](../data/17/HAARG/Devel-Confess/status.json) | 0.009004 | v5.45.5 | linux/x86_64-linux | installed (needs-core-api) | none |
 | HAARG | [Devel-GlobalDestruction](../data/2c/HAARG/Devel-GlobalDestruction/status.json) | 0.14 | v5.45.5 | darwin/darwin-2level | installed | none |
 | HAARG | [Devel-GlobalDestruction](../data/2c/HAARG/Devel-GlobalDestruction/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none |
 | HAARG | [Devel-GlobalPhase](../data/de/HAARG/Devel-GlobalPhase/status.json) | 0.003003 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2063,7 +2063,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | RSKRABA | [Avro](../data/ee/RSKRABA/Avro/status.json) | 1.12.2 | v5.45.5 | darwin/darwin-2level | installed | none |
 | RSRCHBOY | [MooseX-MarkAsMethods](../data/b6/RSRCHBOY/MooseX-MarkAsMethods/status.json) | 0.15 | v5.45.5 | linux/x86_64-linux | installed | none |
 | RTHOMPSON | [Dist-Zilla-Plugin-ReadmeAnyFromPod](../data/24/RTHOMPSON/Dist-Zilla-Plugin-ReadmeAnyFromPod/status.json) | 0.163250 | v5.45.5 | linux/x86_64-linux | installed | none |
-| RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | failed | none |
+| RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | failed (out-of-date-with-blead) | none |
 | RURBAN | [B-Flags](../data/82/RURBAN/B-Flags/status.json) | 0.17 | v5.45.5 | linux/x86_64-linux | installed | none |
 | RURBAN | [B-Keywords](../data/06/RURBAN/B-Keywords/status.json) | 1.29 | v5.45.5 | darwin/darwin-2level | installed | none |
 | RURBAN | [B-Keywords](../data/06/RURBAN/B-Keywords/status.json) | 1.29 | v5.45.5 | linux/x86_64-linux | installed | none |

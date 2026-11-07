@@ -145,10 +145,17 @@ $summary .= "| --- | --- | --- | --- | --- | --- | --- |\n";
 for my $row (@current) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
+    my $status = $observation->{status};
+    my $triage = $row->{triage};
+    if ($triage
+        && $triage->{version} eq $observation->{version}
+        && $triage->{source_sha256} eq $observation->{source_sha256}) {
+        $status .= " ($triage->{disposition})";
+    }
     $summary .= join(' | ',
         "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
-        platform_key($observation), $observation->{status},
+        platform_key($observation), $status,
         $observation->{patch_set} // 'none') . " |\n";
 }
 write_file(File::Spec->catfile($status_dir, 'SUMMARY.md'), $summary);
