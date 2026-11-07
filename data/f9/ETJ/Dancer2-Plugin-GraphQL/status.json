@@ -1,0 +1,62 @@
+{
+   "author" : "ETJ",
+   "distribution" : "Dancer2-Plugin-GraphQL",
+   "observations" : [
+      {
+         "advisories" : [],
+         "cpan_path" : "E/ET/ETJ/Dancer2-Plugin-GraphQL-0.09.tar.gz",
+         "id" : "6e3f6b47e76f86e8c80498d75cd004425c986daaae548e6ff9f19562822c40af",
+         "module" : "Dancer2::Plugin::GraphQL",
+         "observed_at" : "2026-11-07T14:53:49Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "stringify-handler-error",
+         "patch_sha256" : [
+            "aa3623b3a216e1a0fe24474ea2162f91842235b3dcb96d71dc48ebab285d1f36"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "3fb5a03f42a7e68ae3a64bfae109c5515208c7ba4aeb97b6acf10f0fe0dda0b6",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=6",
+         "version" : "0.09",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
