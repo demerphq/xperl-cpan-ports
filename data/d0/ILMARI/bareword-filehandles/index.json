@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "distribution": "bareword-filehandles",
+  "releases": [
+    {
+      "version": "0.007",
+      "cpan_path": "I/IL/ILMARI/bareword-filehandles-0.007.tar.gz",
+      "source_sha256": "4134533716d87af8fff56e250c488ad06df0a7bff48e7cf7de63ff6bc8d9c17f",
+      "patch_sets": [
+        {
+          "id": "compile-error-order-test",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/compile-error-order-test.patch",
+              "sha256": "ea00bf263b65ac8dbbdf9eb3698e60da654184ab3436ea2813d202ae51c9c72c"
+            }
+          ],
+          "recipes": [
+            "parser-error-count-v1"
+          ]
+        }
+      ]
+    }
+  ]
+}
