@@ -409,7 +409,7 @@ Unresolved failures: 82 of 2472 release, XPerl, and platform combinations. See [
 | DCANTRELL | [Test-Most](../data/2c/DCANTRELL/Test-Most/status.json) | 0.42 | v5.45.5 | darwin/darwin-2level | installed | none |
 | DCANTRELL | [Test-Most](../data/2c/DCANTRELL/Test-Most/status.json) | 0.42 | v5.45.5 | linux/x86_64-linux | installed | none |
 | DCON | [Matplotlib-Simple](../data/af/DCON/Matplotlib-Simple/status.json) | 0.3341 | v5.45.5 | linux/x86_64-linux | installed | none |
-| DCON | [Stats-LikeR](../data/0f/DCON/Stats-LikeR/status.json) | 0.3416 | v5.45.5 | linux/x86_64-linux | installed | none |
+| DCON | [Stats-LikeR](../data/0f/DCON/Stats-LikeR/status.json) | 0.3416 | v5.45.5 | linux/x86_64-linux | installed | xperl-hash-entry-traversal |
 | DCONWAY | [Contextual-Return](../data/3f/DCONWAY/Contextual-Return/status.json) | 0.004014 | v5.45.5 | darwin/darwin-2level | installed | xperl-propagated-line |
 | DCONWAY | [Contextual-Return](../data/3f/DCONWAY/Contextual-Return/status.json) | 0.004014 | v5.45.5 | linux/x86_64-linux | failed | none |
 | DCONWAY | [IO-Prompt](../data/ec/DCONWAY/IO-Prompt/status.json) | 0.997004 | v5.45.5 | darwin/darwin-2level | installed | none |

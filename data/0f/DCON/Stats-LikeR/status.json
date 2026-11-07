@@ -219,6 +219,61 @@
          "test_summary" : "Files=254, Tests=69702",
          "version" : "0.3416",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "id" : "2279f145f3a493c3dda4219a58157c8b502a21b0127575fe97bef229a60b421f",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-07T09:25:37Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-hash-entry-traversal",
+         "patch_sha256" : [
+            "aac1ce5644196d30bb7a308aa2948c7e39e4b235723d9512019835a6322bf534"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "installed",
+         "test_summary" : "Files=254, Tests=69702",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
