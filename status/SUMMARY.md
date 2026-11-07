@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2496 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -701,6 +701,7 @@ Unresolved failures: 85 of 2495 release, XPerl, and platform combinations. See [
 | ETHER | [namespace-autoclean](../data/be/ETHER/namespace-autoclean/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETHER | [prefork](../data/0b/ETHER/prefork/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [Alien-Gnuplot](../data/78/ETJ/Alien-Gnuplot/status.json) | 1.043 | v5.45.5 | linux/x86_64-linux | installed | none |
+| ETJ | [Dancer2-Plugin-GraphQL](../data/f9/ETJ/Dancer2-Plugin-GraphQL/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level | installed | stringify-handler-error |
 | ETJ | [ExtUtils-CppGuess](../data/94/ETJ/ExtUtils-CppGuess/status.json) | 0.271 | v5.45.5 | darwin/darwin-2level | installed | none |
 | ETJ | [ExtUtils-CppGuess](../data/94/ETJ/ExtUtils-CppGuess/status.json) | 0.271 | v5.45.5 | linux/x86_64-linux | installed | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | darwin/darwin-2level | installed | none |
