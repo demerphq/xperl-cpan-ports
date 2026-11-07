@@ -122,6 +122,61 @@
          "test_summary" : "Files=48, Tests=3311",
          "version" : "0.652",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "E/ET/ETHER/JSON-Schema-Modern-0.652.tar.gz",
+         "id" : "58da32dc0f7eecadb52299f7c848413325a25c527322931ac8e4b978a34d28e2",
+         "module" : "JSON::Schema::Modern",
+         "observed_at" : "2026-11-07T14:48:32Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "stringify-caught-error-text",
+         "patch_sha256" : [
+            "02918629ce612402967e406831e5b94990eb9ef4f879b61922a935d3d5a9d279"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "47bddc9e850bd61942d1abd4df2917b5c7df8fda1b8ec8cbe159c7dff1430f1c",
+         "status" : "installed",
+         "test_summary" : "Files=48, Tests=3311",
+         "version" : "0.652",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

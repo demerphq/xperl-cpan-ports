@@ -1,0 +1,26 @@
+{
+  "source_sha256": "47bddc9e850bd61942d1abd4df2917b5c7df8fda1b8ec8cbe159c7dff1430f1c",
+  "patch_set_id": "stringify-caught-error-text",
+  "patch_sha256": "02918629ce612402967e406831e5b94990eb9ef4f879b61922a935d3d5a9d279",
+  "date": "2026-11-07",
+  "platform": "darwin-2level",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "pass: 48 test files, 3311 tests"
+    },
+    {
+      "command": "make test (original archive + patch)",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 48 test files, 3295 tests (original archive also passes)"
+    },
+    {
+      "command": "xperl-install install with this patch set (targeted rerun)",
+      "interpreter": "XPerl v5.45.5 (bf91789738)",
+      "result": "installed, patch set applied; JSON::Schema::Draft201909 0.131 then installs"
+    }
+  ],
+  "failure": "4 checks failed on XPerl (t/errors.t 3, t/evaluate_json_string.t 1). Two catch ($e) blocks pass the caught value into an error message typed Str: evaluate_json_string builds JSON::Schema::Modern::Error with error => $e, and assert_pattern calls E($state, $e). On XPerl $e is an XPerl::Exception, so the Type::Tiny Str check throws: assert_pattern reports that type-check failure as an EXCEPTION error instead of the regex error, and evaluate_json_string dies instead of returning a result. The patch stringifies $e at those two text boundaries; other catch sites already concatenate, chomp or sprintf the value."
+}
