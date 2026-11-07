@@ -50,7 +50,6 @@ Prior failures remain in each distribution record after a later success.
 | JOVAN | [Physics-Ellipsometry-VASE](../data/8f/JOVAN/Physics-Ellipsometry-VASE/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed. |
 | JROBINSON | [Paws](../data/f5/JROBINSON/Paws/status.json) | 0.46 | v5.45.5 | linux/x86_64-linux | test | Files=38, Tests=15108 |
 | KMACLEOD | [Frontier-RPC](../data/17/KMACLEOD/Frontier-RPC/status.json) | 0.07b4 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
-| LEMBARK | [LinkedList-Single](../data/f4/LEMBARK/LinkedList-Single/status.json) | v2.1.0 | v5.45.5 | linux/x86_64-linux | test | Files=70, Tests=528, Failed 1/70 test programs. 1/528 subtests failed. |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
 | MAXMIND | [MaxMind-DB-Reader-XS](../data/97/MAXMIND/MaxMind-DB-Reader-XS/status.json) | 1.000009 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
@@ -76,16 +75,13 @@ Prior failures remain in each distribution record after a later success.
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SHLOMIF | [IO-Socket-INET6](../data/62/SHLOMIF/IO-Socket-INET6/status.json) | 2.73 | v5.45.5 | darwin/darwin-2level | test | Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed. |
-| SONNEN | [Data-Validate-Email](../data/54/SONNEN/Data-Validate-Email/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | test | Files=4, Tests=0, Failed 4/4 test programs. 0/0 subtests failed. |
 | SVW | [Time-Out](../data/f6/SVW/Time-Out/status.json) | 1.0.0 | v5.45.5 | linux/x86_64-linux | test | Files=10, Tests=20, Failed 1/10 test programs. 1/20 subtests failed. |
 | SWALTERS | [SOAP-WSDL](../data/57/SWALTERS/SOAP-WSDL/status.json) | 3.004 | v5.45.5 | linux/x86_64-linux | test | Files=124, Tests=1129, Failed 4/124 test programs. 0/1129 subtests failed. |
 | SYP | [Test-HTTP-AnyEvent-Server](../data/d2/SYP/Test-HTTP-AnyEvent-Server/status.json) | 0.013 | v5.45.5 | linux/x86_64-linux | test | Files=24, Tests=23, Failed 2/24 test programs. 0/23 subtests failed. |
-| TEODESIAN | [Perl-Critic-Distribution](../data/19/TEODESIAN/Perl-Critic-Distribution/status.json) | 0.002 | v5.45.5 | linux/x86_64-linux | test | Files=18, Tests=12, Failed 1/18 test programs. 1/12 subtests failed. |
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | TIMLEGGE | [Authen-SASL-XS](../data/ec/TIMLEGGE/Authen-SASL-XS/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | TURNSTEP | [DBD-Pg](../data/98/TURNSTEP/DBD-Pg/status.json) | 3.21.2 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
-| UTASHIRO | [App-nup](../data/71/UTASHIRO/App-nup/status.json) | 1.10 | v5.45.5 | linux/x86_64-linux | test | Files=4, Tests=42 |
 | VPIT | [Scope-Upper](../data/24/VPIT/Scope-Upper/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | test | Files=54, Tests=89422, Failed 1/54 test programs. 1/89422 subtests failed. |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | darwin/darwin-2level | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |

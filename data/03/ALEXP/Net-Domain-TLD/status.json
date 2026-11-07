@@ -182,6 +182,53 @@
          "test_summary" : "Files=1, Tests=1",
          "version" : "1.75",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AL/ALEXP/Net-Domain-TLD-1.75.tar.gz",
+         "id" : "f52d9708885ef5dd6a76d48bda0b778e089b058bc93b98c931d3d760234c2a81",
+         "module" : "Net::Domain::TLD",
+         "observed_at" : "2026-11-07T00:09:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "4c37f811184d68ac4179d48c10ea31922dd5fca2c1bffcdcd95c5a2a3b4002ee",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "1.75",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

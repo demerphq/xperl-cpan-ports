@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "distribution": "LinkedList-Single",
+  "releases": [
+    {
+      "version": "v2.1.0",
+      "cpan_path": "L/LE/LEMBARK/LinkedList-Single-v2.1.0.tar.gz",
+      "source_sha256": "01fd72aee9463b600865fe6545c626c48a78d30addf4ea97f17d98ca1f6a673a",
+      "patch_sets": [
+        {
+          "id": "xperl-exception-test",
+          "purpose": "compatibility",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/xperl-exception-test.patch",
+              "sha256": "02da07dfbbb411f2d61ddc95964c660cba469816b16282c4998d617be913cd2f"
+            }
+          ],
+          "recipes": ["exception-propagation-v1"]
+        }
+      ]
+    }
+  ]
+}

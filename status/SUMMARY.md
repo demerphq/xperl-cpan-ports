@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 83 of 2468 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1206,7 +1206,7 @@ Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [
 | LEEJO | [Test-LeakTrace](../data/01/LEEJO/Test-LeakTrace/status.json) | 0.17 | v5.45.5 | linux/x86_64-linux | installed | none |
 | LEEYM | [LWP-Simple-WithCache](../data/ed/LEEYM/LWP-Simple-WithCache/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
 | LEMBARK | [FindBin-libs](../data/99/LEMBARK/FindBin-libs/status.json) | v5.1.5 | v5.45.5 | linux/x86_64-linux | installed | none |
-| LEMBARK | [LinkedList-Single](../data/f4/LEMBARK/LinkedList-Single/status.json) | v2.1.0 | v5.45.5 | linux/x86_64-linux | failed | none |
+| LEMBARK | [LinkedList-Single](../data/f4/LEMBARK/LinkedList-Single/status.json) | v2.1.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | LEONT | [AnyEvent-Handle-UDP](../data/b4/LEONT/AnyEvent-Handle-UDP/status.json) | 0.050 | v5.45.5 | darwin/darwin-2level | installed | none |
 | LEONT | [CPAN-Meta-Check](../data/51/LEONT/CPAN-Meta-Check/status.json) | 0.018 | v5.45.5 | darwin/darwin-2level | installed | none |
 | LEONT | [CPAN-Meta-Check](../data/51/LEONT/CPAN-Meta-Check/status.json) | 0.018 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2166,7 +2166,7 @@ Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [
 | SNOWHARE | [Lingua-Stem](../data/09/SNOWHARE/Lingua-Stem/status.json) | 2.31 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SNOWHARE | [Unicode-MapUTF8](../data/6e/SNOWHARE/Unicode-MapUTF8/status.json) | 1.14 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SONGMU | [Text-Markdown-Discount](../data/c2/SONGMU/Text-Markdown-Discount/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | none |
-| SONNEN | [Data-Validate-Email](../data/54/SONNEN/Data-Validate-Email/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | failed | none |
+| SONNEN | [Data-Validate-Email](../data/54/SONNEN/Data-Validate-Email/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SPURKIS | [accessors](../data/f4/SPURKIS/accessors/status.json) | 1.01 | v5.45.5 | darwin/darwin-2level | installed | none |
 | SPURKIS | [accessors](../data/f4/SPURKIS/accessors/status.json) | 1.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SREZIC | [Image-Info](../data/18/SREZIC/Image-Info/status.json) | 1.45 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -2222,12 +2222,15 @@ Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [
 | TARAO | [Test-MockTime-HiRes](../data/ea/TARAO/Test-MockTime-HiRes/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TBONE | [User](../data/11/TBONE/User/status.json) | 1.9 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TCOHEN | [Memoize-Memcached](../data/ed/TCOHEN/Memoize-Memcached/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TEODESIAN | [Dist-Conformance](../data/f5/TEODESIAN/Dist-Conformance/status.json) | 0.002 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Dist-Zilla-App-Command-podchecker](../data/94/TEODESIAN/Dist-Zilla-App-Command-podchecker/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
-| TEODESIAN | [Perl-Critic-Distribution](../data/19/TEODESIAN/Perl-Critic-Distribution/status.json) | 0.002 | v5.45.5 | linux/x86_64-linux | failed | none |
+| TEODESIAN | [Perl-Critic-Distribution](../data/19/TEODESIAN/Perl-Critic-Distribution/status.json) | 0.002 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TEODESIAN | [Perl-Critic-Policy-ControlStructures-ProhibitMutatingListFunctionsStricter](../data/8c/TEODESIAN/Perl-Critic-Policy-ControlStructures-ProhibitMutatingListFunctionsStricter/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Perl-Critic-Policy-RegularExpressions-ProhibitRegexToSplitAtDelimiter](../data/80/TEODESIAN/Perl-Critic-Policy-RegularExpressions-ProhibitRegexToSplitAtDelimiter/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Perl-Critic-Policy-ValuesAndExpressions-ProhibitDescendingRanges](../data/c7/TEODESIAN/Perl-Critic-Policy-ValuesAndExpressions-ProhibitDescendingRanges/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Perl-Critic-Policy-Variables-RequireNoAutovivification](../data/36/TEODESIAN/Perl-Critic-Policy-Variables-RequireNoAutovivification/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEODESIAN | [Selenium-Remote-Driver](../data/f6/TEODESIAN/Selenium-Remote-Driver/status.json) | 1.50 | v5.45.5 | linux/x86_64-linux | installed | none |
+| TEODESIAN | [json-validator-schema-troglodyne](../data/4e/TEODESIAN/json-validator-schema-troglodyne/status.json) | 1.000 | v5.45.5 | linux/x86_64-linux | installed | none |
 | TEVERETT | [Data-BitMask](../data/5c/TEVERETT/Data-BitMask/status.json) | 1.00 | v5.45.5 | darwin/darwin-2level | installed | none |
 | TEVERETT | [Data-BitMask](../data/5c/TEVERETT/Data-BitMask/status.json) | 1.00 | v5.45.5 | linux/x86_64-linux | installed | none |
 | THALJEF | [Perl-Critic-More](../data/d1/THALJEF/Perl-Critic-More/status.json) | 1.003 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -2357,7 +2360,8 @@ Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [
 | UTASHIRO | [App-ansiecho](../data/e2/UTASHIRO/App-ansiecho/status.json) | 1.10 | v5.45.5 | linux/x86_64-linux | installed | none |
 | UTASHIRO | [App-ansifold](../data/5a/UTASHIRO/App-ansifold/status.json) | 1.38 | v5.45.5 | linux/x86_64-linux | installed | none |
 | UTASHIRO | [App-cat-v](../data/ed/UTASHIRO/App-cat-v/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none |
-| UTASHIRO | [App-nup](../data/71/UTASHIRO/App-nup/status.json) | 1.10 | v5.45.5 | linux/x86_64-linux | failed | none |
+| UTASHIRO | [App-mdee](../data/80/UTASHIRO/App-mdee/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux | installed | none |
+| UTASHIRO | [App-nup](../data/71/UTASHIRO/App-nup/status.json) | 1.10 | v5.45.5 | linux/x86_64-linux | installed | none |
 | UTASHIRO | [App-optex](../data/d2/UTASHIRO/App-optex/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | installed | none |
 | UTASHIRO | [App-optex-textconv](../data/56/UTASHIRO/App-optex-textconv/status.json) | 1.08 | v5.45.5 | linux/x86_64-linux | installed | none |
 | UTASHIRO | [App-sdif](../data/41/UTASHIRO/App-sdif/status.json) | 4.49 | v5.45.5 | linux/x86_64-linux | installed | none |

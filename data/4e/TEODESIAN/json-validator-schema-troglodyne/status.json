@@ -1,0 +1,54 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "json-validator-schema-troglodyne",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/json-validator-schema-troglodyne-1.000.tar.gz",
+         "id" : "f38b6410a42f85e82c710ccc7dcbc28934bed2b78932c6b6c5db0be5f5c4c86d",
+         "module" : "JSON::Validator::Schema::Troglodyne",
+         "observed_at" : "2026-11-07T00:09:59Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3a53d6493d5ce0dd4e53fdbcd60bc82a8dd8414f4d75225948108660fb4aa2a9",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=8",
+         "version" : "1.000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

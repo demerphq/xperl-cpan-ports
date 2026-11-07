@@ -1,0 +1,15 @@
+{
+  "source_sha256": "01fd72aee9463b600865fe6545c626c48a78d30addf4ea97f17d98ca1f6a673a",
+  "patch_set_id": "xperl-exception-test",
+  "patch_sha256": "02da07dfbbb411f2d61ddc95964c660cba469816b16282c4998d617be913cd2f",
+  "date": "2026-11-07",
+  "platform": "linux/x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "tests": [
+    {
+      "command": "installer configure, build, test, proposal-check, install",
+      "interpreter": "installed XPerl v5.45.5",
+      "result": "pass: 70 test files, 528 tests; proposal applies to original source"
+    }
+  ]
+}

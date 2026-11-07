@@ -1,0 +1,128 @@
+{
+   "author" : "TEODESIAN",
+   "distribution" : "Dist-Conformance",
+   "observations" : [
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Dist-Conformance-0.002.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "b56a40fcb1780f6e2fa6b5d21c034d3454ae9020c95089f52247b6507b1927fa",
+         "module" : "Dist::Conformance",
+         "observed_at" : "2026-11-07T00:10:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7aa429d7fd63cb5d1e9159b050a8af27fb37bb80e265d4e8dc38c41cb19b44d3",
+         "status" : "failed",
+         "test_summary" : "Files=38, Tests=125, Failed 1/38 test programs. 2/125 subtests failed.",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TE/TEODESIAN/Dist-Conformance-0.002.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "ce094bf2dc6e5288830e0e28f45d9dedd773fee6af0fb21082c5b7c274990c6f",
+         "module" : "Dist::Conformance",
+         "observed_at" : "2026-11-07T00:12:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "7aa429d7fd63cb5d1e9159b050a8af27fb37bb80e265d4e8dc38c41cb19b44d3",
+         "status" : "installed",
+         "test_summary" : "Files=38, Tests=125",
+         "version" : "0.002",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

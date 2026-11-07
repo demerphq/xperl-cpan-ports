@@ -1,0 +1,20 @@
+--- a/version/v5.40/t/v2-20-bulk-ops/16-sort-nodes.t
++++ b/version/v5.40/t/v2-20-bulk-ops/16-sort-nodes.t
+@@ -268,7 +268,16 @@
+ 
+         ok ! eval { $list->sort( $dies ); 1 }, "dies on call $when";
+ 
+-        is $@, "stop at $when\n", '... the exception comes through';
++        if( ${^XPERL_VERSION} )
++        {
++            like $@,
++                qr/\Astop at \Q$when\E\n\t\.\.\.propagated at .+ line \d+\.\n\z/,
++                '... the exception comes through';
++        }
++        else
++        {
++            is $@, "stop at $when\n", '... the exception comes through';
++        }
+ 
+         is_deeply contents( $list ), \@item, '... the list is as it was';
+ 
