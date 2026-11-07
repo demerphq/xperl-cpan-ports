@@ -12,7 +12,7 @@
       "result": "pass: 24 test files, 12005 tests"
     },
     {
-      "command": "/usr/bin/perl t/16-catch-errors.t with blib/lib in PERL5LIB",
+      "command": "system perl t/16-catch-errors.t with blib/lib in PERL5LIB",
       "interpreter": "Perl v5.38.2",
       "result": "pass: 5 tests"
     }

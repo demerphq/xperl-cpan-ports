@@ -12,7 +12,7 @@
       "result": "pass: 17 test files, 48 tests"
     },
     {
-      "command": "/usr/bin/perl t/unicode.t with blib/lib and prerequisites in PERL5LIB",
+      "command": "system perl t/unicode.t with blib/lib and prerequisites in PERL5LIB",
       "interpreter": "Perl v5.38.2",
       "result": "pass: 2 tests"
     }
