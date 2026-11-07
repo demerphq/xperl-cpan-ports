@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 89 of 2464 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 87 of 2464 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -807,7 +807,7 @@ Unresolved failures: 89 of 2464 release, XPerl, and platform combinations. See [
 | GETTY | [HTTP-Body](../data/10/GETTY/HTTP-Body/status.json) | 1.24 | v5.45.5 | darwin/darwin-2level | installed | none |
 | GETTY | [HTTP-Body](../data/10/GETTY/HTTP-Body/status.json) | 1.24 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GETTY | [HTTP-Body](../data/10/GETTY/HTTP-Body/status.json) | 1.25 | v5.45.5 | linux/x86_64-linux | installed | none |
-| GETTY | [Langertha](../data/58/GETTY/Langertha/status.json) | 0.505 | v5.45.5 | linux/x86_64-linux | failed | none |
+| GETTY | [Langertha](../data/58/GETTY/Langertha/status.json) | 0.505 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GETTY | [Math-Vector-Similarity](../data/62/GETTY/Math-Vector-Similarity/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GETTY | [MooX-Cmd](../data/0c/GETTY/MooX-Cmd/status.json) | 1.000 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GETTY | [SQL-Abstract](../data/9c/GETTY/SQL-Abstract/status.json) | 2.000002 | v5.45.5 | darwin/darwin-2level | installed | none |
@@ -1733,7 +1733,7 @@ Unresolved failures: 89 of 2464 release, XPerl, and platform combinations. See [
 | PEVANS | [Module-Build-Using-PkgConfig](../data/81/PEVANS/Module-Build-Using-PkgConfig/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none |
 | PEVANS | [Net-Async-HTTP](../data/30/PEVANS/Net-Async-HTTP/status.json) | 0.50 | v5.45.5 | linux/x86_64-linux | installed | none |
 | PEVANS | [Net-Async-WebSocket](../data/cd/PEVANS/Net-Async-WebSocket/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none |
-| PEVANS | [Object-Pad](../data/bf/PEVANS/Object-Pad/status.json) | 0.825 | v5.45.5 | linux/x86_64-linux | failed | none |
+| PEVANS | [Object-Pad](../data/bf/PEVANS/Object-Pad/status.json) | 0.825 | v5.45.5 | linux/x86_64-linux | installed | none |
 | PEVANS | [Parser-MGC](../data/9a/PEVANS/Parser-MGC/status.json) | 0.23 | v5.45.5 | linux/x86_64-linux | failed | none |
 | PEVANS | [Struct-Dumb](../data/0a/PEVANS/Struct-Dumb/status.json) | 0.16 | v5.45.5 | darwin/darwin-2level | installed | none |
 | PEVANS | [Struct-Dumb](../data/0a/PEVANS/Struct-Dumb/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux | installed | none |

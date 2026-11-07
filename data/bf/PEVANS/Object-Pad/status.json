@@ -41,6 +41,76 @@
          "status" : "failed",
          "version" : "0.825",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PE/PEVANS/Object-Pad-0.825.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "413aac9c39233903bda8b25f721270db9aba55f5973c29fe90d0d8ecaca4f3e0",
+         "module" : "Object::Pad",
+         "observed_at" : "2026-11-07T00:06:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bb8ac6efefc9be4fc3ef7f152a40b5ebf9e70c0c"
+         },
+         "source_sha256" : "3fa84943b6505a5bf9f29fe4202d1b75d6c6ae03f531ddea9edc4c13ff93b1a3",
+         "status" : "installed",
+         "test_summary" : "Files=68, Tests=470",
+         "version" : "0.825",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

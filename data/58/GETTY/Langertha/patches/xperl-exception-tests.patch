@@ -1,0 +1,290 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -687,6 +687,7 @@
+ t/data/xai_image_url_doc.json
+ t/data/xai_stream_cost_doc.sse
+ t/lib/LangerthaX/Engine/TestEngine.pm
++t/lib/Test/ExceptionText.pm
+ t/lib/Test/LocalHTTPDaemon.pm
+ t/lib/Test/LocalTLSDaemon.pm
+ t/lib/Test/MockAsyncHTTP.pm
+--- a/t/12_rate_limit_retry_after.t
++++ b/t/12_rate_limit_retry_after.t
+@@ -7,6 +7,7 @@
+ use Test2::Bundle::More;
+ use FindBin;
+ use lib "$FindBin::Bin/lib";
++use Test::ExceptionText qw( exception_text );
+ 
+ BEGIN {
+   eval { require Future::AsyncAwait; 1 }
+@@ -48,8 +49,8 @@
+ # names the Perl frame, not the failure.
+ sub message_of {
+   my ($err) = @_;
+-  $err = "$err";
+-  $err =~ s/ at \S+ line \d+\.?\n\z//;
++  $err = exception_text($err);
++  $err =~ s/\n\z//;
+   return $err;
+ }
+ 
+--- a/t/43_stream_tool_calls.t
++++ b/t/43_stream_tool_calls.t
+@@ -6,6 +6,7 @@
+ use Test2::Bundle::More;
+ use FindBin;
+ use lib "$FindBin::Bin/lib";
++use Test::ExceptionText qw( exception_text );
+ 
+ use HTTP::Response;
+ use JSON::MaybeXS;
+@@ -403,7 +404,7 @@
+     my ( $engine, @tools ) = @_;
+     ok( !eval { $engine->chat_stream_realtime_f( messages => ['hi'], tools => \@tools )->get; 1 },
+       'stopped at chat_stream_request' );
+-    is( $@, "stop before sending\n", 'for the recording stop, not an earlier croak' );
++    is( exception_text($@), "stop before sending\n", 'for the recording stop, not an earlier croak' );
+     return $engine->seen_tools;
+   };
+ 
+--- a/t/45_async_http_stream_die.t
++++ b/t/45_async_http_stream_die.t
+@@ -4,6 +4,7 @@
+ use Test2::Bundle::More;
+ use FindBin;
+ use lib "$FindBin::Bin/lib";
++use Test::ExceptionText qw( exception_text );
+ 
+ BEGIN {
+   plan skip_all => 'fork-based HTTP::Daemon test not supported on Windows' if $^O eq 'MSWin32';
+@@ -161,7 +162,7 @@
+       _async_http => Langertha::Request::SyncHTTP->new( user_agent => LWP::UserAgent->new( timeout => 10 ) ) ),
+       undef, 'malformed' );
+     ok( $sync->is_failed, 'the sync shim fails the same request' );
+-    is( $async_error, $sync->is_failed ? ( $sync->failure )[0] : undef, 'same exception on both backends' );
++    is( exception_text($async_error), $sync->is_failed ? exception_text(( $sync->failure )[0]) : undef, 'same exception on both backends' );
+ 
+     follow_up_ok( $engine, 'after the malformed line' );
+   };
+--- a/t/45_sync_http_real_lwp.t
++++ b/t/45_sync_http_real_lwp.t
+@@ -4,6 +4,7 @@
+ use Test2::Bundle::More;
+ use FindBin;
+ use lib "$FindBin::Bin/lib";
++use Test::ExceptionText qw( exception_text );
+ 
+ BEGIN {
+   plan skip_all => 'fork-based HTTP::Daemon test not supported on Windows' if $^O eq 'MSWin32';
+@@ -144,7 +145,7 @@
+   my ( $future, $seen ) = stream_through( sync_client(), "$base/burst/v1/chat/completions", die_on_chunk => 1 );
+   ok( $future->is_ready, 'future is ready' );
+   ok( $future->is_failed, 'future failed instead of resolving the truncated stream' );
+-  is( ( $future->failure )[0], "user abort\n", 'original exception propagated' );
++  is( exception_text(( $future->failure )[0]), "user abort\n", 'original exception propagated' );
+   is( $seen->{ends}, 0, 'no end-of-body signal after an aborted stream' );
+ };
+ 
+@@ -256,7 +257,7 @@
+ for my $backend (@backends) {
+   subtest "I2 via chat_stream_realtime_f, chunk_callback dies ($backend)" => sub {
+     my $run = run_stream( $backend, 'burst', die_on_chunk => 1 );
+-    is( $run->{error}, "user abort\n", 'the chunk_callback exception propagates' );
++    is( exception_text($run->{error}), "user abort\n", 'the chunk_callback exception propagates' );
+   };
+ }
+ 
+--- a/t/46_public_tool_loop_hooks.t
++++ b/t/46_public_tool_loop_hooks.t
+@@ -5,6 +5,8 @@
+ use warnings;
+ 
+ use Test2::Bundle::More;
++use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ 
+ # karr k341, ADR 0028 Update (k341). langertha-raider runs its own tool loop
+ # and reads each reply off the raw body (parse_response, response_tool_calls,
+@@ -32,7 +34,7 @@
+     [ 'Content-Type' => 'application/json', @headers ], encode_json($body) );
+ }
+ 
+-sub strip_location { my ($err) = @_; $err =~ s/ at \S+ line \d+\.?\n?\z//; return $err }
++sub strip_location { return exception_text($_[0]) }
+ 
+ my $openai_tool_turn = { id => 'c1', choices => [ { index => 0, finish_reason => 'tool_calls',
+   message => { role => 'assistant', content => undef, tool_calls => [
+--- a/t/47_image_fetch_limits.t
++++ b/t/47_image_fetch_limits.t
+@@ -4,6 +4,7 @@
+ use warnings;
+ use Test2::Bundle::More;
+ use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ 
+ use Future;
+ use File::Temp ();
+@@ -319,7 +320,7 @@
+     my $img = { role => 'user', content => [ 'hi', Langertha::Content::Image->from_url("$base/big.png") ] };
+     my $f = Langertha::Engine::Gemini->new( %args, _async_http => $http )->chat_f( messages => [$img] );
+     $f->await;
+-    is scalar( $f->failure ) =~ s/\s+\z//r, $err =~ s/\s+\z//r, 'engine chat_f via ' . ref($http) . ': the same error text';
++    is exception_text(scalar $f->failure) =~ s/\s+\z//r, $err =~ s/\s+\z//r, 'engine chat_f via ' . ref($http) . ': the same error text';
+   }
+ 
+   truncate $hits->filename, 0;
+--- a/t/47_image_url_scheme.t
++++ b/t/47_image_url_scheme.t
+@@ -4,6 +4,7 @@
+ use warnings;
+ use Test2::Bundle::More;
+ use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ 
+ use Future;
+ use File::Temp ();
+@@ -133,7 +134,7 @@
+   my $oa = Langertha::Engine::Ollama->new( url => 'http://h:11434', model => 'm', _async_http => $http2 );
+   my $f2 = $oa->chat_f( messages => [$img_msg] );
+   $f2->await;
+-  is scalar( $f2->failure ) =~ s/\s+\z//r, $err_sync =~ s/\s+\z//r, 'Ollama native chat_f: the same error text';
++  is exception_text(scalar $f2->failure) =~ s/\s+\z//r, $err_sync =~ s/\s+\z//r, 'Ollama native chat_f: the same error text';
+   is $http2->{calls}, 0, '... before any request';
+ }
+ 
+--- a/t/60_tool_loop_chat_response.t
++++ b/t/60_tool_loop_chat_response.t
+@@ -24,6 +24,7 @@
+ # the same croak text, or the same content.
+ 
+ use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ use JSON::MaybeXS;
+ use HTTP::Response;
+ use Path::Tiny;
+@@ -85,8 +86,7 @@
+ 
+ sub strip_location {
+   my ( $err ) = @_;
+-  $err =~ s/ at \S+ line \d+\.?\n?\z//;
+-  return $err;
++  return exception_text($err);
+ }
+ 
+ # Runs one wire body through chat_f and the three loops. Returns
+--- a/t/69_chat_f_wire_tools.t
++++ b/t/69_chat_f_wire_tools.t
+@@ -5,6 +5,7 @@
+ 
+ use Test2::Bundle::More;
+ use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ 
+ use JSON::MaybeXS;
+ use Langertha::Engine::OpenAI;
+@@ -503,7 +504,7 @@
+     ->new( api_key => 'k', model => 'Hermes-4-70B' );
+   ok( !eval { $engine->chat_stream_realtime_f( messages => ['hi'], response_format => $rf )->get; 1 },
+     'stream: stopped at chat_stream_request' );
+-  is( $@, "stop before sending\n", 'stream: for the recording stop' );
++  is( exception_text($@), "stop before sending\n", 'stream: for the recording stop' );
+   like( $engine->seen->[0][0]{content}, qr/<schema>/, 'stream: the schema prompt leads too' );
+ };
+ 
+@@ -512,7 +513,7 @@
+     ->new( api_key => 'k', model => 'Hermes-4-70B' );
+   ok( !eval { $engine->chat_stream_realtime_f( messages => ['hi'], tools => [ $obj, $mcp ],
+     tool_choice => 'auto' )->get; 1 }, 'stopped at chat_stream_request' );
+-  is( $@, "stop before sending\n", 'for the recording stop, not an earlier croak' );
++  is( exception_text($@), "stop before sending\n", 'for the recording stop, not an earlier croak' );
+   my ( $messages, $extra ) = @{ $engine->seen };
+   ok( !exists $extra->{tools}, 'no tools key' );
+   ok( !exists $extra->{tool_choice}, 'no tool_choice key' );
+--- a/t/72_virtual_server.t
++++ b/t/72_virtual_server.t
+@@ -183,7 +183,12 @@
+   chomp $pid;
+   waitpid $middle, 0;
+   my $gone = 0;
+-  for ( 1 .. 40 ) { select undef, undef, undef, 0.1; $gone = !-d "/proc/$pid" || path("/proc/$pid/stat")->slurp =~ /\) Z/; last if $gone }
++  for ( 1 .. 40 ) {
++    select undef, undef, undef, 0.1;
++    my $stat = eval { path("/proc/$pid/stat")->slurp };
++    $gone = !-d "/proc/$pid" || ( defined $stat && $stat =~ /\) Z/ );
++    last if $gone;
++  }
+   ok( $gone, 'the orphaned server exits by itself' );
+   waitpid( $pid, 1 );
+ };
+--- a/t/78_model_override_warning.t
++++ b/t/78_model_override_warning.t
+@@ -5,6 +5,7 @@
+ 
+ use Test2::Bundle::More;
+ use lib 't/lib';
++use Test::ExceptionText qw( exception_text );
+ use JSON::MaybeXS;
+ use Moose::Util ();
+ use Test::MockAsyncHTTP;
+@@ -316,7 +317,7 @@
+     my @warns;
+     local $SIG{__WARN__} = sub { push @warns, $_[0] };
+     ok( !eval { $engine->chat_stream_realtime_f( messages => $MSGS, %opts )->get; 1 }, 'stopped' );
+-    is( $@, "stop before sending\n", 'at the recording stop, not an earlier croak' );
++    is( exception_text($@), "stop before sending\n", 'at the recording stop, not an earlier croak' );
+     return [ grep { /per-request model/ } @warns ];
+   };
+   my $warns = $stream->( model => 'anthropic/claude-sonnet-4.6', tools => [$TOOL] );
+@@ -419,7 +420,7 @@
+   $warns = $capture->( sub {
+     ok( !eval { Langertha::Chat->new( engine => $streamer, model => 'anthropic/claude-sonnet-4.6' )
+       ->simple_chat_stream( sub {}, 'hi' ); 1 }, 'stream stopped' );
+-    is( $@, "stop before sending\n", 'at the recording stop' );
++    is( exception_text($@), "stop before sending\n", 'at the recording stop' );
+   } );
+   is( scalar @$warns, 1, 'simple_chat_stream: one warning' ) or diag @$warns;
+   like( $warns->[0], qr/simple_chat_stream.*reasoning prompt/s, 'names the stream call and the reasoning prompt' );
+--- /dev/null
++++ b/t/lib/Test/ExceptionText.pm
+@@ -0,0 +1,19 @@
++package Test::ExceptionText;
++
++use strict;
++use warnings;
++use Exporter 'import';
++
++our @EXPORT_OK = qw( exception_text );
++
++# XPerl records source locations as an exception crosses async boundaries.
++# Keep the original message, including a caller-supplied trailing newline.
++sub exception_text {
++  my ($error) = @_;
++  return undef unless defined $error;
++  $error = "$error";
++  $error =~ s/(?: at \S+ line \d+\.?\n?|\t\.\.\.propagated(?: at \S+ line \d+\.?\n?)?)+\z//;
++  return $error;
++}
++
++1;
+--- a/t/lib/Test/ToolLoop.pm
++++ b/t/lib/Test/ToolLoop.pm
+@@ -12,6 +12,7 @@
+ use HTTP::Response;
+ use JSON::MaybeXS;
+ use Test::MockAsyncHTTP;
++use Test::ExceptionText qw( exception_text );
+ use Langertha::Chat;
+ 
+ our @EXPORT_OK = qw( http_for run_loop loop_names strip_location );
+@@ -46,9 +47,7 @@
+ 
+ sub strip_location {
+   my ( $err ) = @_;
+-  return $err unless defined $err;
+-  $err =~ s/ at \S+ line \d+\.?\n?\z//;
+-  return $err;
++  return exception_text($err);
+ }
+ 
+ # run_loop( $loop,

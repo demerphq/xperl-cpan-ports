@@ -31,7 +31,6 @@ Prior failures remain in each distribution record after a later success.
 | EXODIST | [Getopt-Yath](../data/71/EXODIST/Getopt-Yath/status.json) | 2.000011 | v5.45.5 | linux/x86_64-linux | test | Files=10, Tests=296, Failed 2/10 test programs. 2/296 subtests failed. |
 | FANGLY | [Statistics-R](../data/7c/FANGLY/Statistics-R/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | GBECHIS | [Mail-MIMEDefang](../data/90/GBECHIS/Mail-MIMEDefang/status.json) | 3.7.3 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
-| GETTY | [Langertha](../data/58/GETTY/Langertha/status.json) | 0.505 | v5.45.5 | linux/x86_64-linux | test | Files=245, Tests=11359, Failed 12/245 test programs. 30/11359 subtests failed. |
 | GONZUS | [Devel-QuickCover](../data/6f/GONZUS/Devel-QuickCover/status.json) | 0.900014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | GONZUS | [JavaScript-V8-XS](../data/f7/GONZUS/JavaScript-V8-XS/status.json) | 0.000014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | GONZUS | [Parser-GraphQL-XS](../data/21/GONZUS/Parser-GraphQL-XS/status.json) | 0.000004 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
@@ -51,7 +50,7 @@ Prior failures remain in each distribution record after a later success.
 | JOVAN | [Physics-Ellipsometry-VASE](../data/8f/JOVAN/Physics-Ellipsometry-VASE/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed. |
 | JROBINSON | [Paws](../data/f5/JROBINSON/Paws/status.json) | 0.46 | v5.45.5 | linux/x86_64-linux | test | Files=38, Tests=15108 |
 | KMACLEOD | [Frontier-RPC](../data/17/KMACLEOD/Frontier-RPC/status.json) | 0.07b4 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
-| LEMBARK | [LinkedList-Single](../data/f4/LEMBARK/LinkedList-Single/status.json) | v2.1.0 | v5.45.5 | linux/x86_64-linux | test | Files=70, Tests=0, Failed 70/70 test programs. 0/0 subtests failed. |
+| LEMBARK | [LinkedList-Single](../data/f4/LEMBARK/LinkedList-Single/status.json) | v2.1.0 | v5.45.5 | linux/x86_64-linux | test | Files=70, Tests=528, Failed 1/70 test programs. 1/528 subtests failed. |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
 | MAXMIND | [MaxMind-DB-Reader-XS](../data/97/MAXMIND/MaxMind-DB-Reader-XS/status.json) | 1.000009 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
@@ -66,7 +65,6 @@ Prior failures remain in each distribution record after a later success.
 | ODENBACH | [Authen-Krb5](../data/20/ODENBACH/Authen-Krb5/status.json) | 1.906 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | PETDANCE | [HTML-Tidy](../data/4d/PETDANCE/HTML-Tidy/status.json) | 1.60 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | PEVANS | [Future-AsyncAwait](../data/c0/PEVANS/Future-AsyncAwait/status.json) | 0.71 | v5.45.5 | darwin/darwin-2level | test | Files=52, Tests=244, Failed 1/52 test programs. 2/244 subtests failed. |
-| PEVANS | [Object-Pad](../data/bf/PEVANS/Object-Pad/status.json) | 0.825 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | PEVANS | [Parser-MGC](../data/9a/PEVANS/Parser-MGC/status.json) | 0.23 | v5.45.5 | linux/x86_64-linux | test | Files=34, Tests=203, Failed 2/34 test programs. 2/203 subtests failed. |
 | PHRED | [SOAP-Lite](../data/66/PHRED/SOAP-Lite/status.json) | 1.27 | v5.45.5 | linux/x86_64-linux | test | Files=56, Tests=888, Failed 1/56 test programs. 0/888 subtests failed. |
 | PITCHLESS | [MooseX-Getopt-Usage](../data/b4/PITCHLESS/MooseX-Getopt-Usage/status.json) | 0.24 | v5.45.5 | linux/x86_64-linux | test | Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed. |
