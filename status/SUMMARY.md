@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 84 of 2544 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 83 of 2544 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2128,7 +2128,7 @@ Unresolved failures: 84 of 2544 release, XPerl, and platform combinations. See [
 | SANKO | [Acme-MCP](../data/95/SANKO/Acme-MCP/status.json) | v1.0.1 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SANKO | [Acme-Selection-RarestFirst](../data/51/SANKO/Acme-Selection-RarestFirst/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SANKO | [Acme-UPnP](../data/8d/SANKO/Acme-UPnP/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none |
-| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux | failed | none |
+| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SANKO | [Algorithm-Kademlia](../data/c8/SANKO/Algorithm-Kademlia/status.json) | v1.1.1 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SANKO | [Algorithm-RateLimiter-TokenBucket](../data/e5/SANKO/Algorithm-RateLimiter-TokenBucket/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | SANKO | [Alien-SDL3](../data/5b/SANKO/Alien-SDL3/status.json) | v3.4.22 | v5.45.5 | linux/x86_64-linux | installed | none |
