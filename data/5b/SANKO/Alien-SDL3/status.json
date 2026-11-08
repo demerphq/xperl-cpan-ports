@@ -1,0 +1,94 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Alien-SDL3",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Alien-SDL3-v3.4.22.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "1667cd3061a8a0e57eec43b3da4e949246f5530819fd82ef4aa1ea534d3d05a7",
+         "module" : "Alien::SDL3",
+         "observed_at" : "2026-11-08T15:45:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "f5fcbb84a50b1ab501458d6c3f24e743551d219b3fba2572c1941f9240360aa2",
+         "status" : "failed",
+         "version" : "v3.4.22",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SA/SANKO/Alien-SDL3-v3.4.22.tar.gz",
+         "id" : "657aa280a0134848d87778d089bb2b8b731066132895567792c742050bd696d6",
+         "module" : "Alien::SDL3",
+         "observed_at" : "2026-11-08T15:53:15Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "f5fcbb84a50b1ab501458d6c3f24e743551d219b3fba2572c1941f9240360aa2",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=31",
+         "version" : "v3.4.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

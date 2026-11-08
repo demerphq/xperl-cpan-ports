@@ -1,0 +1,54 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Alien-Xrepo",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Alien-Xrepo-v1.0.10.tar.gz",
+         "id" : "5e845a5e9f5a0f7115cfcbf879c16c808bf186df895379f74ce082aa30f02536",
+         "module" : "Alien::Xrepo",
+         "observed_at" : "2026-11-08T15:45:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "9ed09b1a4865d0f7b6db55fdb069c764e750d9b296e68b7b2e0ade021dc66c01",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=99",
+         "version" : "v1.0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
