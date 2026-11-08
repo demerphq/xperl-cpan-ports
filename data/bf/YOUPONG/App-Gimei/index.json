@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "distribution": "App-Gimei",
+  "releases": [
+    {
+      "version": "v0.3.2",
+      "cpan_path": "Y/YO/YOUPONG/App-Gimei-v0.3.2.tar.gz",
+      "source_sha256": "8793bfaab7cb9b1b456b40e7c13edfea8fd5d7236df1f6ad69c792f8b7e97185",
+      "patch_sets": [
+        {
+          "id": "test2-version-range",
+          "purpose": "compatibility",
+          "xperl": {
+            "min_inclusive": "v5.45.5",
+            "max_exclusive": "v5.46.0"
+          },
+          "patches": [
+            {
+              "path": "patches/test2-version-range.patch",
+              "sha256": "e16c2f416087ba67da5328f9b423e69640c3ab2159d25cb92c8cfc289492f8d9"
+            }
+          ],
+          "recipes": ["test-dependency-version-range-v1"]
+        }
+      ]
+    }
+  ]
+}

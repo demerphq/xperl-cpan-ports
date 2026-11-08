@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2537 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2538 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2514,6 +2514,7 @@ Unresolved failures: 85 of 2537 release, XPerl, and platform combinations. See [
 | YAPPO | [HTTP-Request-StreamingUpload](../data/58/YAPPO/HTTP-Request-StreamingUpload/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | installed | none |
 | YAPPO | [HTTP-Request-StreamingUpload](../data/58/YAPPO/HTTP-Request-StreamingUpload/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | YOREEK | [XML-Hash-XS](../data/01/YOREEK/XML-Hash-XS/status.json) | 0.66 | v5.45.5 | linux/x86_64-linux | installed | none |
+| YOUPONG | [App-Gimei](../data/bf/YOUPONG/App-Gimei/status.json) | v0.3.2 | v5.45.5 | linux/x86_64-linux | installed | test2-version-range |
 | YOUPONG | [Data-Gimei](../data/ef/YOUPONG/Data-Gimei/status.json) | v0.5.0 | v5.45.5 | linux/x86_64-linux | installed | none |
 | YVES | [Algorithm-ConsistentHash-JumpHash](../data/65/YVES/Algorithm-ConsistentHash-JumpHash/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none |
 | YVES | [Algorithm-ConsistentHash-JumpHash](../data/65/YVES/Algorithm-ConsistentHash-JumpHash/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none |

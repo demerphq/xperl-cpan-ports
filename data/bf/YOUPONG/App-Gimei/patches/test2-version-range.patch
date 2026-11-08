@@ -1,0 +1,31 @@
+--- a/META.json
++++ b/META.json
+@@ -59,7 +59,7 @@
+       "test" : {
+          "requires" : {
+             "Capture::Tiny" : "== 0.50",
+-            "Test2::V1" : "== 1.302225"
++            "Test2::V1" : ">= 1.302225"
+          }
+       }
+    },
+--- a/META.yml
++++ b/META.yml
+@@ -4,7 +4,7 @@
+   - 'NAKAJIMA Yusaku <youpong@cpan.org>'
+ build_requires:
+   Capture::Tiny: '== 0.50'
+-  Test2::V1: '== 1.302225'
++  Test2::V1: '>= 1.302225'
+ configure_requires:
+   Module::Build::Tiny: '== 0.053'
+ dynamic_config: 0
+--- a/cpanfile
++++ b/cpanfile
+@@ -27,5 +27,5 @@
+ 
+ on 'test' => sub {
+     requires 'Capture::Tiny', '== 0.50';
+-    requires 'Test2::V1',     '== 1.302225';
++    requires 'Test2::V1',     '>= 1.302225';
+ };
