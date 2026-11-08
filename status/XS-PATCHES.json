@@ -40,6 +40,25 @@
          "version" : "0.23"
       },
       {
+         "author" : "PJCJ",
+         "distribution" : "Devel-Cover",
+         "evidence_paths" : [
+            "data/8d/PJCJ/Devel-Cover/evidence/repair-v5.45.5-1.52-387b4e6707dd.json"
+         ],
+         "index_path" : "data/8d/PJCJ/Devel-Cover/index.json",
+         "native_files" : [
+            "Cover.xs"
+         ],
+         "patch_paths" : [
+            "data/8d/PJCJ/Devel-Cover/patches/repair-v5.45.5-1.52-387b4e6707dd.patch"
+         ],
+         "patch_set" : "xperl-coverage-gold",
+         "recipes" : [
+            "refcounted-stack-callback-v1"
+         ],
+         "version" : "1.52"
+      },
+      {
          "author" : "PEVANS",
          "distribution" : "Devel-MAT-Dumper",
          "evidence_paths" : [
