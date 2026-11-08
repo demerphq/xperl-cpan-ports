@@ -17,6 +17,7 @@ data/<prefix>/<Author>/<Distribution>/status.json
 data/<prefix>/<Author>/<Distribution>/patches/<patch>.patch
 data/<prefix>/<Author>/<Distribution>/evidence/<record>.json
 recipes/<recipe-id>.md
+queues/<investigation>.txt
 authors/<first>/<first-two>/<Author>.json
 upstream-queue/<first>/<first-two>/<Author>/<entry>.json
 status/SUMMARY.md
@@ -71,6 +72,15 @@ these pages only after their receipts are reviewed, imported, and committed.
 
 From a local checkout, search the summary with `rg -n 'Distribution-Name'
 status/SUMMARY.md status/UNRESOLVED.md`.
+
+## Review candidates
+
+The [review queues](queues/README.md) hold modules selected for investigation
+before we have a build result. A queue file can be passed directly to
+`xperl-install install --from FILE`. The
+[experimental class queue](queues/experimental-class-2026-11-08.txt) is an
+initial set of candidates found through a CPAN source search. Record actual
+build results in `data/`; a source match alone is not a failure.
 
 ## Browse XS and C fixes
 

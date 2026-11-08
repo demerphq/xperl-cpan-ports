@@ -1,0 +1,38 @@
+# Initial CPAN candidates using experimental Perl class syntax.
+# Source: https://grep.metacpan.org/search?q=experimental%3A%3Aclass
+# File filter: *.pm. The search was still in progress on 2026-11-08.
+# These are candidates for review, not known XPerl failures.
+
+Acme::Bitfield                    # lib/Acme/Bitfield.pm:3; class declaration confirmed
+Acme::MCP                         # lib/Acme/MCP.pm:3
+Acme::Selection::RarestFirst      # lib/Acme/Selection/RarestFirst.pm:3
+Acme::UPnP                        # lib/Acme/UPnP.pm:3; class declaration confirmed
+Algorithm::RateLimiter::TokenBucket # lib/Algorithm/RateLimiter/TokenBucket.pm:3; class declaration confirmed
+App::FeedDeduplicator             # lib/App/FeedDeduplicator.pm:78
+App::Gimei                        # lib/App/Gimei/Generator.pm:3
+App::LastStats                    # conditional warning pragma
+App::LinkSite                     # conditional warning pragma
+Archive::CAR
+At
+Bluesky
+CPANSec::Admin
+Codec::CBOR
+Container::Builder
+DPKG::Packages::Parser
+Daje::Generate                    # match is in a supporting module
+Devel::Cover
+Digest::Merkle::SHA256
+Net::BitTorrent::DHT
+Net::BitTorrent
+Net::Multicast::PeerDiscovery
+
+# This module manages experimental::class for its callers.
+Feature::Compat::Class
+
+# These distributions matched in builders rather than primary modules.
+Acme::Parataxis
+Affix                              # class declaration confirmed in its builder
+Alien::SDL3
+Alien::SDL3::image
+Alien::SDL3::ttf
+Alien::Xmake
