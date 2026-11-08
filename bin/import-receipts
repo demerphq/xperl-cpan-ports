@@ -160,8 +160,8 @@ $summary .= "Latest observation for each author, distribution release, source ha
 $summary .= "Older failures remain in the distribution records.\n\n";
 $summary .= "Unresolved failures: " . scalar(@unresolved) . " of " . scalar(@current)
     . " release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).\n\n";
-$summary .= "| Author | Distribution | Version | XPerl | Platform | Status | Patch set |\n";
-$summary .= "| --- | --- | --- | --- | --- | --- | --- |\n";
+$summary .= "| Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |\n";
+$summary .= "| --- | --- | --- | --- | --- | --- | --- | --- |\n";
 for my $row (@current) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
@@ -176,7 +176,8 @@ for my $row (@current) {
         "| $author", "[$distribution](" . status_link($author, $distribution) . ")",
         $observation->{version}, $observation->{xperl_version},
         platform_key($observation), $status,
-        $observation->{patch_set} // 'none') . " |\n";
+        $observation->{patch_set} // 'none',
+        join(', ', @{$observation->{patch_sha256} // []}) || 'none') . " |\n";
 }
 write_file(File::Spec->catfile($status_dir, 'SUMMARY.md'), $summary);
 
@@ -335,15 +336,27 @@ sub observation ($receipt, $path, $id, $release_version) {
 # platform have no platform block; they keep a distinct "unrecorded" key.
 sub platform_key ($observation) {
     my $platform = $observation->{platform};
-    return ref($platform) eq 'HASH' && length($platform->{key} // '')
-        ? $platform->{key} : 'unrecorded';
+    return 'unrecorded' unless ref($platform) eq 'HASH'
+        && length($platform->{key} // '');
+    return $platform->{key} . (length($platform->{build_id} // '')
+        ? '/' . $platform->{build_id} : '');
 }
 
 # The portable platform description from a receipt: no local paths.
 sub platform ($platform) {
     die "receipt platform lacks a key\n"
         unless length($platform->{key} // '');
-    return { map { $_ => $platform->{$_} } grep { defined $platform->{$_} }
+    my $result = { map { $_ => $platform->{$_} } grep { defined $platform->{$_} }
              qw(key os osvers archname cc cc_version make usethreads
-                use64bitall xperl_commit) };
+                use64bitall xperl_commit build_id) };
+    if (ref($platform->{build}) eq 'HASH') {
+        my $build = $platform->{build};
+        $result->{build} = { map { $_ => $build->{$_} }
+            grep { exists $build->{$_} }
+            qw(schema xperl_commit useithreads usemultiplicity use64bitall
+               use64bitint usemymalloc flags_sha256 nvtype
+               uselongdouble usequadmath debugging rc_stack ptrsize ivsize
+               nvsize byteorder compiler_version) };
+    }
+    return $result;
 }

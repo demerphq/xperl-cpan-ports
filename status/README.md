@@ -42,3 +42,10 @@ another. Observations imported before receipts recorded the platform show
 `bin/import-receipts --rebuild --assume-platform OS/ARCHNAME`, which only
 affects observations that have no platform. A result describes the platform
 it was observed on; it is not a claim for other platforms.
+
+New receipts include a build identity and its configuration, including the
+reference-counted stack, threads, debugging, long double, and quadmath.
+The summary separates results with different build identities. Older receipts
+without a build identity stay separate; their missing configuration is unknown.
+The summary shows the patch digests tested by each result. A successful result
+for an older digest does not establish that a newer patch passed on that build.

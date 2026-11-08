@@ -216,6 +216,28 @@ is($repaired->{patch_set}, 'repair-v5.45.5',
    'status names the registered repair patch');
 is_deeply($repaired->{patch_sha256}, ['c' x 64],
           'status keeps the registered patch digest');
+
+# The same release can pass on one interpreter and fail on another even
+# when both have the same OS and architecture name.
+my $stack_dir = File::Spec->catdir($root, 'stack', 'work', 'release-f');
+make_path($stack_dir);
+$receipt->{status} = 'failed';
+$receipt->{phases} = [{ name => 'test', exit_status => 1 }];
+$receipt->{platform}{build_id} = 'd' x 64;
+$receipt->{platform}{build} = { schema => 1, rc_stack => 1 };
+write_json(File::Spec->catfile($stack_dir, 'receipt.json'), $receipt);
+is(system($^X, $script, '--cache', File::Spec->catdir($root, 'stack')),
+   0, 'reference-counted stack result imports');
+$repair_status = JSON::PP->new->decode(read_file($repair_path));
+my ($stack_result) = grep { ($_->{platform}{build_id} // '') eq 'd' x 64 }
+    @{$repair_status->{observations}};
+is($stack_result->{platform}{build}{rc_stack}, 1,
+   'build configuration survives receipt import');
+$summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
+like($summary, qr/Example-Repair.*darwin\/darwin-2level\/d{64}.*failed/,
+     'stack result has its own status row');
+like($summary, qr/Example-Repair.*darwin\/darwin-2level \| installed/,
+     'earlier result remains separately visible');
 done_testing();
 
 sub write_json {
