@@ -139,6 +139,82 @@
          "test_summary" : "Files=55, Tests=4648",
          "version" : "6.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JK/JKEENAN/Devel-NYTProf-6.16.tar.gz",
+         "id" : "9c7b686da5576e71f4d9fb56b0d254621093336975917b13ad466ce51e5c7bd0",
+         "module" : "Devel::NYTProf",
+         "observed_at" : "2026-11-08T21:20:32Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-profile-fixtures",
+         "patch_sha256" : [
+            "63e47a1cf80fccead851515215d1b120eabd18a0f389bc4e32bfa0a3cff4c8fd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "c5553739fbcdf0699df47554fc5e32c4e68ca7876511eef7aceffb6db27badda",
+         "status" : "installed",
+         "test_summary" : "Files=55, Tests=4648",
+         "version" : "6.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

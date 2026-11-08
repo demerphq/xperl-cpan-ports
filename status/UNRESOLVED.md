@@ -66,6 +66,7 @@ Prior failures remain in each distribution record after a later success.
 | PHRED | [SOAP-Lite](../data/66/PHRED/SOAP-Lite/status.json) | 1.27 | v5.45.5 | linux/x86_64-linux | test | Files=56, Tests=888, Failed 1/56 test programs. 0/888 subtests failed. |
 | PITCHLESS | [MooseX-Getopt-Usage](../data/b4/PITCHLESS/MooseX-Getopt-Usage/status.json) | 0.24 | v5.45.5 | linux/x86_64-linux | test | Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed. |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level | test | Files=86, Tests=100, Failed 1/86 test programs. 1/100 subtests failed. |
+| PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | test | Files=86, Tests=6460, Failed 1/86 test programs. 5/6460 subtests failed. |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=86, Tests=6223, Failed 3/86 test programs. 37/6223 subtests failed. |
 | PMQS | [DB_File](../data/3d/PMQS/DB_File/status.json) | 1.861 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=0 |
@@ -91,3 +92,4 @@ Prior failures remain in each distribution record after a later success.
 | YAKEX | [Test-Kwalitee-Extra](../data/6e/YAKEX/Test-Kwalitee-Extra/status.json) | v0.4.0 | v5.45.5 | darwin/darwin-2level | test | Files=12, Tests=64, Failed 2/12 test programs. 2/64 subtests failed. |
 | YANICK | [Dancer2-Plugin-REST](../data/48/YANICK/Dancer2-Plugin-REST/status.json) | 1.03 | v5.45.5 | darwin/darwin-2level | test | Files=9, Tests=44, Failed 1/9 test programs. 1/44 subtests failed. |
 | YANICK | [GnuPG](../data/a8/YANICK/GnuPG/status.json) | 0.19 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
+| YVES | [Data-Dump-Streamer](../data/31/YVES/Data-Dump-Streamer/status.json) | 2.42 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | test | Files=26, Tests=375, Failed 1/26 test programs. 3/375 subtests failed. |

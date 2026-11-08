@@ -1,0 +1,58 @@
+{
+   "date" : "2026-11-08",
+   "files" : [
+      "Want.xs"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "fb9e81a6f8b232c2f3a51c1f7195b0da0d211ccb1a0a160e7301bc10a4f6ef8f",
+   "platform" : {
+      "archname" : "darwin-2level",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+         "debugging" : 0,
+         "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+      },
+      "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+      "cc" : "cc",
+      "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+      "key" : "darwin/darwin-2level",
+      "make" : "make",
+      "os" : "darwin",
+      "osvers" : "25.6.0",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "b4e4740b8d4cb783591273c636bd68304892e28d89e88abf9273b1de17f552f7",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

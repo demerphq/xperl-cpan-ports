@@ -1,0 +1,32 @@
+--- a/Want.xs
++++ b/Want.xs
+@@ -445,7 +445,11 @@
+ 
+     oldmarksp = cx->blk_oldmarksp;
+     mark_from = PL_markstack[oldmarksp];
+-    mark_to   = PL_markstack[oldmarksp+1];
++    /* The sub's entry stack position (its entersub MARK) is recorded in
++     * blk_oldsp.  The markstack slot above blk_oldmarksp was popped by
++     * entersub and may since have been reused by calls made inside the
++     * sub, which happens under PERL_RC_STACK. */
++    mark_to   = cx->blk_oldsp;
+     return (mark_to - mark_from);
+ }
+ 
+@@ -481,11 +485,14 @@
+     I32 oldmarksp;
+     AV* a;
+ 
+-    oldmarksp = cx->blk_oldmarksp;
+     if (!cx) return Nullav;
++    oldmarksp = cx->blk_oldmarksp;
+     a = newAV();
+     /* printf("oldmarksp = %d\n", oldmarksp); */
+-    av_push(a, newSVsv(PL_stack_base[PL_markstack[oldmarksp+1]]));
++    /* blk_oldsp is the sub's entersub MARK, i.e. the RHS value of the
++     * enclosing sassign; see countstack(). */
++    PERL_UNUSED_VAR(oldmarksp);
++    av_push(a, newSVsv(PL_stack_base[cx->blk_oldsp]));
+ 
+     return a;
+ }

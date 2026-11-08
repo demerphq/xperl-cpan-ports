@@ -323,6 +323,81 @@
          "test_summary" : "Files=86, Tests=6223, Failed 3/86 test programs. 37/6223 subtests failed.",
          "version" : "1.52",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "f770fe12b11d28017c7a9eb6a63fdce7c7ac7a1cdc2a8600153ef02e4e698bb6",
+         "module" : "Devel::Cover",
+         "observed_at" : "2026-11-08T21:18:56Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-coverage-gold",
+         "patch_sha256" : [
+            "387b4e6707dd82816ab25513b2fda8f3654cc39171d804ee5fc4eaedb3198556"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "status" : "failed",
+         "test_summary" : "Files=86, Tests=6460, Failed 1/86 test programs. 5/6460 subtests failed.",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

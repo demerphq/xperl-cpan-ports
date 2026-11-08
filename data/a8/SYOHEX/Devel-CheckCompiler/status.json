@@ -135,6 +135,74 @@
          "test_summary" : "Files=5, Tests=10",
          "version" : "0.07",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz",
+         "id" : "86a8be0b5b2917b295b4af138db08ec2dc0c145a2c1b6c8ee67a871c8cc00f75",
+         "module" : "Devel::CheckCompiler",
+         "observed_at" : "2026-11-08T21:20:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "768b7697b4b8d4d372c7507b65e9dd26aa4223f7100183bbb4d3af46d43869b5",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=10",
+         "version" : "0.07",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

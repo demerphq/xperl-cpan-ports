@@ -235,6 +235,82 @@
          "test_summary" : "Files=23, Tests=332",
          "version" : "6.83",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "O/OA/OALDERS/libwww-perl-6.83.tar.gz",
+         "id" : "c284c70398788b166ce81478e9acd6dbbdf5071a31361af93d662e6f7cae3faa",
+         "module" : "LWP::UserAgent",
+         "observed_at" : "2026-11-08T21:22:51Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "stringify-internal-response",
+         "patch_sha256" : [
+            "9b26469764c515edfa216e56d3de15aea63b1a1de8c2591c7d39d83765d7e383"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "e75f0fa9d3c6f0daf5a5a72fa9f8b1c9c0d23e3a84a8522ccb4f835232b95505",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=332",
+         "version" : "6.83",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

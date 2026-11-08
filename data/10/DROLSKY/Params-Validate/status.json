@@ -293,6 +293,82 @@
          "test_summary" : "Files=38, Tests=2515",
          "version" : "1.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "id" : "a8f9c34b5a43371f25246ecf9e98220f22b7a6e6ee1152f12c003f0646b9acbb",
+         "module" : "Params::Validate",
+         "observed_at" : "2026-11-08T21:22:16Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-callbacks",
+         "patch_sha256" : [
+            "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "status" : "installed",
+         "test_summary" : "Files=38, Tests=2515",
+         "version" : "1.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

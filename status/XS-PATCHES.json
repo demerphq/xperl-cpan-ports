@@ -444,6 +444,23 @@
          "version" : "0.65"
       },
       {
+         "author" : "ROBIN",
+         "distribution" : "Want",
+         "evidence_paths" : [
+            "data/f5/ROBIN/Want/evidence/repair-v5.45.5-0.29-fb9e81a6f8b2.json"
+         ],
+         "index_path" : "data/f5/ROBIN/Want/index.json",
+         "native_files" : [
+            "Want.xs"
+         ],
+         "patch_paths" : [
+            "data/f5/ROBIN/Want/patches/repair-v5.45.5-0.29-fb9e81a6f8b2.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.29"
+      },
+      {
          "author" : "TODDR",
          "distribution" : "XML-LibXML",
          "evidence_paths" : [

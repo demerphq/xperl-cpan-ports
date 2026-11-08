@@ -280,6 +280,82 @@
          "test_summary" : "Files=45, Tests=7527",
          "version" : "v0.43.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "id" : "6fb8b829509a197a35f02b0b5f025981bfb12b7a6eba207f231d5c429ee84a25",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-08T21:20:45Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "localize-no-color",
+         "patch_sha256" : [
+            "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=7527",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

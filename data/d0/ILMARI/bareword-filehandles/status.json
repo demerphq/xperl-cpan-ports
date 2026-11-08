@@ -178,6 +178,82 @@
          "test_summary" : "Files=2, Tests=483",
          "version" : "0.007",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "I/IL/ILMARI/bareword-filehandles-0.007.tar.gz",
+         "id" : "e5c566f2c88587ecbca20be4dd0b06b4b7a42013e5d6cf610c84cd638b52b53c",
+         "module" : "bareword::filehandles",
+         "observed_at" : "2026-11-08T21:16:59Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "compile-error-order-test",
+         "patch_sha256" : [
+            "ea00bf263b65ac8dbbdf9eb3698e60da654184ab3436ea2813d202ae51c9c72c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+         },
+         "source_sha256" : "4134533716d87af8fff56e250c488ad06df0a7bff48e7cf7de63ff6bc8d9c17f",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=483",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
