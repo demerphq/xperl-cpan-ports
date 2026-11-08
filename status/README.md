@@ -10,7 +10,13 @@ Results with the same recorded build facts are stored once even if separate
 receipts have different IDs or timestamps. The first observation stays in
 place. A different result for the same release, XPerl version, and platform
 is a new observation; a later return to the earlier result records that
-state change.
+state change. When two observations share a timestamp, the one already
+recorded stays first, so a repeat imported in the same second cannot replace
+it.
+
+`--receipt FILE` imports specific receipts. With `--record-only`, only those
+receipts' distribution records are read and updated, and this page's
+SUMMARY.md and UNRESOLVED.md are left for a later `--rebuild`.
 
 The importer derives the author and distribution release version from the
 CPAN archive.

@@ -16,14 +16,25 @@ use Getopt::Long qw(GetOptions);
 use JSON::PP;
 use POSIX qw(strftime);
 
-my @caches;
-my ($rebuild, $assume_platform);
-my $usage = "usage: $0 --cache DIR [...] | --rebuild"
-    . " [--assume-platform OS/ARCHNAME]\n";
-GetOptions('cache=s@' => \@caches, 'rebuild' => \$rebuild,
+my (@caches, @receipt_files);
+my ($rebuild, $assume_platform, $record_only);
+my $usage = "usage: $0 [--cache DIR ...] [--receipt FILE ...] | --rebuild"
+    . " [--assume-platform OS/ARCHNAME]\n"
+    . "       $0 --record-only --receipt FILE [--receipt FILE ...]\n";
+GetOptions('cache=s@' => \@caches, 'receipt=s@' => \@receipt_files,
+           'rebuild' => \$rebuild, 'record-only' => \$record_only,
            'assume-platform=s' => \$assume_platform)
     or die $usage;
-die $usage unless (@caches || $rebuild) && !@ARGV;
+die $usage unless (@caches || @receipt_files || $rebuild) && !@ARGV;
+# Record-only mode updates just the named receipts' distribution records and
+# leaves the generated summary pages for a separate refresh.
+if ($record_only) {
+    die "--record-only requires --receipt FILE\n" unless @receipt_files;
+    die "--record-only cannot be combined with --cache, --rebuild"
+        . " or --assume-platform\n"
+        if @caches || $rebuild || defined $assume_platform;
+}
+-f $_ or die "receipt file does not exist: $_\n" for @receipt_files;
 my ($assumed_os, $assumed_archname);
 if (defined $assume_platform) {
     ($assumed_os, $assumed_archname) =
@@ -44,29 +55,22 @@ die "importer requires the one-repository layout\n"
 my $json = JSON::PP->new->canonical->pretty;
 my %records;
 
-if (-d $data_dir) {
+if ($record_only) {
+    # Load only the records the named receipts belong to.
+    for my $path (@receipt_files) {
+        my ($author, $distribution) = receipt_key(scalar read_receipt($path));
+        my $status = status_path($author, $distribution);
+        load_record($status) if -f $status
+            && !exists $records{"$author/$distribution"};
+    }
+}
+elsif (-d $data_dir) {
     find({
         no_chdir => 1,
         wanted => sub {
             return unless -f $File::Find::name
                 && basename($File::Find::name) eq 'status.json';
-            my $path = $File::Find::name;
-            my $data = $json->decode(read_file($path));
-            my $key = "$data->{author}/$data->{distribution}";
-            die "invalid status record: $path\n"
-                unless $data->{schema} == 2
-                    && ref($data->{observations}) eq 'ARRAY'
-                    && $path eq status_path($data->{author},
-                                            $data->{distribution})
-                    && !exists $records{$key};
-            if (defined $assume_platform) {
-                # Observations imported before receipts recorded a platform.
-                $_->{platform} //= {
-                    key => $assume_platform, os => $assumed_os,
-                    archname => $assumed_archname,
-                } for @{$data->{observations}};
-            }
-            $records{$key} = $data;
+            load_record($File::Find::name);
         },
     }, $data_dir);
 }
@@ -80,40 +84,22 @@ for my $cache (@caches) {
         wanted => sub {
             return unless -f $File::Find::name
                 && basename($File::Find::name) eq 'receipt.json';
-            my $path = $File::Find::name;
-            my $raw = read_file($path);
-            my $receipt = eval { $json->decode($raw) };
-            die "invalid receipt $path: $@\n" if $@;
-            my ($distribution, $release_version) = distribution_name($receipt);
-            my $author = author_from_path($receipt->{cpan_path});
-            my $key = "$author/$distribution";
-            my $entry = $records{$key} //= {
-                schema => 2, author => $author, distribution => $distribution,
-                observations => [],
-            };
-            my $id = sha256_hex($raw);
-            my ($existing) =
-                grep { $_->{id} eq $id } @{$entry->{observations}};
-            if ($existing) {
-                my $updated =
-                    observation($receipt, $path, $id, $release_version);
-                $updated->{observed_at} = $existing->{observed_at};
-                %$existing = %$updated;
-                return;
-            }
-            push @{$entry->{observations}},
-                observation($receipt, $path, $id, $release_version);
-            $new_ids{$id} = 1;
+            import_receipt($File::Find::name);
         },
     }, $cache);
 }
+import_receipt($_) for @receipt_files;
 
 my @current;
 for my $key (sort keys %records) {
     my $entry = $records{$key};
     my ($author, $distribution) = @{$entry}{qw(author distribution)};
+    # Within one timestamp, observations already recorded sort before ones
+    # imported now, so a duplicate imported in the same second can never
+    # displace the observation it repeats.
     @{$entry->{observations}} = sort {
         $a->{observed_at} cmp $b->{observed_at}
+            || ($new_ids{$a->{id}} ? 1 : 0) <=> ($new_ids{$b->{id}} ? 1 : 0)
             || $a->{id} cmp $b->{id}
     } @{$entry->{observations}};
 
@@ -136,6 +122,7 @@ for my $key (sort keys %records) {
     $imported += grep { $new_ids{$_->{id}} } @distinct;
 
     write_file(status_path($author, $distribution), $json->encode($entry));
+    next if $record_only;
     my %latest;
     for my $observation (@{$entry->{observations}}) {
         my $key = join "\0", @{$observation}{qw(version source_sha256 xperl_version)},
@@ -146,6 +133,12 @@ for my $key (sort keys %records) {
         { author => $author, distribution => $distribution,
           observation => $_, triage => $entry->{triage} }
     } values %latest;
+}
+
+if ($record_only) {
+    print "Recorded $imported new observations in " . scalar(keys %records)
+        . " distribution records; summaries not regenerated\n";
+    exit 0;
 }
 
 @current = sort {
@@ -209,6 +202,58 @@ for my $row (@unresolved) {
 write_file(File::Spec->catfile($status_dir, 'UNRESOLVED.md'), $unresolved);
 print "Imported $imported observations; " . scalar(@unresolved)
     . " unresolved of " . scalar(@current) . " release, XPerl, and platform combinations\n";
+
+sub load_record ($path) {
+    my $data = $json->decode(read_file($path));
+    my $key = "$data->{author}/$data->{distribution}";
+    die "invalid status record: $path\n"
+        unless $data->{schema} == 2
+            && ref($data->{observations}) eq 'ARRAY'
+            && $path eq status_path($data->{author}, $data->{distribution})
+            && !exists $records{$key};
+    if (defined $assume_platform) {
+        # Observations imported before receipts recorded a platform.
+        $_->{platform} //= {
+            key => $assume_platform, os => $assumed_os,
+            archname => $assumed_archname,
+        } for @{$data->{observations}};
+    }
+    $records{$key} = $data;
+}
+
+sub read_receipt ($path) {
+    my $raw = read_file($path);
+    my $receipt = eval { $json->decode($raw) };
+    die "invalid receipt $path: $@\n" if $@;
+    return wantarray ? ($receipt, $raw) : $receipt;
+}
+
+sub receipt_key ($receipt) {
+    my ($distribution) = distribution_name($receipt);
+    return (author_from_path($receipt->{cpan_path}), $distribution);
+}
+
+sub import_receipt ($path) {
+    my ($receipt, $raw) = read_receipt($path);
+    my ($distribution, $release_version) = distribution_name($receipt);
+    my $author = author_from_path($receipt->{cpan_path});
+    my $key = "$author/$distribution";
+    my $entry = $records{$key} //= {
+        schema => 2, author => $author, distribution => $distribution,
+        observations => [],
+    };
+    my $id = sha256_hex($raw);
+    my ($existing) = grep { $_->{id} eq $id } @{$entry->{observations}};
+    if ($existing) {
+        my $updated = observation($receipt, $path, $id, $release_version);
+        $updated->{observed_at} = $existing->{observed_at};
+        %$existing = %$updated;
+        return;
+    }
+    push @{$entry->{observations}},
+        observation($receipt, $path, $id, $release_version);
+    $new_ids{$id} = 1;
+}
 
 sub read_file ($path) {
     open my $file, '<', $path or die "cannot read $path: $!\n";

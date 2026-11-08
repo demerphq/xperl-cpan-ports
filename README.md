@@ -54,6 +54,19 @@ the XPerl interpreter:
 The importer writes compact records without machine-specific installation
 paths or full build logs. See [status/README.md](status/README.md).
 
+`--receipt FILE` imports a named receipt and may be repeated, alone or
+alongside `--cache`. A publisher that records one completed distribution at a
+time can add `--record-only`:
+
+    /path/to/xperl/bin/perl bin/import-receipts --record-only \
+        --receipt /path/to/work/release-XXXX/receipt.json
+
+Record-only mode reads and updates only the named receipts' distribution
+records. It applies the same normalization and duplicate removal as a full
+import. It leaves `status/SUMMARY.md` and `status/UNRESOLVED.md` unchanged;
+refresh them separately with `--rebuild`. Importing an identical receipt, or
+another receipt with the same build facts, leaves the record byte-identical.
+
 ## Browse build results
 
 Open [status/SUMMARY.md](status/SUMMARY.md) and search for the distribution
