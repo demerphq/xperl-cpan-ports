@@ -41,6 +41,61 @@
          "status" : "failed",
          "version" : "v1.0.5",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SA/SANKO/Alien-Xmake-v1.0.5.tar.gz",
+         "id" : "d769b97d4fb0aa9107eb58f1872349ff6652dd5aad14bdcfe88e559a74acc00a",
+         "module" : "Alien::Xmake",
+         "observed_at" : "2026-11-08T15:42:33Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "no-x11-extraction",
+         "patch_sha256" : [
+            "6d67dbd28f25b90e638940755fd850fae2954ea48f85cf7ae64fd83aa647d8da"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "5816b9d9b4b3303f3e8f77f2bba66cf80dffa7cab920067e5fc552020740b934",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=31",
+         "version" : "v1.0.5",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

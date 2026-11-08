@@ -1,0 +1,21 @@
+{
+  "source_sha256": "5816b9d9b4b3303f3e8f77f2bba66cf80dffa7cab920067e5fc552020740b934",
+  "patch_set_id": "no-x11-extraction",
+  "patch_sha256": "6d67dbd28f25b90e638940755fd850fae2954ea48f85cf7ae64fd83aa647d8da",
+  "date": "2026-11-08",
+  "platform": "linux/x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "xperl_commit": "4e10318858db1968f788662882ee7c683395b2dd",
+  "tests": [
+    {
+      "command": "sh xmake.run --noexec --quiet --nox11 --target WORKDIR",
+      "interpreter": "shell",
+      "result": "pass: extracted configure and source files without launching a terminal"
+    },
+    {
+      "command": "xperl-install install Alien::Xmake --registry xperl-cpan-ports",
+      "interpreter": "installed XPerl v5.45.5",
+      "result": "pass: patch applied, xmake built, 5 test files and 31 tests passed, distribution installed"
+    }
+  ]
+}

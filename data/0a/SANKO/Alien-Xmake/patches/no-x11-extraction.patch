@@ -1,0 +1,10 @@
+--- a/builder/Alien/Xmake/Builder.pm
++++ b/builder/Alien/Xmake/Builder.pm
+@@ -563,6 +563,6 @@
+         $self->_verify_download( $outfile, $asset );
+         say 'Extracting source bundle...' if $verbose;
+-        $self->_run_cmd( 'sh', $outfile, '--noexec', '--quiet', '--target', $build_dir ) or die 'Failed to extract .run file';
++        $self->_run_cmd( 'sh', $outfile, '--noexec', '--quiet', '--nox11', '--target', $build_dir ) or die 'Failed to extract .run file';
+         my $cwd = cwd();
+         chdir $build_dir or die 'Cannot chdir to build dir';
+         say 'Building Xmake...' if $verbose;
