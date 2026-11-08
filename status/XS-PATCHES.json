@@ -20,6 +20,25 @@
          "version" : "0.39"
       },
       {
+         "author" : "SMUELLER",
+         "distribution" : "Class-XSAccessor",
+         "evidence_paths" : [
+            "data/42/SMUELLER/Class-XSAccessor/evidence/repair-v5.45.5-1.19-8ee97affa4aa.json"
+         ],
+         "index_path" : "data/42/SMUELLER/Class-XSAccessor/index.json",
+         "native_files" : [
+            "XSAccessor.xs"
+         ],
+         "patch_paths" : [
+            "data/42/SMUELLER/Class-XSAccessor/patches/repair-v5.45.5-1.19-8ee97affa4aa.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
+         "version" : "1.19"
+      },
+      {
          "author" : "NWCLARK",
          "distribution" : "Devel-Arena",
          "evidence_paths" : [
@@ -312,6 +331,25 @@
       },
       {
          "author" : "YVES",
+         "distribution" : "Sereal-Decoder",
+         "evidence_paths" : [
+            "data/23/YVES/Sereal-Decoder/evidence/repair-v5.45.5-7.001-8c2f0a8bb095.json"
+         ],
+         "index_path" : "data/23/YVES/Sereal-Decoder/index.json",
+         "native_files" : [
+            "Decoder.xs"
+         ],
+         "patch_paths" : [
+            "data/23/YVES/Sereal-Decoder/patches/repair-v5.45.5-7.001-8c2f0a8bb095.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
+         "version" : "7.001"
+      },
+      {
+         "author" : "YVES",
          "distribution" : "Sereal-Encoder",
          "evidence_paths" : [
             "data/de/YVES/Sereal-Encoder/evidence/xperl-hash-entries-v5.45.5.json"
@@ -487,18 +525,19 @@
          "author" : "VPIT",
          "distribution" : "indirect",
          "evidence_paths" : [
-            "data/0a/VPIT/indirect/evidence/xperl-parser-errors-v5.45.5.json"
+            "data/0a/VPIT/indirect/evidence/repair-v5.45.5-0.39-be4a120ec9bf.json"
          ],
          "index_path" : "data/0a/VPIT/indirect/index.json",
          "native_files" : [
             "indirect.xs"
          ],
          "patch_paths" : [
-            "data/0a/VPIT/indirect/patches/xperl-parser-errors.patch"
+            "data/0a/VPIT/indirect/patches/repair-v5.45.5-0.39-be4a120ec9bf.patch"
          ],
          "patch_set" : "xperl-parser-errors",
          "recipes" : [
-            "parser-error-count-v1"
+            "parser-error-count-v1",
+            "refcounted-stack-callback-v1"
          ],
          "version" : "0.39"
       },

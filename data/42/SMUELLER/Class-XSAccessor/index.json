@@ -1,0 +1,30 @@
+{
+   "distribution" : "Class-XSAccessor",
+   "releases" : [
+      {
+         "cpan_path" : "S/SM/SMUELLER/Class-XSAccessor-1.19.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.19-8ee97affa4aa.patch",
+                     "sha256" : "8ee97affa4aa267113ce9bdc45dbf46e3e515dd9542c966aa4a30c8ae64ed60f"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "refcounted-stack-custom-op-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "99c56b395f1239af19901f2feeb125d9ecb4e351a0d80daa9529211a4700a6f2",
+         "version" : "1.19"
+      }
+   ],
+   "schema" : 1
+}

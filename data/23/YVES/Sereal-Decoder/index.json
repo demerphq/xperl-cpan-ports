@@ -1,0 +1,30 @@
+{
+   "distribution" : "Sereal-Decoder",
+   "releases" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Sereal-Decoder-7.001.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-7.001-8c2f0a8bb095.patch",
+                     "sha256" : "8c2f0a8bb095ff2c9e8139827101b27366cb67213771512066e8978a4b7c0855"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "refcounted-stack-custom-op-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "471993fcb2113a1e4928e746d844bcc6a168d87471738f21e12ff85a412c6557",
+         "version" : "7.001"
+      }
+   ],
+   "schema" : 1
+}
