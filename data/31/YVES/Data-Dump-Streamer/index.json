@@ -1,0 +1,28 @@
+{
+   "distribution" : "Data-Dump-Streamer",
+   "releases" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Data-Dump-Streamer-2.42.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-2.42-ed5a629431fc.patch",
+                     "sha256" : "ed5a629431fcb4bcbf1d9d02af491a16410bc50c589d8a48df77a81f43c82102"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "47f6e51fb45ce7be561e01481add0c2e1c0cd85df4b9e212f3923cd3064d1cad",
+         "version" : "2.42"
+      }
+   ],
+   "schema" : 1
+}
