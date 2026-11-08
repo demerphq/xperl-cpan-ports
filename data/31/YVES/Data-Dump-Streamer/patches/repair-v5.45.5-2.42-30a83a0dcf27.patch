@@ -1,0 +1,250 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -39,5 +39,6 @@
+ t/test_helper.pl
+ t/tree.t
+ t/usage.t
++t/xperl_refcount.t
+ t/xs_subs.t
+ typemap
+--- a/lib/Data/Dump/Streamer.pm
++++ b/lib/Data/Dump/Streamer.pm
+@@ -4142,6 +4142,9 @@
+      weak_refcount($var)     #the number of weakrefs to an object.
+                              #sv_refcount($var)-weak_refcount($var) is the true
+                              #SvREFCOUNT() of the var.
++                             #on a perl built with PERL_RC_STACK the raw counts
++                             #also include references held by the argument
++                             #stack on the current call path.
+      looks_like_number($var) #if perl will think this is a number.
+ 
+      regex($var)     # In list context returns the pattern and the modifiers,
+--- a/lib/Data/Dump/Streamer.xs
++++ b/lib/Data/Dump/Streamer.xs
+@@ -66,20 +66,32 @@
+ 
+ #   ifndef PERL_MAGIC_backref
+ #       define PERL_MAGIC_backref	  '<'
++#   endif
++
++/* The backref holder is either an AV of weak referrers or, when there is
++ * only one, the weak RV itself.  It is the mg_obj of PERL_MAGIC_backref
++ * (not a pointer to it), and hashes keep it in HvAUX instead of magic. */
++#   ifdef sv_get_backrefs
++#       define DDS_GET_BACKREFS(sv) sv_get_backrefs(sv)
++#   else
++static SV *
++dds_get_backrefs(pTHX_ SV *sv)
++{
++    MAGIC *mg;
++    if (SvMAGICAL(sv) && (mg = mg_find(sv, PERL_MAGIC_backref)))
++        return mg->mg_obj;
++    return NULL;
++}
++#       define DDS_GET_BACKREFS(sv) dds_get_backrefs(aTHX_ sv)
+ #   endif
+ 
+ #define ADD_WEAK_REFCOUNT do {                          \
+-        MAGIC *mg = NULL;                               \
+-        if( SvMAGICAL(sv)                               \
+-            && (mg = mg_find(sv, PERL_MAGIC_backref) )  \
+-        ){                                              \
+-            SV **svp = (SV**)mg->mg_obj;                \
+-            if (svp && *svp) {                          \
+-                RETVAL +=                               \
+-                    SvTYPE(*svp) == SVt_PVAV            \
+-                    ? av_len((AV*)*svp)+1               \
+-                    : 1;                                \
+-            }                                           \
++        SV *backrefs = DDS_GET_BACKREFS(sv);            \
++        if (backrefs) {                                 \
++            RETVAL +=                                   \
++                SvTYPE(backrefs) == SVt_PVAV            \
++                ? av_len((AV*)backrefs)+1               \
++                : 1;                                    \
+         }                                               \
+     } while (0)
+ #else
+--- a/t/refcount.t
++++ b/t/refcount.t
+@@ -11,7 +11,12 @@
+ my $rav= [];
+ my $rhv= {};
+ 
+-is sv_refcount($sv), 1, "sv_refcount";
++# sv_refcount is a raw count. With a reference-counted argument stack
++# (PERL_RC_STACK) it also counts the stack's own reference to the argument,
++# so measure that for this call shape with a lexical whose real count is 1.
++my $stack_refs = do { my $probe = "x"; sv_refcount($probe) - 1 };
++
++is sv_refcount($sv) - $stack_refs, 1, "sv_refcount";
+ is refcount($rav),   1, "refcount av";
+ is refcount($rhv),   1, "refcount hv";
+ 
+@@ -19,7 +24,7 @@
+ 
+ my $ref= \$sv;
+ 
+-is sv_refcount($sv), 2, 'sv_refcount after';
++is sv_refcount($sv) - $stack_refs, 2, 'sv_refcount after';
+ is refcount(\$sv),   3, 'refcount after';
+ 
+ SKIP: {
+@@ -27,7 +32,7 @@
+         unless eval { weaken($ref) };
+ 
+     is isweak($ref),       1, "is weakened";
+-    is sv_refcount($sv),   2, "weakened sv_refcount";
++    is sv_refcount($sv) - $stack_refs, 2, "weakened sv_refcount";
+     is weak_refcount($sv), 1, "weak_refcount";
+     is refcount(\$sv),     3, "weakened refcount";
+ }
+--- /dev/null
++++ b/t/xperl_refcount.t
+@@ -0,0 +1,146 @@
++use strict;
++use warnings;
++use Test::More;
++use B ();
++use Scalar::Util qw(isweak refaddr);
++use Data::Dump::Streamer qw(Dump weak_refcount sv_refcount refcount weaken);
++
++# Reference counts on a reference-counted argument stack (PERL_RC_STACK).
++#
++# (a) weak_refcount reads the backref holder correctly. Independent of the
++#     stack: the holder is the PERL_MAGIC_backref mg_obj itself (one weak RV
++#     or an AV of them), and hashes keep it in HvAUX.
++# (b) sv_refcount stays a raw diagnostic. On an RC stack it includes live
++#     stack references; those depend on the call path, so they are measured
++#     per path, never subtracted as a constant.
++# (c) Serialization keeps sharing, aliasing and weak references across a
++#     dump and eval round trip on either stack.
++
++my $rc_stack = defined &Internals::stack_refcounted
++    && (Internals::stack_refcounted() & 1) ? 1 : 0;
++diag "reference-counted stack: $rc_stack";
++
++plan skip_all => 'no weak references'
++    unless eval { my $x = \my $y; weaken($x); 1 };
++
++# (a) weak backrefs: count weak references and keep strong = raw - weak.
++{
++    my $sv = 'Foo';
++    my $strong = sv_refcount($sv) - weak_refcount($sv);
++    is weak_refcount($sv), 0, 'no weak references';
++    my $r1 = \$sv;
++    weaken($r1);
++    is weak_refcount($sv), 1, 'one weak reference (single RV holder)';
++    my @r = map { \$sv } 1 .. 3;
++    weaken($_) for @r;
++    is weak_refcount($sv), 4, 'four weak references (AV holder)';
++    is sv_refcount($sv) - weak_refcount($sv), $strong,
++        'raw minus weak count is unchanged by weak references';
++    undef $r1;
++    is weak_refcount($sv), 3, 'a cleared weak reference is no longer counted';
++}
++# refcount(\@a) adds weak references to the strong count; weak_refcount
++# has a ($) prototype, so aggregates are measured through refcount.
++{
++    my @a;
++    my $before = refcount(\@a);
++    my $ar = \@a;
++    weaken($ar);
++    is refcount(\@a), $before + 1, 'a weak reference to an array counts once';
++    my $strong = \@a;
++    is refcount(\@a), $before + 2, 'a strong reference to an array counts once';
++}
++{
++    my %h;
++    my $before = refcount(\%h);
++    my $hr = \%h;
++    weaken($hr);
++    is refcount(\%h), $before + 1,
++        'a weak reference to a hash counts once (HvAUX holder)';
++    my $strong = \%h;
++    is refcount(\%h), $before + 2, 'a strong reference to a hash counts once';
++}
++{
++    my $bad = 0;
++    for my $i (1 .. 2000) {
++        my $sv = "Foo$i";
++        my @r = map { \$sv } 1 .. 1 + $i % 3;
++        weaken($_) for @r;
++        $bad++ if weak_refcount($sv) != @r;
++    }
++    is $bad, 0, 'weak_refcount is stable under repetition';
++}
++
++# (b) raw counts, measured per call path. truth() is the scalar's count
++# without the reference truth() itself creates.
++{
++    my $x = 1;
++    my $truth = sub { B::svref_2object(\$x)->REFCNT - 1 };
++    my %path = (
++        direct  => sub { sv_refcount($x) },
++        coderef => do { my $c = \&sv_refcount; sub { $c->($x) } },
++        nested  => sub { sub { sv_refcount($_[0]) }->($x) },
++    );
++    for my $name (sort keys %path) {
++        my $want = $truth->();
++        my $got = $path{$name}->();
++        my $again = $path{$name}->();
++        is $again, $got, "$name: raw count is stable on a repeated path";
++        cmp_ok $got, '>=', $want, "$name: raw count is never below the real count";
++        is $got, $want, "$name: without an RC stack the raw count is the real count"
++            unless $rc_stack;
++        diag sprintf '%-8s real %d raw %d (stack references %d)',
++            $name, $want, $got, $got - $want;
++    }
++}
++
++# (c) round trips through Dump and eval.
++sub round_trip {
++    my ($data) = @_;
++    my $code = Dump($data)->Names('d')->Out;
++    my $d = eval "my \$d; $code; \$d";
++    die "round trip failed: $@\n$code" if $@;
++    return $d;
++}
++{
++    my $x = 'v';
++    my $d = round_trip([\$x, \$x]);
++    ok $d->[0] == $d->[1], 'a shared scalar stays shared';
++}
++{
++    my ($x, $y) = ('v', 'v');
++    my $d = round_trip([\$x, \$y]);
++    ok $d->[0] != $d->[1], 'distinct scalars with equal values stay distinct';
++}
++{
++    my ($p, $q) = ('a', 'b');
++    my $d = round_trip([$p, $q, 'c']);
++    is_deeply $d, ['a', 'b', 'c'], 'plain values round trip unchanged';
++    ok \$d->[0] != \$d->[1], 'plain array elements are not aliased';
++}
++{
++    my $x = 'v';
++    my $d = sub { round_trip([\$_[0], \$_[1]]) }->($x, $x);
++    ok $d->[0] == $d->[1], 'an @_ alias of one scalar stays one scalar';
++}
++{
++    my $x = 'v';
++    my $d;
++    for my $e ($x) { $d = round_trip([\$e, \$x]) }
++    ok $d->[0] == $d->[1], 'a foreach alias stays the same scalar';
++}
++{
++    my $x = 'v';
++    my ($strong, $weak) = (\$x, \$x);
++    weaken($weak);
++    my $d = round_trip([$strong, $weak]);
++    ok $d->[0] == $d->[1], 'a strong and a weak reference share their target';
++    TODO: {
++        local $TODO = 'the dump aliases the second reference without'
++            . ' weakening it, on ordinary and RC stacks alike';
++        ok isweak($d->[1]), 'the weak reference is still weak';
++    }
++    ok !isweak($d->[0]), 'the strong reference is still strong';
++}
++
++done_testing;

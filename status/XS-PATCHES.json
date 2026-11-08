@@ -39,6 +39,21 @@
          "version" : "1.19"
       },
       {
+         "author" : "YVES",
+         "distribution" : "Data-Dump-Streamer",
+         "evidence_paths" : [],
+         "index_path" : "data/31/YVES/Data-Dump-Streamer/index.json",
+         "native_files" : [
+            "lib/Data/Dump/Streamer.xs"
+         ],
+         "patch_paths" : [
+            "data/31/YVES/Data-Dump-Streamer/patches/repair-v5.45.5-2.42-30a83a0dcf27.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "2.42"
+      },
+      {
          "author" : "NWCLARK",
          "distribution" : "Devel-Arena",
          "evidence_paths" : [
