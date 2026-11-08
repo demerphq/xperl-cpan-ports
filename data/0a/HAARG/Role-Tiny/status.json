@@ -88,6 +88,53 @@
          "test_summary" : "Files=23, Tests=177",
          "version" : "2.002005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Role-Tiny-2.002005.tar.gz",
+         "id" : "49865148b27e90d4e02d0866fca3459a374149cb4898099fc43a90ac4bda0335",
+         "module" : "Role::Tiny",
+         "observed_at" : "2026-11-08T14:18:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "4618ec524618c104dc28a8cc86af129a00cad282aea7f4c75060ba05d4c8f4d7",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=177",
+         "version" : "2.002005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

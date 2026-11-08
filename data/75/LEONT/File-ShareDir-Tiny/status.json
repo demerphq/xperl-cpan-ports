@@ -1,0 +1,54 @@
+{
+   "author" : "LEONT",
+   "distribution" : "File-ShareDir-Tiny",
+   "observations" : [
+      {
+         "cpan_path" : "L/LE/LEONT/File-ShareDir-Tiny-0.001.tar.gz",
+         "id" : "1a7db9f13d0d055681e9a9a1cee05e0c1031e25d8dd949d84cac86323bab2869",
+         "module" : "File::ShareDir::Tiny",
+         "observed_at" : "2026-11-08T14:18:52Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "16d6e0352d02402cdd46bc8d7c426c66cd8488d7066878b250e50a6a34e47b58",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=35",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

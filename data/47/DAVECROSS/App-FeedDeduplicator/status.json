@@ -1,0 +1,55 @@
+{
+   "author" : "DAVECROSS",
+   "distribution" : "App-FeedDeduplicator",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DAVECROSS/App-FeedDeduplicator-0.4.1.tar.gz",
+         "id" : "a0877fbaa0c8698161da8b46de0d933d1ecc97ca9f568dcbd2105a458074ec15",
+         "module" : "App::FeedDeduplicator",
+         "module_version" : "0.004001",
+         "observed_at" : "2026-11-08T14:22:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "74f32febd908bbd3e2730420513cdc34b6be044bf78607295f2619194d0e1b97",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=4",
+         "version" : "0.4.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -1,0 +1,54 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Acme-MCP",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Acme-MCP-v1.0.1.tar.gz",
+         "id" : "5ce85c9ac8160062352a6d47be2264ad1a721ef2b27dc00369df0ae970b7a356",
+         "module" : "Acme::MCP",
+         "observed_at" : "2026-11-08T14:20:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "2970b006dec7d5e4e4c20a68ede85dc924d0cf03aafd1dc54a0adddcf129f888",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=2",
+         "version" : "v1.0.1",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

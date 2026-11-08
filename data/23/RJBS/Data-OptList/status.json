@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=41",
          "version" : "0.115",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Data-OptList-0.115.tar.gz",
+         "id" : "4d35c4945c55062f8b35aca917aee6481730b9408ee891adf1580a5eab6c3cdf",
+         "module" : "Data::OptList",
+         "observed_at" : "2026-11-08T14:20:02Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "fa0e7cdc10925db925a82f8eb9608a701f1c2bf5e88d512d9acd46977e174056",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=41",
+         "version" : "0.115",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

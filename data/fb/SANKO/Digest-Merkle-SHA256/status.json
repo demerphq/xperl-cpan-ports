@@ -1,0 +1,54 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Digest-Merkle-SHA256",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Digest-Merkle-SHA256-v1.0.0.tar.gz",
+         "id" : "0f726c937e5a9342a51c6e600aefee35784f351bc654c52911a84692f4c1b6cf",
+         "module" : "Digest::Merkle::SHA256",
+         "observed_at" : "2026-11-08T14:20:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "fd7f4d516c8fd64275778ec63dc21746060cd06cb17bc0b30a67f8b0f1a593a1",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

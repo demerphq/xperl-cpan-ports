@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=216",
          "version" : "0.08",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TA/TARAO/Test-MockTime-HiRes-0.08.tar.gz",
+         "id" : "9cb86cccb13a0ccf26fd3c53d8369dd6905160280639586ca0b667d323e37b9c",
+         "module" : "Test::MockTime::HiRes",
+         "observed_at" : "2026-11-08T14:21:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "5f49f7aef895d327dafdf2744f39c176c8ab0e4b8227d2d6e3de689a259bdec1",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=210",
+         "version" : "0.08",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

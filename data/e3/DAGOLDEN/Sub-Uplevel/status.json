@@ -124,6 +124,53 @@
          "test_summary" : "Files=10, Tests=158",
          "version" : "0.2800",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+         "id" : "b4c3686a85fc9ea3f6d56467afc7f1a36287286dd77cb4c95de001b22125832e",
+         "module" : "Sub::Uplevel",
+         "observed_at" : "2026-11-08T14:18:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=158",
+         "version" : "0.2800",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

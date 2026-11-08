@@ -1,0 +1,54 @@
+{
+   "author" : "ADRI",
+   "distribution" : "Container-Builder",
+   "observations" : [
+      {
+         "cpan_path" : "A/AD/ADRI/Container-Builder-0.12.tar.gz",
+         "id" : "2ca4beefd97c74df877f55958cc14e61879b80af927c04956c878e9f0c386a52",
+         "module" : "Container::Builder",
+         "observed_at" : "2026-11-08T14:22:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "cf75d8a679e086669953af0d560167be686c192ab778ab427255c4a1ae2f296a",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=75",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

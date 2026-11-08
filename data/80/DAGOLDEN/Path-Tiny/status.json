@@ -88,6 +88,53 @@
          "test_summary" : "Files=30, Tests=1779",
          "version" : "0.150",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+         "id" : "dedbd6b4bc2ff9f050269330ffe40c92c49ec8dc0e9d2e368629f773bc62f23a",
+         "module" : "Path::Tiny",
+         "observed_at" : "2026-11-08T14:18:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=1779",
+         "version" : "0.150",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

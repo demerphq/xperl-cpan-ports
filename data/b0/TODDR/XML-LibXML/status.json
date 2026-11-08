@@ -139,6 +139,61 @@
          "test_summary" : "Files=86, Tests=2634",
          "version" : "2.0213",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
+         "id" : "d53880e54c7cfed1bae99e770e6279f93238d13d52d62ab0b8dfd94b9b4152ce",
+         "module" : "XML::LibXML",
+         "observed_at" : "2026-11-08T14:20:47Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "append-croak-location",
+         "patch_sha256" : [
+            "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+         "status" : "installed",
+         "test_summary" : "Files=86, Tests=2652",
+         "version" : "2.0213",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,54 @@
+{
+   "author" : "PMQS",
+   "distribution" : "Compress-Raw-Lzma",
+   "observations" : [
+      {
+         "cpan_path" : "P/PM/PMQS/Compress-Raw-Lzma-2.225.tar.gz",
+         "id" : "4af4558d007f3dcc5acc415a9b13cff1017091ab2ac475b21c13747755790956",
+         "module" : "Compress::Raw::Lzma",
+         "observed_at" : "2026-11-08T14:19:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "1292b126d831822f6b45c6c02c4fc69cc5ffbf6dc8f2515ff4f301cfcfcf684d",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=4412",
+         "version" : "2.225",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

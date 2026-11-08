@@ -88,6 +88,53 @@
          "test_summary" : "Files=27, Tests=550",
          "version" : "0.40",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Package-Stash-0.40.tar.gz",
+         "id" : "0fd60c7fc605aa71338df08830e917ea71f0df887e3e012e5926432acc4ba644",
+         "module" : "Package::Stash",
+         "observed_at" : "2026-11-08T14:21:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "5a9722c6d9cb29ee133e5f7b08a5362762a0b5633ff5170642a5b0686e95e066",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=550",
+         "version" : "0.40",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

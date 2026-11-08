@@ -88,6 +88,53 @@
          "test_summary" : "Files=14, Tests=2114",
          "version" : "0.27",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz",
+         "id" : "105d34a48823dc15a7b40ff3cfbfcd077d10a9509a903c6b7012d2973bc6cd64",
+         "module" : "namespace::clean",
+         "observed_at" : "2026-11-08T14:21:21Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "8a10a83c3e183dc78f9e7b7aa4d09b47c11fb4e7d3a33b9a12912fd22e31af9d",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=2114",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

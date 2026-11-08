@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=12",
          "version" : "0.018",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LE/LEONT/CPAN-Meta-Check-0.018.tar.gz",
+         "id" : "49c93a00a708f2cd61b184695e99d05ffc9874a29da48638a53451139fdc8d84",
+         "module" : "CPAN::Meta::Check",
+         "observed_at" : "2026-11-08T14:18:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "f619d2df5ea0fd91c8cf83eb54acccb5e43d9e6ec1a3f727b3d0ac15d0cf378a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=12",
+         "version" : "0.018",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -88,6 +88,53 @@
          "test_summary" : "Files=8, Tests=135",
          "version" : "1.004008",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/JSON-MaybeXS-1.004008.tar.gz",
+         "id" : "68af51252931d3b8f6b4c185c9cd4340eef66edbd12c8cdd698dd7ffc3fa3435",
+         "module" : "JSON::MaybeXS",
+         "observed_at" : "2026-11-08T14:18:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "cd3937afa78831f80a2ad5abab6c51b9e82fca4c31e5856ea208d598db5dc867",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=135",
+         "version" : "1.004008",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

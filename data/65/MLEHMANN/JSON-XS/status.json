@@ -95,6 +95,53 @@
          "test_summary" : "Files=25, Tests=25635",
          "version" : "4.04",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/ML/MLEHMANN/JSON-XS-4.04.tar.gz",
+         "id" : "fe0a523072905f789d8aaa87af8a18de259d18eeabd584847733ec6c6587bdb3",
+         "module" : "JSON::XS",
+         "observed_at" : "2026-11-08T14:19:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "8eff1e9f304c5625b59ab7b42258415f6d3e3681c1ddab6b725518a018a7f5e0",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=25635",
+         "version" : "4.04",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

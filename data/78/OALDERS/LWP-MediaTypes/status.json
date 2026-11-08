@@ -88,6 +88,53 @@
          "test_summary" : "Files=2, Tests=47",
          "version" : "6.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "O/OA/OALDERS/LWP-MediaTypes-6.05.tar.gz",
+         "id" : "6079f69a0b2a7519258b7d6457fb8c05d12718c9a01445ab922b7a74dab8cf3a",
+         "module" : "LWP::MediaTypes",
+         "observed_at" : "2026-11-08T14:19:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "abb2dcfbf069317fe65b098e3b2ad58c5eb33e9a839b9190cce6d371f8966cc1",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=47",
+         "version" : "6.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

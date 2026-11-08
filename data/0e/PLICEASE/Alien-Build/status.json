@@ -139,6 +139,61 @@
          "test_summary" : "Files=87, Tests=443",
          "version" : "2.88",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+         "id" : "3bea4ad2d4b56de894cbdd548cec3d7e1d5bfebe1447038021b8587e8544bbeb",
+         "module" : "Alien::Base::Wrapper",
+         "observed_at" : "2026-11-08T14:19:47Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "render-caught-errors",
+         "patch_sha256" : [
+            "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+         "status" : "installed",
+         "test_summary" : "Files=87, Tests=424",
+         "version" : "2.88",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

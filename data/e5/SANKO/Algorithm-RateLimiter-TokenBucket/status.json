@@ -1,0 +1,54 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Algorithm-RateLimiter-TokenBucket",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Algorithm-RateLimiter-TokenBucket-v1.0.0.tar.gz",
+         "id" : "0d25851c77236ca3a89d4cf3c5772028ffaf2c00f642f62b76fcb0f40bc7d7e6",
+         "module" : "Algorithm::RateLimiter::TokenBucket",
+         "observed_at" : "2026-11-08T14:20:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "2cacfb95de4f961547cc43db714d298c1504e9c33dbae7f3389339920e600f4e",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=5",
+         "version" : "v1.0.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

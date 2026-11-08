@@ -95,6 +95,53 @@
          "test_summary" : "Files=4, Tests=51",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIROD/XML-XPathEngine-0.14.tar.gz",
+         "id" : "4853d634c47271778b446e9b5f21164a9ea111b7e954ab968ed98b2f3028ee24",
+         "module" : "XML::XPathEngine",
+         "observed_at" : "2026-11-08T14:19:00Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "d2fe7bcbbd0beba1444f4a733401e7b8aa5282fad4266d42735dd74582b2e264",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=50",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

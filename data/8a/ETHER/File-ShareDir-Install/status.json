@@ -88,6 +88,53 @@
          "test_summary" : "Files=4, Tests=39",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz",
+         "id" : "15827ec3019f55466f62e4647590a1721a2536c02832fcb90b595e19bf8d90e6",
+         "module" : "File::ShareDir::Install",
+         "observed_at" : "2026-11-08T14:18:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "8f9533b198f2d4a9a5288cbc7d224f7679ad05a7a8573745599789428bc5aea0",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=39",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

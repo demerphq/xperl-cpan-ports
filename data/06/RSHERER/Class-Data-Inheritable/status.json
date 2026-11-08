@@ -175,6 +175,53 @@
          "test_summary" : "Files=3, Tests=17",
          "version" : "0.10",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz",
+         "id" : "eadfbfc70667260d62701762bf31269f6b693adab8574581ddb7f8d92e737657",
+         "module" : "Class::Data::Inheritable",
+         "observed_at" : "2026-11-08T14:20:05Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "aa1ae68a611357b7bfd9a2f64907cc196ddd6d047cae64ef9d0ad099d98ae54a",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=16",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

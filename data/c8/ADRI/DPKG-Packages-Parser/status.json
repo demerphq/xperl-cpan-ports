@@ -1,0 +1,54 @@
+{
+   "author" : "ADRI",
+   "distribution" : "DPKG-Packages-Parser",
+   "observations" : [
+      {
+         "cpan_path" : "A/AD/ADRI/DPKG-Packages-Parser-0.03.tar.gz",
+         "id" : "3fe41bee1341b19504fddb744781f6a192b0497ad611d84fb0fa965801310551",
+         "module" : "DPKG::Packages::Parser",
+         "observed_at" : "2026-11-08T14:18:55Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "34a3abb9bc430fa791d2801ce8296b98a0da65c04a56089e2debea215f3cbf53",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=43",
+         "version" : "0.03",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

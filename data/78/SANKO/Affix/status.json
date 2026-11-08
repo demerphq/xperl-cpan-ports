@@ -1,0 +1,53 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Affix",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Affix-v1.4.0.tar.gz",
+         "failure" : {
+            "exit_status" : 1,
+            "phase" : "test"
+         },
+         "id" : "63161f7cfc387e7e0596b089903a9e8711ad7d20fb01e2341c073ba4c7718eeb",
+         "module" : "Affix",
+         "observed_at" : "2026-11-08T14:20:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 1,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+         "status" : "failed",
+         "test_summary" : "Files=58, Tests=387",
+         "version" : "v1.4.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

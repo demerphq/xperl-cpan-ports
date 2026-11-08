@@ -1,0 +1,54 @@
+{
+   "author" : "JBAZIK",
+   "distribution" : "Archive-Ar",
+   "observations" : [
+      {
+         "cpan_path" : "J/JB/JBAZIK/Archive-Ar-2.02.tar.gz",
+         "id" : "501f692340522017ffe2c22b4053e661b7b3dc322d7d91002f4f0726ebb55dfa",
+         "module" : "Archive::Ar",
+         "observed_at" : "2026-11-08T14:18:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "5b6b9b902ef5ac88fe1db99492a2e1e1e32f021a89b9dcf78b26a4f94676ce45",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=105",
+         "version" : "2.02",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

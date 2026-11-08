@@ -88,6 +88,53 @@
          "test_summary" : "Files=16, Tests=127",
          "version" : "0.10",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Class-Load-XS-0.10.tar.gz",
+         "id" : "b969a605da8be994a47a80295657176b3f9e2acc6e4cc149ace14a8ca7dfd8c7",
+         "module" : "Class::Load::XS",
+         "observed_at" : "2026-11-08T14:21:07Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "5bc22cf536ebfd2564c5bdaf42f0d8a4cee3d1930fc8b44b7d4a42038622add1",
+         "status" : "installed",
+         "test_summary" : "Files=16, Tests=127",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

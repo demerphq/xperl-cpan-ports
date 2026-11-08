@@ -15,11 +15,12 @@ App::LinkSite                     # conditional warning pragma
 Archive::CAR
 At
 Bluesky
-CPANSec::Admin
+CPANSEC::Admin
 Codec::CBOR
 Container::Builder
 DPKG::Packages::Parser
-Daje::Generate                    # match is in a supporting module
+# Daje-Generate matched a supporting module, but none is in 02packages.
+# Daje::Generate
 Devel::Cover
 Digest::Merkle::SHA256
 Net::BitTorrent::DHT
@@ -33,6 +34,9 @@ Feature::Compat::Class
 Acme::Parataxis
 Affix                              # class declaration confirmed in its builder
 Alien::SDL3
-Alien::SDL3::image
-Alien::SDL3::ttf
 Alien::Xmake
+
+# These older split distributions appear in source search but their modules
+# are not in the current 02packages index. Review by distribution path.
+# Alien::SDL3_image
+# Alien::SDL3_ttf

@@ -180,6 +180,61 @@
          "test_summary" : "Files=23, Tests=332",
          "version" : "6.83",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "O/OA/OALDERS/libwww-perl-6.83.tar.gz",
+         "id" : "4ba234f00c71815719d2a8495ae001981a369fc033fd6f4b0e98ba1cd024d4ce",
+         "module" : "LWP::Simple",
+         "observed_at" : "2026-11-08T14:21:27Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "stringify-internal-response",
+         "patch_sha256" : [
+            "9b26469764c515edfa216e56d3de15aea63b1a1de8c2591c7d39d83765d7e383"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "e75f0fa9d3c6f0daf5a5a72fa9f8b1c9c0d23e3a84a8522ccb4f835232b95505",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=332",
+         "version" : "6.83",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

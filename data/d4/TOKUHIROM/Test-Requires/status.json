@@ -88,6 +88,53 @@
          "test_summary" : "Files=7, Tests=15",
          "version" : "0.11",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz",
+         "id" : "b7d98c87301b504304abc50e0259c2c3ceaa4ebfbb482ffa7447773a411469bd",
+         "module" : "Test::Requires",
+         "observed_at" : "2026-11-08T14:20:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "4b88de549597eecddf7c3c38a4d0204a16f59ad804577b671896ac04e24e040f",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=15",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

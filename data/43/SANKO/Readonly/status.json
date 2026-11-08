@@ -129,6 +129,53 @@
          "test_summary" : "Files=14, Tests=188",
          "version" : "2.05",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SA/SANKO/Readonly-2.05.tar.gz",
+         "id" : "db323e2093920339c77cb91470d2af2bfc38d28b760b8aa1f47c0e87c84fd9f8",
+         "module" : "Readonly",
+         "observed_at" : "2026-11-08T14:20:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "4b23542491af010d44a5c7c861244738acc74ababae6b8838d354dfb19462b5e",
+         "status" : "installed",
+         "test_summary" : "Files=14, Tests=188",
+         "version" : "2.05",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

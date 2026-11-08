@@ -88,6 +88,53 @@
          "test_summary" : "Files=30, Tests=89",
          "version" : "0.038",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Test-Warnings-0.038.tar.gz",
+         "id" : "28dec6e668dd5749012db03c4b9c8c330103345f385176b6cd7c852fdc3cbe31",
+         "module" : "Test::Warnings",
+         "observed_at" : "2026-11-08T14:18:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "3da27e003a3c3cafed3c09b42be05cf9bdbff0bee5c8590a731b02853880a273",
+         "status" : "installed",
+         "test_summary" : "Files=30, Tests=89",
+         "version" : "0.038",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

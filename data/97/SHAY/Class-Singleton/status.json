@@ -88,6 +88,53 @@
          "test_summary" : "Files=5, Tests=29",
          "version" : "1.6",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHAY/Class-Singleton-1.6.tar.gz",
+         "id" : "4d81b51b0eb433f8c321a9afbd85f134c30b44183f130c320f2d22a0da590748",
+         "module" : "Class::Singleton",
+         "observed_at" : "2026-11-08T14:20:20Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "27ba13f0d9512929166bbd8c9ef95d90d630fc80f0c9a1b7458891055e9282a4",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=29",
+         "version" : "1.6",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

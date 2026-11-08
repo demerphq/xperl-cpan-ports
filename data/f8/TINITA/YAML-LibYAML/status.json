@@ -182,6 +182,53 @@
          "test_summary" : "Files=51, Tests=1579",
          "version" : "v0.910.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TI/TINITA/YAML-LibYAML-v0.910.0.tar.gz",
+         "id" : "355d3a46f4219f1d8b4736422f72eb2744665b2f38a86e38d71128765254396a",
+         "module" : "YAML::XS",
+         "observed_at" : "2026-11-08T14:20:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "04310e9840b918383a5b9ae9ca4b3bde1b2771ec786c758bd2fffd79d409332b",
+         "status" : "installed",
+         "test_summary" : "Files=51, Tests=1579",
+         "version" : "v0.910.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

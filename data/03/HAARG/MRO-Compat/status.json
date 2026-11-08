@@ -88,6 +88,53 @@
          "test_summary" : "Files=3, Tests=26",
          "version" : "0.15",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/MRO-Compat-0.15.tar.gz",
+         "id" : "6a71fb7ec14c4720bb70c33d6cb1f87c8a5b71c29bdea5d7768d04b47fdbe726",
+         "module" : "MRO::Compat",
+         "observed_at" : "2026-11-08T14:18:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "0d4535f88e43babd84ab604866215fc4d04398bd4db7b21852d4a31b1c15ef61",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=26",
+         "version" : "0.15",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

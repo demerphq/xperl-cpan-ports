@@ -247,6 +247,61 @@
          "test_summary" : "Files=41, Tests=695",
          "version" : "1.002001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "G/GA/GARU/Data-Printer-1.002001.tar.gz",
+         "id" : "ca8bec609f0ceecf121df055b4193b85062449a915a5ce95b26d7ab9bd412800",
+         "module" : "Data::Printer",
+         "observed_at" : "2026-11-08T14:18:21Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-class-fields",
+         "patch_sha256" : [
+            "35e7156a52785853c7eed5b2dfd7aa54820be799bf38698e7463ff08d6f58f2a"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "96292d29edf85eca10724a00e0af509c40b17b9b5638c00332d703599b6f3b74",
+         "status" : "installed",
+         "test_summary" : "Files=41, Tests=650",
+         "version" : "1.002001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

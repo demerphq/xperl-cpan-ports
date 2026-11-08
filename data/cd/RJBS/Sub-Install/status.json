@@ -88,6 +88,53 @@
          "test_summary" : "Files=9, Tests=65",
          "version" : "0.929",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Sub-Install-0.929.tar.gz",
+         "id" : "51fd0feac91202e442e9cf4c29c75f64dc5a0f5e1d22175308c1f0c1065a3028",
+         "module" : "Sub::Install",
+         "observed_at" : "2026-11-08T14:20:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "80b1e281d8cd3b2b31dac711f5c8a1657a87cd80bbe69af3924bcbeb4e5db077",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=65",
+         "version" : "0.929",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

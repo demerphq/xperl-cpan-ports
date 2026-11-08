@@ -88,6 +88,53 @@
          "test_summary" : "Files=7, Tests=92",
          "version" : "1.118",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RE/REHSACK/File-ShareDir-1.118.tar.gz",
+         "id" : "8d9bddeea7c4b2b1161dc9edf9e39b88f4eb624fe23f9c16400407e8e401684e",
+         "module" : "File::ShareDir",
+         "observed_at" : "2026-11-08T14:19:39Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "3bb2a20ba35df958dc0a4f2306fc05d903d8b8c4de3c8beefce17739d281c958",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=92",
+         "version" : "1.118",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

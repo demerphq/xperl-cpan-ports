@@ -197,6 +197,61 @@
          "test_summary" : "Files=24, Tests=12005",
          "version" : "0.50",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz",
+         "id" : "554085d4d7824b4675273d1500f279af856d732b118308c39c2cd9188737736f",
+         "module" : "Capture::Tiny",
+         "observed_at" : "2026-11-08T14:18:57Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "exception-propagation",
+         "patch_sha256" : [
+            "d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "ca6e8d7ce7471c2be54e1009f64c367d7ee233a2894cacf52ebe6f53b04e81e5",
+         "status" : "installed",
+         "test_summary" : "Files=24, Tests=12005",
+         "version" : "0.50",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

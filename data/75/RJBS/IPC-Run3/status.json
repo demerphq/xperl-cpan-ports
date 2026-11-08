@@ -88,6 +88,53 @@
          "test_summary" : "Files=13, Tests=69",
          "version" : "0.049",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/IPC-Run3-0.049.tar.gz",
+         "id" : "7c7848bfa1d4a961ed9b32576d91894329a25025ebad0bee2151d417ba4df564",
+         "module" : "IPC::Run3",
+         "observed_at" : "2026-11-08T14:20:01Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "9d048ae7b9ae63871bae976ba01e081d887392d904e5d48b04e22d35ed22011a",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=69",
+         "version" : "0.049",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

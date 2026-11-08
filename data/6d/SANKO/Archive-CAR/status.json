@@ -1,0 +1,54 @@
+{
+   "author" : "SANKO",
+   "distribution" : "Archive-CAR",
+   "observations" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Archive-CAR-v0.0.4.tar.gz",
+         "id" : "a04784f5a14d12a719112fc60dfb2437c1e141b2220ec90f841a3b830fe7d9ba",
+         "module" : "Archive::CAR",
+         "observed_at" : "2026-11-08T14:20:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "4f625f7ae366b9c4f3a5926da9407d75b1ea1a663cdb650944a5201c9288c405",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=4",
+         "version" : "v0.0.4",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

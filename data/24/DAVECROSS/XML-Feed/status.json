@@ -48,6 +48,53 @@
          "test_summary" : "Files=39, Tests=807",
          "version" : "v1.0.2",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DA/DAVECROSS/XML-Feed-v1.0.2.tar.gz",
+         "id" : "d62f2d7935e0a5e55dc5e4d278cfd8b55777e465a330a9f981d155b7ada1ed2e",
+         "module" : "XML::Feed",
+         "observed_at" : "2026-11-08T14:22:38Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "3e9d2a78ed84e4637ed192f362653fbbad08a50a970044d1023af9aa63cbc0d8",
+         "status" : "installed",
+         "test_summary" : "Files=39, Tests=802",
+         "version" : "v1.0.2",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

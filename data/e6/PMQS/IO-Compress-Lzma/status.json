@@ -1,0 +1,54 @@
+{
+   "author" : "PMQS",
+   "distribution" : "IO-Compress-Lzma",
+   "observations" : [
+      {
+         "cpan_path" : "P/PM/PMQS/IO-Compress-Lzma-2.225.tar.gz",
+         "id" : "64aec930745d029bed78bef60ede3b95bd33e584dbc896a4339d36e555aa554d",
+         "module" : "IO::Uncompress::UnXz",
+         "observed_at" : "2026-11-08T14:19:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "bf3fb4b4b20a9cac8c1c85f3ae678a6117df16b59b62b8ffdd0ab2752ea3d4ba",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=19755",
+         "version" : "2.225",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

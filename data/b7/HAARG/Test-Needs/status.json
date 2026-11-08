@@ -88,6 +88,53 @@
          "test_summary" : "Files=5, Tests=227",
          "version" : "0.002010",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/Test-Needs-0.002010.tar.gz",
+         "id" : "b4f6e7789e87210eb1858d578cf80b62d9c70707969e8e1c157215c518bd06c0",
+         "module" : "Test::Needs",
+         "observed_at" : "2026-11-08T14:18:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "923ffdc78fcba96609753e4bae26b0ba0186893de4a63cd5236e012c7c90e208",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=227",
+         "version" : "0.002010",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

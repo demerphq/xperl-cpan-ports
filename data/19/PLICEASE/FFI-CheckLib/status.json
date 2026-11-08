@@ -139,6 +139,61 @@
          "test_summary" : "Files=9, Tests=68",
          "version" : "0.31",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz",
+         "id" : "22a1e27429592f6c7de8dd17cf1f544b94dfd8df077a1e6467b0987743950971",
+         "module" : "FFI::CheckLib",
+         "observed_at" : "2026-11-08T14:19:24Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "render-caught-error",
+         "patch_sha256" : [
+            "373d66542417552dd08249c268b26510eabbb84431984af6f0e44927009dd555"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "04d885fc377d44896e5ea1c4ec310f979bb04f2f18658a7e7a4d509f7e80bb80",
+         "status" : "installed",
+         "test_summary" : "Files=9, Tests=68",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

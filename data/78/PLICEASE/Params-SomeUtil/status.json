@@ -121,6 +121,53 @@
          "test_summary" : "Files=19, Tests=1873",
          "version" : "1.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/Params-SomeUtil-1.12.tar.gz",
+         "id" : "129f826fcea152a560c35057a77441d1ee24b8f2e8ecddaf3eaeda2ae77c584c",
+         "module" : "Params::SomeUtil",
+         "observed_at" : "2026-11-08T14:19:31Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
+         "status" : "installed",
+         "test_summary" : "Files=19, Tests=1873",
+         "version" : "1.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

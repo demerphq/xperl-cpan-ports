@@ -179,6 +179,53 @@
          "test_summary" : "Files=47, Tests=203",
          "version" : "6.4",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SI/SIMONW/Module-Pluggable-6.4.tar.gz",
+         "id" : "acb5b6631952cf9c50a98086a02558d0ea8de6f9b0b1bd48891b171f1f00023e",
+         "module" : "Module::Pluggable",
+         "observed_at" : "2026-11-08T14:20:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "970fd13accd3d538e637db080ebbd9898020c8b5591837c8493a39edd737922d",
+         "status" : "installed",
+         "test_summary" : "Files=47, Tests=201",
+         "version" : "6.4",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

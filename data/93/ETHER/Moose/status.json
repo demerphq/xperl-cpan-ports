@@ -192,6 +192,61 @@
          "test_summary" : "Files=478, Tests=17338",
          "version" : "2.4001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "id" : "2951b535c04180a58975c1cca8694312a482345f78123b399ca93583b6b8be1c",
+         "module" : "Moose",
+         "observed_at" : "2026-11-08T14:22:25Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-error-arguments",
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "status" : "installed",
+         "test_summary" : "Files=478, Tests=17173",
+         "version" : "2.4001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

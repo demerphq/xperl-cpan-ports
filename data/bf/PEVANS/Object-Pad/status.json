@@ -111,6 +111,61 @@
          "test_summary" : "Files=68, Tests=470",
          "version" : "0.825",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PE/PEVANS/Object-Pad-0.825.tar.gz",
+         "id" : "65c989e87c2bdf29cbd6e1cb19e4508293258b48d958248210401b18dde422e1",
+         "module" : "Object::Pad",
+         "observed_at" : "2026-11-08T14:20:07Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-class-header",
+         "patch_sha256" : [
+            "6d700b193215851ce33164908a949f737b2a836e9469421b543464cc6ca2c870"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "3fa84943b6505a5bf9f29fe4202d1b75d6c6ae03f531ddea9edc4c13ff93b1a3",
+         "status" : "installed",
+         "test_summary" : "Files=68, Tests=454",
+         "version" : "0.825",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

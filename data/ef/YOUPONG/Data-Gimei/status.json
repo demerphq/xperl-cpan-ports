@@ -1,0 +1,54 @@
+{
+   "author" : "YOUPONG",
+   "distribution" : "Data-Gimei",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YO/YOUPONG/Data-Gimei-v0.5.0.tar.gz",
+         "id" : "704e07627ac1c52fce9ee667b8b09a27c3f36a3ba9fbf4752d64f9220fbc5e2d",
+         "module" : "Data::Gimei",
+         "observed_at" : "2026-11-08T14:20:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "8be8d8fd4e6e94701add233d807bc291a49925296f1df4d06e80c28558cf265f",
+         "status" : "installed",
+         "test_summary" : "Files=7, Tests=7",
+         "version" : "v0.5.0",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

@@ -135,6 +135,53 @@
          "test_summary" : "Files=12, Tests=29625",
          "version" : "0.403",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BO/BOOK/DateTime-Format-Mail-0.403.tar.gz",
+         "id" : "e5246a70e34cda8a8bc785a47f457a008700cd3799a80730f5fe450575a0c0fa",
+         "module" : "DateTime::Format::Mail",
+         "observed_at" : "2026-11-08T14:22:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "8df8e35c4477388ff5c7ce8b3e8b6ae4ed30209c7a5051d41737bd14d755fcb0",
+         "status" : "installed",
+         "test_summary" : "Files=12, Tests=29625",
+         "version" : "0.403",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -95,6 +95,53 @@
          "test_summary" : "Files=5, Tests=81",
          "version" : "0.14",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MIROD/HTML-TreeBuilder-XPath-0.14.tar.gz",
+         "id" : "301ea39c438a4b5c780f0df29fa79d01aaf5ca4e448c5290d33ed1a446d1930b",
+         "module" : "HTML::TreeBuilder::XPath",
+         "observed_at" : "2026-11-08T14:20:11Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "25ebbdb2444a0a599ae5e7a457d75e09efcdf3266a5c5700b1403ccb7488a4f3",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=81",
+         "version" : "0.14",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
