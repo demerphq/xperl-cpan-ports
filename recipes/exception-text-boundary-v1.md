@@ -21,3 +21,14 @@ error message typed `Str` at two sites. On XPerl the Type::Tiny check throws,
 so a bad regex is reported as a generic exception and invalid JSON input dies
 instead of returning a result. Stringifying `$e` at those two sites is enough;
 its other catch blocks already concatenate, `chomp` or `sprintf` the value.
+
+A serializer is also a text boundary. `Dancer2-Plugin-GraphQL` 0.09 puts `$@`
+from a failed handler straight into the `message` of a GraphQL error and
+sends the result as JSON. On XPerl `Cpanel::JSON::XS` refuses to encode the
+exception object, so the client gets an empty body instead of the error.
+Stringifying `$@` where the error hash is built is enough.
+
+Patching a module can also start an author-only build rule. Its `Makefile.PL`
+regenerates `README.md` from the module with `pod2markdown` whenever the `.pm`
+is newer, and a patched file always is. The patch set limits that rule to a
+git checkout so release builds do not need the tool.
