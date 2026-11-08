@@ -1,0 +1,26 @@
+{
+  "source_sha256": "caddb962eeb0fb3ee474e2b25beed30254638d74407106bbc12bf25e3118ec80",
+  "patch_set_id": "exception-original-text",
+  "patch_sha256": "1b465bc3a3aa570d226fa4de5fc8d5c5ed3f38666feff32d312edde5c132eb84",
+  "date": "2026-11-08",
+  "platform": "linux/x86_64-linux",
+  "xperl_version": "v5.45.5",
+  "xperl_commit": "4e10318858db1968f788662882ee7c683395b2dd",
+  "tests": [
+    {
+      "command": "make test",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: 375 test files, 3528 tests"
+    },
+    {
+      "command": "prove -b t/AI/regression/1075-subtest-exception.t t/Legacy/Builder/try.t",
+      "interpreter": "Perl v5.44.0",
+      "result": "pass: 2 test files, 22 tests"
+    },
+    {
+      "command": "XPerl::Installer::Build->install with the registry patch set",
+      "interpreter": "XPerl v5.45.5",
+      "result": "pass: patch applied, full distribution tests passed, release installed"
+    }
+  ]
+}

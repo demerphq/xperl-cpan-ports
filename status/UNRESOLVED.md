@@ -27,7 +27,6 @@ Prior failures remain in each distribution record after a later success.
 | ETJ | [PGPLOT](../data/e9/ETJ/PGPLOT/status.json) | 2.37 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | EXODIST | [Fennec-Lite](../data/a2/EXODIST/Fennec-Lite/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux | test | Files=3, Tests=28, Failed 1/3 test programs. 2/28 subtests failed. |
 | EXODIST | [Getopt-Yath](../data/71/EXODIST/Getopt-Yath/status.json) | 2.000011 | v5.45.5 | linux/x86_64-linux | test | Files=10, Tests=296, Failed 2/10 test programs. 2/296 subtests failed. |
-| EXODIST | [Test-Simple](../data/bf/EXODIST/Test-Simple/status.json) | 1.302226 | v5.45.5 | linux/x86_64-linux | test | Files=375, Tests=3528, Failed 2/375 test programs. 3/3528 subtests failed. |
 | FANGLY | [Statistics-R](../data/7c/FANGLY/Statistics-R/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | GBECHIS | [Mail-MIMEDefang](../data/90/GBECHIS/Mail-MIMEDefang/status.json) | 3.7.3 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | GONZUS | [Devel-QuickCover](../data/6f/GONZUS/Devel-QuickCover/status.json) | 0.900014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |

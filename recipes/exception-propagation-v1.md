@@ -29,8 +29,12 @@ handling merely to satisfy an exact-string test.
 
 The `Capture-Tiny` 0.50 patch is an example. Exception::Died 0.06 uses the
 original `ERROR_USER_TEXT` parameter to populate its `eval_error` field.
-Both patches pass on XPerl v5.45.5 and ordinary Perl. This recipe does not assert that
-every `$@` difference is propagation context; inspect each failure first.
+Test-Simple 1.302226 checks that subtest and Test::Builder errors propagate.
+Its XPerl assertions query `ERROR_USER_TEXT` so propagation context does not
+break exact string comparisons. Its ordinary Perl assertions keep the original
+string checks. The full Test-Simple suite passes on XPerl v5.45.5, and the
+changed tests pass on Perl v5.44.0. This recipe does not assert that every
+`$@` difference is propagation context; inspect each failure first.
 
 ## Library messages built from a rethrown exception
 

@@ -1,0 +1,56 @@
+--- a/t/AI/regression/1075-subtest-exception.t
++++ b/t/AI/regression/1075-subtest-exception.t
+@@ -9,6 +9,19 @@
+ 
+ my ($err, $events);
+ 
++# XPerl renders rethrow context after the original error text.
++sub is_original_error {
++    my ($error, $text, $name) = @_;
++
++    if (${^XPERL_VERSION}) {
++        require XPerl::DiagGroup unless $error->can('has_diagnostic');
++        ok($error->has_diagnostic('ERROR_USER_TEXT', text => $text), $name);
++    }
++    else {
++        is($error, $text, $name);
++    }
++}
++
+ $events = intercept(sub {
+     eval {
+         subtest died_after_a_passing_assertion => sub {
+@@ -20,7 +33,7 @@
+     } or $err = $@;
+ });
+ 
+-is($err, "boom\n", "the exception still propagates to the caller");
++is_original_error($err, "boom\n", "the exception still propagates to the caller");
+ 
+ my ($subtest) = grep { $_->isa('Test2::Event::Subtest') } @$events;
+ ok($subtest, "got a subtest event");
+@@ -48,7 +61,7 @@
+     } or $err = $@;
+ });
+ 
+-is($err, "early boom\n", "the early exception propagates too");
++is_original_error($err, "early boom\n", "the early exception propagates too");
+ 
+ my ($fail) = grep { $_->facet_data->{assert} && !$_->facet_data->{assert}{pass} } @$events;
+ ok($fail, "the subtest is reported as a failure");
+--- a/t/Legacy/Builder/try.t
++++ b/t/Legacy/Builder/try.t
+@@ -39,4 +39,12 @@
+ ok !eval {
+     $tb->_try(sub { die "Died\n" }, die_on_fail => 1);
+ };
+-is $@, "Died\n";
++if (${^XPERL_VERSION}) {
++    # The original text is one diagnostic in XPerl's rethrow graph.
++    my $error = $@;
++    require XPerl::DiagGroup unless $error->can('has_diagnostic');
++    ok $error->has_diagnostic('ERROR_USER_TEXT', text => "Died\n");
++}
++else {
++    is $@, "Died\n";
++}

@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 86 of 2537 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2537 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -749,7 +749,7 @@ Unresolved failures: 86 of 2537 release, XPerl, and platform combinations. See [
 | EXODIST | [Test-Exception](../data/26/EXODIST/Test-Exception/status.json) | 0.43 | v5.45.5 | linux/x86_64-linux | installed | xperl-wrapper-rendering |
 | EXODIST | [Test-SharedFork](../data/aa/EXODIST/Test-SharedFork/status.json) | 0.35 | v5.45.5 | darwin/darwin-2level | installed | none |
 | EXODIST | [Test-SharedFork](../data/aa/EXODIST/Test-SharedFork/status.json) | 0.35 | v5.45.5 | linux/x86_64-linux | installed | none |
-| EXODIST | [Test-Simple](../data/bf/EXODIST/Test-Simple/status.json) | 1.302226 | v5.45.5 | linux/x86_64-linux | failed | none |
+| EXODIST | [Test-Simple](../data/bf/EXODIST/Test-Simple/status.json) | 1.302226 | v5.45.5 | linux/x86_64-linux | installed | exception-original-text |
 | EXODIST | [Test2-Plugin-IOEvents](../data/e4/EXODIST/Test2-Plugin-IOEvents/status.json) | 0.001001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | EXODIST | [Test2-Plugin-MemUsage](../data/89/EXODIST/Test2-Plugin-MemUsage/status.json) | 0.002006 | v5.45.5 | linux/x86_64-linux | installed | none |
 | EXODIST | [Test2-Plugin-UUID](../data/cb/EXODIST/Test2-Plugin-UUID/status.json) | 0.002011 | v5.45.5 | linux/x86_64-linux | installed | none |
