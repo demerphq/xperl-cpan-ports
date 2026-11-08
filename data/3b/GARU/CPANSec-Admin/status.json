@@ -1,0 +1,54 @@
+{
+   "author" : "GARU",
+   "distribution" : "CPANSec-Admin",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GARU/CPANSec-Admin-0.001.tar.gz",
+         "id" : "ef390fffe4dbb2be75b72384d1509e19e181e02cdac7d043e8c59b6c26e25d69",
+         "module" : "CPANSEC::Admin",
+         "observed_at" : "2026-11-08T14:58:17Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "2c73d9960af1d55ef29bdcb9f1eab13d2eddbd5af16c452a0c358236afffb1f9",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=18",
+         "version" : "0.001",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

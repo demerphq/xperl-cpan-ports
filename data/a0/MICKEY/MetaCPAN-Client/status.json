@@ -48,6 +48,53 @@
          "test_summary" : "Files=25, Tests=286",
          "version" : "2.044000",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "M/MI/MICKEY/MetaCPAN-Client-2.044000.tar.gz",
+         "id" : "30dce6aeae98c56055e8a9f67a7456dd7ef1bf5a8f92ff41426f6c5782de7147",
+         "module" : "MetaCPAN::Client",
+         "observed_at" : "2026-11-08T14:58:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "163f1d75c9572f57ecf8bda418d20b861ec9f8cbf84688bb9debbcc908f581e1",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=286",
+         "version" : "2.044000",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,55 @@
+{
+   "author" : "GARU",
+   "distribution" : "Net-NVD",
+   "observations" : [
+      {
+         "cpan_path" : "G/GA/GARU/Net-NVD-0.0.3.tar.gz",
+         "id" : "38aca4305ec7808fa2f5549dc6f7f9b2b803ea3267d94a7ba3d6364381b56a59",
+         "module" : "Net::NVD",
+         "module_version" : "0.000003",
+         "observed_at" : "2026-11-08T14:57:34Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "b8a657120f94b0eed1d8ebdb0388bc3360d28fa5f0f8236b9cd8cdae8befe418",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=8",
+         "version" : "0.0.3",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

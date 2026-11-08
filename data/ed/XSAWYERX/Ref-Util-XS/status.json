@@ -88,6 +88,53 @@
          "test_summary" : "Files=11, Tests=473",
          "version" : "0.117",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz",
+         "id" : "2b9cd4d9185d30269d61f48000e3cf9605aa8d72efae383be51f3e8f6ee3d3a7",
+         "module" : "Ref::Util::XS",
+         "observed_at" : "2026-11-08T14:57:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "fb64c5a823787f6600257918febd9fbc6f0305936fc3287b81a30c099b65633c",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=473",
+         "version" : "0.117",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

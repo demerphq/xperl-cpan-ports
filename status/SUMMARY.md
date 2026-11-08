@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 85 of 2538 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 85 of 2542 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -810,10 +810,13 @@ Unresolved failures: 85 of 2538 release, XPerl, and platform combinations. See [
 | GAAS | [Unicode-Map8](../data/d9/GAAS/Unicode-Map8/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GAAS | [Unicode-String](../data/7d/GAAS/Unicode-String/status.json) | 2.10 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GARU | [App-Rad](../data/b0/GARU/App-Rad/status.json) | 1.05 | v5.45.5 | darwin/darwin-2level | installed | none |
+| GARU | [CPANSec-Admin](../data/3b/GARU/CPANSec-Admin/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | darwin/darwin-2level | installed | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | darwin/darwin-2level | installed | xperl-class-fields |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | linux/x86_64-linux | installed | xperl-class-fields |
+| GARU | [ENV-Util](../data/1c/GARU/ENV-Util/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none |
+| GARU | [Net-NVD](../data/0f/GARU/Net-NVD/status.json) | 0.0.3 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GAVINC | [URI-Query](../data/c2/GAVINC/URI-Query/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GBARR | [CPAN-DistnameInfo](../data/94/GBARR/CPAN-DistnameInfo/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none |
 | GBARR | [rlib](../data/ca/GBARR/rlib/status.json) | 0.02 | v5.45.5 | linux/x86_64-linux | installed | none |
@@ -1385,6 +1388,7 @@ Unresolved failures: 85 of 2538 release, XPerl, and platform combinations. See [
 | MICHIELB | [File-MimeInfo](../data/64/MICHIELB/File-MimeInfo/status.json) | 0.37 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MICHIELB | [GD-Barcode](../data/e4/MICHIELB/GD-Barcode/status.json) | 2.02 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MICKEY | [MetaCPAN-Client](../data/a0/MICKEY/MetaCPAN-Client/status.json) | 2.044000 | v5.45.5 | darwin/darwin-2level | installed | none |
+| MICKEY | [MetaCPAN-Client](../data/a0/MICKEY/MetaCPAN-Client/status.json) | 2.044000 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MIHYAERU | [Test-Deep-ArrayEachNotEmpty](../data/b3/MIHYAERU/Test-Deep-ArrayEachNotEmpty/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | installed | none |
 | MIK | [Crypt-JWT](../data/e6/MIK/Crypt-JWT/status.json) | 0.038 | v5.45.5 | darwin/darwin-2level | installed | none |
 | MIK | [Crypt-JWT](../data/e6/MIK/Crypt-JWT/status.json) | 0.038 | v5.45.5 | linux/x86_64-linux | installed | none |

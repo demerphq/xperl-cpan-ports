@@ -222,6 +222,53 @@
          "test_summary" : "Files=375, Tests=8917",
          "version" : "2.010001",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Type-Tiny-2.010001.tar.gz",
+         "id" : "7ea4f61d56d611bd178786dd4aa2a38a5711fc806f25c5656cd9ec13edf74234",
+         "module" : "Type::Tiny",
+         "observed_at" : "2026-11-08T14:58:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "4e10318858db1968f788662882ee7c683395b2dd"
+         },
+         "source_sha256" : "cd583e4983039f35052d490f0c4439124ba667d4f09c4e3aec47de5200f9921a",
+         "status" : "installed",
+         "test_summary" : "Files=375, Tests=9045",
+         "version" : "2.010001",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
