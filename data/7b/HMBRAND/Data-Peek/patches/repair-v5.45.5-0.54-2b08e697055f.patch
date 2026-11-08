@@ -1,0 +1,12 @@
+--- a/t/30_DDump-s.t
++++ b/t/30_DDump-s.t
+@@ -46,7 +46,8 @@
+ 	    }
+ 
+ 	$dump =~ s/\b0x[0-9a-f]+\b/0x****/g;
+-	$dump =~ s/\b(REFCNT =) [0-9]{4,}/$1 -1/g;
++	# Argument stacks can hold extra references while sv_dump runs.
++	$dump =~ s/\b(REFCNT =) [1-9][0-9]*/$1 1/g;
+ 
+ 	$dump =~ s/\bLEN = (?:[1-9]|1[0-6])\b/LEN = 8/g; # aligned at long long?
+ 

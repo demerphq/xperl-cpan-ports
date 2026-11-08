@@ -1,0 +1,98 @@
+--- a/lib/Data/Printer/Filter/GenericClass.pm
++++ b/lib/Data/Printer/Filter/GenericClass.pm
+@@ -165,9 +165,19 @@
+         }
+ 
+         if ($show_internals) {
++            my $internals;
++            if (${^XPERL_VERSION} && $reftype eq 'SCALAR') {
++                require builtin;
++                if (builtin::is_class_object($object)) {
++                    my $fields = builtin::class_object_to_hash($object);
++                    delete $fields->{'$self'};
++                    $internals = $ddp->parse_as('HASH', $fields);
++                }
++            }
++            $internals //= $ddp->parse_as($reftype, $object);
+             $string .= $ddp->newline
+                     . 'internals: '
+-                    . $ddp->parse_as($reftype, $object)
++                    . $internals
+                     ;
+         }
+ 
+--- a/lib/Data/Printer/Object.pm
++++ b/lib/Data/Printer/Object.pm
+@@ -647,6 +647,16 @@
+     return $self->parse($data, force_type => $type, seen_override => 1);
+ }
+ 
++my $stack_holds_arguments;
++sub _stack_holds_arguments {
++    return $stack_holds_arguments if defined $stack_holds_arguments;
++    require B;
++    my $probe;
++    my $before = B::svref_2object(\$probe)->REFCNT;
++    my $during = sub { B::svref_2object(\$_[0])->REFCNT }->($probe);
++    return $stack_holds_arguments = $during > $before;
++}
++
+ # parse() must always receive a reference, never a regular copy, because
+ # that's the only way we are able to figure whether the source data
+ # is a weak ref or not.
+@@ -660,7 +670,16 @@
+     # if we've seen this structure before, we return its location
+     # instead of going through it again. This avoids infinite loops
+     # when parsing circular references:
+-    my $seen = $self->_see($data, %options);
++    my $seen;
++    {
++        # A reference-counted argument stack holds the original scalar when
++        # it is passed as its own referent. Exclude that temporary reference.
++        my $extra = $self->show_refcount && ref($data) eq 'REF'
++            && Scalar::Util::refaddr($data) == Scalar::Util::refaddr(\$_[0])
++            && _stack_holds_arguments();
++        local $self->{_refcount_base} = $self->{_refcount_base} + ($extra ? 1 : 0);
++        $seen = $self->_see($data, %options);
++    }
+     if (my $name = $seen->{name}) {
+         $parsed_string .= $self->maybe_colorize(
+             ((ref $data eq 'SCALAR' && $self->resolve_scalar_refs)
+--- a/t/027-nativeperlclass.t
++++ b/t/027-nativeperlclass.t
+@@ -52,7 +52,27 @@
+ my $ddp = Data::Printer::Object->new( colored => 0 );
+ my $res = $ddp->parse($obj);
+ 
+-is $res, 'MyClass  {
++my $expected = ${^XPERL_VERSION} ? 'MyClass  {
++    parents: MyBaseClass
++    public methods (5):
++        CONSTRUCT, foo, implements, not_a_method
++        MyBaseClass:
++            base_foo
++    private methods (0)
++    internals: {
++        MyBaseClass   {
++            $one     "um",
++            $three   0,
++            $two     undef
++        },
++        MyClass       {
++            $five    42,
++            $four    42,
++            $seven   "quatro",
++            $six     "seis"
++        }
++    }
++}' : 'MyClass  {
+     parents: MyBaseClass
+     public methods (4):
+         foo, new, not_a_method
+@@ -60,4 +80,5 @@
+             base_foo
+     private methods (0)
+     internals: (opaque object)
+-}', 'parsed perl 5.38 native object type';
++}';
++is $res, $expected, 'parsed perl native object type';

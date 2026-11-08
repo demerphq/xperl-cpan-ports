@@ -46,6 +46,7 @@ Prior failures remain in each distribution record after a later success.
 | JIRO | [Digest-FarmHash](../data/86/JIRO/Digest-FarmHash/status.json) | 0.02 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | JOVAN | [Physics-Ellipsometry-VASE](../data/8f/JOVAN/Physics-Ellipsometry-VASE/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=33, Failed 1/5 test programs. 1/33 subtests failed. |
 | JROBINSON | [Paws](../data/f5/JROBINSON/Paws/status.json) | 0.46 | v5.45.5 | linux/x86_64-linux | test | Files=38, Tests=15108 |
+| KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=23, Tests=989, Failed 1/23 test programs. 2/989 subtests failed. |
 | KMACLEOD | [Frontier-RPC](../data/17/KMACLEOD/Frontier-RPC/status.json) | 0.07b4 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
@@ -65,11 +66,13 @@ Prior failures remain in each distribution record after a later success.
 | PHRED | [SOAP-Lite](../data/66/PHRED/SOAP-Lite/status.json) | 1.27 | v5.45.5 | linux/x86_64-linux | test | Files=56, Tests=888, Failed 1/56 test programs. 0/888 subtests failed. |
 | PITCHLESS | [MooseX-Getopt-Usage](../data/b4/PITCHLESS/MooseX-Getopt-Usage/status.json) | 0.24 | v5.45.5 | linux/x86_64-linux | test | Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed. |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level | test | Files=86, Tests=100, Failed 1/86 test programs. 1/100 subtests failed. |
+| PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=86, Tests=6223, Failed 3/86 test programs. 37/6223 subtests failed. |
 | PMQS | [DB_File](../data/3d/PMQS/DB_File/status.json) | 1.861 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=0 |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed. |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | test | Files=122, Tests=9066, Failed 1/122 test programs. 1/9066 subtests failed. |
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
+| ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=8, Tests=148, Failed 2/8 test programs. 5/148 subtests failed. |
 | RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. (out-of-date-with-blead) |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |

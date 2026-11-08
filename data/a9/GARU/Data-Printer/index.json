@@ -1,27 +1,27 @@
 {
-  "schema": 1,
-  "distribution": "Data-Printer",
-  "releases": [
-    {
-      "version": "1.002001",
-      "cpan_path": "G/GA/GARU/Data-Printer-1.002001.tar.gz",
-      "source_sha256": "96292d29edf85eca10724a00e0af509c40b17b9b5638c00332d703599b6f3b74",
-      "patch_sets": [
-        {
-          "id": "xperl-class-fields",
-          "xperl": {
-            "min_inclusive": "v5.45.5",
-            "max_exclusive": "v5.46.0"
-          },
-          "patches": [
+   "distribution" : "Data-Printer",
+   "releases" : [
+      {
+         "cpan_path" : "G/GA/GARU/Data-Printer-1.002001.tar.gz",
+         "patch_sets" : [
             {
-              "path": "patches/xperl-class-fields.patch",
-              "sha256": "35e7156a52785853c7eed5b2dfd7aa54820be799bf38698e7463ff08d6f58f2a"
+               "id" : "xperl-class-fields",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.002001-f9398eff8937.patch",
+                     "sha256" : "f9398eff89373b86f5bf18d5daba85614550ef4e8ebb621387f91b9c25aeb720"
+                  }
+               ],
+               "recipes" : ["refcounted-stack-observation-v1"],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
             }
-          ],
-          "recipes": []
-        }
-      ]
-    }
-  ]
+         ],
+         "source_sha256" : "96292d29edf85eca10724a00e0af509c40b17b9b5638c00332d703599b6f3b74",
+         "version" : "1.002001"
+      }
+   ],
+   "schema" : 1
 }

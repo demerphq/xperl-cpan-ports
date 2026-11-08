@@ -194,6 +194,82 @@
          "test_summary" : "Files=71, Tests=841",
          "version" : "2.005005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HA/HAARG/Moo-2.005005.tar.gz",
+         "id" : "6d79bf3e346c0e3ec7fcb808da54d359cd890bba6e16729fdf9e5ede3aa20d4b",
+         "module" : "Moo",
+         "observed_at" : "2026-11-08T19:53:01Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-context",
+         "patch_sha256" : [
+            "3e54ab1ba5179bac33036ffbd359f1298c9cffdb0d3723df350b7a4acbba4715"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
+         "status" : "installed",
+         "test_summary" : "Files=71, Tests=841",
+         "version" : "2.005005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
