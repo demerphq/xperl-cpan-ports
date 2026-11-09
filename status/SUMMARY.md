@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 90 of 3644 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 90 of 3646 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1737,6 +1737,7 @@ Unresolved failures: 90 of 3644 release, XPerl, and platform combinations. See [
 | KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | none | none |
 | KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | failed | none | none |
+| KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | KENTNL | [MooseX-Has-Sugar](../data/76/KENTNL/MooseX-Has-Sugar/status.json) | 1.000006 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KENTNL | [Path-FindDev](../data/ce/KENTNL/Path-FindDev/status.json) | v0.5.3 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KENTNL | [Path-IsDev](../data/3c/KENTNL/Path-IsDev/status.json) | 1.001003 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -2995,6 +2996,7 @@ Unresolved failures: 90 of 3644 release, XPerl, and platform combinations. See [
 | ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | repair-v5.45.5 | fb9e81a6f8b232c2f3a51c1f7195b0da0d211ccb1a0a160e7301bc10a4f6ef8f |
 | ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | failed | none | none |
+| ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | fb9e81a6f8b232c2f3a51c1f7195b0da0d211ccb1a0a160e7301bc10a4f6ef8f |
 | ROBN | [Prometheus-Tiny](../data/96/ROBN/Prometheus-Tiny/status.json) | 0.011 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ROBN | [Prometheus-Tiny-Shared](../data/f0/ROBN/Prometheus-Tiny-Shared/status.json) | 0.027 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ROKR | [CatalystX-InjectComponent](../data/6d/ROKR/CatalystX-InjectComponent/status.json) | 0.025 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
