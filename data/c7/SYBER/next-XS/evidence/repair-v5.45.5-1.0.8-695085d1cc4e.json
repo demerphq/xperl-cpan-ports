@@ -1,0 +1,76 @@
+{
+   "date" : "2026-11-09",
+   "files" : [
+      "XS.xs",
+      "lib/next/XS.pod",
+      "t/01-next-replace.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "695085d1cc4e854f480a1ed14e71b697f9fd36d3cb92b24384daf738d7a13105",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "78fef91ac3c6c0ef7d2469fa7c5c03051fd1d32e24d2d17542a85a99d37ad020",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://metacpan.org/release/SYBER/next-XS-1.0.8/view/lib/next/XS.pm"
+            },
+            {
+               "url" : "https://metacpan.org/dist/next-XS"
+            },
+            {
+               "url" : "https://rt.cpan.org/Public/Dist/Display.html?Name=next-XS"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

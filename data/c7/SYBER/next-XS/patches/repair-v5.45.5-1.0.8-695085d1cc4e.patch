@@ -1,0 +1,83 @@
+--- a/XS.xs
++++ b/XS.xs
+@@ -14,7 +14,9 @@
+     return gv_stashsv(proto, GV_ADD);
+ }
+ 
+-#if PERL_VERSION < 22
++/* The custom pp functions use a non-reference-counted stack.  On XPerl
++ * RC-stack builds, use the XS path so Perl handles stack ownership. */
++#if PERL_VERSION < 22 || (defined(XPERL_VERSION) && defined(PERL_RC_STACK))
+     #define optimize(a, ...)
+ #else
+ 
+--- a/lib/next/XS.pod
++++ b/lib/next/XS.pod
+@@ -161,6 +161,11 @@
+ 
+ =head1 PERFORMANCE
+ 
++On XPerl builds with C<PERL_RC_STACK>, dispatch uses the XS fallback.
++The custom opcode optimizations assume a stack without reference counting
++and are disabled on these builds. Method resolution and the C++ interface
++are unchanged, but the opcode optimization speedups do not apply.
++
+ Rate per 1000 executions (i.e. 17305/s means actually 17.3 M/s). Windows 10 x64, Strawberry Perl 5.26.1. Core i7 3.3 Ghz.
+ 
+                      Rate  perl_nextcan    xs_nextcan
+@@ -190,4 +195,4 @@
+ 
+ =cut
+ 
+-1;
+\ No newline at end of file
++1;
+--- a/t/01-next-replace.t
++++ b/t/01-next-replace.t
+@@ -14,4 +14,44 @@
+ isnt(\&next::method, $orig_next);
+ isnt(\&maybe::next::method, $orig_maybe);
+ 
+-done_testing();
+\ No newline at end of file
++{
++    package RepeatBase;
++    sub method { shift; return wantarray ? @_ : $_[0] }
++    sub direct { goto &method }
++    sub maybe { goto &method }
++    sub maybe_direct { goto &method }
++    sub can_method { goto &method }
++    sub can_direct { goto &method }
++
++    package RepeatChild;
++    our @ISA = ('RepeatBase');
++    sub method { shift->next::method(@_) }
++    sub direct { next::method(@_) }
++    sub maybe { shift->maybe::next::method(@_) }
++    sub maybe_direct { maybe::next::method(@_) }
++    sub can_method { my $self = shift; $self->next::can->($self, @_) }
++    sub can_direct { my $self = shift; next::can($self)->($self, @_) }
++    sub missing { shift->maybe::next::method(@_) }
++    sub missing_direct { maybe::next::method(@_) }
++    sub missing_can { shift->next::can }
++}
++
++subtest 'repeated dispatch preserves methods and stack values' => sub {
++    my $object = bless {}, 'RepeatChild';
++    for my $pass (1..10) {
++        for my $method (qw(method direct maybe maybe_direct can_method can_direct)) {
++            is($object->$method(42), 42, "$method scalar pass $pass");
++            is_deeply([$object->$method(42, 43)], [42, 43],
++                      "$method list pass $pass");
++            $object->$method(42);
++        }
++        for my $method (qw(missing missing_direct)) {
++            is(scalar $object->$method, undef, "$method scalar pass $pass");
++            is_deeply([$object->$method], [], "$method list pass $pass");
++            $object->$method;
++        }
++        is($object->missing_can, undef, "missing next::can pass $pass");
++    }
++};
++
++done_testing();
