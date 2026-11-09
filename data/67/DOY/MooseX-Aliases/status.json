@@ -44,6 +44,74 @@
       },
       {
          "cpan_path" : "D/DO/DOY/MooseX-Aliases-0.11.tar.gz",
+         "id" : "53585e5a668ab2b5f0a0ee386534644404526736b756e5e313387e59f83b8441",
+         "module" : "MooseX::Aliases",
+         "observed_at" : "2026-11-08T20:12:56Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "c4850f972426c3447aaeed8dcb4033e84460ca51705ad3ea78b63af919fe0748",
+         "status" : "installed",
+         "test_summary" : "Files=15, Tests=158",
+         "version" : "0.11",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DO/DOY/MooseX-Aliases-0.11.tar.gz",
          "id" : "555d1d8225d8db6f49462476256971c5504f3f29fc0c4bb523d47df6afe4e42a",
          "module" : "MooseX::Aliases",
          "observed_at" : "2026-11-08T21:23:09Z",
