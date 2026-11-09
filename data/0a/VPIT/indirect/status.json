@@ -98,6 +98,81 @@
       {
          "advisories" : [],
          "cpan_path" : "V/VP/VPIT/indirect-0.39.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "c0b8295c56bc3ab752088513602541648df20d266b65273d8def17a3ed8d423f",
+         "module" : "indirect",
+         "observed_at" : "2026-11-08T20:12:00Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-parser-errors",
+         "patch_sha256" : [
+            "7a24fcf8ddd6ddb7bb7d713a58bb016844048207986e587c6b8b32928876fb62"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "71733c4c348e98fdd575b44a52042428c39888a18c25656efe59ef3d7d0d27e5",
+         "status" : "failed",
+         "test_summary" : "Files=22, Tests=3137, Failed 9/22 test programs. 1034/3137 subtests failed.",
+         "version" : "0.39",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "V/VP/VPIT/indirect-0.39.tar.gz",
          "id" : "11f4e43a61915c1d748c6ffd886d0d1b4db24cc50cd6155281270132cd162dcb",
          "module" : "indirect",
          "observed_at" : "2026-11-08T21:23:15Z",
