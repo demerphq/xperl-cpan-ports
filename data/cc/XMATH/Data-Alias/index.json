@@ -1,0 +1,28 @@
+{
+   "distribution" : "Data-Alias",
+   "releases" : [
+      {
+         "cpan_path" : "X/XM/XMATH/Data-Alias-1.30.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.30-d576e9cae3b7.patch",
+                     "sha256" : "d576e9cae3b7ea515289b49f6a06f95aa24eb7dfb532e75dd342feff90bf4a24"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "dfa9e341b086cd957df6675879a9cb120919408b85b48966dd240ab85333ed2e",
+         "version" : "1.30"
+      }
+   ],
+   "schema" : 1
+}
