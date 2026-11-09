@@ -198,6 +198,82 @@
       {
          "advisories" : [],
          "cpan_path" : "T/TO/TODDR/XML-Parser-2.59.tar.gz",
+         "id" : "e4edeab91ca6cbc20b0c685d0d37e7aaefd1ec98b6d19c79cebf328ce2ea4106",
+         "module" : "XML::Parser",
+         "observed_at" : "2026-11-08T20:10:45Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-error-context",
+         "patch_sha256" : [
+            "4b61204e4bc72252da94d312f35480a2f8a8c8de0e9c61053d98ae3a9112a83e"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "a358fd7c49f5e27717a644a9102bd21dc7fc25a415983279c59b1580e2b62a58",
+         "status" : "installed",
+         "test_summary" : "Files=62, Tests=719",
+         "version" : "2.59",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TO/TODDR/XML-Parser-2.59.tar.gz",
          "id" : "3e91327f5110415ec1b7d7599b786ce64231e2186b46548116120171a38fca1b",
          "module" : "XML::Parser",
          "observed_at" : "2026-11-08T21:22:05Z",
