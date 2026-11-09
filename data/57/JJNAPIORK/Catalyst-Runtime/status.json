@@ -143,6 +143,82 @@
       {
          "advisories" : [],
          "cpan_path" : "J/JJ/JJNAPIORK/Catalyst-Runtime-5.90132.tar.gz",
+         "id" : "0c5921028ae732e1646d50b8870df16148c1f8990477a95e6fed64751901ef70",
+         "module" : "Catalyst",
+         "observed_at" : "2026-11-08T20:50:22Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-exception-rendering",
+         "patch_sha256" : [
+            "4eca6be12a07ded09e7e8eca51f74798b039d627aabfe91979a043865e0db13a"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "bb83758b7bda360d16e002e5ace69c6459e3d47227cdee6ac4b1b65a6685f110",
+         "status" : "installed",
+         "test_summary" : "Files=200, Tests=3733",
+         "version" : "5.90132",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JJ/JJNAPIORK/Catalyst-Runtime-5.90132.tar.gz",
          "id" : "c127e44713e91a481ceb89c205755b3b0a8ea2bb61196b785b1a632362554137",
          "module" : "Catalyst",
          "observed_at" : "2026-11-08T21:25:08Z",
