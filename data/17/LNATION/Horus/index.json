@@ -1,0 +1,28 @@
+{
+   "distribution" : "Horus",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Horus-1.00.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.00-db9916805f8c.patch",
+                     "sha256" : "db9916805f8c1b7175ba4bf360ebefde04765b4061c9d520c1ee9e6688552870"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "2bbbb294e9f288b7afcc6bfc8ec17f57e92cc5201044a340334d0dca6e6a3ad4",
+         "version" : "1.00"
+      }
+   ],
+   "schema" : 1
+}
