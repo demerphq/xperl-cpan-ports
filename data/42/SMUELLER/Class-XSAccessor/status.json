@@ -276,6 +276,105 @@
             "exit_status" : 2,
             "phase" : "test"
          },
+         "id" : "abe6a647a49f9ed19a6c7f14ed9cda1e9afa6ec853a9113f0558e382f0d1cf71",
+         "module" : "Class::XSAccessor",
+         "observed_at" : "2026-11-08T21:06:51Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "8ee97affa4aa267113ce9bdc45dbf46e3e515dd9542c966aa4a30c8ae64ed60f"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "99c56b395f1239af19901f2feeb125d9ecb4e351a0d80daa9529211a4700a6f2",
+         "status" : "installed",
+         "test_summary" : "Files=25, Tests=399",
+         "version" : "1.19",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SM/SMUELLER/Class-XSAccessor-1.19.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
          "id" : "b182641a39e5212985fb3212bc05cae5d55aeb4fb898fb4c3220d2a949f1c7c5",
          "module" : "Class::XSAccessor",
          "observed_at" : "2026-11-08T21:20:34Z",
