@@ -291,6 +291,82 @@
          "test_summary" : "Files=55, Tests=4648",
          "version" : "6.16",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "J/JK/JKEENAN/Devel-NYTProf-6.16.tar.gz",
+         "id" : "c70a5ee0060fe47392fb3c15dbbabe2553154238f2d45430555ce01f9f66dc8a",
+         "module" : "Devel::NYTProf",
+         "observed_at" : "2026-11-09T13:36:16Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-profile-fixtures",
+         "patch_sha256" : [
+            "63e47a1cf80fccead851515215d1b120eabd18a0f389bc4e32bfa0a3cff4c8fd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "c5553739fbcdf0699df47554fc5e32c4e68ca7876511eef7aceffb6db27badda",
+         "status" : "installed",
+         "test_summary" : "Files=55, Tests=4804",
+         "version" : "6.16",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
