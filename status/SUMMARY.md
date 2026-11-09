@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 90 of 3643 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 90 of 3644 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2589,6 +2589,7 @@ Unresolved failures: 90 of 3643 release, XPerl, and platform combinations. See [
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | failed | xperl-coverage-gold | 387b4e6707dd82816ab25513b2fda8f3654cc39171d804ee5fc4eaedb3198556 |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux | installed | xperl-coverage-gold | 750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9 |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | xperl-coverage-gold | 387b4e6707dd82816ab25513b2fda8f3654cc39171d804ee5fc4eaedb3198556 |
+| PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | xperl-coverage-gold | 03c403682313c0fa1140057f5e1ff5aae235ff0c3e244b77251623b53df5a892 |
 | PJCJ | [Net-IDN-Encode](../data/d8/PJCJ/Net-IDN-Encode/status.json) | 2.600 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | PJCJ | [Net-IDN-Encode](../data/d8/PJCJ/Net-IDN-Encode/status.json) | 2.600 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | PLICEASE | [Alien-Base-ModuleBuild](../data/5b/PLICEASE/Alien-Base-ModuleBuild/status.json) | 1.17 | v5.45.5 | darwin/darwin-2level | installed | render-caught-errors | 226a73811ff8ae83da638a143d30cf395635b057d52b17944f22ddad42f2d482 |
