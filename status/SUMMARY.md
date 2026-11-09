@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 86 of 3396 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 86 of 3397 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3203,6 +3203,7 @@ Unresolved failures: 86 of 3396 release, XPerl, and platform combinations. See [
 | TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | none | none |
 | TOBYINK | [Type-Tiny-XS](../data/8a/TOBYINK/Type-Tiny-XS/status.json) | 0.025 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | TOBYINK | [Types-URI](../data/78/TOBYINK/Types-URI/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | TOBYINK | [Types-URI](../data/78/TOBYINK/Types-URI/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux | installed | none | none |
