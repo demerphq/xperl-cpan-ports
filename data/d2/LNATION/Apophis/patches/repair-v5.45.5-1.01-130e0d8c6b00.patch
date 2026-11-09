@@ -1,0 +1,87 @@
+--- a/Apophis.xs
++++ b/Apophis.xs
+@@ -788,13 +788,23 @@
+ static OP *
+ ap_op_leave(pTHX_ I32 markix, SV *result)
+ {
+-    dSP;
+     const I32 gimme = GIMME_V;
+ 
++#ifdef PERL_RC_STACK
++    /* The stack owns each argument and needs a reference to the result.
++     * Keep the result alive while releasing arguments that may own it. */
++    SvREFCNT_inc(result);
++    rpp_popfree_to(PL_stack_base + markix);
++    if (gimme != G_VOID)
++        rpp_push_1(result);
++    SvREFCNT_dec(result);
++#else
++    dSP;
+     SP = PL_stack_base + markix;
+     if (gimme != G_VOID)
+         *++SP = result;
+     PUTBACK;
++#endif
+     return NORMAL;
+ }
+ 
+--- a/t/11-custom-ops.t
++++ b/t/11-custom-ops.t
+@@ -4,6 +4,7 @@
+ use B::Concise ();
+ use B::Deparse ();
+ use File::Temp qw(tempdir);
++use Scalar::Util qw(weaken);
+ use Apophis;
+ 
+ # Under `use Apophis` a call to one of the six methods compiles to a custom
+@@ -162,4 +163,49 @@
+ like($@, qr/^Apophis::store: odd number of optional arguments/, 'which refuses it');
+ is($op{identify}->(\$text), $ca->${\'identify'}(\$text), 'and after a croak the op still works');
+ 
++my %lifetime = (
++    identify => sub { $_[0]->identify($_[1]) },
++    store    => sub { $_[0]->store($_[1]) },
++    exists   => sub { $_[0]->exists($_[1]) },
++    fetch    => sub { $_[0]->fetch($_[1]) },
++    verify   => sub { $_[0]->verify($_[1]) },
++    remove   => sub { $_[0]->remove($_[1]) },
++);
++for my $name (sort keys %lifetime) {
++    my ($weak_self, $weak_content);
++    {
++        my $self = Apophis->new(namespace => 'test-ops', store_dir => $dir);
++        my $content = "temporary $name content";
++        my $arg = $name eq 'identify' || $name eq 'store' ? \$content : $missing;
++        $weak_self = $self;
++        weaken($weak_self);
++        $weak_content = \$content;
++        weaken($weak_content);
++        $lifetime{$name}->($self, $arg);
++    }
++    ok(!defined $weak_self, "$name releases its temporary invocant in void context");
++    ok(!defined $weak_content, "$name releases its temporary content")
++        if $name eq 'identify' || $name eq 'store';
++}
++
++{
++    local $ENV{PERL_DESTRUCT_LEVEL} = 2;
++    my $program = q{
++        BEGIN { open STDERR, '>&', STDOUT or die $! }
++        use Apophis;
++        my $self = Apophis->new(namespace => 'result-lifetime');
++        for (1 .. 100) {
++            my $content = "temporary result $_";
++            my $id = $self->identify(\$content);
++            die "invalid result" unless length($id) == 36;
++        }
++        print "clean shutdown\n";
++    };
++    open my $child, '-|', $^X, '-Mblib', '-we', $program or die $!;
++    my $output = do { local $/; <$child> };
++    close $child;
++    is($?, 0, 'custom op results survive through process destruction');
++    is($output, "clean shutdown\n", 'custom op results produce no lifetime warnings');
++}
++
+ done_testing;

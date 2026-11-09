@@ -1,0 +1,28 @@
+{
+   "distribution" : "Apophis",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Apophis-1.01.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.01-130e0d8c6b00.patch",
+                     "sha256" : "130e0d8c6b005099eb4181d2918e1489097e48aef70b28567fa36438b8db086d"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "082cece6a883c162eb6f34edbbf914f9dda7299268ea605c0c3b56a57ab7be1f",
+         "version" : "1.01"
+      }
+   ],
+   "schema" : 1
+}
