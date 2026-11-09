@@ -44,6 +44,74 @@
       },
       {
          "cpan_path" : "P/PL/PLICEASE/MooseX-NonMoose-0.27.tar.gz",
+         "id" : "afce73eb692766405749b013a68d6165b52f908e09427234ecd4dc532ffda0c1",
+         "module" : "MooseX::NonMoose",
+         "observed_at" : "2026-11-08T21:03:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "6fc7893b47a7db812a3c1fe8bb90d9c235143c6937251e570e27bdbd0d844ece",
+         "status" : "installed",
+         "test_summary" : "Files=27, Tests=177",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/MooseX-NonMoose-0.27.tar.gz",
          "id" : "5169b4b57384745489b0282c41ec38f9e4e763332ce6b7eb77be7a8d03bc00f8",
          "module" : "MooseX::NonMoose",
          "observed_at" : "2026-11-08T21:23:10Z",
