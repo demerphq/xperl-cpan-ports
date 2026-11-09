@@ -1,0 +1,135 @@
+--- a/README
++++ b/README
+@@ -99,6 +99,14 @@
+     conceptual leaks.
+ 
+ PERFORMANCE
++    On builds with "PERL_RC_STACK", including XPerl, opcode optimizations
++    are disabled. Accessors use the normal XS call path so Perl can manage
++    stack reference counts. This costs the opcode shortcut's performance
++    benefit. The "OPTIMIZED_ENTERSUB" constant reports whether opcode
++    optimization is enabled after checking "CAIXS_DISABLE_ENTERSUB".
++    "OPTIMIZED_OPMETHOD" reports whether method opcode optimization is
++    available in this build.
++
+     Class::Accessor::Inherited::XS is at least 10x times faster than
+     Class::Accessor::Grouped, depending on your usage pattern. Inherited
+     accessors have constant speed even in large inheritance chains. Object
+--- a/XS.xs
++++ b/XS.xs
+@@ -13,7 +13,12 @@
+ }
+ 
+ static MGVTBL sv_payload_marker;
++#ifdef PERL_RC_STACK
++/* Opcode shortcuts bypass the core's bridge to the non-RC XS stack. */
++static bool optimize_entersub = 0;
++#else
+ static bool optimize_entersub = 1;
++#endif
+ static int unstolen = 0;
+ 
+ #include "xs/compat.h"
+@@ -118,6 +123,7 @@
+ #endif
+     HV* stash = gv_stashpv("Class::Accessor::Inherited::XS", 0);
+     newCONSTSUB(stash, "BINARY_UNSAFE", CAIX_BINARY_UNSAFE_RESULT);
++    newCONSTSUB(stash, "OPTIMIZED_ENTERSUB", optimize_entersub ? &PL_sv_yes : &PL_sv_no);
+     newCONSTSUB(stash, "OPTIMIZED_OPMETHOD", CAIX_OPTIMIZE_OPMETHOD_RESULT);
+ }
+ 
+--- a/lib/Class/Accessor/Inherited/XS.pm
++++ b/lib/Class/Accessor/Inherited/XS.pm
+@@ -223,6 +223,13 @@
+ 
+ =head1 PERFORMANCE
+ 
++On builds with C<PERL_RC_STACK>, including XPerl, opcode optimizations are
++disabled. Accessors use the normal XS call path so Perl can manage stack
++reference counts. This costs the opcode shortcut's performance benefit.
++The C<OPTIMIZED_ENTERSUB> constant reports whether opcode optimization is
++enabled after checking C<CAIXS_DISABLE_ENTERSUB>. C<OPTIMIZED_OPMETHOD>
++reports whether method opcode optimization is available in this build.
++
+ L<Class::Accessor::Inherited::XS> is at least 10x times faster than L<Class::Accessor::Grouped>, depending
+ on your usage pattern. Inherited accessors have constant speed even in large inheritance chains. Object accessors
+ are even faster than L<Class::XSAccessor> ones.
+--- a/t/45_register_type_info.t
++++ b/t/45_register_type_info.t
+@@ -56,6 +56,8 @@
+ }
+ 
+ is $counter, 4 * 2 * 3; # arg - type - w/r/r
+-is(Class::Accessor::Inherited::XS::Debug::unstolen_count(), Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 0 : 2);
++is(Class::Accessor::Inherited::XS::Debug::unstolen_count(),
++    Class::Accessor::Inherited::XS::OPTIMIZED_ENTERSUB
++        ? (Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 0 : 2) : 0);
+ 
+ done_testing;
+--- a/t/70_opcode_entersub.t
++++ b/t/70_opcode_entersub.t
+@@ -42,6 +42,7 @@
+     is($cref->($o), shift @res);
+ }
+ 
+-is(Class::Accessor::Inherited::XS::Debug::unstolen_count(), 2);
++is(Class::Accessor::Inherited::XS::Debug::unstolen_count(),
++    Class::Accessor::Inherited::XS::OPTIMIZED_ENTERSUB ? 2 : 0);
+ 
+ done_testing;
+--- a/t/71_opcode_method_named.t
++++ b/t/71_opcode_method_named.t
+@@ -97,6 +97,8 @@
+     is(Jopa->$_, shift @res);
+ }
+ 
+-is(Class::Accessor::Inherited::XS::Debug::unstolen_count(), Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 5 : 6);
++is(Class::Accessor::Inherited::XS::Debug::unstolen_count(),
++    Class::Accessor::Inherited::XS::OPTIMIZED_ENTERSUB
++        ? (Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 5 : 6) : 0);
+ 
+ done_testing;
+--- a/t/72_opcode_method.t
++++ b/t/72_opcode_method.t
+@@ -53,6 +53,8 @@
+     is($o->$_(7), 7);
+ }
+ 
+-is(Class::Accessor::Inherited::XS::Debug::unstolen_count(), Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 7 : 3);
++is(Class::Accessor::Inherited::XS::Debug::unstolen_count(),
++    Class::Accessor::Inherited::XS::OPTIMIZED_ENTERSUB
++        ? (Class::Accessor::Inherited::XS::OPTIMIZED_OPMETHOD ? 7 : 3) : 0);
+ 
+ done_testing;
+--- a/xs/accessors.h
++++ b/xs/accessors.h
+@@ -172,12 +172,16 @@
+         HV* isarev = (HV*)*svp;
+ 
+         if (HvUSEDKEYS(isarev)) {
++            SV* pl_yes = &PL_sv_yes; /* not that I care much about ithreads, but still */
++#ifdef XPERL_VERSION
++            for (STRLEN bucket_num = 0; bucket_num < HvENTRY_LIMIT(isarev); ++bucket_num) {
++                for (const HE* he = HvENTRY_FIRST(isarev, bucket_num); he; he = HvENTRY_NEXT(isarev, he)) {
++#else
+             STRLEN hvmax = HvMAX(isarev);
+             HE** hvarr = HvARRAY(isarev);
+-
+-            SV* pl_yes = &PL_sv_yes; /* not that I care much about ithreads, but still */
+             for (STRLEN bucket_num = 0; bucket_num <= hvmax; ++bucket_num) {
+                 for (const HE* he = hvarr[bucket_num]; he; he = HeNEXT(he)) {
++#endif
+                     assert(HeVAL(he) == &PL_sv_placeholder || HeVAL(he) == &PL_sv_yes);
+ 
+                     if (HeVAL(he) == pl_yes) { /* mro_core.c stores only them */
+--- a/xs/compat.h
++++ b/xs/compat.h
+@@ -1,7 +1,7 @@
+ #ifndef __INHERITED_XS_COMPAT_H_
+ #define __INHERITED_XS_COMPAT_H_
+ 
+-#if (PERL_VERSION >= 12)
++#if (PERL_VERSION >= 12) && !defined(PERL_RC_STACK)
+ #define CAIX_OPTIMIZE_OPMETHOD
+ #define CAIX_OPTIMIZE_OPMETHOD_RESULT (&PL_sv_yes)
+ #else
