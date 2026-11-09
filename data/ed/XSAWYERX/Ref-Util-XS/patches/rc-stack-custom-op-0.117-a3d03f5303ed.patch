@@ -1,0 +1,77 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -16,6 +16,7 @@
+ t/00-report-prereqs.t
+ t/all-permutations.t
+ t/arrayref.t
++t/ownership.t
+ t/b-concise.t
+ t/dynamic.t
+ t/expr.t
+--- a/XS.xs
++++ b/XS.xs
+@@ -53,9 +53,16 @@
+ #define DECL_XOP(x) \
+     static XOP x ## _xop;
+ 
++/* Custom ops bypass entersub's XSUB compatibility wrapper. Reuse that
++ * ownership bridge so the argument is released and the result is owned. */
++#if defined(PERL_RC_STACK) && defined(XSPP_wrapped)
++# define REF_UTIL_PP(name) XSPP_wrapped(name, 1, 0)
++#else
++# define REF_UTIL_PP(name) static OP *name(pTHX)
++#endif
++
+ #define DECL_MAIN_FUNC(x, cond)                 \
+-    static OP *                                 \
+-    x ## _op(pTHX)                              \
++    REF_UTIL_PP(x ## _op)                        \
+     {                                           \
+         dSP;                                    \
+         FUNC_BODY(cond);                        \
+--- /dev/null
++++ b/t/ownership.t
+@@ -0,0 +1,43 @@
++use strict;
++use warnings;
++use Test::More;
++use Scalar::Util qw(weaken);
++use Ref::Util::XS qw(is_arrayref is_hashref);
++
++my @warnings;
++local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++# Direct calls use custom ops when supported. Calls through a code reference
++# use an ordinary XSUB; both paths must release the consumed argument.
++my $dynamic = \&is_hashref;
++my @probes = (
++    [sub { scalar is_hashref($_[0]) }, 'scalar custom op'],
++    [sub { my @values = ('before', is_hashref($_[0]), 'after');
++           is_deeply(\@values, ['before', 1, 'after'], 'adjacent stack values');
++         }, 'list custom op'],
++    [sub { is_hashref($_[0]); return }, 'void custom op'],
++    [sub { scalar $dynamic->($_[0]) }, 'dynamic XSUB'],
++);
++for my $probe (@probes) {
++    my ($run, $label) = @$probe;
++    my $weak;
++    {
++        my $value = {};
++        $weak = $value;
++        weaken($weak);
++        $run->($value);
++    }
++    ok(!defined($weak), "$label releases its input");
++}
++
++my $weak_array;
++{
++    my $array = [];
++    $weak_array = $array;
++    weaken($weak_array);
++    ok(is_arrayref($array), 'array custom op returns true');
++}
++ok(!defined($weak_array), 'array custom op releases its input');
++is_deeply(\@warnings, [], 'predicates balance ownership without warnings');
++
++done_testing();
