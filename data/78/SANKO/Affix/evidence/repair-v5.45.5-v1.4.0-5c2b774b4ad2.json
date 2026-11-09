@@ -1,0 +1,91 @@
+{
+   "date" : "2026-11-09",
+   "files" : [
+      "Changes.md",
+      "lib/Affix/marshal.c",
+      "t/091_cb_struct_member.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "5c2b774b4ad2e3687e261e030b11c01dc30279a91363ec3c5c6713c49b5fbf5c",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://github.com/sanko/Affix.pm"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/issues"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/pulls"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/blob/main/Changes.md"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/issues/101"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/pull/102"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/pull/103"
+            },
+            {
+               "url" : "https://github.com/sanko/Affix.pm/pull/103/commits"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

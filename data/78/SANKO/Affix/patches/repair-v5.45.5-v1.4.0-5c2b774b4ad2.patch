@@ -1,0 +1,68 @@
+--- a/Changes.md
++++ b/Changes.md
+@@ -5,6 +5,14 @@
+ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+ 
++## [Unreleased]
++
++### Fixed
++
++- Reading a callback member from Perl on XPerl with `PERL_RC_STACK` no longer
++  frees the wrapper's arguments and result prematurely. The call from get-magic
++  uses a separate non-reference-counted stack for its legacy stack operations.
++
+ ## [v1.4.0] - 2026-10-31
+ 
+ ### Fixed
+--- a/lib/Affix/marshal.c
++++ b/lib/Affix/marshal.c
+@@ -808,6 +808,11 @@
+         sig_ptr++;
+ 
+     dSP;
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++    /* Get-magic can enter with an RC stack. Give the legacy stack
++       operations below a separate non-RC stack, as magic_methcall does. */
++    PUSHSTACKi(PERLSI_MAGIC);
++#endif
+     ENTER;
+     SAVETMPS;
+     PUSHMARK(SP);
+@@ -835,6 +840,9 @@
+     PUTBACK;
+     FREETMPS;
+     LEAVE;
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++    POPSTACK;
++#endif
+ 
+     return ret;
+ }
+--- a/t/091_cb_struct_member.t
++++ b/t/091_cb_struct_member.t
+@@ -33,6 +33,24 @@
+     $pin->{data} = 41;
+     is $fn->($pin), 42, 'callback received correct arg and returned correct value';
+ };
++subtest 'read and call a callback member from Perl' => sub {
++    my $st = Struct [ fn => Callback [ [Int32] => Int32 ], data => Int32 ];
++    my $mem = Affix::malloc( sizeof($st) );
++    my $pin = cast( $mem, $st );
++    $pin->{fn} = sub ($x) { $x + 1 };
++
++    # Reading the member invokes get-magic outside an Affix XSUB.
++    my @values;
++    for my $x ( 1 .. 20 ) {
++        my $callback = $pin->{fn};
++        push @values, $callback->($x);
++    }
++    is \@values, [ 2 .. 21 ], 'repeated reads preserve callback arguments and results';
++    my @args = ( 'before', $pin->{fn}, 'after' );
++    is $args[0], 'before', 'get-magic preserves preceding stack arguments';
++    is $args[2], 'after', 'get-magic preserves following stack arguments';
++    is $args[1]->(41), 42, 'callback survives the temporary wrapping scope';
++};
+ subtest 'struct member callback (int8->int8)' => sub {
+     my $st  = Struct [ fn => Pointer [ Callback [ [Int8] => Int8 ] ], data => Int8 ];
+     my $fn  = wrap( $lib, 'call_i8', [ Pointer [$st] ], Int8 );

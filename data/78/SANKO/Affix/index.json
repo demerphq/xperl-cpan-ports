@@ -1,0 +1,28 @@
+{
+   "distribution" : "Affix",
+   "releases" : [
+      {
+         "cpan_path" : "S/SA/SANKO/Affix-v1.4.0.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-v1.4.0-5c2b774b4ad2.patch",
+                     "sha256" : "5c2b774b4ad2e3687e261e030b11c01dc30279a91363ec3c5c6713c49b5fbf5c"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+         "version" : "v1.4.0"
+      }
+   ],
+   "schema" : 1
+}
