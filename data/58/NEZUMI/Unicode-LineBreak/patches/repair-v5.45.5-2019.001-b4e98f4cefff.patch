@@ -1,0 +1,40 @@
+--- a/LineBreak.xs
++++ b/LineBreak.xs
+@@ -1046,6 +1046,9 @@
+ 	    } else
+ 		warn("_config: Setting unknown option %s", key);
+ 	}
++	/* The argument stack requires an SV, even when setting options. */
++	if (RETVAL == NULL)
++	    XSRETURN_UNDEF;
+     OUTPUT:
+ 	RETVAL
+ 
+--- a/t/000.t
++++ b/t/000.t
+@@ -5,10 +5,24 @@
+ use Test::More;
+ use Unicode::LineBreak qw(:all);
+ 
+-BEGIN { plan tests => 1 }
++BEGIN { plan tests => 9 }
+ 
+ diag sprintf "sombok %s with Unicode %s\n",
+ 	     Unicode::LineBreak::SOMBOK_VERSION,
+ 	     Unicode::LineBreak::UNICODE_VERSION;
+ ok(1);
+ 
++my $lb = Unicode::LineBreak->_new;
++ok(!defined($lb->_config(CharMax => 998)), 'setter returns undef in scalar context');
++is($lb->_config('CharMax'), 998, 'setter applies the option');
++
++my @ret = $lb->_config(ColMax => 40, ColMin => 2);
++is(scalar @ret, 1, 'setter returns one value in list context');
++ok(!defined($ret[0]), 'list return value is undef');
++is($lb->_config('ColMax'), 40, 'multiple options are applied');
++is($lb->_config('ColMin'), 2, 'last option is applied');
++
++$lb->_config(CharMax => 500);
++is($lb->_config('CharMax'), 500, 'setter works in void context');
++isa_ok(Unicode::LineBreak->new, 'Unicode::LineBreak');
++

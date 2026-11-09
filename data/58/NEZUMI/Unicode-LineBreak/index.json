@@ -1,0 +1,28 @@
+{
+   "distribution" : "Unicode-LineBreak",
+   "releases" : [
+      {
+         "cpan_path" : "N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-2019.001-b4e98f4cefff.patch",
+                     "sha256" : "b4e98f4cefff26dd1adcc86cd2072cac5f56ca5a60aad4673b80ccee0ce0fbda"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "486762e4cacddcc77b13989f979a029f84630b8175e7fef17989e157d4b6318a",
+         "version" : "2019.001"
+      }
+   ],
+   "schema" : 1
+}
