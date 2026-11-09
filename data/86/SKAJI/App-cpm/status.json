@@ -44,6 +44,74 @@
       },
       {
          "cpan_path" : "S/SK/SKAJI/App-cpm-v1.1.6.tar.gz",
+         "id" : "7ec500d1555f5a263232c36d4da57fe344240e9b09972f32d5adc9c0d0c0ee65",
+         "module" : "App::cpm",
+         "observed_at" : "2026-11-08T20:09:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "c78f0ce4bb7770fff95334956bfd63a9cab537d4cca4bdb1d1844990ad601fa8",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=1",
+         "version" : "v1.1.6",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SK/SKAJI/App-cpm-v1.1.6.tar.gz",
          "id" : "06bd6923811596579407bea0fa3c7a57e28d200239a5d62ae44e6f5dafc16531",
          "module" : "App::cpm",
          "observed_at" : "2026-11-08T21:21:05Z",
