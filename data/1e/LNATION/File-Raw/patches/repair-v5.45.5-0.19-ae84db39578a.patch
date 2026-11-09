@@ -1,0 +1,321 @@
+--- a/file.c
++++ b/file.c
+@@ -898,7 +898,7 @@
+    ============================================ */
+ 
+ /* pp_file_slurp: single path arg on stack - OPTIMIZED HOT PATH */
+-static OP* pp_file_slurp(pTHX) {
++FILE_RAW_PP(pp_file_slurp, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1017,7 +1017,7 @@
+ }
+ 
+ /* pp_file_spew: path and data on stack */
+-static OP* pp_file_spew(pTHX) {
++FILE_RAW_PP(pp_file_spew, 2) {
+     dSP;
+     SV *data = POPs;
+     SV *path_sv = POPs;
+@@ -1028,7 +1028,7 @@
+ }
+ 
+ /* pp_file_exists: single path arg on stack */
+-static OP* pp_file_exists(pTHX) {
++FILE_RAW_PP(pp_file_exists, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1038,7 +1038,7 @@
+ }
+ 
+ /* pp_file_size: single path arg on stack */
+-static OP* pp_file_size(pTHX) {
++FILE_RAW_PP(pp_file_size, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1048,7 +1048,7 @@
+ }
+ 
+ /* pp_file_is_file: single path arg on stack */
+-static OP* pp_file_is_file(pTHX) {
++FILE_RAW_PP(pp_file_is_file, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1058,7 +1058,7 @@
+ }
+ 
+ /* pp_file_is_dir: single path arg on stack */
+-static OP* pp_file_is_dir(pTHX) {
++FILE_RAW_PP(pp_file_is_dir, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1068,7 +1068,7 @@
+ }
+ 
+ /* pp_file_lines: single path arg on stack */
+-static OP* pp_file_lines(pTHX) {
++FILE_RAW_PP(pp_file_lines, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1088,7 +1088,7 @@
+ }
+ 
+ /* pp_file_unlink: single path arg on stack */
+-static OP* pp_file_unlink(pTHX) {
++FILE_RAW_PP(pp_file_unlink, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1098,7 +1098,7 @@
+ }
+ 
+ /* pp_file_clear_stat_cache: optional path arg - clears stat cache */
+-static OP* pp_file_clear_stat_cache(pTHX) {
++FILE_RAW_PP(pp_file_clear_stat_cache, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     
+@@ -1117,7 +1117,7 @@
+ }
+ 
+ /* pp_file_mkdir: single path arg on stack (mode defaults to 0755) */
+-static OP* pp_file_mkdir(pTHX) {
++FILE_RAW_PP(pp_file_mkdir, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1127,7 +1127,7 @@
+ }
+ 
+ /* pp_file_rmdir: single path arg on stack */
+-static OP* pp_file_rmdir(pTHX) {
++FILE_RAW_PP(pp_file_rmdir, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1137,7 +1137,7 @@
+ }
+ 
+ /* pp_file_touch: single path arg on stack */
+-static OP* pp_file_touch(pTHX) {
++FILE_RAW_PP(pp_file_touch, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1147,7 +1147,7 @@
+ }
+ 
+ /* pp_file_basename: single path arg on stack */
+-static OP* pp_file_basename(pTHX) {
++FILE_RAW_PP(pp_file_basename, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1157,7 +1157,7 @@
+ }
+ 
+ /* pp_file_dirname: single path arg on stack */
+-static OP* pp_file_dirname(pTHX) {
++FILE_RAW_PP(pp_file_dirname, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1167,7 +1167,7 @@
+ }
+ 
+ /* pp_file_extname: single path arg on stack */
+-static OP* pp_file_extname(pTHX) {
++FILE_RAW_PP(pp_file_extname, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1177,7 +1177,7 @@
+ }
+ 
+ /* pp_file_mtime: single path arg on stack */
+-static OP* pp_file_mtime(pTHX) {
++FILE_RAW_PP(pp_file_mtime, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1187,7 +1187,7 @@
+ }
+ 
+ /* pp_file_atime: single path arg on stack */
+-static OP* pp_file_atime(pTHX) {
++FILE_RAW_PP(pp_file_atime, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1197,7 +1197,7 @@
+ }
+ 
+ /* pp_file_ctime: single path arg on stack */
+-static OP* pp_file_ctime(pTHX) {
++FILE_RAW_PP(pp_file_ctime, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1207,7 +1207,7 @@
+ }
+ 
+ /* pp_file_mode: single path arg on stack */
+-static OP* pp_file_mode(pTHX) {
++FILE_RAW_PP(pp_file_mode, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1217,7 +1217,7 @@
+ }
+ 
+ /* pp_file_is_link: single path arg on stack */
+-static OP* pp_file_is_link(pTHX) {
++FILE_RAW_PP(pp_file_is_link, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1227,7 +1227,7 @@
+ }
+ 
+ /* pp_file_is_readable: single path arg on stack */
+-static OP* pp_file_is_readable(pTHX) {
++FILE_RAW_PP(pp_file_is_readable, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1237,7 +1237,7 @@
+ }
+ 
+ /* pp_file_is_writable: single path arg on stack */
+-static OP* pp_file_is_writable(pTHX) {
++FILE_RAW_PP(pp_file_is_writable, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1247,7 +1247,7 @@
+ }
+ 
+ /* pp_file_is_executable: single path arg on stack */
+-static OP* pp_file_is_executable(pTHX) {
++FILE_RAW_PP(pp_file_is_executable, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1257,7 +1257,7 @@
+ }
+ 
+ /* pp_file_readdir: single path arg on stack */
+-static OP* pp_file_readdir(pTHX) {
++FILE_RAW_PP(pp_file_readdir, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1268,7 +1268,7 @@
+ }
+ 
+ /* pp_file_slurp_raw: single path arg on stack (bypasses hooks) */
+-static OP* pp_file_slurp_raw(pTHX) {
++FILE_RAW_PP(pp_file_slurp_raw, 1) {
+     dSP;
+     SV *path_sv = POPs;
+     const char *path = SvPV_nolen(path_sv);
+@@ -1279,7 +1279,7 @@
+ }
+ 
+ /* pp_file_copy: src and dst on stack */
+-static OP* pp_file_copy(pTHX) {
++FILE_RAW_PP(pp_file_copy, 2) {
+     dSP;
+     SV *dst_sv = POPs;
+     SV *src_sv = POPs;
+@@ -1291,7 +1291,7 @@
+ }
+ 
+ /* pp_file_move: src and dst on stack */
+-static OP* pp_file_move(pTHX) {
++FILE_RAW_PP(pp_file_move, 2) {
+     dSP;
+     SV *dst_sv = POPs;
+     SV *src_sv = POPs;
+@@ -1303,7 +1303,7 @@
+ }
+ 
+ /* pp_file_chmod: path and mode on stack */
+-static OP* pp_file_chmod(pTHX) {
++FILE_RAW_PP(pp_file_chmod, 2) {
+     dSP;
+     SV *mode_sv = POPs;
+     SV *path_sv = POPs;
+@@ -1315,7 +1315,7 @@
+ }
+ 
+ /* pp_file_append: path and data on stack */
+-static OP* pp_file_append(pTHX) {
++FILE_RAW_PP(pp_file_append, 2) {
+     dSP;
+     SV *data = POPs;
+     SV *path_sv = POPs;
+@@ -1326,7 +1326,7 @@
+ }
+ 
+ /* pp_file_atomic_spew: path and data on stack */
+-static OP* pp_file_atomic_spew(pTHX) {
++FILE_RAW_PP(pp_file_atomic_spew, 2) {
+     dSP;
+     SV *data = POPs;
+     SV *path_sv = POPs;
+--- a/include/file_compat.h
++++ b/include/file_compat.h
+@@ -48,6 +48,17 @@
+ #  define XS_INTERNAL(name) static XSPROTO(name)
+ #endif
+ 
++/* Custom ops bypass the XSUB wrapper. Give their legacy stack operations
++ * an uncounted stack segment on RC builds. The prototype keeps the wrapper
++ * private, since XSPP_wrapped itself starts with a static declaration. */
++#if defined(PERL_RC_STACK) && (defined(XPERL_VERSION) || defined(XSPP_wrapped))
++#  define FILE_RAW_PP(name, nargs) \
++      static OP *name(pTHX); \
++      XSPP_wrapped(name, nargs, 0)
++#else
++#  define FILE_RAW_PP(name, nargs) static OP *name(pTHX)
++#endif
++
+ /* Op sibling macros - introduced in 5.22, needed for call checkers */
+ #ifndef OpHAS_SIBLING
+ #  define OpHAS_SIBLING(o)      ((o)->op_sibling != NULL)
+--- a/t/014-file-map-grep.t
++++ b/t/014-file-map-grep.t
+@@ -118,4 +118,26 @@
+     is_deeply($results[0], [1, 1, 1], 'nested for with File::Raw::exists works');
+ };
+ 
++subtest 'custom op ownership with temporary arguments' => sub {
++    my (@contents, @sizes, @lines, @names, @writes, @warnings);
++    {
++        local $SIG{__WARN__} = sub { push @warnings, @_ };
++        for my $i (1..20) {
++            push @writes, File::Raw::spew("$tempdir/retained$i.txt", "iteration $i\n");
++            push @contents, File::Raw::slurp("$tempdir/retained$i.txt");
++            push @sizes, File::Raw::size("$tempdir/retained$i.txt");
++            push @lines, File::Raw::lines("$tempdir/retained$i.txt");
++            push @names, File::Raw::basename("$tempdir/retained$i.txt");
++            File::Raw::exists("$tempdir/retained$i.txt");
++            File::Raw::append("$tempdir/retained$i.txt", "tail\n");
++        }
++    }
++    is_deeply(\@writes, [map { 1 } 1..20], 'two-argument results survive cleanup');
++    is_deeply(\@contents, [map { "iteration $_\n" } 1..20], 'strings survive cleanup');
++    is_deeply(\@sizes, [map { length("iteration $_\n") } 1..20], 'integers survive cleanup');
++    is_deeply(\@lines, [map { ["iteration $_"] } 1..20], 'references survive cleanup');
++    is_deeply(\@names, [map { "retained$_.txt" } 1..20], 'path results survive cleanup');
++    is_deeply(\@warnings, [], 'custom ops do not warn about scalar ownership');
++};
++
+ done_testing();
