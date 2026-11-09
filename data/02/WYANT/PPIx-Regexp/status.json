@@ -138,6 +138,74 @@
       },
       {
          "cpan_path" : "W/WY/WYANT/PPIx-Regexp-0.092.tar.gz",
+         "id" : "60b4e0c0b417b67b0a169a4762119ca379a89b92ceaa43dffa6ec8e20ba34397",
+         "module" : "PPIx::Regexp",
+         "observed_at" : "2026-11-08T20:12:09Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "e9c669c01d7c951f9bfee899c147fc8c8ddd98d3f32329f94000c7b02f53366b",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=13264",
+         "version" : "0.092",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "W/WY/WYANT/PPIx-Regexp-0.092.tar.gz",
          "id" : "f5a1880494fafc96aa5bdba292e6c1804251748419c69e39a712be77fe1e15e5",
          "module" : "PPIx::Regexp",
          "observed_at" : "2026-11-08T21:24:32Z",
