@@ -105,7 +105,10 @@
             "data/a9/MLEHMANN/Coro/patches/repair-v5.45.5-6.57-b24f0f405d05.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "refcounted-stack-custom-op-v1",
+            "refcounted-stack-switch-v1"
+         ],
          "version" : "6.57"
       },
       {
@@ -122,7 +125,9 @@
             "data/cc/XMATH/Data-Alias/patches/repair-v5.45.5-1.30-d576e9cae3b7.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
          "version" : "1.30"
       },
       {
@@ -351,7 +356,9 @@
             "data/28/KSTAR/Hash-SharedMem/patches/repair-v5.45.5-0.007-844e1a4a0f42.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
          "version" : "0.007"
       },
       {
@@ -521,7 +528,9 @@
             "data/27/ATOOMIC/Overload-FileCheck/patches/repair-v5.45.5-0.015-5c025376672c.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
          "version" : "0.015"
       },
       {

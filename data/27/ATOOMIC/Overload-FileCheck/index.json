@@ -13,7 +13,9 @@
                   }
                ],
                "purpose" : "compatibility",
-               "recipes" : [],
+               "recipes" : [
+                  "refcounted-stack-custom-op-v1"
+               ],
                "xperl" : {
                   "max_exclusive" : "v5.46.0",
                   "min_inclusive" : "v5.45.5"
