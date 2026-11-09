@@ -314,6 +314,74 @@
       },
       {
          "cpan_path" : "E/ET/ETHER/Try-Tiny-0.32.tar.gz",
+         "id" : "a08669c67b05ee305237320d516065002508b66bf61c4216a8bea6e98707fa8c",
+         "module" : "Try::Tiny",
+         "observed_at" : "2026-11-09T10:00:14Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            },
+            "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+         },
+         "source_sha256" : "ef2d6cab0bad18e3ab1c4e6125cc5f695c7e459899f512451c8fa3ef83fa7fc0",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=97",
+         "version" : "0.32",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Try-Tiny-0.32.tar.gz",
          "id" : "6669da171c113b26aa7a07676d6518e15382b14f853e128e7f37014981b56b67",
          "module" : "Try::Tiny",
          "observed_at" : "2026-11-09T10:05:20Z",
