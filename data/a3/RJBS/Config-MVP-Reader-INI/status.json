@@ -135,6 +135,74 @@
          "test_summary" : "Files=2, Tests=10",
          "version" : "2.101465",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RJ/RJBS/Config-MVP-Reader-INI-2.101465.tar.gz",
+         "id" : "49b665b04453a7e35f83ba2db29d1232182894e0615546cfb740f1353b735a1c",
+         "module" : "Config::MVP::Reader::INI",
+         "observed_at" : "2026-11-08T20:48:45Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "13c7aa27c1df98cd33ada399e59ff38fabfa9d65513e42af02f72c2d3f636247",
+         "status" : "installed",
+         "test_summary" : "Files=2, Tests=10",
+         "version" : "2.101465",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
