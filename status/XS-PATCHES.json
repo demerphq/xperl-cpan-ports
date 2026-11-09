@@ -330,6 +330,23 @@
          "version" : "1.31"
       },
       {
+         "author" : "XSAWYERX",
+         "distribution" : "Ref-Util-XS",
+         "evidence_paths" : [],
+         "index_path" : "data/ed/XSAWYERX/Ref-Util-XS/index.json",
+         "native_files" : [
+            "XS.xs"
+         ],
+         "patch_paths" : [
+            "data/ed/XSAWYERX/Ref-Util-XS/patches/rc-stack-custom-op-0.117-a3d03f5303ed.patch"
+         ],
+         "patch_set" : "rc-stack-custom-op-v1",
+         "recipes" : [
+            "refcounted-stack-custom-op-v1"
+         ],
+         "version" : "0.117"
+      },
+      {
          "author" : "YVES",
          "distribution" : "Sereal-Decoder",
          "evidence_paths" : [

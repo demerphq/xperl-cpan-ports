@@ -33,12 +33,11 @@ Prior failures remain in each distribution record after a later success.
 | GONZUS | [JavaScript-V8-XS](../data/f7/GONZUS/JavaScript-V8-XS/status.json) | 0.000014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | GONZUS | [Parser-GraphQL-XS](../data/21/GONZUS/Parser-GraphQL-XS/status.json) | 0.000004 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | HAARG | [Module-Reader](../data/42/HAARG/Module-Reader/status.json) | 0.003003 | v5.45.5 | linux/x86_64-linux | test | Files=3, Tests=119, Failed 1/3 test programs. 12/119 subtests failed. |
-| HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | darwin/darwin-2level | unknown | exit ? |
 | HAKONH | [Math-GSL](../data/8a/HAKONH/Math-GSL/status.json) | 0.49 | v5.45.5 | linux/x86_64-linux | test | Files=58, Tests=2, Failed 57/58 test programs. 1/2 subtests failed. |
 | HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | HUGMEIR | [Alien-libmariadbclient](../data/7f/HUGMEIR/Alien-libmariadbclient/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
-| ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | test | Files=26, Tests=2, Failed 25/26 test programs. 0/2 subtests failed. |
+| ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | configure | exit 143 |
 | IPH | [AnyEvent-Redis-RipeRedis](../data/61/IPH/AnyEvent-Redis-RipeRedis/status.json) | 1.62 | v5.45.5 | darwin/darwin-2level | test | Files=14, Tests=82, Failed 8/14 test programs. 0/82 subtests failed. |
 | IVAN | [Net-HTTPS-Any](../data/81/IVAN/Net-HTTPS-Any/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | test | Files=5, Tests=11, Failed 1/5 test programs. 3/11 subtests failed. |
 | JCRISTY | [Image-Magick-7.1.2](../data/d7/JCRISTY/Image-Magick-7.1.2/status.json) | 3 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
@@ -71,7 +70,6 @@ Prior failures remain in each distribution record after a later success.
 | PMQS | [DB_File](../data/3d/PMQS/DB_File/status.json) | 1.861 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=0 |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed. |
-| REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | test | Files=122, Tests=9066, Failed 1/122 test programs. 1/9066 subtests failed. |
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=8, Tests=148, Failed 2/8 test programs. 5/148 subtests failed. |
 | RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. (out-of-date-with-blead) |

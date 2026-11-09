@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 86 of 3396 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -103,6 +103,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | ARODLAND | [CLI-Osprey](../data/2b/ARODLAND/CLI-Osprey/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ARODLAND | [Catalyst-Plugin-Session-Store-DBIC](../data/b9/ARODLAND/Catalyst-Plugin-Session-Store-DBIC/status.json) | 0.15 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | ARODLAND | [Catalyst-Plugin-Session-Store-DBIC](../data/b9/ARODLAND/Catalyst-Plugin-Session-Store-DBIC/status.json) | 0.15 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| ARODLAND | [Crypt-PBKDF2](../data/d8/ARODLAND/Crypt-PBKDF2/status.json) | 0.261630 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ARODLAND | [Crypt-PBKDF2](../data/d8/ARODLAND/Crypt-PBKDF2/status.json) | 0.261630 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ARODLAND | [Digest-HMAC](../data/44/ARODLAND/Digest-HMAC/status.json) | 1.05 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ARODLAND | [Digest-HMAC](../data/44/ARODLAND/Digest-HMAC/status.json) | 1.05 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
@@ -242,6 +243,9 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | BLHOTSKY | [Parse-Syslog-Line](../data/dd/BLHOTSKY/Parse-Syslog-Line/status.json) | 6.4 | v5.45.5 | linux/x86_64-linux | failed | none | none |
 | BLOONIX | [Log-Handler](../data/d2/BLOONIX/Log-Handler/status.json) | 0.90 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | BLUEFEET | [Class-Measure](../data/58/BLUEFEET/Class-Measure/status.json) | 0.10 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| BLUEFEET | [GIS-Distance](../data/30/BLUEFEET/GIS-Distance/status.json) | 0.20 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| BLUEFEET | [Geo-Distance](../data/e1/BLUEFEET/Geo-Distance/status.json) | 0.25 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| BLUEFEET | [GitLab-API-v4](../data/91/BLUEFEET/GitLab-API-v4/status.json) | 0.27 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | BLUEFEET | [Perl-Critic-Policy-Moo-ProhibitMakeImmutable](../data/cd/BLUEFEET/Perl-Critic-Policy-Moo-ProhibitMakeImmutable/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | BOBMATH | [Crypt-CAST5_PP](../data/4d/BOBMATH/Crypt-CAST5_PP/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | BOBTFISH | [Catalyst-ActionRole-ACL](../data/0c/BOBTFISH/Catalyst-ActionRole-ACL/status.json) | 0.07 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
@@ -474,6 +478,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | DAGOLDEN | [Test-Number-Delta](../data/35/DAGOLDEN/Test-Number-Delta/status.json) | 1.06 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DAGOLDEN | [Test-Number-Delta](../data/35/DAGOLDEN/Test-Number-Delta/status.json) | 1.06 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Test-Number-Delta](../data/35/DAGOLDEN/Test-Number-Delta/status.json) | 1.06 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
+| DAGOLDEN | [Test-Roo](../data/21/DAGOLDEN/Test-Roo/status.json) | 1.004 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DAGOLDEN | [Test-Roo](../data/21/DAGOLDEN/Test-Roo/status.json) | 1.004 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | DAGOLDEN | [Test-Roo](../data/21/DAGOLDEN/Test-Roo/status.json) | 1.004 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Test-TempDir-Tiny](../data/ba/DAGOLDEN/Test-TempDir-Tiny/status.json) | 0.018 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -489,6 +494,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | DAMS | [PerlIO-via-Timeout](../data/4f/DAMS/PerlIO-via-Timeout/status.json) | 0.32 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAMS | [Redis](../data/80/DAMS/Redis/status.json) | 2.000 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | DAMS | [Redis](../data/80/DAMS/Redis/status.json) | 2.000 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| DANAJ | [Alt-Crypt-RSA-BigInt](../data/d4/DANAJ/Alt-Crypt-RSA-BigInt/status.json) | 0.06 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DANAJ | [Crypt-DSA-GMP](../data/fe/DANAJ/Crypt-DSA-GMP/status.json) | 0.02 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DANAJ | [Crypt-Random-Seed](../data/16/DANAJ/Crypt-Random-Seed/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DANAJ | [Crypt-Random-TESHA2](../data/36/DANAJ/Crypt-Random-TESHA2/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -935,6 +941,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | ETHER | [Test-EOL](../data/19/ETHER/Test-EOL/status.json) | 2.02 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ETHER | [Test-EOL](../data/19/ETHER/Test-EOL/status.json) | 2.02 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ETHER | [Test-EOL](../data/19/ETHER/Test-EOL/status.json) | 2.02 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
+| ETHER | [Test-JSON-Schema-Acceptance](../data/0b/ETHER/Test-JSON-Schema-Acceptance/status.json) | 1.040 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ETHER | [Test-JSON-Schema-Acceptance](../data/0b/ETHER/Test-JSON-Schema-Acceptance/status.json) | 1.040 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ETHER | [Test-Kwalitee](../data/e2/ETHER/Test-Kwalitee/status.json) | 1.28 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ETHER | [Test-Kwalitee](../data/e2/ETHER/Test-Kwalitee/status.json) | 1.28 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1061,6 +1068,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | FRACTAL | [String-Compare-ConstantTime](../data/48/FRACTAL/String-Compare-ConstantTime/status.json) | 0.321 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | FRANKC | [DBIx-Class-Schema-Loader-Dynamic](../data/b5/FRANKC/DBIx-Class-Schema-Loader-Dynamic/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | FRANKC | [Mojolicious-Plugin-Tables](../data/72/FRANKC/Mojolicious-Plugin-Tables/status.json) | 1.08 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| FREW | [DBIx-Introspector](../data/5b/FREW/DBIx-Introspector/status.json) | 0.001005 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | FREW | [DBIx-Introspector](../data/5b/FREW/DBIx-Introspector/status.json) | 0.001005 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | FREW | [IO-All](../data/c2/FREW/IO-All/status.json) | 0.87 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | FREW | [IO-All](../data/c2/FREW/IO-All/status.json) | 0.87 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1288,7 +1296,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | HAARG | [local-lib](../data/d6/HAARG/local-lib/status.json) | 2.000029 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | HAARG | [local-lib](../data/d6/HAARG/local-lib/status.json) | 2.000029 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | HAARG | [local-lib](../data/d6/HAARG/local-lib/status.json) | 2.000029 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
-| HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | darwin/darwin-2level | failed | none | none |
+| HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | HAARG | [strictures](../data/c9/HAARG/strictures/status.json) | 2.000006 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | HAKONH | [Math-GSL](../data/8a/HAKONH/Math-GSL/status.json) | 0.49 | v5.45.5 | linux/x86_64-linux | failed | none | none |
@@ -2575,7 +2583,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | REHSACK | [Hash-MoreUtils](../data/de/REHSACK/Hash-MoreUtils/status.json) | 0.06 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | REHSACK | [Hash-MoreUtils](../data/de/REHSACK/Hash-MoreUtils/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | REHSACK | [Hash-MoreUtils](../data/de/REHSACK/Hash-MoreUtils/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
-| REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | failed | none | none |
+| REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | installed | deterministic-exception-leak-tests | bebcc32b64091f3532132bb0da3d6c685e236ce72718840144356844608892a8 |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | deterministic-exception-leak-tests | bebcc32b64091f3532132bb0da3d6c685e236ce72718840144356844608892a8 |
 | REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | REHSACK | [List-MoreUtils-XS](../data/81/REHSACK/List-MoreUtils-XS/status.json) | 0.430 | v5.45.5 | darwin/darwin-2level | installed | deterministic-exception-leak-tests | 1dd5cfd6bd7432a5cfdc1a1609d0db9db84e5f71a30978a4990703bfa8864eb0 |
@@ -3123,12 +3131,14 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | TIMLEGGE | [Convert-ASN1](../data/3d/TIMLEGGE/Convert-ASN1/status.json) | 0.34 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Convert-ASN1](../data/3d/TIMLEGGE/Convert-ASN1/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | TIMLEGGE | [Convert-PEM](../data/82/TIMLEGGE/Convert-PEM/status.json) | 0.13 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| TIMLEGGE | [Crypt-CBC](../data/92/TIMLEGGE/Crypt-CBC/status.json) | 3.07 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-CBC](../data/92/TIMLEGGE/Crypt-CBC/status.json) | 3.07 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | TIMLEGGE | [Crypt-DES](../data/29/TIMLEGGE/Crypt-DES/status.json) | 2.09 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-DES](../data/29/TIMLEGGE/Crypt-DES/status.json) | 2.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | TIMLEGGE | [Crypt-DES_EDE3](../data/74/TIMLEGGE/Crypt-DES_EDE3/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-DSA](../data/9b/TIMLEGGE/Crypt-DSA/status.json) | 1.24 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-NaCl-Sodium](../data/ed/TIMLEGGE/Crypt-NaCl-Sodium/status.json) | 2.004 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| TIMLEGGE | [Crypt-OpenPGP](../data/01/TIMLEGGE/Crypt-OpenPGP/status.json) | 1.21 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-OpenSSL-AES](../data/28/TIMLEGGE/Crypt-OpenSSL-AES/status.json) | 0.23 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-OpenSSL-RSA](../data/ec/TIMLEGGE/Crypt-OpenSSL-RSA/status.json) | 0.41 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TIMLEGGE | [Crypt-OpenSSL-RSA](../data/ec/TIMLEGGE/Crypt-OpenSSL-RSA/status.json) | 0.41 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3169,6 +3179,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | TMTM | [Spreadsheet-WriteExcel-Simple](../data/dc/TMTM/Spreadsheet-WriteExcel-Simple/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TMTM | [Spreadsheet-WriteExcel-Simple](../data/dc/TMTM/Spreadsheet-WriteExcel-Simple/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | TMTM | [Spreadsheet-WriteExcel-Simple](../data/dc/TMTM/Spreadsheet-WriteExcel-Simple/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| TOBYINK | [Data-Perl](../data/67/TOBYINK/Data-Perl/status.json) | 0.002011 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | TOBYINK | [Data-Perl](../data/67/TOBYINK/Data-Perl/status.json) | 0.002011 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | TOBYINK | [Data-Perl](../data/67/TOBYINK/Data-Perl/status.json) | 0.002011 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | TOBYINK | [Devel-StrictMode](../data/84/TOBYINK/Devel-StrictMode/status.json) | 0.003 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3291,6 +3302,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | VIPUL | [Class-Loader](../data/4d/VIPUL/Class-Loader/status.json) | 2.03 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | VIPUL | [Convert-ASCII-Armour](../data/93/VIPUL/Convert-ASCII-Armour/status.json) | 1.4 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | VIPUL | [Math-Fibonacci](../data/22/VIPUL/Math-Fibonacci/status.json) | 1.5 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| VIPUL | [Tie-EncryptedHash](../data/58/VIPUL/Tie-EncryptedHash/status.json) | 1.24 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | VIPUL | [Tie-EncryptedHash](../data/58/VIPUL/Tie-EncryptedHash/status.json) | 1.24 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | VLADO | [Text-Ngrams](../data/42/VLADO/Text-Ngrams/status.json) | 2.007 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | VOJ | [File-Hotfolder](../data/5b/VOJ/File-Hotfolder/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3311,6 +3323,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | WATERKIP | [URN-OASIS-SAML2](../data/fe/WATERKIP/URN-OASIS-SAML2/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | WESM | [DBIx-Class-Candy](../data/bd/WESM/DBIx-Class-Candy/status.json) | 0.005004 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | WESM | [DBIx-Class-Candy](../data/bd/WESM/DBIx-Class-Candy/status.json) | 0.005004 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| WESM | [DBIx-Class-Helpers](../data/c3/WESM/DBIx-Class-Helpers/status.json) | 2.037000 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | WESM | [DBIx-Class-Helpers](../data/c3/WESM/DBIx-Class-Helpers/status.json) | 2.037000 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | WOLFSAGE | [Test-DescribeMe](../data/00/WOLFSAGE/Test-DescribeMe/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | WOLFSAGE | [Test-Settings](../data/a1/WOLFSAGE/Test-Settings/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3341,6 +3354,7 @@ Unresolved failures: 88 of 3382 release, XPerl, and platform combinations. See [
 | XSAWYERX | [Perl-Critic-Policy-Variables-ProhibitLoopOnHash](../data/77/XSAWYERX/Perl-Critic-Policy-Variables-ProhibitLoopOnHash/status.json) | 0.009 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | rc-stack-custom-op-v1 | a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3 |
 | YAKEX | [String-Unescape](../data/fa/YAKEX/String-Unescape/status.json) | v0.0.3 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | YAKEX | [Test-Kwalitee-Extra](../data/6e/YAKEX/Test-Kwalitee-Extra/status.json) | v0.4.0 | v5.45.5 | darwin/darwin-2level | failed | none | none |
 | YANICK | [Dancer-Plugin-REST](../data/31/YANICK/Dancer-Plugin-REST/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none | none |
