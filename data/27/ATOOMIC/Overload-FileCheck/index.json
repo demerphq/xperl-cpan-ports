@@ -1,0 +1,28 @@
+{
+   "distribution" : "Overload-FileCheck",
+   "releases" : [
+      {
+         "cpan_path" : "A/AT/ATOOMIC/Overload-FileCheck-0.015.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.015-5c025376672c.patch",
+                     "sha256" : "5c025376672c40d556d76156ffb3124abe787c30ba6a7c935034a8bfd608907e"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "c5898f0f612b699aae4ca9ee704dee3ea7de5815d2a544231b104a042ac309ec",
+         "version" : "0.015"
+      }
+   ],
+   "schema" : 1
+}

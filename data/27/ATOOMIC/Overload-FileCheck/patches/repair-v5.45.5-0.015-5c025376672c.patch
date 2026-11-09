@@ -1,0 +1,343 @@
+--- a/FileCheck.h
++++ b/FileCheck.h
+@@ -11,6 +11,37 @@
+ 
+ #define OP_MAX	MAXO
+ 
++/* Replacement PP handlers run on the RC stack, unlike ordinary XSUBs.
++ * Transfer popped references to the temps stack so callback results stay
++ * alive until scope cleanup. Keep the legacy API for ordinary Perl. */
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++#  define OFC_dSP
++#  define OFC_SP PL_stack_sp
++#  define OFC_EXTEND(n) rpp_extend(n)
++#  define OFC_PUSHs(sv) rpp_xpush_1(sv)
++#  define OFC_POPs sv_2mortal(rpp_pop_1_norc())
++#  define OFC_SETs(sv) rpp_replace_1_1(sv)
++#  define OFC_PUTBACK NOOP
++#  define OFC_SPAGAIN NOOP
++#  define OFC_RETURN return NORMAL
++#else
++#  define OFC_dSP dSP
++#  define OFC_SP SP
++#  define OFC_EXTEND(n) EXTEND(SP, n)
++#  define OFC_PUSHs(sv) XPUSHs(sv)
++#  define OFC_POPs POPs
++#  define OFC_SETs(sv) SETs(sv)
++#  define OFC_PUTBACK PUTBACK
++#  define OFC_SPAGAIN SPAGAIN
++#  define OFC_RETURN RETURN
++#endif
++
++/* OPf_REF operands live in the opcode, with no argument on the stack.
++ * Pass undef for _ so _check() can reuse the last mocked filename. */
++#define OFC_ARG ((PL_op->op_flags & OPf_REF) \
++    ? (cGVOP_gv == PL_defgv ? &PL_sv_undef : (SV *)cGVOP_gv) \
++    : *PL_stack_sp)
++
+ /* informations for a single overload mock */
+ typedef struct {
+ 	int is_mocked; /* int for now.. could use function later */
+@@ -45,11 +76,13 @@
+ static OP *
+ S_ft_return_false(pTHX_ SV *ret) {
+     OP *next = NORMAL;
+-    dSP;
++    int saved_errno = errno;
++    OFC_dSP;
+ 
+-    if (PL_op->op_flags & OPf_REF) XPUSHs(ret);
+-    else         SETs(ret);
+-    PUTBACK;
++    if (PL_op->op_flags & OPf_REF) OFC_PUSHs(ret);
++    else         OFC_SETs(ret);
++    OFC_PUTBACK;
++    errno = saved_errno;
+ 
+     if (PL_op->op_private & OPpFT_STACKING) {
+         while (next && OP_IS_FILETEST(next->op_type)
+@@ -61,12 +94,14 @@
+ 
+ PERL_STATIC_INLINE OP *
+ S_ft_return_true(pTHX_ SV *ret) {
+-    dSP;
++    int saved_errno = errno;
++    OFC_dSP;
+     if (PL_op->op_flags & OPf_REF)
+-        XPUSHs(PL_op->op_private & OPpFT_STACKING ? (SV *)cGVOP_gv : (ret));
++        OFC_PUSHs(PL_op->op_private & OPpFT_STACKING ? (SV *)cGVOP_gv : (ret));
+     else if (!(PL_op->op_private & OPpFT_STACKING))
+-        SETs(ret);
+-    PUTBACK;
++        OFC_SETs(ret);
++    OFC_PUTBACK;
++    errno = saved_errno;
+     return NORMAL;
+ }
+ 
+@@ -165,8 +200,8 @@
+  * other Perl code that clobbers errno set by the mock callback. */
+ #define LEAVE_PRESERVING_ERRNO() STMT_START { \
+     int _saved_errno = errno; \
+-    PUTBACK; FREETMPS; LEAVE; \
++    OFC_PUTBACK; FREETMPS; LEAVE; \
+     errno = _saved_errno; \
+ } STMT_END
+ 
+-#endif /* XS_FILE_CHECK_H */
+\ No newline at end of file
++#endif /* XS_FILE_CHECK_H */
+--- a/FileCheck.xs
++++ b/FileCheck.xs
+@@ -51,7 +51,7 @@
+ 
+ #define RETURN_CALL_REAL_OP_IF_CALL_WITH_DEFGV() STMT_START { \
+     if (gl_overload_ft->op[OP_STAT].is_mocked) { \
+-      SV *arg = *PL_stack_sp; GV *gv; \
++      SV *arg = OFC_ARG; GV *gv; \
+       if ( SvTYPE(arg) == SVt_PVAV ) arg = arg + AvMAX( arg ); \
+       if ( PL_op->op_flags & OPf_REF ) \
+         gv = cGVOP_gv; \
+@@ -80,32 +80,32 @@
+ */
+ int _overload_ft_ops(pTHX) {
+   dMY_CXT;
+-  SV *const arg = *PL_stack_sp;
++  SV *const arg = OFC_ARG;
+   int optype = PL_op->op_type;  /* this is the current op_type we are mocking */
+   int check_status = -1;        /* 1 -> YES ; 0 -> FALSE ; -1 -> delegate */
+   int count;
+ 
+-  dSP;
++  OFC_dSP;
+ 
+   ENTER;
+   SAVETMPS;
+ 
+-  PUSHMARK(SP);
+-  EXTEND(SP, 2);
+-  PUSHs(sv_2mortal(newSViv(optype)));
+-  PUSHs(arg);
++  PUSHMARK(OFC_SP);
++  OFC_EXTEND(2);
++  OFC_PUSHs(sv_2mortal(newSViv(optype)));
++  OFC_PUSHs(arg);
+ 
+-  PUTBACK;
++  OFC_PUTBACK;
+ 
+   count = call_pv("Overload::FileCheck::_check", G_SCALAR);
+ 
+-  SPAGAIN;
++  OFC_SPAGAIN;
+ 
+   if (count != 1)
+     croak("No return value from Overload::FileCheck::_check for OP #%d\n", optype);
+ 
+   {
+-    SV *result_sv = POPs;
++    SV *result_sv = OFC_POPs;
+     if (!SvOK(result_sv))
+       check_status = -2;  /* undef => CHECK_IS_NULL */
+     else
+@@ -133,32 +133,32 @@
+ */
+ void _overload_ft_ops_nv(pTHX_ int *status_out, NV *nv_out) {
+   dMY_CXT;
+-  SV *const arg = *PL_stack_sp;
++  SV *const arg = OFC_ARG;
+   int optype = PL_op->op_type;
+   int count;
+ 
+-  dSP;
++  OFC_dSP;
+ 
+   ENTER;
+   SAVETMPS;
+ 
+-  PUSHMARK(SP);
+-  EXTEND(SP, 2);
+-  PUSHs(sv_2mortal(newSViv(optype)));
+-  PUSHs(arg);
++  PUSHMARK(OFC_SP);
++  OFC_EXTEND(2);
++  OFC_PUSHs(sv_2mortal(newSViv(optype)));
++  OFC_PUSHs(arg);
+ 
+-  PUTBACK;
++  OFC_PUTBACK;
+ 
+   count = call_pv("Overload::FileCheck::_check", G_ARRAY);
+ 
+-  SPAGAIN;
++  OFC_SPAGAIN;
+ 
+   if (count < 1)
+     croak("No return value from Overload::FileCheck::_check for OP #%d\n", optype);
+ 
+   if (count == 1) {
+     /* Single return: FALLBACK_TO_REAL_OP or CHECK_IS_NULL */
+-    SV *sv = POPs;
++    SV *sv = OFC_POPs;
+     if (!SvOK(sv))
+       *status_out = -2;  /* undef => CHECK_IS_NULL */
+     else
+@@ -167,15 +167,15 @@
+   }
+   else if (count == 2) {
+     /* Pair return: (status_code, nv_value) */
+-    SV *value_sv = POPs;
+-    SV *status_sv = POPs;
++    SV *value_sv = OFC_POPs;
++    SV *status_sv = OFC_POPs;
+     *status_out = SvIV(status_sv);
+     *nv_out = SvNV(value_sv);
+   }
+   else {
+     /* Pop excess values to avoid stack corruption */
+     int orig_count = count;
+-    while (count-- > 0) (void)POPs;
++    while (count-- > 0) (void)OFC_POPs;
+     croak("Overload::FileCheck::_check returned %d values for NV OP #%d, expected 1 or 2\n", orig_count, optype);
+   }
+ 
+@@ -210,26 +210,26 @@
+ */
+ int _overload_ft_stat(pTHX_ Stat_t *stat, int *size) {
+   dMY_CXT;
+-  SV *const arg = *PL_stack_sp;
++  SV *const arg = OFC_ARG;
+   int optype = PL_op->op_type;  /* this is the current op_type we are mocking */
+   int check_status = -1;        /* 1 -> YES ; 0 -> FALSE ; -1 -> delegate */
+ 
+-  dSP;
++  OFC_dSP;
+   int count;
+   SV *sv;
+ 
+   ENTER;
+   SAVETMPS;
+ 
+-  PUSHMARK(SP);
+-  EXTEND(SP, 2);
+-  PUSHs(sv_2mortal(newSViv(optype)));
+-  PUSHs(arg);
+-  PUTBACK;
++  PUSHMARK(OFC_SP);
++  OFC_EXTEND(2);
++  OFC_PUSHs(sv_2mortal(newSViv(optype)));
++  OFC_PUSHs(arg);
++  OFC_PUTBACK;
+ 
+   count = call_pv("Overload::FileCheck::_check", G_ARRAY);
+ 
+-  SPAGAIN;
++  OFC_SPAGAIN;
+ 
+   if (count < 1)
+     croak("Overload::FileCheck::_check for stat OP #%d should return at least one SV.\n", optype);
+@@ -237,8 +237,8 @@
+     croak("Overload::FileCheck::_check for stat OP #%d should return no more than two SVs.\n", optype);
+ 
+   /* popping the stack from last entry to first */
+-  if (count == 2) sv = POPs; /* RvAV */
+-  check_status = POPi;
++  if (count == 2) sv = OFC_POPs; /* RvAV */
++  check_status = SvIV(OFC_POPs);
+ 
+   *size = -1; /* by default it fails */
+ 
+@@ -427,10 +427,10 @@
+   */
+ 
+   {
+-      dSP;
++      OFC_dSP;
+ 
+       /* drop & replace our stack first element with *_ */
+-      SV *previous_stack = POPs;
++      SV *previous_stack = OFC_POPs;
+ 
+       /* copy the content of mocked_stat to PL_statcache */
+       memcpy(&PL_statcache, &mocked_stat, sizeof(PL_statcache));
+@@ -447,10 +447,13 @@
+        * In such a case, we set the statcache, but do not call
+        * the real op (CALL_REAL_OP)
+       */
+-      if ( size < 0 )
+-        RETURN;
++      if ( size < 0 ) {
++        if (GIMME_V != G_ARRAY)
++          OFC_PUSHs(&PL_sv_no);
++        OFC_RETURN;
++      }
+ 
+-      PUSHs( MUTABLE_SV( PL_defgv ) ); /* add *_ to the stack */
++      OFC_PUSHs( MUTABLE_SV( PL_defgv ) ); /* add *_ to the stack */
+ 
+       /* probably not real necesseary, make warning messages nicer */
+       if ( previous_stack && SvPOK(previous_stack) )
+--- a/t/stack-corruption.t
++++ b/t/stack-corruption.t
+@@ -61,6 +61,61 @@
+ 
+ is $TOTAL_CALL, 3, "mystat was called 3 times";
+ 
++unmock_all_file_checks();
++
++subtest 'callback and opcode stack ownership' => sub {
++    my @files;
++    mock_file_check( e => sub {
++        push @files, $_[0];
++        die "callback stopped\n" if $_[0] eq 'die';
++        return CHECK_IS_TRUE;
++    } );
++
++    is [ 'before', -e join('', '/temporary/', 'file'), 'after' ],
++      [ 'before', 1, 'after' ], 'temporary operand preserves surrounding values';
++    is [ 'before', -e _, 'after' ], [ 'before', 1, 'after' ],
++      'underscore has no stack operand';
++    is \@files, [ '/temporary/file', '/temporary/file' ],
++      'underscore callback receives the preceding filename';
++
++    eval { my $result = -e 'die' };
++    like $@, qr/callback stopped/, 'callback exception unwinds the stack';
++    ok -e join('', '/after/', 'exception'), 'callback works after exception';
++    unmock_all_file_checks();
++
++    mock_file_check( s => sub { return join('', '12', '34') } );
++    is [ 'before', -s join('', '/size/', 'file'), 'after' ],
++      [ 'before', 1234, 'after' ], 'integer callback result stays alive';
++    unmock_all_file_checks();
++
++    for my $check (qw(M A C)) {
++        mock_file_check( $check => sub { my $age = -1.25; return \$age } );
++        my $age = eval "-$check '/age/file'";
++        is $@, '', "-$check callback succeeds";
++        is $age, -1.25, "-$check preserves the NV result";
++        unmock_all_file_checks();
++    }
++
++    my @real_stat = stat($0);
++    mock_file_check( e => sub { FALLBACK_TO_REAL_OP } );
++    ok -e $0, 'fallback calls the original opcode on the RC stack';
++    unmock_all_file_checks();
++
++    mock_stat( sub { return [@real_stat] } );
++    is [ 'before', stat(join('', '/mock/', 'file')), 'after' ],
++      [ 'before', @real_stat, 'after' ], 'stat callback result stays alive';
++    unmock_all_file_checks();
++
++    mock_stat( sub { return [] } );
++    is [ 'before', scalar stat('/missing'), 'after' ],
++      [ 'before', '', 'after' ], 'failed scalar stat preserves the stack';
++    is [ 'before', scalar lstat('/missing'), 'after' ],
++      [ 'before', '', 'after' ], 'failed scalar lstat preserves the stack';
++    is [ 'before', stat('/missing'), 'after' ], [ 'before', 'after' ],
++      'failed list stat returns no values';
++    unmock_all_file_checks();
++};
++
+ done_testing;
+ 
+ sub boom {
