@@ -1,0 +1,28 @@
+{
+   "distribution" : "Object-Proto",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Object-Proto-1.04.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.04-127f52af60a3.patch",
+                     "sha256" : "127f52af60a3891ad85ab458d9e94bb91a23511399ae1fb4fdc8975149efb00c"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "1afb7cf7d7639cd19e0dccd9091b8fe0d72b21ad9fd5c6710107b132f6ad8afa",
+         "version" : "1.04"
+      }
+   ],
+   "schema" : 1
+}
