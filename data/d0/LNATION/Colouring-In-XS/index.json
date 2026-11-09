@@ -1,0 +1,28 @@
+{
+   "distribution" : "Colouring-In-XS",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Colouring-In-XS-0.13.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.13-60ed5a5b606a.patch",
+                     "sha256" : "60ed5a5b606ace9ae9752ab2e5cd3c400695b1418bab7e6ee0c4098b2994b51c"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "799b877f52d6597feebeb2b627da5d093277aaa16228f5434830fd988134f832",
+         "version" : "0.13"
+      }
+   ],
+   "schema" : 1
+}

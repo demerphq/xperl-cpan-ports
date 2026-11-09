@@ -1,0 +1,318 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,9 @@
+ Revision history for Colouring-In-XS
+ 
++        - Wrap custom opcode handlers on XPerl PERL_RC_STACK builds to
++          preserve argument and result ownership. Keep foreign method
++          dispatch outside the wrapper.
++
+ 0.13    2026-11-06
+         - Stringifying a colour no longer warns of an uninitialized value.
+         - Tests cover every line of the XS and the headers under Devel::XSCover.
+--- a/include/in_ops.h
++++ b/include/in_ops.h
+@@ -33,11 +33,27 @@
+     }                                                                          \
+ } STMT_END
+ 
++/* Wrap the whole marked argument list, including the resolved method CV.
++ * The invocant guard runs before wrapping: entersub must see the original
++ * stack when it dispatches a foreign Perl or XS method. */
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++#  define COLOURING_PP_BODY(name) XSPP_wrapped(name, 0, 1)
++#else
++#  define COLOURING_PP_BODY(name) static OP * name(pTHX)
++#endif
++
++#define COLOURING_PP(name)                         \
++    static OP * name##_body(pTHX);                 \
++    static OP * name(pTHX) {                       \
++        COLOURING_GUARD_INVOCANT();                \
++        return name##_body(aTHX);                  \
++    }                                             \
++    COLOURING_PP_BODY(name##_body)
++
+ /* ── Format ops (self → string) ───────────────────────────────── */
+ 
+-static OP * pp_colouring_toHEX(pTHX) {
++COLOURING_PP(pp_colouring_toHEX) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -59,9 +75,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toRGB(pTHX) {
++COLOURING_PP(pp_colouring_toRGB) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -84,9 +99,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toRGBA(pTHX) {
++COLOURING_PP(pp_colouring_toRGBA) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -101,9 +115,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toHSL(pTHX) {
++COLOURING_PP(pp_colouring_toHSL) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -120,9 +133,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toHSV(pTHX) {
++COLOURING_PP(pp_colouring_toHSV) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -139,9 +151,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toCSS(pTHX) {
++COLOURING_PP(pp_colouring_toCSS) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -162,9 +173,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toTerm(pTHX) {
++COLOURING_PP(pp_colouring_toTerm) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -179,9 +189,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_toOnTerm(pTHX) {
++COLOURING_PP(pp_colouring_toOnTerm) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+@@ -198,9 +207,8 @@
+ 
+ /* ── Manipulation ops (self, amount → new object) ─────────────── */
+ 
+-static OP * pp_colouring_lighten(pTHX) {
++COLOURING_PP(pp_colouring_lighten) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -226,9 +234,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_darken(pTHX) {
++COLOURING_PP(pp_colouring_darken) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -254,9 +261,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_fade(pTHX) {
++COLOURING_PP(pp_colouring_fade) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * colour = *(mark + 1);
+@@ -275,9 +281,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_fadeout(pTHX) {
++COLOURING_PP(pp_colouring_fadeout) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -303,9 +308,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_fadein(pTHX) {
++COLOURING_PP(pp_colouring_fadein) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -331,9 +335,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_saturate(pTHX) {
++COLOURING_PP(pp_colouring_saturate) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -359,9 +362,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_desaturate(pTHX) {
++COLOURING_PP(pp_colouring_desaturate) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -387,9 +389,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_greyscale(pTHX) {
++COLOURING_PP(pp_colouring_greyscale) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * colour = *(mark + 1);
+@@ -407,9 +408,8 @@
+ 
+ /* ── Mix-family ops (self, colour2[, weight] → new object) ────── */
+ 
+-static OP * pp_colouring_mix(pTHX) {
++COLOURING_PP(pp_colouring_mix) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax       = POPMARK;
+ 	SV **mark    = PL_stack_base + ax;
+ 	I32 items    = (I32)(SP - mark);
+@@ -435,9 +435,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_tint(pTHX) {
++COLOURING_PP(pp_colouring_tint) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -460,9 +459,8 @@
+ 	return NORMAL;
+ }
+ 
+-static OP * pp_colouring_shade(pTHX) {
++COLOURING_PP(pp_colouring_shade) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	I32 items   = (I32)(SP - mark);
+@@ -487,9 +485,8 @@
+ 
+ /* ── Accessor op ──────────────────────────────────────────────── */
+ 
+-static OP * pp_colouring_colour(pTHX) {
++COLOURING_PP(pp_colouring_colour) {
+ 	dSP;
+-	COLOURING_GUARD_INVOCANT();
+ 	I32 ax      = POPMARK;
+ 	SV **mark   = PL_stack_base + ax;
+ 	SV * self   = *(mark + 1);
+--- a/t/20-method-name-collision.t
++++ b/t/20-method-name-collision.t
+@@ -1,6 +1,6 @@
+ use strict;
+ use warnings;
+-use Test::More tests => 8;
++use Test::More tests => 12;
+ 
+ use Colouring::In::XS;
+ 
+@@ -28,3 +28,19 @@
+ # Sanity: real Colouring object still dispatches through our pp
+ my $c = Colouring::In::XS->new('#fff');
+ is($c->toHEX, '#fff', 'colouring ->toHEX still works');
++
++{
++    package ForeignXS;
++    no warnings 'once';
++    *toHEX = \&Colouring::In::XS::get_message;
++}
++is(ForeignXS->toHEX, undef, 'a foreign XS method falls through');
++
++{
++    package ForeignDies;
++    sub toHEX { die "foreign method exception\n" }
++}
++my $ok = eval { ForeignDies->toHEX; 1 };
++ok(!$ok, 'a foreign Perl method can throw');
++like($@, qr/^foreign method exception/, 'the foreign exception survives');
++is($c->toHEX, '#fff', 'colouring calls work after foreign fallback');
+--- a/t/22-methods.t
++++ b/t/22-methods.t
+@@ -52,4 +52,32 @@
+ is($h->toRGB, 'rgba(255,255,255,0.5)', 'toRGB keeps an alpha below one');
+ is($c->toRGB, 'rgb(51,102,153)', 'and drops an alpha of one');
+ 
++{
++    package Colouring::In::XS::Tracked;
++    our @ISA = ('Colouring::In::XS');
++    our $destroyed = 0;
++    sub DESTROY { $destroyed++ }
++}
++
++my @stack_warnings;
++{
++    local $SIG{__WARN__} = sub { push @stack_warnings, @_ };
++    my (@hex, @channels);
++    for (1 .. 20) {
++        push @hex, Colouring::In::XS::Tracked->new('#123')->toHEX(1);
++        @channels = Colouring::In::XS->new('#123')->colour;
++        Colouring::In::XS->new('#123')->toRGB;
++    }
++    is_deeply(\@hex, [('#112233') x 20], 'temporary invocants return strings');
++    is_deeply(\@channels, [17, 34, 51], 'list results survive temporary invocants');
++    is($Colouring::In::XS::Tracked::destroyed, 20,
++       'optimized calls release temporary invocants');
++
++    my $ok = eval { $c->mix('invalid colour'); 1 };
++    ok(!$ok, 'an optimized method can throw');
++    like($@, qr/Cannot convert the colour format/, 'the exception survives');
++    is($c->toHEX(1), '#336699', 'the stack works after an exception');
++}
++is_deeply(\@stack_warnings, [], 'optimized calls preserve stack ownership');
++
+ done_testing;
