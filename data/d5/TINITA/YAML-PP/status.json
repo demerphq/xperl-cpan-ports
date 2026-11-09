@@ -284,6 +284,82 @@
       {
          "advisories" : [],
          "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
+         "id" : "e49fadf3e2719160d4c917edb8c7a1e5abbbca62595a8cdc68b1192710dbb7d3",
+         "module" : "YAML::PP",
+         "observed_at" : "2026-11-08T20:08:40Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "localize-no-color",
+         "patch_sha256" : [
+            "132640836435c928cd3b6ef8e295c4b3d5c3c4e96c3c7d4dcadd1f3e316680a6"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "f4a2a6d22b32a31e418debcbd04b843ba0997f9dea0fcc1f96b08b2f2ebcb2e7",
+         "status" : "installed",
+         "test_summary" : "Files=45, Tests=7527",
+         "version" : "v0.43.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "T/TI/TINITA/YAML-PP-v0.43.0.tar.gz",
          "id" : "6fb8b829509a197a35f02b0b5f025981bfb12b7a6eba207f231d5c429ee84a25",
          "module" : "YAML::PP",
          "observed_at" : "2026-11-08T21:20:45Z",
