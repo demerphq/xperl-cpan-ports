@@ -1,0 +1,58 @@
+--- a/lib/PDL/Core/pdlaffine.c
++++ b/lib/PDL/Core/pdlaffine.c
+@@ -1,4 +1,3 @@
+-#include "pdl.h"
+ #define PDL_IN_CORE
+ #include "pdlcore.h"
+ 
+--- a/lib/PDL/Core/pdlapi.c
++++ b/lib/PDL/Core/pdlapi.c
+@@ -1,6 +1,5 @@
+ /* pdlapi.c - functions for manipulating pdl structs  */
+ 
+-#include "pdl.h"      /* Data structure declarations */
+ #define PDL_IN_CORE
+ #include "pdlcore.h"  /* Core declarations */
+ 
+--- a/lib/PDL/Core/pdlbroadcast.c
++++ b/lib/PDL/Core/pdlbroadcast.c
+@@ -1,7 +1,6 @@
+ /* XXX NOTE THAT IT IS NOT SAFE TO USE ->pdls MEMBER OUTSIDE
+    INITBROADCASTSTRUCT! */
+ 
+-#include "pdl.h"      /* Data structure declarations */
+ #include "pdlcore.h"  /* Core declarations */
+ 
+ #define MAX2(a,b) if ((b)>(a)) a=b;
+--- a/lib/PDL/Core/pdlconv.c
++++ b/lib/PDL/Core/pdlconv.c
+@@ -1,4 +1,3 @@
+-#include "pdl.h"      /* Data structure declarations */
+ #include "pdlcore.h"  /* Core declarations */
+ 
+ extern struct Core PDL;
+--- a/lib/PDL/Core/pdlcore.c
++++ b/lib/PDL/Core/pdlcore.c
+@@ -1,4 +1,3 @@
+-#include "pdl.h"      /* Data structure declarations */
+ #define PDL_IN_CORE /* access funcs directly not through PDL-> */
+ #include "pdlcore.h"  /* Core declarations */
+ #include "pdlperl.h"
+--- a/lib/PDL/Core/pdlcore.h
++++ b/lib/PDL/Core/pdlcore.h
+@@ -10,6 +10,8 @@
+ #define pdl_iterbroadcastloop pdl_iterthreadloop
+ #define get_broadcastdims get_threaddims
+ 
++/* Load Perl before pdl.h: <complex.h> defines I, which can expand in
++ * Perl's interpreter-variable declarations. */
+ #include "EXTERN.h"   /* std perl include */
+ #include "perl.h"     /* std perl include */
+ #include "XSUB.h"  /* for the win32 perlCAPI crap */
+--- a/lib/PDL/Core/pdlutil.c
++++ b/lib/PDL/Core/pdlutil.c
+@@ -1,4 +1,3 @@
+-#include "pdl.h"      /* Data structure declarations */
+ #define PDL_IN_CORE
+ #include "pdlcore.h"  /* Core declarations */
+ #include <stdarg.h>

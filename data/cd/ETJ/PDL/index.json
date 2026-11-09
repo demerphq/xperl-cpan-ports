@@ -1,0 +1,28 @@
+{
+   "distribution" : "PDL",
+   "releases" : [
+      {
+         "cpan_path" : "E/ET/ETJ/PDL-2.106.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-2.106-53070e940fd7.patch",
+                     "sha256" : "53070e940fd707b8f577a6c047dc79e3c73c0a6753bd4f8ea19dd4f3c5e54458"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "f500e740d327e221985ac35f38f5e1e42bf2e3a690c0ed927ac9ed17d9d8241b",
+         "version" : "2.106"
+      }
+   ],
+   "schema" : 1
+}
