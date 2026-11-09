@@ -1,0 +1,28 @@
+{
+   "distribution" : "XML-Hash-XS",
+   "releases" : [
+      {
+         "cpan_path" : "Y/YO/YOREEK/XML-Hash-XS-0.66.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.66-70daa05dbfc3.patch",
+                     "sha256" : "70daa05dbfc313821cd9e90c81ee1f60671b7e6275c7292ec51ff6089ad83d74"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "9b65c252ebd459a028045379456e64fe8f4a609f3a9f48d15a3e02178538cc79",
+         "version" : "0.66"
+      }
+   ],
+   "schema" : 1
+}

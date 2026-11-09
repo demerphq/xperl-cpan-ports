@@ -1,0 +1,86 @@
+--- a/src/XS.xs
++++ b/src/XS.xs
+@@ -196,6 +196,7 @@
+             XCPT_RETHROW;
+         }
+         SvREFCNT_dec(parser);
++        if (RETVAL == NULL) XSRETURN_UNDEF;
+     OUTPUT:
+         RETVAL
+ 
+--- a/src/xh_reader.c
++++ b/src/xh_reader.c
+@@ -494,6 +494,8 @@
+         len = 0;
+     }
+ 
++    PUTBACK;
++
+     FREETMPS;
+     LEAVE;
+ 
+--- a/t/11-x2h_read.t
++++ b/t/11-x2h_read.t
+@@ -2,7 +2,7 @@
+ use strict;
+ use warnings;
+ 
+-use Test::More tests => 6;
++use Test::More tests => 7;
+ use Data::Dumper;
+ $Data::Dumper::Indent = 0;
+ $Data::Dumper::Sortkeys = 1;
+@@ -63,6 +63,8 @@
+ }
+ 
+ {
++    my @warnings;
++    local $SIG{__WARN__} = sub { push @warnings, @_ };
+     tie *DATA, 'MyReader', '<?xml version="1.0" encoding="utf-8"?><root>Привет!</root>';
+     use utf8;
+     is
+@@ -71,6 +73,7 @@
+         'read from tied handle',
+     ;
+     untie *DATA;
++    is_deeply(\@warnings, [], 'tied reads leave no scalar lifetime warnings');
+ }
+ 
+ {
+--- a/t/21-x2h-callback-control.t
++++ b/t/21-x2h-callback-control.t
+@@ -15,6 +15,34 @@
+ is(XML_HASH_XS_STOP, 'XML_HASH_XS_STOP', 'STOP constant');
+ is(XML_HASH_XS_SKIP, 'XML_HASH_XS_SKIP', 'SKIP constant');
+ 
++for my $mode (qw(node events)) {
++    for my $stop (0, 1) {
++        for my $context (qw(scalar list void)) {
++            my $parser = XML::Hash::XS::Parser->new(
++                filter => '/root/item',
++                cb_mode => $mode,
++                cb => sub {
++                    return $stop ? XML_HASH_XS_STOP : XML_HASH_XS_CONTINUE;
++                },
++            );
++            $parser->feed('<root><item>one</item></root>');
++            my $label = "finish in $context context ($mode, stop=$stop)";
++            if ($context eq 'scalar') {
++                my $result = $parser->finish;
++                ok(!defined $result, $label);
++            }
++            elsif ($context eq 'list') {
++                my @result = $parser->finish;
++                is_deeply(\@result, [ undef ], $label);
++            }
++            else {
++                $parser->finish;
++                pass($label);
++            }
++        }
++    }
++}
++
+ {
+     my @nodes;
+     my $result = xml2hash(
