@@ -91,6 +91,74 @@
       },
       {
          "cpan_path" : "R/RS/RSCHUPP/Module-ScanDeps-1.37.tar.gz",
+         "id" : "0b35470c140f550a84a976c2d66e1b6e08006fb12753ceaa463778f77e592b94",
+         "module" : "Module::ScanDeps",
+         "observed_at" : "2026-11-08T20:11:36Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "1f5e119cade1466c39c71e5bc35a8d4f4e672635db03d79a5a0dcf08c4e2b5a3",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=204",
+         "version" : "1.37",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "R/RS/RSCHUPP/Module-ScanDeps-1.37.tar.gz",
          "id" : "6dca7bad6072bc481c4b7cb98c62bb0e867cde92030948ff7c2292cc98e49e7e",
          "module" : "Module::ScanDeps",
          "observed_at" : "2026-11-08T21:22:44Z",
