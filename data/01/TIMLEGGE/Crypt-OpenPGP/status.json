@@ -1,0 +1,54 @@
+{
+   "author" : "TIMLEGGE",
+   "distribution" : "Crypt-OpenPGP",
+   "observations" : [
+      {
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenPGP-1.21.tar.gz",
+         "id" : "e11b05ec5961194dc7a45c4a3389c614c9a66ca2c10efe9539739d423f7e6a1a",
+         "module" : "Crypt::OpenPGP",
+         "observed_at" : "2026-11-07T14:21:51Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "9dc497f41fcb4b27f6be54bf682a76b58ae0ff58090ff4dca73a82e3584636b9",
+         "status" : "installed",
+         "test_summary" : "Files=18, Tests=354",
+         "version" : "1.21",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

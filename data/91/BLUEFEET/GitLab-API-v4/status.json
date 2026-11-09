@@ -1,0 +1,54 @@
+{
+   "author" : "BLUEFEET",
+   "distribution" : "GitLab-API-v4",
+   "observations" : [
+      {
+         "cpan_path" : "B/BL/BLUEFEET/GitLab-API-v4-0.27.tar.gz",
+         "id" : "ab03e54671240662ba0fe09321002d109f637ff69a529394ecd94cc2e1d5d7a3",
+         "module" : "GitLab::API::v4",
+         "observed_at" : "2026-11-07T14:21:28Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "d49bf295cb46a1cc94ec9d2f9051171e390e560dfaea1cd06ae852194d6fc259",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=2",
+         "version" : "0.27",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}

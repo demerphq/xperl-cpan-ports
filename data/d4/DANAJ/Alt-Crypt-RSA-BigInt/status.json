@@ -1,0 +1,54 @@
+{
+   "author" : "DANAJ",
+   "distribution" : "Alt-Crypt-RSA-BigInt",
+   "observations" : [
+      {
+         "cpan_path" : "D/DA/DANAJ/Alt-Crypt-RSA-BigInt-0.06.tar.gz",
+         "id" : "cfb33850801f19e2765bc1908eea140a7f31bf3aa67d4621f2c36860e24887c7",
+         "module" : "Alt::Crypt::RSA::BigInt",
+         "observed_at" : "2026-11-07T14:21:49Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "76f434cab36999cdf09811345bb39d6b7cbed7e085b02338328c7f46e08b38f3",
+         "status" : "installed",
+         "test_summary" : "Files=21, Tests=117",
+         "version" : "0.06",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
