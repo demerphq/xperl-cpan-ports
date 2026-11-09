@@ -274,6 +274,74 @@
       },
       {
          "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+         "id" : "a9ce55e3f8e1a126c2aee84be20f596188082c1b18d6592db0e18c4ab08938a2",
+         "module" : "B::COW",
+         "observed_at" : "2026-11-09T10:00:13Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            },
+            "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+         },
+         "source_sha256" : "1290daf227e8b09889a31cf182e29106f1cf9f1a4e9bf7752f9de92ed1158b44",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=22",
+         "version" : "0.007",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
          "id" : "88044394ccefe0a420a4f58afbb02ed7dce81368f7caeb951a1351b169202245",
          "module" : "B::COW",
          "observed_at" : "2026-11-09T10:05:19Z",
