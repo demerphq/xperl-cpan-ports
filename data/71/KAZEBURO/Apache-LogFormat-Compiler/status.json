@@ -91,6 +91,74 @@
       },
       {
          "cpan_path" : "K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz",
+         "id" : "2bb6e2025d1b0c516850890be0c1f8acc1df94514598e67b355805d9020f1208",
+         "module" : "Apache::LogFormat::Compiler",
+         "observed_at" : "2026-11-08T20:11:03Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "94509503ee74ea820183d070c11630ee5bc0fd8c12cb74fae953ed62e4a1ac17",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=30",
+         "version" : "0.36",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz",
          "id" : "6d8de5f4a86afacaec5e0b0e45152292e27a32679be2c60db4cb17896c9b0c71",
          "module" : "Apache::LogFormat::Compiler",
          "observed_at" : "2026-11-08T21:22:20Z",
