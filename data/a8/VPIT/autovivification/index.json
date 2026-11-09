@@ -1,0 +1,28 @@
+{
+   "distribution" : "autovivification",
+   "releases" : [
+      {
+         "cpan_path" : "V/VP/VPIT/autovivification-0.18.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.18-f1cc881e728c.patch",
+                     "sha256" : "f1cc881e728c4c2412491b0e04c6ece5028ce511f70aaa22eadfbd026620001c"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "2d99975685242980d0a9904f639144c059d6ece15899efde4acb742d3253f105",
+         "version" : "0.18"
+      }
+   ],
+   "schema" : 1
+}

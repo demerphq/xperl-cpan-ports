@@ -1,0 +1,315 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -24,6 +24,7 @@
+ t/42-deparse.t
+ t/43-peep.t
+ t/44-multideref.t
++t/45-stack.t                          Stack ownership and temporary lifetimes
+ t/50-threads.t
+ t/51-threads-teardown.t
+ t/lib/Test/Leaner.pm
+--- a/autovivification.xs
++++ b/autovivification.xs
+@@ -66,6 +66,14 @@
+ # define A_HAS_SCALARKEYS_OPT XSH_HAS_PERL(5, 27, 3)
+ #endif
+ 
++/* Replacement ops and the core ops they call must use the same stack
++ * ownership rules. Keep the legacy path for ordinary Perl. */
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++# define A_RC_STACK 1
++#else
++# define A_RC_STACK 0
++#endif
++
+ /* ... Our vivify_ref() .................................................... */
+ 
+ /* Perl_vivify_ref() is not exported, so we have to reimplement it. */
+@@ -365,10 +373,16 @@
+    /* We always need to push an empty array to fool the pp_aelem() that comes
+     * later. */
+    SV *av;
++#if A_RC_STACK
++   av = sv_2mortal((SV *) newAV());
++   rpp_replace_1_1(av);
++   return NORMAL;
++#else
+    (void) POPs;
+    av = sv_2mortal((SV *) newAV());
+    PUSHs(av);
+    RETURN;
++#endif
+   }
+  }
+ 
+@@ -402,10 +416,16 @@
+  if (oi->flags & A_HINT_DEREF) {
+   if (a_undef(TOPs)) {
+    SV *hv;
++#if A_RC_STACK
++   hv = sv_2mortal((SV *) newHV());
++   rpp_replace_1_1(hv);
++   return NORMAL;
++#else
+    (void) POPs;
+    hv = sv_2mortal((SV *) newHV());
+    PUSHs(hv);
+    RETURN;
++#endif
+   }
+  }
+ 
+@@ -424,9 +444,15 @@
+  if (oi->flags & A_HINT_KEYS) {
+   if (a_undef(TOPs)) {
+    dTARGET;
++#if A_RC_STACK
++   TARGi(0, 1);
++   rpp_replace_1_1(TARG);
++   return NORMAL;
++#else
+    (void) POPs;
+    PUSHi(0);
+    RETURN;
++#endif
+   }
+  }
+ 
+@@ -479,6 +505,15 @@
+  dSP;
+ 
+  if (a_undef(TOPs)) {
++#if A_RC_STACK
++  rpp_popfree_1();
++  if (GIMME_V == G_SCALAR) {
++   dTARGET;
++   TARGi(0, 1);
++   rpp_xpush_1(TARG);
++  }
++  return NORMAL;
++#else
+   (void) POPs;
+   /* Can only be reached by keys or values */
+   if (GIMME_V == G_SCALAR) {
+@@ -486,6 +521,7 @@
+    PUSHi(0);
+   }
+   RETURN;
++#endif
+  }
+ 
+  {
+@@ -499,12 +535,17 @@
+  dSP;
+ 
+  if (a_undef(TOPm1s)) {
++#if A_RC_STACK
++  rpp_replace_2_1(PL_op->op_type == OP_EXISTS ? &PL_sv_no : &PL_sv_undef);
++  return NORMAL;
++#else
+   (void) POPs;
+   (void) POPs;
+   if (PL_op->op_type == OP_EXISTS)
+    RETPUSHNO;
+   else
+    RETPUSHUNDEF;
++#endif
+  }
+ 
+  {
+@@ -566,15 +607,22 @@
+ 
+  {
+   SV *ret;
++#if A_RC_STACK
++  /* Transfer the result's stack reference to the temps stack before the
++   * next fake op can consume the container that owns it. */
++  ret = sv_2mortal(rpp_pop_1_norc());
++#else
+   dSP;
+   ret = POPs;
+   PUTBACK;
++#endif
+   return ret;
+  }
+ }
+ 
+ static void a_do_fake_pp_unop_init(pTHX_ UNOP *unop, U32 type, U32 flags) {
+ #define a_do_fake_pp_unop_init(O, T, F) a_do_fake_pp_unop_init(aTHX_ (O), (T), (F))
++ Zero(unop, 1, UNOP);
+  unop->op_type    = type;
+  unop->op_flags   = OPf_WANT_SCALAR | (~OPf_WANT & flags);
+  unop->op_private = 0;
+@@ -585,13 +633,19 @@
+ static SV *a_do_fake_pp_unop_arg1(pTHX_ U32 type, U32 flags, SV *arg) {
+ #define a_do_fake_pp_unop_arg1(T, F, A) a_do_fake_pp_unop_arg1(aTHX_ (T), (F), (A))
+  UNOP unop;
++#if !A_RC_STACK
+  dSP;
++#endif
+ 
+  a_do_fake_pp_unop_init(&unop, type, flags);
+ 
++#if A_RC_STACK
++ rpp_xpush_1(arg);
++#else
+  EXTEND(SP, 1);
+  PUSHs(arg);
+  PUTBACK;
++#endif
+ 
+  return a_do_fake_pp((OP *) &unop);
+ }
+@@ -599,14 +653,21 @@
+ static SV *a_do_fake_pp_unop_arg2(pTHX_ U32 type, U32 flags, SV *arg1, SV *arg2) {
+ #define a_do_fake_pp_unop_arg2(T, F, A1, A2) a_do_fake_pp_unop_arg2(aTHX_ (T), (F), (A1), (A2))
+  UNOP unop;
++#if !A_RC_STACK
+  dSP;
++#endif
+ 
+  a_do_fake_pp_unop_init(&unop, type, flags);
+ 
++#if A_RC_STACK
++ rpp_xpush_1(arg1);
++ rpp_xpush_1(arg2);
++#else
+  EXTEND(SP, 2);
+  PUSHs(arg1);
+  PUSHs(arg2);
+  PUTBACK;
++#endif
+ 
+  return a_do_fake_pp((OP *) &unop);
+ }
+@@ -628,7 +689,9 @@
+  UV  actions;
+  UV  flags = 0;
+  SV *sv    = NULL;
++#if !A_RC_STACK
+  dSP;
++#endif
+ 
+  {
+   dA_MAP_THX;
+@@ -662,7 +725,11 @@
+      goto ret_undef;
+     goto do_AV_aelem;
+    case MDEREF_AV_pop_rv2av_aelem: /* expr->[...] */
++#if A_RC_STACK
++    sv = sv_2mortal(rpp_pop_1_norc());
++#else
+     sv = POPs;
++#endif
+     if (a_undef(sv))
+      goto ret_undef;
+     goto do_AV_rv2av_aelem;
+@@ -741,7 +808,11 @@
+      goto ret_undef;
+     goto do_HV_helem;
+    case MDEREF_HV_pop_rv2hv_helem: /* expr->{...} */
++#if A_RC_STACK
++    sv = sv_2mortal(rpp_pop_1_norc());
++#else
+     sv = POPs;
++#endif
+     if (a_undef(sv))
+      goto ret_undef;
+     goto do_HV_rv2hv_helem;
+@@ -817,8 +888,13 @@
+  else
+   sv = &PL_sv_undef;
+ finish:
++#if A_RC_STACK
++ rpp_xpush_1(sv);
++ return NORMAL;
++#else
+  XPUSHs(sv);
+  RETURN;
++#endif
+ }
+ 
+ #endif /* A_HAS_MULTIDEREF */
+--- /dev/null
++++ b/t/45-stack.t
+@@ -0,0 +1,80 @@
++#!perl -T
++
++use strict;
++use warnings;
++
++use Test::More;
++
++my @cases = (
++ [ 'hash slice',
++   'my $x; my @v = @$x{qw(a b)}; [\@v, $x]',
++   [ [ undef, undef ], undef ] ],
++ [ 'array slice',
++   'my $x; my @v = @$x[0, 1]; [\@v, $x]',
++   [ [ undef, undef ], undef ] ],
++ [ 'hash keys',
++   'my $x; [scalar(keys %{$x->{a}}), $x]', [ 0, undef ] ],
++ [ 'array keys',
++   'my $x; [scalar(keys @{$x->[0]}), $x]', [ 0, undef ], 5.011 ],
++ [ 'array values',
++   'my $x; [scalar(values @{$x->[0]}), $x]', [ 0, undef ], 5.011 ],
++ [ 'temporary hash exists',
++   'exists +{a => {b => 42}}->{a}{b}', 1 ],
++ [ 'temporary array exists',
++   'exists [ [42] ]->[0][0]', 1 ],
++ [ 'temporary hash delete',
++   'delete +{a => [42]}->{a}[0]', 42 ],
++ [ 'temporary array delete',
++   'delete [ {a => 42} ]->[0]{a}', 42 ],
++ [ 'missing nested element',
++   'my $x; [(exists $x->{a}[0]), (delete $x->{a}[0]), $x]',
++   [ '', undef, undef ] ],
++);
++
++plan tests => 2 * @cases + 6;
++
++for my $case (@cases) {
++ my ($name, $code, $expected, $min_perl) = @$case;
++ SKIP: {
++  skip "perl $min_perl required", 2 if $min_perl && "$]" < $min_perl;
++  my ($result, $error);
++  for (1 .. 20) {
++   local $SIG{__WARN__} = sub { die @_ };
++   $result = eval "no autovivification;\n$code";
++   $error = $@;
++   last if $error;
++  }
++  is $error, '', "$name: no ownership warnings";
++  is_deeply $result, $expected, "$name: result";
++ }
++}
++
++{
++ package autovivification::StackObject;
++ our $destroyed = 0;
++ sub DESTROY { ++$destroyed }
++}
++
++sub temporary_object {
++ return {a => {b => bless {}, 'autovivification::StackObject'}};
++}
++
++my $held = eval {
++ local $SIG{__WARN__} = sub { die @_ };
++ no autovivification;
++ delete temporary_object()->{a}{b};
++};
++is $@, '', 'delete from a temporary container: no warnings';
++isa_ok $held, 'autovivification::StackObject';
++is $autovivification::StackObject::destroyed, 0, 'deleted value stays alive';
++undef $held;
++is $autovivification::StackObject::destroyed, 1, 'deleted value is released';
++
++eval {
++ local $SIG{__WARN__} = sub { die @_ };
++ no autovivification;
++ delete temporary_object()->{a}{b};
++ 1;
++};
++is $@, '', 'void delete from a temporary container: no warnings';
++is $autovivification::StackObject::destroyed, 2, 'void delete releases the value';
