@@ -1,0 +1,130 @@
+--- a/Magic.xs
++++ b/Magic.xs
+@@ -249,22 +249,31 @@
+ 
+ /* ... Safe version of call_sv() ........................................... */
+ 
++#ifdef XPERL_VERSION
++# define VMG_ERRSV_HAS_ERROR (SvROK(ERRSV) || SvTRUE(ERRSV))
++#else
++# define VMG_ERRSV_HAS_ERROR SvTRUE(ERRSV)
++#endif
++
+ static I32 vmg_call_sv(pTHX_ SV *sv, I32 flags, int (*cleanup)(pTHX_ void *), void *ud) {
+ #define vmg_call_sv(S, F, C, U) vmg_call_sv(aTHX_ (S), (F), (C), (U))
+  I32 ret;
+  SV *old_err = NULL;
+ 
+- if (SvTRUE(ERRSV)) {
++ if (VMG_ERRSV_HAS_ERROR) {
+   old_err = newSVsv(ERRSV);
+   sv_setsv(ERRSV, &PL_sv_undef);
+  }
+ 
+  ret = call_sv(sv, flags | G_EVAL);
+ 
+- if (SvTRUE(ERRSV)) {
++ if (VMG_ERRSV_HAS_ERROR) {
+   SvREFCNT_dec(old_err);
+ 
+   if (IN_PERL_COMPILETIME) {
++#ifdef XPERL_VERSION
++   croak_sv(ERRSV);
++#else
+    if (!PL_in_eval) {
+     if (PL_errors)
+      sv_catsv(PL_errors, ERRSV);
+@@ -280,6 +289,7 @@
+ #else
+    ++PL_Ierror_count;
+ #endif
++#endif
+   } else {
+    if (!cleanup || cleanup(aTHX_ ud))
+     croak(NULL);
+@@ -1394,6 +1404,12 @@
+ #endif /* VMG_PROPAGATE_ERRSV_NEEDS_TRAMPOLINE */
+ 
+ static int vmg_propagate_errsv_free(pTHX_ SV *sv, MAGIC *mg) {
++#ifdef XPERL_VERSION
++ /* Deferred error magic can outlive PL_errgv during global destruction. */
++ if (!PL_errgv)
++  return 0;
++#endif
++
+  if (mg->mg_obj)
+   sv_setsv(ERRSV, mg->mg_obj);
+ 
+--- a/t/17-ctl.t
++++ b/t/17-ctl.t
+@@ -3,7 +3,7 @@
+ use strict;
+ use warnings;
+ 
+-use Test::More tests => 4 * 8 + 4 * (2 * 6 + 1) + 10 + 1 + 1;
++use Test::More tests => 4 * 8 + 4 * (2 * 6 + 1) + 10 + 1 + 1 + 2;
+ 
+ use lib 't/lib';
+ use VPIT::TestHelpers 'capture';
+@@ -347,21 +347,51 @@
+ 
+ SKIP: {
+  my $count = 1;
++ my $suffix = ${^XPERL_VERSION} ? "\n" : "\nExecution(?s:.*)";
+ 
+  my ($stat, $out, $err) = capture_perl <<' CODE';
+ use Variable::Magic qw<wizard cast>; { BEGIN { $^H |= 0x020000; cast %^H, wizard free => sub { die q[cucumber] } } }
+  CODE
+  skip CAPTURE_PERL_FAILED($out) => $count unless defined $stat;
+- like $err, expect('cucumber', '-e', "\nExecution(?s:.*)"),
++ like $err, expect('cucumber', '-e', $suffix),
+             'die in free callback at compile time and not in eval string';
+  --$count;
+ }
+ 
++SKIP: {
++ my $count = 2;
++
++ my ($stat, $out, $err) = capture_perl <<' CODE';
++use lib 't/lib';
++use Variable::Magic qw<wizard cast>;
++require Variable::Magic::TestGlobalDestruction;
++unless (Variable::Magic::TestGlobalDestruction->import(level => 2)) {
++ print qq[skip\n];
++ exit 0;
++}
++my $ctor = sub { my $val = 123; \$val };
++my $other = wizard data => sub { 'abc' };
++my $die = 1;
++my $wiz = wizard free => sub {
++ &cast($_[0], $other);
++ die 'cleanup' if $die;
++ return;
++};
++eval { my $v = $ctor->(); &cast($v, $wiz) };
++print $@ =~ /^cleanup at/ ? qq[caught\n] : qq[lost\n];
++ CODE
++ skip CAPTURE_PERL_FAILED($out) => $count unless defined $stat;
++ skip 'Cannot test global destruction' => $count if $out eq "skip\n";
++ is $stat, 0, 'deferred error restoration exits cleanly at global destruction';
++ is $out, "caught\n", 'recasting free callback error is caught';
++}
++
+ # Uvar
+ 
+ SKIP:
+ {
+  my $count = 1;
++ my $suffix = ${^XPERL_VERSION} ? "\n" : "\nExecution(?s:.*)";
+ 
+  skip 'No nice uvar magic for this perl' => $count unless VMG_UVAR;
+ 
+@@ -369,7 +399,7 @@
+ use Variable::Magic qw<wizard cast>; BEGIN { cast %derp::, wizard fetch => sub { die q[raddish] } } derp::hlagh()
+  CODE
+  skip CAPTURE_PERL_FAILED($out) => $count unless defined $stat;
+- like $err, expect('raddish', '-e', "\nExecution(?s:.*)"),
++ like $err, expect('raddish', '-e', $suffix),
+             'die in free callback at compile time and not in eval string';
+  --$count;
+ }
