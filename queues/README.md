@@ -15,5 +15,11 @@ receipt import and patch registration workflow. Keep a failing candidate in
 the queue while it needs review. Remove it when its result has been triaged and
 the next action is tracked in its distribution record or patch proposal.
 
+The [RC native-source queue](rc-xs-linux/README.md) uses author/distribution
+keys for `install-ported --from`, which forces recorded releases to rebuild
+even when their modules are already installed. Its coverage report separates
+current-build validation, other RC builds, deferred work and unknown sources.
+Follow that queue's README instead of passing its keys to ordinary `install`.
+
 The `upstream-queue/` directory has a different purpose: it tracks patches
 ready to propose to CPAN authors.

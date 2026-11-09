@@ -1,0 +1,5247 @@
+{
+   "baseline_os" : "linux",
+   "counts" : {
+      "baseline" : 1525,
+      "deferred" : 1,
+      "needs_replay" : 212,
+      "no_native_source" : 1308,
+      "validated" : 4
+   },
+   "native" : [
+      {
+         "author" : "AMBS",
+         "cpan_path" : "A/AM/AMBS/Text-BibTeX-1.00.tar.gz",
+         "distribution" : "Text-BibTeX",
+         "key" : "AMBS/Text-BibTeX",
+         "module" : "Text::BibTeX",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Text/BibTeX.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "8c67d5c85bb11720eeb01776cdddece4dc7d1480b73b9676799f95b6ea97021c",
+         "state" : "needs_replay",
+         "version" : "1.00"
+      },
+      {
+         "author" : "ANDYA",
+         "cpan_path" : "A/AN/ANDYA/IPC-ShareLite-0.17.tar.gz",
+         "distribution" : "IPC-ShareLite",
+         "key" : "ANDYA/IPC-ShareLite",
+         "module" : "IPC::ShareLite",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "ShareLite.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "sharestuff.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "14d406b91da96d6521d0d1a82d22a306274765226b86b0a56e7ffddcf96ae7bf",
+         "state" : "needs_replay",
+         "version" : "0.17"
+      },
+      {
+         "author" : "ARODLAND",
+         "cpan_path" : "A/AR/ARODLAND/Unicode-CaseFold-1.01.tar.gz",
+         "distribution" : "Unicode-CaseFold",
+         "key" : "ARODLAND/Unicode-CaseFold",
+         "module" : "Unicode::CaseFold",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Unicode/CaseFold.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "418a212808f9d0b8bb330ac905096d2dd364976753d4c71534dab9836a63194d",
+         "state" : "needs_replay",
+         "version" : "1.01"
+      },
+      {
+         "author" : "ATOOMIC",
+         "cpan_path" : "A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+         "distribution" : "B-COW",
+         "key" : "ATOOMIC/B-COW",
+         "module" : "B::COW",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "COW.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            {
+               "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            }
+         ],
+         "source_sha256" : "1290daf227e8b09889a31cf182e29106f1cf9f1a4e9bf7752f9de92ed1158b44",
+         "state" : "needs_replay",
+         "version" : "0.007"
+      },
+      {
+         "author" : "ATOOMIC",
+         "cpan_path" : "A/AT/ATOOMIC/Clone-0.51.tar.gz",
+         "distribution" : "Clone",
+         "key" : "ATOOMIC/Clone",
+         "module" : "Clone",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Clone.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            {
+               "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            }
+         ],
+         "source_sha256" : "f17f66fec97dacca67ac9585701d2d079cfc80539fe6e8160c201c4e55f67507",
+         "state" : "needs_replay",
+         "version" : "0.51"
+      },
+      {
+         "author" : "ATOOMIC",
+         "cpan_path" : "A/AT/ATOOMIC/Overload-FileCheck-0.015.tar.gz",
+         "distribution" : "Overload-FileCheck",
+         "key" : "ATOOMIC/Overload-FileCheck",
+         "module" : "Overload::FileCheck",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "FileCheck.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "FileCheck.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c5898f0f612b699aae4ca9ee704dee3ea7de5815d2a544231b104a042ac309ec",
+         "state" : "needs_replay",
+         "version" : "0.015"
+      },
+      {
+         "author" : "ATOOMIC",
+         "cpan_path" : "A/AT/ATOOMIC/XString-0.005.tar.gz",
+         "distribution" : "XString",
+         "key" : "ATOOMIC/XString",
+         "module" : "XString",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XString.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "f247f55c19aee6ba4a1ae73c0804259452e02ea85a9be07f8acf700a5138f884",
+         "state" : "needs_replay",
+         "version" : "0.005"
+      },
+      {
+         "author" : "AVAR",
+         "cpan_path" : "A/AV/AVAR/Linux-Smaps-Tiny-0.10.tar.gz",
+         "distribution" : "Linux-Smaps-Tiny",
+         "key" : "AVAR/Linux-Smaps-Tiny",
+         "module" : "Linux::Smaps::Tiny",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Tiny.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "be8c7b8c4b43385d52188336e5a09113f3e63f377b781da4e26dec30faef1e49",
+         "state" : "needs_replay",
+         "version" : "0.10"
+      },
+      {
+         "author" : "BDFOY",
+         "cpan_path" : "B/BD/BDFOY/Net-SSH-Perl-2.144.tar.gz",
+         "distribution" : "Net-SSH-Perl",
+         "key" : "BDFOY/Net-SSH-Perl",
+         "module" : "Net::SSH::Perl",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Perl.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "lib/Net/SSH/Perl/Cipher/ChachaPoly.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "lib/Net/SSH/Perl/Key/Ed25519.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "2b547bba3336ae324a6a23c4a265e01b9b0d6eeaf7a457205c605387d713e93e",
+         "state" : "needs_replay",
+         "version" : "2.144"
+      },
+      {
+         "author" : "BKB",
+         "cpan_path" : "B/BK/BKB/Gzip-Faster-0.23.tar.gz",
+         "distribution" : "Gzip-Faster",
+         "key" : "BKB/Gzip-Faster",
+         "module" : "Gzip::Faster",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Faster.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "2290943f1c06f0238cd751cabb218eb6a1ed22a1bee8072c8123dbd98d4b686b",
+         "state" : "needs_replay",
+         "version" : "0.23"
+      },
+      {
+         "author" : "BKB",
+         "cpan_path" : "B/BK/BKB/JSON-Parse-0.62.tar.gz",
+         "distribution" : "JSON-Parse",
+         "key" : "BKB/JSON-Parse",
+         "module" : "JSON::Parse",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Parse.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "6273180f9392497401ddd6d820706f5aa86c1be88891dd6aab4d906b5cff66d9",
+         "state" : "needs_replay",
+         "version" : "0.62"
+      },
+      {
+         "author" : "BRIANDFOY",
+         "cpan_path" : "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
+         "distribution" : "Test-File",
+         "key" : "BRIANDFOY/Test-File",
+         "module" : "Test::File",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "File.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "8f1cc36b871493dfdac29bda459763711b5fd828895c0f326b6c8654babd5f09",
+         "state" : "needs_replay",
+         "version" : "1.995"
+      },
+      {
+         "author" : "CHANSEN",
+         "cpan_path" : "C/CH/CHANSEN/Time-Moment-0.46.tar.gz",
+         "distribution" : "Time-Moment",
+         "key" : "CHANSEN/Time-Moment",
+         "module" : "Time::Moment",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Moment.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/moment.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "e1ec4c0b8bac451490f60ddb21b6e4849db49febb681e1cb04737e2d2731e5ad",
+         "state" : "needs_replay",
+         "version" : "0.46"
+      },
+      {
+         "author" : "CHANSEN",
+         "cpan_path" : "C/CH/CHANSEN/URL-Encode-XS-0.03.tar.gz",
+         "distribution" : "URL-Encode-XS",
+         "key" : "CHANSEN/URL-Encode-XS",
+         "module" : "URL::Encode::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d44f416bd3e58e3b3366ab420705da02c7118fc848a97ce089366ea0461fa823",
+         "state" : "needs_replay",
+         "version" : "0.03"
+      },
+      {
+         "author" : "CTILMES",
+         "cpan_path" : "C/CT/CTILMES/Proc-Wait3-0.05.tar.gz",
+         "distribution" : "Proc-Wait3",
+         "key" : "CTILMES/Proc-Wait3",
+         "module" : "Proc::Wait3",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Wait3.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "1a907f5db6933dc2939bbfeffe19eeae7ed39ef1b97a2bc9b723f2f25f81caf3",
+         "state" : "needs_replay",
+         "version" : "0.05"
+      },
+      {
+         "author" : "DANKOGAI",
+         "cpan_path" : "D/DA/DANKOGAI/Jcode-2.07.tar.gz",
+         "distribution" : "Jcode",
+         "key" : "DANKOGAI/Jcode",
+         "module" : "Jcode",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Unicode/Unicode.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "ed1ce473ec869089e52016cfc8355165ebc37be9694ba4e829c7eb4ba1c45f8d",
+         "state" : "needs_replay",
+         "version" : "2.07"
+      },
+      {
+         "author" : "DANKOGAI",
+         "cpan_path" : "D/DA/DANKOGAI/URI-Escape-XS-0.14.tar.gz",
+         "distribution" : "URI-Escape-XS",
+         "key" : "DANKOGAI/URI-Escape-XS",
+         "module" : "URI::Escape::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c39ac50c6c2b831ae4bf08692e6ca5d4a3f9c57dc4d7f9c4cb0663e2c86c2759",
+         "state" : "needs_replay",
+         "version" : "0.14"
+      },
+      {
+         "author" : "DAVIDO",
+         "cpan_path" : "D/DA/DAVIDO/List-BinarySearch-XS-0.09.tar.gz",
+         "distribution" : "List-BinarySearch-XS",
+         "key" : "DAVIDO/List-BinarySearch-XS",
+         "module" : "List::BinarySearch::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9ceb9fc3c1fc3418eb8d372be03d566a35dde6df06d55a6096a305891581f4c2",
+         "state" : "needs_replay",
+         "version" : "0.09"
+      },
+      {
+         "author" : "DCANTRELL",
+         "cpan_path" : "D/DC/DCANTRELL/Scalar-Type-1.0.1.tar.gz",
+         "distribution" : "Scalar-Type",
+         "key" : "DCANTRELL/Scalar-Type",
+         "module" : "Scalar::Type",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Type.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "97ad94ba5a46005d9b3e589acb8b051b1399dffdf461abf7fc7c7def5f019ec5",
+         "state" : "needs_replay",
+         "version" : "1.0.1"
+      },
+      {
+         "author" : "DCON",
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "distribution" : "Stats-LikeR",
+         "key" : "DCON/Stats-LikeR",
+         "module" : "Stats::LikeR",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LikeR.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "aac1ce5644196d30bb7a308aa2948c7e39e4b235723d9512019835a6322bf534"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "state" : "needs_replay",
+         "version" : "0.3416"
+      },
+      {
+         "author" : "DDICK",
+         "cpan_path" : "D/DD/DDICK/Crypt-URandom-0.55.tar.gz",
+         "distribution" : "Crypt-URandom",
+         "key" : "DDICK/Crypt-URandom",
+         "module" : "Crypt::URandom",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "URandom.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "ef9f44141073c13573e85b148ff9a9089c45825b7d6608d832e4263899d3a2d4",
+         "state" : "needs_replay",
+         "version" : "0.55"
+      },
+      {
+         "author" : "DGL",
+         "cpan_path" : "D/DG/DGL/re-engine-RE2-0.18.tar.gz",
+         "distribution" : "re-engine-RE2",
+         "key" : "DGL/re-engine-RE2",
+         "module" : "re::engine::RE2",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "RE2.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "re2_xs.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "b317fd54e25d1c67e41f84725d232f3688cdea4ab686e6095984f6fc932c5fa1",
+         "state" : "needs_replay",
+         "version" : "0.18"
+      },
+      {
+         "author" : "DJERIUS",
+         "cpan_path" : "D/DJ/DJERIUS/Math-Random-0.75.tar.gz",
+         "distribution" : "Math-Random",
+         "key" : "DJERIUS/Math-Random",
+         "module" : "Math::Random",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Random.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "72f9c94c32fcc6dcda16bd2a5e50f6562386d2afc528e5efb369aa2e9596025b",
+         "state" : "needs_replay",
+         "version" : "0.75"
+      },
+      {
+         "author" : "DMAKI",
+         "cpan_path" : "D/DM/DMAKI/Algorithm-ConsistentHash-Ketama-0.00012.tar.gz",
+         "distribution" : "Algorithm-ConsistentHash-Ketama",
+         "key" : "DMAKI/Algorithm-ConsistentHash-Ketama",
+         "module" : "Algorithm::ConsistentHash::Ketama",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "xs/Ketama.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Ketama.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c4923f9ddaed183da0394a1b7d8f3d3bdea94d7c0f9391b0525e5f753202c4cd",
+         "state" : "needs_replay",
+         "version" : "0.00012"
+      },
+      {
+         "author" : "DPARIS",
+         "cpan_path" : "D/DP/DPARIS/Crypt-Blowfish-2.14.tar.gz",
+         "distribution" : "Crypt-Blowfish",
+         "key" : "DPARIS/Crypt-Blowfish",
+         "module" : "Crypt::Blowfish",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Blowfish.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "46b3431ffb6bf5b9cb359f79565d48407e652ad2b04fdf5ca62a69e7197a67b1",
+         "state" : "needs_replay",
+         "version" : "2.14"
+      },
+      {
+         "author" : "DPARIS",
+         "cpan_path" : "D/DP/DPARIS/Crypt-IDEA-1.10.tar.gz",
+         "distribution" : "Crypt-IDEA",
+         "key" : "DPARIS/Crypt-IDEA",
+         "module" : "Crypt::IDEA",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "IDEA.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "33bd78c11924a0fc1ff3eedde94078cbbf6b6ca9ede046d2b2f561e9e9a72019",
+         "state" : "needs_replay",
+         "version" : "1.10"
+      },
+      {
+         "author" : "DROLSKY",
+         "cpan_path" : "D/DR/DROLSKY/DateTime-1.68.tar.gz",
+         "distribution" : "DateTime",
+         "key" : "DROLSKY/DateTime",
+         "module" : "DateTime",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "DateTime.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "dddaf4a0def18dce6b301079881a17b4a8c91184ae3fa3dc58723a3005eab9d3",
+         "state" : "needs_replay",
+         "version" : "1.68"
+      },
+      {
+         "author" : "DROLSKY",
+         "cpan_path" : "D/DR/DROLSKY/List-SomeUtils-XS-0.59.tar.gz",
+         "distribution" : "List-SomeUtils-XS",
+         "key" : "DROLSKY/List-SomeUtils-XS",
+         "module" : "List::SomeUtils::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "1da2d21762f40b58cbc8f3ba5239e849e5c73c4dbe0a5f3c4510118e65a2eae4",
+         "state" : "needs_replay",
+         "version" : "0.59"
+      },
+      {
+         "author" : "DROLSKY",
+         "cpan_path" : "D/DR/DROLSKY/Params-Validate-1.31.tar.gz",
+         "distribution" : "Params-Validate",
+         "key" : "DROLSKY/Params-Validate",
+         "module" : "Params::Validate",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Params/Validate/XS.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "25d9f9bd1169fd29e6af5f92df2fd70d3bbf92df501aab261e369d939363127c"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "1bf2518ef2c4869f91590e219f545c8ef12ed53cf313e0eb5704adf7f1b2961e",
+         "state" : "needs_replay",
+         "version" : "1.31"
+      },
+      {
+         "author" : "EHERMAN",
+         "cpan_path" : "E/EH/EHERMAN/Algorithm-ConsistentHash-CHash-0.04.tar.gz",
+         "distribution" : "Algorithm-ConsistentHash-CHash",
+         "key" : "EHERMAN/Algorithm-ConsistentHash-CHash",
+         "module" : "Algorithm::ConsistentHash::CHash",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "CHash.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c84dadf7898cc9e6a64493e451f0b91881ddd2ef509427381354e9c5739501a7",
+         "state" : "needs_replay",
+         "version" : "0.04"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/B-Hooks-OP-Check-0.22.tar.gz",
+         "distribution" : "B-Hooks-OP-Check",
+         "key" : "ETHER/B-Hooks-OP-Check",
+         "module" : "B::Hooks::OP::Check",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Check.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "hook_op_check.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "c7b5d1bef59ef9087ff67eb3168d2624be94ae5464469e259ad11bfb8ad8cdcd",
+         "state" : "needs_replay",
+         "version" : "0.22"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/B-Utils-0.28.tar.gz",
+         "distribution" : "B-Utils",
+         "key" : "ETHER/B-Utils",
+         "module" : "B::Utils",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "OP.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Utils.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "0d545a49e8e00d16e53b89aee89d718f9f94392b703507341182c69c78600d76"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "04c002fd75a3365e217ae4a8cc265d0be8061e83ca5b5eea49359f08983531c6",
+         "state" : "needs_replay",
+         "version" : "0.28"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/Class-Load-XS-0.10.tar.gz",
+         "distribution" : "Class-Load-XS",
+         "key" : "ETHER/Class-Load-XS",
+         "module" : "Class::Load::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "5bc22cf536ebfd2564c5bdaf42f0d8a4cee3d1930fc8b44b7d4a42038622add1",
+         "state" : "needs_replay",
+         "version" : "0.10"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/FCGI-0.82.tar.gz",
+         "distribution" : "FCGI",
+         "key" : "ETHER/FCGI",
+         "module" : "FCGI",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "FCGI.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            }
+         ],
+         "source_sha256" : "4c7d60e26da2c07f058a4e345021e92505273b33c9542215977e084611f09ecf",
+         "state" : "validated",
+         "version" : "0.82"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/Moose-2.4001.tar.gz",
+         "distribution" : "Moose",
+         "key" : "ETHER/Moose",
+         "module" : "Moose",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "mop.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "mop.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Attribute.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/AttributeCore.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Class.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Generated.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/HasAttributes.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/HasMethods.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Inlined.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Instance.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/MOP.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Method.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Moose.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/Package.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/ToInstance.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "ced20b9792078929e82dc6d14ee349579ea83bec549e92ca909a01caea546d1e"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "1dbb6157b0c655ae5ee6b5e4225651fc3ea505e6fd8c972d2f1d2612913a513e",
+         "state" : "needs_replay",
+         "version" : "2.4001"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/Package-Stash-XS-0.32.tar.gz",
+         "distribution" : "Package-Stash-XS",
+         "key" : "ETHER/Package-Stash-XS",
+         "module" : "Package::Stash::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "9f961e798c01370f3834eda5f010c9d60c68a96d15c48598d8a5a25ca32f5f11",
+         "state" : "needs_replay",
+         "version" : "0.32"
+      },
+      {
+         "author" : "ETHER",
+         "cpan_path" : "E/ET/ETHER/Sub-Name-0.28.tar.gz",
+         "distribution" : "Sub-Name",
+         "key" : "ETHER/Sub-Name",
+         "module" : "Sub::Name",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Name.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "39c53f6b3b02cbc73176564413b51d3c0f375f9760983fd579c27f558b169cfc",
+         "state" : "needs_replay",
+         "version" : "0.28"
+      },
+      {
+         "author" : "ETJ",
+         "cpan_path" : "E/ET/ETJ/PDL-2.106.tar.gz",
+         "distribution" : "PDL",
+         "key" : "ETJ/PDL",
+         "module" : "PDL",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/PDL/Core.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/PDL/Core/pdlcore.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/PDL/IO/Pnm/get.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/PDL/Image2D/rotate.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/PDL/Image2D/select.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f500e740d327e221985ac35f38f5e1e42bf2e3a690c0ed927ac9ed17d9d8241b",
+         "state" : "needs_replay",
+         "version" : "2.106"
+      },
+      {
+         "author" : "FANGLY",
+         "cpan_path" : "F/FA/FANGLY/Math-Random-MT-1.17.tar.gz",
+         "distribution" : "Math-Random-MT",
+         "key" : "FANGLY/Math-Random-MT",
+         "module" : "Math::Random::MT",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "MT.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "069a1d98a619cba1f1ab91fbd6edceb642e84e7d162c4f0e2442139037b5b0da",
+         "state" : "needs_replay",
+         "version" : "1.17"
+      },
+      {
+         "author" : "FERREIRA",
+         "cpan_path" : "F/FE/FERREIRA/Devel-Hook-0.011.tar.gz",
+         "distribution" : "Devel-Hook",
+         "key" : "FERREIRA/Devel-Hook",
+         "module" : "Devel::Hook",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Hook.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "3005d45e9da6b8c2a8e77efec1c588d1c69c5e0d7446245aa3cf15e7e2bfaba0",
+         "state" : "needs_replay",
+         "version" : "0.011"
+      },
+      {
+         "author" : "FERREIRA",
+         "cpan_path" : "F/FE/FERREIRA/Term-Size-0.211.tar.gz",
+         "distribution" : "Term-Size",
+         "key" : "FERREIRA/Term-Size",
+         "module" : "Term::Size",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Size.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "5962b4bde52329774718296c92315e936da7f9c4451e92186cf072f27790b3fb",
+         "state" : "needs_replay",
+         "version" : "0.211"
+      },
+      {
+         "author" : "FRACTAL",
+         "cpan_path" : "F/FR/FRACTAL/String-Compare-ConstantTime-0.321.tar.gz",
+         "distribution" : "String-Compare-ConstantTime",
+         "key" : "FRACTAL/String-Compare-ConstantTime",
+         "module" : "String::Compare::ConstantTime",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "ConstantTime.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "0b26ba2b121d8004425d4485d1d46f59001c83763aa26624dff6220d7735d7f7",
+         "state" : "needs_replay",
+         "version" : "0.321"
+      },
+      {
+         "author" : "FXN",
+         "cpan_path" : "F/FX/FXN/Algorithm-Combinatorics-0.27.tar.gz",
+         "distribution" : "Algorithm-Combinatorics",
+         "key" : "FXN/Algorithm-Combinatorics",
+         "module" : "Algorithm::Combinatorics",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Combinatorics.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "8378da39ecdb37d5cc89cc130a3b1353fd75d56c7690905673473fe4c25cd132",
+         "state" : "needs_replay",
+         "version" : "0.27"
+      },
+      {
+         "author" : "GAAS",
+         "cpan_path" : "G/GA/GAAS/Digest-SHA1-2.13.tar.gz",
+         "distribution" : "Digest-SHA1",
+         "key" : "GAAS/Digest-SHA1",
+         "module" : "Digest::SHA1",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SHA1.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "68c1dac2187421f0eb7abf71452a06f190181b8fc4b28ededf5b90296fb943cc",
+         "state" : "needs_replay",
+         "version" : "2.13"
+      },
+      {
+         "author" : "GAAS",
+         "cpan_path" : "G/GA/GAAS/Unicode-Map8-0.13.tar.gz",
+         "distribution" : "Unicode-Map8",
+         "key" : "GAAS/Unicode-Map8",
+         "module" : "Unicode::Map8",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Map8.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "map8.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "af1e85b8ebad93a9c520bf0851948dd3ba6cf11336764891ce2b62b6b6a92b6e",
+         "state" : "needs_replay",
+         "version" : "0.13"
+      },
+      {
+         "author" : "GAAS",
+         "cpan_path" : "G/GA/GAAS/GAAS/Unicode-String-2.10.tar.gz",
+         "distribution" : "Unicode-String",
+         "key" : "GAAS/Unicode-String",
+         "module" : "Unicode::String",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "String.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "894a110ece479546af8afec0972eec7320c86c4dea4e6b354dff3c7526ba9b68",
+         "state" : "needs_replay",
+         "version" : "2.10"
+      },
+      {
+         "author" : "GFUJI",
+         "cpan_path" : "G/GF/GFUJI/warnings-unused-0.06.tar.gz",
+         "distribution" : "warnings-unused",
+         "key" : "GFUJI/warnings-unused",
+         "module" : "warnings::unused",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "unused.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "6f719898a63560d4324c1e95549f441cec429d90cf5b57bf016085334f4bf01f",
+         "state" : "needs_replay",
+         "version" : "0.06"
+      },
+      {
+         "author" : "GOCCY",
+         "cpan_path" : "G/GO/GOCCY/Compiler-Lexer-0.23.tar.gz",
+         "distribution" : "Compiler-Lexer",
+         "key" : "GOCCY/Compiler-Lexer",
+         "module" : "Compiler::Lexer",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "src/Compiler-Lexer.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "6031ce4afebbfa4f492a274949be7b8232314e91023828c438e47981ff0a99db",
+         "state" : "needs_replay",
+         "version" : "0.23"
+      },
+      {
+         "author" : "GOZER",
+         "cpan_path" : "G/GO/GOZER/POSIX-strptime-0.13.tar.gz",
+         "distribution" : "POSIX-strptime",
+         "key" : "GOZER/POSIX-strptime",
+         "module" : "POSIX::strptime",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "strptime.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a818109829e35a4ac79677d68063865f40c87c99ca7f3a20890177a8f8e5c277",
+         "state" : "needs_replay",
+         "version" : "0.13"
+      },
+      {
+         "author" : "GOZER",
+         "cpan_path" : "G/GO/GOZER/Scalar-Readonly-0.03.tar.gz",
+         "distribution" : "Scalar-Readonly",
+         "key" : "GOZER/Scalar-Readonly",
+         "module" : "Scalar::Readonly",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Readonly.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a9892b22fafbbb14dec3c95111233a1b425101d7fd724b02163edd59ad8cdda0",
+         "state" : "needs_replay",
+         "version" : "0.03"
+      },
+      {
+         "author" : "GRUBER",
+         "cpan_path" : "G/GR/GRUBER/Net-Patricia-1.24.tar.gz",
+         "distribution" : "Net-Patricia",
+         "key" : "GRUBER/Net-Patricia",
+         "module" : "Net::Patricia",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Patricia.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d94f520804e2541b1cd20e73366720a973caf5dd2d2623838fc8d6398afd7edb",
+         "state" : "needs_replay",
+         "version" : "1.24"
+      },
+      {
+         "author" : "GTERMARS",
+         "cpan_path" : "G/GT/GTERMARS/Data-UUID-1.227.tar.gz",
+         "distribution" : "Data-UUID",
+         "key" : "GTERMARS/Data-UUID",
+         "module" : "Data::UUID",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "UUID.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "95bda7276265f57bc48ffdeddec5ef28cd6f765e3a183757fa5f09f0ce6b98ac",
+         "state" : "needs_replay",
+         "version" : "1.227"
+      },
+      {
+         "author" : "HIO",
+         "cpan_path" : "H/HI/HIO/perlec-0.08.tar.gz",
+         "distribution" : "perlec",
+         "key" : "HIO/perlec",
+         "module" : "perlec",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "perlec.h"
+            }
+         ],
+         "patch_sha256" : [
+            "8bfed87d6a3bcf8e1fa3a61278b8e8e5fef0739a78a9a717e2a5aab36b16f2fd"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "d87c4cab43a50307addce083cabb918193e46d785445020c9b87cb0b4c2915c1",
+         "state" : "needs_replay",
+         "version" : "0.08"
+      },
+      {
+         "author" : "HMBRAND",
+         "cpan_path" : "H/HM/HMBRAND/DBI-1.656.tgz",
+         "distribution" : "DBI",
+         "key" : "HMBRAND/DBI",
+         "module" : "DBI",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "DBI.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "DBIXS.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Perl.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "ab5f2b9aef00951ed4598723d6131a00b03e68193478dd5e5f211015520a6ef0",
+         "state" : "needs_replay",
+         "version" : "1.656"
+      },
+      {
+         "author" : "HMBRAND",
+         "cpan_path" : "H/HM/HMBRAND/Data-Peek-0.54.tgz",
+         "distribution" : "Data-Peek",
+         "key" : "HMBRAND/Data-Peek",
+         "module" : "Data::Peek",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Peek.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "2b08e697055f0c8583806372f65ab369a5cc871c69ea81257cb43548ba873b1e"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "4dbf2205d43fb7d963ba29902cd563a5ea6c3c6bb49a9493c40ce8b0f8572980",
+         "state" : "needs_replay",
+         "version" : "0.54"
+      },
+      {
+         "author" : "HMBRAND",
+         "cpan_path" : "H/HM/HMBRAND/Text-CSV_XS-1.65.tgz",
+         "distribution" : "Text-CSV_XS",
+         "key" : "HMBRAND/Text-CSV_XS",
+         "module" : "Text::CSV_XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "CSV_XS.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "d139bae7d6ff2d202af529e33163c7ed5fb47b449a34ef2490fd9a98669064a9"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "4f0c16457c87def295a994e9c4ba397a8baafad96cefaf2d61483125f90ff974",
+         "state" : "needs_replay",
+         "version" : "1.65"
+      },
+      {
+         "author" : "ILMARI",
+         "cpan_path" : "I/IL/ILMARI/bareword-filehandles-0.007.tar.gz",
+         "distribution" : "bareword-filehandles",
+         "key" : "ILMARI/bareword-filehandles",
+         "module" : "bareword::filehandles",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "filehandles.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "ea00bf263b65ac8dbbdf9eb3698e60da654184ab3436ea2813d202ae51c9c72c"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "4134533716d87af8fff56e250c488ad06df0a7bff48e7cf7de63ff6bc8d9c17f",
+         "state" : "needs_replay",
+         "version" : "0.007"
+      },
+      {
+         "author" : "ILMARI",
+         "cpan_path" : "I/IL/ILMARI/multidimensional-0.014.tar.gz",
+         "distribution" : "multidimensional",
+         "key" : "ILMARI/multidimensional",
+         "module" : "multidimensional",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "multidimensional.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "12eb14317447bd15ab9799677db9eda20e784d8b113e44a5f6f11f529e862c5f",
+         "state" : "needs_replay",
+         "version" : "0.014"
+      },
+      {
+         "author" : "ILYAZ",
+         "cpan_path" : "I/IL/ILYAZ/modules/Math-Pari-2.030528.tar.gz",
+         "distribution" : "Math-Pari",
+         "key" : "ILYAZ/Math-Pari",
+         "module" : "Math::Pari",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Pari.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "67f74d216c69635ab1c6ea3e27ce19750a94a2b560ae7288bb2d6cf714fce6c8",
+         "state" : "needs_replay",
+         "version" : "2.030528"
+      },
+      {
+         "author" : "ILYAZ",
+         "cpan_path" : "I/IL/ILYAZ/modules/Proc-Spawner-0.08.zip",
+         "distribution" : "Proc-Spawner",
+         "key" : "ILYAZ/Proc-Spawner",
+         "module" : "Proc::Spawner",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Spawner.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "3f50a605b601c6fd098b604b13c3bec4528dff44b2a0de0d07d53ddea6c6c389",
+         "state" : "needs_replay",
+         "version" : "0.08"
+      },
+      {
+         "author" : "ISHIGAKI",
+         "cpan_path" : "I/IS/ISHIGAKI/DBD-SQLite-1.78.tar.gz",
+         "distribution" : "DBD-SQLite",
+         "key" : "ISHIGAKI/DBD-SQLite",
+         "module" : "DBD::SQLite",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SQLite.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "SQLiteXS.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "efbad7794bafaa4e7476c07445a33bbfe1040e380baa3395a02635eebe3859d5",
+         "state" : "needs_replay",
+         "version" : "1.78"
+      },
+      {
+         "author" : "ISHIGAKI",
+         "cpan_path" : "I/IS/ISHIGAKI/Data-Clone-0.006.tar.gz",
+         "distribution" : "Data-Clone",
+         "key" : "ISHIGAKI/Data-Clone",
+         "module" : "Data::Clone",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Data/Clone.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "b8745954f0eff61efb25589cc13b4f2b1b26ce5ac3617d7e8aa3981626579629",
+         "state" : "needs_replay",
+         "version" : "0.006"
+      },
+      {
+         "author" : "JAWNSY",
+         "cpan_path" : "J/JA/JAWNSY/Math-Random-ISAAC-XS-1.004.tar.gz",
+         "distribution" : "Math-Random-ISAAC-XS",
+         "key" : "JAWNSY/Math-Random-ISAAC-XS",
+         "module" : "Math::Random::ISAAC::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "src/ISAAC.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9af790eb92d1c6330d33c6daa8decf8a9c5dcc87b81779d6b12e14b931c3b87b",
+         "state" : "needs_replay",
+         "version" : "1.004"
+      },
+      {
+         "author" : "JDHEDDEN",
+         "cpan_path" : "J/JD/JDHEDDEN/Math-Random-MT-Auto-6.23.tar.gz",
+         "distribution" : "Math-Random-MT-Auto",
+         "key" : "JDHEDDEN/Math-Random-MT-Auto",
+         "module" : "Math::Random::MT::Auto",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "MRMA.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "58bcb5ad3162964ff5a0c4d2dcbaa0202c2c85d9c470496f3b7a998757776313",
+         "state" : "needs_replay",
+         "version" : "6.23"
+      },
+      {
+         "author" : "JGOLDBERG",
+         "cpan_path" : "J/JG/JGOLDBERG/Text-LevenshteinXS-0.03.tar.gz",
+         "distribution" : "Text-LevenshteinXS",
+         "key" : "JGOLDBERG/Text-LevenshteinXS",
+         "module" : "Text::LevenshteinXS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LevenshteinXS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "e374ff7b237919ce5ea9245f356d1cb52cc87fd26b3a5a38b3f3e5ff82a01491",
+         "state" : "needs_replay",
+         "version" : "0.03"
+      },
+      {
+         "author" : "JHI",
+         "cpan_path" : "J/JH/JHI/String-Approx-3.28.tar.gz",
+         "distribution" : "String-Approx",
+         "key" : "JHI/String-Approx",
+         "module" : "String::Approx",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Approx.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "43201e762d8699cb0ac2c0764a5454bdc2306c0771014d6c8fba821480631342",
+         "state" : "needs_replay",
+         "version" : "3.28"
+      },
+      {
+         "author" : "JJORE",
+         "cpan_path" : "J/JJ/JJORE/Internals-DumpArenas-0.12.tar.gz",
+         "distribution" : "Internals-DumpArenas",
+         "key" : "JJORE/Internals-DumpArenas",
+         "module" : "Internals::DumpArenas",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "DumpArenas.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "be32c6a0176e0c98cb53ae8644430c78eba9a8afbf3e9e2c89f629252e8846e9"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "0850267b2cf41bf41833be0e502cdc80895e5625c0906a1aefd94843ad7a282c",
+         "state" : "needs_replay",
+         "version" : "0.12"
+      },
+      {
+         "author" : "JKEENAN",
+         "cpan_path" : "J/JK/JKEENAN/Devel-NYTProf-6.16.tar.gz",
+         "distribution" : "Devel-NYTProf",
+         "key" : "JKEENAN/Devel-NYTProf",
+         "module" : "Devel::NYTProf",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "FileHandle.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "NYTProf.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "63e47a1cf80fccead851515215d1b120eabd18a0f389bc4e32bfa0a3cff4c8fd"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "c5553739fbcdf0699df47554fc5e32c4e68ca7876511eef7aceffb6db27badda",
+         "state" : "needs_replay",
+         "version" : "6.16"
+      },
+      {
+         "author" : "JMATES",
+         "cpan_path" : "J/JM/JMATES/Unix-Sysexits-0.06.tar.gz",
+         "distribution" : "Unix-Sysexits",
+         "key" : "JMATES/Unix-Sysexits",
+         "module" : "Unix::Sysexits",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Sysexits.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "19bb91d4dcabcf80d412ceede4b8be359580191db9cdf5290c8cddbec670f8f4",
+         "state" : "needs_replay",
+         "version" : "0.06"
+      },
+      {
+         "author" : "JONASBN",
+         "cpan_path" : "J/JO/JONASBN/Crypt-OpenSSL-X509-2.1.5.tar.gz",
+         "distribution" : "Crypt-OpenSSL-X509",
+         "key" : "JONASBN/Crypt-OpenSSL-X509",
+         "module" : "Crypt::OpenSSL::X509",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "X509.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "ca40b8dbc741a9df792bb0495f2c1dce8043c63c8ee654673d5565dae40f4560",
+         "state" : "needs_replay",
+         "version" : "2.1.5"
+      },
+      {
+         "author" : "JSTOWE",
+         "cpan_path" : "J/JS/JSTOWE/TermReadKey-2.38.tar.gz",
+         "distribution" : "TermReadKey",
+         "key" : "JSTOWE/TermReadKey",
+         "module" : "Term::ReadKey",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "ReadKey.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "5a645878dc570ac33661581fbb090ff24ebce17d43ea53fd22e105a856a47290",
+         "state" : "needs_replay",
+         "version" : "2.38"
+      },
+      {
+         "author" : "JWB",
+         "cpan_path" : "J/JW/JWB/Proc-ProcessTable-0.637.tar.gz",
+         "distribution" : "Proc-ProcessTable",
+         "key" : "JWB/Proc-ProcessTable",
+         "module" : "Proc::ProcessTable",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "ProcessTable.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "os/DecOSF.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "os/FreeBSD-kvm.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "os/aix_getprocs.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d7e688b5f0bd5d38e5bb306f16f904aac93112df8eda098fefef1c810bba6f85",
+         "state" : "needs_replay",
+         "version" : "0.637"
+      },
+      {
+         "author" : "KARASIK",
+         "cpan_path" : "K/KA/KARASIK/Crypt-Curve25519-0.08.tar.gz",
+         "distribution" : "Crypt-Curve25519",
+         "key" : "KARASIK/Crypt-Curve25519",
+         "module" : "Crypt::Curve25519",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Curve25519.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "42eb902b44e434abcdc636435739c4e439fd083fdd561fb005cfc5772c2d179e",
+         "state" : "needs_replay",
+         "version" : "0.08"
+      },
+      {
+         "author" : "KAZEBURO",
+         "cpan_path" : "K/KA/KAZEBURO/Gazelle-0.51.tar.gz",
+         "distribution" : "Gazelle",
+         "key" : "KAZEBURO/Gazelle",
+         "module" : "Gazelle",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Plack/Handler/Gazelle.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "65ad1d164c2be22c0c5d66e41d595027c3f70d1c6f331b222f581d531ddf00fc",
+         "state" : "needs_replay",
+         "version" : "0.51"
+      },
+      {
+         "author" : "KAZEBURO",
+         "cpan_path" : "K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.28.tar.gz",
+         "distribution" : "WWW-Form-UrlEncoded-XS",
+         "key" : "KAZEBURO/WWW-Form-UrlEncoded-XS",
+         "module" : "WWW::Form::UrlEncoded::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/WWW/Form/UrlEncoded/XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "23ac64c4cb1c8b19dfd8e50f1bc92ade3be73f90b6b5dce2359f462f82617bec",
+         "state" : "needs_replay",
+         "version" : "0.28"
+      },
+      {
+         "author" : "KAZUHO",
+         "cpan_path" : "K/KA/KAZUHO/HTTP-Parser-XS-0.18.tar.gz",
+         "distribution" : "HTTP-Parser-XS",
+         "key" : "KAZUHO/HTTP-Parser-XS",
+         "module" : "HTTP::Parser::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "4a3c409b40ec56b18e23c302339bff2411a66e1ed6a822412f268eb698600afd",
+         "state" : "needs_replay",
+         "version" : "0.18"
+      },
+      {
+         "author" : "KIMOTO",
+         "cpan_path" : "K/KI/KIMOTO/SPVM-0.990206.tar.gz",
+         "distribution" : "SPVM",
+         "key" : "KIMOTO/SPVM",
+         "module" : "SPVM",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SPVM.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f5b1b5f2e154021c2fe644a162630699ad3955bedd8dca5845f4f4d6189ec70d",
+         "state" : "needs_replay",
+         "version" : "0.990206"
+      },
+      {
+         "author" : "KMX",
+         "cpan_path" : "K/KM/KMX/Crypt-OpenSSL-Bignum-0.09.tar.gz",
+         "distribution" : "Crypt-OpenSSL-Bignum",
+         "key" : "KMX/Crypt-OpenSSL-Bignum",
+         "module" : "Crypt::OpenSSL::Bignum",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Bignum.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "234e72fb8396d45527e6fd45e43759c5c3f3a208cf8f29e6a22161a996fd42dc",
+         "state" : "needs_replay",
+         "version" : "0.09"
+      },
+      {
+         "author" : "KSTAR",
+         "cpan_path" : "K/KS/KSTAR/Hash-SharedMem-0.007.tar.gz",
+         "distribution" : "Hash-SharedMem",
+         "key" : "KSTAR/Hash-SharedMem",
+         "module" : "Hash::SharedMem",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Hash/SharedMem.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "095f03556f9f345357e9f5a2ffa0e7a1a74581ac91fc6e76f45c62b23b5e595a",
+         "state" : "needs_replay",
+         "version" : "0.007"
+      },
+      {
+         "author" : "KUERBIS",
+         "cpan_path" : "K/KU/KUERBIS/Term-Choose-LineFold-XS-0.006.tar.gz",
+         "distribution" : "Term-Choose-LineFold-XS",
+         "key" : "KUERBIS/Term-Choose-LineFold-XS",
+         "module" : "Term::Choose::LineFold::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "4046939a022110b62c30f3b3d13c68e3cf42fcc935e12b4212ea1dead982919a",
+         "state" : "needs_replay",
+         "version" : "0.006"
+      },
+      {
+         "author" : "LEEJO",
+         "cpan_path" : "L/LE/LEEJO/String-CRC32-2.100.tar.gz",
+         "distribution" : "String-CRC32",
+         "key" : "LEEJO/String-CRC32",
+         "module" : "String::CRC32",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "CRC32.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9706093b2d068b6715d35b4c58f51558e37960083202129fbb00a57e19a74713",
+         "state" : "needs_replay",
+         "version" : "2.100"
+      },
+      {
+         "author" : "LEEJO",
+         "cpan_path" : "L/LE/LEEJO/Test-LeakTrace-0.17.tar.gz",
+         "distribution" : "Test-LeakTrace",
+         "key" : "LEEJO/Test-LeakTrace",
+         "module" : "Test::LeakTrace",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LeakTrace.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "777d64d2938f5ea586300eef97ef03eacb43d4c1853c9c3b1091eb3311467970",
+         "state" : "needs_replay",
+         "version" : "0.17"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/Crypt-Bcrypt-0.011.tar.gz",
+         "distribution" : "Crypt-Bcrypt",
+         "key" : "LEONT/Crypt-Bcrypt",
+         "module" : "Crypt::Bcrypt",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Bcrypt.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "67fca68b0526e734e2d95bc6b32bad01c319e587abf63e4cf3422da66bbea3a0",
+         "state" : "needs_replay",
+         "version" : "0.011"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/Crypt-Rijndael-1.16.tar.gz",
+         "distribution" : "Crypt-Rijndael",
+         "key" : "LEONT/Crypt-Rijndael",
+         "module" : "Crypt::Rijndael",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Rijndael.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "6540085e3804b82a6f0752c1122cf78cadd221990136dd6fd4c097d056c84d40",
+         "state" : "needs_replay",
+         "version" : "1.16"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/File-Map-0.71.tar.gz",
+         "distribution" : "File-Map",
+         "key" : "LEONT/File-Map",
+         "module" : "File::Map",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/File/Map.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c8e26933804e870d4aba92623b7886ac8b3c760c98fbfcd3bdc4b2305c464759",
+         "state" : "needs_replay",
+         "version" : "0.71"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/POSIX-RT-Timer-0.024.tar.gz",
+         "distribution" : "POSIX-RT-Timer",
+         "key" : "LEONT/POSIX-RT-Timer",
+         "module" : "POSIX::RT::Clock",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/POSIX/RT/Timer.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "5cb9a39c762b4d7b5fe3a89240118e4497130fde3d8d149e72dd2c6445ce9296",
+         "state" : "needs_replay",
+         "version" : "0.024"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/PerlIO-Layers-0.012.tar.gz",
+         "distribution" : "PerlIO-Layers",
+         "key" : "LEONT/PerlIO-Layers",
+         "module" : "PerlIO::Layers",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/PerlIO/Layers.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "542da542fa36bb3fdd7b8776e230d3ccc02aa6744ce9b77b4eef4ccae7c04adf",
+         "state" : "needs_replay",
+         "version" : "0.012"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz",
+         "distribution" : "PerlIO-utf8_strict",
+         "key" : "LEONT/PerlIO-utf8_strict",
+         "module" : "PerlIO::utf8_strict",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "utf8_strict.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "bcd2848b72df290b5e984fae8b1a6ca96f6d072003cf222389a8c9e8e1c570cd",
+         "state" : "needs_replay",
+         "version" : "0.010"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/Sys-Sendfile-0.19.tar.gz",
+         "distribution" : "Sys-Sendfile",
+         "key" : "LEONT/Sys-Sendfile",
+         "module" : "Sys::Sendfile",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Sys/Sendfile.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "705306054ad5ea7329b58596d3029daf29f0610a64e3eeca7cdec3f141e4d3c0",
+         "state" : "needs_replay",
+         "version" : "0.19"
+      },
+      {
+         "author" : "LEONT",
+         "cpan_path" : "L/LE/LEONT/Time-Spec-0.008.tar.gz",
+         "distribution" : "Time-Spec",
+         "key" : "LEONT/Time-Spec",
+         "module" : "Time::Spec",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Time/Spec.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "981f16b438e74ec125cbfd8a3b21ff9d12227c374bec52404dfcbfaf5f390d82",
+         "state" : "needs_replay",
+         "version" : "0.008"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Apophis-1.01.tar.gz",
+         "distribution" : "Apophis",
+         "key" : "LNATION/Apophis",
+         "module" : "Apophis",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Apophis.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "082cece6a883c162eb6f34edbbf914f9dda7299268ea605c0c3b56a57ab7be1f",
+         "state" : "needs_replay",
+         "version" : "1.01"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Bijection-XS-0.12.tar.gz",
+         "distribution" : "Bijection-XS",
+         "key" : "LNATION/Bijection-XS",
+         "module" : "Bijection::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Bijection/XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "37ed69c3ca4ad314e7cabe43695b06e61fa556b7be877f5c523905ac0a5c6289",
+         "state" : "needs_replay",
+         "version" : "0.12"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Colouring-In-XS-0.13.tar.gz",
+         "distribution" : "Colouring-In-XS",
+         "key" : "LNATION/Colouring-In-XS",
+         "module" : "Colouring::In::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Colouring/In/XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "799b877f52d6597feebeb2b627da5d093277aaa16228f5434830fd988134f832",
+         "state" : "needs_replay",
+         "version" : "0.13"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Ex-Op-0.05.tar.gz",
+         "distribution" : "Ex-Op",
+         "key" : "LNATION/Ex-Op",
+         "module" : "Ex::Op",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Op.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "929b2e3f58326449103c2a9391924beb1b7dc1209fef880bb27b7939ba746b25",
+         "state" : "needs_replay",
+         "version" : "0.05"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/File-Raw-0.19.tar.gz",
+         "distribution" : "File-Raw",
+         "key" : "LNATION/File-Raw",
+         "module" : "File::Raw",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "file.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "include/file_chunk.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "include/file_compat.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "include/file_plugin.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "5b7abaf245d4896cf9db301afc344fe17f228c4f84ec5e152540202d4404c3c8",
+         "state" : "needs_replay",
+         "version" : "0.19"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/HAMT-0.04.tar.gz",
+         "distribution" : "HAMT",
+         "key" : "LNATION/HAMT",
+         "module" : "HAMT",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "HAMT.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/abi.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/map.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/map_transient.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/ops.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/set.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/set_transient.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/test.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/vector.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "xs/vector_transient.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "20493d4ba0d1b85b5ef28fbc79d1be622d34ffc4fec9c27050de0d687d4bb6b8",
+         "state" : "needs_replay",
+         "version" : "0.04"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Horus-1.00.tar.gz",
+         "distribution" : "Horus",
+         "key" : "LNATION/Horus",
+         "module" : "Horus",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Horus.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "include/horus.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "2bbbb294e9f288b7afcc6bfc8ec17f57e92cc5201044a340334d0dca6e6a3ad4",
+         "state" : "needs_replay",
+         "version" : "1.00"
+      },
+      {
+         "author" : "LNATION",
+         "cpan_path" : "L/LN/LNATION/Object-Proto-1.04.tar.gz",
+         "distribution" : "Object-Proto",
+         "key" : "LNATION/Object-Proto",
+         "module" : "Object::Proto",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "include/object_compat.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "include/object_types.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "object.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "1afb7cf7d7639cd19e0dccd9091b8fe0d72b21ad9fd5c6710107b132f6ad8afa",
+         "state" : "needs_replay",
+         "version" : "1.04"
+      },
+      {
+         "author" : "MAF",
+         "cpan_path" : "M/MA/MAF/Net-ZooKeeper-0.41.tar.gz",
+         "distribution" : "Net-ZooKeeper",
+         "key" : "MAF/Net-ZooKeeper",
+         "module" : "Net::ZooKeeper",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "ZooKeeper.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "64d87c549bbc00496e1efbcba3f6bc845a5eae7868df1a0c4191f758279eec14"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "91c177f30f82302eaf3173356eef05c21bc82163df752acb469177bd14a72db9",
+         "state" : "needs_replay",
+         "version" : "0.41"
+      },
+      {
+         "author" : "MANWAR",
+         "cpan_path" : "M/MA/MANWAR/Time-Warp-0.55.tar.gz",
+         "distribution" : "Time-Warp",
+         "key" : "MANWAR/Time-Warp",
+         "module" : "Time::Warp",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Warp.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "4ca3fa5c8d0b49d3c51404f76f9bb6420f04b0d57a1dca3716f53465531cefa8",
+         "state" : "needs_replay",
+         "version" : "0.55"
+      },
+      {
+         "author" : "MIK",
+         "cpan_path" : "M/MI/MIK/CryptX-0.091.tar.gz",
+         "distribution" : "CryptX",
+         "key" : "MIK/CryptX",
+         "module" : "Crypt::Digest::SHA256",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "CryptX.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "3a82d5cf786985e5de5339d1236ce4b27306db5e6b1ed5fa15038ded6d44859a",
+         "state" : "needs_replay",
+         "version" : "0.091"
+      },
+      {
+         "author" : "MIKEM",
+         "cpan_path" : "M/MI/MIKEM/Authen-TacacsPlus-0.28.tar.gz",
+         "distribution" : "Authen-TacacsPlus",
+         "key" : "MIKEM/Authen-TacacsPlus",
+         "module" : "Authen::TacacsPlus",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "TacacsPlus.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c915ce2b85d177ec33733ad4a9a8ab23e3a390427426e729d2e2b0c1c8e422fc",
+         "state" : "needs_replay",
+         "version" : "0.28"
+      },
+      {
+         "author" : "MIKER",
+         "cpan_path" : "M/MI/MIKER/NetAddr-IP-4.079.tar.gz",
+         "distribution" : "NetAddr-IP",
+         "key" : "MIKER/NetAddr-IP",
+         "module" : "NetAddr::IP",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Lite/Util/Util.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "ec5a82dfb7028bcd28bb3d569f95d87dd4166cc19867f2184ed3a59f6d6ca0e7",
+         "state" : "needs_replay",
+         "version" : "4.079"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/Coro-6.57.tar.gz",
+         "distribution" : "Coro",
+         "key" : "MLEHMANN/Coro",
+         "module" : "Coro",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "Coro/CoroAPI.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Coro/State.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "EV/EV.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Event/Event.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "1928e48033540e11ebf5506986dd101af78d2421d210f96599223b15d51714c6",
+         "state" : "needs_replay",
+         "version" : "6.57"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/Guard-1.023.tar.gz",
+         "distribution" : "Guard",
+         "key" : "MLEHMANN/Guard",
+         "module" : "Guard",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Guard.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "34c4ddf91fc93d1090d86da14df706d175b1610c67372c01e12ce9555d4dd1dc",
+         "state" : "needs_replay",
+         "version" : "1.023"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/IO-AIO-4.81.tar.gz",
+         "distribution" : "IO-AIO",
+         "key" : "MLEHMANN/IO-AIO",
+         "module" : "IO::AIO",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "AIO.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "67029f20e9b734ac1f483f7175d4ce45f924581c7de8fdf44e20c79be6dc0729",
+         "state" : "needs_replay",
+         "version" : "4.81"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/JSON-XS-4.04.tar.gz",
+         "distribution" : "JSON-XS",
+         "key" : "MLEHMANN/JSON-XS",
+         "module" : "JSON::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "8eff1e9f304c5625b59ab7b42258415f6d3e3681c1ddab6b725518a018a7f5e0",
+         "state" : "needs_replay",
+         "version" : "4.04"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/Linux-Inotify2-2.3.tar.gz",
+         "distribution" : "Linux-Inotify2",
+         "key" : "MLEHMANN/Linux-Inotify2",
+         "module" : "Linux::Inotify2",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Inotify2.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "cb99150f9ffa51dbc3be5ee98d8e91c98cdfeae22eb88e718f2cf367bf270d17",
+         "state" : "needs_replay",
+         "version" : "2.3"
+      },
+      {
+         "author" : "MLEHMANN",
+         "cpan_path" : "M/ML/MLEHMANN/String-Similarity-1.04.tar.gz",
+         "distribution" : "String-Similarity",
+         "key" : "MLEHMANN/String-Similarity",
+         "module" : "String::Similarity",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Similarity.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "1f8eda2290bbcb721aef0ce1b0bfe13b01201dd3daa618a337f2f02e291c3245",
+         "state" : "needs_replay",
+         "version" : "1.04"
+      },
+      {
+         "author" : "MOB",
+         "cpan_path" : "M/MO/MOB/Hash-SafeKeys-0.04.tar.gz",
+         "distribution" : "Hash-SafeKeys",
+         "key" : "MOB/Hash-SafeKeys",
+         "module" : "Hash::SafeKeys",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SafeKeys.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a524ad3bf9da677c1f8be6e15971b76575408f744923da27647ae8f1d3c37ccc",
+         "state" : "needs_replay",
+         "version" : "0.04"
+      },
+      {
+         "author" : "MPIOTR",
+         "cpan_path" : "M/MP/MPIOTR/Text-Iconv-1.7.tar.gz",
+         "distribution" : "Text-Iconv",
+         "key" : "MPIOTR/Text-Iconv",
+         "module" : "Text::Iconv",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Iconv.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "5b80b7d5e709d34393bcba88971864a17b44a5bf0f9e4bcee383d029e7d2d5c3",
+         "state" : "needs_replay",
+         "version" : "1.7"
+      },
+      {
+         "author" : "MSCHWARTZ",
+         "cpan_path" : "M/MS/MSCHWARTZ/Unicode-Map-0.112.tar.gz",
+         "distribution" : "Unicode-Map",
+         "key" : "MSCHWARTZ/Unicode-Map",
+         "module" : "Unicode::Map",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Map.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "10f0c2f12ebba57dcd4f46d24cf242c1915d31ec0a4ec36b4df18c9ca0cb4a5a",
+         "state" : "needs_replay",
+         "version" : "0.112"
+      },
+      {
+         "author" : "MSCHWERN",
+         "cpan_path" : "M/MS/MSCHWERN/Hash-StoredIterator-0.008.tar.gz",
+         "distribution" : "Hash-StoredIterator",
+         "key" : "MSCHWERN/Hash-StoredIterator",
+         "module" : "Hash::StoredIterator",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Hash/StoredIterator.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "b9cbc4dcd8233e8d1d7f1481ddb79a4a5f9db7180cb3ef02b4bcbee05e65ea0c",
+         "state" : "needs_replay",
+         "version" : "0.008"
+      },
+      {
+         "author" : "MSHELOR",
+         "cpan_path" : "M/MS/MSHELOR/Digest-SHA3-1.05.tar.gz",
+         "distribution" : "Digest-SHA3",
+         "key" : "MSHELOR/Digest-SHA3",
+         "module" : "Digest::SHA3",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SHA3.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "adf1b9079b2b781755e5704877a1430a5f12997ea82205fd2966c9cc465a8522",
+         "state" : "needs_replay",
+         "version" : "1.05"
+      },
+      {
+         "author" : "MSTEMLE",
+         "cpan_path" : "M/MS/MSTEMLE/Net-AMQP-RabbitMQ-2.40014.tar.gz",
+         "distribution" : "Net-AMQP-RabbitMQ",
+         "key" : "MSTEMLE/Net-AMQP-RabbitMQ",
+         "module" : "Net::AMQP::RabbitMQ",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "RabbitMQ.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl_math_int64.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9b3a91696ef8c50e86ae34032b02f6b76c9e80b2860f78644c93eec1aeed0a4e",
+         "state" : "needs_replay",
+         "version" : "2.40014"
+      },
+      {
+         "author" : "MWADAMS",
+         "cpan_path" : "M/MW/MWADAMS/JSON-Schema-Corvus-XS-v0.1.1.tar.gz",
+         "distribution" : "JSON-Schema-Corvus-XS",
+         "key" : "MWADAMS/JSON-Schema-Corvus-XS",
+         "module" : "JSON::Schema::Corvus::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "b754238ca06c817bc4047a62784ea41cba3e78d189359320d38a54ea8500aa0f",
+         "state" : "needs_replay",
+         "version" : "v0.1.1"
+      },
+      {
+         "author" : "NEZUMI",
+         "cpan_path" : "N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz",
+         "distribution" : "Unicode-LineBreak",
+         "key" : "NEZUMI/Unicode-LineBreak",
+         "module" : "Text::LineFold",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LineBreak.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "486762e4cacddcc77b13989f979a029f84630b8175e7fef17989e157d4b6318a",
+         "state" : "needs_replay",
+         "version" : "2019.001"
+      },
+      {
+         "author" : "NIKOLAS",
+         "cpan_path" : "N/NI/NIKOLAS/POSIX-AtFork-0.04.tar.gz",
+         "distribution" : "POSIX-AtFork",
+         "key" : "NIKOLAS/POSIX-AtFork",
+         "module" : "POSIX::AtFork",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "AtFork.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c2e2293a86d487144bc8f7ba08e7c4b76b11b0e4dfdc41809845d30efa07e60e",
+         "state" : "needs_replay",
+         "version" : "0.04"
+      },
+      {
+         "author" : "NWCLARK",
+         "cpan_path" : "N/NW/NWCLARK/Devel-Arena-0.23.tar.gz",
+         "distribution" : "Devel-Arena",
+         "key" : "NWCLARK/Devel-Arena",
+         "module" : "Devel::Arena",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Arena.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "ff66cbfa9a5e84849e97ddd740cca7e555ea7b99dc495de993b885a5e09b34ad"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "8afa77a368b3ff368ab2c30300f60fb01d8bd3284d901b2cdaf465cbdae38185",
+         "state" : "needs_replay",
+         "version" : "0.23"
+      },
+      {
+         "author" : "NWCLARK",
+         "cpan_path" : "N/NW/NWCLARK/Devel-Size-0.87.tar.gz",
+         "distribution" : "Devel-Size",
+         "key" : "NWCLARK/Devel-Size",
+         "module" : "Devel::Size",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Size.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "0c8e8f760b670b609b5823d8dff03c8eb0972581f1004a69edb3ea11bc9ed5c7"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47",
+         "state" : "needs_replay",
+         "version" : "0.87"
+      },
+      {
+         "author" : "NWCLARK",
+         "cpan_path" : "N/NW/NWCLARK/PerlIO-gzip-0.20.tar.gz",
+         "distribution" : "PerlIO-gzip",
+         "key" : "NWCLARK/PerlIO-gzip",
+         "module" : "PerlIO::gzip",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "gzip.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "4848679a3f201e3f3b0c5f6f9526e602af52923ffa471a2a3657db786bd3bdc5",
+         "state" : "needs_replay",
+         "version" : "0.20"
+      },
+      {
+         "author" : "OALDERS",
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "distribution" : "HTML-Parser",
+         "key" : "OALDERS/HTML-Parser",
+         "module" : "HTML::Entities",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Parser.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "c41ba0b487a418932f2c4c3cd95db28dece11ec740a90e3fe903988df8b1c8cd"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            {
+               "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            }
+         ],
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "state" : "needs_replay",
+         "version" : "3.86"
+      },
+      {
+         "author" : "PALI",
+         "cpan_path" : "P/PA/PALI/Email-Address-XS-1.05.tar.gz",
+         "distribution" : "Email-Address-XS",
+         "key" : "PALI/Email-Address-XS",
+         "module" : "Email::Address::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Email-Address-XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "1510b7f10d67201037cd50d22c9d6b26eeca55ededa4cdb46bbca27e59a4ea16",
+         "state" : "needs_replay",
+         "version" : "1.05"
+      },
+      {
+         "author" : "PETDANCE",
+         "cpan_path" : "P/PE/PETDANCE/Test-Taint-1.08.tar.gz",
+         "distribution" : "Test-Taint",
+         "key" : "PETDANCE/Test-Taint",
+         "module" : "Test::Taint",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Taint.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "5d594d4257352c93785024c63aa0a7b73d912ceca9611cd975ce83aab021a97d",
+         "state" : "needs_replay",
+         "version" : "1.08"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Devel-MAT-Dumper-0.52.tar.gz",
+         "distribution" : "Devel-MAT-Dumper",
+         "key" : "PEVANS/Devel-MAT-Dumper",
+         "module" : "Devel::MAT::Dumper",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Devel/MAT/Dumper.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "2f0886fdc52e57de4d1b7df8a13cfab7e23c9e83567c1f840735278fb673f49c"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "239be0a9a029eae59734876d12fad02c6c08d9a8e139442267afa4ce3192bfc2",
+         "state" : "needs_replay",
+         "version" : "0.52"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Devel-Refcount-0.10.tar.gz",
+         "distribution" : "Devel-Refcount",
+         "key" : "PEVANS/Devel-Refcount",
+         "module" : "Devel::Refcount",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Devel/Refcount.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "b654d46963d1a881426ba15994f28f52eb839b0d135bf239b4d1bf38b1caca4a",
+         "state" : "needs_replay",
+         "version" : "0.10"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Future-AsyncAwait-0.71.tar.gz",
+         "distribution" : "Future-AsyncAwait",
+         "key" : "PEVANS/Future-AsyncAwait",
+         "module" : "Future::AsyncAwait",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Future/AsyncAwait.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "share/include/AsyncAwait.h"
+            }
+         ],
+         "patch_sha256" : [
+            "0e55660c6582ca2054e5c94d92c696d49e49e9a54c3162120c4c7461db53dee8"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "16caa557a3e7a95e0e6ff5fe39672aa8580047c75fa7748eb8b1cb183a7beb70",
+         "state" : "needs_replay",
+         "version" : "0.71"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Object-Pad-0.825.tar.gz",
+         "distribution" : "Object-Pad",
+         "key" : "PEVANS/Object-Pad",
+         "module" : "Object::Pad",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Object/Pad.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/class.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/field.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/suspended_compcv.c"
+            }
+         ],
+         "patch_sha256" : [
+            "6d700b193215851ce33164908a949f737b2a836e9469421b543464cc6ca2c870"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "3fa84943b6505a5bf9f29fe4202d1b75d6c6ae03f531ddea9edc4c13ff93b1a3",
+         "state" : "needs_replay",
+         "version" : "0.825"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Syntax-Keyword-Try-0.31.tar.gz",
+         "distribution" : "Syntax-Keyword-Try",
+         "key" : "PEVANS/Syntax-Keyword-Try",
+         "module" : "Syntax::Keyword::Try",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Syntax/Keyword/Try.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "6b24d9f6b294f4ad8de93db8919dc6a62bbc79920adf637eae28e533842d9066"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "7bc6242d746378982a599b34de35f07d3decc9e09d5646f8fa3b87f459414a4a",
+         "state" : "needs_replay",
+         "version" : "0.31"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Syntax-Operator-Equ-0.11.tar.gz",
+         "distribution" : "Syntax-Operator-Equ",
+         "key" : "PEVANS/Syntax-Operator-Equ",
+         "module" : "Syntax::Operator::Equ",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Syntax/Operator/Equ.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "28dda068ab7c3f124d6236b9aed9d07a2d6282ec17f7f6077e2fe2e83822ea3f",
+         "state" : "needs_replay",
+         "version" : "0.11"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/Time-timegm-0.01.tar.gz",
+         "distribution" : "Time-timegm",
+         "key" : "PEVANS/Time-timegm",
+         "module" : "Time::timegm",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Time/timegm.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "e721cdfda183146b895e04cee712e10ab1bc73c8bad1bbc84c04b19ef1052c98",
+         "state" : "needs_replay",
+         "version" : "0.01"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/UV-2.002.tar.gz",
+         "distribution" : "UV",
+         "key" : "PEVANS/UV",
+         "module" : "UV",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/UV.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "fa26ac86fe8ddd7c34e35e0c5b9860d9da5ffd7f9ea1c9a18847d27356750fe9",
+         "state" : "needs_replay",
+         "version" : "2.002"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Keyword-0.51.tar.gz",
+         "distribution" : "XS-Parse-Keyword",
+         "key" : "PEVANS/XS-Parse-Keyword",
+         "module" : "XS::Parse::Keyword",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/XS/Parse/Keyword.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/infix.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/keyword.c"
+            }
+         ],
+         "patch_sha256" : [
+            "3321022b485537ccb0e8c2569b55be01256c5e40c2586c2e1c3605c15c400436"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "9dcfdf4ca357caa6557c04bf6e215c1ef4784d5711ab246c5400b49863a3f61b",
+         "state" : "needs_replay",
+         "version" : "0.51"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/XS-Parse-Sublike-0.42.tar.gz",
+         "distribution" : "XS-Parse-Sublike",
+         "key" : "PEVANS/XS-Parse-Sublike",
+         "module" : "XS::Parse::Sublike",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/XS/Parse/Sublike.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/parse_subsignature_ex.c"
+            }
+         ],
+         "patch_sha256" : [
+            "b1918a2ec87d874c6189577965b430c14a4c6d5fa852589a9c75dc47ea525a60"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "4eeab874ac33285662caf28cf0d55cc6bc6d31017a7551f76732b1a59fbebdc6",
+         "state" : "needs_replay",
+         "version" : "0.42"
+      },
+      {
+         "author" : "PEVANS",
+         "cpan_path" : "P/PE/PEVANS/meta-0.015.tar.gz",
+         "distribution" : "meta",
+         "key" : "PEVANS/meta",
+         "module" : "meta",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/meta.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "04eae3e0a124eb2479ebd9a167319f4db4d920be65e59e16ae0cd6cf7e59e6a5",
+         "state" : "needs_replay",
+         "version" : "0.015"
+      },
+      {
+         "author" : "PJCJ",
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "distribution" : "Devel-Cover",
+         "key" : "PJCJ/Devel-Cover",
+         "module" : "Devel::Cover",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Cover.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "03c403682313c0fa1140057f5e1ff5aae235ff0c3e244b77251623b53df5a892"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            },
+            {
+               "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            }
+         ],
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "state" : "validated",
+         "version" : "1.52"
+      },
+      {
+         "author" : "PJCJ",
+         "cpan_path" : "P/PJ/PJCJ/Net-IDN-Encode-2.600.tar.gz",
+         "distribution" : "Net-IDN-Encode",
+         "key" : "PJCJ/Net-IDN-Encode",
+         "module" : "Net::IDN::Encode",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Net/IDN/Punycode.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "104f56c025ca7c914741bd860d0faee988242b9fa5043885fdf024e870df7bf3",
+         "state" : "needs_replay",
+         "version" : "2.600"
+      },
+      {
+         "author" : "PLICEASE",
+         "cpan_path" : "P/PL/PLICEASE/Alien-Build-2.88.tar.gz",
+         "distribution" : "Alien-Build",
+         "key" : "PLICEASE/Alien-Build",
+         "module" : "Alien::Base::Wrapper",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "inc/trivial.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "1922773772d452228c6093300bf14a0e60b3b2cbfddfdcdf18b69c07953dcd8c"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "c14346bace2b50cae62f1ee70a907f4c7383fabf90b034272ee52a5b1345fbba",
+         "state" : "needs_replay",
+         "version" : "2.88"
+      },
+      {
+         "author" : "PLICEASE",
+         "cpan_path" : "P/PL/PLICEASE/Params-SomeUtil-1.12.tar.gz",
+         "distribution" : "Params-SomeUtil",
+         "key" : "PLICEASE/Params-SomeUtil",
+         "module" : "Params::SomeUtil",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SomeUtil.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "ca61027a5c7f9ce2e31285c67a0bdc4f052c62051adfb7406d79ea0f23e5c1f0",
+         "state" : "needs_replay",
+         "version" : "1.12"
+      },
+      {
+         "author" : "PMQS",
+         "cpan_path" : "P/PM/PMQS/Compress-Raw-Lzma-2.225.tar.gz",
+         "distribution" : "Compress-Raw-Lzma",
+         "key" : "PMQS/Compress-Raw-Lzma",
+         "module" : "Compress::Raw::Lzma",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Lzma.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "fallback/constants.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "1292b126d831822f6b45c6c02c4fc69cc5ffbf6dc8f2515ff4f301cfcfcf684d",
+         "state" : "needs_replay",
+         "version" : "2.225"
+      },
+      {
+         "author" : "RANDIR",
+         "cpan_path" : "R/RA/RANDIR/Class-Accessor-Inherited-XS-0.39.tar.gz",
+         "distribution" : "Class-Accessor-Inherited-XS",
+         "key" : "RANDIR/Class-Accessor-Inherited-XS",
+         "module" : "Class::Accessor::Inherited::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "2f6ba1305f1c876afe57efc192ee5b1de08e82e587a92d73a740ed01f7176144",
+         "state" : "needs_replay",
+         "version" : "0.39"
+      },
+      {
+         "author" : "RANDIR",
+         "cpan_path" : "R/RA/RANDIR/Sub-Disable-1.02.tar.gz",
+         "distribution" : "Sub-Disable",
+         "key" : "RANDIR/Sub-Disable",
+         "module" : "Sub::Disable",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Disable.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "122c62b68a279324f9f8ce9c8a91e030d4c0cee3ca16af7f2ab55440bc4c9c07",
+         "state" : "needs_replay",
+         "version" : "1.02"
+      },
+      {
+         "author" : "RANDIR",
+         "cpan_path" : "R/RA/RANDIR/namespace-clean-xs-0.09.tar.gz",
+         "distribution" : "namespace-clean-xs",
+         "key" : "RANDIR/namespace-clean-xs",
+         "module" : "namespace::clean::xs",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "xs.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "fc8ef6adc110f3910f535d6340829fc2fb6dc35ff9ba9ffb77652aa715a39173"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "d642e90d7f3e7e692720a1908744458f9434f78d6ef144de1d43a3a7c43e52cd",
+         "state" : "needs_replay",
+         "version" : "0.09"
+      },
+      {
+         "author" : "RAZ",
+         "cpan_path" : "R/RA/RAZ/JavaBin-0.9.tar.gz",
+         "distribution" : "JavaBin",
+         "key" : "RAZ/JavaBin",
+         "module" : "JavaBin",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "JavaBin.c"
+            }
+         ],
+         "patch_sha256" : [
+            "5b3bf06662f06b8a186481acdf759ce0d4e5b119e676148929dfcf97f05181cf"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "662a11c886df8468fae5aed5201c50144f3ff2d860863388f0525d08a017dc3e",
+         "state" : "needs_replay",
+         "version" : "0.9"
+      },
+      {
+         "author" : "RCLAMP",
+         "cpan_path" : "R/RC/RCLAMP/Devel-Caller-2.07.tar.gz",
+         "distribution" : "Devel-Caller",
+         "key" : "RCLAMP/Devel-Caller",
+         "module" : "Devel::Caller",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Caller.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "b679a2b18034b0b720de82c3708724c364b10a6ca164cbc67cdc3af283f3503f",
+         "state" : "needs_replay",
+         "version" : "2.07"
+      },
+      {
+         "author" : "RCLAMP",
+         "cpan_path" : "R/RC/RCLAMP/Devel-LexAlias-0.05.tar.gz",
+         "distribution" : "Devel-LexAlias",
+         "key" : "RCLAMP/Devel-LexAlias",
+         "module" : "Devel::LexAlias",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LexAlias.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "5e0ad9d43e266033856e424e104a0009f8e63449e40cd5aba59ad94cb1bcee72",
+         "state" : "needs_replay",
+         "version" : "0.05"
+      },
+      {
+         "author" : "REHSACK",
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz",
+         "distribution" : "List-MoreUtils-XS",
+         "key" : "REHSACK/List-MoreUtils-XS",
+         "module" : "List::MoreUtils::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "1dd5cfd6bd7432a5cfdc1a1609d0db9db84e5f71a30978a4990703bfa8864eb0"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "e8ce46d57c179eecd8758293e9400ff300aaf20fefe0a9d15b9fe2302b9cb242",
+         "state" : "needs_replay",
+         "version" : "0.430"
+      },
+      {
+         "author" : "REHSACK",
+         "cpan_path" : "R/RE/REHSACK/Params-Util-1.102.tar.gz",
+         "distribution" : "Params-Util",
+         "key" : "REHSACK/Params-Util",
+         "module" : "Params::Util",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Util.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
+         "state" : "needs_replay",
+         "version" : "1.102"
+      },
+      {
+         "author" : "RGARCIA",
+         "cpan_path" : "R/RG/RGARCIA/Perl-Destruct-Level-0.02.tar.gz",
+         "distribution" : "Perl-Destruct-Level",
+         "key" : "RGARCIA/Perl-Destruct-Level",
+         "module" : "Perl::Destruct::Level",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Level.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "40b4ac0b292b60ce3b87de7aa39bc2fb25a19d10e5c9f69866961c84b3f6d13b",
+         "state" : "needs_replay",
+         "version" : "0.02"
+      },
+      {
+         "author" : "RGARCIA",
+         "cpan_path" : "R/RG/RGARCIA/Sub-Current-0.03.tar.gz",
+         "distribution" : "Sub-Current",
+         "key" : "RGARCIA/Sub-Current",
+         "module" : "Sub::Current",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Current.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c6a8004d001595b1cf764b9e409c5f245c83daa2490ee1bbbe570ce7c695e610",
+         "state" : "needs_replay",
+         "version" : "0.03"
+      },
+      {
+         "author" : "RGARCIA",
+         "cpan_path" : "R/RG/RGARCIA/Sub-Identify-0.14.tar.gz",
+         "distribution" : "Sub-Identify",
+         "key" : "RGARCIA/Sub-Identify",
+         "module" : "Sub::Identify",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Identify.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "068d272086514dd1e842b6a40b1bedbafee63900e5b08890ef6700039defad6f",
+         "state" : "needs_replay",
+         "version" : "0.14"
+      },
+      {
+         "author" : "RHANDOM",
+         "cpan_path" : "R/RH/RHANDOM/Taint-Runtime-0.03.tar.gz",
+         "distribution" : "Taint-Runtime",
+         "key" : "RHANDOM/Taint-Runtime",
+         "module" : "Taint::Runtime",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Runtime.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "6ece97234a19a6f627481b44ec28a71374a95e6fc94d417d2dccb397a00aa706",
+         "state" : "needs_replay",
+         "version" : "0.03"
+      },
+      {
+         "author" : "RJBS",
+         "cpan_path" : "R/RJ/RJBS/Text-Soundex-3.05.tar.gz",
+         "distribution" : "Text-Soundex",
+         "key" : "RJBS/Text-Soundex",
+         "module" : "Text::Soundex",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Soundex.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f6dd55b4280b25dea978221839864382560074e1d6933395faee2510c2db60ed",
+         "state" : "needs_replay",
+         "version" : "3.05"
+      },
+      {
+         "author" : "ROBIN",
+         "cpan_path" : "R/RO/ROBIN/PadWalker-2.5.tar.gz",
+         "distribution" : "PadWalker",
+         "key" : "ROBIN/PadWalker",
+         "module" : "PadWalker",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "PadWalker.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "07b26abb841146af32072a8d68cb90176ffb176fd9268e6f2f7d106f817a0cd0",
+         "state" : "needs_replay",
+         "version" : "2.5"
+      },
+      {
+         "author" : "ROBIN",
+         "cpan_path" : "R/RO/ROBIN/Want-0.29.tar.gz",
+         "distribution" : "Want",
+         "key" : "ROBIN/Want",
+         "module" : "Want",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Want.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "fb9e81a6f8b232c2f3a51c1f7195b0da0d211ccb1a0a160e7301bc10a4f6ef8f"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            }
+         ],
+         "source_sha256" : "b4e4740b8d4cb783591273c636bd68304892e28d89e88abf9273b1de17f552f7",
+         "state" : "validated",
+         "version" : "0.29"
+      },
+      {
+         "author" : "RRWO",
+         "cpan_path" : "R/RR/RRWO/Net-IP-LPM-1.13.tar.gz",
+         "distribution" : "Net-IP-LPM",
+         "key" : "RRWO/Net-IP-LPM",
+         "module" : "Net::IP::LPM",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LPM.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lpm_lib.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d9c73316ac3fe8be086cd0f01300af3f32ddd1a5c058ff320b54d66f700acfeb",
+         "state" : "needs_replay",
+         "version" : "1.13"
+      },
+      {
+         "author" : "RURBAN",
+         "cpan_path" : "R/RU/RURBAN/B-Flags-0.17.tar.gz",
+         "distribution" : "B-Flags",
+         "key" : "RURBAN/B-Flags",
+         "module" : "B::Flags",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Flags.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c1db97d01315bed109b4c48958cd32195cfc9ef5d3b7707eb47840c1d57c10b2",
+         "state" : "needs_replay",
+         "version" : "0.17"
+      },
+      {
+         "author" : "RURBAN",
+         "cpan_path" : "R/RU/RURBAN/Compress-Bzip2-2.28.tar.gz",
+         "distribution" : "Compress-Bzip2",
+         "key" : "RURBAN/Compress-Bzip2",
+         "module" : "Compress::Bzip2",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Bzip2.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "859f835c3f5c998810d8b2a6f9e282ff99d6cb66ccfa55cae7e66dafb035116e",
+         "state" : "needs_replay",
+         "version" : "2.28"
+      },
+      {
+         "author" : "RURBAN",
+         "cpan_path" : "R/RU/RURBAN/Crypt-OpenSSL-Random-0.17.tar.gz",
+         "distribution" : "Crypt-OpenSSL-Random",
+         "key" : "RURBAN/Crypt-OpenSSL-Random",
+         "module" : "Crypt::OpenSSL::Random",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Random.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a571b24181baaa76c96704e92acffc6934ff593e380dade274db4e43c140ad51",
+         "state" : "needs_replay",
+         "version" : "0.17"
+      },
+      {
+         "author" : "RURBAN",
+         "cpan_path" : "R/RU/RURBAN/Opcodes-0.16.tar.gz",
+         "distribution" : "Opcodes",
+         "key" : "RURBAN/Opcodes",
+         "module" : "Opcodes",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Opcodes.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9d8bf9f100115aa8e62497ac594dff91b63ae9f29acf3195fe4b1ff8d9b530d0",
+         "state" : "needs_replay",
+         "version" : "0.16"
+      },
+      {
+         "author" : "RURBAN",
+         "cpan_path" : "R/RU/RURBAN/Set-Object-1.43.tar.gz",
+         "distribution" : "Set-Object",
+         "key" : "RURBAN/Set-Object",
+         "module" : "Set::Object",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Object.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "e3b3c7c7ecb91ef6d20eb06bf6bff74e41c40b75bd234e107d2ecf78d3dea9d1",
+         "state" : "needs_replay",
+         "version" : "1.43"
+      },
+      {
+         "author" : "SALVA",
+         "cpan_path" : "S/SA/SALVA/Hash-Spy-0.01.tar.gz",
+         "distribution" : "Hash-Spy",
+         "key" : "SALVA/Hash-Spy",
+         "module" : "Hash::Spy",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Spy.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "b04214c988b14736774024e2ffb92c2b003be754e0a7905c5622e12b071b1278"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "65aed80a7c2e95309cd06568898cd59b75c5d5f409f7122bbf5bd478041d78ee",
+         "state" : "needs_replay",
+         "version" : "0.01"
+      },
+      {
+         "author" : "SALVA",
+         "cpan_path" : "S/SA/SALVA/Math-Int128-0.22.tar.gz",
+         "distribution" : "Math-Int128",
+         "key" : "SALVA/Math-Int128",
+         "module" : "Math::Int128",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Int128.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "c_api_client/perl_math_int128.c"
+            },
+            {
+               "kind" : "xs",
+               "path" : "c_api_client/sample.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl_math_int64.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "strtoint128.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a630ca401753866955f1173848ab5b4ac4ad5ca6ad9087f11cdf91dde85119bc",
+         "state" : "needs_replay",
+         "version" : "0.22"
+      },
+      {
+         "author" : "SALVA",
+         "cpan_path" : "S/SA/SALVA/Math-Int64-0.57.tar.gz",
+         "distribution" : "Math-Int64",
+         "key" : "SALVA/Math-Int64",
+         "module" : "Math::Int64",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Int64.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "c_api_client/perl_math_int64.c"
+            },
+            {
+               "kind" : "xs",
+               "path" : "c_api_client/sample.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "12c60111c1cfceb257ac2ccc5b2e1721879efa09a1b0a73e8836afca107a7d75",
+         "state" : "needs_replay",
+         "version" : "0.57"
+      },
+      {
+         "author" : "SANKO",
+         "cpan_path" : "S/SA/SANKO/Affix-v1.4.0.tar.gz",
+         "distribution" : "Affix",
+         "key" : "SANKO/Affix",
+         "module" : "Affix",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "lib/Affix.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/Affix.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "lib/Affix/marshal.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+         "state" : "needs_replay",
+         "version" : "v1.4.0"
+      },
+      {
+         "author" : "SCHWIGON",
+         "cpan_path" : "S/SC/SCHWIGON/class-methodmaker/Class-MethodMaker-2.25.tar.gz",
+         "distribution" : "Class-MethodMaker",
+         "key" : "SCHWIGON/Class-MethodMaker",
+         "module" : "Class::MethodMaker",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "MethodMaker.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "70bd3a6595cc40e54a9521eae3247e7d69166e6783ea5faebd59b84537e1b588",
+         "state" : "needs_replay",
+         "version" : "2.25"
+      },
+      {
+         "author" : "SHLOMIF",
+         "cpan_path" : "S/SH/SHLOMIF/Digest-JHash-0.10.tar.gz",
+         "distribution" : "Digest-JHash",
+         "key" : "SHLOMIF/Digest-JHash",
+         "module" : "Digest::JHash",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "JHash.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "c746cf0a861a004090263cd54d7728d0c7595a0cf90cbbfd8409b396ee3b0063",
+         "state" : "needs_replay",
+         "version" : "0.10"
+      },
+      {
+         "author" : "SHLOMIF",
+         "cpan_path" : "S/SH/SHLOMIF/Math-FFT-1.36.tar.gz",
+         "distribution" : "Math-FFT",
+         "key" : "SHLOMIF/Math-FFT",
+         "module" : "Math::FFT",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "FFT.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "arrays.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "0bf3019811a62f0bf479dceb5449e8e2b854d59abed9e3dca7a3ca8b91e27122",
+         "state" : "needs_replay",
+         "version" : "1.36"
+      },
+      {
+         "author" : "SHLOMIF",
+         "cpan_path" : "S/SH/SHLOMIF/Math-GMP-2.25.tar.gz",
+         "distribution" : "Math-GMP",
+         "key" : "SHLOMIF/Math-GMP",
+         "module" : "Math::GMP",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "GMP.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "382b71e54762f639e9a42a9b06934151987ba57d11bb70d35e3bec88d50450ce",
+         "state" : "needs_replay",
+         "version" : "2.25"
+      },
+      {
+         "author" : "SHLOMIF",
+         "cpan_path" : "S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz",
+         "distribution" : "XML-LibXSLT",
+         "key" : "SHLOMIF/XML-LibXSLT",
+         "module" : "XML::LibXSLT",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LibXSLT.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl-libxml-mm.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl-libxml-mm.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "7caa5aee72f53be59d8b84eecb6864a07c612a12ea6b27d5c706960edcd54587",
+         "state" : "needs_replay",
+         "version" : "2.003000"
+      },
+      {
+         "author" : "SMUELLER",
+         "cpan_path" : "S/SM/SMUELLER/Class-XSAccessor-1.19.tar.gz",
+         "distribution" : "Class-XSAccessor",
+         "key" : "SMUELLER/Class-XSAccessor",
+         "module" : "Class::XSAccessor",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "MurmurHashNeutral2.h"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/Array.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/Hash.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/HashCACompat.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XSAccessor.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "cxsa_hash_table.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "cxsa_locking.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "cxsa_main.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "cxsa_memory.h"
+            }
+         ],
+         "patch_sha256" : [
+            "8ee97affa4aa267113ce9bdc45dbf46e3e515dd9542c966aa4a30c8ae64ed60f"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            }
+         ],
+         "source_sha256" : "99c56b395f1239af19901f2feeb125d9ecb4e351a0d80daa9529211a4700a6f2",
+         "state" : "needs_replay",
+         "version" : "1.19"
+      },
+      {
+         "author" : "SMUELLER",
+         "cpan_path" : "S/SM/SMUELLER/Math-ConvexHull-MonotoneChain-0.01.tar.gz",
+         "distribution" : "Math-ConvexHull-MonotoneChain",
+         "key" : "SMUELLER/Math-ConvexHull-MonotoneChain",
+         "module" : "Math::ConvexHull::MonotoneChain",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "MonotoneChain.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "288bc45908263245548f91482ab1248868dd9dee447f9ca26cad79613e3b94f5",
+         "state" : "needs_replay",
+         "version" : "0.01"
+      },
+      {
+         "author" : "SMUELLER",
+         "cpan_path" : "S/SM/SMUELLER/Math-SimpleHisto-XS-1.30.tar.gz",
+         "distribution" : "Math-SimpleHisto-XS",
+         "key" : "SMUELLER/Math-SimpleHisto-XS",
+         "module" : "Math::SimpleHisto::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/aggregate.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/bins.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/construction.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS/rdgen.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "histogram.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d8c4c779d68985ca135a9f0f9327faa21497e338d336aa08b398bd653a1b50f1",
+         "state" : "needs_replay",
+         "version" : "1.30"
+      },
+      {
+         "author" : "SMUELLER",
+         "cpan_path" : "S/SM/SMUELLER/Statistics-CaseResampling-0.18.tar.gz",
+         "distribution" : "Statistics-CaseResampling",
+         "key" : "SMUELLER/Statistics-CaseResampling",
+         "module" : "Statistics::CaseResampling",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "CaseResampling.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "stats.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "4dd9344a0d2b35005e02455130c61cd3b5060f7197edd90537585cb0c009d4ef",
+         "state" : "needs_replay",
+         "version" : "0.18"
+      },
+      {
+         "author" : "SMUELLER",
+         "cpan_path" : "S/SM/SMUELLER/Statistics-EfficiencyCI-0.07.tar.gz",
+         "distribution" : "Statistics-EfficiencyCI",
+         "key" : "SMUELLER/Statistics-EfficiencyCI",
+         "module" : "Statistics::EfficiencyCI",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "EfficiencyCI.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "eff_ci.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "eff_math_fun.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "79ecc8f5243c92ed83913e78eda143a4e40654cb193b60ca118bd1396709450e",
+         "state" : "needs_replay",
+         "version" : "0.07"
+      },
+      {
+         "author" : "SONGMU",
+         "cpan_path" : "S/SO/SONGMU/Text-Markdown-Discount-0.19.tar.gz",
+         "distribution" : "Text-Markdown-Discount",
+         "key" : "SONGMU/Text-Markdown-Discount",
+         "module" : "Text::Markdown::Discount",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Text/Markdown/Discount.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f6009876832379af580cbd3a5f0c04b3c7f3fef352d89c2d6d47192f7e55fa2b",
+         "state" : "needs_replay",
+         "version" : "0.19"
+      },
+      {
+         "author" : "STBEY",
+         "cpan_path" : "S/ST/STBEY/Bit-Vector-7.4.tar.gz",
+         "distribution" : "Bit-Vector",
+         "key" : "STBEY/Bit-Vector",
+         "module" : "Bit::Vector",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Vector.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "3c6daa671fecfbc35f92a9385b563d65f50dfc6bdc8b4805f9ef46c0d035a926",
+         "state" : "needs_replay",
+         "version" : "7.4"
+      },
+      {
+         "author" : "SYBER",
+         "cpan_path" : "S/SY/SYBER/Test-Catch-2.0.2.tar.gz",
+         "distribution" : "Test-Catch",
+         "key" : "SYBER/Test-Catch",
+         "module" : "Test::Catch",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Catch.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "607cca9df809be9ab6ee884e67ac576ee6fa69a20a4df5609494dbceec22cb0c",
+         "state" : "needs_replay",
+         "version" : "2.0.2"
+      },
+      {
+         "author" : "SYBER",
+         "cpan_path" : "S/SY/SYBER/XS-Framework-1.6.2.tar.gz",
+         "distribution" : "XS-Framework",
+         "key" : "SYBER/XS-Framework",
+         "module" : "XS::Framework",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Framework.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "3b1d3c7b2765a2781417eeb4ae1eb78a6a9c3a27c18b631f8ece43351a448280"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "2a42c0d1928224b418595b6745b0343912742f4a5cfc0df64cd1428b21368ead",
+         "state" : "needs_replay",
+         "version" : "1.6.2"
+      },
+      {
+         "author" : "SYBER",
+         "cpan_path" : "S/SY/SYBER/XS-Install-1.5.2.tar.gz",
+         "distribution" : "XS-Install",
+         "key" : "SYBER/XS-Install",
+         "module" : "XS::Install",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "xsheader.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "2928a81a3f7dea17ee751bf3416d7a5d5cc40ab5fc384d335336bd98bed5580e",
+         "state" : "needs_replay",
+         "version" : "1.5.2"
+      },
+      {
+         "author" : "SYBER",
+         "cpan_path" : "S/SY/SYBER/next-XS-1.0.8.tar.gz",
+         "distribution" : "next-XS",
+         "key" : "SYBER/next-XS",
+         "module" : "next::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "78fef91ac3c6c0ef7d2469fa7c5c03051fd1d32e24d2d17542a85a99d37ad020",
+         "state" : "needs_replay",
+         "version" : "1.0.8"
+      },
+      {
+         "author" : "SYP",
+         "cpan_path" : "S/SY/SYP/Net-Curl-0.60.tar.gz",
+         "distribution" : "Net-Curl",
+         "key" : "SYP/Net-Curl",
+         "module" : "Net::Curl",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Curl.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl_curl.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl_curl_multi.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f1a84e8ef4fde7759c8913b87c8b6582b795345d7012cae52392a8e1500433f8",
+         "state" : "needs_replay",
+         "version" : "0.60"
+      },
+      {
+         "author" : "TIMB",
+         "cpan_path" : "T/TI/TIMB/Devel-SizeMe-0.19.tar.gz",
+         "distribution" : "Devel-SizeMe",
+         "key" : "TIMB/Devel-SizeMe",
+         "module" : "Devel::SizeMe",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "SizeMe.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "0e6419d8654525c9c76a7159c71e36dad9f6fde380b22e2b6a23e2bcadaa5e27"
+         ],
+         "rc_validations" : [],
+         "source_sha256" : "546e31ba83c0bf7cef37b38a462860461850473479d7d4ac6c0dadfb78d54717",
+         "state" : "needs_replay",
+         "version" : "0.19"
+      },
+      {
+         "author" : "TIMLEGGE",
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-DES-2.09.tar.gz",
+         "distribution" : "Crypt-DES",
+         "key" : "TIMLEGGE/Crypt-DES",
+         "module" : "Crypt::DES",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "DES.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "149cdc0a14e944b4cc5eefb7560c78d8cb25254f9f9774547c880355a7e9f40c",
+         "state" : "needs_replay",
+         "version" : "2.09"
+      },
+      {
+         "author" : "TIMLEGGE",
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenSSL-RSA-0.41.tar.gz",
+         "distribution" : "Crypt-OpenSSL-RSA",
+         "key" : "TIMLEGGE/Crypt-OpenSSL-RSA",
+         "module" : "Crypt::OpenSSL::RSA",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "RSA.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "82fa839897b88e9c245b6265f3be26d3bc879cae4c7a8151fad4a307c3366822",
+         "state" : "needs_replay",
+         "version" : "0.41"
+      },
+      {
+         "author" : "TIMLEGGE",
+         "cpan_path" : "T/TI/TIMLEGGE/Crypt-OpenSSL-Verify-0.38.tar.gz",
+         "distribution" : "Crypt-OpenSSL-Verify",
+         "key" : "TIMLEGGE/Crypt-OpenSSL-Verify",
+         "module" : "Crypt::OpenSSL::Verify",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Verify.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "25c60e4895451f40140630a62b587ded3bee5ca1ba547477a08e5b5ec905023f",
+         "state" : "needs_replay",
+         "version" : "0.38"
+      },
+      {
+         "author" : "TINITA",
+         "cpan_path" : "T/TI/TINITA/YAML-LibYAML-v0.910.0.tar.gz",
+         "distribution" : "YAML-LibYAML",
+         "key" : "TINITA/YAML-LibYAML",
+         "module" : "YAML::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LibYAML/LibYAML.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "LibYAML/perl_libyaml.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "04310e9840b918383a5b9ae9ca4b3bde1b2771ec786c758bd2fffd79d409332b",
+         "state" : "needs_replay",
+         "version" : "v0.910.0"
+      },
+      {
+         "author" : "TINITA",
+         "cpan_path" : "T/TI/TINITA/YAML-LibYAML-API-v0.14.0.tar.gz",
+         "distribution" : "YAML-LibYAML-API",
+         "key" : "TINITA/YAML-LibYAML-API",
+         "module" : "YAML::LibYAML::API",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "LibYAML/XS.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "LibYAML/etc/perl_libyaml.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "31a0fedd77d824dab38983be9a3b426863f8aab13013beb95c4ecf80959733e1",
+         "state" : "needs_replay",
+         "version" : "v0.14.0"
+      },
+      {
+         "author" : "TOBYINK",
+         "cpan_path" : "T/TO/TOBYINK/PerlX-Maybe-XS-1.001.tar.gz",
+         "distribution" : "PerlX-Maybe-XS",
+         "key" : "TOBYINK/PerlX-Maybe-XS",
+         "module" : "PerlX::Maybe::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "48ef97f06949e65277d1a0ac269fbc543b2cb08bd613f020de2098bed6a40bb6",
+         "state" : "needs_replay",
+         "version" : "1.001"
+      },
+      {
+         "author" : "TOBYINK",
+         "cpan_path" : "T/TO/TOBYINK/Regexp-Util-0.005.tar.gz",
+         "distribution" : "Regexp-Util",
+         "key" : "TOBYINK/Regexp-Util",
+         "module" : "Regexp::Util",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Util.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a08871fca2054c464ec6cd663fbdb2fce99cc0346256acf0a4936681ed8a0e00",
+         "state" : "needs_replay",
+         "version" : "0.005"
+      },
+      {
+         "author" : "TOBYINK",
+         "cpan_path" : "T/TO/TOBYINK/Type-Tiny-XS-0.025.tar.gz",
+         "distribution" : "Type-Tiny-XS",
+         "key" : "TOBYINK/Type-Tiny-XS",
+         "module" : "Type::Tiny::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Util.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "xshelper.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9a61450dda90294f606cd7a3fa44f3b1a366bcd88a419917b054ee5e23d148bd",
+         "state" : "needs_replay",
+         "version" : "0.025"
+      },
+      {
+         "author" : "TODDR",
+         "cpan_path" : "T/TO/TODDR/IO-Tty-1.31.tar.gz",
+         "distribution" : "IO-Tty",
+         "key" : "TODDR/IO-Tty",
+         "module" : "IO::Pty",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Tty.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "d597af221628571cbecf35b44520148c44798dfc8a9867774e60453f79d25ff7",
+         "state" : "needs_replay",
+         "version" : "1.31"
+      },
+      {
+         "author" : "TODDR",
+         "cpan_path" : "T/TO/TODDR/Template-Toolkit-3.106.tar.gz",
+         "distribution" : "Template-Toolkit",
+         "key" : "TODDR/Template-Toolkit",
+         "module" : "Template",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "xs/Stash.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "96013e2e3224680be8846dc48b87876ac96fd2c1cc7307bc2179d57a6ff5da7d"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "c7474050be80201f1fb55f0a569b9c0ab6c1c3f0cebbd7e601bda9b4046eec85",
+         "state" : "needs_replay",
+         "version" : "3.106"
+      },
+      {
+         "author" : "TODDR",
+         "cpan_path" : "T/TO/TODDR/XML-LibXML-2.0213.tar.gz",
+         "distribution" : "XML-LibXML",
+         "key" : "TODDR/XML-LibXML",
+         "module" : "XML::LibXML",
+         "native_sources" : [
+            {
+               "kind" : "perl_api",
+               "path" : "Av_CharPtrPtr.c"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Devel.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "LibXML.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "dom.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl-libxml-mm.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl-libxml-mm.h"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl-libxml-sax.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "xpath.c"
+            }
+         ],
+         "patch_sha256" : [
+            "8f08d91929fe53aae014caf3b463f3ff5aa66fac1761bc4adbd8a41101e87ad3"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "2af21c5d61ac34ea26a5fabf15ba5a5841e648f7189db3e33b6f28b5489802ab",
+         "state" : "needs_replay",
+         "version" : "2.0213"
+      },
+      {
+         "author" : "TODDR",
+         "cpan_path" : "T/TO/TODDR/XML-Parser-2.59.tar.gz",
+         "distribution" : "XML-Parser",
+         "key" : "TODDR/XML-Parser",
+         "module" : "XML::Parser",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Expat/Expat.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "4b61204e4bc72252da94d312f35480a2f8a8c8de0e9c61053d98ae3a9112a83e"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "a358fd7c49f5e27717a644a9102bd21dc7fc25a415983279c59b1580e2b62a58",
+         "state" : "needs_replay",
+         "version" : "2.59"
+      },
+      {
+         "author" : "TODDR",
+         "cpan_path" : "T/TO/TODDR/YAML-Syck-1.47.tar.gz",
+         "distribution" : "YAML-Syck",
+         "key" : "TODDR/YAML-Syck",
+         "module" : "YAML::Syck",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Syck.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "perl_common.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "672196ca1c021e3c68f4b5f7b4aec305ad471bbbf448c53c7e40034d6ebb7e1d",
+         "state" : "needs_replay",
+         "version" : "1.47"
+      },
+      {
+         "author" : "TONYC",
+         "cpan_path" : "T/TO/TONYC/POE-XS-Queue-Array-0.006.tar.gz",
+         "distribution" : "POE-XS-Queue-Array",
+         "key" : "TONYC/POE-XS-Queue-Array",
+         "module" : "POE::XS::Queue::Array",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Array.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "queue.c"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "704005635afc79be5fce4d164652ebfb27b79c1034bfbe09d416efb80881954b",
+         "state" : "needs_replay",
+         "version" : "0.006"
+      },
+      {
+         "author" : "TVDW",
+         "cpan_path" : "T/TV/TVDW/AnyEvent-XSPromises-0.006.tar.gz",
+         "distribution" : "AnyEvent-XSPromises",
+         "key" : "TVDW/AnyEvent-XSPromises",
+         "module" : "AnyEvent::XSPromises",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XSPromises.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "16088a6420d4c1d4c628a9b7cdf7a7286de7dfdf6b408eb571846f6780bc74e6",
+         "state" : "needs_replay",
+         "version" : "0.006"
+      },
+      {
+         "author" : "UGEXE",
+         "cpan_path" : "U/UG/UGEXE/Text-Levenshtein-Damerau-XS-3.2.tar.gz",
+         "distribution" : "Text-Levenshtein-Damerau-XS",
+         "key" : "UGEXE/Text-Levenshtein-Damerau-XS",
+         "module" : "Text::Levenshtein::Damerau::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "154e376a909cb358cafe8571d02832f25838bd7dd11df3f87b619fd81eeb59fe",
+         "state" : "needs_replay",
+         "version" : "3.2"
+      },
+      {
+         "author" : "UMEMOTO",
+         "cpan_path" : "U/UM/UMEMOTO/Socket6-0.29.tar.gz",
+         "distribution" : "Socket6",
+         "key" : "UMEMOTO/Socket6",
+         "module" : "Socket6",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Socket6.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "468915fa3a04dcf6574fc957eff495915e24569434970c91ee8e4e1459fc9114",
+         "state" : "needs_replay",
+         "version" : "0.29"
+      },
+      {
+         "author" : "VPIT",
+         "cpan_path" : "V/VP/VPIT/Variable-Magic-0.65.tar.gz",
+         "distribution" : "Variable-Magic",
+         "key" : "VPIT/Variable-Magic",
+         "module" : "Variable::Magic",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Magic.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "37758c23d0ad13b0ecebaad11f7476237096aeaf74907c3d0e46e4f3156a2ac7"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            },
+            {
+               "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            }
+         ],
+         "source_sha256" : "457bfb1b2369e44c0e2ef3e7b61580831107cbeebf0f5d8c4b9b02368550b91e",
+         "state" : "needs_replay",
+         "version" : "0.65"
+      },
+      {
+         "author" : "VPIT",
+         "cpan_path" : "V/VP/VPIT/autovivification-0.18.tar.gz",
+         "distribution" : "autovivification",
+         "key" : "VPIT/autovivification",
+         "module" : "autovivification",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "autovivification.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "2d99975685242980d0a9904f639144c059d6ece15899efde4acb742d3253f105",
+         "state" : "needs_replay",
+         "version" : "0.18"
+      },
+      {
+         "author" : "VPIT",
+         "cpan_path" : "V/VP/VPIT/indirect-0.39.tar.gz",
+         "distribution" : "indirect",
+         "key" : "VPIT/indirect",
+         "module" : "indirect",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "indirect.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "be4a120ec9bf2984ee96406bf049c24393ba4bb2a9f217c25b3fb10ff9418514"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            {
+               "build_id" : "3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3",
+               "platform" : "darwin/darwin-2level",
+               "xperl_commit" : "dcffbe5dc9ccff28dbfc77eab378a8738015dfe2"
+            }
+         ],
+         "source_sha256" : "71733c4c348e98fdd575b44a52042428c39888a18c25656efe59ef3d7d0d27e5",
+         "state" : "needs_replay",
+         "version" : "0.39"
+      },
+      {
+         "author" : "XAOC",
+         "cpan_path" : "X/XA/XAOC/Cairo-1.109.tar.gz",
+         "distribution" : "Cairo",
+         "key" : "XAOC/Cairo",
+         "module" : "Cairo",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Cairo.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoFont.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoFt.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoMatrix.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoPath.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoPattern.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoRegion.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "CairoSurface.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "cairo-perl.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "8219736e401c2311da5f515775de43fd87e6384b504da36a192f2b217643077f",
+         "state" : "needs_replay",
+         "version" : "1.109"
+      },
+      {
+         "author" : "XAOC",
+         "cpan_path" : "X/XA/XAOC/Glib-1.3294.tar.gz",
+         "distribution" : "Glib",
+         "key" : "XAOC/Glib",
+         "module" : "Glib",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "GBookmarkFile.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GBoxed.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GClosure.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GError.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GIOChannel.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GKeyFile.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GLog.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GMainLoop.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GObject.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GOption.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GParamSpec.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GSignal.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GType.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GUtils.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GValue.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "GVariant.xs"
+            },
+            {
+               "kind" : "xs",
+               "path" : "Glib.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "gperl.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "d715f5a86bcc187075de85e7ae5bc07b0714d6edc196a92da43986efa44e5cbb",
+         "state" : "needs_replay",
+         "version" : "1.3294"
+      },
+      {
+         "author" : "XMATH",
+         "cpan_path" : "X/XM/XMATH/Data-Alias-1.30.tar.gz",
+         "distribution" : "Data-Alias",
+         "key" : "XMATH/Data-Alias",
+         "module" : "Data::Alias",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Alias.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "dfa9e341b086cd957df6675879a9cb120919408b85b48966dd240ab85333ed2e",
+         "state" : "needs_replay",
+         "version" : "1.30"
+      },
+      {
+         "author" : "XSAWYERX",
+         "cpan_path" : "X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz",
+         "distribution" : "Ref-Util-XS",
+         "key" : "XSAWYERX/Ref-Util-XS",
+         "module" : "Ref::Util::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "XS.xs"
+            }
+         ],
+         "patch_sha256" : [
+            "a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            {
+               "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            }
+         ],
+         "source_sha256" : "fb64c5a823787f6600257918febd9fbc6f0305936fc3287b81a30c099b65633c",
+         "state" : "validated",
+         "version" : "0.117"
+      },
+      {
+         "author" : "YOREEK",
+         "cpan_path" : "Y/YO/YOREEK/XML-Hash-XS-0.66.tar.gz",
+         "distribution" : "XML-Hash-XS",
+         "key" : "YOREEK/XML-Hash-XS",
+         "module" : "XML::Hash::XS",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "src/XS.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "src/xh_config.h"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "9b65c252ebd459a028045379456e64fe8f4a609f3a9f48d15a3e02178538cc79",
+         "state" : "needs_replay",
+         "version" : "0.66"
+      },
+      {
+         "author" : "YVES",
+         "cpan_path" : "Y/YV/YVES/Algorithm-ConsistentHash-JumpHash-0.05.tar.gz",
+         "distribution" : "Algorithm-ConsistentHash-JumpHash",
+         "key" : "YVES/Algorithm-ConsistentHash-JumpHash",
+         "module" : "Algorithm::ConsistentHash::JumpHash",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "JumpHash.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "e2e1f127c771c23b8e1d782ab5d954ff3171444b07f0ae2d6c9bc895b40cbd22",
+         "state" : "needs_replay",
+         "version" : "0.05"
+      },
+      {
+         "author" : "YVES",
+         "cpan_path" : "Y/YV/YVES/Data-Dump-Streamer-2.42.tar.gz",
+         "distribution" : "Data-Dump-Streamer",
+         "key" : "YVES/Data-Dump-Streamer",
+         "module" : "Data::Dump::Streamer",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Data/Dump/Streamer.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "47f6e51fb45ce7be561e01481add0c2e1c0cd85df4b9e212f3923cd3064d1cad",
+         "state" : "deferred",
+         "version" : "2.42"
+      },
+      {
+         "author" : "YVES",
+         "cpan_path" : "Y/YV/YVES/Sereal-Decoder-7.001.tar.gz",
+         "distribution" : "Sereal-Decoder",
+         "key" : "YVES/Sereal-Decoder",
+         "module" : "Sereal::Decoder",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Decoder.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "author_tools/numeric_str_length.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "srl_decoder.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "srl_decoder.h"
+            }
+         ],
+         "patch_sha256" : [
+            "8c2f0a8bb095ff2c9e8139827101b27366cb67213771512066e8978a4b7c0855"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            }
+         ],
+         "source_sha256" : "471993fcb2113a1e4928e746d844bcc6a168d87471738f21e12ff85a412c6557",
+         "state" : "needs_replay",
+         "version" : "7.001"
+      },
+      {
+         "author" : "YVES",
+         "cpan_path" : "Y/YV/YVES/Sereal-Encoder-7.001.tar.gz",
+         "distribution" : "Sereal-Encoder",
+         "key" : "YVES/Sereal-Encoder",
+         "module" : "Sereal::Encoder",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "Encoder.xs"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "author_tools/numeric_str_length.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "srl_encoder.c"
+            },
+            {
+               "kind" : "perl_api",
+               "path" : "srl_encoder.h"
+            }
+         ],
+         "patch_sha256" : [
+            "1875dd40a1d5de58c1dc0413f8d221f6999912d82cac8157da664fa6be8f2fde"
+         ],
+         "rc_validations" : [
+            {
+               "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+               "platform" : "linux/x86_64-linux",
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            }
+         ],
+         "source_sha256" : "e3917f070e570a5743ea75a7677ba33596de7f1ab9ee25b6aa4e348d4f5d1d52",
+         "state" : "needs_replay",
+         "version" : "7.001"
+      },
+      {
+         "author" : "ZEFRAM",
+         "cpan_path" : "Z/ZE/ZEFRAM/Lexical-SealRequireHints-0.012.tar.gz",
+         "distribution" : "Lexical-SealRequireHints",
+         "key" : "ZEFRAM/Lexical-SealRequireHints",
+         "module" : "Lexical::SealRequireHints",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Lexical/SealRequireHints.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "c32bdc38e06f8d6c90765bbbe3168c358247da7dae85b80ba84a2da1763757dd",
+         "state" : "needs_replay",
+         "version" : "0.012"
+      },
+      {
+         "author" : "ZEFRAM",
+         "cpan_path" : "Z/ZE/ZEFRAM/Params-Classify-0.015.tar.gz",
+         "distribution" : "Params-Classify",
+         "key" : "ZEFRAM/Params-Classify",
+         "module" : "Params::Classify",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Params/Classify.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "398ec15cd899fcd8bef3db9ea1748bf631f15f6c32be203e475b67df510a5914",
+         "state" : "needs_replay",
+         "version" : "0.015"
+      },
+      {
+         "author" : "ZEFRAM",
+         "cpan_path" : "Z/ZE/ZEFRAM/Scalar-String-0.003.tar.gz",
+         "distribution" : "Scalar-String",
+         "key" : "ZEFRAM/Scalar-String",
+         "module" : "Scalar::String",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Scalar/String.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "f54a17c9b78713b02cc43adfadf60b49467e7634d31317e8b9e9e97c26d68b52",
+         "state" : "needs_replay",
+         "version" : "0.003"
+      },
+      {
+         "author" : "ZEFRAM",
+         "cpan_path" : "Z/ZE/ZEFRAM/Sub-Metadata-0.002.tar.gz",
+         "distribution" : "Sub-Metadata",
+         "key" : "ZEFRAM/Sub-Metadata",
+         "module" : "Sub::Metadata",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Sub/Metadata.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a22f9eeac78f040fc0055fec7e2c8442d425dbf285967619f4424d2577c484d0",
+         "state" : "needs_replay",
+         "version" : "0.002"
+      },
+      {
+         "author" : "ZEFRAM",
+         "cpan_path" : "Z/ZE/ZEFRAM/Sub-StrictDecl-0.005.tar.gz",
+         "distribution" : "Sub-StrictDecl",
+         "key" : "ZEFRAM/Sub-StrictDecl",
+         "module" : "Sub::StrictDecl",
+         "native_sources" : [
+            {
+               "kind" : "xs",
+               "path" : "lib/Sub/StrictDecl.xs"
+            }
+         ],
+         "patch_sha256" : [],
+         "rc_validations" : [],
+         "source_sha256" : "a127dae7645c1a9570cd9a2970c6dc493d522ff07318a34a39e409098f691125",
+         "state" : "needs_replay",
+         "version" : "0.005"
+      }
+   ],
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "schema" : 1,
+   "unknown" : [],
+   "xperl_version" : "v5.45.5"
+}
