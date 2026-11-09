@@ -305,6 +305,82 @@
       {
          "advisories" : [],
          "cpan_path" : "R/RI/RIBASUSHI/DBIx-Class-0.082844.tar.gz",
+         "id" : "bf672db96767a1e301758738bf759a0d3c6a0ed2998147b53f568d015240f0af",
+         "module" : "DBIx::Class",
+         "observed_at" : "2026-11-08T21:07:55Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "structured-exception-rollback",
+         "patch_sha256" : [
+            "f7c96064c3539af5f2bc290aceb2a856647766d5395b4cc9d9406fcd6005d2fc"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "e0784e3861a197ad5aa17396f18901f0aaa8bab04a4330cb50038337ec30ca7f",
+         "status" : "installed",
+         "test_summary" : "Files=314, Tests=13335",
+         "version" : "0.082844",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RI/RIBASUSHI/DBIx-Class-0.082844.tar.gz",
          "id" : "703c85a8464a74854793d30e7f9d2dabb8c1749bd0a0306b2dc2cd062051f67c",
          "module" : "DBIx::Class",
          "observed_at" : "2026-11-08T21:26:06Z",
