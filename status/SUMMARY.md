@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 90 of 3641 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 90 of 3642 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3597,6 +3597,7 @@ Unresolved failures: 90 of 3641 release, XPerl, and platform combinations. See [
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | rc-stack-custom-op-v1 | a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3 |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
+| XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | rc-stack-custom-op-v1 | a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3 |
 | YAKEX | [String-Unescape](../data/fa/YAKEX/String-Unescape/status.json) | v0.0.3 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | YAKEX | [Test-Kwalitee-Extra](../data/6e/YAKEX/Test-Kwalitee-Extra/status.json) | v0.4.0 | v5.45.5 | darwin/darwin-2level | failed | none | none |
 | YANICK | [Dancer-Plugin-REST](../data/31/YANICK/Dancer-Plugin-REST/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none | none |
