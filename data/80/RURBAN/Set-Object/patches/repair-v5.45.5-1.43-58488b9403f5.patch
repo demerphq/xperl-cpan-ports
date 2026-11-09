@@ -1,0 +1,32 @@
+--- a/lib/Set/Object.pm
++++ b/lib/Set/Object.pm
+@@ -157,6 +157,11 @@
+ increase the reference count of the object they point to, just like
+ L<Scalar::Util|Scalar::Util>'s C<weaken> function.
+ 
++Keep a strong reference to each object for as long as it needs to stay in
++a weak set.  Anonymous arguments can expire before a later operation in
++the same expression, including a union of weak sets.  Keep those objects
++in variables until the operation has used them.
++
+ This was introduced with Set::Object 1.16, and uses a brand new type
+ of magic.  B<Use with caution>.  If you get segfaults when you use
+ C<weaken>, please reduce your problem to a test script before
+--- a/t/object/weakref.t
++++ b/t/object/weakref.t
+@@ -198,5 +198,13 @@
+  }
+ }
+ 
+-$set = Set::Object::weak_set(["ø"]) + Set::Object::weak_set(["þ"]);
+-is($set->size(), 2, "computations on sets don't care that they're weak");
++{
++    # Keep the members alive until the union acquires strong references.
++    # PERL_RC_STACK can release anonymous arguments before the union runs.
++    my ($left, $right) = (["ø"], ["þ"]);
++    $set = Set::Object::weak_set($left) + Set::Object::weak_set($right);
++    is($set->size(), 2, "computations on sets don't care that they're weak");
++    ok(!$set->is_weak, "the union of weak sets is strong");
++    ok($set->includes($left, $right), "the union contains both input objects");
++}
++is($set->size(), 2, "the union retains its members after input owners expire");
