@@ -138,6 +138,74 @@
       },
       {
          "cpan_path" : "S/SW/SWEETKID/Plack-Middleware-FixMissingBodyInRedirect-0.12.tar.gz",
+         "id" : "5ae2e8ace7ba04f33d70e173d92b82762360480333f53fe246c6fce4cfd40e08",
+         "module" : "Plack::Middleware::FixMissingBodyInRedirect",
+         "observed_at" : "2026-11-08T20:48:44Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "6c22d069f5a57ac206d4659b28b8869bb9270640bb955efddd451dcc58cdb391",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=47",
+         "version" : "0.12",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SW/SWEETKID/Plack-Middleware-FixMissingBodyInRedirect-0.12.tar.gz",
          "id" : "2bc93c4c52e5913fa24ac1a806d12de75081c874830bcfb520d1f1dc12790373",
          "module" : "Plack::Middleware::FixMissingBodyInRedirect",
          "observed_at" : "2026-11-08T21:24:14Z",
