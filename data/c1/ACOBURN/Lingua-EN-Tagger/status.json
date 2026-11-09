@@ -138,6 +138,74 @@
       },
       {
          "cpan_path" : "A/AC/ACOBURN/Lingua-EN-Tagger-0.31.tar.gz",
+         "id" : "a1408c1ec02d56c1c99ec9e0789fa794af7b63f56c2f117d57ac86ce38f03790",
+         "module" : "Lingua::EN::Tagger",
+         "observed_at" : "2026-11-08T20:11:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "949e8c87e4808f7ba096b979220ff081bbe03b6d57890d2eecd4b83ae872e993",
+         "status" : "installed",
+         "test_summary" : "Files=10, Tests=114",
+         "version" : "0.31",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AC/ACOBURN/Lingua-EN-Tagger-0.31.tar.gz",
          "id" : "d10bff08da2053de8f4a419d22b849a939be609895e3c5b4b63946e23f20a0f7",
          "module" : "Lingua::EN::Tagger",
          "observed_at" : "2026-11-08T21:23:08Z",
