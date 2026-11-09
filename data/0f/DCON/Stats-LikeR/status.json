@@ -274,6 +274,82 @@
          "test_summary" : "Files=254, Tests=69702",
          "version" : "0.3416",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "D/DC/DCON/Stats-LikeR-0.3416.tar.gz",
+         "id" : "a14982a2770e617c543e96cdfcd70e37d4578367e049e832f09935e80c1954be",
+         "module" : "Stats::LikeR",
+         "observed_at" : "2026-11-09T13:31:38Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-hash-entry-traversal",
+         "patch_sha256" : [
+            "aac1ce5644196d30bb7a308aa2948c7e39e4b235723d9512019835a6322bf534"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "3013a7cf6d015cba53e46271c3691595301be892df93022fb7f8b190653f77de",
+         "status" : "installed",
+         "test_summary" : "Files=254, Tests=69702",
+         "version" : "0.3416",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
