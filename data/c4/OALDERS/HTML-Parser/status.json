@@ -403,6 +403,82 @@
       {
          "advisories" : [],
          "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
+         "id" : "2f5a4d787f7f68f5b637b31a66704988d204a9d2956be91b265b9601101c22d1",
+         "module" : "HTML::Entities",
+         "observed_at" : "2026-11-09T10:00:23Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "stable-entity-value",
+         "patch_sha256" : [
+            "c41ba0b487a418932f2c4c3cd95db28dece11ec740a90e3fe903988df8b1c8cd"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+            },
+            "build_id" : "bfef7cdf6d9df493032906a37224e7d53045d5c62e8d9c7254de2f7956af2d38",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "abc49230f72ea58a62f7f574ca792d5091340c6f"
+         },
+         "source_sha256" : "5305e1d5faa70ee0aa282d85a5c9aa93911e8c7afa590ad1ced5703a544e20f6",
+         "status" : "installed",
+         "test_summary" : "Files=50, Tests=481",
+         "version" : "3.86",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "O/OA/OALDERS/HTML-Parser-3.86.tar.gz",
          "id" : "dabfb75f76caecd8ecadadb43f872035b34cca78cca489ed40bdf47b7dd23202",
          "module" : "HTML::Entities",
          "observed_at" : "2026-11-09T10:05:30Z",
