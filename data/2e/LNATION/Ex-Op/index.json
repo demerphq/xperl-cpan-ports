@@ -1,0 +1,28 @@
+{
+   "distribution" : "Ex-Op",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Ex-Op-0.05.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.05-21910d951423.patch",
+                     "sha256" : "21910d9514231f70462a6e30f79f4dacf70794bffee3d9584c70d31d3c22dd9e"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "929b2e3f58326449103c2a9391924beb1b7dc1209fef880bb27b7939ba746b25",
+         "version" : "0.05"
+      }
+   ],
+   "schema" : 1
+}

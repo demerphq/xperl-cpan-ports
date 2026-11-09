@@ -1,0 +1,204 @@
+--- a/include/ex_op_call.h
++++ b/include/ex_op_call.h
+@@ -268,8 +268,14 @@
+         sv_setsv(PL_curpad[e->params[i]],
+                  (I32)i < nargs ? PL_stack_base[markix + 1 + i] : &PL_sv_undef);
+ 
++#ifdef PERL_RC_STACK
++    /* The pad owns its parameter copies. Release the stack's arguments
++     * and sub reference before running the body. */
++    rpp_popfree_to(PL_stack_base + markix);
++#else
+     SP = PL_stack_base + markix;
+     PUTBACK;
++#endif
+     return e->entry;
+ }
+ 
+@@ -321,11 +327,13 @@
+     return r;
+ }
+ 
++#ifndef PERL_RC_STACK
+ static bool
+ eo_passes(SV *sv)
+ {
+     return SvTEMP(sv) && SvREFCNT(sv) == 1 && !SvMAGICAL(sv); /* # uncoverable condition right count:2..3 */
+ }
++#endif
+ 
+ /* Leave the call's scope. When the body left nothing on the save stack
+  * above the call's own entry, that entry is taken off and run here, which
+@@ -356,6 +364,19 @@
+     OP *next         = r->next;
+     SV **mark        = PL_stack_base + markix;
+ 
++#ifdef PERL_RC_STACK
++    PERL_UNUSED_ARG(sp);
++    /* Core preserves return values across pad cleanup and releases the
++     * stack references it discards, including values in void context. */
++    if (gimme == G_VOID) {
++        rpp_popfree_to(mark);
++        FREETMPS;
++    }
++    else {
++        leave_adjust_stacks(mark, mark, gimme, 0);
++    }
++    eo_leave_call(aTHX_ ri, saveix, afterix);
++#else
+     if (gimme == G_SCALAR) {
+         SV *sv = sp > mark ? *sp : &PL_sv_undef;
+         SV *result;
+@@ -432,6 +453,7 @@
+         eo_leave_call(aTHX_ ri, saveix, afterix);
+         PL_stack_sp = PL_stack_base + markix;
+     }
++#endif
+ 
+     return next;
+ }
+@@ -457,11 +479,37 @@
+ {
+     dMY_CXT;
+     eo_ret_t *r = eo_frameless_return(aTHX_ &MY_CXT);
+-    SV **from, **to, **sp, **p;
++    SV **from, **to;
++#ifndef PERL_RC_STACK
++    SV **sp, **p;
++#endif
+ 
+     if (!r)
+         return PL_ppaddr[OP_RETURN](aTHX);
+ 
++#ifdef PERL_RC_STACK
++    {
++        const I32 ri = MY_CXT.ret_top - 1;
++        const I32 spcx = r->spcx;
++        const I32 markix = r->markix;
++        const U8 gimme = r->gimme;
++
++        from = PL_stack_base + POPMARK;
++        to = PL_stack_base + markix;
++        /* Preserve loop and block lexicals before unwinding their scopes.
++         * The helper moves the results and frees any intervening values. */
++        if (gimme == G_VOID) {
++            rpp_popfree_to(to);
++            FREETMPS;
++        }
++        else {
++            leave_adjust_stacks(from, to, gimme, 0);
++        }
++        if (cxstack_ix > spcx)
++            dounwind(spcx);
++        return eo_finish(aTHX_ &MY_CXT.ret[ri], ri, PL_stack_sp);
++    }
++#else
+     from = PL_stack_base + POPMARK;
+     to   = PL_stack_base + r->markix;
+     sp   = PL_stack_sp;
+@@ -477,6 +525,7 @@
+         sp = to;
+     }
+     return eo_finish(aTHX_ r, MY_CXT.ret_top - 1, sp);
++#endif
+ }
+ 
+ static void
+--- a/include/ex_op_compat.h
++++ b/include/ex_op_compat.h
+@@ -7,6 +7,13 @@
+        (PERL_VERSION > (v) || (PERL_VERSION == (v) && PERL_SUBVERSION >= (s)))))
+ #endif
+ 
++#ifdef XPERL_VERSION
++/* XPerl counts compilation errors in the pending exception. */
++#  define EO_ERROR_COUNT PERL_DIAG_ERROR_COUNT
++#else
++#  define EO_ERROR_COUNT (PL_parser->error_count)
++#endif
++
+ #if !PERL_VERSION_GE(5,14,0)
+ typedef OP * (*Perl_call_checker)(pTHX_ OP *, GV *, SV *);
+ #endif
+--- a/include/ex_op_kw.h
++++ b/include/ex_op_kw.h
+@@ -125,7 +125,7 @@
+     body  = parse_block(0);
+     cv    = newATTRSUB(floor, newSVOP(OP_CONST, 0, newSVsv(name)), NULL, NULL, body);
+ 
+-    if (cv && !PL_parser->error_count) { /* # uncoverable condition right count:2 */
++    if (cv && !EO_ERROR_COUNT) { /* # uncoverable condition right count:2 */
+         eo_op_t *e = eo_register(aTHX_ cv);
+         if (!e->accepted && eo_strict_on(aTHX))
+             croak("%" SVf " cannot be an op: %s", SVfARG(name), e->why);
+--- a/t/40-call-scalar.t
++++ b/t/40-call-scalar.t
+@@ -141,6 +141,21 @@
+ is( lexicals(3, 4), 10, 'lexicals in the body' );
+ is( lexicals(1, 1), 3, '... are fresh on the next call' );
+ 
++sub object_stack {
++    same(EO::Obj->new(1), EO::Obj->new(2));
++    my @r = (give_obj(3), give_obj(4));
++    return \@r;
++}
++
++{
++    $DESTROYED = 0;
++    my $r = object_stack();
++    is( $DESTROYED, 2, 'a void result and an unused argument release their objects' );
++    is_deeply( [map { $_->{v} } @$r], [3, 4], 'objects returned in list context survive the call' );
++    undef $r;
++    is( $DESTROYED, 4, 'returned objects are freed when their caller releases them' );
++}
++
+ {
+     my $sum = 0;
+     for my $i (1 .. 1000) { $sum = add($sum, $i) }
+--- a/t/61-keyword-errors.t
++++ b/t/61-keyword-errors.t
+@@ -52,4 +52,44 @@
+       '... and so is a strict error two lines in' );
+ ok( compile_err('op ($x) { 1 }'), 'op with no name is not the keyword, and here a syntax error' );
+ 
++{
++    local $@;
++    my $ok = eval q{
++        package EO::KwRecovery;
++        use Ex::Op;
++        op broken ($x) { my $v = ; $x }
++        1;
++    };
++    ok( !$ok, 'a syntax error in an op fails compilation' );
++    like( $@, qr/syntax error/, 'the parser error survives keyword processing' );
++    $ok = eval q{
++        package EO::KwRecovery;
++        use Ex::Op;
++        op good ($x) { $x + 1 }
++        sub run { good(41) }
++        1;
++    };
++    ok( $ok, 'a later compilation succeeds after the parser error' ) or diag $@;
++    ok( Ex::Op::is_op(\&EO::KwRecovery::good), 'the later op is registered' );
++    is( EO::KwRecovery::run(), 42, 'the later op runs' );
++}
++
++{
++    local $@;
++    my @warnings;
++    local $SIG{__WARN__} = sub { push @warnings, @_ };
++    my $ok = eval q{
++        package EO::KwWarning;
++        use warnings;
++        use Ex::Op;
++        op good ($x) { my $x = 41; $x + 1 }
++        sub run { good(0) }
++        1;
++    };
++    ok( $ok, 'a compilation warning does not fail the op' ) or diag $@;
++    like( join('', @warnings), qr/masks earlier declaration/, 'the warning is delivered' );
++    ok( Ex::Op::is_op(\&EO::KwWarning::good), 'a warning does not prevent registration' );
++    is( EO::KwWarning::run(), 42, 'the op with a compilation warning runs' );
++}
++
+ done_testing;
