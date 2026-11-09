@@ -196,6 +196,82 @@
       {
          "advisories" : [],
          "cpan_path" : "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
+         "id" : "23ab40c545cc8272ab24fa2d0827618410f8191040177a0cb0e0a60ea5b7d238",
+         "module" : "Plack",
+         "observed_at" : "2026-11-08T20:12:42Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-canonical-stacktrace",
+         "patch_sha256" : [
+            "db68151f5895821db824213cf0027de6f84f52b6e81eb773afeaa9e16d2b2d16"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "01cfe036276703f62cf6c1cec7c7e630420677498dfa7bc333ad88eca9d7a765",
+         "status" : "installed",
+         "test_summary" : "Files=155, Tests=1312",
+         "version" : "1.0057",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "M/MI/MIYAGAWA/Plack-1.0057.tar.gz",
          "id" : "a076ec41da350c9358346c53032a444abdc52e864e0116fa2a8973266a1807ef",
          "module" : "HTTP::Message::PSGI",
          "module_version" : "undef",
