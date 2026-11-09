@@ -1,0 +1,516 @@
+--- a/Coro/State.xs
++++ b/Coro/State.xs
+@@ -44,6 +44,17 @@
+ #include <errno.h>
+ #include <assert.h>
+ 
++#ifdef PERL_RC_STACK
++# define CORO_RC_STACK 1
++/* SLF callbacks run on an RC stack, while ordinary XS calls are wrapped. */
++# define CORO_PUSHs(sv) (*++sp = rpp_stack_is_rc () ? SvREFCNT_inc (sv) : (sv))
++# define CORO_XPUSHs(sv) STMT_START { EXTEND (SP, 1); CORO_PUSHs (sv); } STMT_END
++#else
++# define CORO_RC_STACK 0
++# define CORO_PUSHs(sv) PUSHs (sv)
++# define CORO_XPUSHs(sv) XPUSHs (sv)
++#endif
++
+ #ifndef SvREFCNT_dec_NN
+   #define SvREFCNT_dec_NN(sv) SvREFCNT_dec (sv)
+ #endif
+@@ -367,7 +378,7 @@
+ {
+   dSP;
+   PUSHMARK (SP - 4); /* fake argument list */
+-  XPUSHs (coro_select_select);
++  CORO_XPUSHs (coro_select_select);
+   PUTBACK;
+ 
+   /* entersub is an UNOP, select a LISTOP... keep your fingers crossed */
+@@ -815,11 +826,11 @@
+     CV *cv;
+ 
+     /* now do the ugly restore mess */
+-    while (ecb_expect_true (cv = (CV *)POPs))
++    while (ecb_expect_true (cv = (CV *)*sp--))
+       {
+         put_padlist (aTHX_ cv); /* mark this padlist as available */
+-        CvDEPTH (cv) = PTR2IV (POPs);
+-        CvPADLIST (cv) = (PADLIST *)POPs;
++        CvDEPTH (cv) = PTR2IV (*sp--);
++        CvPADLIST (cv) = (PADLIST *)*sp--;
+       }
+ 
+     PUTBACK;
+@@ -898,7 +909,9 @@
+      * (and reinitialize) all cv's in the whole callchain :(
+      */
+ 
+-    XPUSHs (Nullsv);
++    /* These are raw pointers, removed by load_perl before Perl resumes. */
++    EXTEND (SP, 1);
++    *++sp = Nullsv;
+     /* this loop was inspired by pp_caller */
+     for (;;)
+       {
+@@ -913,9 +926,9 @@
+                 if (ecb_expect_true (CvDEPTH (cv)))
+                   {
+                     EXTEND (SP, 3);
+-                    PUSHs ((SV *)CvPADLIST (cv));
+-                    PUSHs (INT2PTR (SV *, (IV)CvDEPTH (cv)));
+-                    PUSHs ((SV *)cv);
++                    *++sp = (SV *)CvPADLIST (cv);
++                    *++sp = INT2PTR (SV *, (IV)CvDEPTH (cv));
++                    *++sp = (SV *)cv;
+ 
+                     CvDEPTH (cv) = 0;
+                     get_padlist (aTHX_ cv);
+@@ -975,6 +988,9 @@
+     PL_curstackinfo->si_type = PERLSI_MAIN;
+     PL_curstack = PL_curstackinfo->si_stack;
+     PL_mainstack = PL_curstack;		/* remember in case we switch stacks */
++#if CORO_RC_STACK
++    AvREAL_on (PL_curstack);
++#endif
+ 
+     PL_stack_base = AvARRAY(PL_curstack);
+     PL_stack_sp = PL_stack_base;
+@@ -1244,7 +1260,7 @@
+     myop.op_flags = OPf_WANT_VOID;
+ 
+     PUSHMARK (SP);
+-    XPUSHs ((SV *)coro->startcv);
++    CORO_XPUSHs ((SV *)coro->startcv);
+     PUTBACK;
+     PL_op = (OP *)&myop;
+     PL_op = PL_ppaddr[OP_ENTERSUB](aTHX);
+@@ -1404,9 +1420,9 @@
+               SAVETMPS;
+               PUSHMARK (SP);
+               EXTEND (SP, 3);
+-              PUSHs (&PL_sv_no);
+-              PUSHs (fullname);
+-              PUSHs (sv_2mortal (newRV_noinc ((SV *)av)));
++              CORO_PUSHs (&PL_sv_no);
++              CORO_PUSHs (fullname);
++              CORO_PUSHs (sv_2mortal (newRV_noinc ((SV *)av)));
+               PUTBACK;
+               cb = hv_fetch ((HV *)SvRV (coro_current), "_trace_sub_cb", sizeof ("_trace_sub_cb") - 1, 0);
+               if (cb) call_sv (*cb, G_KEEPERR | G_EVAL | G_VOID | G_DISCARD);
+@@ -1442,9 +1458,9 @@
+                           SAVETMPS;
+                           PUSHMARK (SP);
+                           EXTEND (SP, 3);
+-                          PUSHs (&PL_sv_yes);
+-                          PUSHs (fullname);
+-                          PUSHs (CxHASARGS (cx) ? sv_2mortal (newRV_inc (SUB_ARGARRAY)) : &PL_sv_undef);
++                          CORO_PUSHs (&PL_sv_yes);
++                          CORO_PUSHs (fullname);
++                          CORO_PUSHs (CxHASARGS (cx) ? sv_2mortal (newRV_inc (SUB_ARGARRAY)) : &PL_sv_undef);
+                           PUTBACK;
+                           cb = hv_fetch ((HV *)SvRV (coro_current), "_trace_sub_cb", sizeof ("_trace_sub_cb") - 1, 0);
+                           if (cb) call_sv (*cb, G_KEEPERR | G_EVAL | G_VOID | G_DISCARD);
+@@ -1466,8 +1482,8 @@
+                       SAVETMPS;
+                       PUSHMARK (SP);
+                       EXTEND (SP, 2);
+-                      PUSHs (sv_2mortal (newSVpv (OutCopFILE (oldcop), 0)));
+-                      PUSHs (sv_2mortal (newSViv (CopLINE (oldcop))));
++                      CORO_PUSHs (sv_2mortal (newSVpv (OutCopFILE (oldcop), 0)));
++                      CORO_PUSHs (sv_2mortal (newSViv (CopLINE (oldcop))));
+                       PUTBACK;
+                       cb = hv_fetch ((HV *)SvRV (coro_current), "_trace_line_cb", sizeof ("_trace_line_cb") - 1, 0);
+                       if (cb) call_sv (*cb, G_KEEPERR | G_EVAL | G_VOID | G_DISCARD);
+@@ -2027,7 +2043,7 @@
+                     SAVETMPS;
+ 
+                     PUSHMARK (SP);
+-                    XPUSHs (sv_2mortal (newSVpv ("FATAL: $Coro::idle blocked itself - did you try to block inside an event loop callback? Caught", 0)));
++                    CORO_XPUSHs (sv_2mortal (newSVpv ("FATAL: $Coro::idle blocked itself - did you try to block inside an event loop callback? Caught", 0)));
+                     PUTBACK;
+                     call_pv ("Carp::confess", G_VOID | G_DISCARD);
+ 
+@@ -2166,14 +2182,14 @@
+       dSP;
+ 
+       if (gimme_v == G_SCALAR)
+-        XPUSHs (AvARRAY (av)[AvFILLp (av)]);
++        CORO_XPUSHs (AvARRAY (av)[AvFILLp (av)]);
+       else
+         {
+           int i;
+           EXTEND (SP, AvFILLp (av) + 1);
+ 
+           for (i = 0; i <= AvFILLp (av); ++i)
+-            PUSHs (AvARRAY (av)[i]);
++            CORO_PUSHs (AvARRAY (av)[i]);
+         }
+ 
+       PUTBACK;
+@@ -2435,7 +2451,7 @@
+ 
+       {
+         dSP;
+-        XPUSHs (sv_2mortal (coro->invoke_cb)); coro->invoke_cb = 0;
++        CORO_XPUSHs (sv_2mortal (coro->invoke_cb)); coro->invoke_cb = 0;
+         PUTBACK;
+       }
+ 
+@@ -2545,7 +2561,7 @@
+ 
+     EXTEND (SP, AvFILLp (av) + 1);
+     for (i = 0; i <= AvFILLp (av); ++i)
+-      PUSHs (sv_2mortal (AvARRAY (av)[i]));
++      CORO_PUSHs (sv_2mortal (AvARRAY (av)[i]));
+ 
+     /* we have stolen the elements, make it unreal and free */
+     AvREAL_off (av);
+@@ -2638,9 +2654,9 @@
+   EXTEND (SP, slf_argc + 1);
+ 
+   for (i = 0; i < slf_argc; ++i)
+-    PUSHs (sv_2mortal (slf_argv [i]));
++    CORO_PUSHs (sv_2mortal (slf_argv [i]));
+ 
+-  PUSHs ((SV *)CvGV (slf_cv));
++  CORO_PUSHs ((SV *)CvGV (slf_cv));
+ 
+   RETURNOP (slf_restore.op_first);
+ }
+@@ -2773,6 +2789,15 @@
+       ((coro_slf_cb)CvXSUBANY (GvCV (gv)).any_ptr)
+         (aTHX_ &slf_frame, GvCV (gv), arg, items);
+ 
++      /* Keep the arguments alive through prepare, including transfer's data. */
++#if CORO_RC_STACK
++      if (rpp_stack_is_rc ())
++        {
++          SV **svp = PL_stack_base + TOPMARK + 1;
++          while (svp <= SP)
++            sv_2mortal (*svp++);
++        }
++#endif
+       /* pop args */
+       SP = PL_stack_base + POPMARK;
+ 
+@@ -2808,6 +2833,9 @@
+ 
+   /* return value handling - mostly like entersub */
+   /* make sure we put something on the stack in scalar context */
++#if CORO_RC_STACK
++  rpp_context (PL_stack_base + checkmark, GIMME_V, 0);
++#else
+   if (GIMME_V == G_SCALAR
+       && ecb_expect_false (PL_stack_sp != PL_stack_base + checkmark + 1))
+     {
+@@ -2824,6 +2852,7 @@
+       PUTBACK;
+     }
+ 
++#endif
+   return NORMAL;
+ }
+ 
+@@ -2853,6 +2882,11 @@
+   slf_restore.op_first  = PL_op;
+ 
+   slf_ax   = ax - 1; /* undo the ax++ inside dAXMARK */
++#if CORO_RC_STACK
++  /* The XS wrapper removes its duplicate argument frame on return. */
++  if (PL_curstackinfo->si_stack_nonrc_base)
++    slf_ax -= items;
++#endif
+ 
+   if (PL_op->op_flags & OPf_STACKED)
+     {
+@@ -3148,7 +3182,7 @@
+         {
+           dSP;
+           PUSHMARK (SP);
+-          XPUSHs (sv_2mortal (newRV_inc ((SV *)av)));
++          CORO_XPUSHs (sv_2mortal (newRV_inc ((SV *)av)));
+           PUTBACK;
+           call_sv (cb, G_VOID | G_DISCARD | G_EVAL | G_KEEPERR);
+         }
+@@ -3293,7 +3327,7 @@
+         {
+           dSP;
+           PUSHMARK (SP);
+-          XPUSHs (sv_2mortal (newRV_inc ((SV *)av)));
++          CORO_XPUSHs (sv_2mortal (newRV_inc ((SV *)av)));
+           PUTBACK;
+           call_sv (cb, G_VOID | G_DISCARD | G_EVAL | G_KEEPERR);
+         }
+@@ -3437,7 +3471,7 @@
+ 
+     EXTEND (SP, AvFILLp (state) + 1);
+     for (i = 0; i <= AvFILLp (state); ++i)
+-      PUSHs (sv_2mortal (SvREFCNT_inc_NN (AvARRAY (state)[i])));
++      CORO_PUSHs (sv_2mortal (SvREFCNT_inc_NN (AvARRAY (state)[i])));
+ 
+     PUTBACK;
+   }
+@@ -3471,7 +3505,7 @@
+ 
+       PUSHMARK (SP);
+       sv_setiv (prio_sv, coro->prio);
+-      XPUSHs (prio_sv);
++      CORO_XPUSHs (prio_sv);
+ 
+       PUTBACK;
+       call_sv (prio_cv, G_VOID | G_DISCARD);
+@@ -3489,10 +3523,10 @@
+     EXTEND (SP, items + 1);
+ 
+     for (i = 0; i < items; ++i)
+-      PUSHs (arg [i]);
++      CORO_PUSHs (arg [i]);
+ 
+     /* now push the callback closure */
+-    PUSHs (sv_2mortal (s_gensub (aTHX_ coro_aio_callback, (void *)SvREFCNT_inc_NN ((SV *)state))));
++    CORO_PUSHs (sv_2mortal (s_gensub (aTHX_ coro_aio_callback, (void *)SvREFCNT_inc_NN ((SV *)state))));
+ 
+     /* now call the AIO function - we assume our request is uncancelable */
+     PUTBACK;
+@@ -3596,7 +3630,7 @@
+   av_store (av, 1, newSVuv (b));
+   av_store (av, 0, newSVuv (a));
+ 
+-  XPUSHs (sv_2mortal (newRV_noinc ((SV *)av)));
++  CORO_XPUSHs (sv_2mortal (newRV_noinc ((SV *)av)));
+ 
+   PUTBACK;
+ }
+@@ -3830,7 +3864,7 @@
+ 	struct coro *coro;
+         for (coro = coro_first; coro; coro = coro->next)
+           if (coro->hv)
+-            XPUSHs (sv_2mortal (newRV_inc ((SV *)coro->hv)));
++            CORO_XPUSHs (sv_2mortal (newRV_inc ((SV *)coro->hv)));
+ }
+ 
+ void
+@@ -4009,8 +4043,8 @@
+           }
+ 
+         EXTEND (SP, 2);
+-        PUSHs (sv_2mortal (newSVnv (self->t_real [0] + self->t_real [1] * 1e-9)));
+-        PUSHs (sv_2mortal (newSVnv (self->t_cpu  [0] + self->t_cpu  [1] * 1e-9)));
++        CORO_PUSHs (sv_2mortal (newSVnv (self->t_real [0] + self->t_real [1] * 1e-9)));
++        CORO_PUSHs (sv_2mortal (newSVnv (self->t_cpu  [0] + self->t_cpu  [1] * 1e-9)));
+ 
+         if (ecb_expect_false (current == self))
+           coro_times_sub (SvSTATE (coro_current));
+@@ -4293,7 +4327,7 @@
+         api_ready (aTHX_ (SV *)hv);
+ 
+         if (GIMME_V != G_VOID)
+-          XPUSHs (sv_2mortal (newRV_noinc ((SV *)hv)));
++          CORO_XPUSHs (sv_2mortal (newRV_noinc ((SV *)hv)));
+         else
+           SvREFCNT_dec_NN (hv);
+ }
+@@ -4429,13 +4463,13 @@
+         int wcount = AvFILLp (av) + 1 - 1;
+ 
+         if (GIMME_V == G_SCALAR)
+-          XPUSHs (sv_2mortal (newSViv (wcount)));
++          CORO_XPUSHs (sv_2mortal (newSViv (wcount)));
+         else
+           {
+             int i;
+             EXTEND (SP, wcount);
+             for (i = 1; i <= wcount; ++i)
+-              PUSHs (sv_2mortal (newRV_inc (AvARRAY (av)[i])));
++              CORO_PUSHs (sv_2mortal (newRV_inc (AvARRAY (av)[i])));
+           }
+ }
+ 
+@@ -4584,7 +4618,7 @@
+         UV tv [2];
+         u2time (aTHX_ tv);
+         EXTEND (SP, 2);
+-        PUSHs (sv_2mortal (newSVuv (tv [0])));
+-        PUSHs (sv_2mortal (newSVuv (tv [1])));
++        CORO_PUSHs (sv_2mortal (newSVuv (tv [0])));
++        CORO_PUSHs (sv_2mortal (newSVuv (tv [1])));
+ }
+ 
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -1,5 +1,6 @@
+ README
+ README.linux-glibc
++README.XPerl	XPerl RC-stack migration and validation notes
+ Changes
+ MANIFEST
+ COPYING
+@@ -65,6 +66,7 @@
+ t/18_winder.t
+ t/19_handle.t
+ t/20_mutual_cancel.t
++t/21_stack.t	Coroutine stack ownership regression tests
+ 
+ EV/Makefile.PL
+ EV/EV.pm
+--- /dev/null
++++ b/README.XPerl
+@@ -0,0 +1,74 @@
++Coro 6.57 and PERL_RC_STACK
++
++The original test suite crashes during coroutine switches and reports
++attempts to free unreferenced scalars. Coro bypasses pp_entersub after the
++first call to a schedule-like function (SLF), so the normal XS wrapper
++cannot manage reference ownership for subsequent calls.
++
++The repair enables reference ownership on new coroutine stacks. Stack
++pushes distinguish the RC stack used by custom opcodes and SLF callbacks
++from the non-RC frame provided to ordinary XS functions. Removing SLF
++arguments transfers their references to the temporary stack, preserving
++the values needed by the prepare callback. Return values are reduced to
++the calling context with rpp_context, which releases discarded values.
++
++The first SLF call still enters through the XS wrapper. That wrapper
++copies arguments above the original frame, then removes the copy before
++pp_restore runs. The saved argument offset must refer to the original
++frame. Otherwise pp_restore leaves stale pointers on the active stack.
++
++Coro's private pad-list save records contain pointers and integer values,
++not SV references. They are pushed and popped directly and removed before
++Perl resumes. They must not pass through the reference-owning push helpers.
++
++Reusable migration guidance
++
++Custom opcodes need a stack ownership audit even when ordinary XS entry
++points work with Perl's compatibility wrapper. Audit stack creation,
++argument offsets retained across XS returns, deferred argument lifetimes,
++callback pushes, and scalar/list/void result handling together. A wrapper
++around an opcode that switches coroutine stacks can retain offsets from
++the wrong coroutine; make ownership explicit in those paths.
++
++The changed ownership rules are conditional on PERL_RC_STACK. Other builds
++use the existing push macros. The helpers pass
++interpreter context through the existing pTHX/aTHX conventions and add no
++shared state. They use SV pointers without assumptions about NV size or
++representation. This repair does not make Coro safe to use from multiple
++interpreter threads; the restriction documented in Coro::State applies.
++
++Validation
++
++Fresh builds in separate library prefixes pass on x86_64 Linux:
++
++- Ordinary Perl v5.44.0, conventional stack.
++- Ordinary Perl v5.45.4, PERL_RC_STACK and DEBUGGING.
++- XPerl v5.45.5, commit 8903238ce74fc124ec407b8342791ef73253f988,
++  PERL_RC_STACK, no ithreads or DEBUGGING, NV double.
++
++All 21 test files (223 tests) pass on each build. The release suite and t/21_stack.t
++cover transfers, joins, channels,
++semaphores, signals, callbacks, cancellation, coroutine reuse and tracing.
++The focused stack regression also passes Valgrind with
++PERL_DESTRUCT_LEVEL=2 and --error-exitcode=97.
++
++Threaded, longdouble and quadmath builds have not been tested. Coro's
++experimental clone facility and optional EV,
++Event and IO::AIO integrations have not been validated by this repair.
++
++Upstream investigation
++
++The documented upstream uses CVS and the anyevent mailing list:
++https://software.schmorp.de/pkg/Coro.html
++https://cvs.schmorp.de/Coro/Coro/State.xs?revision=1.483&view=markup
++
++The current CVS code has no RC-stack migration. Perl's initial RC-stack
++report identifies Coro as failing:
++https://www.nntp.perl.org/group/perl.perl5.porters/2023/02/msg265801.html
++
++Perl issue 21784 concerns a different failure in EV/Event tied filehandle
++handling, fixed in core in 2024:
++https://github.com/Perl/perl5/issues/21784
++
++No upstream patch was adapted. The installer research report records the
++other sources checked and the endpoints that could not be fetched.
+--- /dev/null
++++ b/t/21_stack.t
+@@ -0,0 +1,80 @@
++use strict;
++use warnings;
++use Test::More tests => 17;
++use Scalar::Util qw(weaken);
++use Coro;
++
++my @warnings;
++local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++my @values = ("before", cede, "after");
++is_deeply \@values, ["before", "after"], 'cede preserves surrounding list values';
++is scalar cede, undef, 'cede supplies undef in scalar context';
++
++sub wait_args { &Coro::rouse_wait }
++for my $iteration (1 .. 3) {
++   my $cb = Coro::rouse_cb;
++   $cb->("first", "last");
++   is wait_args($cb), "last", 'ampersand SLF call returns the last scalar';
++}
++
++for my $iteration (1 .. 3) {
++   my $cb = Coro::rouse_cb;
++   my $task = async { cede; $cb->({ iteration => $iteration }, 77) };
++   my @result = Coro::rouse_wait($cb);
++   is_deeply \@result, [{ iteration => $iteration }, 77], 'rouse values survive a switch';
++   $task->join;
++}
++
++{
++   my $weak;
++   my $task = async {
++      my $value = { payload => "alive" };
++      $weak = $value;
++      weaken $weak;
++      cede;
++      $value;
++   };
++   my $result = $task->join;
++   is $result->{payload}, "alive", 'join keeps a returned reference alive';
++   undef $task;
++   cede;
++   ok defined $weak, 'result survives destruction of the coroutine';
++   undef $result;
++   cede;
++   ok !defined $weak, 'returned reference is released';
++}
++
++my $done = 0;
++for (1 .. 3) {
++   Coro::async_pool { cede; ++$done };
++   cede until $done == $_;
++}
++is $done, 3, 'pooled coroutines resume and can be reused';
++
++{
++   my $weak;
++   my $task = async {
++      my $value = { payload => "cancel" };
++      $weak = $value;
++      weaken $weak;
++      Coro::rouse_wait(Coro::rouse_cb());
++   };
++   cede;
++   ok defined $weak, 'suspended coroutine owns its lexical';
++   $task->cancel;
++   undef $task;
++   cede;
++   ok !defined $weak, 'cancellation releases the suspended lexical';
++}
++
++{
++   my @trace;
++   my $task = async { my $value = { payload => "trace" }; cede; $value };
++   $task->{_trace_line_cb} = sub { push @trace, [@_] };
++   $task->trace(Coro::State::CC_TRACE() | Coro::State::CC_TRACE_LINE());
++   is $task->join->{payload}, "trace", 'tracing preserves coroutine results';
++   ok @trace, 'trace callbacks ran';
++}
++
++is_deeply \@warnings, [], 'no scalar reference-count warnings';

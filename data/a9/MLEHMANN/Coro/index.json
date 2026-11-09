@@ -1,0 +1,28 @@
+{
+   "distribution" : "Coro",
+   "releases" : [
+      {
+         "cpan_path" : "M/ML/MLEHMANN/Coro-6.57.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-6.57-b24f0f405d05.patch",
+                     "sha256" : "b24f0f405d054a68b89b66ed4cecee864d8b09a7dc80b57cec812af3fb1507f6"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "1928e48033540e11ebf5506986dd101af78d2421d210f96599223b15d51714c6",
+         "version" : "6.57"
+      }
+   ],
+   "schema" : 1
+}
