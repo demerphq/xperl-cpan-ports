@@ -8,8 +8,8 @@
                "id" : "xperl-coverage-gold",
                "patches" : [
                   {
-                     "path" : "patches/repair-v5.45.5-1.52-387b4e6707dd.patch",
-                     "sha256" : "387b4e6707dd82816ab25513b2fda8f3654cc39171d804ee5fc4eaedb3198556"
+                     "path" : "patches/repair-v5.45.5-1.52-03c403682313.patch",
+                     "sha256" : "03c403682313c0fa1140057f5e1ff5aae235ff0c3e244b77251623b53df5a892"
                   }
                ],
                "recipes" : [
