@@ -1,0 +1,759 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -17,9 +17,9 @@
+ hax/perl-additions.c.inc
+ hax/perl-backcompat.c.inc
+ hax/sv_setrv.c.inc
+-include/class.h
+ include/field.h
+ include/linnet.h
++include/object_pad_class.h
+ include/suspended_compcv.h
+ lib/Object/mop-class.xsi
+ lib/Object/mop-field.xsi
+--- a/hax/exec_optree.c.inc
++++ b/hax/exec_optree.c.inc
+@@ -7,6 +7,7 @@
+ 
+   ENTER;
+   SAVETMPS;
++  OBJECTPAD_PUSH_CALLBACK_STACK;
+ 
+   SAVEVPTR(PL_op);
+ 
+@@ -31,6 +32,10 @@
+     }
+   }
+ 
++  SP = PL_stack_base + POPMARK;
++  PUTBACK;
++
++  OBJECTPAD_POP_CALLBACK_STACK;
+   FREETMPS;
+   LEAVE;
+ 
+--- a/hax/perl-additions.c.inc
++++ b/hax/perl-additions.c.inc
+@@ -61,7 +61,9 @@
+     pragma++;
+   }
+ 
++  ENTER;
+   SAVETMPS;
++  OBJECTPAD_PUSH_CALLBACK_STACK;
+ 
+   EXTEND(SP, 2);
+   PUSHMARK(SP);
+@@ -72,7 +74,9 @@
+ 
+   call_method(unimport ? "unimport" : "import", G_VOID);
+ 
++  OBJECTPAD_POP_CALLBACK_STACK;
+   FREETMPS;
++  LEAVE;
+ }
+ 
+ #define ensure_module_version(module, version)  S_ensure_module_version(aTHX_ module, version)
+@@ -81,7 +85,9 @@
+   dSP;
+ 
+   ENTER;
++  OBJECTPAD_PUSH_CALLBACK_STACK;
+ 
++  EXTEND(SP, 2);
+   PUSHMARK(SP);
+   PUSHs(module);
+   PUSHs(version);
+@@ -89,6 +95,7 @@
+ 
+   call_method("VERSION", G_VOID);
+ 
++  OBJECTPAD_POP_CALLBACK_STACK;
+   LEAVE;
+ }
+ 
+--- a/hax/perl-backcompat.c.inc
++++ b/hax/perl-backcompat.c.inc
+@@ -1,5 +1,20 @@
+ /* vi: set ft=c : */
+ 
++/* Parser callbacks can run on an RC stack or inside a wrapped XSUB. Give
++ * their Perl calls a private non-RC stack so PUSHs works in either case.
++ */
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++#  define OBJECTPAD_PUSH_CALLBACK_STACK  PUSHSTACKi(PERLSI_MAGIC)
++#  define OBJECTPAD_POP_CALLBACK_STACK   STMT_START { POPSTACK; SPAGAIN; } STMT_END
++#  define OBJECTPAD_PP(name, nargs)      \
++    static OP *name(pTHX);               \
++    XSPP_wrapped(name, nargs, 0)
++#else
++#  define OBJECTPAD_PUSH_CALLBACK_STACK  NOOP
++#  define OBJECTPAD_POP_CALLBACK_STACK   NOOP
++#  define OBJECTPAD_PP(name, nargs)      static OP *name(pTHX)
++#endif
++
+ #define HAVE_PERL_VERSION(R, V, S) \
+     (PERL_REVISION > (R) || (PERL_REVISION == (R) && (PERL_VERSION > (V) || (PERL_VERSION == (V) && (PERL_SUBVERSION >= (S))))))
+ 
+--- a/include/class.h
++++ /dev/null
+@@ -1,213 +0,0 @@
+-#ifndef __OBJECT_PAD__CLASS_H__
+-#define __OBJECT_PAD__CLASS_H__
+-
+-#include "suspended_compcv.h"
+-
+-#include "linnet.h"
+-
+-/* Metadata about a class or role */
+-#define LINNET_VAL_CLASSMETA  0x4F50434D     /* "OPCM" */
+-#define MUST_CLASSMETA(ptr)   LINNET_CHECK_CAST(ptr, ClassMeta *, LINNET_VAL_CLASSMETA)
+-struct ClassMeta {
+-  LINNET_FIELD
+-  enum MetaType type : 8;
+-  enum ReprType repr : 8;
+-
+-  unsigned int abstract : 1;
+-  unsigned int begun : 1;
+-  unsigned int sealed : 1;
+-  unsigned int role_is_invokable : 1;
+-  unsigned int strict_params : 1;
+-  unsigned int has_adjust : 1; /* has at least one ADJUST(PARAMS) block */
+-  unsigned int composed_adjust : 1; /* all ADJUST blocks are true blocks, composed into initfields */
+-  unsigned int has_superclass : 1;
+-  unsigned int has_buildargs : 1;
+-  unsigned int lexical_new : 1;
+-
+-  FIELDOFFSET start_fieldix; /* first field index of this partial within its instance */
+-  FIELDOFFSET next_fieldix;  /* 1 + final field index of this partial within its instance; includes fields in roles */
+-
+-  /* In the following, "MERGED" means the item includes elements merged from a
+-   * superclass if present, and any applied roles
+-   * "direct" means only the things added directly to this exact class/role
+-   */
+-
+-  SV *name;
+-  HV *stash;
+-  CV *constructor;     /* CV that implements &new constructor */
+-  AV *isa;             /* cached pointer to the @ISA array for the stash */
+-  AV *pending_submeta; /* NULL, or AV containing raw ClassMeta pointers to subclasses pending seal */
+-  AV *hooks;           /* NULL, or AV of raw pointers directly to ClassHook structs */
+-  AV *fields;          /* each elem is a raw pointer directly to a FieldMeta */
+-  AV *direct_methods;  /* each elem is a raw pointer directly to a MethodMeta */
+-  HV *parammap;        /* NULL, or each elem is a raw pointer directly at a ParamMeta (MERGED) */
+-  AV *requiremethods;  /* each elem is an SVt_PV giving a name */
+-  CV *initfields;      /* the INITFIELDS method body */
+-  AV *buildcvs;        /* the BUILD {} phaser blocks; each elem is a CV* directly (MERGED) */
+-  AV *adjustcvs;       /* the ADJUST {} phaser blocks; each elem is a CV* directly (MERGED) */
+-
+-  AV *fieldhooks_makefield; /* NULL, or AV of struct FieldHook, all of whose ->funcs->post_makefield exist (MERGED) */
+-  AV *fieldhooks_construct; /* NULL, or AV of struct FieldHook, all of whose ->funcs->post_construct exist (MERGED) */
+-
+-  COP *tmpcop;         /* a COP to use during generated constructor */
+-  CV *methodscope;     /* a temporary CV used just during compilation of a `method` */
+-  U32 methodscope_seq; /* PL_cop_seqmax at the time methodscope was created */
+-
+-  SuspendedCompCVBuffer initfields_compcv; /* temporary PL_compcv + associated state during initfields */
+-  OP *initfields_lines;                    /* temporary OP_LINESEQ to contain the initfield ops */
+-  U32 next_field_for_initfields;           /* how many fields have we seen so far? (offset into direct_fields, !NOT! fieldix) */
+-
+-  SuspendedCompCVBuffer adjust_compcv; /* temporary PL_compcv + associated state during true-block ADJUSTs */
+-  CV *adjust_methodscope;              /* temporary CV used during compilation of ADJUST blocks */
+-  AV *adjust_params;                   /* temporary AV of the params used by true-block ADJUST :params */
+-  OP *adjust_lines;                    /* temporary OP_LINESEQ to contain true-block ADJUSTs */
+-  U32 next_field_for_adjust;           /* how many fields have we seen so far? (offset into direct_fields; !NOT! fieldix) */
+-
+-  union {
+-    /* Things that only true classes have */
+-    struct {
+-      ClassMeta *supermeta; /* superclass */
+-      CV *foreign_new;      /* superclass is not Object::Pad, here is the constructor */
+-      CV *foreign_does;     /* superclass is not Object::Pad, here is SUPER::DOES (which could be UNIVERSAL::DOES) */
+-      AV *direct_roles;     /* each elem is a raw pointer directly to a RoleEmbedding for roles directly applied to this class */
+-      AV *embedded_roles;   /* each elem is a raw pointer directly to a RoleEmbedding for all roles embedded (MERGED) */
+-    } cls; /* not 'class' or C++ compilers get upset */
+-
+-    /* Things that only roles have */
+-    struct {
+-      AV *superroles;      /* each elem is a raw pointer directly to a ClassMeta whose type == METATYPE_ROLE */
+-      HV *applied_classes; /* keyed by class name each elem is a raw pointer directly to a RoleEmbedding */
+-      AV *applycvs;        /* the APPLY {} phaser blocks; each elem is a CV* directly */
+-    } role;
+-  };
+-};
+-
+-/* Metadata about the embedding of a role into a class */
+-#define LINNET_VAL_ROLEEMBEDDING  0x4F505245  /* "OPRE" */
+-#define MUST_ROLEEMBEDDING(ptr)   LINNET_CHECK_CAST(ptr, RoleEmbedding *, LINNET_VAL_ROLEEMBEDDING)
+-typedef struct RoleEmbedding {
+-  LINNET_FIELD
+-  SV *embeddingsv;
+-  struct ClassMeta *rolemeta;
+-  struct ClassMeta *classmeta;
+-  PADOFFSET offset;
+-} RoleEmbedding;
+-
+-#define LINNET_VAL_METHODMETA  0x4F504D4D  /* "OPMM" */
+-#define MUST_METHODMETA(ptr)   LINNET_CHECK_CAST(ptr, MethodMeta *, LINNET_VAL_METHODMETA)
+-struct MethodMeta {
+-  LINNET_FIELD
+-  SV *name;
+-  ClassMeta *class;
+-  ClassMeta *role;   /* set if inherited from a role */
+-  /* We don't store the method body CV; leave that in the class stash */
+-  unsigned int is_common : 1;
+-};
+-
+-#define LINNET_VAL_PARAMMETA  0x4F50504D  /* "OPPM" */
+-#define MUST_PARAMMETA(ptr)   LINNET_CHECK_CAST(ptr, ParamMeta *, LINNET_VAL_PARAMMETA)
+-typedef struct ParamMeta {
+-  LINNET_FIELD
+-  SV *name;
+-  ClassMeta *class;
+-  enum {
+-    PARAM_FIELD,
+-    PARAM_ADJUST,
+-  } type;
+-  union {
+-    struct {
+-      FieldMeta *fieldmeta;
+-      FIELDOFFSET fieldix;
+-    } field;
+-    struct {
+-      /* TODO: store the block itself sometime?? */
+-      PADOFFSET padix;
+-      OP *defexpr;
+-      unsigned int def_if_undef : 1;
+-      unsigned int def_if_false : 1;
+-    } adjust;
+-  };
+-} ParamMeta;
+-
+-#define MOP_CLASS_RUN_HOOKS_NOARGS(classmeta, func)                                       \
+-  {                                                                                       \
+-    U32 hooki;                                                                            \
+-    for(hooki = 0; classmeta->hooks && hooki < av_count(classmeta->hooks); hooki++) {     \
+-      struct ClassHook *h = (struct ClassHook *)AvARRAY(classmeta->hooks)[hooki];         \
+-      if(*h->funcs->func)                                                                 \
+-        (*h->funcs->func)(aTHX_ classmeta, h->attrdata, h->funcdata);                     \
+-    }                                                                                     \
+-  }
+-
+-#define MOP_CLASS_RUN_HOOKS(classmeta, func, ...)                                         \
+-  {                                                                                       \
+-    U32 hooki;                                                                            \
+-    for(hooki = 0; classmeta->hooks && hooki < av_count(classmeta->hooks); hooki++) {     \
+-      struct ClassHook *h = (struct ClassHook *)AvARRAY(classmeta->hooks)[hooki];         \
+-      if(*h->funcs->func)                                                                 \
+-        (*h->funcs->func)(aTHX_ classmeta, h->attrdata, h->funcdata, __VA_ARGS__);        \
+-    }                                                                                     \
+-  }
+-
+-#define mop_class_get_direct_roles(class, embeddings)  ObjectPad_mop_class_get_direct_roles(aTHX_ class, embeddings)
+-RoleEmbedding **ObjectPad_mop_class_get_direct_roles(pTHX_ const ClassMeta *meta, U32 *nroles);
+-
+-#define mop_class_get_all_roles(class, embeddings)  ObjectPad_mop_class_get_all_roles(aTHX_ class, embeddings)
+-RoleEmbedding **ObjectPad_mop_class_get_all_roles(pTHX_ const ClassMeta *meta, U32 *nroles);
+-
+-#define prepare_method_parse(meta)  ObjectPad__prepare_method_parse(aTHX_ meta)
+-void ObjectPad__prepare_method_parse(pTHX_ ClassMeta *meta);
+-
+-#define add_fields_to_pad(meta, since_field)  ObjectPad__add_fields_to_pad(aTHX_ meta, since_field)
+-void ObjectPad__add_fields_to_pad(pTHX_ ClassMeta *meta, U32 since_field);
+-
+-#define start_method_parse(meta, is_common)  ObjectPad__start_method_parse(aTHX_ meta, is_common)
+-void ObjectPad__start_method_parse(pTHX_ ClassMeta *meta, bool is_common);
+-
+-#define finish_method_parse(meta, is_common, body)  ObjectPad__finish_method_parse(aTHX_ meta, is_common, body)
+-OP *ObjectPad__finish_method_parse(pTHX_ ClassMeta *meta, bool is_common, OP *body);
+-
+-#define prepare_adjust_params(meta)  ObjectPad__prepare_adjust_params(aTHX_ meta)
+-void ObjectPad__prepare_adjust_params(pTHX_ ClassMeta *meta);
+-
+-#define parse_adjust_params(meta, params)  ObjectPad__parse_adjust_params(aTHX_ meta, params)
+-void ObjectPad__parse_adjust_params(pTHX_ ClassMeta *meta, AV *params);
+-
+-#define finish_adjust_params(meta, params, body)  ObjectPad__finish_adjust_params(aTHX_ meta, params, body)
+-OP *ObjectPad__finish_adjust_params(pTHX_ ClassMeta *meta, AV *params, OP *body);
+-
+-#define newop_croak_from_constructor(message)  ObjectPad__newop_croak_from_constructor(aTHX_ message)
+-OP *ObjectPad__newop_croak_from_constructor(pTHX_ SV *message);
+-
+-#define check_colliding_param(classmeta, paramname)  ObjectPad__check_colliding_param(aTHX_ classmeta, paramname)
+-void ObjectPad__check_colliding_param(pTHX_ ClassMeta *classmeta, SV *paramname);
+-
+-#define get_embedding_from_pad()  ObjectPad__get_embedding_from_pad(aTHX)
+-RoleEmbedding *ObjectPad__get_embedding_from_pad(pTHX);
+-
+-void ObjectPad__boot_classes(pTHX);
+-
+-/* Empty role embedding that is applied to all invokable role methods */
+-extern struct RoleEmbedding ObjectPad__embedding_standalone;
+-
+-/* We'll reserve the top two bits of a UV for storing the `type` value for a
+- * fieldpad operation; the remainder stores the fieldix itself */
+-#define UVBITS (UVSIZE*8)
+-#define FIELDIX_TYPE_SHIFT  (UVBITS-2)
+-#define FIELDIX_MASK        ((1LL<<FIELDIX_TYPE_SHIFT)-1)
+-
+-#if HAVE_PERL_VERSION(5, 38, 0)
+-#  define HAVE_SVt_PVOBJ
+-
+-#  define fieldstore_fields(fs)   \
+-      ((SvTYPE(fs) == SVt_PVOBJ) ? ObjectFIELDS(fs) : AvARRAY(fs))
+-#  define fieldstore_maxfield(fs) \
+-      ((SvTYPE(fs) == SVt_PVOBJ) ? ObjectMAXFIELD(fs) : AvFILLp(fs))
+-#else
+-#  define fieldstore_fields(fs)   \
+-      AvARRAY(fs)
+-#  define fieldstore_maxfield(fs) \
+-      AvFILLp(fs)
+-#endif
+-
+-#endif
+--- /dev/null
++++ b/include/object_pad_class.h
+@@ -0,0 +1,213 @@
++#ifndef __OBJECT_PAD__CLASS_H__
++#define __OBJECT_PAD__CLASS_H__
++
++#include "suspended_compcv.h"
++
++#include "linnet.h"
++
++/* Metadata about a class or role */
++#define LINNET_VAL_CLASSMETA  0x4F50434D     /* "OPCM" */
++#define MUST_CLASSMETA(ptr)   LINNET_CHECK_CAST(ptr, ClassMeta *, LINNET_VAL_CLASSMETA)
++struct ClassMeta {
++  LINNET_FIELD
++  enum MetaType type : 8;
++  enum ReprType repr : 8;
++
++  unsigned int abstract : 1;
++  unsigned int begun : 1;
++  unsigned int sealed : 1;
++  unsigned int role_is_invokable : 1;
++  unsigned int strict_params : 1;
++  unsigned int has_adjust : 1; /* has at least one ADJUST(PARAMS) block */
++  unsigned int composed_adjust : 1; /* all ADJUST blocks are true blocks, composed into initfields */
++  unsigned int has_superclass : 1;
++  unsigned int has_buildargs : 1;
++  unsigned int lexical_new : 1;
++
++  FIELDOFFSET start_fieldix; /* first field index of this partial within its instance */
++  FIELDOFFSET next_fieldix;  /* 1 + final field index of this partial within its instance; includes fields in roles */
++
++  /* In the following, "MERGED" means the item includes elements merged from a
++   * superclass if present, and any applied roles
++   * "direct" means only the things added directly to this exact class/role
++   */
++
++  SV *name;
++  HV *stash;
++  CV *constructor;     /* CV that implements &new constructor */
++  AV *isa;             /* cached pointer to the @ISA array for the stash */
++  AV *pending_submeta; /* NULL, or AV containing raw ClassMeta pointers to subclasses pending seal */
++  AV *hooks;           /* NULL, or AV of raw pointers directly to ClassHook structs */
++  AV *fields;          /* each elem is a raw pointer directly to a FieldMeta */
++  AV *direct_methods;  /* each elem is a raw pointer directly to a MethodMeta */
++  HV *parammap;        /* NULL, or each elem is a raw pointer directly at a ParamMeta (MERGED) */
++  AV *requiremethods;  /* each elem is an SVt_PV giving a name */
++  CV *initfields;      /* the INITFIELDS method body */
++  AV *buildcvs;        /* the BUILD {} phaser blocks; each elem is a CV* directly (MERGED) */
++  AV *adjustcvs;       /* the ADJUST {} phaser blocks; each elem is a CV* directly (MERGED) */
++
++  AV *fieldhooks_makefield; /* NULL, or AV of struct FieldHook, all of whose ->funcs->post_makefield exist (MERGED) */
++  AV *fieldhooks_construct; /* NULL, or AV of struct FieldHook, all of whose ->funcs->post_construct exist (MERGED) */
++
++  COP *tmpcop;         /* a COP to use during generated constructor */
++  CV *methodscope;     /* a temporary CV used just during compilation of a `method` */
++  U32 methodscope_seq; /* PL_cop_seqmax at the time methodscope was created */
++
++  SuspendedCompCVBuffer initfields_compcv; /* temporary PL_compcv + associated state during initfields */
++  OP *initfields_lines;                    /* temporary OP_LINESEQ to contain the initfield ops */
++  U32 next_field_for_initfields;           /* how many fields have we seen so far? (offset into direct_fields, !NOT! fieldix) */
++
++  SuspendedCompCVBuffer adjust_compcv; /* temporary PL_compcv + associated state during true-block ADJUSTs */
++  CV *adjust_methodscope;              /* temporary CV used during compilation of ADJUST blocks */
++  AV *adjust_params;                   /* temporary AV of the params used by true-block ADJUST :params */
++  OP *adjust_lines;                    /* temporary OP_LINESEQ to contain true-block ADJUSTs */
++  U32 next_field_for_adjust;           /* how many fields have we seen so far? (offset into direct_fields; !NOT! fieldix) */
++
++  union {
++    /* Things that only true classes have */
++    struct {
++      ClassMeta *supermeta; /* superclass */
++      CV *foreign_new;      /* superclass is not Object::Pad, here is the constructor */
++      CV *foreign_does;     /* superclass is not Object::Pad, here is SUPER::DOES (which could be UNIVERSAL::DOES) */
++      AV *direct_roles;     /* each elem is a raw pointer directly to a RoleEmbedding for roles directly applied to this class */
++      AV *embedded_roles;   /* each elem is a raw pointer directly to a RoleEmbedding for all roles embedded (MERGED) */
++    } cls; /* not 'class' or C++ compilers get upset */
++
++    /* Things that only roles have */
++    struct {
++      AV *superroles;      /* each elem is a raw pointer directly to a ClassMeta whose type == METATYPE_ROLE */
++      HV *applied_classes; /* keyed by class name each elem is a raw pointer directly to a RoleEmbedding */
++      AV *applycvs;        /* the APPLY {} phaser blocks; each elem is a CV* directly */
++    } role;
++  };
++};
++
++/* Metadata about the embedding of a role into a class */
++#define LINNET_VAL_ROLEEMBEDDING  0x4F505245  /* "OPRE" */
++#define MUST_ROLEEMBEDDING(ptr)   LINNET_CHECK_CAST(ptr, RoleEmbedding *, LINNET_VAL_ROLEEMBEDDING)
++typedef struct RoleEmbedding {
++  LINNET_FIELD
++  SV *embeddingsv;
++  struct ClassMeta *rolemeta;
++  struct ClassMeta *classmeta;
++  PADOFFSET offset;
++} RoleEmbedding;
++
++#define LINNET_VAL_METHODMETA  0x4F504D4D  /* "OPMM" */
++#define MUST_METHODMETA(ptr)   LINNET_CHECK_CAST(ptr, MethodMeta *, LINNET_VAL_METHODMETA)
++struct MethodMeta {
++  LINNET_FIELD
++  SV *name;
++  ClassMeta *class;
++  ClassMeta *role;   /* set if inherited from a role */
++  /* We don't store the method body CV; leave that in the class stash */
++  unsigned int is_common : 1;
++};
++
++#define LINNET_VAL_PARAMMETA  0x4F50504D  /* "OPPM" */
++#define MUST_PARAMMETA(ptr)   LINNET_CHECK_CAST(ptr, ParamMeta *, LINNET_VAL_PARAMMETA)
++typedef struct ParamMeta {
++  LINNET_FIELD
++  SV *name;
++  ClassMeta *class;
++  enum {
++    PARAM_FIELD,
++    PARAM_ADJUST,
++  } type;
++  union {
++    struct {
++      FieldMeta *fieldmeta;
++      FIELDOFFSET fieldix;
++    } field;
++    struct {
++      /* TODO: store the block itself sometime?? */
++      PADOFFSET padix;
++      OP *defexpr;
++      unsigned int def_if_undef : 1;
++      unsigned int def_if_false : 1;
++    } adjust;
++  };
++} ParamMeta;
++
++#define MOP_CLASS_RUN_HOOKS_NOARGS(classmeta, func)                                       \
++  {                                                                                       \
++    U32 hooki;                                                                            \
++    for(hooki = 0; classmeta->hooks && hooki < av_count(classmeta->hooks); hooki++) {     \
++      struct ClassHook *h = (struct ClassHook *)AvARRAY(classmeta->hooks)[hooki];         \
++      if(*h->funcs->func)                                                                 \
++        (*h->funcs->func)(aTHX_ classmeta, h->attrdata, h->funcdata);                     \
++    }                                                                                     \
++  }
++
++#define MOP_CLASS_RUN_HOOKS(classmeta, func, ...)                                         \
++  {                                                                                       \
++    U32 hooki;                                                                            \
++    for(hooki = 0; classmeta->hooks && hooki < av_count(classmeta->hooks); hooki++) {     \
++      struct ClassHook *h = (struct ClassHook *)AvARRAY(classmeta->hooks)[hooki];         \
++      if(*h->funcs->func)                                                                 \
++        (*h->funcs->func)(aTHX_ classmeta, h->attrdata, h->funcdata, __VA_ARGS__);        \
++    }                                                                                     \
++  }
++
++#define mop_class_get_direct_roles(class, embeddings)  ObjectPad_mop_class_get_direct_roles(aTHX_ class, embeddings)
++RoleEmbedding **ObjectPad_mop_class_get_direct_roles(pTHX_ const ClassMeta *meta, U32 *nroles);
++
++#define mop_class_get_all_roles(class, embeddings)  ObjectPad_mop_class_get_all_roles(aTHX_ class, embeddings)
++RoleEmbedding **ObjectPad_mop_class_get_all_roles(pTHX_ const ClassMeta *meta, U32 *nroles);
++
++#define prepare_method_parse(meta)  ObjectPad__prepare_method_parse(aTHX_ meta)
++void ObjectPad__prepare_method_parse(pTHX_ ClassMeta *meta);
++
++#define add_fields_to_pad(meta, since_field)  ObjectPad__add_fields_to_pad(aTHX_ meta, since_field)
++void ObjectPad__add_fields_to_pad(pTHX_ ClassMeta *meta, U32 since_field);
++
++#define start_method_parse(meta, is_common)  ObjectPad__start_method_parse(aTHX_ meta, is_common)
++void ObjectPad__start_method_parse(pTHX_ ClassMeta *meta, bool is_common);
++
++#define finish_method_parse(meta, is_common, body)  ObjectPad__finish_method_parse(aTHX_ meta, is_common, body)
++OP *ObjectPad__finish_method_parse(pTHX_ ClassMeta *meta, bool is_common, OP *body);
++
++#define prepare_adjust_params(meta)  ObjectPad__prepare_adjust_params(aTHX_ meta)
++void ObjectPad__prepare_adjust_params(pTHX_ ClassMeta *meta);
++
++#define parse_adjust_params(meta, params)  ObjectPad__parse_adjust_params(aTHX_ meta, params)
++void ObjectPad__parse_adjust_params(pTHX_ ClassMeta *meta, AV *params);
++
++#define finish_adjust_params(meta, params, body)  ObjectPad__finish_adjust_params(aTHX_ meta, params, body)
++OP *ObjectPad__finish_adjust_params(pTHX_ ClassMeta *meta, AV *params, OP *body);
++
++#define newop_croak_from_constructor(message)  ObjectPad__newop_croak_from_constructor(aTHX_ message)
++OP *ObjectPad__newop_croak_from_constructor(pTHX_ SV *message);
++
++#define check_colliding_param(classmeta, paramname)  ObjectPad__check_colliding_param(aTHX_ classmeta, paramname)
++void ObjectPad__check_colliding_param(pTHX_ ClassMeta *classmeta, SV *paramname);
++
++#define get_embedding_from_pad()  ObjectPad__get_embedding_from_pad(aTHX)
++RoleEmbedding *ObjectPad__get_embedding_from_pad(pTHX);
++
++void ObjectPad__boot_classes(pTHX);
++
++/* Empty role embedding that is applied to all invokable role methods */
++extern struct RoleEmbedding ObjectPad__embedding_standalone;
++
++/* We'll reserve the top two bits of a UV for storing the `type` value for a
++ * fieldpad operation; the remainder stores the fieldix itself */
++#define UVBITS (UVSIZE*8)
++#define FIELDIX_TYPE_SHIFT  (UVBITS-2)
++#define FIELDIX_MASK        ((1LL<<FIELDIX_TYPE_SHIFT)-1)
++
++#if HAVE_PERL_VERSION(5, 38, 0)
++#  define HAVE_SVt_PVOBJ
++
++#  define fieldstore_fields(fs)   \
++      ((SvTYPE(fs) == SVt_PVOBJ) ? ObjectFIELDS(fs) : AvARRAY(fs))
++#  define fieldstore_maxfield(fs) \
++      ((SvTYPE(fs) == SVt_PVOBJ) ? ObjectMAXFIELD(fs) : AvFILLp(fs))
++#else
++#  define fieldstore_fields(fs)   \
++      AvARRAY(fs)
++#  define fieldstore_maxfield(fs) \
++      AvFILLp(fs)
++#endif
++
++#endif
+--- a/lib/Object/Pad.xs
++++ b/lib/Object/Pad.xs
+@@ -37,7 +37,7 @@
+ #endif
+ 
+ #include "object_pad.h"
+-#include "class.h"
++#include "object_pad_class.h"
+ #include "field.h"
+ 
+ #define warn_deprecated(...)  Perl_ck_warner(aTHX_ packWARN(WARN_DEPRECATED), __VA_ARGS__)
+@@ -115,8 +115,16 @@
+   bool do_shift = PL_op->op_flags & OPf_STACKED;
+ 
+   SV *self;
+-  if(do_shift)
++  if(do_shift) {
+     self = av_shift(GvAV(PL_defgv));
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++    /* RC argument arrays own their elements. Retain the shifted value until
++     * this statement ends, including when validation below throws.
++     */
++    if(AvREAL(GvAV(PL_defgv)))
++      sv_2mortal(self);
++#endif
++  }
+   else
+     self = PAD_SVl(PADIX_SELF);
+ 
+@@ -263,8 +271,13 @@
+   bool do_shift = PL_op->op_flags & OPf_STACKED;
+ 
+   SV *self;
+-  if(do_shift)
++  if(do_shift) {
+     self = av_shift(GvAV(PL_defgv));
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++    if(AvREAL(GvAV(PL_defgv)))
++      sv_2mortal(self);
++#endif
++  }
+   else
+     self = PAD_SVl(PADIX_SELF);
+ 
+@@ -1416,7 +1429,11 @@
+     }
+ 
+     OP *body = parse_block(0);
++#ifdef XPERL_VERSION
++    if(!body || PERL_DIAG_ERROR_COUNT) {
++#else
+     if(!body || PL_parser->error_count) {
++#endif
+       croak("syntax error");
+     }
+ 
+@@ -1472,7 +1489,7 @@
+     croak("Cannot use __CLASS__ outside of a method, ADJUST phaser or field initialiser");
+ }
+ 
+-static OP *pp_curclass(pTHX)
++OBJECTPAD_PP(pp_curclass, 0)
+ {
+   dSP;
+ 
+@@ -1745,6 +1762,7 @@
+     dSP;
+     ENTER;
+     SAVETMPS;
++    OBJECTPAD_PUSH_CALLBACK_STACK;
+ 
+     SV *fieldmetasv = sv_newmortal();
+     sv_setref_uv(fieldmetasv, "Object::Pad::MOP::Field", PTR2UV(fieldmeta));
+@@ -1760,7 +1778,9 @@
+     SPAGAIN;
+     SV *ret = POPs;
+     *hookdata_ptr = SvREFCNT_inc(ret);
++    PUTBACK;
+ 
++    OBJECTPAD_POP_CALLBACK_STACK;
+     FREETMPS;
+     LEAVE;
+   }
+--- a/src/class.c
++++ b/src/class.c
+@@ -23,7 +23,7 @@
+ #include "OP_HELEMEXISTSOR.c.inc"
+ 
+ #include "object_pad.h"
+-#include "class.h"
++#include "object_pad_class.h"
+ #include "field.h"
+ 
+ #undef register_class_attribute
+@@ -1622,6 +1622,7 @@
+       ENTER;
+       SAVETMPS;
+       SPAGAIN;
++      OBJECTPAD_PUSH_CALLBACK_STACK;
+ 
+       EXTEND(SP, 1);
+       PUSHMARK(SP);
+@@ -1631,6 +1632,7 @@
+       assert(applycv);
+       call_sv((SV *)applycv, G_VOID);
+ 
++      OBJECTPAD_POP_CALLBACK_STACK;
+       FREETMPS;
+       LEAVE;
+     }
+@@ -1666,7 +1668,7 @@
+     croak("Already have a named constructor parameter called '%" SVf "'", SVfARG(paramname));
+ }
+ 
+-static OP *pp_alias_params(pTHX)
++OBJECTPAD_PP(pp_alias_params, 1)
+ {
+   dSP;
+   PADOFFSET padix = PADIX_PARAMS;
+@@ -2410,7 +2412,7 @@
+   XSRETURN_NO;
+ }
+ 
+-static OP *pp_croak_from_constructor(pTHX)
++OBJECTPAD_PP(pp_croak_from_constructor, 1)
+ {
+   dSP;
+ 
+--- a/src/field.c
++++ b/src/field.c
+@@ -14,7 +14,7 @@
+ #include "OP_HELEMEXISTSOR.c.inc"
+ 
+ #include "object_pad.h"
+-#include "class.h"
++#include "object_pad_class.h"
+ #include "field.h"
+ 
+ #undef register_field_attribute
+@@ -375,7 +375,7 @@
+   return sv;
+ }
+ 
+-static OP *pp_fieldsv(pTHX)
++OBJECTPAD_PP(pp_fieldsv, 0)
+ {
+   dSP;
+   FIELDOFFSET fieldix = PL_op->op_targ;
+@@ -538,7 +538,7 @@
+ 
+ #ifndef HAVE_OP_WEAKEN
+ static XOP xop_weaken;
+-static OP *pp_weaken(pTHX)
++OBJECTPAD_PP(pp_weaken, 1)
+ {
+   dSP;
+   sv_rvweaken(POPs);
+--- a/t/01method.t
++++ b/t/01method.t
+@@ -4,6 +4,7 @@
+ use warnings;
+ 
+ use Test2::V0 0.000148; # is_refcount
++use Scalar::Util qw( weaken );
+ 
+ use Object::Pad 0.800;
+ 
+@@ -25,6 +26,20 @@
+    is( $p->classname, "Point", '__CLASS__ inside method' );
+ }
+ 
++# Method entry must release the invocant shifted from an owning argument array.
++{
++   my $weak;
++   {
++      my $p = Point->new( 10, 20 );
++      $weak = $p;
++      weaken( $weak );
++
++      $p->where for 1 .. 20;
++      is_oneref( $p, 'repeated method calls release their invocant' );
++   }
++   ok( !defined $weak, 'instance is destroyed after repeated method calls' );
++}
++
+ # anon methods
+ {
+    class Point3 {
+--- a/t/71role-APPLY.t
++++ b/t/71role-APPLY.t
+@@ -52,4 +52,39 @@
+    is( $got_cmop->name, "BClass", 'class MOP ->name' );
+ }
+ 
++{
++   my @warnings;
++   local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++   ok( eval <<'EOPERL',
++      class CallbackStackClass {
++         apply ARole;
++         method answer { 42 }
++      }
++      CallbackStackClass->new->answer == 42;
++EOPERL
++      'APPLY callback compiles without stack warnings' ) or diag( $@ );
++   is( \@warnings, [], 'compiler callbacks preserve stack ownership' );
++
++   ok( !eval <<'EOPERL', 'APPLY callback can throw during compilation' );
++      role FailingCallbackRole {
++         APPLY { die "APPLY callback failed\n" }
++      }
++      class FailingCallbackClass {
++         apply FailingCallbackRole;
++      }
++EOPERL
++   like( $@, qr/APPLY callback failed/, 'callback exception is preserved' );
++
++   ok( eval <<'EOPERL',
++      class RecoveredCallbackClass {
++         apply ARole;
++         method answer { 43 }
++      }
++      RecoveredCallbackClass->new->answer == 43;
++EOPERL
++      'compilation recovers after a callback exception' ) or diag( $@ );
++   is( \@warnings, [], 'callback exception unwinds the private stack' );
++}
++
+ done_testing;

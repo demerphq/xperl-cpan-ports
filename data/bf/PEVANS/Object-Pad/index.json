@@ -1,28 +1,30 @@
 {
-  "schema": 1,
-  "distribution": "Object-Pad",
-  "releases": [
-    {
-      "version": "0.825",
-      "cpan_path": "P/PE/PEVANS/Object-Pad-0.825.tar.gz",
-      "source_sha256": "3fa84943b6505a5bf9f29fe4202d1b75d6c6ae03f531ddea9edc4c13ff93b1a3",
-      "patch_sets": [
-        {
-          "id": "xperl-class-header",
-          "purpose": "compatibility",
-          "xperl": {
-            "min_inclusive": "v5.45.5",
-            "max_exclusive": "v5.46.0"
-          },
-          "patches": [
+   "distribution" : "Object-Pad",
+   "releases" : [
+      {
+         "cpan_path" : "P/PE/PEVANS/Object-Pad-0.825.tar.gz",
+         "patch_sets" : [
             {
-              "path": "patches/xperl-class-header.patch",
-              "sha256": "6d700b193215851ce33164908a949f737b2a836e9469421b543464cc6ca2c870"
+               "id" : "xperl-class-header",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.825-7a0a92b016af.patch",
+                     "sha256" : "7a0a92b016af1f57811018c1293cc0d254dfde0ec4fc7869ba31dea4ad66dd16"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "parser-error-count-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
             }
-          ],
-          "recipes": ["parser-error-count-v1"]
-        }
-      ]
-    }
-  ]
+         ],
+         "source_sha256" : "3fa84943b6505a5bf9f29fe4202d1b75d6c6ae03f531ddea9edc4c13ff93b1a3",
+         "version" : "0.825"
+      }
+   ],
+   "schema" : 1
 }
