@@ -1,0 +1,363 @@
+--- a/lib/Future/AsyncAwait.xs
++++ b/lib/Future/AsyncAwait.xs
+@@ -22,6 +22,21 @@
+ #include "perl-backcompat.c.inc"
+ #include "PL_savetype_name.c.inc"
+ 
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++#  define FAA_RC_STACK
++/* Custom ops run on an owning stack. Transfer popped references to the
++ * mortal stack so callbacks and suspension cannot free them too early.
++ * FAA_mPUSHs transfers an owned reference without making it mortal.
++ */
++#  define FAA_PUSHs(sv)  (assert(rpp_stack_is_rc()), *++sp = SvREFCNT_inc(sv))
++#  define FAA_mPUSHs(sv) (assert(rpp_stack_is_rc()), *++sp = (sv))
++#  define FAA_POPs      (assert(rpp_stack_is_rc()), sv_2mortal(*sp--))
++#else
++#  define FAA_PUSHs(sv)  PUSHs(sv)
++#  define FAA_mPUSHs(sv) mPUSHs(sv)
++#  define FAA_POPs      POPs
++#endif
++
+ #if !HAVE_PERL_VERSION(5, 24, 0)
+   /* On perls before 5.24 we have to do some extra work to save the itervar
+    * from being thrown away */
+@@ -441,9 +456,12 @@
+       next = frame->next;
+ 
+       if(frame->stacklen) {
+-        /* The stack isn't refcounted, so we should not SvREFCNT_dec() these
+-         * items
+-         */
++#ifdef FAA_RC_STACK
++        /* Suspended frames own the references stolen from the RC stack. */
++        U32 i;
++        for(i = 0; i < frame->stacklen; i++)
++          SvREFCNT_dec(frame->stack[i]);
++#endif
+         Safefree(frame->stack);
+       }
+ 
+@@ -830,7 +848,11 @@
+          * case of  local $@  is allowable
+          * See also  https://rt.cpan.org/Ticket/Display.html?id=122793
+          */
++#ifdef XPERL_VERSION
++        if(gv != PL_errgv && gv != PL_errorobjgv) {
++#else
+         if(gv != PL_errgv) {
++#endif
+           const char *name = GvNAME(gv);
+           const char *stashname = HvNAME(GvSTASH(gv));
+ 
+@@ -1284,7 +1306,11 @@
+     EXTEND(SP, frame->stacklen);
+ 
+     for(i = 0; i < frame->stacklen; i++) {
+-      PUSHs(frame->stack[i]);
++#ifdef FAA_RC_STACK
++      FAA_mPUSHs(frame->stack[i]);
++#else
++      FAA_PUSHs(frame->stack[i]);
++#endif
+     }
+ 
+     Safefree(frame->stack);
+@@ -1591,11 +1617,19 @@
+ 
+   if(f) {
+     assert(SvROK(f));
++#ifdef FAA_RC_STACK
++    *bottom = SvREFCNT_inc(f);
++#else
+     *bottom = f;
++#endif
+     method  = "AWAIT_DONE";
+   }
+   else {
++#ifdef FAA_RC_STACK
++    *bottom = SvREFCNT_inc(future_classname());
++#else
+     *bottom = future_classname();
++#endif
+     method  = "AWAIT_NEW_DONE";
+   }
+   SP++;
+@@ -1605,7 +1639,8 @@
+ 
+   SPAGAIN;
+ 
+-  SV *ret = SvREFCNT_inc(POPs);
++  SV *ret = SvREFCNT_inc(FAA_POPs);
++  PUTBACK;
+ 
+   FREETMPS;
+   LEAVE_with_name("future_done_from_stack");
+@@ -1623,24 +1658,26 @@
+ 
+   const char *method;
+ 
++  EXTEND(SP, 2);
+   PUSHMARK(SP);
+   if(f) {
+     assert(SvROK(f));
+-    PUSHs(f);
++    FAA_PUSHs(f);
+     method = "AWAIT_FAIL";
+   }
+   else {
+-    PUSHs(future_classname());
++    FAA_PUSHs(future_classname());
+     method = "AWAIT_NEW_FAIL";
+   }
+-  mPUSHs(newSVsv(failure));
++  FAA_mPUSHs(newSVsv(failure));
+   PUTBACK;
+ 
+   call_method(method, G_SCALAR);
+ 
+   SPAGAIN;
+ 
+-  SV *ret = SvREFCNT_inc(POPs);
++  SV *ret = SvREFCNT_inc(FAA_POPs);
++  PUTBACK;
+ 
+   FREETMPS;
+   LEAVE_with_name("future_fail");
+@@ -1658,15 +1695,17 @@
+   ENTER_with_name("future_new_from_proto");
+   SAVETMPS;
+ 
++  EXTEND(SP, 1);
+   PUSHMARK(SP);
+-  PUSHs(proto);
++  FAA_PUSHs(proto);
+   PUTBACK;
+ 
+   call_method("AWAIT_CLONE", G_SCALAR);
+ 
+   SPAGAIN;
+ 
+-  SV *f = SvREFCNT_inc(POPs);
++  SV *f = SvREFCNT_inc(FAA_POPs);
++  PUTBACK;
+ 
+   FREETMPS;
+   LEAVE_with_name("future_new_from_proto");
+@@ -1695,14 +1734,14 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 1);
+-  PUSHs(f);
++  FAA_PUSHs(f);
+   PUTBACK;
+ 
+   call_method(method, G_SCALAR);
+ 
+   SPAGAIN;
+ 
+-  bool ret = SvTRUEx(POPs);
++  bool ret = SvTRUEx(FAA_POPs);
+ 
+   PUTBACK;
+   FREETMPS;
+@@ -1720,7 +1759,7 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 1);
+-  PUSHs(f);
++  FAA_PUSHs(f);
+   PUTBACK;
+ 
+   call_method("AWAIT_GET", gimme);
+@@ -1738,8 +1777,8 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 2);
+-  PUSHs(f);
+-  mPUSHs(newRV_inc((SV *)code));
++  FAA_PUSHs(f);
++  FAA_mPUSHs(newRV_inc((SV *)code));
+   PUTBACK;
+ 
+   call_method("AWAIT_ON_READY", G_VOID);
+@@ -1758,8 +1797,8 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 2);
+-  PUSHs(f);
+-  mPUSHs(code);
++  FAA_PUSHs(f);
++  FAA_mPUSHs(code);
+   PUTBACK;
+ 
+   call_method("AWAIT_ON_CANCEL", G_VOID);
+@@ -1778,8 +1817,8 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 2);
+-  PUSHs(f1);
+-  PUSHs(f2);
++  FAA_PUSHs(f1);
++  FAA_PUSHs(f2);
+   PUTBACK;
+ 
+   call_method("AWAIT_CHAIN_CANCEL", G_VOID);
+@@ -1797,7 +1836,7 @@
+ 
+   PUSHMARK(SP);
+   EXTEND(SP, 1);
+-  PUSHs(f);
++  FAA_PUSHs(f);
+   PUTBACK;
+ 
+   call_method("AWAIT_WAIT", GIMME_V);
+@@ -1895,13 +1934,13 @@
+ 
+   /* Pop extraneous stack items */
+   while(SP > oldsp)
+-    POPs;
++    FAA_POPs;
+ 
+   if(ret) {
+     EXTEND(SP, 1);
+-    mPUSHs(ret);
+-    PUTBACK;
++    FAA_mPUSHs(ret);
+   }
++  PUTBACK;
+ 
+   if(f)
+     SvREFCNT_dec(f);
+@@ -1984,7 +2023,7 @@
+      */
+     orig_height = CX_CUR()->blk_oldsp;
+     while(sp > PL_stack_base + orig_height)
+-      POPs;
++      FAA_POPs;
+     PUTBACK;
+ 
+     /* We also need to clean up the markstack and insert a new mark at the
+@@ -2022,7 +2061,7 @@
+ #endif
+   }
+   else {
+-    f = POPs;
++    f = FAA_POPs;
+     PUTBACK;
+   }
+ 
+@@ -2137,8 +2176,10 @@
+   if(defer_mortal_curcv)
+     SvREFCNT_dec((SV *)curcv);
+ 
++  SPAGAIN;
++  EXTEND(SP, 1);
+   PUSHMARK(SP);
+-  mPUSHs(newSVsv(state->returning_future));
++  FAA_mPUSHs(newSVsv(state->returning_future));
+   PUTBACK;
+ 
+   if(!SvWEAKREF(state->returning_future))
+--- a/t/06await-nested.t
++++ b/t/06await-nested.t
+@@ -47,7 +47,13 @@
+ 
+    $f->done( "result" );
+ 
+-   is( scalar $fret->failure, "Oopsie\n", '$fret->failure through two nested async subs' );
++   if( ${^XPERL_VERSION} ) {
++      like( scalar $fret->failure, qr/\AOopsie\n(?:\t\.\.\.propagated at .*| at \Q@{[__FILE__]}\E) line \d+\.\n\z/,
++         '$fret->failure through two nested async subs' );
++   }
++   else {
++      is( scalar $fret->failure, "Oopsie\n", '$fret->failure through two nested async subs' );
++   }
+ }
+ 
+ # await through two nested async method calls
+@@ -107,7 +113,13 @@
+     my $fret = func_fail_wrap();
+     $f->fail("aiee\n");
+ 
+-    is( $fret->failure, "aiee\n", "nested fail" );
++    if( ${^XPERL_VERSION} ) {
++        like( scalar $fret->failure, qr/\Aaiee\n(?:\t\.\.\.propagated at .*| at \Q@{[__FILE__]}\E) line \d+\.\n\z/,
++            "nested fail" );
++    }
++    else {
++        is( $fret->failure, "aiee\n", "nested fail" );
++    }
+ }
+ 
+ is( Future::AsyncAwait::__cxstack_ix, $orig_cxstack_ix,
+--- a/t/31destroy.t
++++ b/t/31destroy.t
+@@ -5,7 +5,7 @@
+ 
+ use Test2::V0 0.000148; # is_oneref
+ 
+-use Scalar::Util qw( reftype );
++use Scalar::Util qw( reftype weaken );
+ 
+ use Future;
+ 
+@@ -57,4 +57,45 @@
+    undef $generated_cv;
+ }
+ 
++# A value held only by the expression stack survives suspension and resume.
++{
++   my $weak;
++   my $pending = Future->new;
++   my $result = (async sub {
++      return [ (sub {
++         my $value = bless [], "StackValue";
++         $weak = $value;
++         weaken($weak);
++         return $value;
++      })->(), await $pending ];
++   })->();
++
++   ok( defined $weak, 'expression stack value survives suspension' );
++   $pending->done("ready");
++   is( $result->get->[1], "ready", 'expression completes after resume' );
++   ok( defined $weak, 'returned result keeps expression stack value alive' );
++   undef $result;
++   ok( !defined $weak, 'expression stack value freed after result is dropped' );
++}
++
++# Cancelling a suspended frame releases values held only by its stack.
++{
++   my $weak;
++   my $pending = Future->new;
++   my $result = (async sub {
++      return [ (sub {
++         my $value = bless [], "StackValue";
++         $weak = $value;
++         weaken($weak);
++         return $value;
++      })->(), await $pending ];
++   })->();
++
++   ok( defined $weak, 'expression stack value survives until cancellation' );
++   $result->cancel;
++   undef $result;
++   undef $pending;
++   ok( !defined $weak, 'cancelled expression stack value is freed' );
++}
++
+ done_testing;
+--- a/t/32compile-errors.t
++++ b/t/32compile-errors.t
+@@ -71,7 +71,9 @@
+ {
+    local $@;
+ 
+-   my $err = HAVE_XPK_0_09 ?
++   my $err = ${^XPERL_VERSION} ?
++      qr/Global symbol "\$api" requires explicit package name/ :
++      HAVE_XPK_0_09 ?
+       qr/^parse failed--compilation aborted / :
+       qr/^Global symbol "\$api" requires explicit package name/;
+ 
