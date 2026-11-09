@@ -48,6 +48,74 @@
          "test_summary" : "Files=8, Tests=64",
          "version" : "0.19",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SO/SONGMU/Text-Markdown-Discount-0.19.tar.gz",
+         "id" : "bdf044546c36031fdb84cb04d55f4435493e48ffaa012c6cf4b19883bd349d2e",
+         "module" : "Text::Markdown::Discount",
+         "observed_at" : "2026-11-09T13:41:16Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "f6009876832379af580cbd3a5f0c04b3c7f3fef352d89c2d6d47192f7e55fa2b",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=64",
+         "version" : "0.19",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
