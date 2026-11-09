@@ -1,0 +1,28 @@
+{
+   "distribution" : "HAMT",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/HAMT-0.04.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.04-7ce29a282450.patch",
+                     "sha256" : "7ce29a282450155646b430da690cae9f2d8787306512faa3e0fdc40e8aa9e4d7"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "20493d4ba0d1b85b5ef28fbc79d1be622d34ffc4fec9c27050de0d687d4bb6b8",
+         "version" : "0.04"
+      }
+   ],
+   "schema" : 1
+}

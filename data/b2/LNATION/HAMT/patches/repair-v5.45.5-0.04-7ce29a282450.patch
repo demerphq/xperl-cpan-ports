@@ -1,0 +1,243 @@
+--- a/README
++++ b/README
+@@ -35,6 +35,22 @@
+         https://metacpan.org/release/HAMT
+ 
+ 
++XPERL COMPATIBILITY
++
++Custom read ops use XSPP_wrapped when PERL_RC_STACK is enabled. This gives
++their traditional stack macros an uncounted stack slice and releases the
++arguments when the op returns. Older Perl builds keep the original path.
++
++On XPerl, callback walks identify last and next by the structured diagnostic
++code and control-word parameter, independently of diagnostic rendering.
++Other errors are propagated as their original objects. The structured-error
++branch is guarded by XPERL_VERSION. Ordinary Perl keeps its string handling.
++
++Reference-count probes measure the entry's increment within one XS call.
++An absolute count taken in Perl also includes references held by an RC
++argument stack and cannot be compared directly with a count inside XS.
++
++
+ LICENSE AND COPYRIGHT
+ 
+ This software is Copyright (c) 2026 by LNATION <email@lnation.org>.
+--- a/include/hamt/hamt_ops.h
++++ b/include/hamt/hamt_ops.h
+@@ -127,6 +127,14 @@
+ 
+ #if HAMT_HAS_OPS
+ 
++/* Custom ops run directly on the evaluation stack. The wrapper gives the
++ * old stack macros an uncounted slice on a reference-counted stack. */
++#if defined(PERL_RC_STACK) && defined(XSPP_wrapped)
++#  define HAMT_PP_DECL(name, nargs) XSPP_wrapped(name, nargs, 0)
++#else
++#  define HAMT_PP_DECL(name, nargs) static OP *name(pTHX)
++#endif
++
+ #ifndef OpHAS_SIBLING
+ #  define OpHAS_SIBLING(o)         ((o)->op_sibling != NULL)
+ #endif
+@@ -145,7 +153,7 @@
+  * move; the pointer is put back and read again all the same, which costs
+  * two moves and does not depend on that staying true. */
+ #define HAMT_PP_KEYED(pp, fn)                                             \
+-static OP *pp(pTHX) {                                                     \
++HAMT_PP_DECL(pp, 2) {                                                     \
+     dSP;                                                                  \
+     SV *key  = POPs;                                                      \
+     SV *self = TOPs;                                                      \
+@@ -163,7 +171,7 @@
+ #if PERL_VERSION_GE(5,20,0)
+ #  define HAMT_OP_TARG(o) ((o)->op_targ = pad_alloc(OP_CUSTOM, SVs_PADTMP))
+ #  define HAMT_PP_COUNT(pp, fn)                                           \
+-static OP *pp(pTHX) {                                                     \
++HAMT_PP_DECL(pp, 1) {                                                     \
+     dSP;                                                                  \
+     dTARGET;                                                              \
+     SV *self = TOPs;                                                      \
+@@ -175,7 +183,7 @@
+ #else
+ #  define HAMT_OP_TARG(o) ((void)0)
+ #  define HAMT_PP_COUNT(pp, fn)                                           \
+-static OP *pp(pTHX) {                                                     \
++HAMT_PP_DECL(pp, 1) {                                                     \
+     dSP;                                                                  \
+     SV *self = TOPs;                                                      \
+     SETs(sv_2mortal(newSVuv(fn(aTHX_ self))));                            \
+--- a/include/hamt/hamt_xs.h
++++ b/include/hamt/hamt_xs.h
+@@ -364,9 +364,35 @@
+     }
+ }
+ 
+-static int hamt_xs_loop_error(pTHX_ SV *err, const char *what, STRLEN len) {
++static int hamt_xs_loop_error(pTHX_ SV *err, const char *what, STRLEN len,
++                              const char *word) {
+     STRLEN elen;
+     const char *p;
++#ifdef XPERL_VERSION
++    /* Match the diagnostic and its control word independently of rendering.
++     * Other thrown objects keep their identity and are never stringified. */
++    if (SvROK(err) && sv_derived_from(err, "XPerl::Exception")) {
++        dSP;
++        int match;
++        ENTER;
++        SAVETMPS;
++        PUSHMARK(SP);
++        XPUSHs(err);
++        XPUSHs(sv_2mortal(newSVpvs("ERROR_CONTROL_FLOW_LOOP_OUTSIDE_LOOP_BLOCK")));
++        XPUSHs(sv_2mortal(newSVpvs("arg2")));
++        XPUSHs(sv_2mortal(newSVpv(word, 0)));
++        PUTBACK;
++        call_method("has_diagnostic", G_SCALAR);
++        SPAGAIN;
++        match = SvTRUE(POPs) ? 1 : 0;
++        PUTBACK;
++        FREETMPS;
++        LEAVE;
++        return match;
++    }
++#else
++    PERL_UNUSED_ARG(word);
++#endif
+     if (SvROK(err)) return 0;
+     p = SvPV(err, elen);
+     return elen >= len && memEQ(p, what, len);
+@@ -395,9 +421,9 @@
+     PUTBACK;
+     err = ERRSV;
+     if (!SvTRUE(err)) return HAMT_XS_RETURNED;
+-    if (hamt_xs_loop_error(aTHX_ err, HAMT_XS_ERR_LAST, sizeof(HAMT_XS_ERR_LAST) - 1))
++    if (hamt_xs_loop_error(aTHX_ err, HAMT_XS_ERR_LAST, sizeof(HAMT_XS_ERR_LAST) - 1, "last"))
+         return HAMT_XS_LAST;
+-    if (hamt_xs_loop_error(aTHX_ err, HAMT_XS_ERR_NEXT, sizeof(HAMT_XS_ERR_NEXT) - 1))
++    if (hamt_xs_loop_error(aTHX_ err, HAMT_XS_ERR_NEXT, sizeof(HAMT_XS_ERR_NEXT) - 1, "next"))
+         return HAMT_XS_NEXT;
+     return HAMT_XS_DIED;
+ }
+--- a/t/01-hash.t
++++ b/t/01-hash.t
+@@ -84,7 +84,7 @@
+     my $v = 'value';
+     my $before = Internals::SvREFCNT($v);
+     my ($held, $self_eq, $flag_eq) = HAMT::_entry_probe('alpha', 0, $v);
+-    is($held, $before + 1, 'a live entry holds one reference to its value');
++    is($held, 1, 'a live entry holds one reference to its value');
+     is(Internals::SvREFCNT($v), $before, 'and gives it back when it goes');
+     ok($self_eq, 'its key equals itself');
+     ok(!$flag_eq, 'and not the same bytes under the other flag');
+--- a/t/22-functions.t
++++ b/t/22-functions.t
+@@ -252,6 +252,23 @@
+     ok($n->{entersub}, 'and so does the method');
+ }
+ 
++# Temporary receivers must be released by every custom op.
++{
++    my $before = HAMT::_live_blocks();
++    my @got;
++    for (1 .. 50) {
++        @got = (hamt_map_get(HAMT::Map->new(k => 7), 'k'),
++                hamt_map_exists(HAMT::Map->new(k => 7), 'k'),
++                hamt_map_count(HAMT::Map->new(k => 7)),
++                hamt_set_has(HAMT::Set->new('k'), 'k'),
++                hamt_set_count(HAMT::Set->new('k')),
++                hamt_vector_get(HAMT::Vector->new(7), 0),
++                hamt_vector_count(HAMT::Vector->new(7)));
++    }
++    is_deeply(\@got, [7, 1, 1, 1, 1, 7, 1], 'all reads accept temporary receivers');
++    is(HAMT::_live_blocks(), $before, 'all reads release their temporary receivers');
++}
++
+ # Importing.
+ {
+     package Local::One;
+--- a/t/24-callback-loop.t
++++ b/t/24-callback-loop.t
+@@ -3,6 +3,7 @@
+ use strict;
+ use warnings;
+ use Test::More;
++use Scalar::Util qw(refaddr);
+ use HAMT::Map;
+ use HAMT::Set;
+ use HAMT::Vector;
+@@ -148,6 +149,43 @@
+     is($@, 'before', 'and a call that returns');
+ }
+ 
++# A thrown object with loop-like text is not loop control.
++{
++    my $renders = 0;
++    {
++        package Local::LoopError;
++        use overload '""' => sub { $renders++; 'Can\'t "last" outside a loop block' },
++                     'bool' => sub { 1 }, fallback => 1;
++    }
++    my $error = bless {}, 'Local::LoopError';
++    eval { $m->each(sub { die $error }) };
++    is(refaddr($@), refaddr($error), 'a loop-like error object passes through unchanged');
++    is($renders, 0, 'the error object is not stringified to identify loop control');
++}
++
++SKIP: {
++    skip 'XPerl structured exceptions are not available', 8
++        unless XPerl::Exception->can('has_diagnostic');
++    no warnings 'exiting';
++    for my $render (qw(en:annotated en:legacy:JSON en:legacy:Dumper)) {
++        local ${^DIAG_RENDER} = $render;
++        my $calls = 0;
++        $v->each(sub { last if ++$calls == 2 });
++        is($calls, 2, "last stops a walk with $render rendering");
++        my @seen;
++        $v->each(sub { next if $_[0] % 2; push @seen, $_[0] });
++        is_deeply(\@seen, [grep { !($_ % 2) } 1 .. 50],
++                  "next skips with $render rendering");
++    }
++    my $text = "Can't \"last\" outside a loop block\n";
++    eval { $m->each(sub { die $text }) };
++    is("$@", $text, 'user text resembling loop control is not a loop diagnostic');
++    eval { $m->each(sub { redo }) };
++    my $error = $@;
++    eval { $m->each(sub { die $error }) };
++    is(refaddr($@), refaddr($error), 'an unrelated structured exception retains its identity');
++}
++
+ # ---- warnings -------------------------------------------------------------------
+ {
+     @warned = ();
+--- a/xs/test.xs
++++ b/xs/test.xs
+@@ -40,8 +40,8 @@
+ 
+ # An entry made and released in C, reporting what it held on the way: the
+ # key's length, its flag, and whether the key compares equal to itself and
+-# unequal to the same bytes under the other flag. The value's reference count
+-# is the caller's to check before and after.
++# unequal to the same bytes under the other flag. Measure the reference
++# retained by the entry within this call, so stack ownership cancels out.
+ void
+ _entry_probe(bytes, utf8, value)
+         SV *bytes
+@@ -52,15 +52,16 @@
+         const char *p;
+         uint64_t h;
+         hamt_entry *e;
+-        IV held, self_eq, flag_eq;
++        IV before, held, self_eq, flag_eq;
+     PPCODE:
+         p = SvPVbyte(bytes, len);
+         h = hamt_hash(p, (size_t)len, utf8);
++        before = (IV)SvREFCNT(value);
+         e = hamt_entry_new(HAMT_CX, p, (size_t)len, utf8, h, (void *)value);
+         if (!e) croak("HAMT::_entry_probe: out of memory");
+         hamt_entry_retain(e);
+         hamt_entry_release(HAMT_CX, e);
+-        held    = (IV)SvREFCNT(value);
++        held    = (IV)SvREFCNT(value) - before;
+         self_eq = hamt_entry_key_eq(e, p, (size_t)len, utf8, h);
+         flag_eq = hamt_entry_key_eq(e, p, (size_t)len, !utf8,
+                                     hamt_hash(p, (size_t)len, !utf8));
