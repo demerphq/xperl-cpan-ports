@@ -21,6 +21,7 @@ Prior failures remain in each distribution record after a later success.
 | DENIK | [Lingua-Identify-CLD2](../data/32/DENIK/Lingua-Identify-CLD2/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | DLAND | [BSD-Sysctl](../data/c2/DLAND/BSD-Sysctl/status.json) | 0.11 | v5.45.5 | linux/x86_64-linux | configure | exit 255 |
 | DORMANDO | [Cache-Memcached](../data/14/DORMANDO/Cache-Memcached/status.json) | 1.30 | v5.45.5 | darwin/darwin-2level | test | Files=8, Tests=66, Failed 4/8 test programs. 39/66 subtests failed. |
+| DROLSKY | [List-SomeUtils](../data/23/DROLSKY/List-SomeUtils/status.json) | 0.59 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=5, Tests=45, Failed 1/5 test programs. 2/45 subtests failed. |
 | DVEEDEN | [DBD-mysql](../data/56/DVEEDEN/DBD-mysql/status.json) | 5.014 | v5.45.5 | darwin/darwin-2level | configure | exit 2 |
 | DVEEDEN | [DBD-mysql](../data/56/DVEEDEN/DBD-mysql/status.json) | 5.014 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | ETJ | [Inline-Java](../data/c6/ETJ/Inline-Java/status.json) | 0.67 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
@@ -66,16 +67,17 @@ Prior failures remain in each distribution record after a later success.
 | PITCHLESS | [MooseX-Getopt-Usage](../data/b4/PITCHLESS/MooseX-Getopt-Usage/status.json) | 0.24 | v5.45.5 | linux/x86_64-linux | test | Files=7, Tests=93, Failed 1/7 test programs. 1/93 subtests failed. |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level | test | Files=86, Tests=100, Failed 1/86 test programs. 1/100 subtests failed. |
 | PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | test | Files=86, Tests=6460, Failed 1/86 test programs. 5/6460 subtests failed. |
-| PJCJ | [Devel-Cover](../data/8d/PJCJ/Devel-Cover/status.json) | 1.52 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=86, Tests=6223, Failed 3/86 test programs. 37/6223 subtests failed. |
 | PMQS | [DB_File](../data/3d/PMQS/DB_File/status.json) | 1.861 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | test | Files=2, Tests=0 |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | test | Files=5, Tests=5, Failed 3/5 test programs. 3/5 subtests failed. |
+| REHSACK | [List-MoreUtils](../data/71/REHSACK/List-MoreUtils/status.json) | 0.430 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=122, Tests=9066, Failed 2/122 test programs. 2/9066 subtests failed. |
 | RKITOVER | [Net-SSH2](../data/ce/RKITOVER/Net-SSH2/status.json) | 0.74 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
 | ROBIN | [Want](../data/f5/ROBIN/Want/status.json) | 0.29 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=8, Tests=148, Failed 2/8 test programs. 5/148 subtests failed. |
 | RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. (out-of-date-with-blead) |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | SHLOMIF | [IO-Socket-INET6](../data/62/SHLOMIF/IO-Socket-INET6/status.json) | 2.73 | v5.45.5 | darwin/darwin-2level | test | Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed. |
+| SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=24, Tests=380, Failed 1/24 test programs. 1/380 subtests failed. |
 | SORTIZ | [JSPL](../data/1e/SORTIZ/JSPL/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | SVW | [Time-Out](../data/f6/SVW/Time-Out/status.json) | 1.0.0 | v5.45.5 | linux/x86_64-linux | test | Files=10, Tests=20, Failed 1/10 test programs. 1/20 subtests failed. |
 | SWALTERS | [SOAP-WSDL](../data/57/SWALTERS/SOAP-WSDL/status.json) | 3.004 | v5.45.5 | linux/x86_64-linux | test | Files=124, Tests=1129, Failed 4/124 test programs. 0/1129 subtests failed. |
@@ -83,8 +85,10 @@ Prior failures remain in each distribution record after a later success.
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
 | THOR | [Net-LibIDN](../data/19/THOR/Net-LibIDN/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | TIMLEGGE | [Authen-SASL-XS](../data/ec/TIMLEGGE/Authen-SASL-XS/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
+| TOBYINK | [Type-Tiny](../data/13/TOBYINK/Type-Tiny/status.json) | 2.010001 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=375, Tests=8912, Failed 1/375 test programs. 1/8912 subtests failed. |
 | TURNSTEP | [DBD-Pg](../data/98/TURNSTEP/DBD-Pg/status.json) | 3.21.2 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
 | VPIT | [Scope-Upper](../data/24/VPIT/Scope-Upper/status.json) | 0.34 | v5.45.5 | linux/x86_64-linux | test | Files=54, Tests=89422, Failed 1/54 test programs. 1/89422 subtests failed. |
+| VPIT | [indirect](../data/0a/VPIT/indirect/status.json) | 0.39 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=22, Tests=3137, Failed 9/22 test programs. 1034/3137 subtests failed. |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | darwin/darwin-2level | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |
 | XAICRON | [JSON-WebToken](../data/50/XAICRON/JSON-WebToken/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | test | Files=9, Tests=36, Failed 2/9 test programs. 4/36 subtests failed. |
 | YAKEX | [Test-Kwalitee-Extra](../data/6e/YAKEX/Test-Kwalitee-Extra/status.json) | v0.4.0 | v5.45.5 | darwin/darwin-2level | test | Files=12, Tests=64, Failed 2/12 test programs. 2/64 subtests failed. |
