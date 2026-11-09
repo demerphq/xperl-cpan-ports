@@ -91,6 +91,53 @@
       },
       {
          "cpan_path" : "A/AS/ASB/CHI-0.61.tar.gz",
+         "id" : "4f8a27ccedb5c72eb2c9ca07f655413ed2a0517c14b50da2e0f7762be202c3f6",
+         "module" : "CHI",
+         "observed_at" : "2026-11-07T14:21:35Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "583545c9e5312bb4193ab16de9f55ff8f4b4a7ded128cee8dd2cb021d4678b5b",
+         "status" : "installed",
+         "test_summary" : "Files=26, Tests=1787",
+         "version" : "0.61",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "A/AS/ASB/CHI-0.61.tar.gz",
          "id" : "295dbd7b53d5e9183669d20a04661120fddd42cf18802823ee8729e9c0df39c4",
          "module" : "CHI",
          "observed_at" : "2026-11-08T21:24:51Z",

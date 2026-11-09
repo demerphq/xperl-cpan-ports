@@ -48,6 +48,53 @@
          "test_summary" : "Files=8, Tests=104",
          "version" : "9.1",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "B/BL/BLHOTSKY/App-ElasticSearch-Utilities-9.1.tar.gz",
+         "id" : "c42c84304cff39eb02c58bedea429855c2b866e32682420fa5ba17a1e4a35f08",
+         "module" : "App::ElasticSearch::Utilities",
+         "observed_at" : "2026-11-07T14:21:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "31f93c9b8bcbe55b7443944931d2037d46bab10a2222a7d18992bd955ec540e5",
+         "status" : "installed",
+         "test_summary" : "Files=8, Tests=104",
+         "version" : "9.1",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

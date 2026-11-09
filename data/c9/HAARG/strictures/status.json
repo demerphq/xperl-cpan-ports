@@ -75,6 +75,53 @@
       },
       {
          "cpan_path" : "H/HA/HAARG/strictures-2.000006.tar.gz",
+         "id" : "19f3f2ce71e967515c44d6e69594e71b447e0cd8500deb814edccad2e7096bdb",
+         "module" : "strictures",
+         "observed_at" : "2026-11-07T14:21:27Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "09d57974a6d1b2380c802870fed471108f51170da81458e2751859f2714f8d57",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=42",
+         "version" : "2.000006",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "H/HA/HAARG/strictures-2.000006.tar.gz",
          "id" : "7aef5993647c7aa3058bd30200b602724561b34ee5e89c7a586dc718f2227f61",
          "module" : "strictures",
          "observed_at" : "2026-11-08T21:23:16Z",

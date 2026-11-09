@@ -124,6 +124,52 @@
          "xperl_version" : "v5.45.5"
       },
       {
+         "cpan_path" : "E/ET/ETHER/JSON-Schema-Modern-0.652.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "576a5e90dcef9aab9d3ad927b4ac8343bdc95f2daead44764ef848f1cd2cf615",
+         "module" : "JSON::Schema::Modern",
+         "observed_at" : "2026-11-07T14:21:54Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "47bddc9e850bd61942d1abd4df2917b5c7df8fda1b8ec8cbe159c7dff1430f1c",
+         "status" : "failed",
+         "test_summary" : "Files=48, Tests=3310, Failed 2/48 test programs. 4/3310 subtests failed.",
+         "version" : "0.652",
+         "xperl_version" : "v5.45.5"
+      },
+      {
          "advisories" : [],
          "cpan_path" : "E/ET/ETHER/JSON-Schema-Modern-0.652.tar.gz",
          "id" : "58da32dc0f7eecadb52299f7c848413325a25c527322931ac8e4b978a34d28e2",

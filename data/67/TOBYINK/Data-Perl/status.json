@@ -44,6 +44,53 @@
       },
       {
          "cpan_path" : "T/TO/TOBYINK/Data-Perl-0.002011.tar.gz",
+         "id" : "462682970a9c3a55236b075671d8da79ce19349b15fe5abec95013a4f571fda5",
+         "module" : "Data::Perl",
+         "observed_at" : "2026-11-07T14:21:33Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "8d34dbe314cfa2d99bd9aae546bbde94c38bb05b74b07c89bde1673a6f6c55f4",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=194",
+         "version" : "0.002011",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "T/TO/TOBYINK/Data-Perl-0.002011.tar.gz",
          "id" : "0c58c2fe7a6dbc87a647af409c09e67f0e06d6cf2aad7a62782f114ee7ea61e2",
          "module" : "Data::Perl",
          "observed_at" : "2026-11-08T21:23:18Z",

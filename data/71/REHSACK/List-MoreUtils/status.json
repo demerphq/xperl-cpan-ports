@@ -182,6 +182,61 @@
       {
          "advisories" : [],
          "cpan_path" : "R/RE/REHSACK/List-MoreUtils-0.430.tar.gz",
+         "id" : "e5f73c93d8c4deddb352b6b621008c1059a810e8f880bbb6f58e16c6f3cfdea3",
+         "module" : "List::MoreUtils",
+         "observed_at" : "2026-11-07T14:21:32Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "deterministic-exception-leak-tests",
+         "patch_sha256" : [
+            "bebcc32b64091f3532132bb0da3d6c685e236ce72718840144356844608892a8"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "63b1f7842cd42d9b538d1e34e0330de5ff1559e4c2737342506418276f646527",
+         "status" : "installed",
+         "test_summary" : "Files=122, Tests=9066",
+         "version" : "0.430",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "R/RE/REHSACK/List-MoreUtils-0.430.tar.gz",
          "id" : "ba55c73c2e89441cd43eef9b6209cc892f0610cedd2bf7cbfc03ec2e2983fa9e",
          "module" : "List::MoreUtils",
          "observed_at" : "2026-11-08T21:20:48Z",

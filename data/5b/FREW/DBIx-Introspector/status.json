@@ -48,6 +48,53 @@
          "test_summary" : "Files=5, Tests=17",
          "version" : "0.001005",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FR/FREW/DBIx-Introspector-0.001005.tar.gz",
+         "id" : "194a1a1f209142fc2787b4ce5a6edc694d40c89c37a315365992e60456cd03c1",
+         "module" : "DBIx::Introspector",
+         "observed_at" : "2026-11-07T14:21:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "bf91789738f58fcab3dae0e2a0e1b307fe3a8e65"
+         },
+         "source_sha256" : "96a94d2cc690c1fa8fd34113e3b084bf2a469a323a9780285aef92ddc381e63a",
+         "status" : "installed",
+         "test_summary" : "Files=5, Tests=17",
+         "version" : "0.001005",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
