@@ -1,0 +1,58 @@
+--- a/Map8.xs
++++ b/Map8.xs
+@@ -347,7 +347,7 @@
+ 	Map8* m2
+ 	PREINIT:
+ 	    STRLEN len;
+-	    STRLEN rlen;
++	    int rlen;
+ 	    char*  res;
+ 	INPUT:
+ 	    char* str = SvPV(ST(2), len);
+--- a/map8.h
++++ b/map8.h
+@@ -80,7 +80,7 @@
+ 
+ U16*  map8_to_str16(Map8*, U8*, U16*, int, int*);
+ U8*   map8_to_str8 (Map8*, U16*, U8*, int, int*);
+-U8*   map8_recode_8(Map8*, Map8*, U8*, U8*, int, int*);
++U8*   map8_recode8(Map8*, Map8*, U8*, U8*, int, int*);
+ 
+ int   map8_empty_block(Map8*, U8);
+ 
+--- a/t/map8.t
++++ b/t/map8.t
+@@ -1,4 +1,4 @@
+-print "1..18\n";
++print "1..22\n";
+ 
+ use strict;
+ use Unicode::Map8 qw(NOCHAR);
+@@ -119,6 +119,27 @@
+ print "not " if Unicode::Map8->new("NOT_FOUND");
+ print "ok 18\n";
+ 
++print "not " unless $l1->recode8($l1, "") eq "";
++print "ok 19\n";
++
++my $bytes = join("", map { chr($_) } 0 .. 255);
++print "not " unless $l1->recode8($l1, $bytes) eq $bytes;
++print "ok 20\n";
++
++my $empty = Unicode::Map8->new;
++print "not " unless $empty->recode8($l1, "abc") eq "";
++print "ok 21\n";
++
++my $recode_ok = 1;
++for my $len (1, 2, 7, 64, 255, 256, 1024) {
++    my $input = "\0x\xff" x $len;
++    my $output = $l1->recode8($l1, $input);
++    $recode_ok = 0 unless $output eq $input &&
++                            length($output) == length($input);
++}
++print "not " unless $recode_ok;
++print "ok 22\n";
++
+ 
+ #---------------------------------------------------
+ 
