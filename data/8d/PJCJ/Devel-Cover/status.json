@@ -331,6 +331,81 @@
             "exit_status" : 2,
             "phase" : "test"
          },
+         "id" : "32ea8f646acd6e8dbabe2ad27ab45fa2084e6792ec60ce0754abe5b95ee4097d",
+         "module" : "Devel::Cover",
+         "observed_at" : "2026-11-08T20:06:44Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "xperl-coverage-gold",
+         "patch_sha256" : [
+            "750f7d0cf6359184124f108b5cbb8a68a21272e10f7d86a70f029ae9712c28b9"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb",
+         "status" : "failed",
+         "test_summary" : "Files=86, Tests=100, Failed 3/86 test programs. 2/100 subtests failed.",
+         "version" : "1.52",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "P/PJ/PJCJ/Devel-Cover-1.52.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
          "id" : "f770fe12b11d28017c7a9eb6a63fdce7c7ac7a1cdc2a8600153ef02e4e698bb6",
          "module" : "Devel::Cover",
          "observed_at" : "2026-11-08T21:18:56Z",
