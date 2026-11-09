@@ -44,6 +44,74 @@
       },
       {
          "cpan_path" : "E/ET/ETHER/Catalyst-Plugin-Static-Simple-0.38.tar.gz",
+         "id" : "536bae212b2ac76542762d87a1b01381464e8f068fbcf60480b2fd04f8bc39d8",
+         "module" : "Catalyst::Plugin::Static::Simple",
+         "observed_at" : "2026-11-08T21:03:29Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+            },
+            "build_id" : "2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "573a695628a17685ed0914313020778a607711a5"
+         },
+         "source_sha256" : "04eb67ebdc787327f77ef2c73976abecf93f9aefca0a718522fe98b8ca5238b0",
+         "status" : "installed",
+         "test_summary" : "Files=13, Tests=72",
+         "version" : "0.38",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "E/ET/ETHER/Catalyst-Plugin-Static-Simple-0.38.tar.gz",
          "id" : "6281825bb8f8865a2d6b30c9b3b83974e6edd57ff5adb1a04e0aa6a46f58f867",
          "module" : "Catalyst::Plugin::Static::Simple",
          "observed_at" : "2026-11-08T21:25:13Z",
