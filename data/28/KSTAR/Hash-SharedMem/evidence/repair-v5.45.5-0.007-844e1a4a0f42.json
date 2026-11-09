@@ -1,0 +1,88 @@
+{
+   "date" : "2026-11-09",
+   "files" : [
+      "Changes",
+      "lib/Hash/SharedMem.xs",
+      "t/op.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "844e1a4a0f4207940351c87baeea2220b67eced9ff7bebd3fe4068f8717994e7",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "095f03556f9f345357e9f5a2ffa0e7a1a74581ac91fc6e76f45c62b23b5e595a",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem"
+            },
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem/issues"
+            },
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem/pulls"
+            },
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem/commits"
+            },
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem/commit/44adc4b528a702229c14a712a7b676d6fca94e95"
+            },
+            {
+               "url" : "https://github.com/kstarsinic/Hash-SharedMem/commit/492a0503aad5eded7ad0555871b7b7437e2f3edd"
+            },
+            {
+               "url" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Hash-SharedMem"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}
