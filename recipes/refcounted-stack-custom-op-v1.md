@@ -22,6 +22,16 @@ This is a provider repair. When a consumer disables an optional accelerator
 because of this failure, investigate and fix the accelerator itself before
 accepting the consumer workaround as the final solution.
 
+Ref-Util-XS 0.117 is another one-argument bridge example. Its predicates
+replace their input with a boolean using `SETs`. The ordinary XSUB path
+balances ownership, but the custom operation bypasses that wrapper and
+leaks its input on an RC stack. Wrapping the custom operation fixes the
+provider while keeping its optimization enabled. The failure first appeared
+as a Type-Tiny coercion retaining its input hash. Rebuilding unmodified
+Type-Tiny against the repaired provider passes its suite with acceleration
+enabled. Check both the provider's argument lifetime and the consumer's
+original reproducer before accepting a workaround that disables acceleration.
+
 Do not mix a local `SP` snapshot with `rpp_*` updates without publishing and
 refreshing the appropriate pointer. Callback instrumentation can run on
 either stack kind; see `refcounted-stack-callback-v1` for that case.
