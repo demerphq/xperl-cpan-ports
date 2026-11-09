@@ -138,6 +138,74 @@
       },
       {
          "cpan_path" : "J/JM/JMCNAMARA/Excel-Writer-XLSX-1.15.tar.gz",
+         "id" : "fbda96a79f949cfd4af87326db43439413117586e7bf9e8d0b7e8da86d220eff",
+         "module" : "Excel::Writer::XLSX",
+         "observed_at" : "2026-11-08T20:09:08Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+            },
+            "build_id" : "608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "2e6cc28cfd2381cbd8788879aebbbdf9d28cafee"
+         },
+         "source_sha256" : "7931b4d8e2fa8b4f806db4bf523be396483f55f53e4f4738fdff5e9a0d875331",
+         "status" : "installed",
+         "test_summary" : "Files=1247, Tests=5115",
+         "version" : "1.15",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "J/JM/JMCNAMARA/Excel-Writer-XLSX-1.15.tar.gz",
          "id" : "e6cc34eacfdf0595b4d4f97f8fc2c3dc5c0a4ba9c71b5f2601373c6575549fa5",
          "module" : "Excel::Writer::XLSX",
          "observed_at" : "2026-11-08T21:19:38Z",
