@@ -49,6 +49,75 @@
          "test_summary" : "Files=6, Tests=31",
          "version" : "1.0.1",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "D/DC/DCANTRELL/Scalar-Type-1.0.1.tar.gz",
+         "id" : "23e872991383c1343f886267cae26dd4b65608bbe55ed9244fcf2a11238c840c",
+         "module" : "Scalar::Type",
+         "module_version" : "1.000001",
+         "observed_at" : "2026-11-09T13:29:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "97ad94ba5a46005d9b3e589acb8b051b1399dffdf461abf7fc7c7def5f019ec5",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=31",
+         "version" : "1.0.1",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
