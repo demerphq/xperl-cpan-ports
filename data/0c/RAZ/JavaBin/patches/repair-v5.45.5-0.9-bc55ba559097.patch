@@ -1,0 +1,270 @@
+--- a/JavaBin.c
++++ b/JavaBin.c
+@@ -1,6 +1,7 @@
+ #define PERL_NO_GET_CONTEXT
+ #include <EXTERN.h>
+ #include <perl.h>
++#include <XSUB.h>
+ #include <stdint.h>
+ 
+ #define READ_LEN (in[-1] & 31) == 31 ? 31 + read_v_int() : in[-1] & 31
+@@ -107,7 +108,7 @@
+     }
+ read_double: {
+         // For perls with double length NVs this conversion is simple.
+-        // Read 8 bytes, cast to double, return. For long double perls
++        // Read 8 bytes, cast to double, return. For wider NVs
+         // more magic is used, see read_float for more details.
+ 
+         const int_double u = { (uint64_t) in[0] << 56 |
+@@ -121,12 +122,12 @@
+ 
+         in += 8;
+ 
+-    #ifdef USE_LONG_DOUBLE
+-        char *str = alloca(snprintf(NULL, 0, "%.14f", u.d));
++    #if defined(USE_LONG_DOUBLE) || defined(USE_QUADMATH)
++        char *str = alloca(snprintf(NULL, 0, "%.14f", u.d) + 1);
+ 
+         sprintf(str, "%.14f", u.d);
+ 
+-        return Perl_newSVnv(aTHX_ strtold(str, NULL));
++        return Perl_newSVnv(aTHX_ Perl_my_atof(aTHX_ str));
+     #else
+         return Perl_newSVnv(aTHX_ u.d);
+     #endif
+@@ -153,23 +154,17 @@
+         return Perl_newSViv(aTHX_ l);
+     }
+ read_float: {
+-        // JavaBin has a 4byte float format, NVs in perl are double or long double,
+-        // therefore a little magic is required. Read the 4 bytes into an int in the
+-        // correct endian order. Re-read these bits as a float, stringify this float,
+-        // then finally numify the string into a double or long double.
++        // Preserve the decimal conversion for every Perl NV type.
++        // Read the bits as a float, stringify it, then parse it as an NV.
+         const int_float u = { in[0] << 24 | in[1] << 16 | in[2] << 8 | in[3] };
+ 
+         in += 4;
+ 
+-        char *str = alloca(snprintf(NULL, 0, "%f", u.f));
++        char *str = alloca(snprintf(NULL, 0, "%f", u.f) + 1);
+ 
+         sprintf(str, "%f", u.f);
+ 
+-    #ifdef USE_LONG_DOUBLE
+-        return Perl_newSVnv(aTHX_ strtold(str, NULL));
+-    #else
+-        return Perl_newSVnv(aTHX_ strtod(str, NULL));
+-    #endif
++        return Perl_newSVnv(aTHX_ Perl_my_atof(aTHX_ str));
+     }
+ read_date: {
+         const int64_t date_ms = (uint64_t) in[0] << 56 |
+@@ -523,12 +518,21 @@
+ 
+                 write_v_int(len);
+ 
++#ifdef XPERL_VERSION
++                STRLEN index = 0, end = HvENTRY_LIMIT((HV *)sv);
++#else
+                 HE **start = HvARRAY(sv), **end = start + HvMAX(sv) + 1;
++#endif
+ 
+                 do {
+                     HE *entry;
+ 
++#ifdef XPERL_VERSION
++                    for (entry = HvENTRY_FIRST((HV *)sv, index); entry;
++                         entry = HvENTRY_NEXT((HV *)sv, entry)) {
++#else
+                     for (entry = *start++; entry; entry = HeNEXT(entry)) {
++#endif
+                         SV *value = HeVAL(entry);
+ 
+                         if (value != &PL_sv_placeholder) {
+@@ -551,7 +555,12 @@
+                                 return;
+                         }
+                     }
++#ifdef XPERL_VERSION
++                    index++;
++                } while (index != end);
++#else
+                 } while (start != end);
++#endif
+             }
+             else {
+                 grow_out(aTHX_ 1);
+@@ -575,32 +584,33 @@
+ }
+ 
+ static void from_javabin(pTHX_ CV *cv __attribute__((unused))) {
+-    SV **sp = PL_stack_base + *PL_markstack_ptr + 1;
++    dXSARGS;
+ 
+-    if (sp > PL_stack_sp)
+-        return;
++    if (!items)
++        XSRETURN_EMPTY;
+ 
+     // Zero the cache.
+     // TODO zero more than just the cache index?
+     cache_pos = 0;
+ 
+-    if (SvCUR(*sp) < 2)
++    if (SvCUR(ST(0)) < 2)
+         Perl_croak(aTHX_ "Invalid from_javabin input: insufficient length");
+ 
+-    in = (uint8_t *) SvPVX(*sp);
++    in = (uint8_t *) SvPVX(ST(0));
+ 
+     if (*in++ != 2)
+         Perl_croak(aTHX_ "Invalid from_javabin input: expected version 2");
+ 
+-    *sp = Perl_sv_2mortal(aTHX_ read_sv(aTHX));
++    ST(0) = Perl_sv_2mortal(aTHX_ read_sv(aTHX));
+ 
+-    PL_stack_sp = sp;
++    XSRETURN(1);
+ }
+ 
+ static void to_javabin(pTHX_ CV *cv __attribute__((unused))) {
+-    SV **sp = PL_stack_base + *PL_markstack_ptr + 1;
++    dXSARGS;
++    dXSTARG;
+ 
+-    out_sv = PAD_SV(PL_op->op_targ);
++    out_sv = targ;
+ 
+     Perl_sv_upgrade(aTHX_ out_sv, SVt_PV);
+     SvPOK_on(out_sv);
+@@ -611,19 +621,25 @@
+ 
+     *out_buf++ = 2;
+ 
+-    write_sv(aTHX_ *sp);
++    write_sv(aTHX_ items ? ST(0) : &PL_sv_undef);
+ 
+     SvCUR(out_sv) = out_buf - (uint8_t *)SvPVX(out_sv);
+ 
+-    *sp = out_sv;
++    SPAGAIN;
++    EXTEND(SP, 1);
++    ST(0) = out_sv;
+ 
+-    PL_stack_sp = sp;
++    XSRETURN(1);
+ }
+ 
+ static void deref(pTHX_ CV *cv __attribute__((unused))) {
+-    PL_stack_sp = PL_stack_base + *PL_markstack_ptr + 1;
++    dXSARGS;
+ 
+-    *PL_stack_sp = SvRV(*PL_stack_sp);
++    if (!items)
++        XSRETURN_EMPTY;
++
++    ST(0) = SvRV(ST(0));
++    XSRETURN(1);
+ }
+ 
+ static void sub(pTHX_ char *name, STRLEN len, XSUBADDR_t addr) {
+@@ -640,6 +656,9 @@
+ }
+ 
+ void boot_JavaBin(pTHX_ CV *cv __attribute__((unused))) {
++    dXSARGS;
++    PERL_UNUSED_VAR(items);
++
+     sub(aTHX_ STR_WITH_LEN("JavaBin::from_javabin"), from_javabin);
+     sub(aTHX_ STR_WITH_LEN("JavaBin::to_javabin"), to_javabin);
+     sub(aTHX_ STR_WITH_LEN("JavaBin::Bool::()"), NULL);
+@@ -709,4 +728,8 @@
+     PERL_HASH(maxScore, "maxScore", 8);
+     PERL_HASH(numFound, "numFound", 8);
+     PERL_HASH(start,    "start",    5);
++
++    SPAGAIN;
++    EXTEND(SP, 1);
++    XSRETURN_YES;
+ }
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -1,11 +1,12 @@
+ use ExtUtils::MakeMaker;
++use Config;
+ 
+ WriteMakefile(
+       'BUILD_REQUIRES' => {
+     'Test::Fatal' => '0'
+   },
+     MIN_PERL_VERSION => 5.018,
+-    CCFLAGS      => '-fno-stack-protector -Wall -Werror -Wextra',
++    CCFLAGS      => "$Config{ccflags} -fno-stack-protector -Wall -Werror -Wextra",
+     NAME         => 'JavaBin',
+     VERSION_FROM => 'lib/JavaBin.pm',
+ );
+--- a/t/01-io.t
++++ b/t/01-io.t
+@@ -9,6 +9,34 @@
+ 
+ is_deeply [from_javabin()], [], 'from_javabin no args, array context';
+ 
++is_deeply [ 'before', from_javabin(), 'after' ], [ 'before', 'after' ],
++    'empty decode preserves surrounding list values';
++
++my @encoded = to_javabin('perl');
++is_deeply \@encoded, [ "\2\x24perl" ], 'encode returns one list value';
++
++my @decoded = from_javabin("\2\x24perl");
++is_deeply \@decoded, [ 'perl' ], 'decode returns one list value';
++
++is_deeply [ 'before', to_javabin('perl'), 'after' ],
++    [ 'before', "\2\x24perl", 'after' ],
++    'encode preserves surrounding list values';
++
++is_deeply [ 'before', from_javabin("\2\x24perl"), 'after' ],
++    [ 'before', 'perl', 'after' ],
++    'decode preserves surrounding list values';
++
++is_deeply [ map { to_javabin($_) } qw/first second/ ],
++    [ "\2\x25first", "\2\x26second" ],
++    'repeated encoding returns independent values';
++
++is to_javabin(), "\2\0", 'encode with no arguments produces null';
++
++to_javabin('discarded');
++from_javabin("\2\x24perl");
++is from_javabin(to_javabin('retained')), 'retained',
++    'calls in void context preserve the next call';
++
+ my %from = (
+      'expected version 2' => "\0\0",
+     'insufficient length' => '',
+--- a/t/06-hash.t
++++ b/t/06-hash.t
+@@ -24,4 +24,10 @@
+     is_deeply from_javabin($bin), $ref, "from_javabin $name";
+ }
+ 
++for my $size (1, 2, 8, 40) {
++    my $hash = { map { ("key$_", { value => $_ }) } 1 .. $size };
++    is_deeply from_javabin(to_javabin($hash)), $hash,
++        "round trip nested hash with $size keys";
++}
++
+ done_testing;
+--- a/t/12-float.t
++++ b/t/12-float.t
+@@ -8,4 +8,10 @@
+     is from_javabin( to_javabin $_ ), $_, $_;
+ }
+ 
++is from_javabin("\2\10" . pack('H*', '3dcccccd')), .1,
++    'decode float using Perl NV precision';
++
++is from_javabin("\2\5" . pack('H*', '3fb999999999999a')), .1,
++    'decode double using Perl NV precision';
++
+ done_testing;
