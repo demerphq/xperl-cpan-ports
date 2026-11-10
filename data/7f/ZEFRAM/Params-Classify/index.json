@@ -8,8 +8,8 @@
                "id" : "repair-v5.45.5",
                "patches" : [
                   {
-                     "path" : "patches/repair-v5.45.5-0.015-f723b2e22118.patch",
-                     "sha256" : "f723b2e221189236e6eeec387bfb3c557da4bb85edc114de2ea91c9cdfbabcac"
+                     "path" : "patches/repair-v5.45.5-0.015-c0f268d0f5eb.patch",
+                     "sha256" : "c0f268d0f5eb5874724b1f5b5bb334e04b347ec1ef2ef103ade853fe48a75f90"
                   }
                ],
                "purpose" : "compatibility",

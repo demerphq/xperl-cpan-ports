@@ -4,14 +4,15 @@
          "author" : "SANKO",
          "distribution" : "Affix",
          "evidence_paths" : [
-            "data/78/SANKO/Affix/evidence/repair-v5.45.5-v1.4.0-5c2b774b4ad2.json"
+            "data/78/SANKO/Affix/evidence/rc-guards-perl-v5.45.4-9ea479535f76.json",
+            "data/78/SANKO/Affix/evidence/rc-guards-xperl-v5.45.5-9ea479535f76.json"
          ],
          "index_path" : "data/78/SANKO/Affix/index.json",
          "native_files" : [
             "lib/Affix/marshal.c"
          ],
          "patch_paths" : [
-            "data/78/SANKO/Affix/patches/repair-v5.45.5-v1.4.0-5c2b774b4ad2.patch"
+            "data/78/SANKO/Affix/patches/repair-v5.45.5-v1.4.0-9ea479535f76.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -59,14 +60,15 @@
          "author" : "SMUELLER",
          "distribution" : "Class-XSAccessor",
          "evidence_paths" : [
-            "data/42/SMUELLER/Class-XSAccessor/evidence/repair-v5.45.5-1.19-8ee97affa4aa.json"
+            "data/42/SMUELLER/Class-XSAccessor/evidence/rc-guards-perl-v5.45.4-5b33c468b379.json",
+            "data/42/SMUELLER/Class-XSAccessor/evidence/rc-guards-xperl-v5.45.5-5b33c468b379.json"
          ],
          "index_path" : "data/42/SMUELLER/Class-XSAccessor/index.json",
          "native_files" : [
             "XSAccessor.xs"
          ],
          "patch_paths" : [
-            "data/42/SMUELLER/Class-XSAccessor/patches/repair-v5.45.5-1.19-8ee97affa4aa.patch"
+            "data/42/SMUELLER/Class-XSAccessor/patches/repair-v5.45.5-1.19-5b33c468b379.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [
@@ -78,14 +80,15 @@
          "author" : "LNATION",
          "distribution" : "Colouring-In-XS",
          "evidence_paths" : [
-            "data/d0/LNATION/Colouring-In-XS/evidence/repair-v5.45.5-0.13-60ed5a5b606a.json"
+            "data/d0/LNATION/Colouring-In-XS/evidence/rc-guards-perl-v5.45.4-4b7d3c219fbd.json",
+            "data/d0/LNATION/Colouring-In-XS/evidence/rc-guards-xperl-v5.45.5-4b7d3c219fbd.json"
          ],
          "index_path" : "data/d0/LNATION/Colouring-In-XS/index.json",
          "native_files" : [
             "include/in_ops.h"
          ],
          "patch_paths" : [
-            "data/d0/LNATION/Colouring-In-XS/patches/repair-v5.45.5-0.13-60ed5a5b606a.patch"
+            "data/d0/LNATION/Colouring-In-XS/patches/repair-v5.45.5-0.13-4b7d3c219fbd.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -115,14 +118,16 @@
          "author" : "XMATH",
          "distribution" : "Data-Alias",
          "evidence_paths" : [
-            "data/cc/XMATH/Data-Alias/evidence/repair-v5.45.5-1.30-d576e9cae3b7.json"
+            "data/cc/XMATH/Data-Alias/evidence/rc-guards-perl-v5.44.0-5e22d144249e.json",
+            "data/cc/XMATH/Data-Alias/evidence/rc-guards-perl-v5.45.4-5e22d144249e.json",
+            "data/cc/XMATH/Data-Alias/evidence/rc-guards-xperl-v5.45.5-5e22d144249e.json"
          ],
          "index_path" : "data/cc/XMATH/Data-Alias/index.json",
          "native_files" : [
             "Alias.xs"
          ],
          "patch_paths" : [
-            "data/cc/XMATH/Data-Alias/patches/repair-v5.45.5-1.30-d576e9cae3b7.patch"
+            "data/cc/XMATH/Data-Alias/patches/repair-v5.45.5-1.30-5e22d144249e.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [
@@ -251,7 +256,8 @@
          "author" : "LNATION",
          "distribution" : "File-Raw",
          "evidence_paths" : [
-            "data/1e/LNATION/File-Raw/evidence/repair-v5.45.5-0.19-ae84db39578a.json"
+            "data/1e/LNATION/File-Raw/evidence/rc-guards-perl-v5.45.4-3c2fcb6b33a5.json",
+            "data/1e/LNATION/File-Raw/evidence/rc-guards-xperl-v5.45.5-3c2fcb6b33a5.json"
          ],
          "index_path" : "data/1e/LNATION/File-Raw/index.json",
          "native_files" : [
@@ -259,7 +265,7 @@
             "include/file_compat.h"
          ],
          "patch_paths" : [
-            "data/1e/LNATION/File-Raw/patches/repair-v5.45.5-0.19-ae84db39578a.patch"
+            "data/1e/LNATION/File-Raw/patches/repair-v5.45.5-0.19-3c2fcb6b33a5.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -346,14 +352,15 @@
          "author" : "KSTAR",
          "distribution" : "Hash-SharedMem",
          "evidence_paths" : [
-            "data/28/KSTAR/Hash-SharedMem/evidence/repair-v5.45.5-0.007-844e1a4a0f42.json"
+            "data/28/KSTAR/Hash-SharedMem/evidence/rc-guards-perl-v5.45.4-2e04f1914e73.json",
+            "data/28/KSTAR/Hash-SharedMem/evidence/rc-guards-xperl-v5.45.5-2e04f1914e73.json"
          ],
          "index_path" : "data/28/KSTAR/Hash-SharedMem/index.json",
          "native_files" : [
             "lib/Hash/SharedMem.xs"
          ],
          "patch_paths" : [
-            "data/28/KSTAR/Hash-SharedMem/patches/repair-v5.45.5-0.007-844e1a4a0f42.patch"
+            "data/28/KSTAR/Hash-SharedMem/patches/repair-v5.45.5-0.007-2e04f1914e73.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [
@@ -384,14 +391,15 @@
          "author" : "LNATION",
          "distribution" : "Horus",
          "evidence_paths" : [
-            "data/17/LNATION/Horus/evidence/repair-v5.45.5-1.00-db9916805f8c.json"
+            "data/17/LNATION/Horus/evidence/rc-guards-perl-v5.45.4-7166aa9e4d86.json",
+            "data/17/LNATION/Horus/evidence/rc-guards-xperl-v5.45.5-7166aa9e4d86.json"
          ],
          "index_path" : "data/17/LNATION/Horus/index.json",
          "native_files" : [
             "Horus.xs"
          ],
          "patch_paths" : [
-            "data/17/LNATION/Horus/patches/repair-v5.45.5-1.00-db9916805f8c.patch"
+            "data/17/LNATION/Horus/patches/repair-v5.45.5-1.00-7166aa9e4d86.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -499,7 +507,8 @@
          "author" : "LNATION",
          "distribution" : "Object-Proto",
          "evidence_paths" : [
-            "data/07/LNATION/Object-Proto/evidence/repair-v5.45.5-1.04-127f52af60a3.json"
+            "data/07/LNATION/Object-Proto/evidence/rc-guards-perl-v5.45.4-b70fec72f2ab.json",
+            "data/07/LNATION/Object-Proto/evidence/rc-guards-xperl-v5.45.5-b70fec72f2ab.json"
          ],
          "index_path" : "data/07/LNATION/Object-Proto/index.json",
          "native_files" : [
@@ -507,7 +516,7 @@
             "object.c"
          ],
          "patch_paths" : [
-            "data/07/LNATION/Object-Proto/patches/repair-v5.45.5-1.04-127f52af60a3.patch"
+            "data/07/LNATION/Object-Proto/patches/repair-v5.45.5-1.04-b70fec72f2ab.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -560,14 +569,15 @@
          "author" : "ZEFRAM",
          "distribution" : "Params-Classify",
          "evidence_paths" : [
-            "data/7f/ZEFRAM/Params-Classify/evidence/repair-v5.45.5-0.015-f723b2e22118.json"
+            "data/7f/ZEFRAM/Params-Classify/evidence/rc-guards-perl-v5.45.4-c0f268d0f5eb.json",
+            "data/7f/ZEFRAM/Params-Classify/evidence/rc-guards-xperl-v5.45.5-c0f268d0f5eb.json"
          ],
          "index_path" : "data/7f/ZEFRAM/Params-Classify/index.json",
          "native_files" : [
             "lib/Params/Classify.xs"
          ],
          "patch_paths" : [
-            "data/7f/ZEFRAM/Params-Classify/patches/repair-v5.45.5-0.015-f723b2e22118.patch"
+            "data/7f/ZEFRAM/Params-Classify/patches/repair-v5.45.5-0.015-c0f268d0f5eb.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -595,13 +605,16 @@
       {
          "author" : "XSAWYERX",
          "distribution" : "Ref-Util-XS",
-         "evidence_paths" : [],
+         "evidence_paths" : [
+            "data/ed/XSAWYERX/Ref-Util-XS/evidence/rc-guards-perl-v5.45.4-032ffa20e316.json",
+            "data/ed/XSAWYERX/Ref-Util-XS/evidence/rc-guards-xperl-v5.45.5-032ffa20e316.json"
+         ],
          "index_path" : "data/ed/XSAWYERX/Ref-Util-XS/index.json",
          "native_files" : [
             "XS.xs"
          ],
          "patch_paths" : [
-            "data/ed/XSAWYERX/Ref-Util-XS/patches/rc-stack-custom-op-0.117-a3d03f5303ed.patch"
+            "data/ed/XSAWYERX/Ref-Util-XS/patches/rc-stack-custom-op-0.117-032ffa20e316.patch"
          ],
          "patch_set" : "rc-stack-custom-op-v1",
          "recipes" : [
@@ -613,14 +626,15 @@
          "author" : "YVES",
          "distribution" : "Sereal-Decoder",
          "evidence_paths" : [
-            "data/23/YVES/Sereal-Decoder/evidence/repair-v5.45.5-7.001-8c2f0a8bb095.json"
+            "data/23/YVES/Sereal-Decoder/evidence/rc-guards-perl-v5.45.4-1342ceff08a2.json",
+            "data/23/YVES/Sereal-Decoder/evidence/rc-guards-xperl-v5.45.5-1342ceff08a2.json"
          ],
          "index_path" : "data/23/YVES/Sereal-Decoder/index.json",
          "native_files" : [
             "Decoder.xs"
          ],
          "patch_paths" : [
-            "data/23/YVES/Sereal-Decoder/patches/repair-v5.45.5-7.001-8c2f0a8bb095.patch"
+            "data/23/YVES/Sereal-Decoder/patches/repair-v5.45.5-7.001-1342ceff08a2.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [
@@ -875,14 +889,15 @@
          "author" : "VPIT",
          "distribution" : "autovivification",
          "evidence_paths" : [
-            "data/a8/VPIT/autovivification/evidence/repair-v5.45.5-0.18-f1cc881e728c.json"
+            "data/a8/VPIT/autovivification/evidence/rc-guards-perl-v5.45.4-4f91384c7235.json",
+            "data/a8/VPIT/autovivification/evidence/rc-guards-xperl-v5.45.5-4f91384c7235.json"
          ],
          "index_path" : "data/a8/VPIT/autovivification/index.json",
          "native_files" : [
             "autovivification.xs"
          ],
          "patch_paths" : [
-            "data/a8/VPIT/autovivification/patches/repair-v5.45.5-0.18-f1cc881e728c.patch"
+            "data/a8/VPIT/autovivification/patches/repair-v5.45.5-0.18-4f91384c7235.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
@@ -929,14 +944,15 @@
          "author" : "SYBER",
          "distribution" : "next-XS",
          "evidence_paths" : [
-            "data/c7/SYBER/next-XS/evidence/repair-v5.45.5-1.0.8-695085d1cc4e.json"
+            "data/c7/SYBER/next-XS/evidence/rc-guards-perl-v5.45.4-f3fbc5d7cc5a.json",
+            "data/c7/SYBER/next-XS/evidence/rc-guards-xperl-v5.45.5-f3fbc5d7cc5a.json"
          ],
          "index_path" : "data/c7/SYBER/next-XS/index.json",
          "native_files" : [
             "XS.xs"
          ],
          "patch_paths" : [
-            "data/c7/SYBER/next-XS/patches/repair-v5.45.5-1.0.8-695085d1cc4e.patch"
+            "data/c7/SYBER/next-XS/patches/repair-v5.45.5-1.0.8-f3fbc5d7cc5a.patch"
          ],
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],

@@ -1,0 +1,119 @@
+--- a/Decoder.xs
++++ b/Decoder.xs
+@@ -191,29 +191,36 @@
+ 
+ #if USE_CUSTOM_OPS
+ 
+-static OP *
+-THX_pp_sereal_decode(pTHX)
++/* Custom ops bypass the XSUB compatibility wrapper. Keep their arguments
++ * alive and give their results stack references on Perl's RC stack. */
++#if defined(PERL_RC_STACK)
++# define SRL_PP(name, nargs) XSPP_wrapped(name, nargs, 0)
++#else
++# define SRL_PP(name, nargs) static OP *name(pTHX)
++#endif
++
++SRL_PP(THX_pp_sereal_decode,
++       2 + !!(PL_op->op_private & OPOPT_OFFSET)
++         + !!(PL_op->op_private & OPOPT_OUTARG_BODY)
++         + !!(PL_op->op_private & OPOPT_OUTARG_HEADER))
+ {
+     pp1_sereal_decode(PL_op->op_private);
+     return NORMAL;
+ }
+ 
+-static OP *
+-THX_pp_looks_like_sereal(pTHX)
++SRL_PP(THX_pp_looks_like_sereal, 1)
+ {
+     pp1_looks_like_sereal();
+     return NORMAL;
+ }
+ 
+-static OP *
+-THX_pp_get_sereal_checksum(pTHX)
++SRL_PP(THX_pp_get_sereal_checksum, PL_op->op_private & 3)
+ {
+     THX_pp1_checksum(aTHX_ PL_op->op_private, PL_op->op_private & 3);
+     return NORMAL;
+ }
+ 
+-static OP *
+-THX_pp_validate_sereal_checksum(pTHX)
++SRL_PP(THX_pp_validate_sereal_checksum, PL_op->op_private & 3)
+ {
+     THX_pp1_checksum(aTHX_ PL_op->op_private, PL_op->op_private & 3);
+     return NORMAL;
+--- a/t/190_customop.t
++++ b/t/190_customop.t
+@@ -5,7 +5,7 @@
+ 
+ use File::Spec;
+ use lib File::Spec->catdir(qw(t lib));
+-use Sereal::TestSet qw(have_encoder_and_decoder);
++use Sereal::TestSet qw(have_encoder_and_decoder Header);
+ use Sereal::Decoder qw(sereal_decode_with_object scalar_looks_like_sereal);
+ use Test::More;
+ use Data::Dumper;
+@@ -23,6 +23,45 @@
+ );
+ pass("did not segfault!");
+ 
++{
++    my @warnings;
++    local $SIG{__WARN__} = sub { push @warnings, @_ };
++    my @versions = ( 'before', scalar_looks_like_sereal($empty_array_as_sereal . ''), 'after' );
++    is_deeply( \@versions, [ 'before', 4, 'after' ], 'inspection preserves adjacent stack values' );
++    scalar_looks_like_sereal($empty_array_as_sereal . '');
++
++    my $packet = Header( 4, "\x07" ) . "\x40";
++    for my $suffix ( '', '_only_header', '_with_header', '_with_offset',
++                    '_only_header_with_offset', '_with_header_and_offset' ) {
++        my $body = $suffix !~ /only_header/;
++        my $header = $suffix =~ /header/;
++        my $offset = $suffix =~ /offset/;
++        my $expected = $header ? ( $body ? [ 7, [] ] : 7 ) : [];
++        for my $outputs ( 0 .. ( $body + $header ) ) {
++            my @expressions = ( '$_[0]', '$_[1]' );
++            push @expressions, '$_[2]' if $offset;
++            push @expressions, '$_[3]' if $outputs;
++            push @expressions, '$_[4]' if $outputs == 2;
++            my $name = "sereal_decode${suffix}_with_object";
++            my $probe = eval 'sub { Sereal::Decoder::' . $name
++                . '(' . join( ', ', @expressions ) . ') }';
++            die $@ unless $probe;
++            my @args = ( $srl_decoder, $offset ? 'prefix' . $packet : $packet, 6, undef, undef );
++            my $label = "$name with $outputs output arguments";
++            my $result = $probe->(@args);
++            is_deeply( $result, $expected, "$label in scalar context" );
++            my @results = ( 'before', $probe->(@args), 'after' );
++            is_deeply( \@results, [ 'before', $expected, 'after' ], "$label in list context" );
++            $probe->(@args);
++            is_deeply( $args[3], $body ? [] : 7, "$label fills the first output in void context" )
++                if $outputs;
++            is( $args[4], 7, "$label fills the header output in void context" )
++                if $outputs == 2;
++        }
++    }
++    is_deeply( \@warnings, [], 'custom ops balance stack references without warnings' );
++}
++
+ sub custom_op_metadata {
+     my ($code) = @_;
+     my @pending = ( B::svref_2object($code)->ROOT );
+--- a/t/931_checksum_inspection.t
++++ b/t/931_checksum_inspection.t
+@@ -77,8 +77,12 @@
+             );
+             my @tag = get_sereal_checksum($packet);
+             is_deeply( \@tag, [$tag], "$label extraction returns one value in list context" );
++            my @xs_tag = $getter->($packet);
++            is_deeply( \@xs_tag, [$tag], "$label XSUB extraction returns one value in list context" );
+             my @valid = validate_sereal_checksum( $packet, $key );
+             is_deeply( \@valid, [1], "$label validation returns one value in list context" );
++            my @xs_valid = $validator->( $packet, $key );
++            is_deeply( \@xs_valid, [1], "$label XSUB validation returns one value in list context" );
+             get_sereal_checksum($packet);
+             validate_sereal_checksum( $packet, $key );
+         }

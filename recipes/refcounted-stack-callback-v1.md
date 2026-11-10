@@ -18,6 +18,8 @@ the additional ownership changes with `#ifdef PERL_RC_STACK` and
 callback uses an RC stack. Keep the original ownership behavior for a
 compatibility stack and for interpreters without the option. Prefer the
 interpreter's stack APIs when their ownership contract fits the call path.
+Do not add an `XPERL_VERSION` requirement to an RC ownership fix. Ordinary
+Perl can enable `PERL_RC_STACK` and needs the same ownership handling.
 
 Devel-Cover 1.52 demonstrates this in its `Devel::Cover::use_file` callback:
 the pushed filename gains an RC-stack reference, and the popped boolean

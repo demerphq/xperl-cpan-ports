@@ -1,0 +1,741 @@
+--- a/Alias.xs
++++ b/Alias.xs
+@@ -18,6 +18,17 @@
+ #undef PERL_CORE
+ #include "XSUB.h"
+ 
++#if defined(PERL_RC_STACK)
++#define DA_RC_STACK 1
++#define DA_PP(name, nargs, nlists) \
++	static OP *DataAlias_pp_ ## name(pTHX); \
++	XSPP_wrapped(DataAlias_pp_ ## name, nargs, nlists)
++#define DA_LONE(sv) rpp_is_lone(sv)
++#else
++#define DA_RC_STACK 0
++#define DA_PP(name, nargs, nlists) static OP *DataAlias_pp_ ## name(pTHX)
++#define DA_LONE(sv) (SvTEMP(sv) && SvREFCNT(sv) == 1)
++#endif
+ 
+ #ifdef USE_5005THREADS
+ #error "5.005 threads not supported by Data::Alias"
+@@ -269,16 +280,64 @@
+ #define DA_DEREF_ERR "Can't deref string (\"%.32s\")"
+ #define DA_OUTER_ERR "Aliasing of outer lexical variable has limited scope"
+ 
+-#define _PUSHaa(a1,a2) PUSHs((SV*)(Size_t)(a1));PUSHs((SV*)(Size_t)(a2))
+-#define PUSHaa(a1,a2) STMT_START { _PUSHaa(a1,a2); } STMT_END
+-#define XPUSHaa(a1,a2) STMT_START { EXTEND(sp,2); _PUSHaa(a1,a2); } STMT_END
+-
+ #define DA_ALIAS_PAD	((Size_t) -1)
+ #define DA_ALIAS_RV	((Size_t) -2)
+ #define DA_ALIAS_GV	((Size_t) -3)
+ #define DA_ALIAS_AV	((Size_t) -4)
+ #define DA_ALIAS_HV	((Size_t) -5)
+ 
++#if DA_RC_STACK
++/* Alias descriptors must contain real SVs on a reference-counted stack.
++ * References keep containers and keys alive. Integers hold tags and indices.
++ * The wrapped handlers use the original pointer representation internally.
++ */
++static SV *da_box_first(pTHX_ SV *a1) {
++	switch ((Size_t) a1) {
++	case DA_ALIAS_PAD: case DA_ALIAS_RV: case DA_ALIAS_GV:
++	case DA_ALIAS_AV: case DA_ALIAS_HV:
++		return sv_2mortal(newSVuv(PTR2UV(a1)));
++	default:
++		return sv_2mortal(newRV_inc(a1));
++	}
++}
++
++static SV *da_box_second(pTHX_ SV *a1, SV *a2) {
++	bool index;
++	switch ((Size_t) a1) {
++	case DA_ALIAS_PAD:
++		index = TRUE;
++		break;
++	case DA_ALIAS_RV: case DA_ALIAS_GV:
++	case DA_ALIAS_AV: case DA_ALIAS_HV:
++		index = FALSE;
++		break;
++	default:
++		index = SvTYPE(a1) == SVt_PVAV;
++	}
++	return sv_2mortal(index || !a2 ? newSVuv(PTR2UV(a2)) : newRV_inc(a2));
++}
++
++static SV *da_unbox(pTHX_ SV *sv) {
++	return SvROK(sv) ? SvRV(sv) : INT2PTR(SV *, SvUV(sv));
++}
++#define DA_UNBOX(sv) da_unbox(aTHX_ (sv))
++#define DA_BOX_FIRST(a1) da_box_first(aTHX_ (SV *)(Size_t)(a1))
++#define DA_BOX_SECOND(a1,a2) \
++	da_box_second(aTHX_ (SV *)(Size_t)(a1), (SV *)(Size_t)(a2))
++#define _PUSHaa(a1,a2) STMT_START { \
++	SV *da_a1 = (SV *)(Size_t)(a1), *da_a2 = (SV *)(Size_t)(a2); \
++	PUSHs(DA_BOX_FIRST(da_a1)); \
++	PUSHs(DA_BOX_SECOND(da_a1,da_a2)); \
++} STMT_END
++#else
++#define DA_UNBOX(sv) (sv)
++#define DA_BOX_FIRST(a1) ((SV *)(Size_t)(a1))
++#define DA_BOX_SECOND(a1,a2) ((SV *)(Size_t)(a2))
++#define _PUSHaa(a1,a2) PUSHs((SV*)(Size_t)(a1));PUSHs((SV*)(Size_t)(a2))
++#endif
++#define PUSHaa(a1,a2) STMT_START { _PUSHaa(a1,a2); } STMT_END
++#define XPUSHaa(a1,a2) STMT_START { EXTEND(sp,2); _PUSHaa(a1,a2); } STMT_END
++
+ static OP *(*da_old_ck_rv2cv)(pTHX_ OP *op);
+ static OP *(*da_old_ck_entersub)(pTHX_ OP *op);
+ #if (PERL_COMBI_VERSION >= 5021007)
+@@ -546,13 +605,13 @@
+ 	return rv;
+ }
+ 
+-static OP *DataAlias_pp_srefgen(pTHX) {
++DA_PP(srefgen, 1, 0) {
+ 	dSP;
+ 	SETs(da_refgen(aTHX_ TOPs));
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_refgen(pTHX) {
++DA_PP(refgen, 0, 1) {
+ 	dSP; dMARK;
+ 	if (GIMME_V != G_LIST) {
+ 		++MARK;
+@@ -566,7 +625,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_anonlist(pTHX) {
++DA_PP(anonlist, 0, 1) {
+ 	dSP; dMARK;
+ 	I32 i = SP - MARK;
+ 	AV *av = newAV();
+@@ -586,7 +645,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_anonhash(pTHX) {
++DA_PP(anonhash, 0, 1) {
+ 	dSP; dMARK; dORIGMARK;
+ 	HV *hv = (HV *) newHV();
+ 	SV *sv;
+@@ -614,7 +673,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_aelemfast(pTHX) {
++DA_PP(aelemfast, 0, 0) {
+ 	dSP;
+ 	AV *av =
+ #if DA_HAVE_OP_AELEMFAST_LEX
+@@ -634,7 +693,7 @@
+ }
+ 
+ #if DA_HAVE_OP_AELEMFASTLEX_STORE
+-static OP *DataAlias_pp_aelemfastlex_store(pTHX) {
++DA_PP(aelemfastlex_store, 1, 0) {
+ 	dSP;
+ 	SV *value = TOPs;
+ 	/* inlined simplified DataAlias_pp_aelemfast */
+@@ -660,7 +719,7 @@
+ 	return FALSE;
+ }
+ 
+-static OP *DataAlias_pp_aelem(pTHX) {
++DA_PP(aelem, 2, 0) {
+ 	dSP;
+ 	SV *elem = POPs, **svp;
+ 	AV *av = (AV *) POPs;
+@@ -710,7 +769,7 @@
+ #define save_hdelete(hv, keysv) DataAlias_save_hdelete(aTHX_ (hv), (keysv))
+ #endif
+ 
+-static OP *DataAlias_pp_helem(pTHX) {
++DA_PP(helem, 2, 0) {
+ 	dSP;
+ 	SV *key = POPs;
+ 	HV *hv = (HV *) POPs;
+@@ -749,7 +808,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_aslice(pTHX) {
++DA_PP(aslice, 0, 1) {
+ 	dSP; dMARK;
+ 	AV *av = (AV *) POPs;
+ 	IV max, count;
+@@ -773,8 +832,8 @@
+ 			save_aelem(av, i, av_fetch(av, i, TRUE));
+ 		if (i > max)
+ 			max = i;
+-		*dst-- = (SV *) (Size_t) i;
+-		*dst-- = (SV *) av;
++		*dst-- = DA_BOX_SECOND(av, i);
++		*dst-- = DA_BOX_FIRST(av);
+ 		--src;
+ 	}
+ 	if (max > AvMAX(av))
+@@ -782,7 +841,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_hslice(pTHX) {
++DA_PP(hslice, 0, 1) {
+ 	dSP; dMARK;
+ 	HV *hv = (HV *) POPs;
+ 	SV *key;
+@@ -800,8 +859,8 @@
+ 				DIE(aTHX_ PL_no_helem, SvPV_nolen(key));
+ 			if (PL_op->op_private & OPpLVAL_INTRO)
+ 				save_helem(hv, key, &HeVAL(he));
+-			*dst-- = key;
+-			*dst-- = (SV *) hv;
++			*dst-- = DA_BOX_SECOND(hv, key);
++			*dst-- = DA_BOX_FIRST(hv);
+ 		}
+ 	}
+ #if DA_FEATURE_AVHV
+@@ -810,8 +869,8 @@
+ 			i = da_avhv_index(aTHX_ (AV *) hv, key = *src--);
+ 			if (PL_op->op_private & OPpLVAL_INTRO)
+ 				save_aelem((AV *) hv, i, &AvARRAY(hv)[i]);
+-			*dst-- = (SV *) (Size_t) i;
+-			*dst-- = (SV *) hv;
++			*dst-- = DA_BOX_SECOND(hv, i);
++			*dst-- = DA_BOX_FIRST(hv);
+ 		}
+ 	}
+ #endif
+@@ -884,18 +943,18 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_padrange_list(pTHX) {
++DA_PP(padrange_list, 0, 0) {
+ 	return DataAlias_pp_padrange_generic(aTHX_ 0);
+ }
+ 
+-static OP *DataAlias_pp_padrange_single(pTHX) {
++DA_PP(padrange_single, 0, 0) {
+ 	return DataAlias_pp_padrange_generic(aTHX_ 1);
+ }
+ 
+ #endif
+ 
+ #if DA_HAVE_OP_PADSV_STORE
+-static OP *DataAlias_pp_padsv_store(pTHX) {
++DA_PP(padsv_store, 1, 0) {
+ 	dSP;
+ 	PADOFFSET index = PL_op->op_targ;
+ 	if ((PL_op->op_private & (OPpLVAL_INTRO|OPpPAD_STATE)) == OPpLVAL_INTRO) {
+@@ -907,7 +966,7 @@
+ }
+ #endif
+ 
+-static OP *DataAlias_pp_padsv(pTHX) {
++DA_PP(padsv, 0, 0) {
+ 	dSP;
+ 	PADOFFSET index = PL_op->op_targ;
+ 	if ((PL_op->op_private & (OPpLVAL_INTRO|OPpPAD_STATE)) == OPpLVAL_INTRO) {
+@@ -918,7 +977,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_padav(pTHX) {
++DA_PP(padav, 0, 0) {
+ 	dSP; dTARGET;
+ 	if ((PL_op->op_private & (OPpLVAL_INTRO|OPpPAD_STATE)) == OPpLVAL_INTRO)
+ 		SAVECLEARSV(PAD_SVl(PL_op->op_targ));
+@@ -926,7 +985,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_padhv(pTHX) {
++DA_PP(padhv, 0, 0) {
+ 	dSP; dTARGET;
+ 	if ((PL_op->op_private & (OPpLVAL_INTRO|OPpPAD_STATE)) == OPpLVAL_INTRO)
+ 		SAVECLEARSV(PAD_SVl(PL_op->op_targ));
+@@ -934,7 +993,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_gvsv(pTHX) {
++DA_PP(gvsv, 0, 0) {
+ 	dSP;
+ 	GV *gv = cGVOP_gv;
+ 	if (PL_op->op_private & OPpLVAL_INTRO) {
+@@ -945,7 +1004,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_gvsv_r(pTHX) {
++DA_PP(gvsv_r, 0, 0) {
+ 	dSP;
+ 	GV *gv = cGVOP_gv;
+ 	if (PL_op->op_private & OPpLVAL_INTRO) {
+@@ -965,7 +1024,7 @@
+ 	return egv;
+ }
+ 
+-static OP *DataAlias_pp_rv2sv(pTHX) {
++DA_PP(rv2sv, 1, 0) {
+ 	dSP; dPOPss;
+ 	if (!SvROK(sv) && SvTYPE(sv) != SVt_PVGV) do {
+ 		const char *tname;
+@@ -1012,8 +1071,12 @@
+ 	OP *op = PL_op, *ret;
+ 
+ 	DataAlias_pp_rv2sv(aTHX);
++#if DA_RC_STACK
++	rpp_replace_2_1(DA_UNBOX(PL_stack_sp[0]));
++#else
+ 	PL_stack_sp[-1] = PL_stack_sp[0];
+ 	--PL_stack_sp;
++#endif
+ 
+ 	savedflags = op->op_private;
+ 	op->op_private = savedflags & ~OPpLVAL_INTRO;
+@@ -1025,7 +1088,7 @@
+ 	return ret;
+ }
+ 
+-static OP *DataAlias_pp_rv2gv(pTHX) {
++DA_PP(rv2gv, 1, 0) {
+ 	dSP; dPOPss;
+ 	if (SvROK(sv)) {
+ 	wasref:	sv = SvRV(sv);
+@@ -1053,36 +1116,91 @@
+ 
+ static OP *DataAlias_pp_rv2av(pTHX) {
+ 	OP *ret = PL_ppaddr[OP_RV2AV](aTHX);
++#if DA_RC_STACK
++	SV *av = *PL_stack_sp;
++	SV *first = DA_BOX_FIRST(DA_ALIAS_AV);
++	SV *second = DA_BOX_SECOND(DA_ALIAS_AV, av);
++	rpp_replace_1_1(first);
++	rpp_xpush_1(second);
++#else
+ 	dSP;
+ 	SV *av = POPs;
+ 	XPUSHaa(DA_ALIAS_AV, av);
+ 	PUTBACK;
++#endif
+ 	return ret;
+ }
+ 
+ static OP *DataAlias_pp_rv2hv(pTHX) {
+ 	OP *ret = PL_ppaddr[OP_RV2HV](aTHX);
++#if DA_RC_STACK
++	SV *hv = *PL_stack_sp;
++	SV *first = DA_BOX_FIRST(DA_ALIAS_HV);
++	SV *second = DA_BOX_SECOND(DA_ALIAS_HV, hv);
++	rpp_replace_1_1(first);
++	rpp_xpush_1(second);
++#else
+ 	dSP;
+ 	SV *hv = POPs;
+ 	XPUSHaa(DA_ALIAS_HV, hv);
+ 	PUTBACK;
++#endif
+ 	return ret;
+ }
+ 
+-static OP *DataAlias_pp_sassign(pTHX) {
++DA_PP(sassign, 3, 0) {
+ 	dSP;
+ 	SV *a1, *a2, *value;
+ 	if (PL_op->op_private & OPpASSIGN_BACKWARDS) {
+-		value = POPs, a2 = POPs, a1 = TOPs;
++		value = POPs, a2 = DA_UNBOX(POPs), a1 = DA_UNBOX(TOPs);
+ 		SETs(value);
+ 	} else {
+-		a2 = POPs, a1 = POPs, value = TOPs;
++		a2 = DA_UNBOX(POPs), a1 = DA_UNBOX(POPs), value = TOPs;
+ 	}
+ 	da_alias(aTHX_ a1, a2, value);
+ 	RETURN;
+ }
+ 
++#if DA_RC_STACK
++static OP *DataAlias_pp_aassign_norc(pTHX);
++
++static OP *DataAlias_pp_aassign(pTHX) {
++	if (PL_op->op_private & OPpALIAS) {
++		U32 hash = PL_op->op_private & OPpALIASHV;
++		U32 type = hash ? SVt_PVHV : SVt_PVAV;
++		SV *a2 = DA_UNBOX(PL_stack_sp[0]);
++		SV *a1 = DA_UNBOX(PL_stack_sp[-1]);
++		I32 leftmark = POPMARK;
++		I32 rightmark = POPMARK;
++		OPCODE savedop;
++		if (PL_stack_sp - PL_stack_base != leftmark + 2)
++			DIE(aTHX_ "Panic: unexpected number of lvalues");
++		/* The mortal descriptor references protect the target while
++		 * we remove its stack slots and build the new aggregate.
++		 */
++		rpp_popfree_2();
++		if (leftmark != rightmark + 1
++				|| SvTYPE(PL_stack_base[rightmark + 1]) != type) {
++			PUSHMARK(PL_stack_base + rightmark);
++			if (hash)
++				DataAlias_pp_anonhash(aTHX);
++			else
++				DataAlias_pp_anonlist(aTHX);
++		}
++		da_alias(aTHX_ a1, a2, *PL_stack_sp);
++		savedop = PL_op->op_type;
++		PL_op->op_type = hash ? OP_RV2HV : OP_RV2AV;
++		PL_ppaddr[PL_op->op_type](aTHX);
++		PL_op->op_type = savedop;
++		return NORMAL;
++	}
++	return Perl_pp_wrap(aTHX_ DataAlias_pp_aassign_norc, 0, 2);
++}
++
++static OP *DataAlias_pp_aassign_norc(pTHX) {
++#else
+ static OP *DataAlias_pp_aassign(pTHX) {
++#endif
+ 	dSP;
+ 	SV **left, **llast, **right, **rlast;
+ 	I32 gimme = GIMME_V;
+@@ -1095,8 +1213,8 @@
+ 	if (PL_op->op_private & OPpALIAS) {
+ 		U32 hash = (PL_op->op_private & OPpALIASHV);
+ 		U32 type = hash ? SVt_PVHV : SVt_PVAV;
+-		SV *a2 = POPs;
+-		SV *a1 = POPs;
++		SV *a2 = DA_UNBOX(POPs);
++		SV *a1 = DA_UNBOX(POPs);
+ 		OPCODE savedop;
+ 		if (SP != rlast)
+ 			DIE(aTHX_ "Panic: unexpected number of lvalues");
+@@ -1124,7 +1242,8 @@
+ 			right++;
+ 			continue;
+ 		}
+-		a2 = *left++;
++		a1 = DA_UNBOX(a1);
++		a2 = DA_UNBOX(*left++);
+ 		switch ((Size_t) a1) {
+ 		case DA_ALIAS_AV: {
+ 			SV **svp;
+@@ -1269,10 +1388,10 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_andassign(pTHX) {
++DA_PP(andassign, 2, 0) {
+ 	dSP;
+-	SV *a2 = POPs;
+-	SV *sv = da_fetch(aTHX_ TOPs, a2);
++	SV *a2 = DA_UNBOX(POPs);
++	SV *sv = da_fetch(aTHX_ DA_UNBOX(TOPs), a2);
+ 	if (SvTRUE(sv)) {
+ 		/* no PUTBACK */
+ 		return cLOGOP->op_other;
+@@ -1281,10 +1400,10 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_orassign(pTHX) {
++DA_PP(orassign, 2, 0) {
+ 	dSP;
+-	SV *a2 = POPs;
+-	SV *sv = da_fetch(aTHX_ TOPs, a2);
++	SV *a2 = DA_UNBOX(POPs);
++	SV *sv = da_fetch(aTHX_ DA_UNBOX(TOPs), a2);
+ 	if (!SvTRUE(sv)) {
+ 		/* no PUTBACK */
+ 		return cLOGOP->op_other;
+@@ -1294,10 +1413,10 @@
+ }
+ 
+ #if DA_HAVE_OP_DORASSIGN
+-static OP *DataAlias_pp_dorassign(pTHX) {
++DA_PP(dorassign, 2, 0) {
+ 	dSP;
+-	SV *a2 = POPs;
+-	SV *sv = da_fetch(aTHX_ TOPs, a2);
++	SV *a2 = DA_UNBOX(POPs);
++	SV *sv = da_fetch(aTHX_ DA_UNBOX(TOPs), a2);
+ 	if (!SvOK(sv)) {
+ 		/* no PUTBACK */
+ 		return cLOGOP->op_other;
+@@ -1307,7 +1426,7 @@
+ }
+ #endif
+ 
+-static OP *DataAlias_pp_push(pTHX) {
++DA_PP(push, 0, 1) {
+ 	dSP; dMARK; dORIGMARK; dTARGET;
+ 	AV *av = (AV *) *++MARK;
+ 	I32 i;
+@@ -1322,7 +1441,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_unshift(pTHX) {
++DA_PP(unshift, 0, 1) {
+ 	dSP; dMARK; dORIGMARK; dTARGET;
+ 	AV *av = (AV *) *++MARK;
+ 	I32 i = 0;
+@@ -1336,7 +1455,7 @@
+ 	RETURN;
+ }
+ 
+-static OP *DataAlias_pp_splice(pTHX) {
++DA_PP(splice, 0, 1) {
+ 	dSP; dMARK; dORIGMARK;
+ 	I32 ins = SP - MARK - 3;
+ 	AV *av = (AV *) MARK[1];
+@@ -1391,6 +1510,22 @@
+ }
+ 
+ static OP *DataAlias_pp_leave(pTHX) {
++#if DA_RC_STACK
++	PERL_CONTEXT *cx = CX_CUR();
++	SV **oldsp = PL_stack_base + cx->blk_oldsp;
++	U8 gimme = cx->blk_gimme;
++	assert(CxTYPE(cx) == CXt_BLOCK);
++	if (PL_op->op_flags & OPf_SPECIAL)
++		cx->blk_oldpm = PL_curpm;
++	if (gimme == G_VOID)
++		rpp_popfree_to(oldsp);
++	else
++		leave_adjust_stacks(oldsp, oldsp, gimme, 3);
++	CX_LEAVE_SCOPE(cx);
++	cx_popblock(cx);
++	CX_POP(cx);
++	return NORMAL;
++#else
+ 	dSP;
+ 	SV **newsp;
+ #ifdef POPBLOCK
+@@ -1436,6 +1571,7 @@
+ 	CX_POP(cx);
+ #endif
+ 	return NORMAL;
++#endif
+ }
+ 
+ static OP *DataAlias_pp_return(pTHX) {
+@@ -1464,8 +1600,16 @@
+ #if DA_FEATURE_MULTICALL
+ 	if (cxix < 0) {
+ 		if (CxMULTICALL(cxstack)) {	/* sort block */
++#if DA_RC_STACK
++			sv_2mortal(SvREFCNT_inc_NN(sv));
++#endif
+ 			dounwind(0);
++#if DA_RC_STACK
++			rpp_popfree_to(PL_stack_base);
++			rpp_xpush_1(sv);
++#else
+ 			*(PL_stack_sp = PL_stack_base + 1) = sv;
++#endif
+ 			return 0;
+ 		}
+ 		DIE(aTHX_ "Can't return outside a subroutine");
+@@ -1482,16 +1626,33 @@
+ #endif
+ 
+ 
+-	if (cxix < cxstack_ix)
++	if (cxix < cxstack_ix) {
++#if DA_RC_STACK
++		cx = &cxstack[cxix];
++		if (cx->blk_gimme == G_VOID)
++			rpp_popfree_to(PL_stack_base + cx->blk_oldsp);
++		else
++			leave_adjust_stacks(MARK,
++				PL_stack_base + cx->blk_oldsp, cx->blk_gimme, 3);
++#endif
+ 		dounwind(cxix);
++#if DA_RC_STACK
++		SPAGAIN;
++		MARK = PL_stack_base + cxstack[cxix].blk_oldsp;
++#endif
++	}
+ 
+ #if DA_FEATURE_MULTICALL
+ 	if (CxMULTICALL(&cxstack[cxix])) {
+ 		gimme = cxstack[cxix].blk_gimme;
++#if DA_RC_STACK
++		rpp_context(PL_stack_base, gimme, 0);
++#else
+ 		if (gimme == G_VOID)
+ 			PL_stack_sp = PL_stack_base;
+ 		else if (gimme == G_SCALAR)
+ 			*(PL_stack_sp = PL_stack_base + 1) = sv;
++#endif
+ 		return 0;
+ 	}
+ #endif
+@@ -1549,6 +1710,12 @@
+ 	}
+ 
+ 	TAINT_NOT;
++#if DA_RC_STACK
++	if (gimme == G_VOID)
++		rpp_popfree_to(newsp);
++	else
++		leave_adjust_stacks(MARK, newsp, gimme, 3);
++#else
+ 	if (gimme == G_SCALAR) {
+ 		if (MARK == SP) {
+ 			*++newsp = &PL_sv_undef;
+@@ -1566,6 +1733,7 @@
+ 		}
+ 	}
+ 	PL_stack_sp = newsp;
++#endif
+ #ifdef POPBLOCK
+ 	LEAVE;
+ 	if (type == CXt_SUB) {
+@@ -1611,7 +1779,7 @@
+ 	return ret;
+ }
+ 
+-static OP *DataAlias_pp_copy(pTHX) {
++DA_PP(copy, 0, 1) {
+ 	dSP; dMARK;
+ 	SV *sv;
+ 	switch (GIMME_V) {
+@@ -1624,14 +1792,15 @@
+ 			EXTEND(SP, 1);
+ 		} else {
+ 			sv = TOPs;
+-			if (!SvTEMP(sv) || SvREFCNT(sv) != 1)
++			if (!DA_LONE(sv))
+ 				sv = sv_mortalcopy(sv);
+ 		}
+ 		*(SP = MARK + 1) = sv;
+ 		break;
+ 	default:
+ 		while (MARK < SP) {
+-			if (!SvTEMP(sv = *++MARK) || SvREFCNT(sv) != 1)
++			sv = *++MARK;
++			if (!DA_LONE(sv))
+ 				*MARK = sv_mortalcopy(sv);
+ 		}
+ 	}
+@@ -2139,9 +2308,19 @@
+ #endif
+ 	{
+ 		/* save da_inside on stack, restored in da_ck_entersub */
+-		SPAGAIN;
+-		XPUSHs(da_inside ? &PL_sv_yes : &PL_sv_no);
+-		PUTBACK;
++#if DA_RC_STACK
++		/* Check hooks run during compilation, outside our wrapped ops.
++		 * The compiler can use either stack, so inspect the active one.
++		 */
++		if (rpp_stack_is_rc())
++			rpp_xpush_IMM(da_inside ? &PL_sv_yes : &PL_sv_no);
++		else
++#endif
++		{
++			SPAGAIN;
++			XPUSHs(da_inside ? &PL_sv_yes : &PL_sv_no);
++			PUTBACK;
++		}
+ 	}
+ #if (PERL_COMBI_VERSION >= 5011002)
+ 	if (*s == '(' && da_inside >= 0) {
+@@ -2250,7 +2429,13 @@
+ 	inside = da_inside;
+ 	if (inside < 0)
+ 		Perl_croak(aTHX_ "Data::Alias confused in da_ck_entersub (da_inside < 0)");
+-	da_inside = SvIVX(*PL_stack_sp--);
++#if DA_RC_STACK
++	if (rpp_stack_is_rc()) {
++		da_inside = SvIVX(*PL_stack_sp);
++		rpp_popfree_1();
++	} else
++#endif
++		da_inside = SvIVX(*PL_stack_sp--);
+ 	SvPOK_off(inside ? da_cv : da_cvc);
+ 	op_clear(esop);
+ 	RenewOpc(0, esop, 1, LISTOP, OP);
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,9 @@
+ Revision history for Perl module Data::Alias
+ 
++Unreleased
++    - Support XPerl's reference-counted argument stack for alias targets,
++      scope exits and copy() ownership checks.
++
+ 1.30  2026-03-11  XMATH
+     - Use isGV_with_GP_on when available. (RT 173582)
+ 
+--- a/README
++++ b/README
+@@ -20,6 +20,19 @@
+ 	make test
+ 	make install
+ 
++XPERL COMPATIBILITY
++
++On Perl builds with PERL_RC_STACK, custom opcode handlers use
++XSPP_wrapped for their argument and result ownership. Alias descriptors
++use real SVs: integers for tags and indices, and references for containers
++and keys. Wrapping a handler alone cannot make raw pointer tags safe on a
++reference-counted stack.
++
++Handlers that call core opcodes or unwind scopes use the counted-stack
++APIs directly. Scope exits preserve aliases with leave_adjust_stacks in
++lvalue mode, and copy() uses rpp_is_lone to account for stack ownership.
++These changes are conditional on PERL_RC_STACK.
++
+ AUTHOR
+ 
+ Matthijs van Duin <xmath@cpan.org> developed the module originally,
+--- a/t/06_alias_scope.t
++++ b/t/06_alias_scope.t
+@@ -3,7 +3,7 @@
+ use strict;
+ use warnings qw( FATAL all NONFATAL void );
+ use lib 'lib';
+-use Test::More tests => 48;
++use Test::More tests => 56;
+ 
+ use Data::Alias;
+ 
+@@ -74,4 +74,33 @@
+ is_deeply refs(eval 'alias return $x, $y'), refs($x, $y);
+ is \sub { for (1) { alias return $x, $y } }->(), \$y;
+ 
++# Return values must survive unwinding the loop and its lexical variables.
++sub nested_alias_return {
++	for (1, 2) {
++		my $value = 42;
++		alias return $value, $value;
++	}
++}
++my @local_refs = \nested_alias_return();
++is scalar nested_alias_return(), 42, 'scalar return through a loop';
++is $local_refs[0], $local_refs[1], 'list return preserves alias identity';
++is_deeply [map $$_, @local_refs], [42, 42], 'returned lexicals survive';
++${$local_refs[0]} = 99;
++is ${$local_refs[1]}, 99, 'returned aliases share modifications';
++
++sub nested_empty_return { for (1, 2) { alias return } }
++is scalar nested_empty_return(), undef, 'empty scalar return through a loop';
++is_deeply [nested_empty_return()], [], 'empty list return through a loop';
++
++sub alias_compare { alias return $a <=> $b }
++is_deeply [sort alias_compare 3, 1, 2], [1, 2, 3], 'return from a sort sub';
++
++our $discarded = 0;
++{
++	package AliasScopeObject;
++	sub DESTROY { $main::discarded++ }
++}
++alias(sub { bless [], 'AliasScopeObject' })->();
++is $discarded, 1, 'void return releases its temporary object';
++
+ # vim: ft=perl

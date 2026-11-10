@@ -1,0 +1,158 @@
+--- a/Changes
++++ b/Changes
+@@ -1,3 +1,12 @@
++Local portability repair
++
++  * Wrap custom ops with XSPP_wrapped and their argument counts so that
++    PERL_RC_STACK builds balance argument and result reference counts.
++    Keep the original declarations when the wrapper API is unavailable.
++
++  * Test retained results, temporary handles, warnings and handle lifetime
++    after normal calls and exceptions.
++
+ version 0.007; 2026-08-24
+ 
+   * Fix test failure with USE_ITHREADS and DEBUGGING
+--- a/lib/Hash/SharedMem.xs
++++ b/lib/Hash/SharedMem.xs
+@@ -4179,44 +4179,53 @@
+ 
+ #ifdef cv_set_call_checker
+ 
+-# define HSM_MAKE_PP(name) \
+-	static OP *THX_pp_##name(pTHX) \
++/* Custom ops need the same non-RC stack that Perl supplies to XSUBs.
++ * Older Perls have no RC stack and need only the function declaration.
++ */
++# ifdef PERL_RC_STACK
++#  define HSM_PP(name, arity) XSPP_wrapped(name, arity, 0)
++# else
++#  define HSM_PP(name, arity) static OP *name(pTHX)
++# endif
++
++# define HSM_MAKE_PP(name, arity) \
++	HSM_PP(THX_pp_##name, arity) \
+ 	{ \
+ 		pp1_##name(); \
+ 		return NORMAL; \
+ 	}
+ 
+-HSM_MAKE_PP(is_shash)
+-HSM_MAKE_PP(check_shash)
+-HSM_MAKE_PP(shash_open)
+-HSM_MAKE_PP(shash_is_readable)
+-HSM_MAKE_PP(shash_is_writable)
+-HSM_MAKE_PP(shash_mode)
+-HSM_MAKE_PP(shash_exists)
+-HSM_MAKE_PP(shash_length)
+-HSM_MAKE_PP(shash_get)
+-HSM_MAKE_PP(shash_set)
+-HSM_MAKE_PP(shash_gset)
+-HSM_MAKE_PP(shash_cset)
+-HSM_MAKE_PP(shash_occupied)
+-HSM_MAKE_PP(shash_count)
+-HSM_MAKE_PP(shash_size)
+-HSM_MAKE_PP(shash_key_min)
+-HSM_MAKE_PP(shash_key_max)
+-HSM_MAKE_PP(shash_key_ge)
+-HSM_MAKE_PP(shash_key_gt)
+-HSM_MAKE_PP(shash_key_le)
+-HSM_MAKE_PP(shash_key_lt)
+-HSM_MAKE_PP(shash_keys_array)
+-HSM_MAKE_PP(shash_keys_hash)
+-HSM_MAKE_PP(shash_group_get_hash)
+-HSM_MAKE_PP(shash_snapshot)
+-HSM_MAKE_PP(shash_is_snapshot)
+-HSM_MAKE_PP(shash_idle)
+-HSM_MAKE_PP(shash_tidy)
+-HSM_MAKE_PP(shash_tally_get)
+-HSM_MAKE_PP(shash_tally_zero)
+-HSM_MAKE_PP(shash_tally_gzero)
++HSM_MAKE_PP(is_shash, 1)
++HSM_MAKE_PP(check_shash, 1)
++HSM_MAKE_PP(shash_open, 2)
++HSM_MAKE_PP(shash_is_readable, 1)
++HSM_MAKE_PP(shash_is_writable, 1)
++HSM_MAKE_PP(shash_mode, 1)
++HSM_MAKE_PP(shash_exists, 2)
++HSM_MAKE_PP(shash_length, 2)
++HSM_MAKE_PP(shash_get, 2)
++HSM_MAKE_PP(shash_set, 3)
++HSM_MAKE_PP(shash_gset, 3)
++HSM_MAKE_PP(shash_cset, 4)
++HSM_MAKE_PP(shash_occupied, 1)
++HSM_MAKE_PP(shash_count, 1)
++HSM_MAKE_PP(shash_size, 1)
++HSM_MAKE_PP(shash_key_min, 1)
++HSM_MAKE_PP(shash_key_max, 1)
++HSM_MAKE_PP(shash_key_ge, 2)
++HSM_MAKE_PP(shash_key_gt, 2)
++HSM_MAKE_PP(shash_key_le, 2)
++HSM_MAKE_PP(shash_key_lt, 2)
++HSM_MAKE_PP(shash_keys_array, 1)
++HSM_MAKE_PP(shash_keys_hash, 1)
++HSM_MAKE_PP(shash_group_get_hash, 1)
++HSM_MAKE_PP(shash_snapshot, 1)
++HSM_MAKE_PP(shash_is_snapshot, 1)
++HSM_MAKE_PP(shash_idle, 1)
++HSM_MAKE_PP(shash_tidy, 1)
++HSM_MAKE_PP(shash_tally_get, 1)
++HSM_MAKE_PP(shash_tally_zero, 1)
++HSM_MAKE_PP(shash_tally_gzero, 1)
+ 
+ #endif /* cv_set_call_checker */
+ 
+--- a/t/op.t
++++ b/t/op.t
+@@ -2,7 +2,7 @@
+ use strict;
+ 
+ use File::Temp 0.22 qw(tempdir);
+-use Test::More tests => 388;
++use Test::More tests => 392;
+ 
+ BEGIN { use_ok "Hash::SharedMem", qw(
+ 	is_shash check_shash
+@@ -510,4 +510,42 @@
+ eval { ${\shash_snapshot($sn)} = undef; };
+ like $@, qr/\AModification of a read-only value attempted /;
+ 
++my(@retained, @stack_warnings);
++{
++	local $SIG{__WARN__} = sub { push @stack_warnings, @_ };
++	for my $i (1..20) {
++		my $handle = shash_open("$tmpdir/stack", "rwc");
++		shash_set($handle, "key", "old".$i);
++		shash_cset($handle, "key", "old".$i, "new".$i);
++		push @retained, shash_get(shash_snapshot($handle), "key");
++		check_shash($handle);
++	}
++}
++is_deeply \@retained, [map { "new".$_ } 1..20],
++	"custom op results survive temporary handles and later statements";
++is_deeply \@stack_warnings, [], "custom ops balance stack references";
++
++SKIP: {
++	skip "weak references unavailable", 2
++		unless eval { require Scalar::Util; Scalar::Util->can("weaken") };
++	my $weak;
++	{
++		my $handle = shash_open("$tmpdir/lifetime", "rwc");
++		$weak = $handle;
++		Scalar::Util::weaken($weak);
++		is_shash($handle);
++		shash_set($handle, "key", "value");
++		shash_get($handle, "key");
++		shash_cset($handle, "key", "value", undef);
++	}
++	ok !defined($weak), "custom ops release consumed handle references";
++	{
++		my $handle = shash_open("$tmpdir/lifetime", "r");
++		$weak = $handle;
++		Scalar::Util::weaken($weak);
++		eval { shash_set($handle, "key", "value") };
++	}
++	ok !defined($weak), "custom op exceptions release handle references";
++}
++
+ 1;

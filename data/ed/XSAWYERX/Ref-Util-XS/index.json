@@ -8,8 +8,8 @@
                "id" : "rc-stack-custom-op-v1",
                "patches" : [
                   {
-                     "path" : "patches/rc-stack-custom-op-0.117-a3d03f5303ed.patch",
-                     "sha256" : "a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3"
+                     "path" : "patches/rc-stack-custom-op-0.117-032ffa20e316.patch",
+                     "sha256" : "032ffa20e316520d506ecca3a8e8463e97941a693880b623f5e39a4bca240b7d"
                   }
                ],
                "purpose" : "compatibility",

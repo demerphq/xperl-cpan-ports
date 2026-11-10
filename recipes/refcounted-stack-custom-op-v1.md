@@ -14,6 +14,13 @@ include optional arguments selected by the operation's flags, not just its
 minimum arity. Sereal-Decoder 7.001 demonstrates flag-dependent counts and
 one-argument inspection operations.
 
+Select RC ownership code with `#ifdef PERL_RC_STACK`. Do not require
+`XPERL_VERSION`: ordinary Perl can use the same refcounted stack. The RC
+build provides `XSPP_wrapped`; conventional-stack builds retain their
+original declarations. Keep unrelated XPerl hash or exception changes under
+their own feature guards. Validate the patch on ordinary RC Perl as well as
+RC XPerl before claiming support for both interpreters.
+
 Some optimizations call an XSUB directly from a replacement entersub and
 cannot use that bridge unchanged. Class-XSAccessor 1.19 demonstrates keeping
 normal XSUB dispatch on RC builds so the interpreter's compatibility wrapper
@@ -35,6 +42,16 @@ original reproducer before accepting a workaround that disables acceleration.
 Do not mix a local `SP` snapshot with `rpp_*` updates without publishing and
 refreshing the appropriate pointer. Callback instrumentation can run on
 either stack kind; see `refcounted-stack-callback-v1` for that case.
+
+Check compile-time hooks separately from wrapped runtime operations.
+Data-Alias 1.30 saves an immortal boolean on the value stack in its `rv2cv`
+check hook and restores it in its `entersub` check hook. The compiler can
+call these hooks with an RC stack even though the runtime handlers use
+`XSPP_wrapped`. Select the push and pop APIs using `rpp_stack_is_rc()` on RC
+builds, retaining the original operations when a compatibility stack is
+active. A non-debug build can miss legacy stack macros used in this way.
+Run the full parser-heavy suite with an installed debug RC interpreter so
+the stack assertions expose those paths.
 
 Test scalar, list and void contexts, optional output arguments, and adjacent
 stack values. Use weak references or destruction counts to prove consumed

@@ -1,0 +1,88 @@
+{
+   "date" : "2026-11-11",
+   "environment" : {
+      "PERL_DESTRUCT_LEVEL" : 2
+   },
+   "failure" : {
+      "diagnostic" : "Perl_hv_iterinit: Assertion SvTYPE(hv) == SVt_PVHV failed during destruction",
+      "exit_status" : 134,
+      "file" : "t/999_marshaller_2.t",
+      "phase" : "test",
+      "trace" : [
+         "_affix_destroy at lib/Affix.c:2296",
+         "Affix_cv_free at lib/Affix.c:2335",
+         "Perl_mg_free_struct",
+         "Perl_mg_free",
+         "Perl_sv_clear",
+         "Perl_sv_free2",
+         "Perl_sv_clean_all",
+         "perl_destruct"
+      ]
+   },
+   "interpreter" : "Perl",
+   "interpreter_sha256" : "a10a3f62725799a8d8d5a9af3cf30e1ed473f31c14607ed015a39b573e823c23",
+   "notes" : [
+      "Fresh original CPAN archive with the exact registered patch. All dependencies are built into a separate prefix for this installed ordinary Perl.",
+      "These ordinary-Perl controls supplement XPerl validation. They do not establish results for other interpreter versions or build configurations.",
+      "The full suite fails and Affix was not installed in the ordinary-Perl prefix. See REVIEW.md for the remaining lifetime investigation."
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90",
+   "perl_version" : "v5.45.4",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 1,
+         "flags_sha256" : "014a39eee6fee35068e0d1771709f745532d6e6ddb598c3a0bbb3888416fc686",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : ""
+      },
+      "build_id" : "955d519f2441de8480f9b6e4395ed6968c8241bf3f021340e877c0114ccdc3eb",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : ""
+   },
+   "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+   "tests" : [
+      {
+         "command" : "perl Build test",
+         "files" : 58,
+         "result" : "fail",
+         "tests" : 390
+      },
+      {
+         "file" : "t/091_cb_struct_member.t",
+         "result" : "pass: the callback-member regression passes before the separate shutdown failure"
+      }
+   ],
+   "upstream_research" : {
+      "findings" : [
+         "Reviewed upstream issue and PR titles and searched for variadic_cache. No matching cache-destruction report was found. The local release source and debugger identify the remaining shutdown failure."
+      ],
+      "references" : [
+         "https://github.com/sanko/Affix.pm",
+         "https://github.com/sanko/Affix.pm/issues"
+      ],
+      "status" : "checked"
+   }
+}

@@ -55,3 +55,8 @@ The summary separates results with different build identities. Older receipts
 without a build identity stay separate; their missing configuration is unknown.
 The summary shows the patch digests tested by each result. A successful result
 for an older digest does not establish that a newer patch passed on that build.
+
+Ordinary-Perl control runs belong in the distribution's evidence alongside
+the XPerl results. The [RC guard validation report](RC-GUARD-VALIDATION.md)
+compares both interpreters and identifies an unresolved ordinary debug RC
+failure in Affix. A passing XPerl observation does not cover that profile.

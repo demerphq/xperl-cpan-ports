@@ -1,0 +1,53 @@
+{
+   "date" : "2026-11-11",
+   "environment" : {
+      "PERL_DESTRUCT_LEVEL" : 2
+   },
+   "interpreter" : "Perl",
+   "interpreter_sha256" : "dde37017c13c117316b345e22be5c4f552e86c4189eb9c45c89ecbad812177ef",
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "5e22d144249e1be799bc49714417aa7758a1ef6813a37276261035c0d07e0fd3",
+   "perl_version" : "v5.44.0",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "809e893494f990c910e52061f12f5bcfdc9da949b766a83de9abf0c3d8980f45",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 0,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : ""
+      },
+      "build_id" : "66fe200ea8384bc8bf50087e8adbd8429d2de84cdf790d397b6e472dda31bd08",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-31-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : ""
+   },
+   "source_sha256" : "dfa9e341b086cd957df6675879a9cb120919408b85b48966dd240ab85333ed2e",
+   "tests" : [
+      {
+         "command" : "make test",
+         "files" : 33,
+         "result" : "pass",
+         "tests" : 643
+      }
+   ]
+}

@@ -1,0 +1,93 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,10 @@
+ Revision history for Perl extension Class-XSAccessor.
+ 
++XPerl repair
++  - Disable the entersub fast path on reference-counted stacks.
++    Use normal XSUB dispatch to preserve argument and result ownership.
++  - Test repeated hash and array calls, warnings, and invocant destruction.
++
+ 1.19  Fri Nov 22 07:15 2013
+   - Remove the OP tree munging optimization since it wasn't in the
+     end really speeding things up. (chocolateboy)
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -40,6 +40,7 @@
+ t/40hash_bad_call.t
+ t/41array_bad_call.t
+ t/50reentrant_goto_sigsegv.t
++t/51repeated_calls.t             Repeated calls and invocant ownership
+ t/70bad_arguments.t
+ t/80threadbomb.t
+ XS/Array.xs
+--- a/XSAccessor.xs
++++ b/XSAccessor.xs
+@@ -169,7 +169,11 @@
+  * generate optimized entersubs for the accessors defined in XS/Array.xs and XS/Hash.xs.
+  */
+ 
+-#if (PERL_BCDVERSION >= 0x5010000)
++/* Perl's reference-counted stack needs the legacy XSUB wrapper in
++ * pp_entersub. Our direct XSUB calls bypass that ownership handling.
++ */
++#if (PERL_BCDVERSION >= 0x5010000) && \
++    !(defined(PERL_RC_STACK))
+ #define CXA_ENABLE_ENTERSUB_OPTIMIZATION
+ #endif
+ 
+--- /dev/null
++++ b/t/51repeated_calls.t
+@@ -0,0 +1,52 @@
++use strict;
++use warnings;
++
++package Class::XSAccessor::TestHash;
++
++use Class::XSAccessor
++  constructor => 'new',
++  accessors => { value => 'value' },
++  getters => { get_value => 'value' },
++  setters => { set_value => 'value' };
++
++our $DESTROYED = 0;
++sub DESTROY { ++$DESTROYED }
++
++package Class::XSAccessor::TestArray;
++
++use Class::XSAccessor::Array
++  constructor => 'new',
++  accessors => { value => 0 },
++  getters => { get_value => 0 },
++  setters => { set_value => 0 };
++
++our $DESTROYED = 0;
++sub DESTROY { ++$DESTROYED }
++
++package main;
++
++use Test::More tests => 33;
++
++my @warnings;
++local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++# Reuse each call site so the second call exercises any entersub fast path.
++for my $iteration (1 .. 3) {
++  my $hash = Class::XSAccessor::TestHash->new(value => 'initial');
++  my $array = Class::XSAccessor::TestArray->new;
++
++  is($hash->value, 'initial', 'hash constructor and accessor');
++  is($array->value, undef, 'array constructor and accessor');
++  is($hash->set_value("set $iteration"), "set $iteration", 'hash setter');
++  is($array->set_value("set $iteration"), "set $iteration", 'array setter');
++  is($hash->get_value, "set $iteration", 'hash getter');
++  is($array->get_value, "set $iteration", 'array getter');
++  is($hash->value("access $iteration"), "access $iteration", 'hash accessor write');
++  is($array->value("access $iteration"), "access $iteration", 'array accessor write');
++  is($hash->value, "access $iteration", 'hash accessor read');
++  is($array->value, "access $iteration", 'array accessor read');
++}
++
++is($Class::XSAccessor::TestHash::DESTROYED, 3, 'hash invocants freed once');
++is($Class::XSAccessor::TestArray::DESTROYED, 3, 'array invocants freed once');
++is_deeply(\@warnings, [], 'repeated calls do not warn');

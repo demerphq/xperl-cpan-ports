@@ -1,0 +1,57 @@
+{
+   "date" : "2026-11-11",
+   "environment" : {
+      "PERL_DESTRUCT_LEVEL" : 2
+   },
+   "interpreter" : "Perl",
+   "interpreter_sha256" : "a10a3f62725799a8d8d5a9af3cf30e1ed473f31c14607ed015a39b573e823c23",
+   "notes" : [
+      "Fresh original CPAN archive with the exact registered patch. All dependencies are built into a separate prefix for this installed ordinary Perl.",
+      "These ordinary-Perl controls supplement XPerl validation. They do not establish results for other interpreter versions or build configurations."
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "3c2fcb6b33a5fd126fa3aae506b39e001e5c117b97637fefc19bf0a2b426afd5",
+   "perl_version" : "v5.45.4",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 1,
+         "flags_sha256" : "014a39eee6fee35068e0d1771709f745532d6e6ddb598c3a0bbb3888416fc686",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "xperl_commit" : ""
+      },
+      "build_id" : "955d519f2441de8480f9b6e4395ed6968c8241bf3f021340e877c0114ccdc3eb",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : ""
+   },
+   "source_sha256" : "5b7abaf245d4896cf9db301afc344fe17f228c4f84ec5e152540202d4404c3c8",
+   "tests" : [
+      {
+         "command" : "make test",
+         "files" : 32,
+         "result" : "pass",
+         "tests" : 403
+      }
+   ]
+}

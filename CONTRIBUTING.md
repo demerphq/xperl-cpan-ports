@@ -7,7 +7,11 @@ to XPerl rather than a missing dependency or a platform problem.
 
 Make the smallest source patch that fixes the incompatibility. Prefer a change
 that works on ordinary Perl too. When an XS implementation must differ, use
-`#ifdef XPERL_VERSION` after including Perl headers. Keep patch paths
+the relevant build option or API feature test after including Perl headers.
+Refcounted-stack repairs use `PERL_RC_STACK`, without an `XPERL_VERSION`
+requirement, because ordinary Perl can use that stack too. Reserve
+`XPERL_VERSION` for XPerl-specific features such as its hash layout or
+structured exceptions. Keep patch paths
 relative to the release root and usable with `patch -p1`.
 
 Build and run the distribution's tests with XPerl after applying the patch.

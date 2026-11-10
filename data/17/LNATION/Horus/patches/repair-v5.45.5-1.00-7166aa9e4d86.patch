@@ -1,0 +1,95 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,10 @@
+ Revision history for Horus
+ 
++        - Use the existing XSUB fallbacks on Perl PERL_RC_STACK builds.
++          The custom ops use non-reference-counted stack operations, which
++          cause scalar lifetime warnings and crashes with an RC stack.
++          Other builds retain custom-op dispatch.
++
+ 0.09    2026-05-17
+         - Skip t/19-thread-safety.t on perl < 5.012.
+ 
+--- a/Horus.xs
++++ b/Horus.xs
+@@ -25,7 +25,15 @@
+  * Custom ops - bypass XS subroutine dispatch overhead (5.14+)
+  * ══════════════════════════════════════════════════════════════════ */
+ 
+-#if PERL_VERSION >= 14
++/* These pp functions use a non-reference-counted stack.  On XPerl with
++ * PERL_RC_STACK, use the XSUBs so Perl handles argument and result ownership.
++ * This costs the custom-op dispatch optimization on that configuration. */
++#if PERL_VERSION >= 14 && \
++    !(defined(PERL_RC_STACK))
++#  define HORUS_CUSTOM_OPS 1
++#endif
++
++#ifdef HORUS_CUSTOM_OPS
+ 
+ /* ── Macro: ppaddr swap (for variable-arity functions) ───────────
+  * Quick approach that leaves entersub intact - use for optional args */
+@@ -859,10 +867,10 @@
+     HORUS_REG_CK("uuid_is_max",   uuid_is_max)
+ }
+ 
+-#endif /* PERL_VERSION >= 14 */
++#endif /* HORUS_CUSTOM_OPS */
+ 
+ /* ══════════════════════════════════════════════════════════════════
+- * XS module definition - XSUBs serve as fallbacks for Perl < 5.14
++ * XS module definition - XSUBs serve as fallbacks without custom ops
+  * ══════════════════════════════════════════════════════════════════ */
+ 
+ MODULE = Horus  PACKAGE = Horus
+@@ -874,7 +882,7 @@
+     memset(&MY_CXT.v6_state, 0, sizeof(horus_v6_state_t));
+     memset(&MY_CXT.v7_state, 0, sizeof(horus_v7_state_t));
+     horus_pool_refill();
+-#if PERL_VERSION >= 14
++#ifdef HORUS_CUSTOM_OPS
+     horus_register_custom_ops(aTHX);
+ #endif
+ }
+--- a/t/17-batch.t
++++ b/t/17-batch.t
+@@ -1,7 +1,7 @@
+ use 5.008003;
+ use strict;
+ use warnings;
+-use Test::More tests => 5;
++use Test::More tests => 17;
+ use Horus qw(:all);
+ 
+ # Batch v4
+@@ -31,3 +31,29 @@
+ # Batch with format
+ my @hex_batch = uuid_v4_bulk(10, UUID_FMT_HEX);
+ like($hex_batch[0], qr/^[0-9a-f]{32}$/, 'batch with HEX format');
++
++my @warnings;
++{
++    local $SIG{__WARN__} = sub { push @warnings, @_ };
++    for my $count (-1, 0, 1, 256, 257) {
++        my @batch = uuid_v4_bulk($count);
++        is(scalar @batch, $count > 0 ? $count : 0,
++            "default format batch count $count");
++        my @binary = uuid_v4_bulk($count, UUID_FMT_BINARY);
++        is(scalar @binary, $count > 0 ? $count : 0,
++            "binary format batch count $count");
++    }
++
++    # Keep results alive across temporary scalar and batch cleanup.
++    my $nil = uuid_nil();
++    my $binary = uuid_parse($nil);
++    for (1 .. 100) {
++        my $uuid = uuid_v4(UUID_FMT_HEX);
++        my $valid = uuid_validate($uuid);
++        my $cmp = uuid_cmp($nil, uuid_max());
++        my @batch = uuid_v4_bulk(10);
++    }
++    is(uuid_convert($binary, UUID_FMT_STR), $nil,
++        'retained UUID survives temporary result cleanup');
++}
++is_deeply(\@warnings, [], 'scalar and batch cleanup emits no warnings');

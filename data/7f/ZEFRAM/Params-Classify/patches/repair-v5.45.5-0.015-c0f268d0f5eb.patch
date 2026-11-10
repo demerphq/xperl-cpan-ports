@@ -1,0 +1,100 @@
+--- a/lib/Params/Classify.xs
++++ b/lib/Params/Classify.xs
+@@ -554,48 +554,59 @@
+ 
+ #if QUSE_CUSTOM_OPS
+ 
+-static OP *THX_pp_scalar_class(pTHX)
++/* Custom ops bypass the compatibility wrapper used for XS calls. */
++#if defined(PERL_RC_STACK)
++# define PC_PP(name, nargs) \
++	static OP *name(pTHX); \
++	XSPP_wrapped(name, nargs, 0)
++#else
++# define PC_PP(name, nargs) static OP *name(pTHX)
++#endif
++
++PC_PP(THX_pp_scalar_class, 1)
+ {
+ 	pp1_scalar_class();
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_ref_type(pTHX)
++PC_PP(THX_pp_ref_type, 1)
+ {
+ 	pp1_ref_type();
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_blessed_class(pTHX)
++PC_PP(THX_pp_blessed_class, 1)
+ {
+ 	pp1_blessed_class();
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_check_sclass(pTHX)
++PC_PP(THX_pp_check_sclass, 1)
+ {
+ 	pp1_check_sclass(PL_op->op_private);
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_check_rtype(pTHX)
++PC_PP(THX_pp_check_rtype, 1)
+ {
+ 	pp1_check_rtype(PL_op->op_private);
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_check_dyn_rtype(pTHX)
++PC_PP(THX_pp_check_dyn_rtype, 2)
+ {
+ 	pp1_check_dyn_rtype(PL_op->op_private);
+ 	return NORMAL;
+ }
+ 
+-static OP *THX_pp_check_dyn_battr(pTHX)
++PC_PP(THX_pp_check_dyn_battr, 2)
+ {
+ 	pp1_check_dyn_battr(PL_op->op_private);
+ 	return NORMAL;
+ }
+ 
++#undef PC_PP
++
+ #endif /* QUSE_CUSTOM_OPS */
+ 
+ #ifndef PERL_ARGS_ASSERT_CROAK_XS_USAGE
+--- a/t/classify.t
++++ b/t/classify.t
+@@ -1,7 +1,7 @@
+ use warnings;
+ use strict;
+ 
+-use Test::More tests => 1 + 2*8*11;
++use Test::More tests => 1 + 4 + 2*8*11;
+ 
+ BEGIN {
+ 	use_ok "Params::Classify", qw(
+@@ -10,6 +10,19 @@
+ 	);
+ }
+ 
++{
++	my @values = (undef, "text", {}, bless({}, "main"));
++	my @expected = qw(UNDEF STRING REF BLESSED);
++	for(1..2) {
++		my @classes = map { scalar_class($_) } @values;
++		is_deeply(\@classes, \@expected,
++			"custom op results survive subsequent calls");
++		@classes = map { &scalar_class($_) } @values;
++		is_deeply(\@classes, \@expected,
++			"XS call results survive subsequent calls");
++	}
++}
++
+ sub test_scalar_classification($$$$$$$$$) {
+ 	my(undef, $class, $iu, $is, $in, $ig, $ix, $ir, $ib) = @_;
+ 	is(scalar_class($_[0]), $class);

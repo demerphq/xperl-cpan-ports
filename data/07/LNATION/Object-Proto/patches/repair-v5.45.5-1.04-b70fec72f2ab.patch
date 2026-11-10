@@ -1,0 +1,163 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,9 @@
+ Revision history for Object-Proto
+ 
++Unreleased
++	- Wrap custom accessor ops for reference-counted Perl stacks
++	- Publish the stack pointer after saving method modifier results
++
+ 1.04	2026-11-04
+ 	- Treat a slot holding the shared undef as empty when writing in place, since av_fill left that read-only value in new slots before perl 5.20 
+ 	- Free the DEMOLISH test object by scope exit
+--- a/include/object_compat.h
++++ b/include/object_compat.h
+@@ -14,6 +14,16 @@
+ /* Include shared XOP compatibility for custom ops (5.14+ fallback) */
+ #include "xop_compat.h"
+ 
++/* Custom ops use the traditional stack API. The wrapper accounts for
++ * argument and result ownership on reference-counted stacks. */
++#if defined(PERL_RC_STACK)
++#  define OBJECT_PP(name, nargs) \
++    static OP *name(pTHX); \
++    XSPP_wrapped(name, nargs, 0)
++#else
++#  define OBJECT_PP(name, nargs) static OP *name(pTHX)
++#endif
++
+ /* Linkage for the C API in object_types.h, which object.c defines. Not
+  * PERL_CALLCONV: Windows Perl defines that as __declspec(dllimport) outside
+  * the perl DLL, and MSVC refuses to define a dllimport function (C2491).
+--- a/object.c
++++ b/object.c
+@@ -876,7 +876,7 @@
+    Custom OP: property accessor (get)
+    ============================================ */
+ 
+-static OP* pp_object_get(pTHX) {
++OBJECT_PP(pp_object_get, 1) {
+     dSP;
+     SV *obj = TOPs;
+     IV idx = PL_op->op_targ;
+@@ -917,7 +917,7 @@
+    Custom OP: property accessor (set)
+    ============================================ */
+ 
+-static OP* pp_object_set(pTHX) {
++OBJECT_PP(pp_object_set, 2) {
+     dSP;
+     SV *val = POPs;
+     SV *obj = TOPs;
+@@ -991,7 +991,7 @@
+     return g_func_accessor_registry[id];
+ }
+ 
+-static OP* pp_object_set_typed(pTHX) {
++OBJECT_PP(pp_object_set_typed, 2) {
+     dSP;
+     SV *val = POPs;
+     SV *obj = TOPs;
+@@ -1450,7 +1450,7 @@
+ static XOP object_func_get_xop;
+ static XOP object_func_set_xop;
+ 
+-static OP* pp_object_func_get(pTHX) {
++OBJECT_PP(pp_object_func_get, 1) {
+     dSP;
+     SV *obj = TOPs;  /* peek, don't pop */
+     FuncAccessorData *data = get_func_accessor_data(PL_op->op_targ);
+@@ -1528,7 +1528,7 @@
+     RETURN;
+ }
+ 
+-static OP* pp_object_func_set(pTHX) {
++OBJECT_PP(pp_object_func_set, 2) {
+     dSP;
+     SV *val = POPs;  /* Pop value first */
+     SV *obj = TOPs;  /* Object left on stack */
+@@ -3032,6 +3032,7 @@
+             for (i = 0; i < count; i++) {
+                 av_push(saved_results, newSVsv(POPs));
+             }
++            PUTBACK;
+             FREETMPS;
+             LEAVE;
+         }
+@@ -3055,6 +3056,7 @@
+         for (i = 0; i < count; i++) {
+             av_push(saved_results, newSVsv(POPs));
+         }
++        PUTBACK;
+         FREETMPS;
+         LEAVE;
+     }
+--- a/t/060-function-accessors.t
++++ b/t/060-function-accessors.t
+@@ -1,7 +1,7 @@
+ use strict;
+ use warnings;
+ use Test::More;
+-use Scalar::Util qw(isweak);
++use Scalar::Util qw(isweak weaken);
+ use Object::Proto;
+ 
+ BEGIN { Object::Proto::register_type('Pos', sub { defined $_[0] && !ref $_[0] && $_[0] > 0 }) }
+@@ -117,4 +117,26 @@
+ is(FA::set_typed_var($holes2, 9), 9, 'by the typed setter too');
+ is($holes2->typed, 9, 'and read');
+ 
++my $payload = ['retained'];
++my $weak_payload = $payload;
++weaken($weak_payload);
++my $owner = FA->new(req => 1, plain => $payload);
++undef $payload;
++my $held = FA::get_plain($owner);
++undef $owner;
++is_deeply($held, ['retained'], 'a custom getter result outlives its object');
++undef $held;
++ok(!defined $weak_payload, 'the getter leaves no extra reference to its result');
++
++$owner = FA->new(req => 1);
++$payload = ['assigned'];
++$weak_payload = $payload;
++weaken($weak_payload);
++$held = FA::set_plain($owner, $payload);
++undef $payload;
++undef $owner;
++is_deeply($held, ['assigned'], 'a custom setter result outlives its arguments');
++undef $held;
++ok(!defined $weak_payload, 'the setter leaves no extra reference to its result');
++
+ done_testing;
+--- a/t/066-modifier-and-destroy-edges.t
++++ b/t/066-modifier-and-destroy-edges.t
+@@ -66,4 +66,28 @@
+ ok(MD::Elsewhere->can('md_a'), 'import_accessor takes the package as its fourth argument');
+ is(MD::Elsewhere::md_a($o), undef, 'and the accessor works there');
+ 
++package MDResults;
++sub values { return wantarray ? ([1], [2]) : [3] }
++sub wrapped_values { return wantarray ? ([4], [5]) : [6] }
++package main;
++
++Object::Proto::define('MDResults', 'a');
++Object::Proto::around('MDResults::wrapped_values', sub {
++    my $orig = shift;
++    return $orig->(@_);
++});
++my @after;
++for my $method (qw(values wrapped_values)) {
++    Object::Proto::after("MDResults::$method", sub {
++        push @after, [$_[0], $method];
++    });
++}
++my $results = MDResults->new;
++is_deeply(scalar $results->values, [3], 'a modified scalar result survives the after callback');
++is_deeply([$results->values], [[1], [2]], 'modified list results survive the after callback');
++is_deeply(scalar $results->wrapped_values, [6], 'an around scalar result survives the after callback');
++is_deeply([$results->wrapped_values], [[4], [5]], 'around list results survive the after callback');
++is_deeply(\@after, [map { [$results, $_] } qw(values values wrapped_values wrapped_values)],
++    'after callbacks retain their arguments when results have been popped');
++
+ done_testing;
