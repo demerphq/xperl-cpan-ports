@@ -1,0 +1,28 @@
+{
+   "distribution" : "Chandra",
+   "releases" : [
+      {
+         "cpan_path" : "L/LN/LNATION/Chandra-0.31.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.31-8a8c01454aed.patch",
+                     "sha256" : "8a8c01454aedca84dbaad94f3d359a2e33f0e092820ebb78efafeb0fdfef5ae0"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "d1d6fd4e5388d72299a0d9748f97e30060b32131646bd253876b350326db5064",
+         "version" : "0.31"
+      }
+   ],
+   "schema" : 1
+}
