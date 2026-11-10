@@ -77,6 +77,7 @@ Prior failures remain in each distribution record after a later success.
 | RURBAN | [B-C](../data/61/RURBAN/B-C/status.json) | 1.57 | v5.45.5 | linux/x86_64-linux | test | Files=117, Tests=739, Failed 79/117 test programs. 283/739 subtests failed. (out-of-date-with-blead) |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
+| SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | configure | exit 1 |
 | SHLOMIF | [IO-Socket-INET6](../data/62/SHLOMIF/IO-Socket-INET6/status.json) | 2.73 | v5.45.5 | darwin/darwin-2level | test | Files=10, Tests=42, Failed 1/10 test programs. 1/42 subtests failed. |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=24, Tests=380, Failed 1/24 test programs. 1/380 subtests failed. |
 | SORTIZ | [JSPL](../data/1e/SORTIZ/JSPL/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |

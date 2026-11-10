@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 91 of 3964 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 92 of 3966 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3402,6 +3402,7 @@ Unresolved failures: 91 of 3964 release, XPerl, and platform combinations. See [
 | SEMANTICO | [Test-XML](../data/ff/SEMANTICO/Test-XML/status.json) | 0.08 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SEMANTICO | [Test-XML](../data/ff/SEMANTICO/Test-XML/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| SEVEAS | [Linux-Prctl](../data/96/SEVEAS/Linux-Prctl/status.json) | 1.6.0 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | SEVEAS | [Net-SMS-WorldText](../data/9f/SEVEAS/Net-SMS-WorldText/status.json) | 1.3 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SFINK | [Math-Calc-Units](../data/54/SFINK/Math-Calc-Units/status.json) | 1.07 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SHANCOCK | [Perl-Tidy](../data/4d/SHANCOCK/Perl-Tidy/status.json) | 20260826 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3413,6 +3414,7 @@ Unresolved failures: 91 of 3964 release, XPerl, and platform combinations. See [
 | SHAY | [Class-Singleton](../data/97/SHAY/Class-Singleton/status.json) | 1.6 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SHAY | [Class-Singleton](../data/97/SHAY/Class-Singleton/status.json) | 1.6 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
 | SHLOMIF | [Cache](../data/d9/SHLOMIF/Cache/status.json) | 2.11 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SHLOMIF | [Config-IniFiles](../data/22/SHLOMIF/Config-IniFiles/status.json) | 3.003000 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SHLOMIF | [Config-IniFiles](../data/22/SHLOMIF/Config-IniFiles/status.json) | 3.003000 | v5.45.5 | linux/x86_64-linux | installed | none | none |
