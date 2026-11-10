@@ -50,7 +50,6 @@ Prior failures remain in each distribution record after a later success.
 | KENTNL | [HTML-Tree](../data/d1/KENTNL/HTML-Tree/status.json) | 5.07 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | test | Files=23, Tests=989, Failed 1/23 test programs. 2/989 subtests failed. |
 | KMACLEOD | [Frontier-RPC](../data/17/KMACLEOD/Frontier-RPC/status.json) | 0.07b4 | v5.45.5 | darwin/darwin-2level | test | exit 2 |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | configure | exit 0 |
-| LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | test | Files=95, Tests=4820, Failed 2/95 test programs. 0/4820 subtests failed. |
 | MARKOV | [Log-Report](../data/64/MARKOV/Log-Report/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | test | Files=17, Tests=296, Failed 2/17 test programs. 4/296 subtests failed. |
 | MAXMIND | [MaxMind-DB-Reader-XS](../data/97/MAXMIND/MaxMind-DB-Reader-XS/status.json) | 1.000009 | v5.45.5 | linux/x86_64-linux | configure | exit 1 |
 | MBARBON | [Alien-ProtoBuf](../data/60/MBARBON/Alien-ProtoBuf/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |

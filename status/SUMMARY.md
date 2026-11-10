@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 4002 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 93 of 4002 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2040,7 +2040,7 @@ Unresolved failures: 94 of 4002 release, XPerl, and platform combinations. See [
 | LNATION | [Bijection-XS](../data/d1/LNATION/Bijection-XS/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Bijection-XS](../data/d1/LNATION/Bijection-XS/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | failed | none | none |
-| LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
+| LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 8a8c01454aedca84dbaad94f3d359a2e33f0e092820ebb78efafeb0fdfef5ae0 |
 | LNATION | [Colouring-In](../data/1e/LNATION/Colouring-In/status.json) | 0.27 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 4b7d3c219fbd8f705c16dfc76fc85c37de973f6fbe321933b43dbb63bbc4aca5 |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none | none |
