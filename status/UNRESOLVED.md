@@ -36,7 +36,8 @@ Prior failures remain in each distribution record after a later success.
 | HAARG | [Module-Reader](../data/42/HAARG/Module-Reader/status.json) | 0.003003 | v5.45.5 | linux/x86_64-linux | test | Files=3, Tests=119, Failed 1/3 test programs. 12/119 subtests failed. |
 | HAKONH | [Math-GSL](../data/8a/HAKONH/Math-GSL/status.json) | 0.49 | v5.45.5 | linux/x86_64-linux | test | Files=58, Tests=2, Failed 57/58 test programs. 1/2 subtests failed. |
 | HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
-| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |
+| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 (legacy-library-version-mismatch) |
+| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | test | Files=10, Tests=0, Failed 10/10 test programs. 0/0 subtests failed. (legacy-library-version-mismatch) |
 | HUGMEIR | [Alien-libmariadbclient](../data/7f/HUGMEIR/Alien-libmariadbclient/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | ILYAZ | [Math-Pari](../data/05/ILYAZ/Math-Pari/status.json) | 2.030528 | v5.45.5 | darwin/darwin-2level | configure | exit 143 |
 | IPH | [AnyEvent-Redis-RipeRedis](../data/61/IPH/AnyEvent-Redis-RipeRedis/status.json) | 1.62 | v5.45.5 | darwin/darwin-2level | test | Files=14, Tests=82, Failed 8/14 test programs. 0/82 subtests failed. |

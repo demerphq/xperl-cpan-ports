@@ -76,7 +76,88 @@
          "status" : "failed",
          "version" : "5.0404",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HA/HARDAKER/SNMP-5.0404.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "6235cd1da591b27b1624551d76812f363dd0e3624ff7dc308d9645c226c14f15",
+         "module" : "SNMP",
+         "observed_at" : "2026-11-10T22:52:15Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "current-perl-headers-v1",
+         "patch_sha256" : [
+            "510d5fe83375d00c152faaea7246ab31619607d01728849e9692d87cc6120ad6"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "e7e150a2f2175dff06721fc6187372248985cd9d2908bd71794afe57920d93e5",
+         "status" : "failed",
+         "test_summary" : "Files=10, Tests=0, Failed 10/10 test programs. 0/0 subtests failed.",
+         "version" : "5.0404",
+         "xperl_version" : "v5.45.5"
       }
    ],
-   "schema" : 2
+   "schema" : 2,
+   "triage" : {
+      "disposition" : "legacy-library-version-mismatch",
+      "reason" : "The registered patch fixes foreign Perl header precedence. With Net-SNMP 5.9.4.pre2, SNMP 5.0404 then fails to load because the old memdup API is absent. The same failure reproduces on ordinary Perl 5.44.0 and RC XPerl 5.45.5. The 2013 CPAN release targets Net-SNMP 5.4.4. Review the matching upstream bindings before further repair. See REVIEW.md for diagnostic follow-ups.",
+      "source_sha256" : "e7e150a2f2175dff06721fc6187372248985cd9d2908bd71794afe57920d93e5",
+      "version" : "5.0404"
+   }
 }

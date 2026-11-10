@@ -76,6 +76,87 @@
          "status" : "failed",
          "version" : "5.0404",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "H/HA/HARDAKER/NetSNMP-default_store-5.0404.tar.gz",
+         "id" : "d6aeba6c5abff7654ebf2e61898469d5db5f53ee5f52750a0daec19d38315934",
+         "module" : "NetSNMP::default_store",
+         "observed_at" : "2026-11-10T22:52:11Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "current-perl-headers-v1",
+         "patch_sha256" : [
+            "5f18e9953a0199d6ae7934edc869b11de16370201e061fe7b414b8c7e95fe173",
+            "64777506d77168a92bf04fa92fd87622585e6c85db8c5892c7aefd433226f0a0"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "11d882f0ac278fe23c9d199d514a9f1bb8edfc3027964a024966185daeb50886",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=90",
+         "version" : "5.0404",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

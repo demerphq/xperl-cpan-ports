@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 90 of 3962 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 91 of 3964 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1495,7 +1495,9 @@ Unresolved failures: 90 of 3962 release, XPerl, and platform combinations. See [
 | HAKONH | [Math-GSL-Alien](../data/b0/HAKONH/Math-GSL-Alien/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | HANHUIWEN | [Praxo-Core](../data/26/HANHUIWEN/Praxo-Core/status.json) | 0.1.1 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | failed | none | none |
-| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | current-perl-headers-v1 | 5f18e9953a0199d6ae7934edc869b11de16370201e061fe7b414b8c7e95fe173, 64777506d77168a92bf04fa92fd87622585e6c85db8c5892c7aefd433226f0a0 |
+| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | failed (legacy-library-version-mismatch) | none | none |
+| HARDAKER | [SNMP](../data/70/HARDAKER/SNMP/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed (legacy-library-version-mismatch) | current-perl-headers-v1 | 510d5fe83375d00c152faaea7246ab31619607d01728849e9692d87cc6120ad6 |
 | HDP | [MooseX-RelatedClassRoles](../data/c4/HDP/MooseX-RelatedClassRoles/status.json) | 0.004 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | HDP | [MooseX-RelatedClassRoles](../data/c4/HDP/MooseX-RelatedClassRoles/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | HDP | [MooseX-RelatedClassRoles](../data/c4/HDP/MooseX-RelatedClassRoles/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |

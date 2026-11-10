@@ -1,0 +1,30 @@
+{
+   "distribution" : "SNMP",
+   "releases" : [
+      {
+         "cpan_path" : "H/HA/HARDAKER/SNMP-5.0404.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "current-perl-headers-v1",
+               "patches" : [
+                  {
+                     "path" : "patches/current-perl-headers.patch",
+                     "sha256" : "510d5fe83375d00c152faaea7246ab31619607d01728849e9692d87cc6120ad6"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "foreign-perl-headers-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "e7e150a2f2175dff06721fc6187372248985cd9d2908bd71794afe57920d93e5",
+         "version" : "5.0404"
+      }
+   ],
+   "schema" : 1
+}
