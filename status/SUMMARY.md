@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 92 of 3966 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1993,6 +1993,7 @@ Unresolved failures: 92 of 3966 release, XPerl, and platform combinations. See [
 | LEONT | [File-Slurper](../data/87/LEONT/File-Slurper/status.json) | 0.014 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEONT | [File-Slurper](../data/87/LEONT/File-Slurper/status.json) | 0.014 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | LEONT | [Module-Build](../data/f5/LEONT/Module-Build/status.json) | 0.4234 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| LEONT | [Module-Build](../data/f5/LEONT/Module-Build/status.json) | 0.4234 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | LEONT | [Module-Build](../data/f5/LEONT/Module-Build/status.json) | 0.4234 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEONT | [Module-Build](../data/f5/LEONT/Module-Build/status.json) | 0.4234 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | LEONT | [Module-Build-Tiny](../data/fb/LEONT/Module-Build-Tiny/status.json) | 0.053 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -2027,6 +2028,7 @@ Unresolved failures: 92 of 3966 release, XPerl, and platform combinations. See [
 | LNATION | [Bijection-XS](../data/d1/LNATION/Bijection-XS/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Bijection-XS](../data/d1/LNATION/Bijection-XS/status.json) | 0.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
 | LNATION | [Colouring-In](../data/1e/LNATION/Colouring-In/status.json) | 0.27 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 4b7d3c219fbd8f705c16dfc76fc85c37de973f6fbe321933b43dbb63bbc4aca5 |
@@ -2322,6 +2324,7 @@ Unresolved failures: 92 of 3966 release, XPerl, and platform combinations. See [
 | MOB | [Hash-SafeKeys](../data/13/MOB/Hash-SafeKeys/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MOB | [Hash-SafeKeys](../data/13/MOB/Hash-SafeKeys/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
