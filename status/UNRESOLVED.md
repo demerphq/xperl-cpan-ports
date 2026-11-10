@@ -57,7 +57,6 @@ Prior failures remain in each distribution record after a later success.
 | MJEVANS | [DBD-ODBC](../data/40/MJEVANS/DBD-ODBC/status.json) | 1.61 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
 | MLEHMANN | [Linux-Inotify2](../data/d2/MLEHMANN/Linux-Inotify2/status.json) | 2.3 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
-| MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | build | exit 2 |
 | MVR | [HTML-TreeStructured](../data/97/MVR/HTML-TreeStructured/status.json) | 1.01 | v5.45.5 | darwin/darwin-2level | test | Files=1, Tests=1, Failed 1/1 test programs. 1/1 subtests failed. |
 | NWELLNHOF | [CommonMark](../data/25/NWELLNHOF/CommonMark/status.json) | 0.310100 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
 | ODENBACH | [Authen-Krb5](../data/20/ODENBACH/Authen-Krb5/status.json) | 1.906 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |

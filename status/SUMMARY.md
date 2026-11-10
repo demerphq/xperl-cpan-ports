@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 4003 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 93 of 4003 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2341,7 +2341,7 @@ Unresolved failures: 94 of 4003 release, XPerl, and platform combinations. See [
 | MOB | [Hash-SafeKeys](../data/13/MOB/Hash-SafeKeys/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MOB | [Hash-SafeKeys](../data/13/MOB/Hash-SafeKeys/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux | failed | none | none |
-| MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
+| MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | ee1cd07ea6e22c42721cf738f61b903a1a153cc8140d8a79579ae08ec4568fdd |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | MONS | [Test-More-UTF8](../data/32/MONS/Test-More-UTF8/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |

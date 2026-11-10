@@ -719,6 +719,23 @@
          "version" : "0.3416"
       },
       {
+         "author" : "MOB",
+         "distribution" : "Sys-CpuAffinity",
+         "evidence_paths" : [
+            "data/ea/MOB/Sys-CpuAffinity/evidence/repair-v5.45.5-1.12-ee1cd07ea6e2.json"
+         ],
+         "index_path" : "data/ea/MOB/Sys-CpuAffinity/index.json",
+         "native_files" : [
+            "contrib/solaris_processor_bind.xs"
+         ],
+         "patch_paths" : [
+            "data/ea/MOB/Sys-CpuAffinity/patches/repair-v5.45.5-1.12-ee1cd07ea6e2.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "1.12"
+      },
+      {
          "author" : "HMBRAND",
          "distribution" : "Text-CSV_XS",
          "evidence_paths" : [
