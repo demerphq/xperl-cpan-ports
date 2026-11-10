@@ -1,0 +1,11 @@
+--- a/contrib/solaris_processor_bind.xs
++++ b/contrib/solaris_processor_bind.xs
+@@ -131,7 +131,7 @@
+ 
+ 
+ int
+-  xs_getaffinity_processor_bind(pid,mask)
++xs_getaffinity_processor_bind(pid,mask)
+ 	int pid
+         AV *mask
+     CODE:

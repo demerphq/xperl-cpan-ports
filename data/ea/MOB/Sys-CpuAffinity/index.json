@@ -1,0 +1,28 @@
+{
+   "distribution" : "Sys-CpuAffinity",
+   "releases" : [
+      {
+         "cpan_path" : "M/MO/MOB/Sys-CpuAffinity-1.12.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.12-ee1cd07ea6e2.patch",
+                     "sha256" : "ee1cd07ea6e22c42721cf738f61b903a1a153cc8140d8a79579ae08ec4568fdd"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "fe32c05f3eb059708c647f2bb85b250458591f2ba9051d8d866f546a387ee848",
+         "version" : "1.12"
+      }
+   ],
+   "schema" : 1
+}
