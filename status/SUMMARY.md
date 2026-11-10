@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 94 of 4002 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | BIGFOOT | [CLI-Simple](../data/ba/BIGFOOT/CLI-Simple/status.json) | 2.4.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | BIGJ | [Test-Warn](../data/b7/BIGJ/Test-Warn/status.json) | 0.37 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | BIGPRESH | [Business-Tax-VAT-Validation](../data/76/BIGPRESH/Business-Tax-VAT-Validation/status.json) | 1.24 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -482,6 +483,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | DAGOLDEN | [CPAN-Common-Index](../data/ac/DAGOLDEN/CPAN-Common-Index/status.json) | 0.010 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | darwin/darwin-2level | installed | exception-propagation | d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9 |
 | DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | exception-propagation | d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9 |
+| DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | exception-propagation | d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9 |
 | DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | linux/x86_64-linux | installed | exception-propagation | d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9 |
 | DAGOLDEN | [Capture-Tiny](../data/01/DAGOLDEN/Capture-Tiny/status.json) | 0.50 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | exception-propagation | d594b51d13448e02dac70c483559bb04f86c518c46017c5413dc23728a9b2ea9 |
 | DAGOLDEN | [Class-Tiny](../data/80/DAGOLDEN/Class-Tiny/status.json) | 1.008 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -515,11 +517,13 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | DAGOLDEN | [PBKDF2-Tiny](../data/0d/DAGOLDEN/PBKDF2-Tiny/status.json) | 0.005 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Path-Tiny](../data/80/DAGOLDEN/Path-Tiny/status.json) | 0.150 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | DAGOLDEN | [Session-Storage-Secure](../data/30/DAGOLDEN/Session-Storage-Secure/status.json) | 1.000 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DAGOLDEN | [Sub-Uplevel](../data/e3/DAGOLDEN/Sub-Uplevel/status.json) | 0.2800 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | DAGOLDEN | [Test-API](../data/ad/DAGOLDEN/Test-API/status.json) | 0.010 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
@@ -621,6 +625,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | DCANTRELL | [Sub-Attribute](../data/4b/DCANTRELL/Sub-Attribute/status.json) | 0.07 | v5.45.5 | linux/x86_64-linux | failed | none | none |
 | DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | linux/x86_64-linux | installed | unicode-dumper-escapes | cfde566037be8045fa91f3b350d9804c1dc790f9af1be4c0dd02087ec4aecfd2 |
 | DCANTRELL | [Test-Differences](../data/90/DCANTRELL/Test-Differences/status.json) | 0.73 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | DCANTRELL | [Test-Most](../data/2c/DCANTRELL/Test-Most/status.json) | 0.42 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -1142,6 +1147,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | ETJ | [ExtUtils-CppGuess](../data/94/ETJ/ExtUtils-CppGuess/status.json) | 0.271 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ETJ | [ExtUtils-Depends](../data/fb/ETJ/ExtUtils-Depends/status.json) | 0.8002 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | ETJ | [ExtUtils-F77](../data/e2/ETJ/ExtUtils-F77/status.json) | 1.26 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1281,10 +1287,12 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | GARU | [CPANSec-Admin](../data/3b/GARU/CPANSec-Admin/status.json) | 0.001 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GARU | [Data-Dump](../data/c4/GARU/Data-Dump/status.json) | 1.25 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | darwin/darwin-2level | installed | xperl-class-fields | 35e7156a52785853c7eed5b2dfd7aa54820be799bf38698e7463ff08d6f58f2a |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | xperl-class-fields | f9398eff89373b86f5bf18d5daba85614550ef4e8ebb621387f91b9c25aeb720 |
+| GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | xperl-class-fields | f9398eff89373b86f5bf18d5daba85614550ef4e8ebb621387f91b9c25aeb720 |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | linux/x86_64-linux | installed | xperl-class-fields | 35e7156a52785853c7eed5b2dfd7aa54820be799bf38698e7463ff08d6f58f2a |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | xperl-class-fields | f9398eff89373b86f5bf18d5daba85614550ef4e8ebb621387f91b9c25aeb720 |
 | GARU | [Data-Printer](../data/a9/GARU/Data-Printer/status.json) | 1.002001 | v5.45.5 | linux/x86_64-linux/f4aa0fef364766e6eaae8e8d54c85a8b29b7831e926efabab40a1fddf7a170c7 | installed | xperl-class-fields | f9398eff89373b86f5bf18d5daba85614550ef4e8ebb621387f91b9c25aeb720 |
@@ -1889,6 +1897,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | KNOK | [File-MMagic](../data/45/KNOK/File-MMagic/status.json) | 1.30 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | KRYDE | [Perl-Critic-Pulp](../data/e7/KRYDE/Perl-Critic-Pulp/status.json) | 100 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KRYDE | [Pod-MinimumVersion](../data/c4/KRYDE/Pod-MinimumVersion/status.json) | 50 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 2e04f1914e73b00b940a4ce43a17b8b38a46cac862ff84ceef1bb456825f5cba |
 | KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 2e04f1914e73b00b940a4ce43a17b8b38a46cac862ff84ceef1bb456825f5cba |
 | KUERBIS | [App-DBBrowser](../data/87/KUERBIS/App-DBBrowser/status.json) | 2.447 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1975,14 +1984,17 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | LEONT | [ExtUtils-Builder-Compiler](../data/61/LEONT/ExtUtils-Builder-Compiler/status.json) | 0.038 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEONT | [ExtUtils-Config](../data/c7/LEONT/ExtUtils-Config/status.json) | 0.010 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEONT | [ExtUtils-Helpers](../data/09/LEONT/ExtUtils-Helpers/status.json) | 0.028 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEONT | [ExtUtils-InstallPaths](../data/0a/LEONT/ExtUtils-InstallPaths/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | LEONT | [File-Map](../data/71/LEONT/File-Map/status.json) | 0.71 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -2030,19 +2042,23 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux | failed | none | none |
 | LNATION | [Chandra](../data/89/LNATION/Chandra/status.json) | 0.31 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
 | LNATION | [Colouring-In](../data/1e/LNATION/Colouring-In/status.json) | 0.27 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 4b7d3c219fbd8f705c16dfc76fc85c37de973f6fbe321933b43dbb63bbc4aca5 |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Colouring-In-XS](../data/d0/LNATION/Colouring-In-XS/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 4b7d3c219fbd8f705c16dfc76fc85c37de973f6fbe321933b43dbb63bbc4aca5 |
 | LNATION | [Data-Reuse](../data/fd/LNATION/Data-Reuse/status.json) | 0.13 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Devel-XSCover](../data/3b/LNATION/Devel-XSCover/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Ex-Op](../data/2e/LNATION/Ex-Op/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Ex-Op](../data/2e/LNATION/Ex-Op/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 21910d9514231f70462a6e30f79f4dacf70794bffee3d9584c70d31d3c22dd9e |
+| LNATION | [File-Raw](../data/1e/LNATION/File-Raw/status.json) | 0.19 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 3c2fcb6b33a5fd126fa3aae506b39e001e5c117b97637fefc19bf0a2b426afd5 |
 | LNATION | [File-Raw](../data/1e/LNATION/File-Raw/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [File-Raw](../data/1e/LNATION/File-Raw/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 3c2fcb6b33a5fd126fa3aae506b39e001e5c117b97637fefc19bf0a2b426afd5 |
 | LNATION | [HAMT](../data/b2/LNATION/HAMT/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [HAMT](../data/b2/LNATION/HAMT/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 7ce29a282450155646b430da690cae9f2d8787306512faa3e0fdc40e8aa9e4d7 |
+| LNATION | [Horus](../data/17/LNATION/Horus/status.json) | 1.00 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 7166aa9e4d8636fbbfae5f0929dee49ed2879cc09e9e85d3da411dbd27f959b7 |
 | LNATION | [Horus](../data/17/LNATION/Horus/status.json) | 1.00 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Horus](../data/17/LNATION/Horus/status.json) | 1.00 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 7166aa9e4d8636fbbfae5f0929dee49ed2879cc09e9e85d3da411dbd27f959b7 |
 | LNATION | [Import-Export](../data/18/LNATION/Import-Export/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| LNATION | [Object-Proto](../data/07/LNATION/Object-Proto/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | b70fec72f2ab7bd92bd138dcc6ea2647262686fc0e9bd230c30aa888b07def6b |
 | LNATION | [Object-Proto](../data/07/LNATION/Object-Proto/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LNATION | [Object-Proto](../data/07/LNATION/Object-Proto/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | b70fec72f2ab7bd92bd138dcc6ea2647262686fc0e9bd230c30aa888b07def6b |
 | LNATION | [Smaz](../data/02/LNATION/Smaz/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -2144,6 +2160,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | MATTLAW | [Module-Util](../data/2d/MATTLAW/Module-Util/status.json) | 1.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MATTLAW | [Module-Util](../data/2d/MATTLAW/Module-Util/status.json) | 1.09 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MATTN | [Devel-CheckLib](../data/d3/MATTN/Devel-CheckLib/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | MATTN | [Unicode-EastAsianWidth-Detect](../data/ac/MATTN/Unicode-EastAsianWidth-Detect/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -2458,6 +2475,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | NEILB | [Text-Autoformat](../data/a8/NEILB/Text-Autoformat/status.json) | 1.75 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | NEILB | [Text-Diff](../data/c0/NEILB/Text-Diff/status.json) | 1.46 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | NEILB | [Text-Levenshtein](../data/78/NEILB/Text-Levenshtein/status.json) | 0.15 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -2864,6 +2882,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | PLICEASE | [Params-SomeUtil](../data/78/PLICEASE/Params-SomeUtil/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | PLICEASE | [Perl-Critic-Policy-Plicease-ProhibitArrayAssignAref](../data/dd/PLICEASE/Perl-Critic-Policy-Plicease-ProhibitArrayAssignAref/status.json) | 100.00 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | PLICEASE | [PkgConfig](../data/e1/PLICEASE/PkgConfig/status.json) | 0.26026 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| PLICEASE | [PkgConfig](../data/e1/PLICEASE/PkgConfig/status.json) | 0.26026 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | PLICEASE | [PkgConfig](../data/e1/PLICEASE/PkgConfig/status.json) | 0.26026 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | PLICEASE | [PkgConfig](../data/e1/PLICEASE/PkgConfig/status.json) | 0.26026 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | PLICEASE | [Return-MultiLevel](../data/66/PLICEASE/Return-MultiLevel/status.json) | 0.08 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -2999,6 +3018,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | RGARCIA | [Sub-Identify](../data/c2/RGARCIA/Sub-Identify/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RGARCIA | [Test-LongString](../data/06/RGARCIA/Test-LongString/status.json) | 0.17 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | RHANDOM | [Taint-Runtime](../data/ef/RHANDOM/Taint-Runtime/status.json) | 0.03 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3019,6 +3039,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | RITOU | [OAuth-Lite2](../data/c0/RITOU/OAuth-Lite2/status.json) | 0.11 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Algorithm-Diff](../data/b6/RJBS/Algorithm-Diff/status.json) | 1.201 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | RJBS | [App-Cmd](../data/9e/RJBS/App-Cmd/status.json) | 0.340 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3193,6 +3214,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | RJBS | [Test-BinaryData](../data/f8/RJBS/Test-BinaryData/status.json) | 0.016 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
+| RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Test-Deep](../data/0a/RJBS/Test-Deep/status.json) | 1.205 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | RJBS | [Test-Fatal](../data/49/RJBS/Test-Fatal/status.json) | 0.019 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3318,6 +3340,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | RURBAN | [Filter](../data/c9/RURBAN/Filter/status.json) | 1.65 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RURBAN | [GD](../data/4b/RURBAN/GD/status.json) | 2.91 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RURBAN | [Mock-Config](../data/57/RURBAN/Mock-Config/status.json) | 0.05 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | RURBAN | [Opcodes](../data/73/RURBAN/Opcodes/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3353,6 +3376,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | SANKO | [Acme-MCP](../data/95/SANKO/Acme-MCP/status.json) | v1.0.1 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Acme-Selection-RarestFirst](../data/51/SANKO/Acme-Selection-RarestFirst/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Acme-UPnP](../data/8d/SANKO/Acme-UPnP/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90 |
 | SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90 |
 | SANKO | [Algorithm-Kademlia](../data/c8/SANKO/Algorithm-Kademlia/status.json) | v1.1.1 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3491,6 +3515,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | SMUELLER | [Class-ISA](../data/6e/SMUELLER/Class-ISA/status.json) | 0.36 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | repair-v5.45.5 | 8ee97affa4aa267113ce9bdc45dbf46e3e515dd9542c966aa4a30c8ae64ed60f |
+| SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 5b33c468b3790bc8459cb4b2e2d2c504ad4ad89fda9b517bfdf99298c59d5d40 |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | repair-v5.45.5 | 8ee97affa4aa267113ce9bdc45dbf46e3e515dd9542c966aa4a30c8ae64ed60f |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | failed | none | none |
@@ -3572,12 +3597,14 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | SYBER | [Test-Catch](../data/e8/SYBER/Test-Catch/status.json) | 2.0.2 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | SYBER | [XS-Framework](../data/e9/SYBER/XS-Framework/status.json) | 1.6.2 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 | 3b1d3c7b2765a2781417eeb4ae1eb78a6a9c3a27c18b631f8ece43351a448280 |
 | SYBER | [XS-Framework](../data/e9/SYBER/XS-Framework/status.json) | 1.6.2 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 3b1d3c7b2765a2781417eeb4ae1eb78a6a9c3a27c18b631f8ece43351a448280 |
+| SYBER | [XS-Install](../data/d6/SYBER/XS-Install/status.json) | 1.5.2 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | SYBER | [XS-Install](../data/d6/SYBER/XS-Install/status.json) | 1.5.2 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SYBER | [XS-Install](../data/d6/SYBER/XS-Install/status.json) | 1.5.2 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | SYBER | [XS-libcatch](../data/16/SYBER/XS-libcatch/status.json) | 3.7.1.1 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SYBER | [XS-libcatch](../data/16/SYBER/XS-libcatch/status.json) | 3.7.1.1 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | SYBER | [XS-libpanda](../data/71/SYBER/XS-libpanda/status.json) | 1.5.11 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SYBER | [XS-libpanda](../data/71/SYBER/XS-libpanda/status.json) | 1.5.11 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
+| SYBER | [next-XS](../data/c7/SYBER/next-XS/status.json) | 1.0.8 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | f3fbc5d7cc5adf7b750e2107686b3748cf6b78e67e13c094b3bf4e889a211e37 |
 | SYBER | [next-XS](../data/c7/SYBER/next-XS/status.json) | 1.0.8 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SYBER | [next-XS](../data/c7/SYBER/next-XS/status.json) | 1.0.8 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | f3fbc5d7cc5adf7b750e2107686b3748cf6b78e67e13c094b3bf4e889a211e37 |
 | SYMKAT | [Daemon-Control](../data/87/SYMKAT/Daemon-Control/status.json) | 0.001010 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3860,6 +3887,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | xperl-exception-error-state | 37758c23d0ad13b0ecebaad11f7476237096aeaf74907c3d0e46e4f3156a2ac7 |
 | VPIT | [Variable-Magic](../data/88/VPIT/Variable-Magic/status.json) | 0.65 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | xperl-exception-error-state | 56e68f2054338981808bdc49a223b4bf42c0a9cc1a2d17ae0156fde78fbcc86d |
 | VPIT | [autovivification](../data/a8/VPIT/autovivification/status.json) | 0.18 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| VPIT | [autovivification](../data/a8/VPIT/autovivification/status.json) | 0.18 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 4f91384c72357f430020c97195c1137f10e8cd8eab573cc19b274659b67ec55d |
 | VPIT | [autovivification](../data/a8/VPIT/autovivification/status.json) | 0.18 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | VPIT | [autovivification](../data/a8/VPIT/autovivification/status.json) | 0.18 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 4f91384c72357f430020c97195c1137f10e8cd8eab573cc19b274659b67ec55d |
 | VPIT | [indirect](../data/0a/VPIT/indirect/status.json) | 0.39 | v5.45.5 | darwin/darwin-2level | installed | xperl-parser-errors | 7a24fcf8ddd6ddb7bb7d713a58bb016844048207986e587c6b8b32928876fb62 |
@@ -3901,6 +3929,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | XAOC | [ExtUtils-PkgConfig](../data/14/XAOC/ExtUtils-PkgConfig/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | XAOC | [Glib](../data/63/XAOC/Glib/status.json) | 1.3294 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XAOC | [Glib](../data/63/XAOC/Glib/status.json) | 1.3294 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
+| XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 5e22d144249e1be799bc49714417aa7758a1ef6813a37276261035c0d07e0fd3 |
 | XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 5e22d144249e1be799bc49714417aa7758a1ef6813a37276261035c0d07e0fd3 |
 | XMIKEW | [DateTime-Format-MySQL](../data/4d/XMIKEW/DateTime-Format-MySQL/status.json) | 0.08 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -3910,6 +3939,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | XSAWYERX | [Perl-Critic-Policy-ValuesAndExpressions-ProhibitSingleArgArraySlice](../data/b1/XSAWYERX/Perl-Critic-Policy-ValuesAndExpressions-ProhibitSingleArgArraySlice/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XSAWYERX | [Perl-Critic-Policy-Variables-ProhibitLoopOnHash](../data/77/XSAWYERX/Perl-Critic-Policy-Variables-ProhibitLoopOnHash/status.json) | 0.009 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | rc-stack-custom-op-v1 | 032ffa20e316520d506ecca3a8e8463e97941a693880b623f5e39a4bca240b7d |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | rc-stack-custom-op-v1 | a3d03f5303ed6497f8610472b732807d46a1672fbe69217b2f65835c1c0783e3 |
 | XSAWYERX | [Ref-Util-XS](../data/ed/XSAWYERX/Ref-Util-XS/status.json) | 0.117 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
@@ -3951,6 +3981,7 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 6.003 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 6.003 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 7.001 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 7.001 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 1342ceff08a2d73fe0dc9e8d12d979a2c38aed5ed33b439fd27c7111652d8096 |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | repair-v5.45.5 | 8c2f0a8bb095ff2c9e8139827101b27366cb67213771512066e8978a4b7c0855 |
 | YVES | [Sereal-Decoder](../data/23/YVES/Sereal-Decoder/status.json) | 7.001 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 1342ceff08a2d73fe0dc9e8d12d979a2c38aed5ed33b439fd27c7111652d8096 |
@@ -3966,8 +3997,10 @@ Unresolved failures: 94 of 3969 release, XPerl, and platform combinations. See [
 | ZEFRAM | [Lexical-SealRequireHints](../data/b1/ZEFRAM/Lexical-SealRequireHints/status.json) | 0.012 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Lexical-SealRequireHints](../data/b1/ZEFRAM/Lexical-SealRequireHints/status.json) | 0.012 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | c0f268d0f5eb5874724b1f5b5bb334e04b347ec1ef2ef103ade853fe48a75f90 |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | c0f268d0f5eb5874724b1f5b5bb334e04b347ec1ef2ef103ade853fe48a75f90 |
+| ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | ZEFRAM | [Sub-Metadata](../data/87/ZEFRAM/Sub-Metadata/status.json) | 0.002 | v5.45.5 | darwin/darwin-2level | installed | none | none |
