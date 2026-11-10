@@ -290,6 +290,82 @@
          "test_summary" : "Files=73, Tests=1627",
          "version" : "1.04",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "L/LN/LNATION/Object-Proto-1.04.tar.gz",
+         "id" : "cb0085424090e1b68c12726875898e64d75b4a4958314af897df291f3794f7b7",
+         "module" : "Object::Proto",
+         "observed_at" : "2026-11-10T23:33:46Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "b70fec72f2ab7bd92bd138dcc6ea2647262686fc0e9bd230c30aa888b07def6b"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "darwin-2level",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+               "debugging" : 0,
+               "flags_sha256" : "1037de70a7014cdbd02f67f3bcfae3d0c26fba7387add1f1c1c3b884eb1f2548",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c",
+            "cc" : "cc",
+            "cc_version" : "Apple LLVM 21.0.0 (clang-2100.3.34.2)",
+            "key" : "darwin/darwin-2level",
+            "make" : "make",
+            "os" : "darwin",
+            "osvers" : "25.6.0",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "1afb7cf7d7639cd19e0dccd9091b8fe0d72b21ad9fd5c6710107b132f6ad8afa",
+         "status" : "installed",
+         "test_summary" : "Files=73, Tests=1563",
+         "version" : "1.04",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
