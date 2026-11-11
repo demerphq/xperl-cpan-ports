@@ -13,7 +13,13 @@
                   }
                ],
                "purpose" : "compatibility",
-               "recipes" : [],
+               "recipes" : [
+                  "hash-entry-lookup-v1",
+                  "hash-metadata-manipulation-v1",
+                  "refcounted-stack-callback-v1",
+                  "exception-wrapper-classification-v1",
+                  "embedding-build-profile-v1"
+               ],
                "xperl" : {
                   "max_exclusive" : "v5.46.0",
                   "min_inclusive" : "v5.45.5"

@@ -989,7 +989,13 @@
             "data/b3/SHAY/mod_perl/patches/repair-v5.45.5-2.0.13-f1c6d1344d85.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "hash-entry-lookup-v1",
+            "hash-metadata-manipulation-v1",
+            "refcounted-stack-callback-v1",
+            "exception-wrapper-classification-v1",
+            "embedding-build-profile-v1"
+         ],
          "version" : "2.0.13"
       },
       {
