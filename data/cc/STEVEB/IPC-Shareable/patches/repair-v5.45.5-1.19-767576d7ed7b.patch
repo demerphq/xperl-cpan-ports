@@ -1,0 +1,50 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,11 @@
+ Revision history for Perl extension IPC::Shareable.
+ 
++Unreleased
++    - Allow XPerl's structured-exception propagation location in the lock()
++      callback test while checking the original error message. Add checks
++      that user-thrown references retain their identity and the lock is
++      released. Keep forwarding exception objects without stringifying them.
++
+ 1.19    2026-07-06
+     - Fix mass CPAN tester FAILs on OpenBSD (29 of 32 reports for 1.18): the
+       smoker host's 10 SysV semaphore-set slots (kern.seminfo.semmni=10) were
+--- a/t/21-lock_coderef.t
++++ b/t/21-lock_coderef.t
+@@ -2,6 +2,7 @@
+ use warnings;
+ 
+ use Data::Dumper;
++use Scalar::Util qw(refaddr);
+ use Test::More;
+ 
+ use FindBin;
+@@ -69,10 +70,24 @@
+ # Coderef that throws: lock() re-throws and knot is unlocked
+ {
+     eval { $knot->lock(LOCK_EX, sub { die "boom\n" }) };
+-    is $@, "boom\n", "lock() re-throws exception from coderef";
++    my $err = $@;
++
++    # XPerl records the rethrow site on its structured exception. Keep the
++    # original message check exact while allowing that propagation context.
++    my $file = $INC{'IPC/Shareable.pm'};
++    like $err, qr/\Aboom\n(?:\t\.\.\.propagated at \Q$file\E line [0-9]+\.\n)?\z/,
++        "lock() re-throws exception from coderef";
+     is $knot->{_lock}, 0, "...and knot is unlocked after coderef die";
+ }
+ 
++# Rethrowing must preserve user references rather than stringify them.
++for my $err ({ message => 'boom' }, bless({}, 'IPCShareableTest::Exception')) {
++    eval { $knot->lock(LOCK_EX, sub { die $err }) };
++    my $caught = $@;
++    is refaddr($caught), refaddr($err), "lock() preserves exception identity";
++    is $knot->{_lock}, 0, "...and knot is unlocked after reference exception";
++}
++
+ # Already holding a lock, call lock() again with same flags + coderef
+ {
+     # LOCK_EX

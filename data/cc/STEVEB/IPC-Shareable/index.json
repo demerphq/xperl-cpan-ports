@@ -1,0 +1,28 @@
+{
+   "distribution" : "IPC-Shareable",
+   "releases" : [
+      {
+         "cpan_path" : "S/ST/STEVEB/IPC-Shareable-1.19.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.19-767576d7ed7b.patch",
+                     "sha256" : "767576d7ed7bf52c713e375bb51875cb13f68d9e956f906192f488889c2f47cd"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "bde850e57bf2b941fa25ec7e36172aa188a2e1473fbb6533a6bafff4252fd773",
+         "version" : "1.19"
+      }
+   ],
+   "schema" : 1
+}
