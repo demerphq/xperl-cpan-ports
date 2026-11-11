@@ -1,0 +1,97 @@
+{
+   "date" : "2026-11-11",
+   "files" : [
+      "Changes",
+      "README.md",
+      "SSLeay.pm",
+      "SSLeay.xs",
+      "t/00-basic.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "e91ce207bd221e48c10fb964472dfdfa22eef3302b468d9bb1b0404edbdb4261",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "f5d34f813677829857cf8a0458623db45b4d9c2311daaebe446f9e01afa9ffe8",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://github.com/nanis/Crypt-SSLeay"
+            },
+            {
+               "url" : "https://github.com/nanis/Crypt-SSLeay/pull/9"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/nanis/Crypt-SSLeay/master/SSLeay.xs"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/nanis/Crypt-SSLeay/master/Changes"
+            },
+            {
+               "url" : "https://bugzilla.redhat.com/show_bug.cgi?id=2007247"
+            },
+            {
+               "url" : "https://rt.cpan.org/Ticket/Attachment/1895646/1016322/Use_TLS_client_method-with-OpenSSL-1.1.1.patch"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/gentoo/gentoo/master/dev-perl/Crypt-SSLeay/files/Crypt-SSLeay-0.72-Use_TLS_client_method-with-OpenSSL-1.1.1.patch"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/gentoo/gentoo/master/dev-perl/Crypt-SSLeay/files/Crypt-SSLeay-0.72-Adapt-to-OpenSSL-4.patch"
+            },
+            {
+               "url" : "https://docs.openssl.org/1.1.1/man3/SSL_CTX_new/"
+            }
+         ],
+         "status" : "checked"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

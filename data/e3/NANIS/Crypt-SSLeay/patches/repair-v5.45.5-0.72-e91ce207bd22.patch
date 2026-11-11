@@ -1,0 +1,115 @@
+--- a/Changes
++++ b/Changes
+@@ -1,6 +1,19 @@
+ Revision history for Crypt-SSLeay
+ =================================
+ 
++Unreleased
++
++- Use TLS negotiation for legacy protocol selectors with OpenSSL 1.1.0
++  and newer. Avoid references to removed SSLv2 and SSLv3 client methods.
++  Preserve available legacy methods with older OpenSSL and reject a failed
++  context allocation before calling context setters.
++- Adapt the TLS method fix linked from Fedora bug #2007247, with guards
++  for older OpenSSL versions and builds without SSLv3 methods:
++  https://bugzilla.redhat.com/show_bug.cgi?id=2007247
++  https://rt.cpan.org/Ticket/Attachment/1895646/1016322/Use_TLS_client_method-with-OpenSSL-1.1.1.patch
++- Exercise context creation for all legacy protocol selectors without
++  requiring a network connection.
++
+ 0.70    2014-04-24 14:53:43 UTC
+ 
+ - RT #94974: I forgot that `return` just returns from the code block for
+--- a/README.md
++++ b/README.md
+@@ -250,6 +250,15 @@
+ 
+ ## SSL versions
+ 
++With OpenSSL 1.1.0 or newer, all protocol selectors use TLS version
++negotiation. The legacy values `2` and `3`, including `HTTPS_VERSION`, do
++not force SSLv2 or SSLv3. With older OpenSSL, the legacy methods are used
++when available, with version negotiation replacing an unavailable SSLv3
++method. The protocols enabled by the linked OpenSSL library and its
++configuration determine which connections can succeed.
++
++The following fallback order describes builds with older OpenSSL:
++
+ `Crypt::SSLeay` tries very hard to connect to *any* SSL web server accomodating servers that are buggy, old or simply not standards-compliant.  To this effect, this module will try SSL connections in this order:
+ 
+ *   SSL v23 : should allow v2 and v3 servers to pick their best type
+--- a/SSLeay.pm
++++ b/SSLeay.pm
+@@ -397,6 +397,15 @@
+ 
+ =head1 SSL versions
+ 
++With OpenSSL 1.1.0 or newer, all protocol selectors use TLS version
++negotiation. The legacy values C<2> and C<3>, including C<HTTPS_VERSION>,
++do not force SSLv2 or SSLv3. With older OpenSSL, the legacy methods are
++used when available, with version negotiation replacing an unavailable
++SSLv3 method. The protocols enabled by the linked OpenSSL library and its
++configuration determine which connections can succeed.
++
++The following fallback order describes builds with older OpenSSL:
++
+ C<Crypt::SSLeay> tries very hard to connect to I<any> SSL web server
+ accommodating servers that are buggy, old or simply not standards-compliant.
+ To this effect, this module will try SSL connections in this order:
+--- a/SSLeay.xs
++++ b/SSLeay.xs
+@@ -46,10 +46,13 @@
+ #endif
+ 
+ 
+-#if SSLEAY_VERSION_NUMBER >= 0x0900
++/* Negotiate TLS when fixed SSL methods are unavailable. */
++#if OPENSSL_VERSION_NUMBER >= 0x10100000L
++#define CRYPT_SSL_CLIENT_METHOD TLS_client_method()
++#elif !defined(OPENSSL_NO_SSL3) && !defined(OPENSSL_NO_SSL3_METHOD)
+ #define CRYPT_SSL_CLIENT_METHOD SSLv3_client_method()
+ #else
+-#define CRYPT_SSL_CLIENT_METHOD SSLv2_client_method()
++#define CRYPT_SSL_CLIENT_METHOD SSLv23_client_method()
+ #endif
+ 
+ static void InfoCallback(const SSL *s,int where,int ret)
+@@ -149,18 +152,20 @@
+             ctx = SSL_CTX_new(SSLv23_client_method());
+         }
+         else if(ssl_version == 3) {
+-            ctx = SSL_CTX_new(SSLv3_client_method());
++            ctx = SSL_CTX_new(CRYPT_SSL_CLIENT_METHOD);
+         }
+         else {
+-#ifndef OPENSSL_NO_SSL2
++#if !defined(OPENSSL_NO_SSL2) && OPENSSL_VERSION_NUMBER < 0x10100000L
+             /* v2 is the default */
+             ctx = SSL_CTX_new(SSLv2_client_method());
+ #else
+-            /* v3 is the default */
+-            ctx = SSL_CTX_new(SSLv3_client_method());
++            ctx = SSL_CTX_new(CRYPT_SSL_CLIENT_METHOD);
+ #endif
+         }
+ 
++        if (!ctx)
++            croak("Unable to create SSL context");
++
+         SSL_CTX_set_options(ctx,SSL_OP_ALL|0);
+         SSL_CTX_set_default_verify_paths(ctx);
+         SSL_CTX_set_verify(ctx, SSL_VERIFY_NONE, NULL);
+--- a/t/00-basic.t
++++ b/t/00-basic.t
+@@ -50,4 +50,11 @@
+     isa_ok($ctx, 'Crypt::SSLeay::CTX', 'main context');
+ }
+ 
++for my $version (23, 3, 2, 0) {
++    my $ctx = Crypt::SSLeay::CTX->new($version);
++    isa_ok($ctx, 'Crypt::SSLeay::CTX', "context for selector $version");
++    ok($ctx->set_cipher_list('DEFAULT'),
++        "context for selector $version accepts a cipher list");
++}
++
+ done_testing();

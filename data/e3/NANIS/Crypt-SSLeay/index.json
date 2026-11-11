@@ -1,0 +1,28 @@
+{
+   "distribution" : "Crypt-SSLeay",
+   "releases" : [
+      {
+         "cpan_path" : "N/NA/NANIS/Crypt-SSLeay-0.72.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.72-e91ce207bd22.patch",
+                     "sha256" : "e91ce207bd221e48c10fb964472dfdfa22eef3302b468d9bb1b0404edbdb4261"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "f5d34f813677829857cf8a0458623db45b4d9c2311daaebe446f9e01afa9ffe8",
+         "version" : "0.72"
+      }
+   ],
+   "schema" : 1
+}
