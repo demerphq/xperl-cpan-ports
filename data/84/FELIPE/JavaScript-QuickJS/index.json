@@ -1,0 +1,28 @@
+{
+   "distribution" : "JavaScript-QuickJS",
+   "releases" : [
+      {
+         "cpan_path" : "F/FE/FELIPE/JavaScript-QuickJS-0.21.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.21-98a961adafbc.patch",
+                     "sha256" : "98a961adafbc70db32d11b01625178a095c09852baee39bf79b01eac5443f164"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "1cfdf3fb952ff4865ff2d55a203d58cbe5d8cb41571a35890b834f1eb5442a84",
+         "version" : "0.21"
+      }
+   ],
+   "schema" : 1
+}

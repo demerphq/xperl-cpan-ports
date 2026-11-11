@@ -1,0 +1,119 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,9 @@
+ Revision history for Perl extension JavaScript::QuickJS:
+ 
++Unreleased
++- Use defaulted XS arguments for omitted Promise::then callbacks.
++- Convert XPerl structured callback exceptions to JavaScript strings.
++
+ 0.21 Sec 14 Feb 2024
+ - Documentation updates. (No functional changes.)
+ 
+--- a/QuickJS.xs
++++ b/QuickJS.xs
+@@ -333,6 +333,15 @@
+    no errors.
+ */
+ static JSValue _sv_error_to_jsvalue(pTHX_ JSContext* ctx, SV* error) {
++#ifdef XPERL_VERSION
++    /* JavaScript receives exception text at this language boundary. */
++    if (sv_derived_from(error, "XPerl::Exception")) {
++        STRLEN len;
++        const char* text = SvPVutf8(error, len);
++        return JS_NewStringLen(ctx, text, len);
++    }
++#endif
++
+     SV* error2 = NULL;
+ 
+     uint32_t tries = 0;
+@@ -1296,8 +1305,8 @@
+ SV*
+ then( SV* self_sv, SV* on_success=&PL_sv_undef, SV* on_failure=&PL_sv_undef )
+     CODE:
+-        PERL_UNUSED_ARG(on_success);
+-        PERL_UNUSED_ARG(on_failure);
++        /* Optional defaults are C variables, not extra stack entries. */
++        SV* callbacks[] = { on_success, on_failure };
+ 
+         perl_qjs_jsobj_s* pqjs = exs_structref_ptr(self_sv);
+ 
+@@ -1309,7 +1318,7 @@
+         error = _svs_to_jsvars( aTHX_
+             pqjs->ctx,
+             callbacks_count,
+-            &ST(1),
++            callbacks,
+             jsvars
+         );
+         if (error) {
+--- a/t/callback_err.t
++++ b/t/callback_err.t
+@@ -12,6 +12,7 @@
+ 
+ $js->set_globals(
+     trouble => sub { die( bless [], 'Trouble' ) },
++    text_error => sub { die "callback text error\n" },
+     nada => sub {},
+     bad_perl => sub { bless [], 'WhatWhat' },
+     bad_perl_in_array => sub { [ bless [], 'WhatWhat' ] },
+@@ -54,4 +55,15 @@
+     like($err, qr<GLOB>i, 'filehandle ref is in hash');
+ }
+ 
++is(
++    $js->eval('try { text_error() } catch (e) { typeof e }'),
++    'string',
++    'Perl text exceptions become JavaScript strings',
++);
++is(
++    $js->eval('try { text_error() } catch (e) { e }'),
++    "callback text error\n",
++    'Perl exception text reaches JavaScript without a conversion error',
++);
++
+ done_testing;
+--- a/t/promise.t
++++ b/t/promise.t
+@@ -55,4 +55,40 @@
+     ],
+ );
+ 
++for my $rejected (0, 1) {
++    for my $arity (0 .. 2) {
++        my @calls;
++        my $promise = $js->eval(
++            $rejected
++                ? 'Promise.resolve().then(() => { throw 123; })'
++                : 'Promise.resolve(123)',
++        );
++        my @callbacks = (
++            sub { push @calls, ['success', @_]; return 234 },
++            sub { push @calls, ['failure', @_]; return 345 },
++        );
++        splice @callbacks, $arity;
++
++        my $next = $promise->then(@callbacks);
++        $next->then(
++            sub { push @calls, ['resolved', @_]; return },
++            sub { push @calls, ['rejected', @_]; return },
++        );
++        $js->await();
++
++        my $expected = $rejected
++            ? ($arity == 2
++                ? [['failure', 123], ['resolved', 345]]
++                : [['rejected', 123]])
++            : ($arity
++                ? [['success', 123], ['resolved', 234]]
++                : [['resolved', 123]]);
++
++        cmp_deeply(
++            \@calls, $expected,
++            ($rejected ? 'rejected' : 'resolved') . " promise, $arity callbacks",
++        );
++    }
++}
++
+ done_testing;
