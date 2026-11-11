@@ -1,0 +1,28 @@
+{
+   "distribution" : "Font-FreeType",
+   "releases" : [
+      {
+         "cpan_path" : "D/DM/DMOL/Font-FreeType-0.18.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.18-da056882356a.patch",
+                     "sha256" : "da056882356a480d47e93c484edbc9ce7a92001b9b6694382a3e8a31fd97497f"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "ac934a8cb30439a70ff46b74fdba56bf74940264ae39f113e963f5d95aab201c",
+         "version" : "0.18"
+      }
+   ],
+   "schema" : 1
+}

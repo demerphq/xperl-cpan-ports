@@ -1,0 +1,73 @@
+--- a/Changes
++++ b/Changes
+@@ -1,3 +1,7 @@
++Unreleased
++ - Fix a crash in glyph_from_char when the optional fallback argument is
++   omitted. Use the XS default instead of reading beyond the arguments.
++
+ 0.18 2026-07-07 dmol@cpan.org
+  - Fix manifest
+ 
+--- a/FreeType.xs
++++ b/FreeType.xs
+@@ -857,7 +857,6 @@
+             char_code = *str;
+         }
+         glyph_idx = FT_Get_Char_Index(face, char_code);
+-        fallback = SvOK(ST(2)) ? SvIV(ST(2)) : 0;
+         if (glyph_idx || fallback)
+             RETVAL = make_glyph(SvRV(ST(0)), char_code, 1, glyph_idx);
+         else
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -23,6 +23,7 @@
+ t/10metrics_5x7bdf.t
+ t/10metrics_oldstandart.t
+ t/10metrics_verasans.t
++t/15glyph_fallback.t
+ t/20bitmap.t
+ t/30render.t
+ t/99pod.t
+--- /dev/null
++++ b/t/15glyph_fallback.t
+@@ -0,0 +1,40 @@
++use strict;
++use warnings;
++use Test::More;
++use File::Spec::Functions;
++use Font::FreeType;
++
++my $face = Font::FreeType->new->face(catfile(qw(t data Vera.ttf)));
++my $missing = "\x{10FFFF}";
++
++is($face->glyph_from_char_code(ord $missing), undef,
++   'test character is absent from the font');
++
++my $glyph = $face->glyph_from_char('A');
++isa_ok($glyph, 'Font::FreeType::Glyph');
++is($glyph->index, $face->glyph_from_char_code(ord 'A')->index,
++   'omitted fallback finds an existing glyph');
++
++is($face->glyph_from_char($missing), undef,
++   'omitted fallback returns undef for a missing character');
++is($face->glyph_from_char($missing, 0), undef,
++   'explicit false fallback returns undef for a missing character');
++
++$glyph = $face->glyph_from_char($missing, 1);
++isa_ok($glyph, 'Font::FreeType::Glyph');
++is($glyph->index, 0, 'true fallback returns the missing glyph');
++is($glyph->char_code, ord $missing,
++   'fallback glyph retains the requested character code');
++
++is($face->glyph_from_char($missing), undef,
++   'omitted fallback uses its default after an explicit true argument');
++
++my @glyphs = map { $face->glyph_from_char($_) } ('A', $missing, 'B');
++is_deeply([map { defined $_ ? $_->char_code : undef } @glyphs],
++          [ord('A'), undef, ord('B')],
++          'omitted fallback works inside map');
++
++my @missing = $face->glyph_from_char($missing);
++is_deeply(\@missing, [undef], 'omitted fallback works in list context');
++
++done_testing;
