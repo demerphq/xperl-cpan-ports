@@ -1,0 +1,1010 @@
+{
+   "counts" : {
+      "bundled" : 2,
+      "installed" : 98
+   },
+   "coverage_scope" : "A successful recorded build on any profile, or an XPerl bundle",
+   "date" : "2026-11-11",
+   "rows" : [
+      {
+         "candidates" : [
+            "Locale-gettext"
+         ],
+         "distribution" : "Locale-gettext",
+         "installed" : 296927,
+         "package" : "liblocale-gettext-perl",
+         "rank" : 57,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Text-CharWidth"
+         ],
+         "distribution" : "Text-CharWidth",
+         "installed" : 296844,
+         "package" : "libtext-charwidth-perl",
+         "rank" : 59,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Text-WrapI18N"
+         ],
+         "distribution" : "Text-WrapI18N",
+         "installed" : 296838,
+         "package" : "libtext-wrapi18n-perl",
+         "rank" : 60,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Text-Iconv"
+         ],
+         "distribution" : "Text-Iconv",
+         "installed" : 296550,
+         "package" : "libtext-iconv-perl",
+         "rank" : 74,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Time-Date",
+            "TimeDate"
+         ],
+         "distribution" : "TimeDate",
+         "installed" : 201117,
+         "package" : "libtimedate-perl",
+         "rank" : 334,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "URI"
+         ],
+         "distribution" : "URI",
+         "installed" : 198051,
+         "package" : "liburi-perl",
+         "rank" : 340,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTML-Tagset"
+         ],
+         "distribution" : "HTML-Tagset",
+         "installed" : 196875,
+         "package" : "libhtml-tagset-perl",
+         "rank" : 344,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTML-Parser"
+         ],
+         "distribution" : "HTML-Parser",
+         "installed" : 196677,
+         "package" : "libhtml-parser-perl",
+         "rank" : 346,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Encode-Locale"
+         ],
+         "distribution" : "Encode-Locale",
+         "installed" : 195941,
+         "package" : "libencode-locale-perl",
+         "rank" : 347,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTTP-Date"
+         ],
+         "distribution" : "HTTP-Date",
+         "installed" : 195879,
+         "package" : "libhttp-date-perl",
+         "rank" : 348,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "LWP-MediaTypes"
+         ],
+         "distribution" : "LWP-MediaTypes",
+         "installed" : 195742,
+         "package" : "liblwp-mediatypes-perl",
+         "rank" : 349,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTTP-Message"
+         ],
+         "distribution" : "HTTP-Message",
+         "installed" : 195725,
+         "package" : "libhttp-message-perl",
+         "rank" : 350,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "IO-HTML"
+         ],
+         "distribution" : "IO-HTML",
+         "installed" : 194658,
+         "package" : "libio-html-perl",
+         "rank" : 352,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Error"
+         ],
+         "distribution" : "Error",
+         "installed" : 189449,
+         "package" : "liberror-perl",
+         "rank" : 374,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Net-SSLeay"
+         ],
+         "distribution" : "Net-SSLeay",
+         "installed" : 186389,
+         "package" : "libnet-ssleay-perl",
+         "rank" : 397,
+         "status" : "bundled"
+      },
+      {
+         "candidates" : [
+            "IO-Socket-SSL"
+         ],
+         "distribution" : "IO-Socket-SSL",
+         "installed" : 183277,
+         "package" : "libio-socket-ssl-perl",
+         "rank" : 406,
+         "status" : "bundled"
+      },
+      {
+         "candidates" : [
+            "Clone"
+         ],
+         "distribution" : "Clone",
+         "installed" : 182164,
+         "package" : "libclone-perl",
+         "rank" : 412,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTML-Tree"
+         ],
+         "distribution" : "HTML-Tree",
+         "installed" : 180982,
+         "package" : "libhtml-tree-perl",
+         "rank" : 423,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [],
+         "distribution" : "libwww-perl",
+         "installed" : 180860,
+         "package" : "libwww-perl",
+         "rank" : 425,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "File-Listing"
+         ],
+         "distribution" : "File-Listing",
+         "installed" : 180474,
+         "package" : "libfile-listing-perl",
+         "rank" : 431,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Net-HTTP"
+         ],
+         "distribution" : "Net-HTTP",
+         "installed" : 180343,
+         "package" : "libnet-http-perl",
+         "rank" : 432,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "WWW-RobotRules"
+         ],
+         "distribution" : "WWW-RobotRules",
+         "installed" : 180322,
+         "package" : "libwww-robotrules-perl",
+         "rank" : 433,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTTP-Negotiate"
+         ],
+         "distribution" : "HTTP-Negotiate",
+         "installed" : 180320,
+         "package" : "libhttp-negotiate-perl",
+         "rank" : 434,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTTP-Cookies"
+         ],
+         "distribution" : "HTTP-Cookies",
+         "installed" : 180309,
+         "package" : "libhttp-cookies-perl",
+         "rank" : 435,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "LWP-Protocol-https"
+         ],
+         "distribution" : "LWP-Protocol-https",
+         "installed" : 180182,
+         "package" : "liblwp-protocol-https-perl",
+         "rank" : 436,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "MailTools"
+         ],
+         "distribution" : "MailTools",
+         "installed" : 178633,
+         "package" : "libmailtools-perl",
+         "rank" : 446,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Net-SMTP-SSL"
+         ],
+         "distribution" : "Net-SMTP-SSL",
+         "installed" : 177091,
+         "package" : "libnet-smtp-ssl-perl",
+         "rank" : 453,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Try-Tiny"
+         ],
+         "distribution" : "Try-Tiny",
+         "installed" : 176929,
+         "package" : "libtry-tiny-perl",
+         "rank" : 454,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTTP-Daemon"
+         ],
+         "distribution" : "HTTP-Daemon",
+         "installed" : 176654,
+         "package" : "libhttp-daemon-perl",
+         "rank" : 456,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Font-AFM"
+         ],
+         "distribution" : "Font-AFM",
+         "installed" : 176465,
+         "package" : "libfont-afm-perl",
+         "rank" : 457,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [],
+         "distribution" : "HTML-Formatter",
+         "installed" : 176409,
+         "package" : "libhtml-format-perl",
+         "rank" : 458,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Authen-SASL"
+         ],
+         "distribution" : "Authen-SASL",
+         "installed" : 176359,
+         "package" : "libauthen-sasl-perl",
+         "rank" : 460,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "HTML-Form"
+         ],
+         "distribution" : "HTML-Form",
+         "installed" : 176204,
+         "package" : "libhtml-form-perl",
+         "rank" : 462,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-Parser"
+         ],
+         "distribution" : "XML-Parser",
+         "installed" : 172221,
+         "package" : "libxml-parser-perl",
+         "rank" : 507,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "File-FcntlLock"
+         ],
+         "distribution" : "File-FcntlLock",
+         "installed" : 169879,
+         "package" : "libfile-fcntllock-perl",
+         "rank" : 525,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Dpkg"
+         ],
+         "distribution" : "Dpkg",
+         "installed" : 169618,
+         "package" : "libdpkg-perl",
+         "rank" : 527,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Data-Dump"
+         ],
+         "distribution" : "Data-Dump",
+         "installed" : 168791,
+         "package" : "libdata-dump-perl",
+         "rank" : 537,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "IO-Stringy",
+            "IO-stringy"
+         ],
+         "distribution" : "IO-Stringy",
+         "installed" : 161428,
+         "package" : "libio-stringy-perl",
+         "rank" : 607,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Tie-IxHash"
+         ],
+         "distribution" : "Tie-IxHash",
+         "installed" : 157420,
+         "package" : "libtie-ixhash-perl",
+         "rank" : 636,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-Twig"
+         ],
+         "distribution" : "XML-Twig",
+         "installed" : 157150,
+         "package" : "libxml-twig-perl",
+         "rank" : 638,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "IPC-System-Simple"
+         ],
+         "distribution" : "IPC-System-Simple",
+         "installed" : 157144,
+         "package" : "libipc-system-simple-perl",
+         "rank" : 639,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Net-DBus"
+         ],
+         "distribution" : "Net-DBus",
+         "installed" : 156344,
+         "package" : "libnet-dbus-perl",
+         "rank" : 643,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-XPathEngine"
+         ],
+         "distribution" : "XML-XPathEngine",
+         "installed" : 156147,
+         "package" : "libxml-xpathengine-perl",
+         "rank" : 645,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "File-BaseDir"
+         ],
+         "distribution" : "File-BaseDir",
+         "installed" : 155038,
+         "package" : "libfile-basedir-perl",
+         "rank" : 650,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "File-DesktopEntry"
+         ],
+         "distribution" : "File-DesktopEntry",
+         "installed" : 152916,
+         "package" : "libfile-desktopentry-perl",
+         "rank" : 672,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "File-MimeInfo"
+         ],
+         "distribution" : "File-MimeInfo",
+         "installed" : 152876,
+         "package" : "libfile-mimeinfo-perl",
+         "rank" : 673,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "X11-Protocol"
+         ],
+         "distribution" : "X11-Protocol",
+         "installed" : 152659,
+         "package" : "libx11-protocol-perl",
+         "rank" : 676,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Algorithm-Diff"
+         ],
+         "distribution" : "Algorithm-Diff",
+         "installed" : 148349,
+         "package" : "libalgorithm-diff-perl",
+         "rank" : 713,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Algorithm-Merge"
+         ],
+         "distribution" : "Algorithm-Merge",
+         "installed" : 147737,
+         "package" : "libalgorithm-merge-perl",
+         "rank" : 718,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Algorithm-Diff-XS"
+         ],
+         "distribution" : "Algorithm-Diff-XS",
+         "installed" : 147734,
+         "package" : "libalgorithm-diff-xs-perl",
+         "rank" : 719,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "IO-Compress-Brotli"
+         ],
+         "distribution" : "IO-Compress-Brotli",
+         "installed" : 118038,
+         "package" : "libio-compress-brotli-perl",
+         "rank" : 1101,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Glib"
+         ],
+         "distribution" : "Glib",
+         "installed" : 114644,
+         "package" : "libglib-perl",
+         "rank" : 1125,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Cairo"
+         ],
+         "distribution" : "Cairo",
+         "installed" : 114559,
+         "package" : "libcairo-perl",
+         "rank" : 1127,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Glib-Object-Introspection"
+         ],
+         "distribution" : "Glib-Object-Introspection",
+         "installed" : 110799,
+         "package" : "libglib-object-introspection-perl",
+         "rank" : 1158,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Cairo-GObject"
+         ],
+         "distribution" : "Cairo-GObject",
+         "installed" : 110780,
+         "package" : "libcairo-gobject-perl",
+         "rank" : 1159,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Gtk3"
+         ],
+         "distribution" : "Gtk3",
+         "installed" : 110748,
+         "package" : "libgtk3-perl",
+         "rank" : 1161,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "ExtUtils-Depends"
+         ],
+         "distribution" : "ExtUtils-Depends",
+         "installed" : 109832,
+         "package" : "libextutils-depends-perl",
+         "rank" : 1172,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "TermReadKey"
+         ],
+         "distribution" : "TermReadKey",
+         "installed" : 90215,
+         "package" : "libterm-readkey-perl",
+         "rank" : 1392,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Regexp-IPv6"
+         ],
+         "distribution" : "Regexp-IPv6",
+         "installed" : 77634,
+         "package" : "libregexp-ipv6-perl",
+         "rank" : 1557,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [],
+         "distribution" : "CGI",
+         "installed" : 71457,
+         "package" : "libcgi-pm-perl",
+         "rank" : 1679,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "FCGI"
+         ],
+         "distribution" : "FCGI",
+         "installed" : 70053,
+         "package" : "libfcgi-perl",
+         "rank" : 1711,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "CGI-Fast"
+         ],
+         "distribution" : "CGI-Fast",
+         "installed" : 68525,
+         "package" : "libcgi-fast-perl",
+         "rank" : 1739,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Name"
+         ],
+         "distribution" : "Sub-Name",
+         "installed" : 63249,
+         "package" : "libsub-name-perl",
+         "rank" : 1827,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "common-sense"
+         ],
+         "distribution" : "common-sense",
+         "installed" : 59683,
+         "package" : "libcommon-sense-perl",
+         "rank" : 1891,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "DBI"
+         ],
+         "distribution" : "DBI",
+         "installed" : 59393,
+         "package" : "libdbi-perl",
+         "rank" : 1898,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "JSON-XS"
+         ],
+         "distribution" : "JSON-XS",
+         "installed" : 59016,
+         "package" : "libjson-xs-perl",
+         "rank" : 1903,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-NamespaceSupport"
+         ],
+         "distribution" : "XML-NamespaceSupport",
+         "installed" : 58629,
+         "package" : "libxml-namespacesupport-perl",
+         "rank" : 1912,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-SAX"
+         ],
+         "distribution" : "XML-SAX",
+         "installed" : 58617,
+         "package" : "libxml-sax-perl",
+         "rank" : 1913,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Types-Serialiser"
+         ],
+         "distribution" : "Types-Serialiser",
+         "installed" : 58527,
+         "package" : "libtypes-serialiser-perl",
+         "rank" : 1915,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-SAX-Base"
+         ],
+         "distribution" : "XML-SAX-Base",
+         "installed" : 58449,
+         "package" : "libxml-sax-base-perl",
+         "rank" : 1917,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-LibXML"
+         ],
+         "distribution" : "XML-LibXML",
+         "installed" : 57858,
+         "package" : "libxml-libxml-perl",
+         "rank" : 1931,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Archive-Zip"
+         ],
+         "distribution" : "Archive-Zip",
+         "installed" : 57751,
+         "package" : "libarchive-zip-perl",
+         "rank" : 1936,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "JSON"
+         ],
+         "distribution" : "JSON",
+         "installed" : 57023,
+         "package" : "libjson-perl",
+         "rank" : 1946,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Perl4-CoreLibs"
+         ],
+         "distribution" : "Perl4-CoreLibs",
+         "installed" : 56711,
+         "package" : "libperl4-corelibs-perl",
+         "rank" : 1955,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "XML-SAX-Expat"
+         ],
+         "distribution" : "XML-SAX-Expat",
+         "installed" : 55863,
+         "package" : "libxml-sax-expat-perl",
+         "rank" : 1974,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Proc-ProcessTable"
+         ],
+         "distribution" : "Proc-ProcessTable",
+         "installed" : 55360,
+         "package" : "libproc-processtable-perl",
+         "rank" : 1981,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Params-Classify"
+         ],
+         "distribution" : "Params-Classify",
+         "installed" : 53817,
+         "package" : "libparams-classify-perl",
+         "rank" : 2001,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Module-Runtime"
+         ],
+         "distribution" : "Module-Runtime",
+         "installed" : 53796,
+         "package" : "libmodule-runtime-perl",
+         "rank" : 2002,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "B-Hooks-OP-Check"
+         ],
+         "distribution" : "B-Hooks-OP-Check",
+         "installed" : 52508,
+         "package" : "libb-hooks-op-check-perl",
+         "rank" : 2026,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "DynaLoader-Functions"
+         ],
+         "distribution" : "DynaLoader-Functions",
+         "installed" : 52264,
+         "package" : "libdynaloader-functions-perl",
+         "rank" : 2028,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Devel-CallChecker"
+         ],
+         "distribution" : "Devel-CallChecker",
+         "installed" : 52232,
+         "package" : "libdevel-callchecker-perl",
+         "rank" : 2030,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Module-Implementation"
+         ],
+         "distribution" : "Module-Implementation",
+         "installed" : 51672,
+         "package" : "libmodule-implementation-perl",
+         "rank" : 2046,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Install"
+         ],
+         "distribution" : "Sub-Install",
+         "installed" : 51106,
+         "package" : "libsub-install-perl",
+         "rank" : 2067,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Data-OptList"
+         ],
+         "distribution" : "Data-OptList",
+         "installed" : 51042,
+         "package" : "libdata-optlist-perl",
+         "rank" : 2068,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Socket6"
+         ],
+         "distribution" : "Socket6",
+         "installed" : 50847,
+         "package" : "libsocket6-perl",
+         "rank" : 2072,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Exporter"
+         ],
+         "distribution" : "Sub-Exporter",
+         "installed" : 50656,
+         "package" : "libsub-exporter-perl",
+         "rank" : 2077,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Class-Method-Modifiers"
+         ],
+         "distribution" : "Class-Method-Modifiers",
+         "installed" : 50448,
+         "package" : "libclass-method-modifiers-perl",
+         "rank" : 2085,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Role-Tiny"
+         ],
+         "distribution" : "Role-Tiny",
+         "installed" : 50369,
+         "package" : "librole-tiny-perl",
+         "rank" : 2087,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Params-Util"
+         ],
+         "distribution" : "Params-Util",
+         "installed" : 49743,
+         "package" : "libparams-util-perl",
+         "rank" : 2099,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Exporter-Progressive"
+         ],
+         "distribution" : "Sub-Exporter-Progressive",
+         "installed" : 49284,
+         "package" : "libsub-exporter-progressive-perl",
+         "rank" : 2115,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Package-Stash"
+         ],
+         "distribution" : "Package-Stash",
+         "installed" : 49064,
+         "package" : "libpackage-stash-perl",
+         "rank" : 2119,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Class-XSAccessor"
+         ],
+         "distribution" : "Class-XSAccessor",
+         "installed" : 48918,
+         "package" : "libclass-xsaccessor-perl",
+         "rank" : 2121,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Quote"
+         ],
+         "distribution" : "Sub-Quote",
+         "installed" : 48799,
+         "package" : "libsub-quote-perl",
+         "rank" : 2124,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Sub-Identify"
+         ],
+         "distribution" : "Sub-Identify",
+         "installed" : 48697,
+         "package" : "libsub-identify-perl",
+         "rank" : 2129,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Variable-Magic"
+         ],
+         "distribution" : "Variable-Magic",
+         "installed" : 48694,
+         "package" : "libvariable-magic-perl",
+         "rank" : 2130,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "B-Hooks-EndOfScope"
+         ],
+         "distribution" : "B-Hooks-EndOfScope",
+         "installed" : 48675,
+         "package" : "libb-hooks-endofscope-perl",
+         "rank" : 2131,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "namespace-clean"
+         ],
+         "distribution" : "namespace-clean",
+         "installed" : 48667,
+         "package" : "libnamespace-clean-perl",
+         "rank" : 2132,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Package-Stash-XS"
+         ],
+         "distribution" : "Package-Stash-XS",
+         "installed" : 47676,
+         "package" : "libpackage-stash-xs-perl",
+         "rank" : 2157,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Text-Glob"
+         ],
+         "distribution" : "Text-Glob",
+         "installed" : 45922,
+         "package" : "libtext-glob-perl",
+         "rank" : 2205,
+         "status" : "installed"
+      },
+      {
+         "candidates" : [
+            "Number-Compare"
+         ],
+         "distribution" : "Number-Compare",
+         "installed" : 45647,
+         "package" : "libnumber-compare-perl",
+         "rank" : 2215,
+         "status" : "installed"
+      }
+   ],
+   "schema" : 1,
+   "selection" : "The first 100 lib*-perl packages ordered by installed systems",
+   "source" : "https://popcon.debian.org/by_inst",
+   "xperl_version" : "v5.45.5"
+}
