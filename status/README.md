@@ -50,7 +50,10 @@ affects observations that have no platform. A result describes the platform
 it was observed on; it is not a claim for other platforms.
 
 New receipts include a build identity and its configuration, including the
-reference-counted stack, threads, debugging, long double, and quadmath.
+reference-counted stack, threads, debugging, long double, quadmath, and shared
+`libperl`. Static and shared embedding libraries have distinct build IDs,
+even when their ordinary compiler flags are identical. An older record
+without the shared-library field leaves that setting unknown.
 The summary separates results with different build identities. Older receipts
 without a build identity stay separate; their missing configuration is unknown.
 The summary shows the patch digests tested by each result. A successful result

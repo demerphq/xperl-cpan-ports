@@ -400,8 +400,8 @@ sub platform ($platform) {
             grep { exists $build->{$_} }
             qw(schema xperl_commit useithreads usemultiplicity use64bitall
                use64bitint usemymalloc flags_sha256 nvtype
-               uselongdouble usequadmath debugging rc_stack ptrsize ivsize
-               nvsize byteorder compiler_version) };
+               uselongdouble usequadmath useshrplib debugging rc_stack
+               ptrsize ivsize nvsize byteorder compiler_version) };
     }
     return $result;
 }

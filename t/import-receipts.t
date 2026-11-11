@@ -224,7 +224,7 @@ make_path($stack_dir);
 $receipt->{status} = 'failed';
 $receipt->{phases} = [{ name => 'test', exit_status => 1 }];
 $receipt->{platform}{build_id} = 'd' x 64;
-$receipt->{platform}{build} = { schema => 1, rc_stack => 1 };
+$receipt->{platform}{build} = { schema => 1, rc_stack => 1, useshrplib => 0 };
 write_json(File::Spec->catfile($stack_dir, 'receipt.json'), $receipt);
 is(system($^X, $script, '--cache', File::Spec->catdir($root, 'stack')),
    0, 'reference-counted stack result imports');
@@ -233,11 +233,32 @@ my ($stack_result) = grep { ($_->{platform}{build_id} // '') eq 'd' x 64 }
     @{$repair_status->{observations}};
 is($stack_result->{platform}{build}{rc_stack}, 1,
    'build configuration survives receipt import');
+is($stack_result->{platform}{build}{useshrplib}, 0,
+   'a static embedding library remains explicitly false after import');
 $summary = read_file(File::Spec->catfile($root, 'status', 'SUMMARY.md'));
 like($summary, qr/Example-Repair.*darwin\/darwin-2level\/d{64}.*failed/,
      'stack result has its own status row');
 like($summary, qr/Example-Repair.*darwin\/darwin-2level \| installed/,
      'earlier result remains separately visible');
+
+# A shared embedding library can link where the static build cannot.
+# Keep that result separate even when the rest of the profile is identical.
+my $shared_dir = File::Spec->catdir($root, 'shared', 'work', 'release-g');
+make_path($shared_dir);
+$receipt->{status} = 'installed';
+$receipt->{phases} = [{ name => 'test', exit_status => 0 }];
+$receipt->{platform}{build_id} = 'e' x 64;
+$receipt->{platform}{build}{useshrplib} = 1;
+write_json(File::Spec->catfile($shared_dir, 'receipt.json'), $receipt);
+is(system($^X, $script, '--cache', File::Spec->catdir($root, 'shared')),
+   0, 'shared-library result imports');
+$repair_status = JSON::PP->new->decode(read_file($repair_path));
+my ($shared_result) = grep { ($_->{platform}{build_id} // '') eq 'e' x 64 }
+    @{$repair_status->{observations}};
+is($shared_result->{platform}{build}{useshrplib}, 1,
+   'shared-library configuration survives receipt import');
+is(scalar @{$repair_status->{observations}}, 3,
+   'unprofiled, static and shared results remain distinct');
 done_testing();
 
 sub write_json {
