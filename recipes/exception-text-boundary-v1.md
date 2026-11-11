@@ -28,6 +28,15 @@ sends the result as JSON. On XPerl `Cpanel::JSON::XS` refuses to encode the
 exception object, so the client gets an empty body instead of the error.
 Stringifying `$@` where the error hash is built is enough.
 
+At a foreign-language boundary, preserve the target language's error
+contract. JavaScript::QuickJS 0.21 converts ordinary Perl string exceptions
+into JavaScript strings, but its general object converter rejects an
+`XPerl::Exception` and warns. Its repair recognizes that exception class
+under `XPERL_VERSION` and renders it as UTF-8 before constructing the
+JavaScript string. Other Perl exception objects keep their existing
+conversion behavior. Regression tests check both the JavaScript type and
+the resulting text.
+
 Patching a module can also start an author-only build rule. Its `Makefile.PL`
 regenerates `README.md` from the module with `pod2markdown` whenever the `.pm`
 is newer, and a patched file always is. The patch set limits that rule to a

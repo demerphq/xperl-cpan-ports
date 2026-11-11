@@ -505,7 +505,10 @@
             "data/84/FELIPE/JavaScript-QuickJS/patches/repair-v5.45.5-0.21-98a961adafbc.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "xs-optional-arguments-v1",
+            "exception-text-boundary-v1"
+         ],
          "version" : "0.21"
       },
       {
