@@ -1,0 +1,28 @@
+{
+   "distribution" : "SDL",
+   "releases" : [
+      {
+         "cpan_path" : "F/FR/FROGGS/SDL-2.548.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-2.548-44a55a1afdf9.patch",
+                     "sha256" : "44a55a1afdf9b0d1e07079ef8fc3a965ee33299d467063884cf3012714ef0c04"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "252a192bfa9c2070a4883707d139c3a45d9c4518ccd66a1e699b5b7959bd4fb5",
+         "version" : "2.548"
+      }
+   ],
+   "schema" : 1
+}

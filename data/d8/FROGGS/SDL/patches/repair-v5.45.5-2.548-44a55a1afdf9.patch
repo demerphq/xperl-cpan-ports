@@ -1,0 +1,51 @@
+--- a/src/SDLx/Controller/Interface.xs
++++ b/src/SDLx/Controller/Interface.xs
+@@ -57,15 +57,15 @@
+ 
+ 	SV *temp;
+ 	temp           = av_pop(accel);
+-	out->dv_x      = sv_nv(temp);
++	out->dv_x      = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	temp           = av_pop(accel);
+-	out->dv_y      = sv_nv(temp);
++	out->dv_y      = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	temp           = av_pop(accel);
+-	out->dang_v    = sv_nv(temp);
++	out->dang_v    = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	SvREFCNT_dec((SV *)accel);
+@@ -90,15 +90,15 @@
+ 
+ 	SV *temp;
+ 	temp           = av_pop(accel);
+-	out->dv_x      = sv_nv(temp);
++	out->dv_x      = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	temp           = av_pop(accel);
+-	out->dv_y      = sv_nv(temp);
++	out->dv_y      = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	temp           = av_pop(accel);
+-	out->dang_v    = sv_nv(temp);
++	out->dang_v    = SvNVx(temp);
+ 	SvREFCNT_dec(temp);
+ 
+ 	SvREFCNT_dec((SV *)accel);
+--- a/t/00-load.t
++++ b/t/00-load.t
+@@ -1,7 +1,7 @@
+ use strict;
+ use warnings;
+ use Test::Most 'bail';
+-use File::Spec 'catfile';
++use File::Spec;
+ 
+ BEGIN {
+ 	my @modules = qw /
