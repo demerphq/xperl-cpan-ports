@@ -33,7 +33,6 @@ Prior failures remain in each distribution record after a later success.
 | GONZUS | [Devel-QuickCover](../data/6f/GONZUS/Devel-QuickCover/status.json) | 0.900014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | GONZUS | [JavaScript-V8-XS](../data/f7/GONZUS/JavaScript-V8-XS/status.json) | 0.000014 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | GONZUS | [Parser-GraphQL-XS](../data/21/GONZUS/Parser-GraphQL-XS/status.json) | 0.000004 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
-| GUILLEM | [Dpkg](../data/87/GUILLEM/Dpkg/status.json) | 1.23.9 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | repair | Files=60, Tests=13252, Failed 1/60 test programs. 123/13252 subtests failed. |
 | HAARG | [Module-Reader](../data/42/HAARG/Module-Reader/status.json) | 0.003003 | v5.45.5 | linux/x86_64-linux | test | Files=3, Tests=119, Failed 1/3 test programs. 12/119 subtests failed. |
 | HAKONH | [Math-GSL](../data/8a/HAKONH/Math-GSL/status.json) | 0.49 | v5.45.5 | linux/x86_64-linux | test | Files=58, Tests=2, Failed 57/58 test programs. 1/2 subtests failed. |
 | HARDAKER | [NetSNMP-default_store](../data/37/HARDAKER/NetSNMP-default_store/status.json) | 5.0404 | v5.45.5 | linux/x86_64-linux | configure | exit 2 |

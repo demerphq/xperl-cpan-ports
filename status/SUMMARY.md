@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 95 of 4114 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 94 of 4114 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1378,7 +1378,7 @@ Unresolved failures: 95 of 4114 release, XPerl, and platform combinations. See [
 | GUGOD | [Hijk](../data/79/GUGOD/Hijk/status.json) | 0.28 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | GUGOD | [Template-Plugin-CSV](../data/3f/GUGOD/Template-Plugin-CSV/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GUIDO | [Data-Walk](../data/a5/GUIDO/Data-Walk/status.json) | 2.01 | v5.45.5 | darwin/darwin-2level | installed | none | none |
-| GUILLEM | [Dpkg](../data/87/GUILLEM/Dpkg/status.json) | 1.23.9 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
+| GUILLEM | [Dpkg](../data/87/GUILLEM/Dpkg/status.json) | 1.23.9 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | build-test-v1 | 786e3bf371d24f5e32822c80339a4a0a7e460bb87b290190dcc26f611e879d85 |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
