@@ -58,6 +58,151 @@
          "status" : "failed",
          "version" : "1.446",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "F/FR/FROGGS/Alien-SDL-1.446.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "configure"
+         },
+         "id" : "3fde966a176dd5481310f6f945bc7f57d7a61eecfe2d9d8f0d55134af8fa660c",
+         "module" : "Alien::SDL",
+         "observed_at" : "2026-11-11T23:07:35Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "16fa203d182808929e0928d4678f502d1c067c9af6b4c1dd0fbf52eb0307faab"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 255,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 1,
+               "name" : "build"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 4,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 4,
+               "exit_status" : 1,
+               "name" : "build"
+            },
+            {
+               "attempt" : 4,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 5,
+               "exit_status" : 2,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 5,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 6,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 6,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 6,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 6,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "c9aa2c9dc3c63d89773c7d7203f2a46d1b924d0c72d9f801af147a3dc8bc512a",
+         "status" : "installed",
+         "test_summary" : "Files=11, Tests=88",
+         "version" : "1.446",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

@@ -1,0 +1,681 @@
+--- a/Build.PL
++++ b/Build.PL
+@@ -7,9 +7,7 @@
+ use My::Utility qw(check_config_script check_prebuilt_binaries check_prereqs_libs check_prereqs_tools $source_packs
+                    check_perl_buildlibs);
+ 
+-use Getopt::Long;
+ my ( $ans, $travis ) = 0;
+-GetOptions( "travis" => \$travis );
+ 
+ print "Welcome to Alien::SDL module installation\n";
+ print "-----------------------------------------\n";
+@@ -98,7 +96,10 @@
+       repository => 'http://github.com/PerlGameDev/Alien-SDL'
+     }
+   },
+-  get_options => { 'with-sdl-config' => { qw(type :s  store) => \$sdl_config } },
++  get_options => {
++    'with-sdl-config' => { qw(type :s  store) => \$sdl_config },
++    'travis'          => { store => \$travis },
++  },
+   dynamic_config => 1,
+   create_readme => 1,
+   share_dir => 'sharedir',
+--- a/Changes
++++ b/Changes
+@@ -5,6 +5,19 @@
+ TODO
+      - check for available libs when using --with-sdl-config option
+ 
++Unreleased
++     - let Module::Build parse --travis with --with-sdl-config and installation
++       options, preserving their values (Debian fix-build-option, SDL issue #272)
++     - try remaining download mirrors after a checksum mismatch, removing
++       rejected archives and preserving the pinned digest (SDL issue #301)
++     - search Perl's configured library paths after each fixed directory,
++       detecting multiarch pthread installations so SDL is built before its
++       add-on libraries (Alien-SDL issue #8)
++     - fall back to pkg-config freetype2 when SDL_ttf cannot find
++       freetype-config, preserving legacy and explicit tool selection
++     - check listed source files without traversing generated library
++       symlinks, allowing configuration to run again after building
++
+ 1.446 Sat Feb 21 2015
+      - fix build on OS X Mavericks (missing symbol CGDirectPaletteRef) [FROGGS]
+      - build fix on Windows Strawberry Perl 5.20.+ [kmx]
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -38,6 +38,8 @@
+ patches/SDL_mixer-1.2.12-cygwin.patch
+ patches/SDL_mixer-1.2.12-native-midi-win32.patch
+ patches/SDL_mixer-1.2.8-native-midi-win32.patch
++patches/SDL_ttf-2.0.11-freetype-pkgconfig.1.patch
++patches/SDL_ttf-2.0.11-freetype-pkgconfig.2.patch
+ patches/SDL_Pango-0.1.2-API-adds.1.patch
+ patches/SDL_Pango-0.1.2-API-adds.2.patch
+ patches/SDL_Pango-0.1.2-config-tools.1.patch
+@@ -52,6 +54,11 @@
+ t/002_config.t
+ t/003_check_header.t
+ t/004_get_header_version.t
++t/005_build_options.t		Build option parsing regression test
++t/006_fetch_file.t		Download checksum and mirror fallback regression test
++t/007_library_search.t		Configured library path regression test
++t/008_freetype_config.t		SDL_ttf FreeType configuration regression test
++t/009_manifest.t			Manifest check with generated symlink chains
+ t/release-pod-coverage.t
+ t/release-pod-syntax.t
+ TODO
+--- a/inc/My/Builder.pm
++++ b/inc/My/Builder.pm
+@@ -24,6 +24,22 @@
+ 	return 1;
+ };
+ 
++sub check_manifest {
++  my $self = shift;
++  return unless -e 'MANIFEST';
++  require ExtUtils::Manifest;
++
++  # Check the source list directly. A recursive scan follows generated
++  # library symlink chains and can die when configuration is run again.
++  my $manifest = ExtUtils::Manifest::maniread();
++  my @missing = grep { !-f $_ && !-l $_ } sort keys %$manifest;
++  if (@missing) {
++    $self->log_warn("WARNING: the following files are missing in your kit:\n",
++      "\t", join("\n\t", @missing), "\n",
++      "Please inform the author.\n\n");
++  }
++}
++
+ sub ACTION_build {
+   my $self = shift;
+   # as we want to wipe 'sharedir' during 'Build clean' we has
+@@ -145,22 +161,25 @@
+     unlink $fn; #exists but wrong checksum
+   }
+ 
+-  my $fullpath;
++  my $checksum_failed = 0;
+   foreach my $current_url (@{$url})
+   {
+     die "###ERROR### _fetch_file undefined url\n" unless $current_url;
+     print "Fetching '$current_url'...\n";
+     $ff = File::Fetch->new(uri => $current_url);
+-    $fullpath = $ff->fetch(to => $download);
+-    last if $fullpath;
+-  }
+-  die "###ERROR### Unable to fetch '$ff->file'" unless $fullpath;
+-  if (-e $fn) {
++    my $fullpath = $ff->fetch(to => $download);
++    next unless $fullpath;
++    die "###ERROR### _fetch_file failed '$fn'" unless -e $fn;
+     print "Checking checksum for '$fn'...\n";
+     return 1 if $self->check_sha1sum($fn, $sha1sum);
+-    die "###ERROR### Checksum failed '$fn'";
++
++    # A successful transfer can contain a changed archive or an error page.
++    # Remove it so the next mirror can supply the pinned archive.
++    $checksum_failed = 1;
++    unlink $fn or die "###ERROR### Cannot remove '$fn': $!";
+   }
+-  die "###ERROR### _fetch_file failed '$fn'";
++  die "###ERROR### Checksum failed '$fn' (all mirrors exhausted)" if $checksum_failed;
++  die "###ERROR### Unable to fetch '$fn'";
+ }
+ 
+ sub fetch_binaries {
+--- a/inc/My/Builder/Unix.pm
++++ b/inc/My/Builder/Unix.pm
+@@ -223,7 +223,7 @@
+     $cmd = "LD_LIBRARY_PATH=\"$escaped_prefixdir/lib:\$LD_LIBRARY_PATH\" $cmd";
+   }
+ 
+-  if($pack eq 'vorbis') {
++  if($pack eq 'vorbis' || $pack eq 'SDL_ttf') {
+     $cmd = "PKG_CONFIG_PATH=\"$escaped_prefixdir/lib/pkgconfig:\$PKG_CONFIG_PATH\" $cmd";
+   }
+ 
+--- a/inc/My/Utility.pm
++++ b/inc/My/Utility.pm
+@@ -275,7 +275,10 @@
+           'http://froggs.de/libsdl/SDL_ttf-2.0.11.tar.gz',
+         ],
+         sha1sum  => '0ccf7c70e26b7801d83f4847766e09f09db15cc6',
+-        patches => [ ],
++        patches => [
++          'SDL_ttf-2.0.11-freetype-pkgconfig.1.patch',
++          'SDL_ttf-2.0.11-freetype-pkgconfig.2.patch',
++        ],
+         prereqs => {
+           libs => [
+             'freetype', # SDL_ttf
+@@ -392,11 +395,20 @@
+     my $dlext = get_dlext();
+     foreach (keys %$inc_lib_candidates) {
+       my $ld = $inc_lib_candidates->{$_};
+-      next unless -d $_ && -d $ld;
+-      ($found_dll) = find_file($ld, qr/[\/\\]lib\Q$lib\E[\-\d\.]*\.($dlext[\d\.]*|so|dll)$/);
+-      $found_dll   = $1 if $found_dll && $found_dll =~/^(.+($dlext|so|dll))/ && -e $1;
+-      ($found_lib) = find_file($ld, qr/[\/\\]lib\Q$lib\E[\-\d\.]*\.($dlext[\d\.]*|a|dll.a)$/);
++      next unless -d $_;
+       ($found_inc) = find_file($_,  qr/[\/\\]\Q$header\E[\-\d\.]*\.h$/);
++      next unless $found_inc;
++
++      # Perl's library paths include multiarch directories that the fixed
++      # include/library pairs can miss. Try the paired directory first.
++      my %seen;
++      foreach my $libdir ($ld, split /\s+/, ($Config{libpth} || '')) {
++        next unless defined $libdir && -d $libdir && !$seen{$libdir}++;
++        ($found_dll) = find_file($libdir, qr/[\/\\]lib\Q$lib\E[\-\d\.]*\.($dlext[\d\.]*|so|dll)$/);
++        $found_dll   = $1 if $found_dll && $found_dll =~/^(.+($dlext|so|dll))/ && -e $1;
++        ($found_lib) = find_file($libdir, qr/[\/\\]lib\Q$lib\E[\-\d\.]*\.($dlext[\d\.]*|a|dll.a)$/);
++        last if $found_lib;
++      }
+       last if $found_lib && $found_inc;
+     }
+ 
+--- /dev/null
++++ b/patches/SDL_ttf-2.0.11-freetype-pkgconfig.1.patch
+@@ -0,0 +1,16 @@
++--- SDL_ttf-2.0.11/configure.in
+++++ SDL_ttf-2.0.11/configure.in
++@@ -115,6 +115,13 @@
++ fi
++ AC_PATH_PROG(FREETYPE_CONFIG, freetype-config, no)
++ no_freetype=""
+++if test "$FREETYPE_CONFIG" = "no" ; then
+++    # FreeType 2.9.1 and later may omit freetype-config.
+++    if ${PKG_CONFIG:-pkg-config} --exists freetype2 2>/dev/null; then
+++        FREETYPE_CONFIG="${PKG_CONFIG:-pkg-config}"
+++        freetypeconf_args="freetype2"
+++    fi
+++fi
++ if test "$FREETYPE_CONFIG" = "no" ; then
++     AC_MSG_ERROR([
++ *** Unable to find FreeType2 library (http://www.freetype.org/)
+--- /dev/null
++++ b/patches/SDL_ttf-2.0.11-freetype-pkgconfig.2.patch
+@@ -0,0 +1,16 @@
++--- SDL_ttf-2.0.11/configure
+++++ SDL_ttf-2.0.11/configure
++@@ -12633,6 +12633,13 @@
++ 
++ 
++ no_freetype=""
+++if test "$FREETYPE_CONFIG" = "no" ; then
+++    # FreeType 2.9.1 and later may omit freetype-config.
+++    if ${PKG_CONFIG:-pkg-config} --exists freetype2 2>/dev/null; then
+++        FREETYPE_CONFIG="${PKG_CONFIG:-pkg-config}"
+++        freetypeconf_args="freetype2"
+++    fi
+++fi
++ if test "$FREETYPE_CONFIG" = "no" ; then
++     { { echo "$as_me:$LINENO: error:
++ *** Unable to find FreeType2 library (http://www.freetype.org/)
+--- /dev/null
++++ b/t/005_build_options.t
+@@ -0,0 +1,66 @@
++use strict;
++use warnings;
++
++use Test::More tests => 12;
++use Capture::Tiny qw(capture);
++use Cwd qw(abs_path getcwd);
++use File::Copy qw(copy);
++use File::Path qw(make_path);
++use File::Spec::Functions qw(catdir catfile);
++use File::Temp qw(tempdir);
++use Module::Build;
++
++my $source = abs_path('.');
++my $work = tempdir(CLEANUP => 1);
++make_path(catdir($work, 'lib', 'Alien'));
++copy('Build.PL', catfile($work, 'Build.PL')) or die "copy Build.PL: $!";
++copy(catfile('lib', 'Alien', 'SDL.pm'), catfile($work, 'lib', 'Alien', 'SDL.pm'))
++  or die "copy SDL.pm: $!";
++
++my $config = catfile($work, 'sdl-config.pl');
++open my $fh, '>', $config or die "open $config: $!";
++print {$fh} <<'CONFIG';
++use strict;
++use warnings;
++if ($ARGV[0] eq '--version') { print "1.2.15\n" }
++elsif ($ARGV[0] eq '--prefix') { print ".\n" }
++else { die "Unexpected sdl-config argument: @ARGV\n" }
++CONFIG
++close $fh or die "close $config: $!";
++
++my $script = qq{"$^X" "$config"};
++my @paths = map { catfile($work, $_) } qw(arch bin bindoc lib libdoc script);
++my @install_options;
++my @types = qw(arch bin bindoc lib libdoc script);
++for my $i (0 .. $#types) {
++  push @install_options, '--install_path', "$types[$i]=$paths[$i]";
++}
++
++my $cwd = getcwd();
++chdir $work or die "chdir $work: $!";
++my ($out, $err, $status) = capture {
++  system($^X, '-I' . catdir($source, 'inc'), 'Build.PL',
++    '--installdirs', 'site', @install_options,
++    '--with-sdl-config=' . $script, '--travis');
++};
++is($status, 0, 'Build.PL accepts custom and standard build options together');
++unlike($out . $err, qr/Unknown option|Too early to specify a build action/,
++  'option parsing produces no rejected options or spurious build action');
++ok(-f 'Build', 'configuration creates the build script');
++diag($out . $err) if $status;
++
++SKIP: {
++  skip 'configuration failed', 9 if $status || !-f 'Build';
++  local @INC = (catdir($source, 'inc'), @INC);
++  local @ARGV = ();
++  my $build = Module::Build->resume;
++  is($build->installdirs, 'site', 'installdirs value is preserved');
++  for my $i (0 .. $#types) {
++    is($build->install_path($types[$i]), $paths[$i],
++      "install_path for $types[$i] is preserved");
++  }
++  is($build->notes('build_params')->{script}, $script,
++    'explicit sdl-config command is preserved');
++  is(${$build->get_options->{travis}->{store}}, 1, 'travis flag is preserved');
++}
++chdir $cwd or die "chdir $cwd: $!";
+--- /dev/null
++++ b/t/006_fetch_file.t
+@@ -0,0 +1,92 @@
++use strict;
++use warnings;
++
++use Test::More tests => 20;
++use Capture::Tiny qw(capture);
++use Digest::SHA qw(sha1_hex);
++use File::Spec::Functions qw(catfile);
++use File::Temp qw(tempdir);
++use lib 'inc';
++use My::Builder;
++
++my $builder = bless {}, 'My::Builder';
++my $download = tempdir(CLEANUP => 1);
++my $file = catfile($download, 'archive.tar.gz');
++my @urls = map { "http://example.invalid/$_/archive.tar.gz" } qw(first second third);
++my $good = "expected archive\n";
++my $bad = "changed archive\n";
++my $digest = sha1_hex($good);
++my (@tried, %payload);
++
++sub write_file {
++  my ($path, $content) = @_;
++  open my $fh, '>', $path or die "open $path: $!";
++  binmode $fh;
++  print {$fh} $content or die "write $path: $!";
++  close $fh or die "close $path: $!";
++}
++
++sub fetch {
++  my ($urls) = @_;
++  @tried = ();
++  my ($result, $error);
++  my ($out, $err) = capture {
++    $result = eval { $builder->fetch_file($urls, $digest, $download) };
++    $error = $@;
++  };
++  return ($result, $error);
++}
++
++{
++  no warnings 'redefine';
++  local *File::Fetch::fetch = sub {
++    my ($ff, %args) = @_;
++    my $url = $ff->uri;
++    push @tried, $url;
++    return unless defined $payload{$url};
++    my $path = catfile($args{to}, $ff->file);
++    write_file($path, $payload{$url});
++    return $path;
++  };
++
++  write_file($file, $good);
++  my ($ok, $error) = fetch(\@urls);
++  ok($ok, 'valid cached archive is accepted');
++  is($error, '', 'valid cache does not raise an error');
++  is_deeply(\@tried, [], 'valid cache avoids all transfers');
++
++  write_file($file, $bad);
++  %payload = ($urls[0] => $bad, $urls[1] => $good, $urls[2] => $bad);
++  ($ok, $error) = fetch(\@urls);
++  ok($ok, 'valid mirror replaces corrupt cache and corrupt first download');
++  is($error, '', 'checksum mismatch does not prevent mirror fallback');
++  is_deeply(\@tried, [@urls[0, 1]], 'stops after the first verified mirror');
++  ok($builder->check_sha1sum($file, $digest), 'cached replacement matches pinned digest');
++
++  unlink $file or die "unlink $file: $!";
++  %payload = ($urls[1] => $bad, $urls[2] => $good);
++  ($ok, $error) = fetch(\@urls);
++  ok($ok, 'transport failure and checksum failure both allow fallback');
++  is($error, '', 'mixed failures do not reject a later valid mirror');
++  is_deeply(\@tried, \@urls, 'tries all mirrors when needed');
++
++  unlink $file or die "unlink $file: $!";
++  %payload = map { $_ => $bad } @urls;
++  ($ok, $error) = fetch(\@urls);
++  ok(!$ok, 'all corrupt mirrors fail');
++  like($error, qr/Checksum failed/, 'reports checksum failure after exhausting mirrors');
++  is_deeply(\@tried, \@urls, 'checks every corrupt mirror');
++  ok(!-e $file, 'rejected download is removed from cache');
++
++  %payload = ();
++  ($ok, $error) = fetch(\@urls);
++  ok(!$ok, 'all unavailable mirrors fail');
++  like($error, qr/Unable to fetch/, 'reports transport failure');
++  is_deeply(\@tried, \@urls, 'tries every unavailable mirror');
++
++  %payload = map { $_ => $good } @urls;
++  ($ok, $error) = fetch(\@urls);
++  ok($ok, 'valid first download succeeds');
++  is($error, '', 'valid first download has no error');
++  is_deeply(\@tried, [$urls[0]], 'valid first download avoids later mirrors');
++}
+--- /dev/null
++++ b/t/007_library_search.t
+@@ -0,0 +1,70 @@
++use strict;
++use warnings;
++
++use Test::More tests => 12;
++use Capture::Tiny qw(capture);
++use File::Path qw(make_path);
++use File::Spec::Functions qw(catdir catfile);
++use File::Temp qw(tempdir);
++use lib 'inc';
++use My::Utility qw(check_prereqs_libs);
++
++my $work = tempdir(CLEANUP => 1);
++my $include = catdir($work, 'include');
++my $preferred = catdir($work, 'lib64');
++my $multiarch = catdir($work, 'lib', 'test-multiarch');
++make_path($include, $preferred, $multiarch);
++
++sub write_file {
++  my ($file) = @_;
++  open my $fh, '>', $file or die "open $file: $!";
++  print {$fh} "test fixture\n";
++  close $fh or die "close $file: $!";
++}
++
++sub detect {
++  my ($name) = @_;
++  my $result;
++  capture { $result = check_prereqs_libs($name) };
++  return $result;
++}
++
++my %config = (%My::Utility::Config, libpth => "$multiarch $preferred $multiarch");
++local *My::Utility::Config = \%config;
++local *My::Utility::get_dlext = sub { 'so' };
++local $My::Utility::inc_lib_candidates = {$include => $preferred};
++write_file(catfile($include, 'pthread.h'));
++write_file(catfile($multiarch, 'libpthread.a'));
++my $shared = catfile($multiarch, 'libpthread.so.0');
++write_file($shared);
++
++my $found = detect('pthread');
++ok($found->[0], 'finds pthread in a configured multiarch directory');
++is($found->[1], $shared, 'returns the configured shared library path');
++
++my $local_shared = catfile($preferred, 'libpthread.so');
++write_file(catfile($preferred, 'libpthread.a'));
++write_file($local_shared);
++$found = detect('pthread');
++ok($found->[0], 'finds pthread in the original preferred directory');
++is($found->[1], $local_shared, 'preferred directory takes precedence over Config');
++unlink catfile($preferred, 'libpthread.a') or die "unlink preferred libpthread.a: $!";
++unlink $local_shared or die "unlink preferred shared library: $!";
++
++$My::Utility::inc_lib_candidates->{$include} = catdir($work, 'absent');
++$found = detect('pthread');
++ok($found->[0], 'fallback works when the preferred directory does not exist');
++is($found->[1], $shared, 'fallback returns the configured shared library');
++
++unlink catfile($include, 'pthread.h') or die "unlink pthread.h: $!";
++ok(!detect('pthread')->[0], 'a library without its header is rejected');
++write_file(catfile($include, 'pthread.h'));
++unlink catfile($multiarch, 'libpthread.a') or die "unlink libpthread.a: $!";
++ok(detect('pthread')->[0], 'a versioned shared library with its header is sufficient');
++unlink $shared or die "unlink $shared: $!";
++ok(!detect('pthread')->[0], 'a header without its library is rejected');
++write_file(catfile($multiarch, 'libpthread.a'));
++$found = detect('pthread');
++ok($found->[0], 'a static link library with its header is sufficient');
++ok(!defined $found->[1], 'a static library is not reported as a runtime library');
++ok(!detect('missing')->[0], 'a missing library is rejected');
+--- /dev/null
++++ b/t/008_freetype_config.t
+@@ -0,0 +1,137 @@
++use strict;
++use warnings;
++
++use Test::More;
++use Capture::Tiny qw(capture);
++use Cwd qw(abs_path getcwd);
++use File::Path qw(make_path);
++use File::Spec::Functions qw(catdir catfile);
++use File::Temp qw(tempdir);
++use lib 'inc';
++use My::Builder;
++use My::Utility qw($source_packs);
++
++plan skip_all => 'Unix source-build regression' if $^O eq 'MSWin32';
++my $source = abs_path('.');
++my $download = catdir($source, 'download');
++my $archive = catfile($download, 'SDL_ttf-2.0.11.tar.gz');
++plan skip_all => 'SDL_ttf source archive is not cached' unless -f $archive;
++
++my ($pack) = grep { $_->{pack} eq 'SDL_ttf' }
++  map { @{$_->{members}} } @$source_packs;
++my $builder = bless {}, 'My::Builder';
++plan skip_all => 'SDL_ttf source archive does not match the pinned digest'
++  unless $builder->check_sha1sum($archive, $pack->{sha1sum});
++plan tests => 21;
++
++my $work = tempdir(CLEANUP => 1);
++my $bin = catdir($work, 'bin');
++my $native = catdir($work, 'src');
++make_path($bin, $native);
++
++sub write_file {
++  my ($file, $text) = @_;
++  open my $fh, '>', $file or die "open $file: $!";
++  print {$fh} $text or die "write $file: $!";
++  close $fh or die "close $file: $!";
++}
++
++{
++  no warnings qw(redefine once);
++  local *My::Builder::notes = sub { {members => [$pack]} };
++  local *My::Builder::base_dir = sub { $source };
++  capture { $builder->extract_sources($download, catdir($source, 'patches'), $native) };
++}
++my $src = catdir($native, $pack->{dirname});
++my @fragment;
++for my $file ('configure.in', 'configure') {
++  open my $fh, '<', catfile($src, $file) or die "open $file: $!";
++  local $/;
++  my $text = <$fh>;
++  ($fragment[@fragment]) = $text =~ /(no_freetype="".*?)(?=SDL_VERSION|dnl Check for SDL)/s;
++}
++# Regenerating configure from configure.in must preserve the fallback.
++my $fallback = qr/(if test "\$FREETYPE_CONFIG" = "no" ; then\n    # FreeType.*?\nfi)/s;
++my ($input) = $fragment[0] =~ $fallback;
++my ($output) = $fragment[1] =~ $fallback;
++ok(defined $input && defined $output && $input eq $output,
++  'configure input and shipped script contain the same fallback');
++
++my $pkg = <<'SH';
++#!/bin/sh
++case "$*" in
++  '--exists freetype2') test "$PKG_AVAILABLE" = 1 ;;
++  'freetype2 --cflags') echo "-DFREETYPE_FROM_${PKG_MARKER}" ;;
++  'freetype2 --libs') echo "-lfreetype_${PKG_MARKER}" ;;
++  --atleast-pkgconfig-version*) exit 0 ;;
++  *) exit 1 ;;
++esac
++SH
++for my $name ('pkg-config', 'target-pkg-config') {
++  my $path = catfile($bin, $name);
++  write_file($path, $pkg);
++  chmod 0755, $path or die "chmod $path: $!";
++}
++my $legacy = catfile($bin, 'selected-freetype-config');
++write_file($legacy, <<'SH');
++#!/bin/sh
++case "$1" in
++  --cflags) echo -DFREETYPE_FROM_LEGACY ;;
++  --libs) echo -lfreetype_LEGACY ;;
++  *) exit 1 ;;
++esac
++SH
++my $sdl = catfile($bin, 'sdl-config');
++write_file($sdl, <<'SH');
++#!/bin/sh
++case "$1" in
++  --version) echo 1.2.15 ;;
++  --cflags) echo -DSDL_FIXTURE ;;
++  --libs) echo -lSDL_fixture ;;
++  *) exit 1 ;;
++esac
++SH
++chmod 0755, $legacy, $sdl or die "chmod fixtures: $!";
++
++sub configure {
++  my ($name, $env) = @_;
++  my $build = catdir($work, $name);
++  make_path($build);
++  local %ENV = (%ENV, PATH => "$bin:$ENV{PATH}", SDL_CONFIG => $sdl,
++    PKG_AVAILABLE => 1, PKG_MARKER => 'PKG');
++  delete @ENV{qw(FREETYPE_CONFIG PKG_CONFIG ac_cv_path_FREETYPE_CONFIG)};
++  @ENV{keys %$env} = values %$env;
++  my $cwd = getcwd();
++  chdir $build or die "chdir $build: $!";
++  my ($out, $err, $status) = capture {
++    system('sh', catfile($src, 'configure'), '--disable-sdltest');
++  };
++  my $makefile = '';
++  if (open my $fh, '<', 'Makefile') { local $/; $makefile = <$fh> }
++  chdir $cwd or die "chdir $cwd: $!";
++  return ($status, $out . $err, $makefile);
++}
++
++for my $case (
++  ['default-pkg', {ac_cv_path_FREETYPE_CONFIG => 'no'}, 'PKG'],
++  ['override-pkg', {ac_cv_path_FREETYPE_CONFIG => 'no',
++    PKG_CONFIG => catfile($bin, 'target-pkg-config'), PKG_MARKER => 'TARGET'}, 'TARGET'],
++  ['legacy', {ac_cv_path_FREETYPE_CONFIG => $legacy, PKG_AVAILABLE => 0}, 'LEGACY'],
++  ['explicit', {FREETYPE_CONFIG => $legacy, PKG_AVAILABLE => 0}, 'LEGACY'],
++) {
++  my ($name, $env, $marker) = @$case;
++  my ($status, $log, $makefile) = configure($name, $env);
++  is($status, 0, "$name configures successfully") or diag $log;
++  like($makefile, qr/^CFLAGS = .*\Q-DFREETYPE_FROM_$marker\E/m, "$name uses selected include flags");
++  like($makefile, qr/^LIBS = .*\Q-lfreetype_$marker\E/m, "$name uses selected link flags");
++  unlike($log, qr/Unable to find FreeType2/, "$name passes FreeType detection");
++}
++for my $case (
++  ['no-metadata', {ac_cv_path_FREETYPE_CONFIG => 'no', PKG_AVAILABLE => 0}],
++  ['no-tool', {ac_cv_path_FREETYPE_CONFIG => 'no', PKG_CONFIG => catfile($bin, 'absent')}],
++) {
++  my ($name, $env) = @$case;
++  my ($status, $log) = configure($name, $env);
++  ok($status != 0, "$name rejects missing FreeType configuration");
++  like($log, qr/Unable to find FreeType2/, "$name reports the missing dependency");
++}
+--- /dev/null
++++ b/t/009_manifest.t
+@@ -0,0 +1,85 @@
++use strict;
++use warnings;
++
++use Test::More;
++use Capture::Tiny qw(capture);
++use Cwd qw(getcwd);
++use File::Path qw(make_path);
++use File::Spec::Functions qw(catdir catfile);
++use File::Temp qw(tempdir);
++use lib 'inc';
++use My::Builder;
++
++my $work = tempdir(CLEANUP => 1);
++my $cwd = getcwd();
++chdir $work or die "chdir $work: $!";
++
++sub write_file {
++  my ($file, $text) = @_;
++  open my $fh, '>', $file or die "open $file: $!";
++  print {$fh} $text or die "write $file: $!";
++  close $fh or die "close $file: $!";
++}
++
++sub configure {
++  my ($builder, $error);
++  my $dir = getcwd();
++  my ($out, $err) = capture {
++    $builder = eval { My::Builder->new(
++      module_name => 'Alien::SDL', dist_version => '1.446',
++      dist_abstract => 'Manifest regression fixture', license => 'perl',
++    ) };
++    $error = $@;
++  };
++  chdir $dir or die "chdir $dir: $!";
++  return ($builder, $error, $out . $err);
++}
++
++write_file('MANIFEST', "MANIFEST\nsource.txt\nempty.txt\n");
++write_file('source.txt', "source fixture\n");
++write_file('empty.txt', '');
++my ($builder, $error, $log) = configure();
++ok($builder, 'a complete kit configures') or diag $error . $log;
++unlike($log, qr/files are missing/, 'an empty source file counts as present');
++
++unlink 'source.txt' or die "unlink source.txt: $!";
++($builder, $error, $log) = configure();
++ok($builder, 'a missing source file remains a warning');
++like($log, qr/files are missing.*source\.txt/s, 'missing source file is reported');
++write_file('source.txt', "source fixture\n");
++unlink 'MANIFEST' or die "unlink MANIFEST: $!";
++($builder, $error, $log) = configure();
++ok($builder, 'configuration without MANIFEST succeeds');
++unlike($log, qr/files are missing/, 'absent MANIFEST does not warn about source files');
++write_file('MANIFEST', "MANIFEST\nsource.txt\nempty.txt\n");
++
++SKIP: {
++  my $lib = catdir('sharedir', 'fixture', 'lib');
++  make_path($lib);
++  my $middle = catfile($lib, 'libSDL_ttf.so.0');
++  my $alias = catfile($lib, 'libSDL_ttf.so');
++  my $target = catfile($lib, 'libSDL_ttf.so.0.10.1');
++  skip 'symbolic links are unavailable', 7
++    unless eval { symlink('libSDL_ttf.so.0.10.1', $middle) };
++  symlink('libSDL_ttf.so.0', $alias) or die "symlink $alias: $!";
++  write_file($target, "library fixture\n");
++  ($builder, $error, $log) = configure();
++  ok($builder, 'configuration accepts a generated library symlink chain')
++    or diag $error . $log;
++  is($error, '', 'generated links do not cause a traversal exception');
++
++  unlink $target or die "unlink $target: $!";
++  ($builder, $error, $log) = configure();
++  ok($builder, 'configuration accepts a stale generated library symlink chain')
++    or diag $error . $log;
++  is($error, '', 'dangling generated links do not cause a traversal exception');
++  unlike($log, qr/files are missing/, 'unlisted build artifacts are not source requirements');
++
++  write_file('MANIFEST', "MANIFEST\nsource.txt\nempty.txt\nmissing.txt\n");
++  ($builder, $error, $log) = configure();
++  ok($builder, 'stale generated links do not prevent the missing-file check');
++  like($log, qr/files are missing.*missing\.txt/s, 'missing source is reported with stale links present');
++}
++
++chdir $cwd or die "chdir $cwd: $!";
++done_testing;

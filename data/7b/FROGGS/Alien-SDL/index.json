@@ -1,0 +1,28 @@
+{
+   "distribution" : "Alien-SDL",
+   "releases" : [
+      {
+         "cpan_path" : "F/FR/FROGGS/Alien-SDL-1.446.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.446-16fa203d1828.patch",
+                     "sha256" : "16fa203d182808929e0928d4678f502d1c067c9af6b4c1dd0fbf52eb0307faab"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "c9aa2c9dc3c63d89773c7d7203f2a46d1b924d0c72d9f801af147a3dc8bc512a",
+         "version" : "1.446"
+      }
+   ],
+   "schema" : 1
+}
