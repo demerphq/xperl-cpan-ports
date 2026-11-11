@@ -492,6 +492,23 @@
          "version" : "0.9"
       },
       {
+         "author" : "FELIPE",
+         "distribution" : "JavaScript-QuickJS",
+         "evidence_paths" : [
+            "data/84/FELIPE/JavaScript-QuickJS/evidence/repair-v5.45.5-0.21-98a961adafbc.json"
+         ],
+         "index_path" : "data/84/FELIPE/JavaScript-QuickJS/index.json",
+         "native_files" : [
+            "QuickJS.xs"
+         ],
+         "patch_paths" : [
+            "data/84/FELIPE/JavaScript-QuickJS/patches/repair-v5.45.5-0.21-98a961adafbc.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.21"
+      },
+      {
          "author" : "MAF",
          "distribution" : "Net-ZooKeeper",
          "evidence_paths" : [],
