@@ -1,0 +1,28 @@
+{
+   "distribution" : "Wx",
+   "releases" : [
+      {
+         "cpan_path" : "M/MD/MDOOTSON/Wx-0.9932.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.9932-44198dd18ebc.patch",
+                     "sha256" : "44198dd18ebc61388242f81e4208d61b60088ead25f286bf7d02c0215f68de5f"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "1cfdb6535a0f4676e6f1aab2c9d8e16d577be3eb3b7cc04c8074d685e6651b70",
+         "version" : "0.9932"
+      }
+   ],
+   "schema" : 1
+}

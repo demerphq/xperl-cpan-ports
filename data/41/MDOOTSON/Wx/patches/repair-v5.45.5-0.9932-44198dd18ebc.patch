@@ -1,0 +1,215 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,17 @@
+ Revision history for Perl extension Wx.
+ 
++    - Keep declared wxWidgets libraries as direct dependencies on Linux
++      so RUNPATH locates indirect dependencies such as XRC's HTML library.
++    - Return failure instead of dereferencing a null pointer when loading
++      a plugin fails (Niko Tyni, Debian #758127).
++
++    - Include required headers explicitly for newer ExtUtils::ParseXS
++      INCLUDE ordering (Perl 5.44 and later). Adapted from Niko Tyni's
++      fix in Debian #1141461 and CPAN RT #179905.
++    - Omit wxColour::GetPixel on GTK3, where wxWidgets does not provide
++      it, and convert colour property values through wxAny to avoid an
++      ambiguous wxVariant constructor (Olly Betts, Debian gtk3.patch).
++
+ 0.9932 Tue Apr 18 2017
+     - fix build for Perl 5.25.11 ( . no longer in @INC )
+     - RT:121224 - fixes broken 0.9930 commit for keycode constants
+--- a/Wx.xs
++++ b/Wx.xs
+@@ -422,7 +422,10 @@
+ #endif
+ #endif
+     wxDynamicLibrary *lib = wxPluginManager::LoadLibrary( string, wxDL_VERBATIM );
+-    RETVAL = PTR2IV( lib->GetLibHandle() );
++    if( lib )
++        RETVAL = PTR2IV( lib->GetLibHandle() );
++    else
++        RETVAL = 0;
+   OUTPUT:
+     RETVAL
+ 
+--- a/XS/Animation.xsp
++++ b/XS/Animation.xsp
+@@ -15,6 +15,7 @@
+ #if WXPERL_W_VERSION_GE( 2, 7, 2 )
+ 
+ #include <wx/animate.h>
++#include "cpp/streams.h"
+ 
+ %name{Wx::Animation} class wxAnimation
+ {
+--- a/XS/Bitmap.xs
++++ b/XS/Bitmap.xs
+@@ -11,6 +11,7 @@
+ #############################################################################
+ 
+ #include <wx/bitmap.h>
++#include <wx/icon.h>
+ 
+ MODULE=Wx PACKAGE=Wx::Mask
+ 
+--- a/XS/Colour.xs
++++ b/XS/Colour.xs
+@@ -10,6 +10,8 @@
+ ##              modify it under the same terms as Perl itself
+ #############################################################################
+ 
++#include "cpp/overload.h"
++
+ MODULE=Wx PACKAGE=Wx::Colour
+ 
+ void
+@@ -114,7 +116,7 @@
+ 
+ #endif
+ 
+-#if !defined(__WXMAC__)
++#if !defined(__WXMAC__) && !defined(__WXGTK3__)
+ 
+ long
+ wxColour::GetPixel()
+--- a/XS/DirDialog.xs
++++ b/XS/DirDialog.xs
+@@ -11,6 +11,7 @@
+ #############################################################################
+ 
+ #include <wx/dirdlg.h>
++#include <wx/filedlg.h>
+ 
+ MODULE=Wx PACKAGE=Wx::DirDialog
+ 
+--- a/XS/Frame.xs
++++ b/XS/Frame.xs
+@@ -13,6 +13,7 @@
+ #include <wx/frame.h>
+ #include <wx/menu.h>
+ #include <wx/icon.h>
++#include <wx/toolbar.h>
+ #if wxPERL_USE_MINIFRAME
+ #include <wx/minifram.h>
+ #endif
+@@ -195,4 +196,4 @@
+   OUTPUT:
+     RETVAL
+ 
+-#endif
+\ No newline at end of file
++#endif
+--- a/XS/ImageList.xsp
++++ b/XS/ImageList.xsp
+@@ -11,6 +11,7 @@
+ #############################################################################
+ 
+ %{
++#include <wx/icon.h>
+ #include <wx/imaglist.h>
+ 
+ #define wxNullBitmapPtr (wxBitmap*) &wxNullBitmap
+--- a/XS/Log.xs
++++ b/XS/Log.xs
+@@ -10,6 +10,7 @@
+ ##              modify it under the same terms as Perl itself
+ #############################################################################
+ 
++#include <wx/frame.h>
+ #include <wx/log.h>
+ #include "cpp/log.h"
+ 
+--- a/XS/StaticLine.xs
++++ b/XS/StaticLine.xs
+@@ -13,6 +13,7 @@
+ MODULE=Wx PACKAGE=Wx::StaticLine
+ 
+ #include <wx/statline.h>
++#include <wx/stattext.h>
+ 
+ wxStaticLine*
+ wxStaticLine::new( parent, id = wxID_ANY, pos = wxDefaultPosition, size = wxDefaultSize, style = wxLI_HORIZONTAL, name = wxStaticTextNameStr )
+--- a/build/Wx/build/MakeMaker/Any_wx_config.pm
++++ b/build/Wx/build/MakeMaker/Any_wx_config.pm
+@@ -29,6 +29,10 @@
+   # used to be CCFLAGS, but overrode CCFLAGS from MakeMaker
+   $config{CC} .= ' ' . Alien::wxWidgets->c_flags . ' ';
+   $config{dynamic_lib}{OTHERLDFLAGS} .= Alien::wxWidgets->link_flags . ' ';
++  # Keep declared wxWidgets libraries as direct dependencies so RUNPATH
++  # finds them even when only another wxWidgets library uses their symbols.
++  $config{dynamic_lib}{OTHERLDFLAGS} .= '-Wl,--no-as-needed '
++    if $^O eq 'linux';
+   $config{DEFINE} .= Alien::wxWidgets->defines . ' ';
+   $config{INC} .= Alien::wxWidgets->include_path;
+ 
+--- a/docs/INSTALL.pod
++++ b/docs/INSTALL.pod
+@@ -182,6 +182,19 @@
+ either install them or disable STC/XRC passing --disable-stc --disable-xrc
+ to Makefile.PL.
+ 
++=head2 Problems loading XRC on Linux
++
++Linux builds retain the declared wxWidgets libraries as direct shared-library
++dependencies. This lets the extension's RUNPATH locate libraries installed
++by Alien::wxWidgets, including libraries used only by another wxWidgets
++library. With the linker's C<--as-needed> default, XRC's HTML and advanced
++libraries can otherwise be discarded from the extension's dependency list.
++
++After changing linker flags, run C<perl Makefile.PL> and C<make> again to
++relink the extensions. Use C<make test> with a working graphical display.
++Plugin load failures return failure to the caller instead of dereferencing
++a null library handle.
++
+ =head2 C++ compiler
+ 
+ wxPerl needs a C++ compiler to build. By default it will use
+--- a/ext/grid/XS/Grid.xs
++++ b/ext/grid/XS/Grid.xs
+@@ -11,6 +11,7 @@
+ #############################################################################
+ 
+ #include <wx/grid.h>
++#include <wx/pen.h>
+ #include "cpp/overload.h"
+ 
+ #if WXPERL_W_VERSION_GE( 2, 9, 0 )
+--- a/ext/propgrid/XS/PGProperty.xsp
++++ b/ext/propgrid/XS/PGProperty.xsp
+@@ -1148,7 +1148,7 @@
+     bool SetPlValue( wxColour* col, int flags = wxPG_SETVAL_REFRESH_EDITOR )
+       %code{%
+             if( col->IsOk() ) {
+-                wxVariant value = wxVariant(*col);
++                wxVariant value = wxVariant(wxAny(*col));
+                 THIS->SetValue(value, NULL, flags );
+                 RETVAL = true;
+             } else {
+--- a/t/01_load.t
++++ b/t/01_load.t
+@@ -1,7 +1,9 @@
+ #!/usr/bin/perl -w
+ 
+ use strict;
+-use Test::More tests => 6;
++use Test::More tests => 7;
++use File::Spec;
++use File::Temp qw(tempdir);
+ 
+ BEGIN { use_ok 'Wx' }
+ 
+@@ -26,6 +28,14 @@
+ eval "Wx::wxNO_SUCH_CONSTANT()";
+ ok( $@, "Error autoloading missing constant: $@" );
+ 
++SKIP: {
++  skip 'Plugin loading is unavailable', 1 unless Wx->can( '_load_plugin' );
++  my $directory = tempdir( CLEANUP => 1 );
++  my $missing = File::Spec->catfile( $directory, 'missing-plugin' );
++  my $nolog = Wx::LogNull->new;
++  is( Wx::_load_plugin( $missing ), 0, 'Missing plugin returns failure' );
++}
++
+ # Local variables: #
+ # mode: cperl #
+ # End: #

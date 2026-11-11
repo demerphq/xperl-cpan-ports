@@ -1,0 +1,151 @@
+{
+   "date" : "2026-11-11",
+   "files" : [
+      "Changes",
+      "Wx.xs",
+      "XS/Animation.xsp",
+      "XS/Bitmap.xs",
+      "XS/Colour.xs",
+      "XS/DirDialog.xs",
+      "XS/Frame.xs",
+      "XS/ImageList.xsp",
+      "XS/Log.xs",
+      "XS/StaticLine.xs",
+      "build/Wx/build/MakeMaker/Any_wx_config.pm",
+      "docs/INSTALL.pod",
+      "ext/grid/XS/Grid.xs",
+      "ext/propgrid/XS/PGProperty.xsp",
+      "t/01_load.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "44198dd18ebc61388242f81e4208d61b60088ead25f286bf7d02c0215f68de5f",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "1cfdb6535a0f4676e6f1aab2c9d8e16d577be3eb3b7cc04c8074d685e6651b70",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://bugs.debian.org/1141461"
+            },
+            {
+               "url" : "https://rt.cpan.org/Ticket/Display.html?id=179905"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/fix-header-includes-for-compatibility-wi.patch/"
+            },
+            {
+               "url" : "https://salsa.debian.org/perl-team/modules/packages/libwx-perl/-/commit/ac3c90966a04ccc43a645abed09820f5d0018ce1"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl/issues"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl/pulls"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/gtk3.patch/"
+            }
+         ],
+         "status" : "checked"
+      },
+      {
+         "references" : [
+            {
+               "url" : "https://bugs.debian.org/1141461"
+            },
+            {
+               "url" : "https://rt.cpan.org/Ticket/Display.html?id=179905"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/fix-header-includes-for-compatibility-wi.patch/"
+            },
+            {
+               "url" : "https://salsa.debian.org/perl-team/modules/packages/libwx-perl/-/commit/ac3c90966a04ccc43a645abed09820f5d0018ce1"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl/issues"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl/pulls"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/gtk3.patch/"
+            },
+            {
+               "url" : "https://github.com/sciurius/wxPerl/issues/10"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/sciurius/wxPerl/master/Changes"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/sciurius/wxPerl/master/ext/xrc/XRC.xs"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/0001-Fix-Wx-_load_plugin-segfaulting-when-wxPluginManager.patch/"
+            },
+            {
+               "url" : "https://bugs.debian.org/758127"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libwx-perl/1:0.9932-11/0001-Temporarily-lower-optimization-level-with-GCC-16.patch/"
+            }
+         ],
+         "status" : "checked"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}
