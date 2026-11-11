@@ -1,0 +1,72 @@
+--- a/BerkeleyDB.xs
++++ b/BerkeleyDB.xs
+@@ -5113,11 +5113,15 @@
+             hv_store_iv(hash, "compact_pages_examine", cmpt.compact_pages_examine) ;
+             hv_store_iv(hash, "compact_pages_truncated", cmpt.compact_pages_truncated) ;
+         }
++        /* Guard set magic too: end can be omitted from the argument stack. */
++        if (RETVAL == 0 && end) {
++            OutputValue_B(end, end_key) ;
++            SvSETMAGIC(end) ;
++        }
+ #endif
+     }
+ 	OUTPUT:
+ 	  RETVAL
+-	  end		if (RETVAL == 0 && end) OutputValue_B(ST(5), end_key) ;
+ 
+ 
+ DualType
+--- a/t/db-4.4.t
++++ b/t/db-4.4.t
+@@ -10,7 +10,17 @@
+ plan(skip_all => "this needs Berkeley DB 4.4.x or better\n" )
+     if $BerkeleyDB::db_version < 4.4;
+ 
+-plan tests => 12;
++plan tests => 23;
++
++{
++    package CompactEnd;
++    sub TIESCALAR { bless { value => undef, stores => 0 }, shift }
++    sub FETCH { $_[0]->{value} }
++    sub STORE {
++        $_[0]->{value} = $_[1];
++        ++$_[0]->{stores};
++    }
++}
+ 
+ {
+     title "Testing compact";
+@@ -42,6 +52,7 @@
+     $hash{compact_filepercent} = 20;
+ 
+     ok $db->compact("red", "green", \%hash, 0, $end) == 0, "  Compacted ok";
++    ok defined $end, "  Returned the end key";
+ 
+     if (0)
+     {
+@@ -53,6 +64,23 @@
+     }
+ 
+     ok $db->compact() == 0, "  Compacted ok";
++
++    for my $count (1 .. 5) {
++        my @args = (undef, undef, undef, 0, undef);
++        $#args = $count - 1;
++        ok $db->compact(@args) == 0, "  Compacted with $count arguments";
++    }
++    ok $db->compact(undef, undef, undef, 0, undef) == 0,
++        "  Compacted with a literal undef end key";
++
++    my $tied_end;
++    my $output = tie $tied_end, 'CompactEnd';
++    ok $db->compact(undef, undef, undef, 0, $end) == 0,
++        "  Compacted with an output argument";
++    ok $db->compact(undef, undef, undef, 0, $tied_end) == 0,
++        "  Compacted with a tied output argument";
++    is $output->{stores}, 1, "  Stored the tied end key once";
++    is $tied_end, $end, "  Tied and ordinary end keys match";
+ }
+ 
+ {

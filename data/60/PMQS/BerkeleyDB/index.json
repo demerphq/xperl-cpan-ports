@@ -1,0 +1,28 @@
+{
+   "distribution" : "BerkeleyDB",
+   "releases" : [
+      {
+         "cpan_path" : "P/PM/PMQS/BerkeleyDB-0.67.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.67-e207a9701f57.patch",
+                     "sha256" : "e207a9701f57dbf2e9cb96b85af18fdbbd3fd66a2f591b1e82be9cfcea4f9f86"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "df5ee5dc71be1d941cb1931c7adf866ad38d2fc20826caecb797244102f0eeee",
+         "version" : "0.67"
+      }
+   ],
+   "schema" : 1
+}
