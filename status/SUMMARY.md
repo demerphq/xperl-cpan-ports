@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 4114 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 94 of 4115 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3010,6 +3010,7 @@ Unresolved failures: 94 of 4114 release, XPerl, and platform combinations. See [
 | PREACTION | [Log-Any-Adapter-Log4perl](../data/7b/PREACTION/Log-Any-Adapter-Log4perl/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | PUNYTAN | [Emoji-NationalFlag](../data/1d/PUNYTAN/Emoji-NationalFlag/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | failed | none | none |
 | PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux | failed | none | none |
+| PVANDRY | [Locale-gettext](../data/c2/PVANDRY/Locale-gettext/status.json) | 1.07 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | RANDIR | [Class-Accessor-Inherited-XS](../data/ac/RANDIR/Class-Accessor-Inherited-XS/status.json) | 0.39 | v5.45.5 | linux/x86_64-linux | installed | repair-v5.45.5 | 622826f6dec563069a54bd72377ef72466a3f3643dfd485e5b041c8e41b8efaf |
 | RANDIR | [Class-Accessor-Inherited-XS](../data/ac/RANDIR/Class-Accessor-Inherited-XS/status.json) | 0.39 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 3eb8d56dbc03dbeb7f653f5c3e1f9a1c439bb8745fc2d0a267719172c1cbe6de |
 | RANDIR | [Sub-Disable](../data/63/RANDIR/Sub-Disable/status.json) | 1.02 | v5.45.5 | linux/x86_64-linux | installed | none | none |
