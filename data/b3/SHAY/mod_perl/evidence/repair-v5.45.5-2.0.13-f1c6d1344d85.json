@@ -1,0 +1,156 @@
+{
+   "date" : "2026-11-11",
+   "files" : [
+      "Apache-Test/lib/Apache/TestConfigParse.pm",
+      "Apache-Test/t/serverroot.t",
+      "MANIFEST",
+      "README",
+      "src/modules/perl/modperl_callback.c",
+      "src/modules/perl/modperl_module.c",
+      "src/modules/perl/modperl_perl.h",
+      "src/modules/perl/modperl_perl_global.c",
+      "src/modules/perl/modperl_util.c",
+      "t/response/TestAPI/access2_24.pm",
+      "t/response/TestDirective/callback_stack.pm",
+      "t/response/TestError/runtime.pm",
+      "t/response/TestModperl/endav.pm"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "f1c6d1344d85814a7dd0a70a74a6aeef9a04e4d25594dc05c2fac5228c57e614",
+   "platform" : {
+      "archname" : "x86_64-linux-thread-multi",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "a140adec912f2529fe17fa84aa3637a7decce86818a770c1444d755be0d5ab72",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 1,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 1,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 1,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "57ec190c4b5029de7f7053f3ddc0a645b2aecf69b6948410916adf4fc04d5a3b",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux-thread-multi",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 1,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "ade3be31c447b8448869fecdfcace258d6d587b8c6c773c5f22735f70d82d6da",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://github.com/apache/mod_perl/pull/5"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/pull/5/files"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/joesuf4/mod_perl/bdf7742/src/modules/perl/modperl_util.c"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/mod_perl/trunk/src/modules/perl/modperl_util.c"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/mod_perl/trunk/src/modules/perl/modperl_perl_global.c"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/mod_perl/trunk/Changes"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/pulls"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/issues"
+            },
+            {
+               "url" : "https://sources.debian.org/patches/libapache2-mod-perl2/2.0.12-1/030-apxs-no-prefix.patch/"
+            },
+            {
+               "url" : "https://www.mail-archive.com/search?f=1&l=dev%40httpd.apache.org&o=newest&q=date%3A20170306"
+            },
+            {
+               "url" : "https://svn.apache.org/viewvc?view=revision&revision=1782838"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/perl-apache-test/trunk/lib/Apache/TestConfigParse.pm"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/perl-apache-test/trunk/lib/Apache/TestConfig.pm"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/pull/4/files"
+            },
+            {
+               "url" : "https://github.com/apache/perl-apache-test/pulls"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/pull/6"
+            },
+            {
+               "url" : "https://github.com/apache/perl-apache-test/issues"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/mod_perl/trunk/t/response/TestAPI/access2_24.pm"
+            },
+            {
+               "url" : "https://httpd.apache.org/docs/2.4/mod/mod_authz_groupfile.html"
+            },
+            {
+               "url" : "https://github.com/apache/mod_perl/commit/ead5012b9f8bca08415f39e15226dbc6112a9538"
+            },
+            {
+               "url" : "https://svn.apache.org/repos/asf/perl/site/docs/2.0/user/troubleshooting/troubleshooting.html"
+            },
+            {
+               "url" : "https://bugs.debian.org/650675"
+            },
+            {
+               "url" : "https://perldoc.perl.org/perlguts#Reference-counted-argument-stack"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/apache/mod_perl/trunk/t/response/TestError/runtime.pm"
+            },
+            {
+               "url" : "https://rt.cpan.org/Dist/Display.html?Name=mod_perl"
+            },
+            {
+               "url" : "https://perl.apache.org/docs/2.0/api/APR/Error.html"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

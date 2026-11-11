@@ -1,0 +1,535 @@
+--- a/Apache-Test/lib/Apache/TestConfigParse.pm
++++ b/Apache-Test/lib/Apache/TestConfigParse.pm
+@@ -88,7 +88,9 @@
+                  [ $self->{inherit_config}->{ServerRoot},
+                        'httpd.conf inherited ServerRoot' ],
+                  [ $self->apxs('PREFIX', 1),
+-                       'apxs-derived ServerRoot' ]);
++                       'apxs-derived ServerRoot' ],
++                 [ $self->apxs('SYSCONFDIR', 1),
++                       'apxs-derived ServerRoot based on SYSCONFDIR' ]);
+ 
+     # remove surrounding quotes if any
+     # e.g. Include "/tmp/foo.html"
+--- /dev/null
++++ b/Apache-Test/t/serverroot.t
+@@ -0,0 +1,66 @@
++use strict;
++use warnings FATAL => 'all';
++
++use Test::More tests => 7;
++use File::Temp qw(tempdir);
++use File::Spec::Functions qw(catfile rel2abs);
++use Apache::TestConfig ();
++
++{
++    package TestServerRootConfig;
++    use vars qw(@ISA);
++    @ISA = qw(Apache::TestConfig);
++
++    sub apxs {
++        my ($self, $query) = @_;
++        return $self->{queries}->{$query};
++    }
++}
++
++my $dir = rel2abs(tempdir('serverroot-XXXXXX', DIR => '.', CLEANUP => 1));
++for my $name (qw(conf prefix root base)) {
++    mkdir catfile($dir, $name), 0700 or die "mkdir $name: $!";
++}
++
++my $conf = catfile($dir, 'conf');
++mkdir catfile($conf, 'modules'), 0700 or die "mkdir modules: $!";
++my $config = bless {
++    queries => {PREFIX => '', SYSCONFDIR => $conf},
++    inherit_config => {ServerRoot => '', LoadModule => []},
++}, 'TestServerRootConfig';
++
++is($config->server_file_rel2abs('modules/*.load'),
++   catfile($conf, 'modules', '*.load'), 'empty PREFIX uses SYSCONFDIR');
++
++my $prefix = $config->{queries}->{PREFIX} = catfile($dir, 'prefix');
++is($config->server_file_rel2abs('module.load'),
++   catfile($prefix, 'module.load'), 'PREFIX precedes SYSCONFDIR');
++
++my $root = $config->{inherit_config}->{ServerRoot} = catfile($dir, 'root');
++is($config->server_file_rel2abs('module.load'),
++   catfile($root, 'module.load'), 'inherited ServerRoot precedes PREFIX');
++
++my $base = catfile($dir, 'base');
++is($config->server_file_rel2abs('module.load', $base),
++   catfile($base, 'module.load'), 'explicit base precedes ServerRoot');
++is($config->server_file_rel2abs(catfile($conf, 'module.load')),
++   catfile($conf, 'module.load'), 'absolute path is preserved');
++
++delete $config->{queries}->{SYSCONFDIR};
++is($config->server_file_rel2abs('module.load'),
++   catfile($root, 'module.load'), 'SYSCONFDIR is optional');
++
++$config->{queries} = {PREFIX => '', SYSCONFDIR => $conf};
++$config->{inherit_config}->{ServerRoot} = '';
++my $main = catfile($conf, 'apache2.conf');
++my $load = catfile($conf, 'mpm.load');
++open my $fh, '>', $main or die "open $main: $!";
++print $fh "Include mpm.load\n";
++close $fh or die "close $main: $!";
++open $fh, '>', $load or die "open $load: $!";
++print $fh "LoadModule mpm_event_module modules/mod_mpm_event.so\n";
++close $fh or die "close $load: $!";
++$config->inherit_config_file_or_directory($main);
++is_deeply($config->{inherit_config}->{LoadModule},
++          [['mpm_event_module', 'modules/mod_mpm_event.so']],
++          'relative include inherits the MPM without ServerRoot or PREFIX');
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -106,6 +106,7 @@
+ Apache-Test/t/request.t
+ Apache-Test/t/response/TestMore/testmorepm.pm
+ Apache-Test/t/response/TestMore/testpm.pm
++Apache-Test/t/serverroot.t
+ Apache-Test/t/sok.t
+ BRANCHING
+ CONTRIBUTING.md
+@@ -870,6 +871,7 @@
+ t/response/TestCompat/request.pm
+ t/response/TestCompat/request_body.pm
+ t/response/TestCompat/send_fd.pm
++t/response/TestDirective/callback_stack.pm
+ t/response/TestDirective/cmdparms.pm
+ t/response/TestDirective/env.pm
+ t/response/TestDirective/perlcleanuphandler.pm
+--- a/README
++++ b/README
+@@ -26,6 +26,45 @@
+ 
+ mod_perl is currently considered stable.
+ 
++XPerl builds use hv_ksplit() to reserve hash storage and hv_fetch_ent()
++to look up internal entries. XPerl's hash representation does not support
++assigning to HvMAX or traversing HeNEXT bucket chains. These adaptations
++are conditional on XPERL_VERSION and preserve the ordinary Perl paths.
++
++On Perl builds with PERL_RC_STACK, direct Apache callbacks use a separate
++non-reference-counted Perl stack. Their traditional PUSHs/POPs operations
++borrow arguments from configuration objects and argument arrays. Unlike
++XSUB calls, these entry points have no automatic XS stack wrapper.
++Configuration, request and authentication callbacks must pair stack entry
++and exit around their temporary scope. Builds
++without PERL_RC_STACK keep their existing callback paths. This does not
++depend on the NV representation or require changing interpreter options.
++
++A DSO build requires a Perl embedding library built with position-independent
++code on platforms that require it. This applies to XPerl too. See the
++"64 bit Linux" section in docs/user/install/install.pod. Preserve the
++interpreter's thread, debugging, PERL_RC_STACK and numeric build options
++when rebuilding its embedding library.
++
++Apache-Test falls back to apxs SYSCONFDIR when neither the inherited
++ServerRoot nor apxs PREFIX is available. This resolves relative module
++includes on Debian and Ubuntu, where an unresolved mods-enabled include
++can prevent the test server from loading its MPM. The fallback is adapted
++from Niko Tyni's Debian 030-apxs-no-prefix.patch:
++https://sources.debian.org/patches/libapache2-mod-perl2/2.0.12-1/030-apxs-no-prefix.patch/
++
++The Apache 2.4 access test guards AuthUserFile and AuthGroupFile with
++mod_authn_file and mod_authz_groupfile respectively. Loading mod_auth_basic
++does not imply either file provider is loaded. The test's Perl handlers
++provide authentication and group authorization, so these optional file
++providers need not be enabled in the system Apache configuration.
++
++The runtime exception test identifies APR failures by their APR::Error
++class. Perl errors can be strings or objects: XPerl returns an
++XPerl::Exception for an undefined subroutine. A reference in $@ alone
++does not identify an APR error. Test the exception class when distinguishing
++APR failures from other errors, and retain the check for a caught error.
++
+ The following test failures are known (see CPAN RT #118919):
+ 
+   t/filter/in_bbs_inject_header.t (Fails tests 22, 26 and 30)
+--- a/src/modules/perl/modperl_callback.c
++++ b/src/modules/perl/modperl_callback.c
+@@ -41,6 +41,7 @@
+         return status;
+     }
+ 
++    MP_PERL_CALLBACK_PUSHSTACK;
+     ENTER;SAVETMPS;
+     PUSHMARK(SP);
+ 
+@@ -122,6 +123,7 @@
+     }
+ 
+     FREETMPS;LEAVE;
++    MP_PERL_CALLBACK_POPSTACK;
+ 
+     if (SvTRUE(ERRSV)) {
+         MP_TRACE_h(MP_FUNC, "$@ = %s", SvPV_nolen(ERRSV));
+--- a/src/modules/perl/modperl_module.c
++++ b/src/modules/perl/modperl_module.c
+@@ -211,6 +211,7 @@
+         MP_TRACE_c(MP_FUNC, "calling %s->%s",
+                    SvCLASS(base_obj), modperl_mgv_last_name(method));
+ 
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;SAVETMPS;
+         PUSHMARK(sp);
+         XPUSHs(base_obj);XPUSHs(add_obj);
+@@ -225,6 +226,7 @@
+ 
+         PUTBACK;
+         FREETMPS;LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+ 
+         if (SvTRUE(ERRSV)) {
+             /* XXX: should die here. */
+@@ -301,6 +303,7 @@
+         int count;
+         dSP;
+ 
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;SAVETMPS;
+         PUSHMARK(sp);
+         XPUSHs(sv_2mortal(newSVpv(mname, minfo->namelen)));
+@@ -316,6 +319,7 @@
+ 
+         PUTBACK;
+         FREETMPS;LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+ 
+         if (SvTRUE(ERRSV)) {
+             return SvPVX(ERRSV);
+@@ -439,6 +443,7 @@
+ 
+     {
+         dSP;
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;SAVETMPS;
+         PUSHMARK(SP);
+         EXTEND(SP, 2);
+@@ -465,6 +470,7 @@
+ 
+         PUTBACK;
+         FREETMPS;LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+     }
+ 
+     if (SvTRUE(ERRSV)) {
+@@ -586,6 +592,7 @@
+     if (sv_isobject(obj)) {
+         int count;
+         dSP;
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;SAVETMPS;
+         PUSHMARK(SP);
+         XPUSHs(obj);
+@@ -609,6 +616,7 @@
+ 
+         PUTBACK;
+         FREETMPS;LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+ 
+         if (SvTRUE(ERRSV)) {
+             errmsg = SvPVX(ERRSV);
+--- a/src/modules/perl/modperl_perl.h
++++ b/src/modules/perl/modperl_perl.h
+@@ -50,6 +50,20 @@
+ #ifndef GvCV_set
+ #    define GvCV_set(gv, cv) (GvCV(gv)=(cv))
+ #endif
++
++/* Apache callbacks use the traditional, non-RC stack API. Unlike XSUBs,
++ * they can enter Perl without its XS compatibility wrapper. Use a separate
++ * non-RC stack so call_sv() does not free borrowed arguments. Callers need
++ * dSP before PUSH and PUTBACK before POP, with both outside the temp scope.
++ */
++#ifdef PERL_RC_STACK
++#    define MP_PERL_CALLBACK_PUSHSTACK PUSHSTACKi(PERLSI_MAGIC)
++#    define MP_PERL_CALLBACK_POPSTACK POPSTACK
++#else
++#    define MP_PERL_CALLBACK_PUSHSTACK NOOP
++#    define MP_PERL_CALLBACK_POPSTACK NOOP
++#endif
++
+ #ifndef GvGP_set
+ #    define GvGP_set(gv, gp) (GvGP(gv)=(gp))
+ #endif
+--- a/src/modules/perl/modperl_perl_global.c
++++ b/src/modules/perl/modperl_perl_global.c
+@@ -251,15 +251,24 @@
+     HE *entry, *hv_eiter;
+     I32 hv_riter;
+     register HV *hv;
++#ifdef XPERL_VERSION
++    STRLEN hv_fill = HvTOTALKEYS(ohv);
++#else
+     STRLEN hv_max = HvMAX(ohv);
+     STRLEN hv_fill = HvFILL(ohv);
++#endif
+ 
+     hv = newHV();
++#ifdef XPERL_VERSION
++    /* Let Perl reserve storage for its current hash representation. */
++    hv_ksplit(hv, hv_fill);
++#else
+     while (hv_max && hv_max + 1 >= hv_fill * 2) {
+         hv_max = hv_max / 2;    /* Is always 2^n-1 */
+     }
+ 
+     HvMAX(hv) = hv_max;
++#endif
+ 
+     if (!hv_fill) {
+         return hv;
+--- a/src/modules/perl/modperl_util.c
++++ b/src/modules/perl/modperl_util.c
+@@ -405,6 +405,13 @@
+                              register I32 klen,
+                              register U32 hash)
+ {
++#ifdef XPERL_VERSION
++    /* XPerl hashes do not use linked bucket chains. */
++    SV *keysv = newSVpvn(key, klen);
++    HE *entry = hv_fetch_ent(hv, keysv, 0, hash);
++    SvREFCNT_dec(keysv);
++    return entry;
++#else
+     register XPVHV *xhv;
+     register HE *entry;
+ 
+@@ -439,6 +446,7 @@
+     }
+ 
+     return 0;
++#endif
+ }
+ 
+ void modperl_str_toupper(char *str)
+@@ -958,6 +966,7 @@
+ 
+     {
+         dSP;
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;
+         SAVETMPS;
+         PUSHMARK(SP);
+@@ -974,6 +983,7 @@
+         PUTBACK;
+         FREETMPS;
+         LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+     }
+ 
+     MP_INTERP_PUTBACK(interp, aTHX);
+@@ -1019,6 +1029,7 @@
+             int count;
+             dSP;
+ 
++            MP_PERL_CALLBACK_PUSHSTACK;
+             ENTER;
+             SAVETMPS;
+             PUSHMARK(SP);
+@@ -1041,6 +1052,7 @@
+             PUTBACK;
+             FREETMPS;
+             LEAVE;
++            MP_PERL_CALLBACK_POPSTACK;
+         }
+ 
+         MP_INTERP_PUTBACK(interp, aTHX);
+@@ -1089,6 +1101,7 @@
+ 
+     {
+         dSP;
++        MP_PERL_CALLBACK_PUSHSTACK;
+         ENTER;
+         SAVETMPS;
+         PUSHMARK(SP);
+@@ -1106,6 +1119,7 @@
+         PUTBACK;
+         FREETMPS;
+         LEAVE;
++        MP_PERL_CALLBACK_POPSTACK;
+     }
+ 
+     MP_INTERP_PUTBACK(interp, aTHX);
+@@ -1146,6 +1160,7 @@
+             int count;
+             dSP;
+ 
++            MP_PERL_CALLBACK_PUSHSTACK;
+             ENTER;
+             SAVETMPS;
+             PUSHMARK(SP);
+@@ -1168,6 +1183,7 @@
+             PUTBACK;
+             FREETMPS;
+             LEAVE;
++            MP_PERL_CALLBACK_POPSTACK;
+         }
+ 
+         MP_INTERP_PUTBACK(interp, aTHX);
+--- a/t/response/TestAPI/access2_24.pm
++++ b/t/response/TestAPI/access2_24.pm
+@@ -118,11 +118,13 @@
+     <IfModule mod_access_compat.c>
+         Satisfy All
+     </IfModule>
+-    <IfModule @AUTH_MODULE@>
++    <IfModule mod_authn_file.c>
+         # htpasswd -mbc auth-users goo foo
+         # htpasswd -mb auth-users bar mar
+         # using md5 password so it'll work on win32 too
+         AuthUserFile @DocumentRoot@/api/auth-users
++    </IfModule>
++    <IfModule mod_authz_groupfile.c>
+         # group: user1 user2 ...
+         AuthGroupFile @DocumentRoot@/api/auth-groups
+     </IfModule>
+--- /dev/null
++++ b/t/response/TestDirective/callback_stack.pm
+@@ -0,0 +1,87 @@
++# please insert nothing before this line: -*- mode: cperl; cperl-indent-level: 4; indent-tabs-mode: nil -*-
++package TestDirective::callback_stack;
++
++use strict;
++use warnings FATAL => 'all';
++
++use Apache::Test;
++use Apache::TestUtil;
++use Apache2::CmdParms ();
++use Apache2::Module ();
++use Apache2::RequestRec ();
++use APR::Table ();
++use Apache2::Const -compile => 'OK';
++
++{
++    package TestDirective::callback_stack::Command;
++    sub name         { 'CallbackStackValue' }
++    sub func         { 'set_value' }
++    sub args_how     { 'TAKE1' }
++    sub req_override { 'OR_ALL' }
++    sub errmsg       { 'callback stack test value' }
++    sub cmd_data     { 'stack' }
++}
++
++# Metadata methods, constructors and directive handlers all borrow objects
++# from their caller. Repeated calls must preserve those objects.
++my @directives = (bless {}, __PACKAGE__ . '::Command');
++Apache2::Module::add(__PACKAGE__, \@directives);
++
++sub DIR_CREATE    { bless { values => [] }, shift }
++sub SERVER_CREATE { DIR_CREATE(@_) }
++
++sub set_value {
++    my ($self, $parms, $value) = @_;
++    die 'lost command parameters' unless $parms->info eq 'stack';
++    push @{ $self->{values} }, $value;
++    return;
++}
++
++sub DIR_MERGE {
++    my ($base, $add) = @_;
++    return bless { values => [@{ $base->{values} }, @{ $add->{values} }] },
++        ref $base;
++}
++sub SERVER_MERGE { DIR_MERGE(@_) }
++
++our $section_calls = 0;
++sub section {
++    my ($parms, $options) = @_;
++    die 'lost callback arguments' unless $parms->server && $options->get('handler');
++    my $dir = Apache2::Module::get_config(__PACKAGE__, $parms->server,
++                                        $parms->context);
++    my $srv = Apache2::Module::get_config(__PACKAGE__, $parms->server);
++    die 'lost configuration objects'
++        unless join(',', @{ $dir->{values} }) eq 'base' && !@{ $srv->{values} };
++    ++$section_calls;
++    return Apache2::Const::OK;
++}
++
++sub handler {
++    my $r = shift;
++    my $dir = Apache2::Module::get_config(__PACKAGE__, $r->server,
++                                        $r->per_dir_config);
++    my $srv = Apache2::Module::get_config(__PACKAGE__, $r->server);
++    plan $r, tests => 3;
++    ok t_cmp($dir->{values}, [qw(base one two)], 'merged callback results');
++    ok t_cmp($srv->{values}, [], 'server constructor result');
++    ok t_cmp($section_calls, 2, 'repeated callbacks retain their arguments');
++    return Apache2::Const::OK;
++}
++
++1;
++__END__
++
++# APACHE_TEST_CONFIG_ORDER 950
++<Base>
++    PerlLoadModule TestDirective::callback_stack
++    CallbackStackValue base
++    <Perl handler=TestDirective::callback_stack::section>
++        1;
++    </Perl>
++    <Perl handler=TestDirective::callback_stack::section>
++        1;
++    </Perl>
++</Base>
++CallbackStackValue one
++CallbackStackValue two
+--- a/t/response/TestError/runtime.pm
++++ b/t/response/TestError/runtime.pm
+@@ -130,7 +130,8 @@
+ sub eval_block_non_mp_error {
+     my ($r, $socket) = @_;
+     eval { non_mp_error($socket) };
+-    if ($@ && !ref($@)) {
++    # Core errors can be exception objects, as they are on XPerl.
++    if ($@ && !UNIVERSAL::isa($@, 'APR::Error')) {
+         $r->print("ok eval_block_non_mp_error");
+     }
+     else {
+--- a/t/response/TestModperl/endav.pm
++++ b/t/response/TestModperl/endav.pm
+@@ -10,10 +10,12 @@
+ 
+ use Apache2::Const -compile => 'OK';
+ 
++our $hash_calls;
++
+ sub handler {
+     my $r = shift;
+ 
+-    plan $r, tests => 4;
++    plan $r, tests => 13;
+ 
+     #just to make sure we dont segv with bogus values
+     my $not = 'NoSuchPackage';
+@@ -51,6 +53,29 @@
+     # one plain ok 1 (4)
+     ok 1;
+ 
++    # Exercise package lookups as the internal table grows.
++    for my $size (1, 8, 64) {
++        local $hash_calls = 0;
++        my @packages = map { __PACKAGE__ . "::Hash${size}_$_" } 1..$size;
++        my $compiled = 1;
++        for my $package (@packages) {
++            ModPerl::Global::special_list_register(END => $package);
++            ModPerl::Global::special_list_clear(END => $package);
++            eval "package $package; END { ++\$TestModperl::endav::hash_calls }";
++            $compiled = 0 if $@;
++        }
++        ok $compiled;
++        for my $package (@packages) {
++            ModPerl::Global::special_list_call(END => $package);
++        }
++        ok $hash_calls == $size;
++        for my $package (@packages) {
++            ModPerl::Global::special_list_clear(END => $package);
++            ModPerl::Global::special_list_call(END => $package);
++        }
++        ok $hash_calls == $size;
++    }
++
+     Apache2::Const::OK;
+ }
+ 
