@@ -1,0 +1,28 @@
+{
+   "distribution" : "Sys-Mmap",
+   "releases" : [
+      {
+         "cpan_path" : "T/TO/TODDR/Sys-Mmap-0.21.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.21-b2d0b63dbdba.patch",
+                     "sha256" : "b2d0b63dbdba86bed3f25df420cda19868a62d8c2b10a3a75b77615e0d9180b4"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "fdec18081928b0b3ff688ec8b5d2d9bd1ffc81c2c3eb1fb3c1c56aac48a96f4c",
+         "version" : "0.21"
+      }
+   ],
+   "schema" : 1
+}

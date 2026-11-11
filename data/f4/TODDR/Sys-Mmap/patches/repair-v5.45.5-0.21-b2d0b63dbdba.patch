@@ -1,0 +1,76 @@
+--- a/Changes
++++ b/Changes
+@@ -1,3 +1,12 @@
++Unreleased
++* Default the optional mmap offset in XS before reading it. This prevents
++  stale stack values from causing shifted mappings or SIGBUS when the
++  offset is omitted. Adapted from upstream PR #33:
++  https://github.com/cpan-authors/Sys-Mmap/pull/33
++  Keep the filehandle required to preserve the five-argument minimum.
++* Test omitted, undefined, zero, numeric and string offsets, and reject
++  calls without a filehandle.
++
+ Todd Rinaldo, Mar 22 2026 v0.21
+ 
+ Bug Fixes:
+--- a/Mmap.xs
++++ b/Mmap.xs
+@@ -230,7 +230,7 @@
+ 
+ 
+ SV *
+-mmap(var, len, prot, flags, fh = 0, off_string)
++mmap(var, len, prot, flags, fh, off_string = 0)
+ 	SV *		var
+ 	size_t		len
+ 	int		prot
+@@ -244,7 +244,7 @@
+     PROTOTYPE: $$$$*;$
+     CODE:
+ 
+-    if(!SvTRUE(off_string)) {
++    if(!off_string || !SvTRUE(off_string)) {
+         off = 0;
+     }
+     else {
+--- a/t/mmap.t
++++ b/t/mmap.t
+@@ -3,7 +3,7 @@
+ use strict;
+ use warnings;
+ 
+-use Test::More tests => 8;
++use Test::More tests => 15;
+ 
+ use Sys::Mmap;
+ 
+@@ -67,5 +67,29 @@
+     munmap($foo);
+ }
+ 
++# Exercise both argument counts at one call site with a live offset scalar.
++{
++    my $offset = 3;
++    sysopen(my $fh, $temp_file, O_RDONLY) or die "$temp_file: $!\n";
++    for my $case (
++        [ 'explicit offset', [ $offset ], $offset ],
++        [ 'omitted offset', [], 0 ],
++        [ 'undefined offset', [ undef ], 0 ],
++        [ 'zero offset', [ 0 ], 0 ],
++        [ 'string offset', [ "$offset" ], $offset ],
++        [ 'omitted offset again', [], 0 ],
++    ) {
++        my ($label, $args, $expected_offset) = @$case;
++        my $data;
++        &Sys::Mmap::mmap($data, 16, PROT_READ, MAP_SHARED, $fh, @$args);
++        is($data, substr($temp_file_contents, $expected_offset, 16), $label);
++        munmap($data);
++    }
++    close $fh;
++
++    eval { &Sys::Mmap::mmap(my $data, 16, PROT_READ, MAP_SHARED) };
++    like($@, qr/^Usage:/, 'filehandle argument is required');
++}
++
+ 
+ unlink($temp_file);
