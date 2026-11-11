@@ -1,0 +1,73 @@
+# The 17 unrecorded distributions among Popcon's top 100 lib*-perl packages.
+# Source: https://popcon.debian.org/by_inst (2026-11-11 snapshot).
+# Counts measure installed packages on reporting systems, not CPAN downloads.
+# Locale::gettext is a separate follow-up after this batch.
+
+# Text-CharWidth: 296844 Popcon installations (libtext-charwidth-perl).
+# Indexed release: K/KU/KUBOTA/Text-CharWidth-0.04.tar.gz
+Text::CharWidth
+
+# Text-WrapI18N: 296838 Popcon installations (libtext-wrapi18n-perl).
+# Indexed release: K/KU/KUBOTA/Text-WrapI18N-0.06.tar.gz
+Text::WrapI18N
+
+# Net-SMTP-SSL: 177091 Popcon installations (libnet-smtp-ssl-perl).
+# Indexed release: R/RJ/RJBS/Net-SMTP-SSL-1.04.tar.gz
+Net::SMTP::SSL
+
+# Font-AFM: 176465 Popcon installations (libfont-afm-perl).
+# Indexed release: G/GA/GAAS/Font-AFM-1.20.tar.gz
+Font::AFM
+
+# HTML-Formatter: 176409 Popcon installations (libhtml-format-perl).
+# Indexed release: N/NI/NIGELM/HTML-Formatter-2.16.tar.gz
+HTML::FormatText
+
+# File-FcntlLock: 169879 Popcon installations (libfile-fcntllock-perl).
+# Indexed release: J/JT/JTT/File-FcntlLock-0.22.tar.gz
+File::FcntlLock
+
+# Dpkg: 169618 Popcon installations (libdpkg-perl).
+# Indexed release: G/GU/GUILLEM/Dpkg-1.23.9.tar.gz
+Dpkg
+
+# Net-DBus: 156344 Popcon installations (libnet-dbus-perl).
+# Indexed release: D/DA/DANBERR/Net-DBus-1.2.0.tar.gz
+Net::DBus
+
+# X11-Protocol: 152659 Popcon installations (libx11-protocol-perl).
+# Indexed release: S/SM/SMCCAM/X11-Protocol-0.56.tar.gz
+X11::Protocol
+
+# Algorithm-Merge: 147737 Popcon installations (libalgorithm-merge-perl).
+# Indexed release: J/JS/JSMITH/Algorithm-Merge-0.08.tar.gz
+Algorithm::Merge
+
+# Glib-Object-Introspection: 110799 Popcon installations (libglib-object-introspection-perl).
+# Indexed release: X/XA/XAOC/Glib-Object-Introspection-0.052.tar.gz
+Glib::Object::Introspection
+
+# Cairo-GObject: 110780 Popcon installations (libcairo-gobject-perl).
+# Indexed release: X/XA/XAOC/Cairo-GObject-1.005.tar.gz
+Cairo::GObject
+
+# Gtk3: 110748 Popcon installations (libgtk3-perl).
+# Indexed release: X/XA/XAOC/Gtk3-0.038.tar.gz
+Gtk3
+
+# CGI-Fast: 68525 Popcon installations (libcgi-fast-perl).
+# Indexed release: L/LE/LEEJO/CGI-Fast-2.17.tar.gz
+CGI::Fast
+
+# Perl4-CoreLibs: 56711 Popcon installations (libperl4-corelibs-perl).
+# Indexed release: Z/ZE/ZEFRAM/Perl4-CoreLibs-0.005.tar.gz
+Perl4::CoreLibs
+
+# DynaLoader-Functions: 52264 Popcon installations (libdynaloader-functions-perl).
+# Indexed release: Z/ZE/ZEFRAM/DynaLoader-Functions-0.004.tar.gz
+DynaLoader::Functions
+
+# Devel-CallChecker: 52232 Popcon installations (libdevel-callchecker-perl).
+# Indexed release: S/SH/SHINGO/Devel-CallChecker-0.010.tar.gz
+Devel::CallChecker
+
