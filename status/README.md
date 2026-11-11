@@ -61,5 +61,7 @@ for an older digest does not establish that a newer patch passed on that build.
 
 Ordinary-Perl control runs belong in the distribution's evidence alongside
 the XPerl results. The [RC guard validation report](RC-GUARD-VALIDATION.md)
-compares both interpreters and identifies an unresolved ordinary debug RC
-failure in Affix. A passing XPerl observation does not cover that profile.
+compares both interpreters and records Affix's shutdown lifetime repair,
+including its earlier ordinary debug RC failure and the passing revised
+patch. A passing XPerl observation alone does not cover an ordinary-Perl
+profile.

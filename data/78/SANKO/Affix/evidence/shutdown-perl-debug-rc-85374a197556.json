@@ -1,0 +1,96 @@
+{
+   "date" : "2026-11-11",
+   "environment" : {
+      "PERL_DESTRUCT_LEVEL" : 2
+   },
+   "interpreter" : "Perl",
+   "interpreter_sha256" : "a10a3f62725799a8d8d5a9af3cf30e1ed473f31c14607ed015a39b573e823c23",
+   "notes" : [
+      "Fresh original CPAN archive with the exact selected consolidated patch, including the earlier RC callback-member repair.",
+      "The shutdown checks fail with the earlier patch on ordinary debugging RC Perl and pass with the lifetime repair."
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1",
+   "perl_version" : "v5.45.4",
+   "phases" : [
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 1,
+         "flags_sha256" : "014a39eee6fee35068e0d1771709f745532d6e6ddb598c3a0bbb3888416fc686",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : ""
+      },
+      "build_id" : "a2ef6842df80844814395c7494f263589bf5cf1a0919f9bd2124d60b077ba931",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : ""
+   },
+   "schema" : 1,
+   "skipped_tests" : [
+      {
+         "file" : "t/017_affix_build.t"
+      },
+      {
+         "file" : "t/900_leak.t"
+      }
+   ],
+   "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+   "tests" : [
+      {
+         "command" : "perl Build test",
+         "files" : 59,
+         "result" : "pass",
+         "tests" : 394
+      },
+      {
+         "child_hash_seeds" : [
+            0,
+            1,
+            15,
+            31
+         ],
+         "file" : "t/092_shutdown.t",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : {
+      "findings" : [
+         "Current upstream lib/Affix.c retains the cache/CV destruction ordering. Reviewed its recent history and open pull requests before editing.",
+         "Issue 235 describes a Solaris exit failure after threaded tests without a matching native trace. It is not confirmed to have the same cause. No upstream patch was adapted.",
+         "Open PR 102 changes build-system files, not native cleanup."
+      ],
+      "references" : [
+         "https://github.com/sanko/Affix.pm/blob/6a14b445304be269263e5d119e9377a6c5999689/lib/Affix.c",
+         "https://github.com/sanko/Affix.pm/issues/235",
+         "https://github.com/sanko/Affix.pm/pull/102"
+      ],
+      "status" : "checked"
+   }
+}

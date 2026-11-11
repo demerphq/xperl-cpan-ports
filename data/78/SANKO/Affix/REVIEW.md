@@ -1,51 +1,63 @@
-# Affix v1.4.0: ordinary debug RC shutdown failure
+# Affix v1.4.0: resolved shutdown lifetime failure
 
-The callback-member repair selected by `PERL_RC_STACK` passes the full suite
-on installed RC XPerl v5.45.5, commit
-`8903238ce74fc124ec407b8342791ef73253f988`: 58 files, 390 tests.
+The selected patch includes the existing `PERL_RC_STACK` callback-member
+repair and a general Perl shutdown lifetime fix. It preserves the original
+CPAN release and ordinary Perl compatibility.
 
-The same registered patch was replayed from the original release archive
-with installed ordinary Perl v5.45.4, `PERL_RC_STACK`, `DEBUGGING` and
-`DEBUG_LEAKING_SCALARS`, using `PERL_DESTRUCT_LEVEL=2`. All assertions in
-the callback-member regression, `t/091_cb_struct_member.t`, pass. The full
-suite fails because `t/999_marshaller_2.t` aborts during destruction, after
-its 18 top-level tests pass. That is a failed validation, not a successful
-build or installation.
+## Cause and repair
 
-The debugger trace reaches `hv_iterinit(affix->variadic_cache)` in
-`_affix_destroy`, called by `Affix_cv_free` during `perl_destruct`. The hash
-pointer no longer has type `SVt_PVHV`, triggering the debug assertion in
-`Perl_hv_iterinit`. The cache is a native structure's `newHV()` allocation.
-Its ownership and lifetime during global destruction need investigation.
-Do not work around this by disabling destruction checks or merely skipping
-the hash iterator.
+Affix stores a cache hash and reusable return scalar in a native wrapper
+payload. CV free-magic releases that payload. A wrapper can survive until
+Perl's final `sv_clean_all` sweep, which can free the hash and scalar before
+freeing the CV. The native pointers then dangle. The debugger confirmed both
+values were freed when `_affix_destroy` tried to iterate the cache.
 
-The important part of the trace, with host paths and addresses omitted, is:
+The repair tracks live payloads in an interpreter-local native list. Normal
+CV cleanup unlinks its payload in constant time. A `call_atexit` hook releases
+surviving payloads after Perl object destructors and before the final SV
+sweep. It clears their magic pointers so later CV cleanup cannot free the
+payload twice. The list does not retain CVs and adds no work to wrapped
+function calls. Interpreter cloning starts with an empty local list.
 
-```text
-Perl_hv_iterinit: Assertion `SvTYPE(hv) == SVt_PVHV' failed
-_affix_destroy                 lib/Affix.c:2296
-Affix_cv_free                  lib/Affix.c:2335
-Perl_mg_free_struct
-Perl_mg_free
-Perl_sv_clear
-Perl_sv_free2
-Perl_sv_clean_all
-perl_destruct
-```
+This lifetime fix needs no XPerl or RC-stack conditional. The separate
+callback-member stack repair remains conditional on `PERL_RC_STACK`.
 
-The ordinary-Perl control uses its own installation prefix and builds all
-XS dependencies for that interpreter. The existing Data-Printer registry
-patch is required for its RC-sensitive reference-count reporting tests;
-with that patch, all 695 dependency tests pass before Affix is tested.
+## Regression and validation
 
-This failure has not been established on ordinary non-RC Perl, on a
-non-debug ordinary RC build, or on a debug XPerl build. The current XPerl
-pass does not prove the absence of a lifetime problem on those builds.
-Keep the passing XPerl evidence and failed ordinary-Perl control separate.
+The new `t/092_shutdown.t` runs the existing marshaller regression in child
+processes with `PERL_DESTRUCT_LEVEL=2` and hash seeds 0, 1, 15 and 31. It
+checks the process exit status, including signals after the TAP plan.
+All four checks fail against the earlier patch on ordinary debugging RC
+Perl. They pass with the lifetime repair.
 
-The release metadata names
-[sanko/Affix.pm](https://github.com/sanko/Affix.pm) as upstream. Consult that
-repository's issues and recent lifetime fixes before implementing a repair.
-The exact patch hashes and tested configurations are in this directory's
-`evidence/` records.
+Full-suite results and build configurations are recorded in the matching
+`evidence/shutdown-*.json` files. Original failed evidence is retained for
+the earlier patch digest. It does not describe the selected repair.
+
+| Installed interpreter | Configuration | Full suite |
+| --- | --- | --- |
+| Perl v5.45.4 | RC, DEBUGGING, DEBUG_LEAKING_SCALARS, no threads | 59 files, 394 tests pass |
+| Perl v5.44.0 | Conventional stack, no threads or debugging | 59 files, 394 tests pass |
+| XPerl v5.45.5 | RC, no threads or debugging | 59 files, 394 tests pass |
+| XPerl v5.45.5 | RC, ithreads, shared libperl, no debugging | 59 files, 386 tests pass |
+
+Both XPerl runs use commit `8903238ce74fc124ec407b8342791ef73253f988`.
+The threaded run passes the ithreads and shutdown tests. Its embedding test
+`t/018_sv_type.t` skips because its `-lperl` link command cannot find the
+shared library. That test has not been validated on this profile. Author
+tests are not enabled in these runs.
+
+## Upstream review
+
+Reviewed current main's `lib/Affix.c`, its recent history and open pull
+requests before editing. Main retains the same cache/CV cleanup ordering.
+[Issue 235](https://github.com/sanko/Affix.pm/issues/235) reports tests passing
+followed by an exit failure on Solaris after threaded tests. It provides no
+matching native trace, so this investigation does not establish the same
+cause. The open Dist::Build conversion does not supply a lifetime fix.
+No upstream patch was adapted and no upstream message was posted.
+
+The recurring pattern and verification method are documented in
+[`native-payload-shutdown-v1`](../../../../recipes/native-payload-shutdown-v1.md).
+Passing profiles do not establish results on other operating systems,
+longdouble, quadmath or debugging XPerl.

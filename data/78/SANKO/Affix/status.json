@@ -412,6 +412,159 @@
          "test_summary" : "Files=58, Tests=387",
          "version" : "v1.4.0",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SA/SANKO/Affix-v1.4.0.tar.gz",
+         "id" : "d227a154a35d0f7cee473c8d1ec4848d6d36b9ccc3981feb2a244574e3c7fa21",
+         "module" : "Affix",
+         "observed_at" : "2026-11-11T15:18:31Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+         "status" : "installed",
+         "test_summary" : "Files=59, Tests=394",
+         "version" : "v1.4.0",
+         "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SA/SANKO/Affix-v1.4.0.tar.gz",
+         "id" : "bfb023c9f69e66725269e2240cc86f2a3c7fc1ac18a12f3c070df46fcdbf003e",
+         "module" : "Affix",
+         "observed_at" : "2026-11-11T15:19:15Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux-thread-multi",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "a140adec912f2529fe17fa84aa3637a7decce86818a770c1444d755be0d5ab72",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 1,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 1,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 1,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "57ec190c4b5029de7f7053f3ddc0a645b2aecf69b6948410916adf4fc04d5a3b",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux-thread-multi",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 1,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "f41b0d4a446b61c76e1be299410760aacb6217753ec772e003b3f1ce8f0dd1b8",
+         "status" : "installed",
+         "test_summary" : "Files=59, Tests=386",
+         "version" : "v1.4.0",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

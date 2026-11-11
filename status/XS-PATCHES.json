@@ -4,18 +4,25 @@
          "author" : "SANKO",
          "distribution" : "Affix",
          "evidence_paths" : [
-            "data/78/SANKO/Affix/evidence/rc-guards-perl-v5.45.4-9ea479535f76.json",
-            "data/78/SANKO/Affix/evidence/rc-guards-xperl-v5.45.5-9ea479535f76.json"
+            "data/78/SANKO/Affix/evidence/shutdown-perl-conventional-85374a197556.json",
+            "data/78/SANKO/Affix/evidence/shutdown-perl-debug-rc-85374a197556.json",
+            "data/78/SANKO/Affix/evidence/shutdown-xperl-rc-85374a197556.json",
+            "data/78/SANKO/Affix/evidence/shutdown-xperl-threaded-rc-shared-85374a197556.json"
          ],
          "index_path" : "data/78/SANKO/Affix/index.json",
          "native_files" : [
+            "lib/Affix.c",
+            "lib/Affix.h",
             "lib/Affix/marshal.c"
          ],
          "patch_paths" : [
-            "data/78/SANKO/Affix/patches/repair-v5.45.5-v1.4.0-9ea479535f76.patch"
+            "data/78/SANKO/Affix/patches/repair-v5.45.5-v1.4.0-85374a197556.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "native-payload-shutdown-v1",
+            "refcounted-stack-switch-v1"
+         ],
          "version" : "v1.4.0"
       },
       {

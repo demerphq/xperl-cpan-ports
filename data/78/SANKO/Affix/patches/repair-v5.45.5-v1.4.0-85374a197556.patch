@@ -1,0 +1,223 @@
+--- a/Changes.md
++++ b/Changes.md
+@@ -5,6 +5,20 @@
+ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+ 
++## [Unreleased]
++
++### Fixed
++
++- Native wrappers that survive until global destruction release their
++  cache, reusable return scalar and JIT resources before Perl's final SV
++  sweep. This avoids reading freed values during CV magic cleanup on both
++  conventional and reference-counted stacks. A child-process regression
++  checks complete interpreter shutdown under several fixed hash seeds.
++
++- Reading a callback member from Perl with `PERL_RC_STACK` no longer
++  frees the wrapper's arguments and result prematurely. The call from get-magic
++  uses a separate non-reference-counted stack for its legacy stack operations.
++
+ ## [v1.4.0] - 2026-10-31
+ 
+ ### Fixed
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -132,6 +132,7 @@
+ t/086_wstring_struct.t
+ t/090_cb_struct_byval.t
+ t/091_cb_struct_member.t
++t/092_shutdown.t
+ t/092_struct_signature_layout.t
+ t/093_malloc_lifeline.t
+ t/094_cast_cycle.t
+--- a/lib/Affix.c
++++ b/lib/Affix.c
+@@ -2254,11 +2254,38 @@
+     return nullptr;
+ }
+ 
++/* The list borrows native payloads, without keeping their CVs alive.
++   Normal CV cleanup unlinks its payload in constant time. */
++static void _affix_track(pTHX_ Affix * affix, MAGIC * mg) {
++    dMY_CXT;
++    affix->cv_magic = mg;
++    affix->next_live = MY_CXT.live_affixes;
++    if (affix->next_live)
++        affix->next_live->previous_live = affix;
++    MY_CXT.live_affixes = affix;
++#ifdef MULTIPLICITY
++    affix->owner_perl = aTHX;
++#endif
++}
++
+ static void _affix_destroy(pTHX_ Affix * affix) {
+     if (!affix)
+         return;
+ 
+     dMY_CXT;
++    if (affix->cv_magic) {
++        if (affix->previous_live)
++            affix->previous_live->next_live = affix->next_live;
++        else
++            MY_CXT.live_affixes = affix->next_live;
++        if (affix->next_live)
++            affix->next_live->previous_live = affix->previous_live;
++
++        /* The CV can survive until the final SV sweep. Its magic must
++           not free this payload again after interpreter-exit cleanup. */
++        affix->cv_magic->mg_ptr = nullptr;
++        affix->cv_magic = nullptr;
++    }
+     if (affix->lib_handle != nullptr && MY_CXT.lib_registry != nullptr) {
+         hv_iterinit(MY_CXT.lib_registry);
+         HE * he;
+@@ -2323,6 +2350,16 @@
+     safefree(affix);
+ }
+ 
++/* Perl's final SV sweep can free a payload's cache and return scalar
++   before its CV. Release surviving payloads while those SVs are valid,
++   after user destructors but before that sweep. */
++static void _affix_cleanup_live(pTHX_ void * unused) {
++    dMY_CXT;
++    PERL_UNUSED_ARG(unused);
++    while (MY_CXT.live_affixes)
++        _affix_destroy(aTHX_ MY_CXT.live_affixes);
++}
++
+ static int Affix_cv_free(pTHX_ SV * sv, MAGIC * mg) {
+     Affix * affix = (Affix *)mg->mg_ptr;
+     if (affix) {
+@@ -3228,6 +3265,7 @@
+     // copies truncated garbage.
+     MAGIC * mg = sv_magicext((SV *)cv_new, nullptr, PERL_MAGIC_ext, &Affix_cv_vtbl, nullptr, 0);
+     mg->mg_ptr = (char *)affix;
++    _affix_track(aTHX_ affix, mg);
+ 
+     // Set optimization pointer
+     CvXSUBANY(cv_new).any_ptr = (void *)affix;
+@@ -5869,6 +5907,8 @@
+ 
+     // Initialize the new thread's context (copies bitwise from parent)
+     MY_CXT_CLONE;
++    MY_CXT.live_affixes = nullptr;
++    call_atexit(_affix_cleanup_live, nullptr);
+ 
+     // Capture the parent's registry pointer.
+     // After MY_CXT_CLONE, MY_CXT refers to the new thread's context,
+@@ -5933,6 +5973,8 @@
+     my_perl = (PerlInterpreter *)PERL_GET_CONTEXT;
+ #endif
+     MY_CXT_INIT;
++    MY_CXT.live_affixes = nullptr;
++    call_atexit(_affix_cleanup_live, nullptr);
+     MY_CXT.lib_registry = newHV();
+     MY_CXT.callback_registry = newHV();
+     MY_CXT.enum_registry = newHV();
+--- a/lib/Affix.h
++++ b/lib/Affix.h
+@@ -59,6 +59,7 @@
+     HV * enum_registry;
+     // Cache for coercion strings to avoid re-fetching from SV objects
+     HV * coercion_cache;
++    struct Affix * live_affixes;  // Native owners awaiting final cleanup.
+     HV * stash_pointer;  // Cache for Affix::Pointer stash
+ } my_cxt_t;
+ START_MY_CXT;
+@@ -186,6 +187,9 @@
+ /// Represents a forward FFI call (a Perl sub that calls a C function).
+ /// This struct holds the pre-compiled execution plan and is attached to the generated XS subroutine.
+ struct Affix {
++    Affix * previous_live;
++    Affix * next_live;
++    MAGIC * cv_magic;
+     infix_forward_t * infix;          ///< Handle to the infix trampoline and type info.
+     infix_arena_t * args_arena;       ///< Persistent arena for type data (init-time only).
+     infix_arena_t * ret_arena;        ///< Persistent arena for return type data (init-time only).
+--- a/lib/Affix/marshal.c
++++ b/lib/Affix/marshal.c
+@@ -808,6 +808,11 @@
+         sig_ptr++;
+ 
+     dSP;
++#if defined(PERL_RC_STACK)
++    /* Get-magic can enter with an RC stack. Give the legacy stack
++       operations below a separate non-RC stack, as magic_methcall does. */
++    PUSHSTACKi(PERLSI_MAGIC);
++#endif
+     ENTER;
+     SAVETMPS;
+     PUSHMARK(SP);
+@@ -835,6 +840,9 @@
+     PUTBACK;
+     FREETMPS;
+     LEAVE;
++#if defined(PERL_RC_STACK)
++    POPSTACK;
++#endif
+ 
+     return ret;
+ }
+--- a/t/091_cb_struct_member.t
++++ b/t/091_cb_struct_member.t
+@@ -33,6 +33,24 @@
+     $pin->{data} = 41;
+     is $fn->($pin), 42, 'callback received correct arg and returned correct value';
+ };
++subtest 'read and call a callback member from Perl' => sub {
++    my $st = Struct [ fn => Callback [ [Int32] => Int32 ], data => Int32 ];
++    my $mem = Affix::malloc( sizeof($st) );
++    my $pin = cast( $mem, $st );
++    $pin->{fn} = sub ($x) { $x + 1 };
++
++    # Reading the member invokes get-magic outside an Affix XSUB.
++    my @values;
++    for my $x ( 1 .. 20 ) {
++        my $callback = $pin->{fn};
++        push @values, $callback->($x);
++    }
++    is \@values, [ 2 .. 21 ], 'repeated reads preserve callback arguments and results';
++    my @args = ( 'before', $pin->{fn}, 'after' );
++    is $args[0], 'before', 'get-magic preserves preceding stack arguments';
++    is $args[2], 'after', 'get-magic preserves following stack arguments';
++    is $args[1]->(41), 42, 'callback survives the temporary wrapping scope';
++};
+ subtest 'struct member callback (int8->int8)' => sub {
+     my $st  = Struct [ fn => Pointer [ Callback [ [Int8] => Int8 ] ], data => Int8 ];
+     my $fn  = wrap( $lib, 'call_i8', [ Pointer [$st] ], Int8 );
+--- /dev/null
++++ b/t/092_shutdown.t
+@@ -0,0 +1,32 @@
++use v5.40;
++use strict;
++use warnings;
++
++use Test2::V0;
++use File::Temp qw(tempfile);
++use IPC::Open3 qw(open3);
++
++# The marshaller test leaves callable struct members alive at shutdown.
++# A child process makes an abort after its TAP plan a failing assertion here.
++# Fixed seeds exercise different allocation and global-destruction orders.
++for my $seed (0, 1, 15, 31) {
++    local $ENV{PERL_DESTRUCT_LEVEL} = 2;
++    local $ENV{PERL_HASH_SEED} = $seed;
++    local $ENV{PERL_PERTURB_KEYS} = 2;
++
++    my ($log, $path) = tempfile(UNLINK => 1);
++    my $output = '>&' . fileno($log);
++    my $pid = open3(my $input, $output, $output,
++                    $^X, '-Mblib', 't/999_marshaller_2.t');
++    close $input;
++    waitpid($pid, 0);
++    my $status = $?;
++
++    is $status, 0, "marshaller exits cleanly with hash seed $seed";
++    if ($status) {
++        seek $log, 0, 0 or die "seek $path: $!";
++        diag do { local $/; <$log> };
++    }
++}
++
++done_testing;

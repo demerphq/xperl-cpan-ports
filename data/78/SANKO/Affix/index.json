@@ -8,12 +8,15 @@
                "id" : "repair-v5.45.5",
                "patches" : [
                   {
-                     "path" : "patches/repair-v5.45.5-v1.4.0-9ea479535f76.patch",
-                     "sha256" : "9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90"
+                     "path" : "patches/repair-v5.45.5-v1.4.0-85374a197556.patch",
+                     "sha256" : "85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1"
                   }
                ],
                "purpose" : "compatibility",
-               "recipes" : [],
+               "recipes" : [
+                  "native-payload-shutdown-v1",
+                  "refcounted-stack-switch-v1"
+               ],
                "xperl" : {
                   "max_exclusive" : "v5.46.0",
                   "min_inclusive" : "v5.45.5"

@@ -12,10 +12,10 @@ previous results, while `index.json` selects the new digest.
 - Both lanes use `PERL_DESTRUCT_LEVEL=2`. Each interpreter has its own library
   tree. Per-build evidence records the remaining configuration details.
 
-All 13 distributions pass on RC XPerl. Twelve pass on ordinary debug RC
-Perl. Affix fails during global destruction, after its callback-member
-regression passes. This is a failed ordinary-Perl control, not an XPerl
-failure or a successful Affix installation on that profile.
+All 13 distributions pass on RC XPerl and ordinary debug RC Perl. Affix
+needed a separate general lifetime repair after its callback-member fix:
+native payloads now release their Perl values before the final SV sweep.
+Its earlier failed control is retained against the earlier patch digest.
 
 | Distribution | Version | RC XPerl | Ordinary debug RC Perl |
 | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ failure or a successful Affix installation on that profile.
 | [LNATION/File-Raw](../data/1e/LNATION/File-Raw/index.json) | 0.19 | pass, 403 tests | pass, 403 tests |
 | [LNATION/Horus](../data/17/LNATION/Horus/index.json) | 1.00 | pass, 209 tests | pass, 209 tests |
 | [LNATION/Object-Proto](../data/07/LNATION/Object-Proto/index.json) | 1.04 | pass, 1627 tests | pass, 1563 tests |
-| [SANKO/Affix](../data/78/SANKO/Affix/index.json) | v1.4.0 | pass, 390 tests | **FAIL**, 390 tests; [review](../data/78/SANKO/Affix/REVIEW.md) |
+| [SANKO/Affix](../data/78/SANKO/Affix/index.json) | v1.4.0 | pass, 394 tests | pass, 394 tests; [review](../data/78/SANKO/Affix/REVIEW.md) |
 | [SMUELLER/Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/index.json) | 1.19 | pass, 399 tests | pass, 399 tests |
 | [SYBER/next-XS](../data/c7/SYBER/next-XS/index.json) | 1.0.8 | pass, 95 tests | pass, 95 tests |
 | [VPIT/autovivification](../data/a8/VPIT/autovivification/index.json) | 0.18 | pass, 44417 tests | pass, 44417 tests |
@@ -40,10 +40,14 @@ v5.44.0, and 645 on RC XPerl. The difference includes interpreter-specific
 test branches. See `refcounted-stack-custom-op-v1` for the pattern.
 
 The existing Data-Printer patch passes all 695 tests on ordinary debug RC
-Perl as an Affix dependency. The final Affix failure is tracked in its
-[review notes](../data/78/SANKO/Affix/REVIEW.md) and failed evidence record.
+Perl as an Affix dependency. Affix's new process-exit regression fails with
+the earlier patch and passes with the lifetime repair. The revised patch
+passes all 394 tests on conventional ordinary Perl v5.44.0 too.
 
-Threaded builds, debug XPerl, longdouble and quadmath have not been tested
-by this guard-validation exercise. An RC pass is not evidence for those
-profiles. Ordinary-Perl controls live in evidence; `status.json` retains the
-normal installer results from XPerl.
+Affix's revised patch separately passes on threaded RC XPerl with shared
+libperl: 59 files, 386 tests, including its ithreads and shutdown tests.
+The embedding test skips because its `-lperl` command cannot find the
+shared library. This does not establish threaded coverage for the other
+distributions. Debug XPerl, longdouble and quadmath have not been tested
+by this exercise. Ordinary-Perl controls live in evidence; `status.json`
+retains the normal installer results from XPerl.

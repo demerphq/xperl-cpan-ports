@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 4004 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 94 of 4005 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3378,7 +3378,8 @@ Unresolved failures: 94 of 4004 release, XPerl, and platform combinations. See [
 | SANKO | [Acme-UPnP](../data/8d/SANKO/Acme-UPnP/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90 |
 | SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
-| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 9ea479535f76736f6c7f473c8f8f942ee3922e85c4bc6480209adbeb21452c90 |
+| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux-thread-multi/57ec190c4b5029de7f7053f3ddc0a645b2aecf69b6948410916adf4fc04d5a3b | installed | repair-v5.45.5 | 85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1 |
+| SANKO | [Affix](../data/78/SANKO/Affix/status.json) | v1.4.0 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 85374a197556aabcc845216f91744567b893237dcf7c08a8e7e5a8b2571a5ca1 |
 | SANKO | [Algorithm-Kademlia](../data/c8/SANKO/Algorithm-Kademlia/status.json) | v1.1.1 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Algorithm-RateLimiter-TokenBucket](../data/e5/SANKO/Algorithm-RateLimiter-TokenBucket/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SANKO | [Alien-SDL3](../data/5b/SANKO/Alien-SDL3/status.json) | v3.4.22 | v5.45.5 | linux/x86_64-linux | installed | none | none |
