@@ -13,7 +13,10 @@
                   }
                ],
                "purpose" : "compatibility",
-               "recipes" : [],
+               "recipes" : [
+                  "hash-value-lifetime-v1",
+                  "refcounted-stack-callback-v1"
+               ],
                "xperl" : {
                   "max_exclusive" : "v5.46.0",
                   "min_inclusive" : "v5.45.5"

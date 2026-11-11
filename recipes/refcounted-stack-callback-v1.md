@@ -21,6 +21,12 @@ interpreter's stack APIs when their ownership contract fits the call path.
 Do not add an `XPERL_VERSION` requirement to an RC ownership fix. Ordinary
 Perl can enable `PERL_RC_STACK` and needs the same ownership handling.
 
+Refresh a local `SP` with `SPAGAIN` after `call_method` or another call into
+Perl before using it to push the next arguments. The call can change or
+relocate the stack. Chandra 0.31 reused its old local pointer between native
+calls, which corrupted its argument handling. This pointer refresh is
+required on compatibility stacks too and needs no RC or XPerl conditional.
+
 Devel-Cover 1.52 demonstrates this in its `Devel::Cover::use_file` callback:
 the pushed filename gains an RC-stack reference, and the popped boolean
 result loses its reference after its value is read. The consolidated patch

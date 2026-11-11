@@ -51,7 +51,10 @@
             "data/89/LNATION/Chandra/patches/repair-v5.45.5-0.31-8a8c01454aed.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "hash-value-lifetime-v1",
+            "refcounted-stack-callback-v1"
+         ],
          "version" : "0.31"
       },
       {
@@ -732,7 +735,9 @@
             "data/ea/MOB/Sys-CpuAffinity/patches/repair-v5.45.5-1.12-ee1cd07ea6e2.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "xs-declaration-layout-v1"
+         ],
          "version" : "1.12"
       },
       {
