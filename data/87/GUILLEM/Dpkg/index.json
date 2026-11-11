@@ -1,0 +1,30 @@
+{
+   "distribution" : "Dpkg",
+   "releases" : [
+      {
+         "cpan_path" : "G/GU/GUILLEM/Dpkg-1.23.9.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "build-test-v1",
+               "patches" : [
+                  {
+                     "path" : "patches/build-test-v1-786e3bf371d2.patch",
+                     "sha256" : "786e3bf371d24f5e32822c80339a4a0a7e460bb87b290190dcc26f611e879d85"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [
+                  "test-environment-isolation-v1"
+               ],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "8cda964042d3211f9907a994c696bdd5c14e496abf62d6ef7e94911baa8d5f9e",
+         "version" : "v1.23.9"
+      }
+   ],
+   "schema" : 1
+}

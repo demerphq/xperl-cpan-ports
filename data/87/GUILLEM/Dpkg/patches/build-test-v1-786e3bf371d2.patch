@@ -1,0 +1,25 @@
+--- a/Build.PL
++++ b/Build.PL
+@@ -13,6 +13,10 @@
+         "To create one, configure normally and then run 'make dist'.\n";
+ }
+ 
++# Remove test artifacts before the manifest check follows their symlinks.
++require File::Path;
++File::Path::rmtree('t.tmp');
++
+ my $class = Module::Build->subclass(
+     class => 'Module::Build::Dpkg',
+     code => q{
+--- a/t/taint.t
++++ b/t/taint.t
+@@ -30,7 +30,8 @@
+ sub taint_ok {
+     my $file = shift;
+ 
+-    my $eval = qx($PERL -Iscripts -Idselect/methods -cwT \"$file\" 2>&1);
++    # Taint mode ignores PERL5LIB, so include the CPAN module directory.
++    my $eval = qx($PERL -Ilib -Iscripts -Idselect/methods -cwT \"$file\" 2>&1);
+     my $ok = ($eval =~ s{^\Q$file\E syntax OK\n$}{}ms) && length $eval == 0;
+ 
+     ok($ok, "Tainting check $file");
