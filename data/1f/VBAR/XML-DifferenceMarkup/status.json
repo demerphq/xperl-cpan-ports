@@ -1,0 +1,66 @@
+{
+   "author" : "VBAR",
+   "distribution" : "XML-DifferenceMarkup",
+   "observations" : [
+      {
+         "cpan_path" : "V/VB/VBAR/XML-DifferenceMarkup-1.05.tar.gz",
+         "failure" : {
+            "exit_status" : 0,
+            "phase" : "configure",
+            "validation_error" : "configure did not produce Makefile"
+         },
+         "id" : "714a017b935638e7e90d939cd350e8bda38b269b63c048277055fd1eef5aa4b9",
+         "module" : "XML::DifferenceMarkup",
+         "observed_at" : "2026-11-11T22:26:50Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure",
+               "validation_error" : "configure did not produce Makefile"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "38639c5c707694e2174ef7cb33bbfeb05f2098709f9b380b3869fd1a6d38a914",
+         "status" : "failed",
+         "version" : "1.05",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
