@@ -55,7 +55,7 @@ Prior failures remain in each distribution record after a later success.
 | MBARBON | [Alien-ProtoBuf](../data/60/MBARBON/Alien-ProtoBuf/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
 | MBARBON | [Devel-StatProfiler](../data/51/MBARBON/Devel-StatProfiler/status.json) | 0.57 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | MJEVANS | [DBD-ODBC](../data/40/MJEVANS/DBD-ODBC/status.json) | 1.61 | v5.45.5 | darwin/darwin-2level | configure | exit 0 |
-| MLEHMANN | [Gtk-Perl](../data/20/MLEHMANN/Gtk-Perl/status.json) | 0.7010 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | configure | exit 2 |
+| MLEHMANN | [Gtk-Perl](../data/20/MLEHMANN/Gtk-Perl/status.json) | 0.7010 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | configure | exit 2 (obsolete-superseded) |
 | MLEHMANN | [Linux-Inotify2](../data/d2/MLEHMANN/Linux-Inotify2/status.json) | 2.3 | v5.45.5 | darwin/darwin-2level | build | exit 2 |
 | MOB | [Sys-CpuAffinity](../data/ea/MOB/Sys-CpuAffinity/status.json) | 1.12 | v5.45.5 | linux/x86_64-linux | build | exit 2 |
 | MVR | [HTML-TreeStructured](../data/97/MVR/HTML-TreeStructured/status.json) | 1.01 | v5.45.5 | darwin/darwin-2level | test | Files=1, Tests=1, Failed 1/1 test programs. 1/1 subtests failed. |

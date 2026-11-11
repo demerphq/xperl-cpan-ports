@@ -1,6 +1,0 @@
-# Remaining target from the 77 missing River top-500 distributions.
-# Batch results and original targets: river-top500-2026-11-11.md
-# Gtk-Perl requires GTK+ 1.2 / GLib 1.2 development files and gtk-config.
-# GTK 2 or GTK 3 packages cannot satisfy this requirement.
-# See data/20/MLEHMANN/Gtk-Perl/REVIEW.md before retrying.
-Gtk

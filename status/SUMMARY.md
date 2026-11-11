@@ -2320,7 +2320,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | MLEHMANN | [Coro](../data/a9/MLEHMANN/Coro/status.json) | 6.57 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MLEHMANN | [Coro](../data/a9/MLEHMANN/Coro/status.json) | 6.57 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | b24f0f405d054a68b89b66ed4cecee864d8b09a7dc80b57cec812af3fb1507f6 |
 | MLEHMANN | [EV](../data/99/MLEHMANN/EV/status.json) | 4.37 | v5.45.5 | darwin/darwin-2level | installed | none | none |
-| MLEHMANN | [Gtk-Perl](../data/20/MLEHMANN/Gtk-Perl/status.json) | 0.7010 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
+| MLEHMANN | [Gtk-Perl](../data/20/MLEHMANN/Gtk-Perl/status.json) | 0.7010 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed (obsolete-superseded) | none | none |
 | MLEHMANN | [Guard](../data/f5/MLEHMANN/Guard/status.json) | 1.023 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | MLEHMANN | [Guard](../data/f5/MLEHMANN/Guard/status.json) | 1.023 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MLEHMANN | [Guard](../data/f5/MLEHMANN/Guard/status.json) | 1.023 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |

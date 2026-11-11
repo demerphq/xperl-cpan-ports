@@ -122,5 +122,11 @@
          "xperl_version" : "v5.45.5"
       }
    ],
-   "schema" : 2
+   "schema" : 2,
+   "triage" : {
+      "disposition" : "obsolete-superseded",
+      "reason" : "Gtk-Perl 0.7010 binds obsolete GTK+ 1.x. Gtk2 and Gtk3 are successor bindings with different APIs, requiring application porting. Defer restoration of the GTK+ 1.2 / GLib 1.2 environment and remove this release from active repair work. Preserve the failed configuration observations. See REVIEW.md for the upstream porting guide and the misleading River dependency attribution.",
+      "source_sha256" : "f8014dc7549beb9a627750bfa249fe941c19ec8de20053b61e76eda061c81fba",
+      "version" : "0.7010"
+   }
 }
