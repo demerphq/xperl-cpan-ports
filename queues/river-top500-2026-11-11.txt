@@ -1,0 +1,317 @@
+# The 77 unobserved distributions in the River top 500 on 2026-11-11.
+# Source: https://metacpan.github.io/metacpan-river/river.json.gz
+# Snapshot SHA256: fe49941dc5b2414cf95832e586f65685322d8f8ae90d6dc169dcc4e28b1b0cfd
+# Baseline: XPerl v5.45.5, observations across all recorded platforms.
+# These are investigation candidates, not known failures.
+# Module names were checked against the current CPAN package index.
+# Release comments record that lookup; ordinary install resolves current CPAN.
+# Run with: xperl-install install --registry PORTS --from THIS_FILE
+
+# River rank 268: AppConfig-MyFile
+# Indexed release: A/AB/ABW/AppConfig-MyFile-0.00.tar.gz
+AppConfig::MyFile
+
+# River rank 294: Regexp-Stringify
+# Indexed release: P/PE/PERLANCAR/Regexp-Stringify-0.06.tar.gz
+Regexp::Stringify
+
+# River rank 295: Proc-ChildError
+# Indexed release: P/PE/PERLANCAR/Proc-ChildError-0.04.tar.gz
+Proc::ChildError
+
+# River rank 296: IPC-System-Options
+# Indexed release: P/PE/PERLANCAR/IPC-System-Options-0.341.tar.gz
+IPC::System::Options
+
+# River rank 297: Data-Dmp
+# Indexed release: P/PE/PERLANCAR/Data-Dmp-0.242.tar.gz
+Data::Dmp
+
+# River rank 301: Data-Sah-Normalize
+# Indexed release: P/PE/PERLANCAR/Data-Sah-Normalize-0.051.tar.gz
+Data::Sah::Normalize
+
+# River rank 311: Module-Installed-Tiny
+# Indexed release: P/PE/PERLANCAR/Module-Installed-Tiny-0.011.tar.gz
+Module::Installed::Tiny
+
+# River rank 313: Time-Duration-Parse-AsHash
+# Indexed release: P/PE/PERLANCAR/Time-Duration-Parse-AsHash-0.10.6.tar.gz
+Time::Duration::Parse::AsHash
+
+# River rank 314: JavaScript-QuickJS
+# Indexed release: F/FE/FELIPE/JavaScript-QuickJS-0.21.tar.gz
+JavaScript::QuickJS
+
+# River rank 315: subroutines
+# Indexed release: P/PE/PERLANCAR/subroutines-0.001.tar.gz
+subroutines
+
+# River rank 316: Data-Sah-Coerce
+# Indexed release: P/PE/PERLANCAR/Data-Sah-Coerce-0.054.tar.gz
+Data::Sah::Coerce
+
+# River rank 322: Module-Path-More
+# Indexed release: P/PE/PERLANCAR/Module-Path-More-0.340.tar.gz
+Module::Path::More
+
+# River rank 328: Gtk-Perl
+# Indexed release: M/ML/MLEHMANN/Gtk-Perl-0.7010.tar.gz
+Gtk
+
+# River rank 331: String-LineNumber
+# Indexed release: P/PE/PERLANCAR/String-LineNumber-0.01.tar.gz
+String::LineNumber
+
+# River rank 333: UUID-Random
+# Indexed release: P/PE/PERLER/UUID-Random-0.04.tar.gz
+UUID::Random
+
+# River rank 338: String-PerlQuote
+# Indexed release: P/PE/PERLANCAR/String-PerlQuote-0.02.tar.gz
+String::PerlQuote
+
+# River rank 339: Data-Clean
+# Indexed release: P/PE/PERLANCAR/Data-Clean-0.508.tar.gz
+Data::Clean
+
+# River rank 340: Perinci-Object
+# Indexed release: P/PE/PERLANCAR/Perinci-Object-0.311.tar.gz
+Perinci::Object
+
+# River rank 341: Data-Sah-Util-Type
+# Indexed release: P/PE/PERLANCAR/Data-Sah-Util-Type-0.46.tar.gz
+Data::Sah::Util::Type
+
+# River rank 342: Data-Clean-ForJSON
+# Indexed release: P/PE/PERLANCAR/Data-Clean-ForJSON-0.395.tar.gz
+Data::Clean::ForJSON
+
+# River rank 363: Sort-BySpec
+# Indexed release: P/PE/PERLANCAR/Sort-BySpec-0.040.tar.gz
+Sort::BySpec
+
+# River rank 366: Text-Table-Sprintf
+# Indexed release: P/PE/PERLANCAR/Text-Table-Sprintf-0.008.tar.gz
+Text::Table::Sprintf
+
+# River rank 367: Data-Check-Structure
+# Indexed release: P/PE/PERLANCAR/Data-Check-Structure-0.050.tar.gz
+Data::Check::Structure
+
+# River rank 371: Perinci-Result-Format-Lite
+# Indexed release: P/PE/PERLANCAR/Perinci-Result-Format-Lite-0.288.tar.gz
+Perinci::Result::Format::Lite
+
+# River rank 388: Regexp-Grammars
+# Indexed release: D/DC/DCONWAY/Regexp-Grammars-1.058.tar.gz
+Regexp::Grammars
+
+# River rank 391: Text-sprintfn
+# Indexed release: P/PE/PERLANCAR/Text-sprintfn-0.090.tar.gz
+Text::sprintfn
+
+# River rank 393: Data-Cmp
+# Indexed release: P/PE/PERLANCAR/Data-Cmp-0.010.tar.gz
+Data::Cmp
+
+# River rank 394: Nodejs-Util
+# Indexed release: P/PE/PERLANCAR/Nodejs-Util-0.012.tar.gz
+Nodejs::Util
+
+# River rank 396: Lingua-EN-Numbers-Ordinate
+# Indexed release: N/NE/NEILB/Lingua-EN-Numbers-Ordinate-1.05.tar.gz
+Lingua::EN::Numbers::Ordinate
+
+# River rank 399: Data-ModeMerge
+# Indexed release: P/PE/PERLANCAR/Data-ModeMerge-0.360.tar.gz
+Data::ModeMerge
+
+# River rank 403: Data-Sah-Resolve
+# Indexed release: P/PE/PERLANCAR/Data-Sah-Resolve-0.011.tar.gz
+Data::Sah::Resolve
+
+# River rank 404: Scalar-Util-Numeric-PP
+# Indexed release: P/PE/PERLANCAR/Scalar-Util-Numeric-PP-0.04.tar.gz
+Scalar::Util::Numeric::PP
+
+# River rank 405: Data-Sah-Filter
+# Indexed release: P/PE/PERLANCAR/Data-Sah-Filter-0.025.tar.gz
+Data::Sah::Filter
+
+# River rank 406: lib-filter
+# Indexed release: P/PE/PERLANCAR/lib-filter-0.281.tar.gz
+lib::filter
+
+# River rank 408: Language-Expr
+# Indexed release: P/PE/PERLANCAR/Language-Expr-0.29.tar.gz
+Language::Expr
+
+# River rank 409: Data-Sah-DefaultValue
+# Indexed release: P/PE/PERLANCAR/Data-Sah-DefaultValue-0.005.tar.gz
+Data::Sah::DefaultValue
+
+# River rank 410: Sah
+# Indexed release: P/PE/PERLANCAR/Sah-0.9.51.tar.gz
+Sah
+
+# River rank 411: Data-Sah
+# Indexed release: P/PE/PERLANCAR/Data-Sah-0.917.tar.gz
+Data::Sah
+
+# River rank 419: Function-Fallback-CoreOrPP
+# Indexed release: P/PE/PERLANCAR/Function-Fallback-CoreOrPP-0.090.tar.gz
+Function::Fallback::CoreOrPP
+
+# River rank 426: Monkey-Patch-Action
+# Indexed release: P/PE/PERLANCAR/Monkey-Patch-Action-0.061.tar.gz
+Monkey::Patch::Action
+
+# River rank 429: Mouse
+# Indexed release: S/SY/SYOHEX/Mouse-v2.6.2.tar.gz
+Mouse
+
+# River rank 431: Data-Dump-OneLine
+# Indexed release: P/PE/PERLANCAR/Data-Dump-OneLine-0.080.tar.gz
+Data::Dump::OneLine
+
+# River rank 432: Sah-Schemas-Rinci
+# Indexed release: P/PE/PERLANCAR/Sah-Schemas-Rinci-1.1.98.0.tar.gz
+Sah::Schemas::Rinci
+
+# River rank 433: Gen-Test-Rinci-FuncResult
+# Indexed release: P/PE/PERLANCAR/Gen-Test-Rinci-FuncResult-0.06.tar.gz
+Gen::Test::Rinci::FuncResult
+
+# River rank 434: Perinci-Sub-Util
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-Util-0.472.tar.gz
+Perinci::Sub::Util
+
+# River rank 436: Perl-osnames
+# Indexed release: P/PE/PERLANCAR/Perl-osnames-0.122.tar.gz
+Perl::osnames
+
+# River rank 438: Package-Util-Lite
+# Indexed release: P/PE/PERLANCAR/Package-Util-Lite-0.001.tar.gz
+Package::Util::Lite
+
+# River rank 440: Perinci-Sub-Normalize
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-Normalize-0.207.tar.gz
+Perinci::Sub::Normalize
+
+# River rank 447: Perinci-Sub-PropertyUtil
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-PropertyUtil-0.11.tar.gz
+Perinci::Sub::PropertyUtil
+
+# River rank 448: Version-Util
+# Indexed release: P/PE/PERLANCAR/Version-Util-0.732.tar.gz
+Version::Util
+
+# River rank 449: Perinci-Sub-DepChecker
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-DepChecker-0.128.tar.gz
+Perinci::Sub::DepChecker
+
+# River rank 450: Test-RandomResult
+# Indexed release: P/PE/PERLANCAR/Test-RandomResult-0.001.tar.gz
+Test::RandomResult
+
+# River rank 453: Color-RGB-Util
+# Indexed release: P/PE/PERLANCAR/Color-RGB-Util-0.609.tar.gz
+Color::RGB::Util
+
+# River rank 454: Sah-Schemas-Int
+# Indexed release: P/PE/PERLANCAR/Sah-Schemas-Int-0.077.tar.gz
+Sah::Schemas::Int
+
+# River rank 456: Text-ANSI-Util
+# Indexed release: P/PE/PERLANCAR/Text-ANSI-Util-0.234.tar.gz
+Text::ANSI::Util
+
+# River rank 458: Complete-Sah
+# Indexed release: P/PE/PERLANCAR/Complete-Sah-0.013.tar.gz
+Complete::Sah
+
+# River rank 460: Module-List
+# Indexed release: N/NE/NEILB/Module-List-0.005.tar.gz
+Module::List
+
+# River rank 461: Data-Clean-JSON
+# Indexed release: P/PE/PERLANCAR/Data-Clean-JSON-0.392.tar.gz
+Data::Clean::JSON
+
+# River rank 462: Lingua-EN-PluralToSingular
+# Indexed release: B/BK/BKB/Lingua-EN-PluralToSingular-0.21.tar.gz
+Lingua::EN::PluralToSingular
+
+# River rank 463: Color-ANSI-Util
+# Indexed release: P/PE/PERLANCAR/Color-ANSI-Util-0.165.tar.gz
+Color::ANSI::Util
+
+# River rank 464: YAML-Old
+# Indexed release: I/IN/INGY/YAML-Old-1.23.tar.gz
+YAML::Old
+
+# River rank 466: Sub-Iterator
+# Indexed release: P/PE/PERLANCAR/Sub-Iterator-0.01.tar.gz
+Sub::Iterator
+
+# River rank 468: Perinci-Sub-Wrapper
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-Wrapper-0.853.tar.gz
+Perinci::Sub::Wrapper
+
+# River rank 470: Getopt-Long-Negate-EN
+# Indexed release: P/PE/PERLANCAR/Getopt-Long-Negate-EN-0.060.tar.gz
+Getopt::Long::Negate::EN
+
+# River rank 471: Perinci-Sub-GetArgs-Array
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-GetArgs-Array-0.170.tar.gz
+Perinci::Sub::GetArgs::Array
+
+# River rank 472: Perinci-Sub-GetArgs-Argv
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-GetArgs-Argv-0.850.tar.gz
+Perinci::Sub::GetArgs::Argv
+
+# River rank 479: Tie-Cache
+# Indexed release: C/CH/CHAMAS/Tie-Cache-0.21.tar.gz
+Tie::Cache
+
+# River rank 482: Perinci-Sub-Property-arg-cmdline
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-Property-arg-cmdline-0.02.tar.gz
+Perinci::Sub::Property::arg::cmdline
+
+# River rank 483: Perinci-Examples
+# Indexed release: P/PE/PERLANCAR/Perinci-Examples-0.825.tar.gz
+Perinci::Examples
+
+# River rank 487: Progress-Any
+# Indexed release: P/PE/PERLANCAR/Progress-Any-0.220.tar.gz
+Progress::Any
+
+# River rank 489: Perinci-Sub-Complete
+# Indexed release: P/PE/PERLANCAR/Perinci-Sub-Complete-0.946.tar.gz
+Perinci::Sub::Complete
+
+# River rank 490: File-Flock-Retry
+# Indexed release: P/PE/PERLANCAR/File-Flock-Retry-0.632.tar.gz
+File::Flock::Retry
+
+# River rank 491: IOD-Examples
+# Indexed release: P/PE/PERLANCAR/IOD-Examples-0.201.tar.gz
+IOD::Examples
+
+# River rank 492: Config-IOD-Reader
+# Indexed release: P/PE/PERLANCAR/Config-IOD-Reader-0.345.tar.gz
+Config::IOD::Reader
+
+# River rank 493: Regexp-Pattern-Perl
+# Indexed release: P/PE/PERLANCAR/Regexp-Pattern-Perl-0.007.tar.gz
+Regexp::Pattern::Perl
+
+# River rank 494: Perinci-Access-Base
+# Indexed release: P/PE/PERLANCAR/Perinci-Access-Base-0.33.tar.gz
+Perinci::Access::Base
+
+# River rank 497: Perinci-Access-Perl
+# Indexed release: P/PE/PERLANCAR/Perinci-Access-Perl-0.900.tar.gz
+Perinci::Access::Perl
+
