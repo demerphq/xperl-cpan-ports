@@ -947,6 +947,72 @@
          "test_summary" : "Files=246, Tests=2995",
          "version" : "2.0.13",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "advisories" : [],
+         "cpan_path" : "S/SH/SHAY/mod_perl-2.0.13.tar.gz",
+         "failure" : {
+            "exit_status" : 1,
+            "phase" : "configure"
+         },
+         "id" : "a386968aef6a964c93f6ce29c170d7158b26da0c2b52d97b7305b9d4bb70957e",
+         "module" : "mod_perl2",
+         "module_version" : "2.000013",
+         "observed_at" : "2026-11-11T22:13:01Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "f1c6d1344d85814a7dd0a70a74a6aeef9a04e4d25594dc05c2fac5228c57e614"
+         ],
+         "phases" : [
+            {
+               "exit_status" : 0,
+               "name" : "patch"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 1,
+               "name" : "configure"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "ade3be31c447b8448869fecdfcace258d6d587b8c6c773c5f22735f70d82d6da",
+         "status" : "failed",
+         "version" : "2.0.13",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
