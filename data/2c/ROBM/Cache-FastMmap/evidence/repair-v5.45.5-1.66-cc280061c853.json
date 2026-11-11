@@ -1,0 +1,90 @@
+{
+   "date" : "2026-11-11",
+   "files" : [
+      "t/24.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "cc280061c853be2f3c5388f544b3789393de80e598cbc87ae6c323c046fd99e5",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "b446c12e2ee80550c1f91bcd909b01d3568114087fd43d4b5eaaa2bc6089e245",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap"
+            },
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap/issues"
+            },
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap/pulls"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/robmueller/cache-fastmmap/master/Changes"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/robmueller/cache-fastmmap/master/t/24.t"
+            },
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap/issues/29"
+            },
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap/issues/27"
+            },
+            {
+               "url" : "https://github.com/robmueller/cache-fastmmap/issues/26"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

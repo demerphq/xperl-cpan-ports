@@ -1,0 +1,13 @@
+--- a/t/24.t
++++ b/t/24.t
+@@ -50,7 +50,9 @@
+   ok( $FC->set("k", "initial"), "[get_and_set die] set initial" );
+ 
+   eval { $FC->get_and_set("k", sub { die "boom\n" }); };
+-  is( $@, "boom\n", "[get_and_set die] re-throws" );
++  # XPerl exception objects append propagation context when rethrown.
++  # Check the original message, as in the other exception tests below.
++  like( $@, qr/\Aboom\n/, "[get_and_set die] re-throws" );
+ 
+   my ($dead, $r) = run_with_deadlock_guard(5, sub { $FC->set("k", "after") });
+   is( $dead, 0, "[get_and_set die] no deadlock on follow-up set" );

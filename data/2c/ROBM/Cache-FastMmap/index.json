@@ -1,0 +1,28 @@
+{
+   "distribution" : "Cache-FastMmap",
+   "releases" : [
+      {
+         "cpan_path" : "R/RO/ROBM/Cache-FastMmap-1.66.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.66-cc280061c853.patch",
+                     "sha256" : "cc280061c853be2f3c5388f544b3789393de80e598cbc87ae6c323c046fd99e5"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "b446c12e2ee80550c1f91bcd909b01d3568114087fd43d4b5eaaa2bc6089e245",
+         "version" : "1.66"
+      }
+   ],
+   "schema" : 1
+}
