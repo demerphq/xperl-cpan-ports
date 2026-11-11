@@ -5,6 +5,11 @@ Code that treats every reference in `$@` as an explicitly thrown reference
 may skip string-error handling. In `Params::Validate` 1.31, that bypasses the
 context normally added to callback failures in both the Perl and XS paths.
 
+When the distinction is a library's own exception class, test for that
+class directly. mod_perl 2.0.13's runtime test must distinguish `APR::Error`
+from core Perl errors, which may themselves be objects. `ref($@)` cannot
+make that distinction. Preserve the caught exception and its identity.
+
 When a module has separate handling for text errors and user-thrown
 references, treat `XPerl::Exception` as a text error at that boundary while
 preserving other references unchanged. Stringify the wrapper only when

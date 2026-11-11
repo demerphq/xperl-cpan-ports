@@ -21,6 +21,16 @@ interpreter's stack APIs when their ownership contract fits the call path.
 Do not add an `XPERL_VERSION` requirement to an RC ownership fix. Ordinary
 Perl can enable `PERL_RC_STACK` and needs the same ownership handling.
 
+An alternative for a traditional embedding callback is a separate non-RC
+stack around its Perl call and temporary scope. mod_perl 2.0.13 uses
+`PUSHSTACKi(PERLSI_MAGIC)` before `ENTER`/`SAVETMPS`, then `POPSTACK` after
+`FREETMPS`/`LEAVE`. Establish `dSP` before switching and publish the inner
+pointer with `PUTBACK` before switching back. Keep the switch under
+`PERL_RC_STACK` alone. Configuration constructors, metadata methods, merge
+handlers and request callbacks can all enter without an XSUB wrapper.
+Check arguments and results at each boundary rather than assuming the
+ordinary XSUB compatibility frame protects the complete host call path.
+
 Refresh a local `SP` with `SPAGAIN` after `call_method` or another call into
 Perl before using it to push the next arguments. The call can change or
 relocate the stack. Chandra 0.31 reused its old local pointer between native
