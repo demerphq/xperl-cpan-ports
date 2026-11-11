@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 95 of 4114 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -569,6 +569,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | DANAJ | [Crypt-Random-TESHA2](../data/36/DANAJ/Crypt-Random-TESHA2/status.json) | 0.01 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DANAJ | [Math-Prime-Util](../data/aa/DANAJ/Math-Prime-Util/status.json) | 0.75 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | DANAJ | [Math-Prime-Util-GMP](../data/63/DANAJ/Math-Prime-Util-GMP/status.json) | 0.54 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| DANBERR | [Net-DBus](../data/1d/DANBERR/Net-DBus/status.json) | 1.2.0 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | DANBOO | [Test-Command](../data/2f/DANBOO/Test-Command/status.json) | 0.11 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DANBOO | [Text-xSV-Slurp](../data/cd/DANBOO/Text-xSV-Slurp/status.json) | 0.23 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | DANIELR | [AnyEvent-Promises](../data/c8/DANIELR/AnyEvent-Promises/status.json) | 0.06 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -1277,6 +1278,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | GAAS | [Encode-Locale](../data/b6/GAAS/Encode-Locale/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GAAS | [Encode-Locale](../data/b6/GAAS/Encode-Locale/status.json) | 1.05 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | GAAS | [File-CounterFile](../data/31/GAAS/File-CounterFile/status.json) | 1.04 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| GAAS | [Font-AFM](../data/44/GAAS/Font-AFM/status.json) | 1.20 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | GAAS | [HTTP-Negotiate](../data/85/GAAS/HTTP-Negotiate/status.json) | 6.01 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | GAAS | [HTTP-Negotiate](../data/85/GAAS/HTTP-Negotiate/status.json) | 6.01 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | GAAS | [HTTP-Negotiate](../data/85/GAAS/HTTP-Negotiate/status.json) | 6.01 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1376,6 +1378,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | GUGOD | [Hijk](../data/79/GUGOD/Hijk/status.json) | 0.28 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | GUGOD | [Template-Plugin-CSV](../data/3f/GUGOD/Template-Plugin-CSV/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GUIDO | [Data-Walk](../data/a5/GUIDO/Data-Walk/status.json) | 2.01 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| GUILLEM | [Dpkg](../data/87/GUILLEM/Dpkg/status.json) | 1.23.9 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | GWILLIAMS | [Attean](../data/ee/GWILLIAMS/Attean/status.json) | 0.040 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
@@ -1790,6 +1793,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | JROCKWAY | [MooseX-Types-Signal](../data/f0/JROCKWAY/MooseX-Types-Signal/status.json) | 1.101932 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | JRYAN | [Text-ParagraphDiff](../data/87/JRYAN/Text-ParagraphDiff/status.json) | 2.70 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | JSEYMOUR | [Net-Whois-IP](../data/32/JSEYMOUR/Net-Whois-IP/status.json) | 1.21 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| JSMITH | [Algorithm-Merge](../data/c9/JSMITH/Algorithm-Merge/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | JSTOWE | [TermReadKey](../data/92/JSTOWE/TermReadKey/status.json) | 2.38 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | JSTOWE | [TermReadKey](../data/92/JSTOWE/TermReadKey/status.json) | 2.38 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | JSTOWE | [TermReadKey](../data/92/JSTOWE/TermReadKey/status.json) | 2.38 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1799,6 +1803,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | JTBRAUN | [Parse-RecDescent](../data/a8/JTBRAUN/Parse-RecDescent/status.json) | 1.967015 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | JTBRAUN | [Parse-RecDescent](../data/a8/JTBRAUN/Parse-RecDescent/status.json) | 1.967015 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | JTBRAUN | [Parse-RecDescent](../data/a8/JTBRAUN/Parse-RecDescent/status.json) | 1.967015 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
+| JTT | [File-FcntlLock](../data/c5/JTT/File-FcntlLock/status.json) | 0.22 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | JUERD | [Exporter-Tidy](../data/97/JUERD/Exporter-Tidy/status.json) | 0.09 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | JUERD | [Exporter-Tidy](../data/97/JUERD/Exporter-Tidy/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | JUERD | [Exporter-Tidy](../data/97/JUERD/Exporter-Tidy/status.json) | 0.09 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
@@ -1908,6 +1913,8 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 2e04f1914e73b00b940a4ce43a17b8b38a46cac862ff84ceef1bb456825f5cba |
 | KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KSTAR | [Hash-SharedMem](../data/28/KSTAR/Hash-SharedMem/status.json) | 0.007 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 2e04f1914e73b00b940a4ce43a17b8b38a46cac862ff84ceef1bb456825f5cba |
+| KUBOTA | [Text-CharWidth](../data/89/KUBOTA/Text-CharWidth/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
+| KUBOTA | [Text-WrapI18N](../data/90/KUBOTA/Text-WrapI18N/status.json) | 0.06 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | KUERBIS | [App-DBBrowser](../data/87/KUERBIS/App-DBBrowser/status.json) | 2.447 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KUERBIS | [Term-Choose](../data/54/KUERBIS/Term-Choose/status.json) | 1.783 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | KUERBIS | [Term-Choose-LineFold-XS](../data/82/KUERBIS/Term-Choose-LineFold-XS/status.json) | 0.006 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -1945,6 +1952,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | LEEJO | [CGI](../data/d9/LEEJO/CGI/status.json) | 5.02 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | LEEJO | [CGI](../data/d9/LEEJO/CGI/status.json) | 5.02 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEEJO | [CGI](../data/d9/LEEJO/CGI/status.json) | 5.02 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
+| LEEJO | [CGI-Fast](../data/42/LEEJO/CGI-Fast/status.json) | 2.17 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | LEEJO | [CSS-Packer](../data/87/LEEJO/CSS-Packer/status.json) | 2.09 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | LEEJO | [CSS-Packer](../data/87/LEEJO/CSS-Packer/status.json) | 2.09 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | LEEJO | [HTML-Packer](../data/7b/LEEJO/HTML-Packer/status.json) | 2.12 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -2225,6 +2233,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | MIROD | [HTML-TreeBuilder-XPath](../data/cc/MIROD/HTML-TreeBuilder-XPath/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MIROD | [XML-Twig](../data/4b/MIROD/XML-Twig/status.json) | 3.55 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | MIROD | [XML-Twig](../data/4b/MIROD/XML-Twig/status.json) | 3.55 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| MIROD | [XML-Twig](../data/4b/MIROD/XML-Twig/status.json) | 3.55 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | MIROD | [XML-XPathEngine](../data/c0/MIROD/XML-XPathEngine/status.json) | 0.14 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | MIROD | [XML-XPathEngine](../data/c0/MIROD/XML-XPathEngine/status.json) | 0.14 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | MITHALDU | [PPI](../data/9f/MITHALDU/PPI/status.json) | 1.291 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -2549,6 +2558,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | NI-S | [Devel-Leak](../data/49/NI-S/Devel-Leak/status.json) | 0.03 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | NICWOLFF | [URI-Based](../data/10/NICWOLFF/URI-Based/status.json) | 1.03 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | NIERLEIN | [Monitoring-Plugin](../data/6c/NIERLEIN/Monitoring-Plugin/status.json) | 0.40 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| NIGELM | [HTML-Formatter](../data/b7/NIGELM/HTML-Formatter/status.json) | 2.16 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | NIGELM | [HTML-Scrubber](../data/42/NIGELM/HTML-Scrubber/status.json) | 0.19 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | NIKOLAS | [POSIX-AtFork](../data/12/NIKOLAS/POSIX-AtFork/status.json) | 0.04 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | NIKOLAS | [POSIX-AtFork](../data/12/NIKOLAS/POSIX-AtFork/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3249,6 +3259,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | RJBS | [MooseX-Types-Perl](../data/c3/RJBS/MooseX-Types-Perl/status.json) | 0.101344 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | RJBS | [MooseX-Types-Perl](../data/c3/RJBS/MooseX-Types-Perl/status.json) | 0.101344 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [MooseX-Types-Perl](../data/c3/RJBS/MooseX-Types-Perl/status.json) | 0.101344 | v5.45.5 | linux/x86_64-linux/2a490526b43b4535e22589cf319fd783b948d3295929ef7de1f021f8a2aba082 | installed | none | none |
+| RJBS | [Net-SMTP-SSL](../data/6f/RJBS/Net-SMTP-SSL/status.json) | 1.04 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | RJBS | [Number-Format](../data/dc/RJBS/Number-Format/status.json) | 1.79 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Number-Tolerant](../data/ba/RJBS/Number-Tolerant/status.json) | 1.710 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | RJBS | [Perl-Critic-Lax](../data/4f/RJBS/Perl-Critic-Lax/status.json) | 0.014 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3533,6 +3544,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux-thread-multi/57ec190c4b5029de7f7053f3ddc0a645b2aecf69b6948410916adf4fc04d5a3b | installed | repair-v5.45.5 | f1c6d1344d85814a7dd0a70a74a6aeef9a04e4d25594dc05c2fac5228c57e614 |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux-thread-multi/e5222d2649524c658e419564faf520f81ffd3355800445e084462ec3c45e87f7 | failed | none | none |
 | SHAY | [mod_perl](../data/b3/SHAY/mod_perl/status.json) | 2.0.13 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | failed | none | none |
+| SHINGO | [Devel-CallChecker](../data/e0/SHINGO/Devel-CallChecker/status.json) | 0.010 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | SHLOMIF | [Cache](../data/d9/SHLOMIF/Cache/status.json) | 2.11 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SHLOMIF | [Config-IniFiles](../data/22/SHLOMIF/Config-IniFiles/status.json) | 3.003000 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SHLOMIF | [Config-IniFiles](../data/22/SHLOMIF/Config-IniFiles/status.json) | 3.003000 | v5.45.5 | linux/x86_64-linux | installed | none | none |
@@ -3602,6 +3614,7 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | SKAJI | [Proc-ForkSafe](../data/68/SKAJI/Proc-ForkSafe/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SKAJI | [Proc-ForkSafe](../data/68/SKAJI/Proc-ForkSafe/status.json) | v1.0.0 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
 | SLANNING | [Net-Graphite](../data/15/SLANNING/Net-Graphite/status.json) | 0.19 | v5.45.5 | linux/x86_64-linux | installed | none | none |
+| SMCCAM | [X11-Protocol](../data/b2/SMCCAM/X11-Protocol/status.json) | 0.56 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | SMUELLER | [Class-ISA](../data/6e/SMUELLER/Class-ISA/status.json) | 0.36 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | SMUELLER | [Class-ISA](../data/6e/SMUELLER/Class-ISA/status.json) | 0.36 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SMUELLER | [Class-XSAccessor](../data/42/SMUELLER/Class-XSAccessor/status.json) | 1.19 | v5.45.5 | darwin/darwin-2level | installed | none | none |
@@ -4017,11 +4030,14 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | XAICRON | [Test-Mock-Guard](../data/b1/XAICRON/Test-Mock-Guard/status.json) | 0.10 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XAOC | [Cairo](../data/ed/XAOC/Cairo/status.json) | 1.109 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XAOC | [Cairo](../data/ed/XAOC/Cairo/status.json) | 1.109 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
+| XAOC | [Cairo-GObject](../data/79/XAOC/Cairo-GObject/status.json) | 1.005 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | XAOC | [ExtUtils-PkgConfig](../data/14/XAOC/ExtUtils-PkgConfig/status.json) | 1.16 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | XAOC | [ExtUtils-PkgConfig](../data/14/XAOC/ExtUtils-PkgConfig/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XAOC | [ExtUtils-PkgConfig](../data/14/XAOC/ExtUtils-PkgConfig/status.json) | 1.16 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | XAOC | [Glib](../data/63/XAOC/Glib/status.json) | 1.3294 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XAOC | [Glib](../data/63/XAOC/Glib/status.json) | 1.3294 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
+| XAOC | [Glib-Object-Introspection](../data/1b/XAOC/Glib-Object-Introspection/status.json) | 0.052 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
+| XAOC | [Gtk3](../data/36/XAOC/Gtk3/status.json) | 0.038 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | 5e22d144249e1be799bc49714417aa7758a1ef6813a37276261035c0d07e0fd3 |
 | XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | XMATH | [Data-Alias](../data/cc/XMATH/Data-Alias/status.json) | 1.30 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | 5e22d144249e1be799bc49714417aa7758a1ef6813a37276261035c0d07e0fd3 |
@@ -4088,12 +4104,14 @@ Unresolved failures: 94 of 4096 release, XPerl, and platform combinations. See [
 | ZAKAME | [Hashids](../data/73/ZAKAME/Hashids/status.json) | 1.001013 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ZEFRAM | [Class-Mix](../data/2d/ZEFRAM/Class-Mix/status.json) | 0.006 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ZEFRAM | [Crypt-Eksblowfish](../data/01/ZEFRAM/Crypt-Eksblowfish/status.json) | 0.009 | v5.45.5 | darwin/darwin-2level | installed | none | none |
+| ZEFRAM | [DynaLoader-Functions](../data/b8/ZEFRAM/DynaLoader-Functions/status.json) | 0.004 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | ZEFRAM | [Lexical-SealRequireHints](../data/b1/ZEFRAM/Lexical-SealRequireHints/status.json) | 0.012 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Lexical-SealRequireHints](../data/b1/ZEFRAM/Lexical-SealRequireHints/status.json) | 0.012 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level | installed | none | none |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | repair-v5.45.5 | c0f268d0f5eb5874724b1f5b5bb334e04b347ec1ef2ef103ade853fe48a75f90 |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Params-Classify](../data/7f/ZEFRAM/Params-Classify/status.json) | 0.015 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | repair-v5.45.5 | c0f268d0f5eb5874724b1f5b5bb334e04b347ec1ef2ef103ade853fe48a75f90 |
+| ZEFRAM | [Perl4-CoreLibs](../data/89/ZEFRAM/Perl4-CoreLibs/status.json) | 0.005 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | none | none |
 | ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | darwin/darwin-2level/70447256791ea4efff2d4bffd1858a39ed7bb19e5161306f5eb49f812e23786c | installed | none | none |
 | ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | ZEFRAM | [Scalar-String](../data/e3/ZEFRAM/Scalar-String/status.json) | 0.003 | v5.45.5 | linux/x86_64-linux/f10dd8104a8b7a1b7ca095da872d94c546da9e0395e114fbb9587ada590538c1 | installed | none | none |
