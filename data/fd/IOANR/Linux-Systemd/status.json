@@ -1,0 +1,66 @@
+{
+   "author" : "IOANR",
+   "distribution" : "Linux-Systemd",
+   "observations" : [
+      {
+         "cpan_path" : "I/IO/IOANR/Linux-Systemd-1.201600.tar.gz",
+         "failure" : {
+            "exit_status" : 0,
+            "phase" : "configure",
+            "validation_error" : "configure did not produce Build"
+         },
+         "id" : "ef8e1f500906ffb5d0f1a86ca727fdd6f14121f52088d5e4743fd9b32d9571db",
+         "module" : "Linux::Systemd",
+         "observed_at" : "2026-11-11T21:56:12Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure",
+               "validation_error" : "configure did not produce Build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "f1b84babef3418fd8e944fb373444fcbc87f080b2fcd8f773bf9182f66e9bd81",
+         "status" : "failed",
+         "version" : "1.201600",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
