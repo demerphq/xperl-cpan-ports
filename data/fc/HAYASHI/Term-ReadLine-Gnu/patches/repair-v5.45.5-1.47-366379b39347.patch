@@ -1,0 +1,82 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,12 @@
+ -*- Indented-text -*-
+ 
++Unreleased
++
++	- discard all completion-filter callback results before freeing
++	  temporaries, preventing stale values on the Perl stack and crashes
++	  with PERL_RC_STACK
++	- test completion filters with single, empty and sparse result lists
++
+ 1.47  2025-07-06
+ 	- readline-8.3 support
+ 	    new functions
+--- a/Gnu.xs
++++ b/Gnu.xs
+@@ -1511,6 +1511,9 @@
+   count = call_sv(fn_tbl[IGNORE_COMP].callback, G_LIST);
+ 
+   SPAGAIN;
++  /* Discard every result, including the LCD and the single-match case.
++   * A later callback must not see mortal values freed by FREETMPS. */
++  sp -= count;
+ 
+   if (only_lcd) {
+     if (count == 0) {           /* no match */
+@@ -1526,8 +1529,8 @@
+      * Pack the array in such case.
+      */
+     matches[count] = NULL;
+-    for (i = count - 1; i > 0; i--) { /* don't pop matches[0] */
+-      SV *v = POPs;
++    for (i = count - 1; i > 0; i--) { /* keep the original matches[0] */
++      SV *v = sp[i + 1];
+       if (SvOK(v)) {
+         matches[i] = dupstr(SvPV(v, PL_na));
+       } else {
+--- a/t/readline.t
++++ b/t/readline.t
+@@ -11,7 +11,7 @@
+ 
+ use strict;
+ use warnings;
+-use Test::More tests => 152;
++use Test::More tests => 162;
+ use Data::Dumper;
+ 
+ # redefine Test::Mode::note due to it requires Perl 5.10.1.
+@@ -789,6 +789,32 @@
+ $INSTR = "t/co\cIRE\cI\cM";
+ $line = $t->readline("ignore_some_completion>");
+ ok($line eq 't/comptest/README ', "ingore_some_completion\t[$line]");
++
++# Read another key after each filter call to exercise callback stack cleanup.
++for my $case (
++    ['single match', 't/comptest/023456', sub { @_ },
++     't/comptest/023456 ', 1],
++    ['reject single match', 't/comptest/023456', sub { () },
++     't/comptest/023456', 1],
++    ['reject all matches', 't/comptest/0', sub { () },
++     't/comptest/0', 4],
++    ['return only LCD', 't/comptest/0', sub { $_[0] },
++     't/comptest/0', 4],
++    ['undef in matches', 't/comptest/0',
++     sub { ($_[0], undef, grep { /0123$/ } @_[1 .. $#_]) },
++     't/comptest/0123 ', 4],
++) {
++    my ($name, $text, $filter, $expected, $argc) = @$case;
++    my @args;
++    $a->{ignore_some_completions_function} = sub {
++        @args = @_;
++        return $filter->(@_);
++    };
++    $INSTR = "$text\cI\cM";
++    $line = $t->readline("completion filter $name>");
++    is($line, $expected, "completion filter: $name");
++    is(scalar @args, $argc, "completion filter arguments: $name");
++}
+ undef $a->{ignore_some_completions_function};
+ 
+ # char_is_quoted, filename_quoting_function, filename_dequoting_function
