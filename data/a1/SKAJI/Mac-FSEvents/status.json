@@ -1,0 +1,64 @@
+{
+   "author" : "SKAJI",
+   "distribution" : "Mac-FSEvents",
+   "observations" : [
+      {
+         "cpan_path" : "S/SK/SKAJI/Mac-FSEvents-0.22.tar.gz",
+         "failure" : {
+            "exit_status" : 255,
+            "phase" : "configure"
+         },
+         "id" : "1e37629be040d36c42ba87c75e35e96aadcfcba80ee565779f0ed17f23c0bb54",
+         "module" : "Mac::FSEvents",
+         "observed_at" : "2026-11-11T22:31:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 255,
+               "name" : "configure"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "6d2f34d189e1ef57ad78293c35db86af049578754214745a13fb4bb1f35ab634",
+         "status" : "failed",
+         "version" : "0.22",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
