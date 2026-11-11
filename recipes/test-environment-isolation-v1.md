@@ -37,3 +37,22 @@ A test helper with `#!/usr/bin/env perl` must also resolve the same Perl that
 is running the test suite. If the test sanitizes `PATH`, set it to the
 directory containing `$^X` before invoking that helper. The `ack` 3.10.0
 patch covers both this pager case and tests that expect colored output.
+
+## Taint-mode subprocesses
+
+A child Perl invoked with `-T` ignores `PERL5LIB`. Pass trusted source
+library directories with explicit `-I` arguments. Dpkg 1.23.9's taint
+checks need `-Ilib` to find their own modules in a CPAN build. Do not
+disable taint mode or install the distribution before running its tests.
+Its repaired suite passes 13,252 checks on installed RC XPerl v5.45.5.
+
+## Generated test trees and reconfiguration
+
+Tests can deliberately create cyclic or dangling symlinks. A later build
+configuration must account for those generated files if it scans the
+source tree. Dpkg's `t.tmp` directory is a test artifact, but
+ExtUtils::Manifest follows its cyclic symlink during reconfiguration.
+Its Build.PL clears that specific generated tree before the manifest scan.
+Keep cleanup scoped to known generated directories, and verify that it
+does not follow symlinks outside the tree. Do not include the generated
+files in the compatibility patch.

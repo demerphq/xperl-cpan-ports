@@ -1,0 +1,112 @@
+{
+   "date" : "2026-11-11",
+   "files" : [
+      "Build.PL",
+      "t/taint.t"
+   ],
+   "patch_set_id" : "build-test-v1",
+   "patch_sha256" : "786e3bf371d24f5e32822c80339a4a0a7e460bb87b290190dcc26f611e879d85",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "source_sha256" : "8cda964042d3211f9907a994c696bdd5c14e496abf62d6ef7e94911baa8d5f9e",
+   "tests" : [
+      {
+         "phase" : "patch",
+         "result" : "pass"
+      },
+      {
+         "phase" : "configure",
+         "result" : "pass"
+      },
+      {
+         "phase" : "build",
+         "result" : "pass"
+      },
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/t/taint.t"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/debian/changelog"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/README"
+            },
+            {
+               "url" : "https://github.com/guillemj/dpkg/pulls"
+            },
+            {
+               "url" : "https://bugs.debian.org/src:dpkg"
+            }
+         ],
+         "status" : "unavailable"
+      },
+      {
+         "references" : [
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/scripts/Build.PL.in"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/scripts/Test/Dpkg.pm"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/scripts/t/Dpkg_Path.t"
+            },
+            {
+               "url" : "https://raw.githubusercontent.com/guillemj/dpkg/main/debian/changelog"
+            },
+            {
+               "url" : "https://github.com/guillemj/dpkg/pulls"
+            },
+            {
+               "url" : "https://github.com/guillemj/dpkg/issues"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}
