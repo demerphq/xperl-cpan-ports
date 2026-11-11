@@ -537,6 +537,69 @@
          "status" : "failed",
          "version" : "2.0.13",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SH/SHAY/mod_perl-2.0.13.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "182c178ab27fdd711532f31a407a1d80ae127d241291941127a738e7d56eb477",
+         "module" : "mod_perl2",
+         "module_version" : "2.000013",
+         "observed_at" : "2026-11-11T18:45:24Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux-thread-multi",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "a140adec912f2529fe17fa84aa3637a7decce86818a770c1444d755be0d5ab72",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 1,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 1,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 1,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "57ec190c4b5029de7f7053f3ddc0a645b2aecf69b6948410916adf4fc04d5a3b",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux-thread-multi",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 1,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "ade3be31c447b8448869fecdfcace258d6d587b8c6c773c5f22735f70d82d6da",
+         "status" : "failed",
+         "version" : "2.0.13",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
