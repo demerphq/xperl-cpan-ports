@@ -41,6 +41,12 @@ longdouble, quadmath and other operating systems have not been tested with
 this patch. Earlier unthreaded and static-library failures remain as
 separate observations and do not describe the passing shared-library build.
 
+A fresh `install-ported --only SHAY/mod_perl` replay uses the published
+patch, rebuilds, passes the same runtime and registry tests, installs, and
+publishes its result without an AI agent. Its receipt contains only patch,
+configure, build, test and install phases. A separate Apache configuration
+check loads the staged installed DSO and confirms XPerl with the RC stack.
+
 ## Installation layout
 
 Perl modules install into the selected interpreter's normal site library.

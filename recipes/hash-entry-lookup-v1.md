@@ -22,7 +22,7 @@ Do not keep an `HE *` or `SV **` across mutations or callbacks. Retain the
 value when needed and reacquire the entry by key afterward. See
 `hash-value-lifetime-v1` for that ownership boundary.
 
-mod_perl 2.0.13 uses this repair in `modperl_hv_fetch_he`. Its package END-list
+mod_perl 2.0.13 uses this repair in `modperl_perl_hv_fetch_he`. Its package END-list
 regression exercises the lookup while the internal table grows through
 several sizes. For a focused lookup probe, include missing keys, deleted
 entries, undefined values, embedded NULs, shared prefixes and precomputed
