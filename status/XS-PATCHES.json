@@ -972,6 +972,27 @@
          "version" : "0.39"
       },
       {
+         "author" : "SHAY",
+         "distribution" : "mod_perl",
+         "evidence_paths" : [
+            "data/b3/SHAY/mod_perl/evidence/repair-v5.45.5-2.0.13-f1c6d1344d85.json"
+         ],
+         "index_path" : "data/b3/SHAY/mod_perl/index.json",
+         "native_files" : [
+            "src/modules/perl/modperl_callback.c",
+            "src/modules/perl/modperl_module.c",
+            "src/modules/perl/modperl_perl.h",
+            "src/modules/perl/modperl_perl_global.c",
+            "src/modules/perl/modperl_util.c"
+         ],
+         "patch_paths" : [
+            "data/b3/SHAY/mod_perl/patches/repair-v5.45.5-2.0.13-f1c6d1344d85.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "2.0.13"
+      },
+      {
          "author" : "RANDIR",
          "distribution" : "namespace-clean-xs",
          "evidence_paths" : [
