@@ -1076,7 +1076,10 @@
             "data/b7/SZBALINT/WWW-Curl/patches/repair-v5.45.5-4.17-23f09986e570.patch"
          ],
          "patch_set" : "repair-v5.45.5",
-         "recipes" : [],
+         "recipes" : [
+            "native-library-discovery-v1",
+            "test-environment-isolation-v1"
+         ],
          "version" : "4.17"
       },
       {

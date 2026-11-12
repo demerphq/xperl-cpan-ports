@@ -56,3 +56,19 @@ Its Build.PL clears that specific generated tree before the manifest scan.
 Keep cleanup scoped to known generated directories, and verify that it
 does not follow symlinks outside the tree. Do not include the generated
 files in the compatibility patch.
+
+## External service data
+
+Tests of returned data should create the data they expect. A public
+website's cookie policy is not part of libcurl's cookie-list API. Seed a
+temporary Netscape cookie file, close it before the library opens it, and
+compare the exact entry returned by the API. Use a reserved fixture domain
+so the test cookie is not sent to unrelated public services. Preserve
+feature checks for older native-library versions.
+
+WWW-Curl 4.17 uses this pattern in its HTTP test and its added local-file
+regression tests. A clean registry-only install passes 856 tests in 23
+files on installed RC-stack XPerl v5.45.5 with libcurl 8.5.0. The original
+network transfers remain in the full suite. Distinguish a failed network
+connection from a library assertion failure, and do not count a restricted
+or focused local run as a full-suite pass.
