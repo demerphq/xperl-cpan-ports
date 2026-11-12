@@ -1,0 +1,112 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -6,6 +6,7 @@
+ Unaccent.pm
+ Unaccent.xs
+ t/unac.t
++t/regression.t
+ unac.c
+ unac.h
+ META.yml                                 Module meta-data (added by MakeMaker)
+--- a/README
++++ b/README
+@@ -57,3 +57,26 @@
+ 
+ Loic Dachary
+ loic@gnu.org
++
++Compatibility repairs
++---------------------
++
++The debug callback uses HAS_VSNPRINTF from Perl's config.h, with the
++legacy HAS_VPRINTF check retained for older Perl releases. Perl 5.27.6
++removed HAS_VPRINTF. Check the actual formatting capability in every
++compilation unit instead of defining the obsolete Perl macro globally.
++The matching report and Debian fix are documented at:
++https://rt.cpan.org/Public/Bug/Display.html?id=124815
++https://bugs.debian.org/1075214
++
++All lengths passed through size_t pointers must use size_t storage.
++An int can be smaller than size_t on 64-bit systems, so a cast cannot
++repair the resulting overwrite. This follows the fix credited to
++Hilko Bengen in Debian's patch series for bug 848156:
++https://sources.debian.org/patches/libtext-unaccent-perl/1.08-2/
++
++These changes apply to ordinary Perl and XPerl without version guards.
++Run perl Makefile.PL, make, and make test with the intended interpreter.
++The regression tests cover both conversion entry points, buffer resizing,
++empty input, and conversion with debug output enabled. The library's
++process-global buffers and debug settings do not provide thread isolation.
+--- a/Unaccent.xs
++++ b/Unaccent.xs
+@@ -25,17 +25,16 @@
+ #endif /* HAVE_CONFIG_H */
+ 
+ /*
+- * Perl config.h defines HAS_VPRINTF if printf variants are 
+- * available
++ * Modern Perl uses HAS_VSNPRINTF. Keep HAS_VPRINTF for older Perls.
+  */
+-#ifdef HAS_VPRINTF
++#if defined(HAS_VSNPRINTF) || defined(HAS_VPRINTF)
+ #define HAVE_VSNPRINTF
+-#endif /* HAS_VPRINTF */
++#endif
+ 
+ #include "unac.h"
+ 
+ static char* buffer;
+-static int buffer_length;
++static size_t buffer_length;
+ 
+ static void unac_debug_print(const char* message, void* data)
+ {
+--- /dev/null
++++ b/t/regression.t
+@@ -0,0 +1,16 @@
++use strict;
++use Test;
++use Text::Unaccent;
++
++plan tests => 10;
++
++ok(unac_version(), '1.8.0');
++ok(unac_string('ISO-8859-1', ''), '');
++ok(unac_string_utf16(''), '');
++ok(unac_string('ISO-8859-1', "\xe9" x 4096), 'e' x 4096);
++ok(unac_string_utf16("\x00\xe9" x 4096), "\x00e" x 4096);
++ok(unac_string('ISO-8859-1', "\xe9"), 'e');
++ok(unac_string_utf16("\x00\xe9"), "\x00e");
++ok(unac_debug($Text::Unaccent::DEBUG_HIGH), undef);
++ok(unac_string('ISO-8859-1', "\xe9"), 'e');
++ok(unac_debug($Text::Unaccent::DEBUG_NONE), undef);
+--- a/unac.c
++++ b/unac.c
+@@ -21,12 +21,11 @@
+ #endif /* HAVE_CONFIG_H */
+ 
+ /*
+- * Perl config.h defines HAS_VPRINTF if printf variants are 
+- * available
++ * Modern Perl uses HAS_VSNPRINTF. Keep HAS_VPRINTF for older Perls.
+  */
+-#ifdef HAS_VPRINTF
++#if defined(HAS_VSNPRINTF) || defined(HAS_VPRINTF)
+ #define HAVE_VSNPRINTF
+-#endif /* HAS_VPRINTF */
++#endif
+ 
+ /*
+  * If configure.in has not defined this symbol, assume const. It
+@@ -13881,9 +13880,9 @@
+     *out_lengthp = 0;
+   } else {
+     char* utf16 = 0;
+-    int utf16_length = 0;
++    size_t utf16_length = 0;
+     char* utf16_unaccented = 0;
+-    int utf16_unaccented_length = 0;
++    size_t utf16_unaccented_length = 0;
+   
+     if(convert(charset, utf16be(), in, in_length, &utf16, &utf16_length) < 0) {
+       return -1;

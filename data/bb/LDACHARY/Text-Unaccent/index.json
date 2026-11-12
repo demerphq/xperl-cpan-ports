@@ -1,0 +1,28 @@
+{
+   "distribution" : "Text-Unaccent",
+   "releases" : [
+      {
+         "cpan_path" : "L/LD/LDACHARY/Text-Unaccent-1.08.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-1.08-9fb0e22e0c72.patch",
+                     "sha256" : "9fb0e22e0c72887feed67cfac2e8a05ce2770bb0963d1cdf8fdfb31123a6aa1f"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "278e6efc9b24f3699c961efb36ebe602a3408b541572017dee131d152728732b",
+         "version" : "1.08"
+      }
+   ],
+   "schema" : 1
+}
