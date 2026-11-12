@@ -1,0 +1,401 @@
+--- a/MANIFEST
++++ b/MANIFEST
+@@ -6,6 +6,7 @@
+ Makefile.PL
+ README
+ Upper.xs
++XPERL-PORTING.md
+ lib/Scope/Upper.pm
+ samples/bench_uplevel.pl
+ samples/tag.pl
+@@ -43,6 +44,7 @@
+ t/53-unwind-misc.t
+ t/54-unwind-threads.t
+ t/55-yield-target.t
++t/56-return-lifetime.t
+ t/57-yield-context.t
+ t/58-yield-misc.t
+ t/59-yield-threads.t
+--- a/Upper.xs
++++ b/Upper.xs
+@@ -19,6 +19,12 @@
+ /* perl 5.23.8 onwards has a revamped context system */
+ #define SU_HAS_NEW_CXT XSH_HAS_PERL(5, 23, 8)
+ 
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++# define SU_RC_STACK 1
++#else
++# define SU_RC_STACK 0
++#endif
++
+ #ifndef dVAR
+ # define dVAR dNOOP
+ #endif
+@@ -324,6 +330,9 @@
+  I32      cxix;
+  I32      items;
+  SV     **savesp;
++#if SU_RC_STACK
++ AV      *args;
++#endif
+  LISTOP   return_op;
+  OP       proxy_op;
+ } su_unwind_storage;
+@@ -334,6 +343,9 @@
+  I32      cxix;
+  I32      items;
+  SV     **savesp;
++#if SU_RC_STACK
++ AV      *args;
++#endif
+  UNOP     leave_op;
+  OP       proxy_op;
+ } su_yield_storage;
+@@ -357,6 +369,9 @@
+  U8             *cxtypes; /* array of saved context types */
+  I32            gap;      /* how many contexts have temporarily CXt_NULLed out*/
+  AV*            argarray; /* the PL_curpad[0] of the uplevel sub */
++#if SU_RC_STACK
++ AV*            argcopy;
++#endif
+ #else
+  I32            target_depth;
+  CV            *target;
+@@ -1353,6 +1368,26 @@
+ 
+ /* --- Unwind stack -------------------------------------------------------- */
+ 
++#if SU_RC_STACK
++/* Keep deferred return values alive independently of the XS wrapper's
++ * temporary argument slots. Register the owning array before the callback. */
++static AV *su_save_args(pTHX_ SV **args, I32 items) {
++ AV *av = newAV();
++ I32 i;
++ SAVEFREESV((SV *) av);
++ for (i = 0; i < items; ++i)
++  av_push(av, SvREFCNT_inc(args[i]));
++ return av;
++}
++
++static void su_push_args(pTHX_ AV *av) {
++ I32 i, items = AvFILLp(av) + 1;
++ rpp_extend(items);
++ for (i = 0; i < items; ++i)
++  rpp_push_1(AvARRAY(av)[i]);
++}
++#endif
++
+ static void su_unwind(pTHX_ void *ud_) {
+  dXSH_CXT;
+  I32 cxix  = XSH_CXT.unwind_storage.cxix;
+@@ -1361,8 +1396,12 @@
+ 
+  PERL_UNUSED_VAR(ud_);
+ 
++#if SU_RC_STACK
++ su_push_args(aTHX_ XSH_CXT.unwind_storage.args);
++#else
+  PL_stack_sp = XSH_CXT.unwind_storage.savesp;
+-#if XSH_HAS_PERL(5, 19, 4)
++#endif
++#if XSH_HAS_PERL(5, 19, 4) && !SU_RC_STACK
+  {
+   I32 i;
+   SV **sp = PL_stack_sp;
+@@ -1552,8 +1591,22 @@
+    break;
+  }
+ 
++#if SU_RC_STACK
++ {
++  I32 from = PL_stack_sp - PL_stack_base;
++  su_push_args(aTHX_ XSH_CXT.yield_storage.args);
++  /* Move owned values and release the stack slots they replace. Keep all
++   * values here so that the leave op applies the target context. */
++  if (items)
++   leave_adjust_stacks(PL_stack_base + from,
++                       PL_stack_base + cx->blk_oldsp, G_LIST, 3);
++  else
++   rpp_popfree_to(PL_stack_base + cx->blk_oldsp);
++ }
++#else
+  PL_stack_sp = XSH_CXT.yield_storage.savesp;
+-#if XSH_HAS_PERL(5, 19, 4)
++#endif
++#if XSH_HAS_PERL(5, 19, 4) && !SU_RC_STACK
+  {
+   I32 i;
+   SV **sp = PL_stack_sp;
+@@ -1566,11 +1619,14 @@
+  if (cxstack_ix > cxix)
+   dounwind(cxix);
+ 
++ cx = cxstack + cxix;
++#if !SU_RC_STACK
+  /* Copy the arguments passed to yield() where the leave op expects to find
+   * them. */
+  if (items)
+   Move(PL_stack_sp - items + 1, PL_stack_base + cx->blk_oldsp + 1, items, SV *);
+  PL_stack_sp = PL_stack_base + cx->blk_oldsp + items;
++#endif
+ 
+  flags |= OP_GIMME_REVERSE(cx->blk_gimme);
+ 
+@@ -1747,6 +1803,14 @@
+  }
+  Safefree(saved_cxtypes);
+ 
++#if SU_RC_STACK
++ if (sud->argcopy) {
++  /* Calls without an argument frame do not clear this synthetic array. */
++  av_clear(sud->argcopy);
++  SvREFCNT_dec((SV *) sud->argcopy);
++ }
++#endif
++
+  /* renamed is a copy of callback, but they share the same CvPADLIST.
+   * At this point any calls to renamed should have exited so that its
+   * depth is back to that of of callback. At this point its safe to free
+@@ -2024,17 +2088,31 @@
+  if (sud->argarray) {
+   I32 fill;
+   AV *av = newAV();
++#if !SU_RC_STACK
+   AvREAL_off(av);
+   AvREIFY_on(av);
++#endif
+ 
+   fill = AvFILLp(sud->argarray);
+   if (fill >= 0) {
+    av_extend(av, fill);
+    Copy(AvARRAY(sud->argarray), AvARRAY(av), fill + 1, SV *);
+    AvFILLp(av) = fill;
++#if SU_RC_STACK
++   /* The core clears argument arrays by releasing their elements. */
++   {
++    I32 i;
++    for (i = 0; i <= fill; ++i)
++     SvREFCNT_inc(AvARRAY(av)[i]);
++   }
++#endif
+   }
+ 
+-#if !XSH_HAS_PERL(5, 37, 10)
++#if SU_RC_STACK
++  /* Transfer pad ownership. GvAV(PL_defgv) retains the actual arguments. */
++  SvREFCNT_dec(PL_curpad[0]);
++  sud->argcopy = (AV *) SvREFCNT_inc((SV *) av);
++#elif !XSH_HAS_PERL(5, 37, 10)
+   /* should be referenced by PL_curpad[0] and *_ */
+   assert(SvREFCNT(PL_curpad[0]) > 1);
+   SvREFCNT_dec(PL_curpad[0]);
+@@ -2081,6 +2159,9 @@
+  sud->renamed  = NULL;
+  sud->gap      = cxstack_ix - cxix + 1;
+  sud->argarray = NULL;
++#if SU_RC_STACK
++ sud->argcopy = NULL;
++#endif
+ 
+  Newx(saved_cxtypes, sud->gap, U8);
+  sud->cxtypes = saved_cxtypes;
+@@ -2792,13 +2873,21 @@
+      XSH_CXT.unwind_storage.items--;
+      XSH_CXT.unwind_storage.savesp--;
+     }
++#if SU_RC_STACK
++    XSH_CXT.unwind_storage.args = su_save_args(aTHX_ &ST(0), items ? items - 1 : 0);
++#else
+     /* pp_entersub will want to sanitize the stack after returning from there
+      * Screw that, we're insane!
+      * dXSARGS calls POPMARK, so we need to match PL_markstack_ptr[1] */
+     if (GIMME_V == G_SCALAR)
+      PL_stack_sp = PL_stack_base + PL_markstack_ptr[1] + 1;
++#endif
+     SAVEDESTRUCTOR_X(su_unwind, NULL);
++#if SU_RC_STACK
++    XSRETURN_EMPTY;
++#else
+     return;
++#endif
+    default:
+     break;
+   }
+@@ -2828,11 +2917,19 @@
+   XSH_CXT.yield_storage.items--;
+   XSH_CXT.yield_storage.savesp--;
+  }
++#if SU_RC_STACK
++ XSH_CXT.yield_storage.args = su_save_args(aTHX_ &ST(0), items ? items - 1 : 0);
++#else
+  /* See XS_Scope__Upper_unwind */
+  if (GIMME_V == G_SCALAR)
+   PL_stack_sp = PL_stack_base + PL_markstack_ptr[1] + 1;
++#endif
+  SAVEDESTRUCTOR_X(su_yield, su_yield_name);
++#if SU_RC_STACK
++ XSRETURN_EMPTY;
++#else
+  return;
++#endif
+ }
+ 
+ static const char su_leave_name[] = "leave";
+@@ -2851,13 +2948,19 @@
+  XSH_CXT.yield_storage.cxix   = su_context_here();
+  XSH_CXT.yield_storage.items  = items;
+  XSH_CXT.yield_storage.savesp = PL_stack_sp;
++#if SU_RC_STACK
++ XSH_CXT.yield_storage.args = su_save_args(aTHX_ &ST(0), items);
++#else
+  /* See XS_Scope__Upper_unwind */
+  if (GIMME_V == G_SCALAR)
+   PL_stack_sp = PL_stack_base + PL_markstack_ptr[1] + 1;
+-
++#endif
+  SAVEDESTRUCTOR_X(su_yield, su_leave_name);
+-
++#if SU_RC_STACK
++ XSRETURN_EMPTY;
++#else
+  return;
++#endif
+ }
+ 
+ MODULE = Scope::Upper            PACKAGE = Scope::Upper
+--- /dev/null
++++ b/XPERL-PORTING.md
+@@ -0,0 +1,54 @@
++# XPerl stack compatibility
++
++On XPerl with `PERL_RC_STACK`, the XS compatibility wrapper duplicates
++arguments and moves return values when an XS function returns. A saved
++pointer into its temporary argument slots cannot be used by a deferred
++save-stack callback.
++
++`unwind`, `yield` and `leave` retain their return values in an owning AV
++before returning through the wrapper. The deferred callback pushes those
++values onto the reference-counted stack with `rpp_push_1`. The save stack
++owns the AV and releases it after the values have been restored. `yield`
++uses `leave_adjust_stacks` to move owned values and release overwritten
++slots before unwinding the target scope.
++
++`uplevel` gives its synthetic caller argument array ownership of its
++elements. It releases the old pad reference when replacing the array,
++and clears the synthetic array when restoring the caller. This cleanup
++is needed even when the callback has no argument frame. A separate
++reference protects the synthetic array until restoration.
++
++These XS changes are conditional on both `XPERL_VERSION` and
++`PERL_RC_STACK`. Ordinary Perl retains the existing implementation.
++The code passes interpreter context explicitly and uses the existing
++per-interpreter storage for threaded builds. It does not convert NVs or
++assume an NV representation.
++
++The exception-location test compares the error with the target frame's
++`caller` location. This accommodates compilers that associate a multiline
++call with its first line or its last line.
++
++## Validation
++
++Use the interpreter being targeted to configure and run the tests:
++
++```sh
++perl Makefile.PL
++make
++PERL_DESTRUCT_LEVEL=2 make test
++```
++
++The repair passed all 55 test files with installed XPerl 5.45.5 on a
++non-threaded reference-counted stack build (89,441 tests), and on a
++threaded reference-counted stack build (89,790 tests). Supplementary
++ordinary Perl runs passed on 5.42.2 with threads and DEBUGGING, and on
++5.44.0 with threads and quadmath (89,790 tests each).
++
++`t/56-return-lifetime.t` checks object survival and release through the
++three deferred returns and through caller argument cleanup. Against the
++original release on the non-threaded XPerl build, it fails after its
++first assertion with an attempt to copy a freed scalar.
++
++Long-double builds and XPerl DEBUGGING builds were not tested. The
++ordinary Perl checks do not claim support for its experimental
++reference-counted stack configuration.
+--- /dev/null
++++ b/t/56-return-lifetime.t
+@@ -0,0 +1,56 @@
++#!perl -T
++
++use strict;
++use warnings;
++
++use Test::More tests => 19;
++use Scope::Upper qw<unwind yield leave uplevel HERE CALLER>;
++
++{
++ package Scope::Upper::Lifetime;
++ our $destroyed = 0;
++ sub new { bless { label => 'alive' }, shift }
++ sub DESTROY { ++$destroyed }
++}
++
++my @warnings;
++local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++my @returns = (
++ [ unwind => sub {
++   my $value = Scope::Upper::Lifetime->new;
++   sub { unwind $_[0] => CALLER(1) }->($value);
++   die 'unwind did not leave the target';
++ } ],
++ [ yield => sub {
++   my $value = Scope::Upper::Lifetime->new;
++   sub { yield $_[0] => CALLER(1) }->($value);
++   die 'yield did not leave the target';
++ } ],
++ [ leave => sub {
++   my $value = Scope::Upper::Lifetime->new;
++   leave $value;
++   die 'leave did not leave the target';
++ } ],
++);
++
++for my $case (@returns) {
++ my ($name, $code) = @$case;
++ $Scope::Upper::Lifetime::destroyed = 0;
++ my @values = $code->();
++ is scalar(@values), 1, "$name returns one value";
++ isa_ok $values[0], 'Scope::Upper::Lifetime';
++ is $values[0]->{label}, 'alive', "$name preserves the object";
++ is $Scope::Upper::Lifetime::destroyed, 0, "$name keeps the result alive";
++ @values = ();
++ is $Scope::Upper::Lifetime::destroyed, 1, "$name releases the result once";
++}
++
++$Scope::Upper::Lifetime::destroyed = 0;
++sub {
++ uplevel { } HERE;
++ is $Scope::Upper::Lifetime::destroyed, 0, 'uplevel preserves caller arguments';
++ is $_[0]->{label}, 'alive', 'caller argument is usable after uplevel';
++}->(Scope::Upper::Lifetime->new);
++is $Scope::Upper::Lifetime::destroyed, 1, 'caller argument is released once';
++is_deeply \@warnings, [], 'return and argument cleanup emit no warnings';
+--- a/t/63-uplevel-ctl.t
++++ b/t/63-uplevel-ctl.t
+@@ -315,13 +315,16 @@
+ 
+ {
+  my $desc = 'exception thrown from XS';
++ my $line;
+  local $@;
+  eval {
+   sub {
++   $line = (caller 0)[2];
+    &uplevel(\&uplevel => \1, HERE);
+   }->();
+  };
+- my $line = $^P ? '\d+' : __LINE__-2; # The error happens at the target frame.
++ # Use the target frame's location, including the compiler's line policy.
++ $line = '\d+' if $^P;
+  my $file = $^P ? '\S+' : quotemeta $0;
+  like $@,
+    qr/^First argument to uplevel must be a code reference at $file line $line/,

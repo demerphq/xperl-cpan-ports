@@ -1,0 +1,28 @@
+{
+   "distribution" : "Scope-Upper",
+   "releases" : [
+      {
+         "cpan_path" : "V/VP/VPIT/Scope-Upper-0.34.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.34-377c424c96f8.patch",
+                     "sha256" : "377c424c96f8e7c1661878020add8dd4fe21f9fd1a3d1f2b12f92a9e75eff7de"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "581d8bc510debd0c456a5fc7952cb7138ae667bf38f3a77e96d773dc3196a41e",
+         "version" : "0.34"
+      }
+   ],
+   "schema" : 1
+}
