@@ -693,7 +693,6 @@ Prior failures remain in each distribution record after a later success.
 | SYBER | [XS-libuv](../data/21/SYBER/XS-libuv/status.json) | 1.49.2.0 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | build | exit 2 |
 | SYNCLOVER | [Math-Lsoda](../data/ce/SYNCLOVER/Math-Lsoda/status.json) | 0.04 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | configure | exit 255 |
 | SYP | [Test-HTTP-AnyEvent-Server](../data/d2/SYP/Test-HTTP-AnyEvent-Server/status.json) | 0.013 | v5.45.5 | linux/x86_64-linux | test | Files=24, Tests=23, Failed 2/24 test programs. 0/23 subtests failed. |
-| SZBALINT | [WWW-Curl](../data/b7/SZBALINT/WWW-Curl/status.json) | 4.17 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | configure | exit 2 |
 | SZECK | [Db-GTM](../data/a2/SZECK/Db-GTM/status.json) | 1.27 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | configure | exit 2 |
 | TAIY | [Audio-SoundFile](../data/f5/TAIY/Audio-SoundFile/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | build | exit 2 |
 | TBONECA | [BSD-Jail](../data/63/TBONECA/BSD-Jail/status.json) | 0.01 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | build | exit 2 |

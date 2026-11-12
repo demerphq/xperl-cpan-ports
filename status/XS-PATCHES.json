@@ -1063,6 +1063,23 @@
          "version" : "0.65"
       },
       {
+         "author" : "SZBALINT",
+         "distribution" : "WWW-Curl",
+         "evidence_paths" : [
+            "data/b7/SZBALINT/WWW-Curl/evidence/repair-v5.45.5-4.17-23f09986e570.json"
+         ],
+         "index_path" : "data/b7/SZBALINT/WWW-Curl/index.json",
+         "native_files" : [
+            "Curl.xs"
+         ],
+         "patch_paths" : [
+            "data/b7/SZBALINT/WWW-Curl/patches/repair-v5.45.5-4.17-23f09986e570.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "4.17"
+      },
+      {
          "author" : "ROBIN",
          "distribution" : "Want",
          "evidence_paths" : [

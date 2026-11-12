@@ -3,7 +3,7 @@
 Latest observation for each author, distribution release, source hash, XPerl version, and platform.
 Older failures remain in the distribution records.
 
-Unresolved failures: 794 of 6123 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
+Unresolved failures: 793 of 6123 release, XPerl, and platform combinations. See [UNRESOLVED.md](UNRESOLVED.md).
 
 | Author | Distribution | Version | XPerl | Platform | Status | Patch set | Patch SHA-256 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5513,7 +5513,7 @@ Unresolved failures: 794 of 6123 release, XPerl, and platform combinations. See 
 | SZABGAB | [Test-Class](../data/f5/SZABGAB/Test-Class/status.json) | 0.52 | v5.45.5 | darwin/darwin-2level/3c10e77ccabefd3021c07e35723b6d2cbde7a48cc7c0069d0d074fc532e405e3 | installed | none | none |
 | SZABGAB | [Test-Class](../data/f5/SZABGAB/Test-Class/status.json) | 0.52 | v5.45.5 | linux/x86_64-linux | installed | none | none |
 | SZABGAB | [Test-Class](../data/f5/SZABGAB/Test-Class/status.json) | 0.52 | v5.45.5 | linux/x86_64-linux/608ad1ec9617c66441c2c8daa5de8e93c8868bbcd5cd5509f6f0c4de9b9a9fb2 | installed | none | none |
-| SZBALINT | [WWW-Curl](../data/b7/SZBALINT/WWW-Curl/status.json) | 4.17 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
+| SZBALINT | [WWW-Curl](../data/b7/SZBALINT/WWW-Curl/status.json) | 4.17 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | installed | repair-v5.45.5 | 23f09986e57029801f618b94201523324ddfc2d8e761e47e5a638a4e6eb622e3 |
 | SZECK | [Db-GTM](../data/a2/SZECK/Db-GTM/status.json) | 1.27 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
 | TAIY | [Audio-SoundFile](../data/f5/TAIY/Audio-SoundFile/status.json) | 0.16 | v5.45.5 | linux/x86_64-linux/28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583 | failed | none | none |
 | TARAO | [Test-MockTime-HiRes](../data/ea/TARAO/Test-MockTime-HiRes/status.json) | 0.08 | v5.45.5 | linux/x86_64-linux | installed | none | none |
