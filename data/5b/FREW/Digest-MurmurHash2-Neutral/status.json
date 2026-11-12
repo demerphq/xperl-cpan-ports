@@ -1,0 +1,76 @@
+{
+   "author" : "FREW",
+   "distribution" : "Digest-MurmurHash2-Neutral",
+   "observations" : [
+      {
+         "cpan_path" : "F/FR/FREW/Digest-MurmurHash2-Neutral-0.001000.tar.gz",
+         "id" : "cc6cd814f72b9846209b18667b80a452f387a457e76860ee5af78b0d04e6c4f0",
+         "module" : "Digest::MurmurHash2::Neutral",
+         "observed_at" : "2026-11-12T01:11:18Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "165b0b5909111a8b1d5857d15ad7d5085b653947dc19e44fdd55819fca32e387",
+         "status" : "installed",
+         "test_summary" : "Files=4, Tests=21003",
+         "version" : "0.001000",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
