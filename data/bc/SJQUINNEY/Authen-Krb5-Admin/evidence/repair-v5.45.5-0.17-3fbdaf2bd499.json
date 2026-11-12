@@ -1,0 +1,102 @@
+{
+   "date" : "2026-11-12",
+   "files" : [
+      "Makefile.PL",
+      "README",
+      "t/00-0-signature.t",
+      "t/03-principal.t",
+      "t/04-key.t"
+   ],
+   "patch_set_id" : "repair-v5.45.5",
+   "patch_sha256" : "3fbdaf2bd49974138141a7345699639d50c243e4c6dbe735955cb312d71502db",
+   "platform" : {
+      "archname" : "x86_64-linux",
+      "build" : {
+         "byteorder" : "12345678",
+         "compiler_version" : "13.3.0",
+         "debugging" : 0,
+         "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+         "ivsize" : "8",
+         "nvsize" : "8",
+         "nvtype" : "double",
+         "ptrsize" : "8",
+         "rc_stack" : 1,
+         "schema" : 1,
+         "use64bitall" : 1,
+         "use64bitint" : 1,
+         "useithreads" : 0,
+         "uselongdouble" : 0,
+         "usemultiplicity" : 0,
+         "usemymalloc" : 0,
+         "usequadmath" : 0,
+         "useshrplib" : 0,
+         "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+      },
+      "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+      "cc" : "gcc",
+      "cc_version" : "13.3.0",
+      "key" : "linux/x86_64-linux",
+      "make" : "make",
+      "os" : "linux",
+      "osvers" : "7.0.0-42-generic",
+      "use64bitall" : 1,
+      "usethreads" : 0,
+      "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+   },
+   "recipe_candidates" : [],
+   "source_sha256" : "5dd49cacd983efd61a8c3f1a56571bb73785eb155908b5d7bec97eed78df0c54",
+   "tests" : [
+      {
+         "phase" : "test",
+         "result" : "pass"
+      },
+      {
+         "phase" : "proposal-check",
+         "result" : "pass"
+      },
+      {
+         "phase" : "install",
+         "result" : "pass"
+      }
+   ],
+   "upstream_research" : [
+      {
+         "references" : [
+            {
+               "url" : "https://metacpan.org/dist/Authen-Krb5-Admin"
+            },
+            {
+               "url" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Authen-Krb5-Admin"
+            },
+            {
+               "url" : "https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/perl-packages.nix"
+            },
+            {
+               "url" : "https://mail-archive.com/debian-bugs-dist%40lists.debian.org/msg2034104.html"
+            }
+         ],
+         "status" : "unavailable"
+      },
+      {
+         "references" : [
+            {
+               "url" : "https://metacpan.org/dist/Authen-Krb5-Admin"
+            },
+            {
+               "url" : "https://metacpan.org/release/SJQUINNEY/Authen-Krb5-Admin-0.17/changes"
+            },
+            {
+               "url" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Authen-Krb5-Admin"
+            },
+            {
+               "url" : "https://metacpan.org/pod/Module::Signature#Testing-signatures"
+            },
+            {
+               "url" : "https://metacpan.org/pod/Module::Signature#DEPRECATION-NOTICE"
+            }
+         ],
+         "status" : "unavailable"
+      }
+   ],
+   "xperl_version" : "v5.45.5"
+}

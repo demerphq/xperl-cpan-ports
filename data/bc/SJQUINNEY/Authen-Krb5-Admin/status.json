@@ -68,6 +68,126 @@
          "status" : "failed",
          "version" : "0.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SJ/SJQUINNEY/Authen-Krb5-Admin-0.17.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "2a721f36766ffd49ff73482dbd9efa45e76bb3158fa6678f6d2e21431b4a7b27",
+         "module" : "Authen::Krb5::Admin",
+         "observed_at" : "2026-11-12T00:50:10Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "3fbdaf2bd49974138141a7345699639d50c243e4c6dbe735955cb312d71502db"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "5dd49cacd983efd61a8c3f1a56571bb73785eb155908b5d7bec97eed78df0c54",
+         "status" : "installed",
+         "test_summary" : "Files=6, Tests=73",
+         "version" : "0.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

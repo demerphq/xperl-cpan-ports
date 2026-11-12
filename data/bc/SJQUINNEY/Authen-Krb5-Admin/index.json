@@ -1,0 +1,28 @@
+{
+   "distribution" : "Authen-Krb5-Admin",
+   "releases" : [
+      {
+         "cpan_path" : "S/SJ/SJQUINNEY/Authen-Krb5-Admin-0.17.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.17-3fbdaf2bd499.patch",
+                     "sha256" : "3fbdaf2bd49974138141a7345699639d50c243e4c6dbe735955cb312d71502db"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "5dd49cacd983efd61a8c3f1a56571bb73785eb155908b5d7bec97eed78df0c54",
+         "version" : "0.17"
+      }
+   ],
+   "schema" : 1
+}

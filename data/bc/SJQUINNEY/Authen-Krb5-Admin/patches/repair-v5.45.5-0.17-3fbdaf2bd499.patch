@@ -1,0 +1,177 @@
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -117,9 +117,14 @@
+   print "not found, assuming this is Kerberos 1.6\n";
+ }
+ 
+-# get values for test suite
++# KDC tests require administrative credentials and modify the database.
++my $test_kdc = $ENV{PERL_KADM5_TEST_KDC};
++unless ($test_kdc) {
++    print "KDC integration tests disabled. To enable them, rerun\n",
++          "Makefile.PL with PERL_KADM5_TEST_KDC=1.\n";
++}
+ 
+-unless ($KADM5_PRINCIPAL) {
++if ($test_kdc && !$KADM5_PRINCIPAL) {
+     print 'Authenticate as user/instance[@REALM] for testing ',
+           "[$default_admin]: ";
+     $KADM5_PRINCIPAL = <STDIN>;
+@@ -127,7 +132,7 @@
+     $KADM5_PRINCIPAL ||= $default_admin;
+ }
+ 
+-unless ($KADM5_TEST_NAME) {
++if ($test_kdc && !$KADM5_TEST_NAME) {
+     print 'Use user/instance (should NOT exist!) for testing ',
+           "[$default_test_name]: ";
+     $KADM5_TEST_NAME = <STDIN>;
+@@ -135,7 +140,7 @@
+     $KADM5_TEST_NAME ||= $default_test_name;
+ }
+ 
+-unless ($KADM5_TEST_NAME_2) {
++if ($test_kdc && !$KADM5_TEST_NAME_2) {
+     print 'Use user/instance (should NOT exist!) for testing renames ',
+           "[$default_test_name_2]: ";
+     $KADM5_TEST_NAME_2 = <STDIN>;
+@@ -143,6 +148,10 @@
+     $KADM5_TEST_NAME_2 ||= $default_test_name_2;
+ }
+ 
++$KADM5_PRINCIPAL ||= $default_admin;
++$KADM5_TEST_NAME ||= $default_test_name;
++$KADM5_TEST_NAME_2 ||= $default_test_name_2;
++
+ sub MY::insert_kinit_maybe {
+     my ($commands) = @_;
+     my $test_cache = $ENV{PERL_KADM5_TEST_CACHE} || '/tmp/perl_test';
+@@ -150,8 +159,8 @@
+                              "PERL_KADM5_TEST_NAME=$KADM5_TEST_NAME",
+                              "PERL_KADM5_TEST_NAME_2=$KADM5_TEST_NAME_2",
+                              "PERL_KADM5_TEST_CACHE=$test_cache ";
+-    $commands =~ s/PERL_DL_NONLAZY=1 /$new_vars /;
+-    return exists $ENV{PERL_KADM5_TEST_CACHE}
++    $commands =~ s/PERL_DL_NONLAZY=1 /PERL_DL_NONLAZY=1 $new_vars /;
++    return !$test_kdc || exists $ENV{PERL_KADM5_TEST_CACHE}
+          ? $commands
+          : "\t$KRB5_BINDIR/kinit -S kadmin/admin -c $test_cache -l 50m "
+            . "$KADM5_PRINCIPAL\n$commands"
+@@ -176,5 +185,6 @@
+     NAME         => 'Authen::Krb5::Admin',
+     NO_META      => 1,
+     PREREQ_PM    => {'Authen::Krb5' => 1.2},
++    test         => {TESTS => $test_kdc ? 't/*.t' : 't/0*.t'},
+     VERSION_FROM => 'Admin.pm',
+ );
+--- a/README
++++ b/README
+@@ -12,16 +12,16 @@
+ 
+ INSTALLATION
+ 
+-To install Authen::Krb5::Admin without testing, run the standard
+-sequence:
++To build, test and install Authen::Krb5::Admin, run:
+ 
+ 	perl Makefile.PL
+ 	make
++	make test
+ 	make install
+ 
+-The first step will prompt you for a principal with administrative
+-privileges on the KDC for running the test suite.  Re-run this step to
+-change which principal to use.
++The default tests load the module and exercise local configuration,
++policy, principal and key objects. They do not require kinit, a Kerberos
++configuration file, credentials or a running KDC.
+ 
+ The build script will attempt to use the krb5-config tool to discover
+ the location of your Kerberos installation. This tool is part of the
+@@ -50,17 +50,36 @@
+ 
+ TESTING
+ 
+-To run the test suite as part of the install, use
++Signature verification is optional. To request it explicitly, run:
+ 
+-	perl Makefile.PL
++	TEST_SIGNATURE=1 perl t/00-0-signature.t
++
++This requires Module::Signature and the signer's public key. The shipped
++SIGNATURE predates this release, and its checksums do not match the
++release sources. Local patches also invalidate signed checksums. A failed
++signature check does not diagnose a functional or interpreter failure.
++
++To enable the KDC integration tests, configure with:
++
++	PERL_KADM5_TEST_KDC=1 perl Makefile.PL
+ 	make test
+ 	make install
+ 
+-This step requires administrative access to the KDC by the principal
+-specified in the first step.  It will create a principal, by default
+-"perl_test", which should NOT already exist on the KDC.  If you
+-already have a principal called perl_test, change Makefile.PL to use a
+-different test principal, and start over.
++Makefile.PL will prompt for an administrative principal and two unused
++test principal names. These tests require a configured KDC and kinit in
++KRB5_BINDIR. They create, modify and delete principals and policies, so
++use a test realm. The default test names, "perl_test" and "perl_test_2",
++must not already exist in that realm.
++
++Set PERL_KADM5_PRINCIPAL, PERL_KADM5_TEST_NAME and
++PERL_KADM5_TEST_NAME_2 before running Makefile.PL to supply these values
++without prompts. To use existing credentials instead of running kinit,
++set PERL_KADM5_TEST_CACHE to the credentials cache when configuring.
++The cache must contain a ticket for the kadmin/admin service.
++
++Rerun Makefile.PL without PERL_KADM5_TEST_KDC to return to local tests.
++The KDC option applies to ordinary Perl and XPerl alike. Running the
++local tests does not validate the remote administrative operations.
+ 
+ 
+ Stephen Quinney <squinney@inf.ed.ac.uk>
+--- a/t/00-0-signature.t
++++ b/t/00-0-signature.t
+@@ -32,7 +32,11 @@
+ 
+ print "1..1\n";
+ 
+-if (!-s 'SIGNATURE') {
++if (!$ENV{TEST_SIGNATURE}) {
++    print "ok 1 # skip Set TEST_SIGNATURE=1 to verify the release signature\n";
++}
++
++elsif (!-s 'SIGNATURE') {
+     print "ok 1 # skip No signature file found\n";
+ }
+ 
+--- a/t/03-principal.t
++++ b/t/03-principal.t
+@@ -43,9 +43,10 @@
+ Authen::Krb5::init_context;
+ Authen::Krb5::init_ets;
+ 
+-my $p = Authen::Krb5::parse_name($ENV{PERL_KADM5_TEST_NAME});
++my $name = 'perl_test';
++my $p = Authen::Krb5::parse_name("$name\@PERL.TEST");
+ ok $p;
+-ok(($p->data)[0], $ENV{PERL_KADM5_TEST_NAME});
++ok(($p->data)[0], $name);
+ 
+ $ap->attributes(KRB5_KDB_DISALLOW_TGT_BASED);
+ ok $ap->attributes, KRB5_KDB_DISALLOW_TGT_BASED;
+--- a/t/04-key.t
++++ b/t/04-key.t
+@@ -46,8 +46,8 @@
+ $k->key_type(ENCTYPE_DES3_CBC_SHA1);
+ ok $k->key_type, ENCTYPE_DES3_CBC_SHA1;
+ 
+-$k->salt_type(KRB5_KDB_SALTTYPE_V4);
+-ok $k->salt_type, KRB5_KDB_SALTTYPE_V4;
++$k->salt_type(KRB5_KDB_SALTTYPE_NORMAL);
++ok $k->salt_type, KRB5_KDB_SALTTYPE_NORMAL;
+ 
+ $k->kvno(5);
+ ok $k->kvno, 5;
