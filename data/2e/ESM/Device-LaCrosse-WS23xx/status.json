@@ -1,0 +1,76 @@
+{
+   "author" : "ESM",
+   "distribution" : "Device-LaCrosse-WS23xx",
+   "observations" : [
+      {
+         "cpan_path" : "E/ES/ESM/Device-LaCrosse-WS23xx-0.10.tar.gz",
+         "id" : "623174753a7a36d7a0069e2ff81898a15eedaf35f47f36dd9719bf8dcca917ed",
+         "module" : "Device::LaCrosse::WS23xx",
+         "observed_at" : "2026-11-12T01:10:06Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "d0ef0a77e983b8d22f638343db0c9386eda3a4c218fa32890a7f674a907dd0de",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=87",
+         "version" : "0.10",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
