@@ -1,0 +1,28 @@
+{
+   "distribution" : "WWW-Curl",
+   "releases" : [
+      {
+         "cpan_path" : "S/SZ/SZBALINT/WWW-Curl-4.17.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-4.17-23f09986e570.patch",
+                     "sha256" : "23f09986e57029801f618b94201523324ddfc2d8e761e47e5a638a4e6eb622e3"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "52ffab110e32348d775f241c973eb56f96b08eedbc110d77d257cdb0a24ab7ba",
+         "version" : "4.17"
+      }
+   ],
+   "schema" : 1
+}

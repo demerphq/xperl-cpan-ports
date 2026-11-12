@@ -58,6 +58,116 @@
          "status" : "failed",
          "version" : "4.17",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "S/SZ/SZBALINT/WWW-Curl-4.17.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "d2072381f2593130d5f1427b1734c0aef8930ef453616c6cfd9a110fd321802f",
+         "module" : "WWW::Curl",
+         "observed_at" : "2026-11-12T12:06:39Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "23f09986e57029801f618b94201523324ddfc2d8e761e47e5a638a4e6eb622e3"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 3,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "52ffab110e32348d775f241c973eb56f96b08eedbc110d77d257cdb0a24ab7ba",
+         "status" : "installed",
+         "test_summary" : "Files=23, Tests=856",
+         "version" : "4.17",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2
