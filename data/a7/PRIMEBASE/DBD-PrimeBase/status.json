@@ -1,0 +1,64 @@
+{
+   "author" : "PRIMEBASE",
+   "distribution" : "DBD-PrimeBase",
+   "observations" : [
+      {
+         "cpan_path" : "P/PR/PRIMEBASE/DBD-PrimeBase-1.4003.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "configure"
+         },
+         "id" : "f15f9ed28ee156215202f834cd7f855ec0a6023870e9af21d8a8f2c9a1341965",
+         "module" : "DBD::PrimeBase",
+         "observed_at" : "2026-11-12T00:59:48Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "configure"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "46d9291e4f6f2a60455f342234f61ab2ae9007ef6becc9f5027165f6b2698b36",
+         "status" : "failed",
+         "version" : "1.4003",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
