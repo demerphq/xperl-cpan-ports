@@ -1,0 +1,56 @@
+--- a/Interface.xs
++++ b/Interface.xs
+@@ -267,7 +267,7 @@
+ 		rv = *hv_fetch(owrap,name,niKEYsz,0);
+ 		if (!SvPOK(rv))
+ 		    goto iferror1;
+-		strlcpy(nbuf,SvPV(rv,len),len +1);
++		strlcpy(nbuf,SvPV(rv,len),sizeof(nbuf));
+ 		keyname = nbuf;
+ 		klen = len;
+ 	    }
+@@ -916,7 +916,7 @@
+ 	sv = *hv_fetch(hv,name,niKEYsz,0);
+ 	if (!SvPOK(sv))
+ 	    goto no_data;
+-	strlcpy(ifr.ni_ifr_name,SvPV(sv,len),len +1);
++	strlcpy(ifr.ni_ifr_name,SvPV(sv,len),sizeof(ifr.ni_ifr_name));
+ 	sv = *hv_fetch(hv,flav,niKEYsz,0);
+ 	if (!SvIOK(sv))
+ 	    goto no_data;
+--- a/t/simplesets.t
++++ b/t/simplesets.t
+@@ -6,7 +6,7 @@
+ # Change 1..1 below to 1..last_test_to_print .
+ # (It may become useful if the test is moved to ./t subdirectory.)
+ 
+-use Test::More tests => 2;
++use Test::More tests => 22;
+ #use diagnostics;
+ 
+ # test 1
+@@ -16,6 +16,24 @@
+ my $loaded = 1;
+ END {print "not ok 1\n" unless $loaded;}
+ 
++# Cached getters need no socket or permission to change an interface.
++# Exercise the name copies even when interface discovery is unavailable.
++foreach my $name ('', 'lo', 'x' x 15, 'x' x 4096) {
++    my $if = bless {
++	name => $name,
++	flav => 1,
++	args => { mtui => 1500, metk => 0, flag => 1.0, indx => 1 },
++    }, 'Net::Interface';
++    foreach my $check ([mtu => 1500], [metric => 0],
++		      [flags => 1], [index => 1]) {
++	my ($method, $expected) = @$check;
++	is($if->$method(), $expected,
++	    "$method with cached name length " . length($name));
++    }
++    eval { $if->new(); };
++    is($@, '', 'refresh handles cached name length ' . length($name));
++}
++
+ my @all = Net::Interface->interfaces();
+ 
+ my $loopif;
