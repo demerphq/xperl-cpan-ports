@@ -1,0 +1,76 @@
+{
+   "author" : "TOBYINK",
+   "distribution" : "XML-LibXML-Debugging",
+   "observations" : [
+      {
+         "cpan_path" : "T/TO/TOBYINK/XML-LibXML-Debugging-0.103.tar.gz",
+         "id" : "4e0ae016d93db63dd5db2be7221ac4eb88b80ae296e0d73bdb7ed8c0c6e53bc3",
+         "module" : "XML::LibXML::Debugging",
+         "observed_at" : "2026-11-12T01:02:47Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "47057fd9d2b9b0a9aed3f191d8eb38a761b78276e3a33cb5b51a980627af086b",
+         "status" : "installed",
+         "test_summary" : "Files=1, Tests=3",
+         "version" : "0.103",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
