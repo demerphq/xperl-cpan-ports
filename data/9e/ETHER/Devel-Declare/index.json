@@ -1,0 +1,28 @@
+{
+   "distribution" : "Devel-Declare",
+   "releases" : [
+      {
+         "cpan_path" : "E/ET/ETHER/Devel-Declare-0.006022.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.006022-d4ba5aab0532.patch",
+                     "sha256" : "d4ba5aab053273abbfbf795b9b13133e848d507ab499df52ab0203abd2119599"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "72f29ca35646a593be98311ffddb72033ae1e8a9d8254c62aa248bd6260e596e",
+         "version" : "0.006022"
+      }
+   ],
+   "schema" : 1
+}

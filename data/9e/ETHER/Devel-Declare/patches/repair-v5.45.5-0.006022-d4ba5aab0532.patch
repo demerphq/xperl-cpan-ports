@@ -1,0 +1,80 @@
+--- a/Changes
++++ b/Changes
+@@ -1,5 +1,11 @@
+ Revision history for Devel-Declare
+ 
++Unreleased
++  - Give XPerl reference-counted stacks ownership of parser callback
++    arguments. Check the active stack at runtime because an enclosing XSUB
++    can use a legacy stack even in a PERL_RC_STACK build.
++  - Test callback argument lifetime across repeated string evals.
++
+ 0.006022 - 2020-04-26
+   - release 0.006_021 as stable
+ 
+--- a/Declare.xs
++++ b/Declare.xs
+@@ -29,6 +29,18 @@
+ 
+ #define DD_GROW_VIA_BLOCKHOOK PERL_VERSION_GE(5,13,3)
+ 
++/* Parser hooks can run on either a reference-counted stack or the legacy
++   stack used by an enclosing XSUB. Give an RC stack its own reference. */
++#if defined(XPERL_VERSION) && defined(PERL_RC_STACK)
++# define DD_XPUSHs(value) STMT_START { \
++    SV *dd_arg = (value); \
++    XPUSHs(dd_arg); \
++    if (rpp_stack_is_rc()) SvREFCNT_inc_simple_void_NN(dd_arg); \
++  } STMT_END
++#else
++# define DD_XPUSHs(value) XPUSHs(value)
++#endif
++
+ #define LEX_NORMAL    10
+ #define LEX_INTERPNORMAL   9
+ 
+@@ -117,9 +129,9 @@
+   SAVETMPS;
+ 
+   PUSHMARK(SP);
+-  XPUSHs(sv_2mortal(newSVpv(type, 0)));
+-  XPUSHs(sv_2mortal(newSVpv(name, 0)));
+-  XPUSHs(sv_2mortal(newSViv(offset)));
++  DD_XPUSHs(sv_2mortal(newSVpv(type, 0)));
++  DD_XPUSHs(sv_2mortal(newSVpv(name, 0)));
++  DD_XPUSHs(sv_2mortal(newSViv(offset)));
+   PUTBACK;
+ 
+   call_pv("Devel::Declare::linestr_callback", G_VOID|G_DISCARD);
+--- a/t/eval.t
++++ b/t/eval.t
+@@ -22,4 +22,29 @@
+ 
+ is( __PACKAGE__->bar, 42 );
+ 
++{
++  my (@args, @expected, @warnings);
++  my $callback = \&Devel::Declare::linestr_callback;
++  no warnings 'redefine';
++  local *Devel::Declare::linestr_callback = sub {
++    # Keep the actual XS arguments alive beyond the callback's temp scope.
++    push @args, [ map { \$_ } @_ ];
++    push @expected, [ map { "$_" } @_ ];
++    goto &$callback;
++  };
++  local $SIG{__WARN__} = sub { push @warnings, @_ };
++
++  for my $n (1 .. 10) {
++    my $ok = eval "method callback_$n { $n }; 1";
++    ok($ok, "compile callback_$n") or diag $@;
++    my $name = "callback_$n";
++    is(__PACKAGE__->$name, $n, "run callback_$n");
++  }
++  ok(@args, 'parser callbacks ran');
++  is_deeply([ map { [ map { $$_ } @$_ ] } @args ], \@expected,
++    'retained XS arguments survive callback cleanup');
++  @args = ();
++  is_deeply(\@warnings, [], 'callback arguments are released without warnings');
++}
++
+ done_testing;
