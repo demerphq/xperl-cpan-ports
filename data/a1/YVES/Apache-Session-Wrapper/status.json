@@ -1,0 +1,76 @@
+{
+   "author" : "YVES",
+   "distribution" : "Apache-Session-Wrapper",
+   "observations" : [
+      {
+         "cpan_path" : "Y/YV/YVES/Apache-Session-Wrapper-0.34.tar.gz",
+         "id" : "2553bdfcb54c1ee04918660d83077ff4eb8a416b781bfeed6aee41dea31bfbe4",
+         "module" : "Apache::Session::Wrapper",
+         "observed_at" : "2026-11-12T00:24:40Z",
+         "patch_set" : null,
+         "patch_sha256" : [],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "7e30ef4cc73b32e426c4360dcd104e8f9af6de45d865b42952fe5c7a15c7a150",
+         "status" : "installed",
+         "test_summary" : "Files=3, Tests=31",
+         "version" : "0.34",
+         "xperl_version" : "v5.45.5"
+      }
+   ],
+   "schema" : 2
+}
