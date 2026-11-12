@@ -26,6 +26,23 @@
          "version" : "v1.4.0"
       },
       {
+         "author" : "LAIRDM",
+         "distribution" : "Algorithm-SVM",
+         "evidence_paths" : [
+            "data/bb/LAIRDM/Algorithm-SVM/evidence/repair-v5.45.5-0.13-0157df5b7d72.json"
+         ],
+         "index_path" : "data/bb/LAIRDM/Algorithm-SVM/index.json",
+         "native_files" : [
+            "bindings.cpp"
+         ],
+         "patch_paths" : [
+            "data/bb/LAIRDM/Algorithm-SVM/patches/repair-v5.45.5-0.13-0157df5b7d72.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.13"
+      },
+      {
          "author" : "LNATION",
          "distribution" : "Apophis",
          "evidence_paths" : [
@@ -41,6 +58,40 @@
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
          "version" : "1.01"
+      },
+      {
+         "author" : "ADAMSON",
+         "distribution" : "Authen-SASL-Cyrus",
+         "evidence_paths" : [
+            "data/19/ADAMSON/Authen-SASL-Cyrus/evidence/repair-v5.45.5-0.13-42c5dfea037f.json"
+         ],
+         "index_path" : "data/19/ADAMSON/Authen-SASL-Cyrus/index.json",
+         "native_files" : [
+            "Cyrus.xs"
+         ],
+         "patch_paths" : [
+            "data/19/ADAMSON/Authen-SASL-Cyrus/patches/repair-v5.45.5-0.13-42c5dfea037f.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.13"
+      },
+      {
+         "author" : "PMQS",
+         "distribution" : "BerkeleyDB",
+         "evidence_paths" : [
+            "data/60/PMQS/BerkeleyDB/evidence/repair-v5.45.5-0.67-e207a9701f57.json"
+         ],
+         "index_path" : "data/60/PMQS/BerkeleyDB/index.json",
+         "native_files" : [
+            "BerkeleyDB.xs"
+         ],
+         "patch_paths" : [
+            "data/60/PMQS/BerkeleyDB/patches/repair-v5.45.5-0.67-e207a9701f57.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.67"
       },
       {
          "author" : "LNATION",
@@ -144,6 +195,23 @@
          "version" : "6.57"
       },
       {
+         "author" : "NANIS",
+         "distribution" : "Crypt-SSLeay",
+         "evidence_paths" : [
+            "data/e3/NANIS/Crypt-SSLeay/evidence/repair-v5.45.5-0.72-e91ce207bd22.json"
+         ],
+         "index_path" : "data/e3/NANIS/Crypt-SSLeay/index.json",
+         "native_files" : [
+            "SSLeay.xs"
+         ],
+         "patch_paths" : [
+            "data/e3/NANIS/Crypt-SSLeay/patches/repair-v5.45.5-0.72-e91ce207bd22.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.72"
+      },
+      {
          "author" : "XMATH",
          "distribution" : "Data-Alias",
          "evidence_paths" : [
@@ -200,6 +268,23 @@
             "refcounted-stack-callback-v1"
          ],
          "version" : "1.52"
+      },
+      {
+         "author" : "ETHER",
+         "distribution" : "Devel-Declare",
+         "evidence_paths" : [
+            "data/9e/ETHER/Devel-Declare/evidence/repair-v5.45.5-0.006022-d4ba5aab0532.json"
+         ],
+         "index_path" : "data/9e/ETHER/Devel-Declare/index.json",
+         "native_files" : [
+            "Declare.xs"
+         ],
+         "patch_paths" : [
+            "data/9e/ETHER/Devel-Declare/patches/repair-v5.45.5-0.006022-d4ba5aab0532.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.006022"
       },
       {
          "author" : "PEVANS",
@@ -282,6 +367,23 @@
          "version" : "0.05"
       },
       {
+         "author" : "PLICEASE",
+         "distribution" : "FFI-Platypus",
+         "evidence_paths" : [
+            "data/94/PLICEASE/FFI-Platypus/evidence/repair-v5.45.5-2.12-2231034ff1f0.json"
+         ],
+         "index_path" : "data/94/PLICEASE/FFI-Platypus/index.json",
+         "native_files" : [
+            "xs/Type.xs"
+         ],
+         "patch_paths" : [
+            "data/94/PLICEASE/FFI-Platypus/patches/repair-v5.45.5-2.12-2231034ff1f0.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "2.12"
+      },
+      {
          "author" : "LNATION",
          "distribution" : "File-Raw",
          "evidence_paths" : [
@@ -299,6 +401,23 @@
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
          "version" : "0.19"
+      },
+      {
+         "author" : "DMOL",
+         "distribution" : "Font-FreeType",
+         "evidence_paths" : [
+            "data/bf/DMOL/Font-FreeType/evidence/repair-v5.45.5-0.18-da056882356a.json"
+         ],
+         "index_path" : "data/bf/DMOL/Font-FreeType/index.json",
+         "native_files" : [
+            "FreeType.xs"
+         ],
+         "patch_paths" : [
+            "data/bf/DMOL/Font-FreeType/patches/repair-v5.45.5-0.18-da056882356a.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.18"
       },
       {
          "author" : "MAUKE",
@@ -512,6 +631,23 @@
          "version" : "0.21"
       },
       {
+         "author" : "MIKER",
+         "distribution" : "Net-Interface",
+         "evidence_paths" : [
+            "data/8a/MIKER/Net-Interface/evidence/repair-v5.45.5-1.016-292e82a1188f.json"
+         ],
+         "index_path" : "data/8a/MIKER/Net-Interface/index.json",
+         "native_files" : [
+            "Interface.xs"
+         ],
+         "patch_paths" : [
+            "data/8a/MIKER/Net-Interface/patches/repair-v5.45.5-1.016-292e82a1188f.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "1.016"
+      },
+      {
          "author" : "MAF",
          "distribution" : "Net-ZooKeeper",
          "evidence_paths" : [],
@@ -672,6 +808,40 @@
          "version" : "0.117"
       },
       {
+         "author" : "FROGGS",
+         "distribution" : "SDL",
+         "evidence_paths" : [
+            "data/d8/FROGGS/SDL/evidence/repair-v5.45.5-2.548-44a55a1afdf9.json"
+         ],
+         "index_path" : "data/d8/FROGGS/SDL/index.json",
+         "native_files" : [
+            "src/SDLx/Controller/Interface.xs"
+         ],
+         "patch_paths" : [
+            "data/d8/FROGGS/SDL/patches/repair-v5.45.5-2.548-44a55a1afdf9.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "2.548"
+      },
+      {
+         "author" : "VPIT",
+         "distribution" : "Scope-Upper",
+         "evidence_paths" : [
+            "data/24/VPIT/Scope-Upper/evidence/repair-v5.45.5-0.34-377c424c96f8.json"
+         ],
+         "index_path" : "data/24/VPIT/Scope-Upper/index.json",
+         "native_files" : [
+            "Upper.xs"
+         ],
+         "patch_paths" : [
+            "data/24/VPIT/Scope-Upper/patches/repair-v5.45.5-0.34-377c424c96f8.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.34"
+      },
+      {
          "author" : "YVES",
          "distribution" : "Sereal-Decoder",
          "evidence_paths" : [
@@ -768,6 +938,40 @@
          "version" : "1.12"
       },
       {
+         "author" : "TODDR",
+         "distribution" : "Sys-Mmap",
+         "evidence_paths" : [
+            "data/f4/TODDR/Sys-Mmap/evidence/repair-v5.45.5-0.21-b2d0b63dbdba.json"
+         ],
+         "index_path" : "data/f4/TODDR/Sys-Mmap/index.json",
+         "native_files" : [
+            "Mmap.xs"
+         ],
+         "patch_paths" : [
+            "data/f4/TODDR/Sys-Mmap/patches/repair-v5.45.5-0.21-b2d0b63dbdba.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.21"
+      },
+      {
+         "author" : "HAYASHI",
+         "distribution" : "Term-ReadLine-Gnu",
+         "evidence_paths" : [
+            "data/fc/HAYASHI/Term-ReadLine-Gnu/evidence/repair-v5.45.5-1.47-366379b39347.json"
+         ],
+         "index_path" : "data/fc/HAYASHI/Term-ReadLine-Gnu/index.json",
+         "native_files" : [
+            "Gnu.xs"
+         ],
+         "patch_paths" : [
+            "data/fc/HAYASHI/Term-ReadLine-Gnu/patches/repair-v5.45.5-1.47-366379b39347.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "1.47"
+      },
+      {
          "author" : "HMBRAND",
          "distribution" : "Text-CSV_XS",
          "evidence_paths" : [
@@ -785,6 +989,24 @@
             "hash-value-lifetime-v1"
          ],
          "version" : "1.65"
+      },
+      {
+         "author" : "LDACHARY",
+         "distribution" : "Text-Unaccent",
+         "evidence_paths" : [
+            "data/bb/LDACHARY/Text-Unaccent/evidence/repair-v5.45.5-1.08-9fb0e22e0c72.json"
+         ],
+         "index_path" : "data/bb/LDACHARY/Text-Unaccent/index.json",
+         "native_files" : [
+            "Unaccent.xs",
+            "unac.c"
+         ],
+         "patch_paths" : [
+            "data/bb/LDACHARY/Text-Unaccent/patches/repair-v5.45.5-1.08-9fb0e22e0c72.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "1.08"
       },
       {
          "author" : "NEZUMI",
@@ -856,6 +1078,30 @@
          "patch_set" : "repair-v5.45.5",
          "recipes" : [],
          "version" : "0.29"
+      },
+      {
+         "author" : "MDOOTSON",
+         "distribution" : "Wx",
+         "evidence_paths" : [
+            "data/41/MDOOTSON/Wx/evidence/repair-v5.45.5-0.9932-44198dd18ebc.json"
+         ],
+         "index_path" : "data/41/MDOOTSON/Wx/index.json",
+         "native_files" : [
+            "Wx.xs",
+            "XS/Bitmap.xs",
+            "XS/Colour.xs",
+            "XS/DirDialog.xs",
+            "XS/Frame.xs",
+            "XS/Log.xs",
+            "XS/StaticLine.xs",
+            "ext/grid/XS/Grid.xs"
+         ],
+         "patch_paths" : [
+            "data/41/MDOOTSON/Wx/patches/repair-v5.45.5-0.9932-44198dd18ebc.patch"
+         ],
+         "patch_set" : "repair-v5.45.5",
+         "recipes" : [],
+         "version" : "0.9932"
       },
       {
          "author" : "YOREEK",

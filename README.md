@@ -86,6 +86,25 @@ these pages only after their receipts are reviewed, imported, and committed.
 From a local checkout, search the summary with `rg -n 'Distribution-Name'
 status/SUMMARY.md status/UNRESOLVED.md`.
 
+Failed observations can contain a `triage` assessment. The unresolved page
+shows its disposition: `unsupported-platform`, `obsolete-superseded`,
+`upstream-broken`, or `unresolved`. Open the linked `status.json` for the
+portable reason, public evidence links and any ordinary Perl controls.
+Each control records the exact Perl version and build flags, including the
+RC stack, threads, multiplicity, debugging, longdouble and quadmath.
+A different failure or an older Perl control is not proof of current blead
+behavior. Known XPerl and RC-stack incompatibilities remain repair targets.
+
+These assessments belong to individual build observations, not every
+release or platform of the distribution. The installer reuses a definitive
+deferral only with the same source hash, XPerl build and patch digests.
+Changing a patch or build configuration allows another attempt. Unresolved
+assessments allow further investigation. Legacy release-wide manual triage
+is preserved separately. Captured output limits appear as
+`failure.resource_limit: "log"`, and `resource_limits` records the configured
+memory and output caps. A guard stopping a command does not establish that
+the module itself is broken.
+
 ## Review candidates
 
 The [review queues](queues/README.md) hold modules selected for investigation

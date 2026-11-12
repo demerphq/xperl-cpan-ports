@@ -159,10 +159,11 @@ for my $row (@current) {
     my ($author, $distribution, $observation) =
         @{$row}{qw(author distribution observation)};
     my $status = $observation->{status};
-    my $triage = $row->{triage};
+    my $triage = $observation->{triage} // $row->{triage};
     if ($triage
-        && $triage->{version} eq $observation->{version}
-        && $triage->{source_sha256} eq $observation->{source_sha256}) {
+        && ($observation->{triage}
+            || (($triage->{version} // '') eq $observation->{version}
+                && ($triage->{source_sha256} // '') eq $observation->{source_sha256}))) {
         $status .= " ($triage->{disposition})";
     }
     $summary .= join(' | ',
@@ -185,10 +186,11 @@ for my $row (@unresolved) {
     my $failure = $observation->{failure} // {};
     my $result = $observation->{test_summary}
         // ("exit " . ($failure->{exit_status} // '?'));
-    my $triage = $row->{triage};
+    my $triage = $observation->{triage} // $row->{triage};
     if ($triage
-        && $triage->{version} eq $observation->{version}
-        && $triage->{source_sha256} eq $observation->{source_sha256}) {
+        && ($observation->{triage}
+            || (($triage->{version} // '') eq $observation->{version}
+                && ($triage->{source_sha256} // '') eq $observation->{source_sha256}))) {
         $result .= " ($triage->{disposition})";
     }
     $unresolved .= join(' | ',
@@ -303,8 +305,17 @@ sub distribution_name ($receipt) {
     $archive =~ s/\.(?:tar\.gz|tar\.bz2|tar\.xz|tgz|zip)\z//
         or die "unsupported CPAN archive: $archive\n";
     my ($distribution, $release_version) =
-        $archive =~ /\A(.+)-([vV]?\d[0-9A-Za-z._-]*)\z/
-            or die "cannot parse distribution release: $archive\n";
+        $archive =~ /\A(.+)-([vV]?\d[0-9A-Za-z._-]*)\z/;
+    # Exact archive targets can have a nonstandard filename. Their fetched
+    # release metadata supplies the identity when the filename cannot.
+    if (!defined $distribution) {
+        ($distribution, $release_version) =
+            @{$receipt}{qw(distribution distribution_version)};
+        die "cannot determine distribution release: $archive\n"
+            unless defined($distribution) && defined($release_version)
+                && !ref($release_version)
+                && $release_version =~ /\A[vV]?\d[0-9A-Za-z._-]*\z/;
+    }
     die "unsafe distribution name: $distribution\n"
         unless $distribution =~ /\A[A-Za-z0-9][A-Za-z0-9._-]*\z/;
     return ($distribution, $release_version);
@@ -322,6 +333,8 @@ sub observation ($receipt, $path, $id, $release_version) {
             name => $_->{name},
             (defined($_->{attempt}) ? (attempt => $_->{attempt}) : ()),
             exit_status => $_->{exit_status},
+            ($_->{timed_out} ? (timed_out => JSON::PP::true) : ()),
+            (($_->{resource_limit} // '') eq 'log' ? (resource_limit => 'log') : ()),
             (defined($_->{validation_error})
                 ? (validation_error => $_->{validation_error}) : ()),
         }
@@ -357,6 +370,9 @@ sub observation ($receipt, $path, $id, $release_version) {
         (ref($receipt->{platform}) eq 'HASH'
             ? (platform => platform($receipt->{platform})) : ()),
         status => $status,
+        ($receipt->{triage} ? (triage => triage($receipt->{triage})) : ()),
+        (ref($receipt->{resource_limits}) eq 'HASH'
+            ? (resource_limits => resource_limits($receipt->{resource_limits})) : ()),
         patch_set => $registered ? $registered->{patch_set}
             : $receipt->{registry}{patch_set},
         ($registered ? (patch_purpose => 'compatibility')
@@ -371,10 +387,84 @@ sub observation ($receipt, $path, $id, $release_version) {
         ($failed ? (failure => {
             phase => $failed->{name},
             exit_status => $failed->{exit_status},
+            ($failed->{timed_out} ? (timed_out => JSON::PP::true) : ()),
+            ($failed->{resource_limit} ? (resource_limit => $failed->{resource_limit}) : ()),
             (defined($failed->{validation_error})
                 ? (validation_error => $failed->{validation_error}) : ()),
         }) : ()),
     };
+}
+
+# Import only protocol fields, never an agent's local command lines or logs.
+# The installer validates assessments before saving them. Keep the importer
+# standalone so people can inspect and rebuild this registry without it.
+sub triage ($report) {
+    die "invalid receipt triage\n"
+        unless ref($report) eq 'HASH' && ($report->{schema} // '') eq '1'
+            && ($report->{disposition} // '') =~
+                /\A(?:upstream-broken|unsupported-platform|obsolete-superseded|unresolved)\z/
+            && ref($report->{references}) eq 'ARRAY'
+            && ref($report->{baselines} // []) eq 'ARRAY';
+    my @references;
+    for my $reference (@{$report->{references}}) {
+        die "invalid triage reference\n"
+            unless ref($reference) eq 'HASH' && !ref($reference->{url})
+                && ($reference->{url} // '') =~
+                    m{\Ahttps?://[^\s/\@:]+(?::[0-9]+)?(?:[/?#][^\s]*)?\z};
+        push @references, { url => $reference->{url} };
+    }
+    my @baselines;
+    for my $baseline (@{$report->{baselines} // []}) {
+        die "invalid triage baseline\n"
+            unless ref($baseline) eq 'HASH'
+                && ($baseline->{implementation} // '') eq 'perl'
+                && ($baseline->{perl_version} // '') =~ /\Av?5\.\d+\.\d+\z/
+                && ($baseline->{result} // '') =~ /\A(?:pass|same-failure|different-failure)\z/
+                && ref($baseline->{build}) eq 'HASH';
+        my %flags;
+        for my $flag (qw(rc_stack useithreads usemultiplicity debugging
+                         uselongdouble usequadmath)) {
+            my $value = $baseline->{build}{$flag};
+            die "invalid triage build flag $flag\n"
+                unless defined($value) && !ref($value) && $value =~ /\A[01]\z/;
+            $flags{$flag} = 0 + $value;
+        }
+        push @baselines, {
+            implementation => 'perl',
+            (map { $_ => portable_text($baseline->{$_}) }
+                qw(perl_version os archname result)),
+            build => \%flags,
+        };
+    }
+    die "upstream-broken triage lacks a matching control and references\n"
+        if $report->{disposition} eq 'upstream-broken'
+            && (!@references || !grep { $_->{result} eq 'same-failure' } @baselines);
+    die "triage lacks supporting references\n"
+        if $report->{disposition} =~ /\A(?:unsupported-platform|obsolete-superseded)\z/
+            && !@references;
+    return { schema => 1, disposition => $report->{disposition},
+             reason => portable_text($report->{reason}),
+             references => \@references, baselines => \@baselines };
+}
+
+sub portable_text ($text) {
+    die "triage text must be portable and single-line\n"
+        unless defined($text) && !ref($text) && length($text)
+            && $text !~ /[\r\n\0]/
+            && $text !~ m{(?:/(?:home|Users|tmp|var/tmp)/|[A-Za-z]:[\\/])};
+    return $text;
+}
+
+sub resource_limits ($limits) {
+    my %result;
+    for my $key (qw(phase_memory_mb phase_log_mb)) {
+        next unless exists $limits->{$key};
+        die "invalid resource limit $key\n"
+            unless defined($limits->{$key}) && !ref($limits->{$key})
+                && $limits->{$key} =~ /\A\d+\z/;
+        $result{$key} = 0 + $limits->{$key};
+    }
+    return \%result;
 }
 
 # Observations from receipts written before the installer recorded the

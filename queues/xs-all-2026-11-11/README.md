@@ -21,6 +21,10 @@ The successful records span recorded platforms and build configurations.
 They do not validate every profile. The three deferrals preserve earlier
 decisions: B-C is out of date with blead, Gtk-Perl is obsolete, and
 Example-XS-FasterHashes is an intentionally problematic example.
+CPAN `Example::*` candidates are outside the repair campaign unless
+explicitly requested. They may be demonstrations or intentional failures.
+The installer test suite's local `Example::*` fixtures are unrelated and
+continue to test installer behavior.
 
 ## Run the pending queue
 
@@ -32,6 +36,7 @@ to the registry checkout, interpreter prefix and a new work directory:
   --registry "$ports" --prefix "$prefix" --workdir "$work" \
   --from "$ports/queues/xs-all-2026-11-11/install.txt" \
   --jobs 4 --repair-jobs 1 --agent codex \
+  --phase-memory-mb 2048 --phase-log-mb 32 \
   --repair-timeout 600 --repair-interval 10 --publish auto
 ```
 
@@ -50,6 +55,8 @@ To stop gracefully or resume the saved queue:
 ```
 
 Resume retains the selected interpreter, worker limits and agent settings.
+An explicit `--phase-memory-mb` or `--phase-log-mb` on resume overrides a
+saved limit. Memory limits are per build process, not an aggregate budget.
 Keep the interpreter's build and installation prefix together. Do not mix
 XS libraries from different builds.
 
@@ -93,3 +100,12 @@ results. Its final JSON records request-level resolution errors and gives
 a resume command for incomplete work. Preserve those errors in the survey
 review rather than counting them as successful tests. The starting
 inventory is not a live build-status dashboard.
+
+The interrupted first pass reached a prompt loop in `GOZER/mod_perl-1.31`.
+Its [review](../../data/73/GOZER/mod_perl/REVIEW.md) records why this Apache 1
+binding is deferred. The installer now caps captured command logs and can
+limit build-process data memory. Known XPerl and RC-stack defects remain
+repair targets. Other failures need triage against platform requirements,
+upstream reports and ordinary Perl controls with exact versions and build
+flags. Do not spend repairs rewriting obsolete packages or removing their
+legitimate platform restrictions.

@@ -259,6 +259,62 @@ is($shared_result->{platform}{build}{useshrplib}, 1,
    'shared-library configuration survives receipt import');
 is(scalar @{$repair_status->{observations}}, 3,
    'unprofiled, static and shared results remain distinct');
+
+# Agent triage is evidence for one observed build. It must remain visible
+# without publishing scratch notes, command paths or arbitrary agent fields.
+$receipt->{status} = 'failed';
+$receipt->{triage} = {
+    schema => 1, disposition => 'upstream-broken',
+    reason => 'The same test fails on ordinary Perl',
+    references => [{ url => 'https://example.org/issues/42' }],
+    local_notes => '/home/example/scratch',
+    baselines => [{ implementation => 'perl', perl_version => 'v5.45.5',
+        os => 'linux', archname => 'x86_64-linux', result => 'same-failure',
+        build => { rc_stack => 0, useithreads => 0, usemultiplicity => 0,
+                   debugging => 1, uselongdouble => 0, usequadmath => 0 },
+        command => '/home/example/bin/perl',
+    }],
+};
+$receipt->{resource_limits} = { phase_memory_mb => 2048, phase_log_mb => 32,
+                              local_path => '/home/example/log' };
+$receipt->{phases} = [{ name => 'configure', exit_status => 125,
+                       resource_limit => 'log' }];
+my $triage_receipt = File::Spec->catfile($shared_dir, 'triage-receipt.json');
+write_json($triage_receipt, $receipt);
+is(system($^X, $script, '--receipt', $triage_receipt), 0,
+   'structured failure triage imports');
+$repair_status = JSON::PP->new->decode(read_file($repair_path));
+my ($triaged) = grep { $_->{triage} } @{$repair_status->{observations}};
+is($triaged->{triage}{baselines}[0]{perl_version}, 'v5.45.5',
+   'ordinary Perl control version is retained');
+is($triaged->{triage}{baselines}[0]{build}{rc_stack}, 0,
+   'ordinary Perl control build configuration is retained');
+is_deeply($triaged->{resource_limits}, { phase_memory_mb => 2048, phase_log_mb => 32 },
+          'only portable resource settings are published');
+is($triaged->{failure}{resource_limit}, 'log', 'output guard is visible in failure data');
+unlike(read_file($repair_path), qr{/home/example/}, 'agent scratch paths are excluded');
+like(read_file(File::Spec->catfile($root, 'status', 'UNRESOLVED.md')),
+     qr/Example-Repair.*upstream-broken/, 'humans can find triaged upstream failures');
+
+my $before_rejected = read_file($repair_path);
+$receipt->{triage}{reason} = 'Read /home/example/build/log';
+write_json($triage_receipt, $receipt);
+isnt(system($^X, $script, '--receipt', $triage_receipt), 0,
+     'unsafe free-form triage text is rejected');
+is(read_file($repair_path), $before_rejected, 'a rejected assessment does not change the record');
+
+# A nonstandard archive filename can still have a valid metadata identity.
+delete $receipt->{triage};
+$receipt->{cpan_path} = 'C/CH/CHARLIE/unindexed-bundle.tar.gz';
+$receipt->{distribution} = 'Example-Unindexed';
+$receipt->{distribution_version} = '1.00';
+write_json($triage_receipt, $receipt);
+is(system($^X, $script, '--record-only', '--receipt', $triage_receipt), 0,
+   'nonstandard archive uses the explicit release metadata');
+my $unindexed_prefix = unpack 'H2', siphash_2_4('CHARLIE/Example-Unindexed', "\0" x 16);
+ok(-f File::Spec->catfile($root, 'data', $unindexed_prefix, 'CHARLIE',
+                         'Example-Unindexed', 'status.json'),
+   'nonstandard archive is recorded under its metadata distribution');
 done_testing();
 
 sub write_json {
