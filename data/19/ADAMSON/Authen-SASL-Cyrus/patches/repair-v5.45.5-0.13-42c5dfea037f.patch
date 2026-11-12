@@ -1,0 +1,221 @@
+--- a/CHANGES
++++ b/CHANGES
+@@ -1,5 +1,15 @@
+ History of updates to Authen::SASL::Cyrus
+ 
++Unreleased
++Select Cyrus explicitly in tests and document backend selection with
++Authen::SASL 2.1700 and later.
++Preserve native pointer width in the connection typemap with sv_setref_pv
++and INT2PTR, following Russ Allbery's fix recorded in Authen::SASL::XS.
++Use STRLEN and I32 for Perl API output parameters, cast SASL callbacks to
++the library's generic function type, and free callback context before
++its table. Add interpreter context to cleanup for multiplicity builds.
++Test connection accessors, invalid objects and Perl callbacks through XS.
++
+ 0.13
+ Updated the WRITE() method to use syswrite() and account for
+ variable buffer sizes in SASL.
+--- a/Cyrus.pod
++++ b/Cyrus.pod
+@@ -5,7 +5,7 @@
+ 
+ =head1 SYNOPSIS
+ 
+- use Authen::SASL;
++ use Authen::SASL qw(Cyrus);
+ 
+  $sasl = Authen::SASL->new(
+    mechanism => 'NAME',
+@@ -22,6 +22,9 @@
+ network protocols. B<Authen::SASL::Cyrus> provides an implementation
+ framework that all protocols should be able to share.
+ 
++Select the Cyrus backend explicitly with C<use Authen::SASL qw(Cyrus)>.
++Authen::SASL 2.1700 and later do not select this backend automatically.
++
+ The XS framework makes calls into the existing libsasl2.so shared 
+ library to perform SASL client connection functionality, including
+ loading existing shared library mechanisms.
+--- a/Cyrus.xs
++++ b/Cyrus.xs
+@@ -85,9 +85,10 @@
+ 
+ void free_callbacks(struct authensasl *sasl)
+ {
++  dTHX;
+   if (sasl->callbacks) {
+-    Safefree(sasl->callbacks);
+     Safefree(sasl->callbacks->context);
++    Safefree(sasl->callbacks);
+     sasl->callbacks = NULL;
+   }
+ }
+@@ -138,7 +139,7 @@
+   dTHX;
+   char *c;
+   int i, intparam, count, rc=0;
+-  unsigned int len=0;
++  STRLEN len=0;
+   struct _perlcontext *cp;
+   sasl_secret_t *pass;
+   SV *rsv;
+@@ -439,12 +440,11 @@
+ 
+   /* Write the C SASL callback */
+   cb->id = pcb->id;
+-  cb->proc = PerlCallback;
+   if (cb->id == SASL_CB_PASS) {
+-    cb->proc = PerlPassCallback;
++    cb->proc = (int (*)(void))PerlPassCallback;
+   }
+   else {
+-    cb->proc = PerlCallback;
++    cb->proc = (int (*)(void))PerlCallback;
+   }
+   cb->context = pcb;
+ }
+@@ -464,7 +464,7 @@
+   dTHX;
+   char *key;
+   int count=0;
+-  long l;
++  I32 l;
+   struct _perlcontext *pcb;
+   SV **hashval, *val;
+   HV *hash=NULL;
+@@ -634,12 +634,13 @@
+   PPCODE:
+   {
+     SASLCONST char *outstring=NULL;
+-    unsigned int inlen, outlen=0;
++    STRLEN inlen;
++    unsigned int outlen=0;
+ 
+     if (sasl->errormsg) {
+       XSRETURN_EMPTY;
+     }
+-    SvPV(ST(1),inlen);
++    instring = SvPV(ST(1),inlen);
+     sasl->code = sasl_client_step(sasl->conn, instring, inlen, NULL, &outstring, &outlen);
+     if (sasl->code == SASL_OK) {
+       sasl->errormsg = NULL;
+@@ -661,7 +662,8 @@
+   PPCODE:
+   {
+     SASLCONST char *outstring=NULL;
+-    unsigned int inlen, outlen=0;
++    STRLEN inlen;
++    unsigned int outlen=0;
+ 
+ 
+     if (sasl->errormsg) {
+@@ -687,7 +689,8 @@
+   PPCODE:
+   {
+     SASLCONST char *outstring=NULL;
+-    unsigned int inlen, outlen=0;
++    STRLEN inlen;
++    unsigned int outlen=0;
+ 
+ 
+     if (sasl->errormsg) {
+--- a/t/basic.t
++++ b/t/basic.t
+@@ -2,10 +2,10 @@
+ use Test;
+ 
+ # use a BEGIN block so we print our plan before MyModule is loaded
+-BEGIN { plan tests => 6, todo => [] }
++BEGIN { plan tests => 12, todo => [] }
+ 
+ # load your module...
+-use Authen::SASL;
++use Authen::SASL qw(Cyrus);
+ 
+ ok(1);
+ my $sasl= Authen::SASL->new(
+@@ -20,3 +20,12 @@
+ my $con = $sasl->client_new('imap', 'localhost')
+   or die $sasl->error;
+ ok(1);
++ok(ref($con), 'Authen::SASL::Cyrus');
++ok($con->code, 1);
++ok($con->host, 'localhost');
++ok($con->service, 'imap');
++
++eval { Authen::SASL::Cyrus::code('not a reference') };
++ok($@ =~ /not an Authen::SASL::Cyrus object/);
++eval { Authen::SASL::Cyrus::code([]) };
++ok($@ =~ /not an Authen::SASL::Cyrus object/);
+--- a/t/callback.t
++++ b/t/callback.t
+@@ -6,7 +6,7 @@
+ BEGIN { plan tests => 8, todo => [] }
+ 
+ # load your module...
+-use Authen::SASL;
++use Authen::SASL qw(Cyrus);
+ 
+ ok(1);
+ my $sasl= Authen::SASL->new(
+--- a/t/user.t
++++ b/t/user.t
+@@ -2,10 +2,10 @@
+ use Test;
+ 
+ # use a BEGIN block so we print our plan before MyModule is loaded
+-BEGIN { plan tests => 4, todo => [] }
++BEGIN { plan tests => 11, todo => [] }
+ 
+ # load your module...
+-use Authen::SASL;
++use Authen::SASL qw(Cyrus);
+ 
+ my $sasl= Authen::SASL->new('DIGEST-MD5') or die;
+ $sasl->callback('auth' => 'harness',
+@@ -25,6 +25,25 @@
+ $step =~ /username="(.*?)"/;
+ ok($1 eq 'harness');
+ 
++my %called;
++my $callbacks = Authen::SASL->new(
++  mechanism => 'DIGEST-MD5',
++  callback => {
++    user => sub { ++$called{user}; return join('', 'some', 'body') },
++    auth => sub { ++$called{auth}; return join('', 'har', 'ness') },
++    pass => sub { ++$called{pass}; return join('', 'sec', 'ret') },
++  },
++);
++my $callback_con = $callbacks->client_new('imap', 'localhost')
++  or die $callbacks->error;
++ok(ref($callback_con), 'Authen::SASL::Cyrus');
++my $callback_step = $callback_con->client_step($server_output)
++  or die $callback_con->error;
++ok($callback_con->code, 1);
++ok($callback_step =~ /authzid="somebody"/);
++ok($callback_step =~ /username="harness"/);
++ok($called{$_} && $called{$_} > 0) for qw(user auth pass);
++
+ $sasl= Authen::SASL->new('mechanism' => 'DIGEST-MD5',
+                          'callback'  => {
+                                          'password' => 'secret',
+--- a/typemap
++++ b/typemap
+@@ -3,12 +3,11 @@
+ 
+ INPUT
+ AuthenSASLtype
+-  if ((SvTYPE($arg) != SVt_RV) && (SvTYPE($arg) != SVt_PVMG)) {
+-    printf(\"First parameter was not a reference. It was type %d\\n\", SvTYPE($arg));
+-    XSRETURN(0);
++  if (!SvROK($arg) || !sv_derived_from($arg, \"Authen::SASL::Cyrus\")) {
++    croak(\"First parameter is not an Authen::SASL::Cyrus object\");
+   }
+-  $var = (struct authensasl *)SvIV(SvRV($arg));
++  $var = INT2PTR(struct authensasl *, SvIV(SvRV($arg)));
+ 
+ OUTPUT
+ AuthenSASLtype
+-  sv_setref_iv($arg, "Authen::SASL::Cyrus", (int)$var);
++  sv_setref_pv($arg, "Authen::SASL::Cyrus", (void *)$var);
