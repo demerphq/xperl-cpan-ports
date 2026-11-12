@@ -63,6 +63,100 @@
          "status" : "failed",
          "version" : "0.13",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "L/LA/LAIRDM/Algorithm-SVM-0.13.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "build"
+         },
+         "id" : "6baa6a54657c5ab7dba42b6cfbcad305406fa985eb680aff99b261aa30e98f3c",
+         "module" : "Algorithm::SVM",
+         "observed_at" : "2026-11-12T01:19:27Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "0157df5b7d72474c820772b6e6b498acdd2e29b06055e0f8f83d1aaba0809d45"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "f72572df107eb45cd2ff6165c183164f38c7da98417d2242e334e6999fb7e422",
+         "status" : "installed",
+         "version" : "0.13",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

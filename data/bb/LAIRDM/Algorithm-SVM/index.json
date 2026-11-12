@@ -1,0 +1,28 @@
+{
+   "distribution" : "Algorithm-SVM",
+   "releases" : [
+      {
+         "cpan_path" : "L/LA/LAIRDM/Algorithm-SVM-0.13.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-0.13-0157df5b7d72.patch",
+                     "sha256" : "0157df5b7d72474c820772b6e6b498acdd2e29b06055e0f8f83d1aaba0809d45"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "f72572df107eb45cd2ff6165c183164f38c7da98417d2242e334e6999fb7e422",
+         "version" : "0.13"
+      }
+   ],
+   "schema" : 1
+}

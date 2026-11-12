@@ -1,0 +1,27 @@
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -1,8 +1,9 @@
+ use ExtUtils::MakeMaker;
++use Config;
+ 
+ $CC = 'g++';
+ 
+-%args = ('CCFLAGS' => '-Wall');
++%args = ('CCFLAGS' => "-Wall $Config{ccflags}");
+ 
+ if($^O eq 'cygwin') {
+   $args{'LDDLFLAGS'} = '-shared -L/usr/local/lib';
+--- a/bindings.cpp
++++ b/bindings.cpp
+@@ -1,8 +1,11 @@
+ #include "bindings.h"
+ #include <errno.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #ifdef DEBUG
+ #include <stdarg.h>
++#include <stdio.h>
+ void printf_dbg(const char *a, ...) {
+   va_list alist;
+ 	va_start(alist,a);
