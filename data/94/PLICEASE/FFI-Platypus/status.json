@@ -69,6 +69,106 @@
          "test_summary" : "Files=73, Tests=329, Failed 2/73 test programs. 1/329 subtests failed.",
          "version" : "2.12",
          "xperl_version" : "v5.45.5"
+      },
+      {
+         "cpan_path" : "P/PL/PLICEASE/FFI-Platypus-2.12.tar.gz",
+         "failure" : {
+            "exit_status" : 2,
+            "phase" : "test"
+         },
+         "id" : "9486d06ccb016d47fad66361619c17d474f1325a6bf5b3e1b9c5fcbeb93ae58a",
+         "module" : "FFI::Platypus",
+         "observed_at" : "2026-11-12T00:58:37Z",
+         "patch_purpose" : "compatibility",
+         "patch_set" : "repair-v5.45.5",
+         "patch_sha256" : [
+            "2231034ff1f01ecebe2de0babaa460ff1f73dd06e3983ded67ae662cdd6b8fdd"
+         ],
+         "phases" : [
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 2,
+               "name" : "test"
+            },
+            {
+               "attempt" : 1,
+               "exit_status" : 0,
+               "name" : "repair"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "configure"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "build"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "test"
+            },
+            {
+               "exit_status" : 0,
+               "name" : "proposal-check"
+            },
+            {
+               "attempt" : 2,
+               "exit_status" : 0,
+               "name" : "install"
+            }
+         ],
+         "platform" : {
+            "archname" : "x86_64-linux",
+            "build" : {
+               "byteorder" : "12345678",
+               "compiler_version" : "13.3.0",
+               "debugging" : 0,
+               "flags_sha256" : "c4a8d8ea86450c8b0d14d655fc99f2f26052622ee15a80720785df233fc0acd3",
+               "ivsize" : "8",
+               "nvsize" : "8",
+               "nvtype" : "double",
+               "ptrsize" : "8",
+               "rc_stack" : 1,
+               "schema" : 1,
+               "use64bitall" : 1,
+               "use64bitint" : 1,
+               "useithreads" : 0,
+               "uselongdouble" : 0,
+               "usemultiplicity" : 0,
+               "usemymalloc" : 0,
+               "usequadmath" : 0,
+               "useshrplib" : 0,
+               "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+            },
+            "build_id" : "28cd83709959c0b00ef653a383ad362f0cca8d9b357b92fef795df2c54651583",
+            "cc" : "gcc",
+            "cc_version" : "13.3.0",
+            "key" : "linux/x86_64-linux",
+            "make" : "make",
+            "os" : "linux",
+            "osvers" : "7.0.0-42-generic",
+            "use64bitall" : 1,
+            "usethreads" : 0,
+            "xperl_commit" : "8903238ce74fc124ec407b8342791ef73253f988"
+         },
+         "source_sha256" : "660f009d99ebc104c0a2da1266d9787c633e8c76b55fd7a2f64dea76dcc98fe9",
+         "status" : "installed",
+         "test_summary" : "Files=73, Tests=333",
+         "version" : "2.12",
+         "xperl_version" : "v5.45.5"
       }
    ],
    "schema" : 2

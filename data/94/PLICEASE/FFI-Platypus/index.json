@@ -1,0 +1,28 @@
+{
+   "distribution" : "FFI-Platypus",
+   "releases" : [
+      {
+         "cpan_path" : "P/PL/PLICEASE/FFI-Platypus-2.12.tar.gz",
+         "patch_sets" : [
+            {
+               "id" : "repair-v5.45.5",
+               "patches" : [
+                  {
+                     "path" : "patches/repair-v5.45.5-2.12-2231034ff1f0.patch",
+                     "sha256" : "2231034ff1f01ecebe2de0babaa460ff1f73dd06e3983ded67ae662cdd6b8fdd"
+                  }
+               ],
+               "purpose" : "compatibility",
+               "recipes" : [],
+               "xperl" : {
+                  "max_exclusive" : "v5.46.0",
+                  "min_inclusive" : "v5.45.5"
+               }
+            }
+         ],
+         "source_sha256" : "660f009d99ebc104c0a2da1266d9787c633e8c76b55fd7a2f64dea76dcc98fe9",
+         "version" : "2.12"
+      }
+   ],
+   "schema" : 1
+}

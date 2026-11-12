@@ -1,0 +1,72 @@
+--- a/t/ffi_build_plugindata.t
++++ b/t/ffi_build_plugindata.t
+@@ -22,7 +22,7 @@
+ my $foo = Foo->new;
+ 
+ is(
+-  dies { $foo->plugin_data },
++  "" . dies { $foo->plugin_data },
+   match qr/^plugin_data must be called by a plugin/,
+ );
+ 
+--- a/t/ffi_platypus_record_meta.t
++++ b/t/ffi_platypus_record_meta.t
+@@ -2,6 +2,7 @@
+ use FFI::Platypus;
+ use FFI::Platypus::Record::Meta;
+ use Data::Dumper qw( Dumper );
++use Capture::Tiny qw( capture );
+ 
+ my $ffi = FFI::Platypus->new;
+ $ffi->lib(undef);
+@@ -42,4 +43,25 @@
+ 
+ };
+ 
++subtest 'custom callbacks during global destruction' => sub {
++
++  local $ENV{PERL_DESTRUCT_LEVEL} = 2;
++  my($stdout, $stderr, $status) = capture {
++    system $^X, '-Mblib', '-e', q{
++      use FFI::Platypus::Record;
++      for my $i (1..32)
++      {
++        eval "package RecordCleanup$i; use FFI::Platypus::Record; "
++           . "record_layout(uint8 => 'value'); 1" or die $@;
++      }
++      print "created records\n";
++    };
++    $?;
++  };
++
++  is $stdout, "created records\n", 'records created before destruction';
++  is $status, 0, 'record metadata destructors exit successfully';
++  is $stderr, '', 'global destruction has no diagnostics';
++};
++
+ done_testing;
+--- a/xs/Type.xs
++++ b/xs/Type.xs
+@@ -308,12 +308,16 @@
+ 
+             custom = &self->extra[0].custom_perl;
+ 
+-            if(custom->perl_to_native != NULL)
+-              SvREFCNT_dec(custom->perl_to_native);
+-            if(custom->perl_to_native_post != NULL)
+-              SvREFCNT_dec(custom->perl_to_native_post);
+-            if(custom->native_to_perl != NULL)
+-              SvREFCNT_dec(custom->native_to_perl);
++            /* Global destruction can invoke attached destructors after this type. */
++            if(!PL_dirty)
++            {
++              if(custom->perl_to_native != NULL)
++                SvREFCNT_dec(custom->perl_to_native);
++              if(custom->perl_to_native_post != NULL)
++                SvREFCNT_dec(custom->perl_to_native_post);
++              if(custom->native_to_perl != NULL)
++                SvREFCNT_dec(custom->native_to_perl);
++            }
+             if(self->extra[0].record.class != NULL)
+               free(self->extra[0].record.class);
+           }
